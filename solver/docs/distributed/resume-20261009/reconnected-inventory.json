@@ -1,0 +1,1157 @@
+{
+  "capturedAtJst": "2026-10-09T08:41:41.232761+09:00",
+  "repository": "/home/imak/work/procon37",
+  "mode": "read-only; no remote start, stop or configuration change",
+  "localD0Source": {
+    "expectedFiles": 47,
+    "all47Match": true,
+    "mismatches": [],
+    "files": {
+      ".gitignore": "d19bf49b880a804f017d7ca0dd7ae36030030699e81c5e5007d1afd3b16a7044",
+      "Cargo.lock": "680473abcd7458404d914148c368aa285d4a38b786b4177977a91ec86208b6da",
+      "Cargo.toml": "da196d978caee68350afcd73a240959fd89701d660b6c65dc8fdaabfb888907b",
+      "README.md": "1dc5a7715467dbc9aec8e3c4e77d256106e55a16eb1ec6f22d7f5cb27e21df11",
+      "common/Cargo.toml": "aacfd3852bfa69b15cff7217c7f5bac52fbc0e9b49663af3c1aad0bb42484d4f",
+      "common/fixtures/arena/README.md": "2c55ed0c46fa13d49efe2bf5c517db372e714f49b65d437dfc2c8cae6ed109b7",
+      "common/fixtures/arena/match-916.json": "7008196cd912926ab8790029ac1003e1a174a91fc6f3088332cf9abd561401e2",
+      "common/fixtures/arena/match-937.json": "7aa371cfe758f0fcc9edd6429e395dc57e5f1af63827d52fc1dd85edeea2dee2",
+      "common/fixtures/arena/match-941.json": "8168d083b044ee7eb5fd0d401f8f4470f42990ce8468934d5db84b6333bed8cf",
+      "common/fixtures/arena/pasted-16-01.json": "9e065b887faff5acb5dbc41b334a284bd41896ec3b7f362aff047d6bb1eb5622",
+      "common/fixtures/arena/pasted-16-02.json": "aa097fa2ef1536c4032c3547cad95bdadc40c44165bf3a599590feb0bbb9cb50",
+      "common/fixtures/arena/pasted-16-03.json": "d837b29d102c48e749368ebece013db610f5585db277ab8e9a3dbfc8942f0747",
+      "common/fixtures/arena/pasted-16-04.json": "740d0295e8a3ce023a31d0268c4c793171a2c850c0a75b0661af44b2e23ace05",
+      "common/fixtures/arena/pasted-24-01.json": "73e06d501144fb144f96dd257f095a1b9788bc0a42b74959135e50fc58e06488",
+      "common/fixtures/arena/pasted-24-02.json": "c86f8813a88ccf1c9410a720a6d087090fa27982d18caca0638fb212920936cc",
+      "common/fixtures/arena/pasted-24-03.json": "8c016ae2200b6a6ed0e95fb33a7f1370849c7cbeb539e806e11b6496cf0486f1",
+      "common/fixtures/arena/pasted-24-04.json": "93e99e1d08a9ce9ffabfb46ca8757f4cda1ed6f4f1146841745f4dcd82e09b7b",
+      "common/fixtures/arena/pasted-32-01.json": "b319229489edc829037a7edef2f3222eb603e7846074644fdfd5b58113012b50",
+      "common/fixtures/arena/pasted-32-02.json": "e338163d9dc9818572332ec98fbc7c9f0db35065cedc2e7a1e626ee2d30023d3",
+      "common/fixtures/arena/pasted-32-03.json": "b89e0290613e49710bd4630d76208ae0a5bf2af4229422e8ed9524a4eb48eeb3",
+      "common/fixtures/arena/pasted-32-04.json": "79bfa1ab4c7780a0252ec33fea058210e5b92b677d6688dcc84e51bf7d3efc3b",
+      "common/fixtures/arena/sources.json": "b8d42d8a5d7bb9b7b7f071d9f4e0fe0400f5011159e73e171bee1e6fa62718c6",
+      "common/src/engine.rs": "585e400d715f35da36b43e7c8d1edcb7d477bf00214986025dab340706d223ca",
+      "common/src/generator.rs": "8adff182497df2e7dead95f5a94e58cd982c4fab3b50b917af5ee67a3ee8abef",
+      "common/src/lib.rs": "524e7898caa8a92c3301e4c91f2d69737026f512608b5f87351308f9d93e6336",
+      "common/src/model.rs": "72ec763bb3aad8ebebace68ed5c3c86d48c3066df7e21797c8c3b10f380fc4e1",
+      "main.rs": "b4457bf4cef4e4a5790e0a684c3d18085dd67ec6c0428a33152bd12689a30e1d",
+      "official/sample_maps/README.md": "733c3fc6f3786aeabb7a02f07f5552d6d0a67c2acec2993b2522f7e82094cd5e",
+      "official/sample_maps/sample_16.json": "15ba3fd41ca8a69a2e22f707092d23f569ca75350524c2a0ecf956cedcaf823a",
+      "official/sample_maps/sample_24.json": "4081cbca170ad09e291015c10b76224bc0d960b4bc3baa72d9d96752c112d9a5",
+      "official/sample_maps/sample_32.json": "3293a63681f7f248d39013bab903619968ba7832c0a5368162c508d5ec7fadaa",
+      "pool.rs": "74a981b5f1423b16e07b8f0e888e00c797b41b670140921112b874b4a6b27214",
+      "runtime/generation6.sh": "051341b1c513f6a5584df5e186e8f5609957f740467d24fd296222d17610e691",
+      "runtime/generation8.sh": "fc80baa7f7bf11987b6010c1c43f4a2170a0c82dee20fb19a6d972551dbca9eb",
+      "runtime/nomlab.sh": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+      "runtime/v1.sh": "0064548dd334c4641025cc41e2aae4945c60a9945dd8707094524d62bf2ac1ba",
+      "runtime/v2.sh": "e17907a7d9e139dfba5ddb0411b121932cb9c627249ec0cb7ac7a7673b061f0c",
+      "runtime/v3.sh": "ddfac922f91c076bbbca639fcfeb4645226710eb9347b1a508e6e339ba0d0d70",
+      "runtime.rs": "a8ebea03ba5ef47dafe65305488bb2c60af8a1a7e9c6efaf4ae386dada045922",
+      "solver/planner.rs": "11e043e33018dee34f41f295d6ae1500497b0bfc7c8c33d5b253a5621587461a",
+      "tests/network.rs": "791605c460e75b038843ef20f5e00d34eee28f3464617b552511b420cad0d36b",
+      "tools/deploy.py": "e8607710e718cce7e73e3809c14674d5d722d1a68fc302cc19add72e528d71c7",
+      "tools/run_evaluation.py": "113dfa50bb7fd114a8df59ecba80b2dd7a286da96adc4386e325092ceda8a145",
+      "tools/snapshot.py": "ad1e2575d0d7c38d91d03f4f14195e2390c860d0c27080e086858f8f759d0ffb",
+      "tools/ssh.py": "1d7d5c2936a418d16bff801aad7ceea943e9a60162bf7e0f2108cc9cb38a7502",
+      "tools/summarize.py": "a07f5f3d21c1b90b25ed9221c8c2bcb817a186ae2d73796faf4977644d13e0e9",
+      "wire.rs": "7f438dff1998ec9ff6008eb1242e50f2edd5017544f0d589be687147de845f7e"
+    }
+  },
+  "nodes": {
+    "v1": {
+      "hostname": "VOIDLINUX-1",
+      "home": "/home/voidlinux-1",
+      "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0",
+      "files": {
+        "distributed-solver": {
+          "exists": true,
+          "sha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0"
+        },
+        "server-bridge": {
+          "exists": true,
+          "sha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e"
+        },
+        "launcher": {
+          "exists": true,
+          "sha256": "a7c37a7546fee4a62d2c0d5a9f82838e10793e2c3f9a08cd686d9c19c93c5b1a"
+        }
+      },
+      "cpus": [
+        {
+          "cpu": 0,
+          "core": "0",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 1,
+          "core": "1",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 2,
+          "core": "2",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 3,
+          "core": "3",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 4,
+          "core": "4",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 5,
+          "core": "5",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 6,
+          "core": "6",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 7,
+          "core": "7",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 8,
+          "core": "8",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 9,
+          "core": "9",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 10,
+          "core": "10",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 11,
+          "core": "11",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 12,
+          "core": "12",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 13,
+          "core": "13",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 14,
+          "core": "14",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 15,
+          "core": "15",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 16,
+          "core": "0",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 17,
+          "core": "1",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 18,
+          "core": "2",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 19,
+          "core": "3",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 20,
+          "core": "4",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 21,
+          "core": "5",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 22,
+          "core": "6",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 23,
+          "core": "7",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 24,
+          "core": "8",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 25,
+          "core": "9",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 26,
+          "core": "10",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 27,
+          "core": "11",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 28,
+          "core": "12",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 29,
+          "core": "13",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 30,
+          "core": "14",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 31,
+          "core": "15",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        }
+      ],
+      "onlineCpus": "0-31",
+      "numaNodes": "0",
+      "lscpu": {
+        "exitCode": 0,
+        "stdout": "{\n   \"lscpu\": [\n      {\n         \"field\": \"Architecture:\",\n         \"data\": \"x86_64\"\n      },{\n         \"field\": \"CPU op-mode(s):\",\n         \"data\": \"32-bit, 64-bit\"\n      },{\n         \"field\": \"Address sizes:\",\n         \"data\": \"48 bits physical, 48 bits virtual\"\n      },{\n         \"field\": \"Byte Order:\",\n         \"data\": \"Little Endian\"\n      },{\n         \"field\": \"CPU(s):\",\n         \"data\": \"32\"\n      },{\n         \"field\": \"On-line CPU(s) list:\",\n         \"data\": \"0-31\"\n      },{\n         \"field\": \"Vendor ID:\",\n         \"data\": \"AuthenticAMD\"\n      },{\n         \"field\": \"Model name:\",\n         \"data\": \"AMD Ryzen 9 9955HX3D 16-Core Processor\"\n      },{\n         \"field\": \"CPU family:\",\n         \"data\": \"26\"\n      },{\n         \"field\": \"Model:\",\n         \"data\": \"68\"\n      },{\n         \"field\": \"Thread(s) per core:\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Core(s) per socket:\",\n         \"data\": \"16\"\n      },{\n         \"field\": \"Socket(s):\",\n         \"data\": \"1\"\n      },{\n         \"field\": \"Stepping:\",\n         \"data\": \"0\"\n      },{\n         \"field\": \"Frequency boost:\",\n         \"data\": \"enabled\"\n      },{\n         \"field\": \"CPU(s) scaling MHz:\",\n         \"data\": \"30%\"\n      },{\n         \"field\": \"CPU max MHz:\",\n         \"data\": \"5460.5269\"\n      },{\n         \"field\": \"CPU min MHz:\",\n         \"data\": \"1217.1060\"\n      },{\n         \"field\": \"BogoMIPS:\",\n         \"data\": \"4990.57\"\n      },{\n         \"field\": \"Flags:\",\n         \"data\": \"fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good amd_lbr_v2 nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpuid_fault cpb cat_l3 cdp_l3 hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk avx_vnni avx512_bf16 clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif x2avic v_spec_ctrl vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid bus_lock_detect movdiri movdir64b overflow_recov succor smca fsrm avx512_vp2intersect flush_l1d amd_lbr_pmc_freeze\"\n      },{\n         \"field\": \"Virtualization:\",\n         \"data\": \"AMD-V\"\n      },{\n         \"field\": \"L1d cache:\",\n         \"data\": \"768 KiB (16 instances)\"\n      },{\n         \"field\": \"L1i cache:\",\n         \"data\": \"512 KiB (16 instances)\"\n      },{\n         \"field\": \"L2 cache:\",\n         \"data\": \"16 MiB (16 instances)\"\n      },{\n         \"field\": \"L3 cache:\",\n         \"data\": \"128 MiB (2 instances)\"\n      },{\n         \"field\": \"NUMA node(s):\",\n         \"data\": \"1\"\n      },{\n         \"field\": \"NUMA node0 CPU(s):\",\n         \"data\": \"0-31\"\n      },{\n         \"field\": \"Vulnerability Gather data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Ghostwrite:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Indirect target selection:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Itlb multihit:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability L1tf:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Meltdown:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mmio stale data:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Old microcode:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Reg file data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Retbleed:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Spec rstack overflow:\",\n         \"data\": \"Mitigation; IBPB on VMEXIT only\"\n      },{\n         \"field\": \"Vulnerability Spec store bypass:\",\n         \"data\": \"Mitigation; Speculative Store Bypass disabled via prctl\"\n      },{\n         \"field\": \"Vulnerability Spectre v1:\",\n         \"data\": \"Mitigation; usercopy/swapgs barriers and __user pointer sanitization\"\n      },{\n         \"field\": \"Vulnerability Spectre v2:\",\n         \"data\": \"Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP always-on; PBRSB-eIBRS Not affected; BHI Not affected\"\n      },{\n         \"field\": \"Vulnerability Srbds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsa:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsx async abort:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Vmscape:\",\n         \"data\": \"Mitigation; IBPB on VMEXIT\"\n      }\n   ]\n}",
+        "stderr": ""
+      },
+      "processes": [
+        {
+          "pid": 23813,
+          "name": "python3",
+          "executable": "/usr/bin/python3.13",
+          "paths": [
+            "/home/voidlinux-1/procon37-production/D0-records-20261009/distributed.py",
+            "/home/voidlinux-1/procon37-production/D0-records-20261009"
+          ],
+          "threads": 1,
+          "cpus": "0-31",
+          "state": "S (sleeping)",
+          "startTicks": "7374334",
+          "searchEnvironment": {
+            "SELECT_MS": ""
+          },
+          "otherProcon37VariableNames": []
+        },
+        {
+          "pid": 23816,
+          "name": "python3",
+          "executable": "/usr/bin/python3.13",
+          "paths": [
+            "/home/voidlinux-1/procon37-production/D0-records-20261009/distributed.py",
+            "/home/voidlinux-1/procon37-production/D0-records-20261009"
+          ],
+          "threads": 1,
+          "cpus": "0-31",
+          "state": "S (sleeping)",
+          "startTicks": "7374340",
+          "searchEnvironment": {
+            "SELECT_MS": ""
+          },
+          "otherProcon37VariableNames": []
+        },
+        {
+          "pid": 23923,
+          "name": "server-bridge",
+          "executable": "/home/voidlinux-1/procon37-production/D0-records-20261009/bin/server-bridge",
+          "paths": [
+            "/home/voidlinux-1/procon37-production/D0-records-20261009/bin/server-bridge",
+            "/home/voidlinux-1/procon37-production/D0-records-20261009/bin/distributed-solver",
+            "/home/voidlinux-1/procon37-production/D0-records-20261009",
+            "/home/voidlinux-1/procon37/.server/submissions"
+          ],
+          "threads": 33,
+          "cpus": "0-31",
+          "state": "S (sleeping)",
+          "startTicks": "7444654",
+          "--mode": "coordinator",
+          "--threads": "32",
+          "--peers": "192.168.0.22:39370/16/31,192.168.0.33:39370/32/46",
+          "executableSha256": "fd810b1d08f3acd9e477b199a4f9ca0e5b2fb0d2f444d7a8314396d972711869",
+          "searchEnvironment": {
+            "PROCON37_G007_FUTURE_WEIGHT": "0",
+            "PROCON37_G007_RESERVE_WEIGHT": "15"
+          },
+          "otherProcon37VariableNames": []
+        }
+      ],
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : 00000000 ()\nStratum         : 0\nRef time (UTC)  : Thu Jan 01 00:00:00 1970\nSystem time     : 0.000000001 seconds fast of NTP time\nLast offset     : +0.000000000 seconds\nRMS offset      : 0.000000000 seconds\nFrequency       : 3.895 ppm fast\nResidual freq   : +0.000 ppm\nSkew            : 0.000 ppm\nRoot delay      : 1.000000000 seconds\nRoot dispersion : 1.000000000 seconds\nUpdate interval : 0.0 seconds\nLeap status     : Not synchronised",
+        "stderr": ""
+      },
+      "chronySources": {
+        "exitCode": 0,
+        "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================",
+        "stderr": ""
+      },
+      "timedate": {
+        "error": "FileNotFoundError"
+      },
+      "bootId": "a8ef7e33-3ceb-49fd-8cc1-2fac10dd1d50",
+      "remoteUnix": 1791502901.341943,
+      "capturedAtUtc": "2026-10-08T23:41:41.341947+00:00",
+      "localMeasurementStartUnix": 1791502900.7808733,
+      "localMeasurementEndUnix": 1791502901.1045928,
+      "remoteClockOffsetBoundsSeconds": [
+        0.2373502254486084,
+        0.5610697269439697
+      ],
+      "expectedBinaryMatches": {
+        "distributed-solver": true,
+        "server-bridge": true
+      },
+      "launcherMatchesDeployment": true
+    },
+    "v2": {
+      "hostname": "VOIDLINUX-2",
+      "home": "/home/voidlinux-2",
+      "directory": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0",
+      "files": {
+        "distributed-solver": {
+          "exists": true,
+          "sha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0"
+        },
+        "server-bridge": {
+          "exists": true,
+          "sha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e"
+        },
+        "launcher": {
+          "exists": true,
+          "sha256": "cf8cd970a097cc64548e4471e6d68806ec41ab3aa8fdb3544647b27e893474ce"
+        }
+      },
+      "cpus": [
+        {
+          "cpu": 0,
+          "core": "0",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 1,
+          "core": "0",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 2,
+          "core": "1",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 3,
+          "core": "1",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 4,
+          "core": "2",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 5,
+          "core": "2",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 6,
+          "core": "3",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 7,
+          "core": "3",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 8,
+          "core": "4",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 9,
+          "core": "4",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 10,
+          "core": "5",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 11,
+          "core": "5",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 12,
+          "core": "6",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 13,
+          "core": "6",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 14,
+          "core": "7",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 15,
+          "core": "7",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        }
+      ],
+      "onlineCpus": "0-15",
+      "numaNodes": "0",
+      "lscpu": {
+        "exitCode": 0,
+        "stdout": "{\n   \"lscpu\": [\n      {\n         \"field\": \"Architecture:\",\n         \"data\": \"x86_64\"\n      },{\n         \"field\": \"CPU op-mode(s):\",\n         \"data\": \"32-bit, 64-bit\"\n      },{\n         \"field\": \"Address sizes:\",\n         \"data\": \"48 bits physical, 48 bits virtual\"\n      },{\n         \"field\": \"Byte Order:\",\n         \"data\": \"Little Endian\"\n      },{\n         \"field\": \"CPU(s):\",\n         \"data\": \"16\"\n      },{\n         \"field\": \"On-line CPU(s) list:\",\n         \"data\": \"0-15\"\n      },{\n         \"field\": \"Vendor ID:\",\n         \"data\": \"AuthenticAMD\"\n      },{\n         \"field\": \"Model name:\",\n         \"data\": \"AMD Ryzen 7 250 w/ Radeon 780M Graphics\"\n      },{\n         \"field\": \"CPU family:\",\n         \"data\": \"25\"\n      },{\n         \"field\": \"Model:\",\n         \"data\": \"117\"\n      },{\n         \"field\": \"Thread(s) per core:\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Core(s) per socket:\",\n         \"data\": \"8\"\n      },{\n         \"field\": \"Socket(s):\",\n         \"data\": \"1\"\n      },{\n         \"field\": \"Stepping:\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Frequency boost:\",\n         \"data\": \"enabled\"\n      },{\n         \"field\": \"CPU(s) scaling MHz:\",\n         \"data\": \"38%\"\n      },{\n         \"field\": \"CPU max MHz:\",\n         \"data\": \"5134.8892\"\n      },{\n         \"field\": \"CPU min MHz:\",\n         \"data\": \"419.1750\"\n      },{\n         \"field\": \"BogoMIPS:\",\n         \"data\": \"6587.32\"\n      },{\n         \"field\": \"Flags:\",\n         \"data\": \"fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good amd_lbr_v2 nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpuid_fault cpb cat_l3 cdp_l3 hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk avx512_bf16 clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold vgif x2avic v_spec_ctrl vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid overflow_recov succor smca fsrm flush_l1d amd_lbr_pmc_freeze\"\n      },{\n         \"field\": \"Virtualization:\",\n         \"data\": \"AMD-V\"\n      },{\n         \"field\": \"L1d cache:\",\n         \"data\": \"256 KiB (8 instances)\"\n      },{\n         \"field\": \"L1i cache:\",\n         \"data\": \"256 KiB (8 instances)\"\n      },{\n         \"field\": \"L2 cache:\",\n         \"data\": \"8 MiB (8 instances)\"\n      },{\n         \"field\": \"L3 cache:\",\n         \"data\": \"16 MiB (1 instance)\"\n      },{\n         \"field\": \"NUMA node(s):\",\n         \"data\": \"1\"\n      },{\n         \"field\": \"NUMA node0 CPU(s):\",\n         \"data\": \"0-15\"\n      },{\n         \"field\": \"Vulnerability Gather data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Ghostwrite:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Indirect target selection:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Itlb multihit:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability L1tf:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Meltdown:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mmio stale data:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Old microcode:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Reg file data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Retbleed:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Spec rstack overflow:\",\n         \"data\": \"Mitigation; Safe RET\"\n      },{\n         \"field\": \"Vulnerability Spec store bypass:\",\n         \"data\": \"Mitigation; Speculative Store Bypass disabled via prctl\"\n      },{\n         \"field\": \"Vulnerability Spectre v1:\",\n         \"data\": \"Mitigation; usercopy/swapgs barriers and __user pointer sanitization\"\n      },{\n         \"field\": \"Vulnerability Spectre v2:\",\n         \"data\": \"Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP always-on; PBRSB-eIBRS Not affected; BHI Not affected\"\n      },{\n         \"field\": \"Vulnerability Srbds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsa:\",\n         \"data\": \"Mitigation; Clear CPU buffers\"\n      },{\n         \"field\": \"Vulnerability Tsx async abort:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Vmscape:\",\n         \"data\": \"Mitigation; IBPB before exit to userspace\"\n      }\n   ]\n}",
+        "stderr": ""
+      },
+      "processes": [
+        {
+          "pid": 8795,
+          "name": "python3",
+          "executable": "/usr/bin/python3.13",
+          "paths": [
+            "/home/voidlinux-2/procon37-production/D0-records-20261009/distributed.py",
+            "/home/voidlinux-2/procon37-production/D0-records-20261009"
+          ],
+          "threads": 1,
+          "cpus": "0-15",
+          "state": "S (sleeping)",
+          "startTicks": "8007307",
+          "searchEnvironment": {},
+          "otherProcon37VariableNames": []
+        },
+        {
+          "pid": 8796,
+          "name": "distributed-sol",
+          "executable": "/home/voidlinux-2/procon37-production/D0-records-20261009/bin/distributed-solver",
+          "paths": [
+            "/home/voidlinux-2/procon37-production/D0-records-20261009/bin/distributed-solver"
+          ],
+          "threads": 16,
+          "cpus": "0-15",
+          "state": "S (sleeping)",
+          "startTicks": "8007315",
+          "--mode": "worker",
+          "--threads": "16",
+          "--worker-offset": "31",
+          "--listen": "192.168.0.22:39370",
+          "executableSha256": "4b9a18e376b5e2b97822418aa5d3a26b738e349226a134fd2608c18049538843",
+          "searchEnvironment": {
+            "PROCON37_G007_FUTURE_WEIGHT": "0",
+            "PROCON37_G007_RESERVE_WEIGHT": "15"
+          },
+          "otherProcon37VariableNames": []
+        }
+      ],
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : 851293A8 (133.18.147.168)\nStratum         : 3\nRef time (UTC)  : Thu Oct 08 08:20:56 2026\nSystem time     : 0.000090787 seconds slow of NTP time\nLast offset     : -0.001251494 seconds\nRMS offset      : 0.007191047 seconds\nFrequency       : 4.415 ppm fast\nResidual freq   : -0.015 ppm\nSkew            : 2.090 ppm\nRoot delay      : 0.034096867 seconds\nRoot dispersion : 0.183939353 seconds\nUpdate interval : 1030.3 seconds\nLeap status     : Normal",
+        "stderr": ""
+      },
+      "chronySources": {
+        "exitCode": 0,
+        "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^? 129.250.35.251                2   6     0   15h    +11ms[  +11ms] +/-   64ms\n^? 109.61.109.140                2  10     0   15h    +56ms[  +55ms] +/-  153ms\n^? 133.18.147.168                2  10     0   15h    -60ms[  -61ms] +/-   83ms\n^? 162.159.200.123               3   8     0   15h    +14ms[  +13ms] +/-   73ms",
+        "stderr": ""
+      },
+      "timedate": {
+        "error": "FileNotFoundError"
+      },
+      "bootId": "3e1e45ee-b88b-4832-871b-ee0ddb8e4184",
+      "remoteUnix": 1791502901.122434,
+      "capturedAtUtc": "2026-10-08T23:41:41.122437+00:00",
+      "localMeasurementStartUnix": 1791502900.7811093,
+      "localMeasurementEndUnix": 1791502901.106678,
+      "remoteClockOffsetBoundsSeconds": [
+        0.015755891799926758,
+        0.3413245677947998
+      ],
+      "expectedBinaryMatches": {
+        "distributed-solver": true,
+        "server-bridge": true
+      },
+      "launcherMatchesDeployment": true
+    },
+    "v3": {
+      "hostname": "VOIDLINUX-3",
+      "home": "/home/voidlinux-3",
+      "directory": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0",
+      "files": {
+        "distributed-solver": {
+          "exists": true,
+          "sha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0"
+        },
+        "server-bridge": {
+          "exists": true,
+          "sha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e"
+        },
+        "launcher": {
+          "exists": true,
+          "sha256": "e41fd115af140cd5260f36b0a8f88749f3c1ae7edf67c176a8a4ceef1cec21af"
+        }
+      },
+      "cpus": [
+        {
+          "cpu": 0,
+          "core": "0",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 1,
+          "core": "1",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 2,
+          "core": "2",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 3,
+          "core": "3",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 4,
+          "core": "4",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 5,
+          "core": "5",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 6,
+          "core": "6",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 7,
+          "core": "7",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 8,
+          "core": "8",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 9,
+          "core": "9",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 10,
+          "core": "10",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 11,
+          "core": "11",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 12,
+          "core": "12",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 13,
+          "core": "13",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 14,
+          "core": "14",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 15,
+          "core": "15",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 16,
+          "core": "0",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 17,
+          "core": "1",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 18,
+          "core": "2",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 19,
+          "core": "3",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 20,
+          "core": "4",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 21,
+          "core": "5",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 22,
+          "core": "6",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 23,
+          "core": "7",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 24,
+          "core": "8",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 25,
+          "core": "9",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 26,
+          "core": "10",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 27,
+          "core": "11",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 28,
+          "core": "12",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 29,
+          "core": "13",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 30,
+          "core": "14",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        },
+        {
+          "cpu": 31,
+          "core": "15",
+          "package": "0",
+          "online": "1",
+          "governor": "powersave",
+          "epp": "balance_performance"
+        }
+      ],
+      "onlineCpus": "0-31",
+      "numaNodes": "0",
+      "lscpu": {
+        "exitCode": 0,
+        "stdout": "{\n   \"lscpu\": [\n      {\n         \"field\": \"Architecture:\",\n         \"data\": \"x86_64\"\n      },{\n         \"field\": \"CPU op-mode(s):\",\n         \"data\": \"32-bit, 64-bit\"\n      },{\n         \"field\": \"Address sizes:\",\n         \"data\": \"48 bits physical, 48 bits virtual\"\n      },{\n         \"field\": \"Byte Order:\",\n         \"data\": \"Little Endian\"\n      },{\n         \"field\": \"CPU(s):\",\n         \"data\": \"32\"\n      },{\n         \"field\": \"On-line CPU(s) list:\",\n         \"data\": \"0-31\"\n      },{\n         \"field\": \"Vendor ID:\",\n         \"data\": \"AuthenticAMD\"\n      },{\n         \"field\": \"Model name:\",\n         \"data\": \"AMD Ryzen 9 9955HX 16-Core Processor\"\n      },{\n         \"field\": \"CPU family:\",\n         \"data\": \"26\"\n      },{\n         \"field\": \"Model:\",\n         \"data\": \"68\"\n      },{\n         \"field\": \"Thread(s) per core:\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Core(s) per socket:\",\n         \"data\": \"16\"\n      },{\n         \"field\": \"Socket(s):\",\n         \"data\": \"1\"\n      },{\n         \"field\": \"Stepping:\",\n         \"data\": \"0\"\n      },{\n         \"field\": \"Frequency boost:\",\n         \"data\": \"enabled\"\n      },{\n         \"field\": \"CPU(s) scaling MHz:\",\n         \"data\": \"33%\"\n      },{\n         \"field\": \"CPU max MHz:\",\n         \"data\": \"5060.9761\"\n      },{\n         \"field\": \"CPU min MHz:\",\n         \"data\": \"1219.5129\"\n      },{\n         \"field\": \"BogoMIPS:\",\n         \"data\": \"4990.13\"\n      },{\n         \"field\": \"Flags:\",\n         \"data\": \"fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good amd_lbr_v2 nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpuid_fault cpb cat_l3 cdp_l3 hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk avx_vnni avx512_bf16 clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif x2avic v_spec_ctrl vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid bus_lock_detect movdiri movdir64b overflow_recov succor smca fsrm avx512_vp2intersect flush_l1d amd_lbr_pmc_freeze\"\n      },{\n         \"field\": \"Virtualization:\",\n         \"data\": \"AMD-V\"\n      },{\n         \"field\": \"L1d cache:\",\n         \"data\": \"768 KiB (16 instances)\"\n      },{\n         \"field\": \"L1i cache:\",\n         \"data\": \"512 KiB (16 instances)\"\n      },{\n         \"field\": \"L2 cache:\",\n         \"data\": \"16 MiB (16 instances)\"\n      },{\n         \"field\": \"L3 cache:\",\n         \"data\": \"64 MiB (2 instances)\"\n      },{\n         \"field\": \"NUMA node(s):\",\n         \"data\": \"1\"\n      },{\n         \"field\": \"NUMA node0 CPU(s):\",\n         \"data\": \"0-31\"\n      },{\n         \"field\": \"Vulnerability Gather data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Ghostwrite:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Indirect target selection:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Itlb multihit:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability L1tf:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Meltdown:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mmio stale data:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Old microcode:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Reg file data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Retbleed:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Spec rstack overflow:\",\n         \"data\": \"Mitigation; IBPB on VMEXIT only\"\n      },{\n         \"field\": \"Vulnerability Spec store bypass:\",\n         \"data\": \"Mitigation; Speculative Store Bypass disabled via prctl\"\n      },{\n         \"field\": \"Vulnerability Spectre v1:\",\n         \"data\": \"Mitigation; usercopy/swapgs barriers and __user pointer sanitization\"\n      },{\n         \"field\": \"Vulnerability Spectre v2:\",\n         \"data\": \"Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP always-on; PBRSB-eIBRS Not affected; BHI Not affected\"\n      },{\n         \"field\": \"Vulnerability Srbds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsa:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsx async abort:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Vmscape:\",\n         \"data\": \"Mitigation; IBPB on VMEXIT\"\n      }\n   ]\n}",
+        "stderr": ""
+      },
+      "processes": [],
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : 00000000 ()\nStratum         : 0\nRef time (UTC)  : Thu Jan 01 00:00:00 1970\nSystem time     : 0.000000000 seconds slow of NTP time\nLast offset     : +0.000000000 seconds\nRMS offset      : 0.000000000 seconds\nFrequency       : 7.790 ppm slow\nResidual freq   : +0.000 ppm\nSkew            : 0.000 ppm\nRoot delay      : 1.000000000 seconds\nRoot dispersion : 1.000000000 seconds\nUpdate interval : 0.0 seconds\nLeap status     : Not synchronised",
+        "stderr": ""
+      },
+      "chronySources": {
+        "exitCode": 0,
+        "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================",
+        "stderr": ""
+      },
+      "timedate": {
+        "error": "FileNotFoundError"
+      },
+      "bootId": "21b738ab-7c59-47e2-bc9f-07075a0e35af",
+      "remoteUnix": 1791502900.668523,
+      "capturedAtUtc": "2026-10-08T23:41:40.668529+00:00",
+      "localMeasurementStartUnix": 1791502900.7813072,
+      "localMeasurementEndUnix": 1791502901.1497343,
+      "remoteClockOffsetBoundsSeconds": [
+        -0.48121118545532227,
+        -0.11278414726257324
+      ],
+      "expectedBinaryMatches": {
+        "distributed-solver": true,
+        "server-bridge": true
+      },
+      "launcherMatchesDeployment": true
+    },
+    "nomlab": {
+      "hostname": "NOMLAB-UBUNTU",
+      "home": "/home/nomlab-ubuntu",
+      "directory": "/home/nomlab-ubuntu/procon37-distributed",
+      "files": {
+        "bin/distributed-solver": {
+          "exists": true,
+          "sha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0"
+        },
+        "bin/server-bridge": {
+          "exists": true,
+          "sha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e"
+        },
+        "launcher": {
+          "exists": true,
+          "sha256": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5"
+        },
+        "run.sh": {
+          "exists": true,
+          "sha256": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27"
+        }
+      },
+      "cpus": [
+        {
+          "cpu": 0,
+          "core": "0",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 1,
+          "core": "0",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 2,
+          "core": "1",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 3,
+          "core": "1",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 4,
+          "core": "2",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 5,
+          "core": "2",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 6,
+          "core": "3",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 7,
+          "core": "3",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 8,
+          "core": "4",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 9,
+          "core": "4",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 10,
+          "core": "5",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 11,
+          "core": "5",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 12,
+          "core": "6",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 13,
+          "core": "6",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 14,
+          "core": "7",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 15,
+          "core": "7",
+          "package": "0",
+          "online": "1",
+          "governor": "performance",
+          "epp": "performance"
+        }
+      ],
+      "onlineCpus": "0-15",
+      "numaNodes": "0",
+      "lscpu": {
+        "exitCode": 0,
+        "stdout": "{\n   \"lscpu\": [\n      {\n         \"field\": \"Architecture:\",\n         \"data\": \"x86_64\"\n      },{\n         \"field\": \"CPU op-mode(s):\",\n         \"data\": \"32-bit, 64-bit\"\n      },{\n         \"field\": \"Address sizes:\",\n         \"data\": \"48 bits physical, 48 bits virtual\"\n      },{\n         \"field\": \"Byte Order:\",\n         \"data\": \"Little Endian\"\n      },{\n         \"field\": \"CPU(s):\",\n         \"data\": \"16\"\n      },{\n         \"field\": \"On-line CPU(s) list:\",\n         \"data\": \"0-15\"\n      },{\n         \"field\": \"Vendor ID:\",\n         \"data\": \"AuthenticAMD\"\n      },{\n         \"field\": \"Model name:\",\n         \"data\": \"AMD Ryzen 9 5900HS with Radeon Graphics\"\n      },{\n         \"field\": \"CPU family:\",\n         \"data\": \"25\"\n      },{\n         \"field\": \"Model:\",\n         \"data\": \"80\"\n      },{\n         \"field\": \"Thread(s) per core:\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"Core(s) per socket:\",\n         \"data\": \"8\"\n      },{\n         \"field\": \"Socket(s):\",\n         \"data\": \"1\"\n      },{\n         \"field\": \"Stepping:\",\n         \"data\": \"0\"\n      },{\n         \"field\": \"Frequency boost:\",\n         \"data\": \"enabled\"\n      },{\n         \"field\": \"CPU(s) scaling MHz:\",\n         \"data\": \"49%\"\n      },{\n         \"field\": \"CPU max MHz:\",\n         \"data\": \"4683.4712\"\n      },{\n         \"field\": \"CPU min MHz:\",\n         \"data\": \"423.2060\"\n      },{\n         \"field\": \"BogoMIPS:\",\n         \"data\": \"6587.97\"\n      },{\n         \"field\": \"Flags:\",\n         \"data\": \"fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm debug_swap\"\n      },{\n         \"field\": \"Virtualization:\",\n         \"data\": \"AMD-V\"\n      },{\n         \"field\": \"L1d cache:\",\n         \"data\": \"256 KiB (8 instances)\"\n      },{\n         \"field\": \"L1i cache:\",\n         \"data\": \"256 KiB (8 instances)\"\n      },{\n         \"field\": \"L2 cache:\",\n         \"data\": \"4 MiB (8 instances)\"\n      },{\n         \"field\": \"L3 cache:\",\n         \"data\": \"16 MiB (1 instance)\"\n      },{\n         \"field\": \"NUMA node(s):\",\n         \"data\": \"1\"\n      },{\n         \"field\": \"NUMA node0 CPU(s):\",\n         \"data\": \"0-15\"\n      },{\n         \"field\": \"Vulnerability Gather data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Ghostwrite:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Indirect target selection:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Itlb multihit:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability L1tf:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Meltdown:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mmio stale data:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Old microcode:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Reg file data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Retbleed:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Spec rstack overflow:\",\n         \"data\": \"Mitigation; Safe RET\"\n      },{\n         \"field\": \"Vulnerability Spec store bypass:\",\n         \"data\": \"Mitigation; Speculative Store Bypass disabled via prctl\"\n      },{\n         \"field\": \"Vulnerability Spectre v1:\",\n         \"data\": \"Mitigation; usercopy/swapgs barriers and __user pointer sanitization\"\n      },{\n         \"field\": \"Vulnerability Spectre v2:\",\n         \"data\": \"Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected\"\n      },{\n         \"field\": \"Vulnerability Srbds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsa:\",\n         \"data\": \"Mitigation; Clear CPU buffers\"\n      },{\n         \"field\": \"Vulnerability Tsx async abort:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Vmscape:\",\n         \"data\": \"Mitigation; IBPB before exit to userspace\"\n      }\n   ]\n}",
+        "stderr": ""
+      },
+      "processes": [],
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : 00000000 ()\nStratum         : 0\nRef time (UTC)  : Thu Jan 01 00:00:00 1970\nSystem time     : 0.000000044 seconds slow of NTP time\nLast offset     : +0.004555061 seconds\nRMS offset      : 0.007611314 seconds\nFrequency       : 16.668 ppm slow\nResidual freq   : +0.000 ppm\nSkew            : 0.000 ppm\nRoot delay      : 1.000000000 seconds\nRoot dispersion : 1.000000000 seconds\nUpdate interval : 1031.4 seconds\nLeap status     : Not synchronised",
+        "stderr": ""
+      },
+      "chronySources": {
+        "exitCode": 0,
+        "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^? 185.125.190.122               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 185.125.190.123               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 91.189.91.112                 0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 91.189.91.113                 0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 185.125.190.121               0   6     0     -     +0ns[   +0ns] +/-    0ns",
+        "stderr": ""
+      },
+      "timedate": {
+        "exitCode": 0,
+        "stdout": "NTPSynchronized=no\nTimeUSec=Fri 2026-10-09 08:41:41 JST",
+        "stderr": ""
+      },
+      "bootId": "5e7194e2-6254-4f3c-8119-15b50f6db0e2",
+      "remoteUnix": 1791502901.0834072,
+      "capturedAtUtc": "2026-10-08T23:41:41.083414+00:00",
+      "localMeasurementStartUnix": 1791502900.7816465,
+      "localMeasurementEndUnix": 1791502901.226615,
+      "remoteClockOffsetBoundsSeconds": [
+        -0.14320778846740723,
+        0.3017606735229492
+      ],
+      "expectedBinaryMatches": {
+        "distributed-solver": true,
+        "server-bridge": true
+      },
+      "launcherMatchesInitialFormal": true
+    }
+  },
+  "timingNote": "D0内部探索期限は各機monotonic clock。chronyと時刻はbridge/公式サーバー運用確認として記録し、同期設定は変更しない。"
+}

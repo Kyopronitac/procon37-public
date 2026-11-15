@@ -1,0 +1,109 @@
+{
+  "binarySha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+  "nodes": {
+    "v1": {
+      "directory": "/home/voidlinux-1/procon37-distributed",
+      "cpus": "0-31",
+      "arguments": [
+        "--mode",
+        "coordinator",
+        "--threads",
+        "32",
+        "--seed",
+        "0",
+        "--peers",
+        "192.168.0.22:39370/16/31,192.168.0.33:39370/32/46"
+      ],
+      "binarySha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "launcherSha256": "0064548dd334c4641025cc41e2aae4945c60a9945dd8707094524d62bf2ac1ba"
+    },
+    "v2": {
+      "directory": "/home/voidlinux-2/procon37-distributed",
+      "cpus": "0-15",
+      "arguments": [
+        "--mode",
+        "worker",
+        "--threads",
+        "16",
+        "--worker-offset",
+        "31",
+        "--listen",
+        "192.168.0.22:39370"
+      ],
+      "binarySha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "launcherSha256": "e17907a7d9e139dfba5ddb0411b121932cb9c627249ec0cb7ac7a7673b061f0c",
+      "process": {
+        "pid": 10015,
+        "directory": "/home/voidlinux-2/procon37-distributed",
+        "log": "/home/voidlinux-2/procon37-distributed/logs/worker.log"
+      }
+    },
+    "v3": {
+      "directory": "/home/voidlinux-3/procon37-distributed",
+      "cpus": "0-31",
+      "arguments": [
+        "--mode",
+        "worker",
+        "--threads",
+        "32",
+        "--worker-offset",
+        "46",
+        "--listen",
+        "192.168.0.33:39370"
+      ],
+      "binarySha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "launcherSha256": "ddfac922f91c076bbbca639fcfeb4645226710eb9347b1a508e6e339ba0d0d70",
+      "process": {
+        "pid": 2340,
+        "directory": "/home/voidlinux-3/procon37-distributed",
+        "log": "/home/voidlinux-3/procon37-distributed/logs/worker.log"
+      }
+    },
+    "nomlab": {
+      "directory": "/home/nomlab-ubuntu/procon37-distributed",
+      "cpus": "0-15",
+      "arguments": [
+        "--mode",
+        "parallel",
+        "--threads",
+        "16",
+        "--seed",
+        "0"
+      ],
+      "binarySha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "launcherSha256": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5"
+    }
+  },
+  "teams": {
+    "0": {
+      "pid": 13903,
+      "directory": "/home/voidlinux-1/procon37-distributed",
+      "log": "/home/voidlinux-1/procon37-distributed/logs/bridge.log"
+    },
+    "1": {
+      "pid": 14182,
+      "directory": "/home/nomlab-ubuntu/procon37-distributed",
+      "log": "/home/nomlab-ubuntu/procon37-distributed/logs/bridge.log"
+    },
+    "2": {
+      "pid": 301693,
+      "directory": "/home/jikky/Downloads/procon37/.server/distributed/team2",
+      "log": "/home/jikky/Downloads/procon37/.server/distributed/team2-bridge.log",
+      "cpus": "0"
+    },
+    "3": {
+      "pid": 301696,
+      "directory": "/home/jikky/Downloads/procon37/.server/distributed/team3",
+      "log": "/home/jikky/Downloads/procon37/.server/distributed/team3-bridge.log",
+      "cpus": "2"
+    }
+  },
+  "launchers": {
+    "solver/distributed/runtime/v1.sh": "0064548dd334c4641025cc41e2aae4945c60a9945dd8707094524d62bf2ac1ba",
+    "solver/distributed/runtime/v2.sh": "e17907a7d9e139dfba5ddb0411b121932cb9c627249ec0cb7ac7a7673b061f0c",
+    "solver/distributed/runtime/v3.sh": "ddfac922f91c076bbbca639fcfeb4645226710eb9347b1a508e6e339ba0d0d70",
+    "solver/distributed/runtime/nomlab.sh": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+    "solver/distributed/runtime/generation6.sh": "051341b1c513f6a5584df5e186e8f5609957f740467d24fd296222d17610e691",
+    "solver/distributed/runtime/generation8.sh": "fc80baa7f7bf11987b6010c1c43f4a2170a0c82dee20fb19a6d972551dbca9eb"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "runId": "1791558686429216196-38666",
+  "all48AC": true,
+  "players": [
+    {
+      "team": 0,
+      "rankSum": 15,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2965
+      },
+      "meanRank": 1.25
+    },
+    {
+      "team": 1,
+      "rankSum": 26,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2933
+      },
+      "meanRank": 2.1666666666666665
+    },
+    {
+      "team": 2,
+      "rankSum": 41,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 2887
+      },
+      "meanRank": 3.4166666666666665
+    },
+    {
+      "team": 3,
+      "rankSum": 31,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1274,
+        "udon": 2915
+      },
+      "meanRank": 2.5833333333333335
+    }
+  ],
+  "version": "C012-isolated-cooperation-on",
+  "stage": "H2-C012-on-short-01",
+  "verifiedUnchanged": true,
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "分散C012・7群の日中通信と独立受信3本・再開後新環境の比較1回目・短縮12件・10秒",
+    "players": 4,
+    "teamNames": [
+      "分散C012-isolated-cooperation-on",
+      "固定並列",
+      "固定第6世代",
+      "固定第8世代"
+    ],
+    "timeLimitMs": 10000,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "comparison": {
+    "win": 6,
+    "tie": 0,
+    "loss": 6
+  },
+  "beforeRunId": "1791557693555197384-34655",
+  "before": {
+    "team": 0,
+    "rankSum": 20,
+    "scores": {
+      "uniqueBrands": 222,
+      "dailyBrands": 1277,
+      "udon": 2961
+    },
+    "meanRank": 1.6666666666666667
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "migratedAt": "2026-10-07T12:53:16.587351+09:00",
+  "reason": "ユーザー指示により全世代の記録をsolver-pool-experimentへ集約。旧poolディレクトリは全ファイルの移管確認後に削除。",
+  "contentPreserved": true,
+  "files": [
+    {
+      "from": "solver/docs/pool/HANDOFF.md",
+      "to": "solver/docs/solver-pool-experiment/records/HANDOFF.md",
+      "sha256AtMigration": "628a89af7372ecc078c8dd10391063bc8daa7845296486e6eedeadecc0f6dcc3"
+    },
+    {
+      "from": "solver/docs/pool/generation-001-config.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-001-config.json",
+      "sha256AtMigration": "09378080eb4adbcc937ffb3f6ebb80a2644d03a129e148aed35edd6f7955aea7"
+    },
+    {
+      "from": "solver/docs/pool/generation-001.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-001.json",
+      "sha256AtMigration": "90db5ee0f11c0f4937e0043bd9d8390d00652669c79dbfcee1da8e6125d259c4"
+    },
+    {
+      "from": "solver/docs/pool/generation-001.md",
+      "to": "solver/docs/solver-pool-experiment/records/generation-001.md",
+      "sha256AtMigration": "346901128b4dc9310226596a542aa0ac6d64da167df27b800268d579e1f66286"
+    },
+    {
+      "from": "solver/docs/pool/generation-002-config.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-002-config.json",
+      "sha256AtMigration": "59b19f2213b1aabbd55d89a2dae6ad83d919a76e29d9b6e68d4bfa5f5e909aed"
+    },
+    {
+      "from": "solver/docs/pool/generation-002.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-002.json",
+      "sha256AtMigration": "c87560e251f65ee03446f5502b307b20d679df7a0b8fdbc3cc439c41856e8b34"
+    },
+    {
+      "from": "solver/docs/pool/generation-002.md",
+      "to": "solver/docs/solver-pool-experiment/records/generation-002.md",
+      "sha256AtMigration": "748b811e851bb2f64d89dc12ddb7e669a2bf56b3031613bd465c1afce796a72d"
+    },
+    {
+      "from": "solver/docs/pool/generation-003-config.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-003-config.json",
+      "sha256AtMigration": "400885028829f118773a0ae6dbaef75be9e60d9c07409da3fce82c12bd159bbb"
+    },
+    {
+      "from": "solver/docs/pool/generation-003.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-003.json",
+      "sha256AtMigration": "740a94112d17e99594df85d6c0e1458f28aeaaaf21d63e4318b1862fd792afaa"
+    },
+    {
+      "from": "solver/docs/pool/generation-003.md",
+      "to": "solver/docs/solver-pool-experiment/records/generation-003.md",
+      "sha256AtMigration": "486e3f2dfc655bf020e4c43c8ef9d103de5e4d8b2761d33f3ba1374c32a36616"
+    },
+    {
+      "from": "solver/docs/pool/generation-004-config.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-004-config.json",
+      "sha256AtMigration": "eba800873f2db5ce7d5129e92cc6ee3f93a511d29efc0d7eacbff4cd225a0c01"
+    },
+    {
+      "from": "solver/docs/pool/generation-004-interrupted.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-004-interrupted.json",
+      "sha256AtMigration": "d9818240cf2679faca3f496e02a888326d09455a196be20107715094df589f9d"
+    },
+    {
+      "from": "solver/docs/pool/generation-004.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-004.json",
+      "sha256AtMigration": "d5dc0064ca5ca5b9ca8e647d1cf9cf7cce6e3614bb684e160e89db8c6dd33986"
+    },
+    {
+      "from": "solver/docs/pool/generation-004.md",
+      "to": "solver/docs/solver-pool-experiment/records/generation-004.md",
+      "sha256AtMigration": "3f3794f0105f09e3e77b9116f85f84b46cd1b134e6aa0a7aadb3808e097c1655"
+    },
+    {
+      "from": "solver/docs/pool/generation-005-config.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-005-config.json",
+      "sha256AtMigration": "daef57db6f6c09b368ddae152124914a5af860ee7cb132e4dc69b80f52888a28"
+    },
+    {
+      "from": "solver/docs/pool/generation-005.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-005.json",
+      "sha256AtMigration": "2efd22b3b6458c9cf883645c3c9b5396264abef7fdcce6b27dc0577cc9ab9ada"
+    },
+    {
+      "from": "solver/docs/pool/generation-005.md",
+      "to": "solver/docs/solver-pool-experiment/records/generation-005.md",
+      "sha256AtMigration": "133b40088345aed424e4b06a3d7afa41bbd44e42ecc048d745e1872ac1aad255"
+    },
+    {
+      "from": "solver/docs/pool/generation-006-config.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-006-config.json",
+      "sha256AtMigration": "0a98aa620fe26ac423fdc1b44cc099659ba4a3b354619f895c4c1519ed90352f"
+    },
+    {
+      "from": "solver/docs/pool/generation-006.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-006.json",
+      "sha256AtMigration": "cd8ba8775e49728a196b88af1144a19dcabac8185600f3a96fa884620129799b"
+    },
+    {
+      "from": "solver/docs/pool/generation-006.md",
+      "to": "solver/docs/solver-pool-experiment/records/generation-006.md",
+      "sha256AtMigration": "4d4c74b23f2a378e6e0a4a510e8665876bceecca251a8e797fa01325be249913"
+    },
+    {
+      "from": "solver/docs/pool/generation-007-config.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-007-config.json",
+      "sha256AtMigration": "54de1b23337824e2b1ad28c2f6ab3bb75fa265aeec769799ca419221afe1302e"
+    },
+    {
+      "from": "solver/docs/pool/generation-007-vs-006-full-20261006.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-007-vs-006-full-20261006.json",
+      "sha256AtMigration": "b152a4541b6cf19d5136e1518a6f8de0c3a9fb91d95135cd0feeb7245834edd0"
+    },
+    {
+      "from": "solver/docs/pool/generation-007.json",
+      "to": "solver/docs/solver-pool-experiment/records/generation-007.json",
+      "sha256AtMigration": "6b27be9187e98daa4402b83ac43b64b98c2da29df4ae8bb98f1eb345445131a5"
+    },
+    {
+      "from": "solver/docs/pool/generation-007.md",
+      "to": "solver/docs/solver-pool-experiment/records/generation-007.md",
+      "sha256AtMigration": "b51af43c88e1caa95671182b2e1ac2314b75d74b4a2fdbfacca6d14e88ecf1d5"
+    },
+    {
+      "from": "solver/docs/pool/generation-008.md",
+      "to": "solver/docs/solver-pool-experiment/records/generation-008.md",
+      "sha256AtMigration": "8b128d48df257e8c3ad68b93716f63c52a5a4de4fd7b66956b0d89c849c4c52b"
+    }
+  ],
+  "note": "ハッシュは移動時点の内容を示す。過去の評価記録に含まれる当時のパス・実行条件は書き換えない。第8世代記録は既存テスト完了後に追記する。",
+  "existingSourceHashes": {
+    "solver/docs/solver-pool-experiment/solver03.rs": "13e50fb4e3b0c2701f7900e2bbf9de461eb562cd2d1f201357c1dd10d46f9e57",
+    "solver/docs/solver-pool-experiment/solver01.rs": "096e0f40601cee49043012631855686730429a40e21f09ee5f27f6e6316546a3",
+    "solver/docs/solver-pool-experiment/solver05.rs": "d66b6b160434552e9dbb71a5bd2924b681c66574321c1a813dc7e2994b76eff4",
+    "solver/docs/solver-pool-experiment/solver04.rs": "d2a83b3af0f6cdb89590ae203d29faeadae3b206a14b5908d1027ef45bf77fa3",
+    "solver/docs/solver-pool-experiment/solver02.rs": "a73bfc100b3d27843f93b58c6c63f8f5486c10f883d5039f0fa9efda158cee7e",
+    "solver/docs/solver-pool-experiment/solver03/rendezvous.rs": "5234f63aab664e2994b0ef16d4d1e4de1eb1ca2b429dd02d8d33e541dfe357c2",
+    "solver/docs/solver-pool-experiment/solver03/entry.rs": "9c17a019ea6a99aef2e162a28180a5731ab1ada06ec11285f80aa1eba14972a5",
+    "solver/docs/solver-pool-experiment/solver01/horizon.rs": "4f2a8b9b3132706a750ac01a88de74a2f208ca022e2794f7fa0ae11ae883cad2",
+    "solver/docs/solver-pool-experiment/solver01/entry.rs": "eb86539fa413097f079a4275129b8392d9e756674bcdab1d32d908307834d1fd",
+    "solver/docs/solver-pool-experiment/solver04/route_set.rs": "06826acec428372446fa85d3510f8f354f057be436d592d459bad69d194514d3",
+    "solver/docs/solver-pool-experiment/solver04/joint.rs": "f123c28addc2c639b1c41ccc5336c3c44b81e70228d1ad4762452999e751b743",
+    "solver/docs/solver-pool-experiment/solver04/window.rs": "59f38d3ab52c3cc051a922557b81d3069b956e2f1414e4761036c2d58538c892",
+    "solver/docs/solver-pool-experiment/solver04/circuit.rs": "83a82c32a4f3af15c13687e648f0c3d5a0319f2783b1323e402f46ae23378554",
+    "solver/docs/solver-pool-experiment/solver04/patrol_first.rs": "0af577c425b8ab50913c439d92508849f9758bbad1f92ecabe51d285f8a4a1ed",
+    "solver/docs/solver-pool-experiment/solver04/escort.rs": "fbd3f2a7672cce50dee359f04d23f4df926c7f1587f6a3cd6f600d3a431d2481",
+    "solver/docs/solver-pool-experiment/solver04/tour.rs": "9716fdad94fc02b3c5eab4bfcab7403e1dd9d1cc3b8ab5cb452acce94b6a530e",
+    "solver/docs/solver-pool-experiment/solver04/tomorrow.rs": "e949c75c46b80dc9029cde90380d77631132cc9d24bb53a108b45158e4c18ac2",
+    "solver/docs/solver-pool-experiment/solver04/itinerary.rs": "0f5e1810f4be8ed7276b1b1e1c22b006127298bdb959304f94f0d3fda81db299",
+    "solver/docs/solver-pool-experiment/solver04/entry.rs": "7ffe3910d024e505ce6a3911683e05df92398c964ce48ce50ea13576947788f2",
+    "solver/docs/solver-pool-experiment/solver02/rendezvous.rs": "46786c32d744210cd594520e9be2731c7c6a9354f7ee699954d4667b02fca7da",
+    "solver/docs/solver-pool-experiment/solver02/entry.rs": "5fd03403a449c3d0a407ce0fe9449e0d510b7be5235803fc869688743eebebdb",
+    "solver/docs/solver-pool-experiment/solver05/main.rs": "4d3703b6d6c239ae24c91124b7142e156a719663c80c790a149705234439bdd6",
+    "solver/docs/solver-pool-experiment/solver05/solver/search.rs": "149bcf8edeea344074bb2e8ed5eedfc5a9bf2c34f5534f8784625c241b7df013",
+    "solver/docs/solver-pool-experiment/solver05/solver/network.rs": "dbe0ca0ddd5dafa2729a5576b0ba784d5925b425bf3710436bf47b20e56f035d",
+    "solver/docs/solver-pool-experiment/Cargo.toml": "cc654cabda99abbf38aa71bde48097d5754938732ebe1fc32112f405a7a60c57",
+    "solver/docs/solver-pool-experiment/Cargo.lock": "1e1dffb9d1cef88ff240fb95f3059b1afebe477ad3837cad8b44f91783680f80",
+    "solver/docs/solver-pool-experiment/source-manifest.json": "ec951420e7f02e84c0106095b65a2dc07096acf9ed9c68089aa583c2523a95ca"
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "hostname": "VOIDLINUX-1",
+  "capturedAtUtc": "2026-10-09T03:23:51.873597+00:00",
+  "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0",
+  "log": {
+    "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team.log",
+    "capturedStartByte": 58635,
+    "capturedEndByte": 65119,
+    "previousCapturedRangeSha256Verified": true,
+    "previousRangeStartByte": 52150,
+    "previousRangeEndByte": 58635,
+    "previousRangeSha256": "cdd8384a5ab7f68072b7963ed9c3fbd641b7bdbcceea947b3b12d7ab238b330b",
+    "sourceSizeAtOpen": 65119,
+    "inode": 267665,
+    "device": 2050,
+    "mtimeNsAtOpen": 1791516213024772460,
+    "sha256OfCapturedByteRange": "91207734dd914b06be2e551623f9f4c3d3c1dea12658843cc00eb65e9408fb4b",
+    "totalLines": 137,
+    "diagnosticLines": [],
+    "crossEliteLines": [],
+    "sharedGraphLines": [],
+    "flags": {
+      "timeout": {
+        "count": 0,
+        "samples": []
+      },
+      "deadline": {
+        "count": 0,
+        "samples": []
+      },
+      "fallback": {
+        "count": 0,
+        "samples": []
+      },
+      "panic": {
+        "count": 0,
+        "samples": []
+      },
+      "rejected": {
+        "count": 0,
+        "samples": []
+      },
+      "unavailable": {
+        "count": 0,
+        "samples": []
+      },
+      "disconnected": {
+        "count": 0,
+        "samples": []
+      }
+    }
+  },
+  "cpus": [
+    {
+      "cpu": 0,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 1,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 2,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 3,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 4,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 5,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 6,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 7,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 8,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 9,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 10,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 11,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 12,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 13,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 14,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 15,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 16,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 17,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 18,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 19,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 20,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 21,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 22,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 23,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 24,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 25,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 26,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 27,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 28,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 29,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 30,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 31,
+      "governor": "performance",
+      "epp": "performance"
+    }
+  ],
+  "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 03:23:50 2026\nSystem time     : 0.000004582 seconds slow of NTP time\nLast offset     : -0.000004613 seconds\nRMS offset      : 0.000010190 seconds\nFrequency       : 5.426 ppm fast\nResidual freq   : -0.010 ppm\nSkew            : 0.446 ppm\nRoot delay      : 0.000171512 seconds\nRoot dispersion : 0.001012147 seconds\nUpdate interval : 32.5 seconds\nLeap status     : Normal\n",
+  "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   4   377     0  +2047ns[-2566ns] +/- 1094us\n",
+  "clockProbe": {
+    "server": "192.168.0.81",
+    "port": 32123,
+    "samples": [
+      {
+        "serverMinusClientMs": 0.025153160095214844,
+        "roundTripMs": 0.37217140197753906
+      },
+      {
+        "serverMinusClientMs": -0.1634359359741211,
+        "roundTripMs": 0.9644031524658203
+      },
+      {
+        "serverMinusClientMs": -0.0034570693969726562,
+        "roundTripMs": 0.5042552947998047
+      },
+      {
+        "serverMinusClientMs": -0.28312206268310547,
+        "roundTripMs": 1.1065006256103516
+      },
+      {
+        "serverMinusClientMs": -0.2422332763671875,
+        "roundTripMs": 1.1272430419921875
+      },
+      {
+        "serverMinusClientMs": -0.1876354217529297,
+        "roundTripMs": 0.9074211120605469
+      },
+      {
+        "serverMinusClientMs": -0.018835067749023438,
+        "roundTripMs": 0.3724098205566406
+      },
+      {
+        "serverMinusClientMs": -0.01633167266845703,
+        "roundTripMs": 0.29397010803222656
+      },
+      {
+        "serverMinusClientMs": -0.0073909759521484375,
+        "roundTripMs": 0.3418922424316406
+      },
+      {
+        "serverMinusClientMs": -0.006318092346191406,
+        "roundTripMs": 0.43129920959472656
+      },
+      {
+        "serverMinusClientMs": -0.02014636993408203,
+        "roundTripMs": 0.4074573516845703
+      },
+      {
+        "serverMinusClientMs": -0.4241466522216797,
+        "roundTripMs": 1.27410888671875
+      },
+      {
+        "serverMinusClientMs": -0.3097057342529297,
+        "roundTripMs": 0.9288787841796875
+      },
+      {
+        "serverMinusClientMs": -0.032067298889160156,
+        "roundTripMs": 0.4298686981201172
+      },
+      {
+        "serverMinusClientMs": 0.0007152557373046875,
+        "roundTripMs": 0.4715919494628906
+      },
+      {
+        "serverMinusClientMs": -0.18143653869628906,
+        "roundTripMs": 0.9074211120605469
+      }
+    ],
+    "medianBestHalfOffsetMs": -0.011861324310302734,
+    "minimumRoundTripMs": 0.29397010803222656,
+    "capturedUnix": 1791516232.6965122
+  },
+  "launcherAtCompletion": {
+    "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+    "sha256": "ebcd6ee7841830d20e4ceafeeea94ccd367558fa8401e39593c1ded75b029897",
+    "text": "#!/bin/sh\nexec env -i PATH=/usr/bin:/bin PROCON37_G007_FUTURE_WEIGHT=0 PROCON37_G007_RESERVE_WEIGHT=15 PROCON37_DISTRIBUTED_TOKEN_FILE=/home/voidlinux-1/procon37-distributed-resume/20261009-D0/cluster.token taskset -c 0-31 /home/voidlinux-1/procon37-distributed-resume/20261009-D0/distributed-solver --mode coordinator --threads 32 --seed 0 --peers 192.168.0.22:39370/16/31,192.168.0.33:39370/32/46 --cross-elite on \"$@\"\n"
+  },
+  "processes": [],
+  "remainingRuntimeProcesses": [
+    {
+      "pid": 643,
+      "role": "runner",
+      "executable": "/usr/bin/python3.13",
+      "executableSha256": "ba898d6049ed77035dcc976cb099912c650ab670aed4105b850a97c63c7ce352",
+      "startTicks": "8721578",
+      "status": {
+        "Name": "python3",
+        "State": "S (sleeping)",
+        "Threads": "1",
+        "Cpus_allowed_list": "0-31",
+        "VmRSS": "12848 kB",
+        "VmHWM": "12848 kB",
+        "VmSize": "21576 kB",
+        "VmPeak": "21624 kB"
+      }
+    },
+    {
+      "pid": 1703,
+      "role": "bridge",
+      "executable": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+      "executableSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+      "startTicks": "8812536",
+      "status": {
+        "Name": "server-bridge",
+        "State": "S (sleeping)",
+        "Threads": "33",
+        "Cpus_allowed_list": "0-31",
+        "VmRSS": "4892 kB",
+        "VmHWM": "4892 kB",
+        "VmSize": "2169584 kB",
+        "VmPeak": "2169584 kB"
+      }
+    }
+  ]
+}

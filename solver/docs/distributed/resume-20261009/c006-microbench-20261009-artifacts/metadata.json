@@ -1,0 +1,187 @@
+{
+  "purpose": "finite CPU timing microbench; not server short12, not formal, not adoption",
+  "host": "VOIDLINUX-2",
+  "cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "environment": {
+    "PROCON37_G007_FUTURE_WEIGHT": "0",
+    "PROCON37_G007_RESERVE_WEIGHT": "15"
+  },
+  "startedAt": "2026-10-08T22:45:44.047176+00:00",
+  "cpuSettingsBefore": {
+    "policy11": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy8": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy6": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy4": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy2": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy14": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy0": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy12": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy9": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy10": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy7": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy5": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy3": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy15": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy1": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy13": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    }
+  },
+  "preflightProcesses": [
+    "  PID COMMAND         %CPU NLWP",
+    " 8328 python3         50.0    1",
+    " 6240 kworker/0:3-mm_  4.3    1",
+    " 6233 kworker/0:2-pm   4.2    1",
+    " 8289 kworker/7:1-eve  2.0    1",
+    " 1739 xfce4-taskmanag  1.5    5",
+    " 8027 kworker/7:0-mm_  1.1    1",
+    " 7632 kworker/7:2-mm_  0.6    1",
+    " 8228 kworker/6:1-mm_  0.6    1",
+    " 7839 kworker/13:2-ev  0.6    1",
+    " 7727 kworker/6:2-mm_  0.3    1",
+    " 1010 Xorg             0.3   17",
+    " 8285 kworker/12:1-ev  0.2    1",
+    " 7917 kworker/12:2-mm  0.2    1",
+    " 7858 kworker/13:3-ev  0.2    1",
+    " 1022 wpa_supplicant   0.2    1",
+    "  796 nv_mem_pool_scr  0.1    1",
+    " 7883 kworker/2:2-mm_  0.1    1",
+    " 1467 xfwm4            0.0   16",
+    " 7735 kworker/12:0-ev  0.0    1"
+  ],
+  "binaries": {
+    "d0": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+    "c006": "23c0d0abb72e3d3aeff217c8a5aabfa8084a2655345d03ee7e291848fe7490d2"
+  },
+  "finishedAt": "2026-10-08T22:46:42.916246+00:00",
+  "cpuSettingsAfter": {
+    "policy11": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy8": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy6": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy4": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy2": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy14": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy0": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy12": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy9": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy10": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy7": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy5": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy3": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy15": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy1": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy13": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    }
+  },
+  "allStopped": true
+}

@@ -1,0 +1,616 @@
+{
+  "hostname": "VOIDLINUX-3",
+  "capturedAtUtc": "2026-10-09T03:23:52.083765+00:00",
+  "directory": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0",
+  "log": {
+    "path": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/resume-team.log",
+    "capturedStartByte": 23724072,
+    "capturedEndByte": 26363408,
+    "previousCapturedRangeSha256Verified": true,
+    "previousRangeStartByte": 20957570,
+    "previousRangeEndByte": 23724072,
+    "previousRangeSha256": "b5b863dbff1076d7c7079afbdde55510556719197bfbf836df6035c8347ec9eb",
+    "sourceSizeAtOpen": 26363408,
+    "inode": 42339654,
+    "device": 66306,
+    "mtimeNsAtOpen": 1791516210598085880,
+    "sha256OfCapturedByteRange": "48234f50bda210a4db39b6391f4c845db4ed5220639f8eaebe431eb4abd7db11",
+    "totalLines": 12913,
+    "diagnosticLines": [
+      "dist mode=worker listen=192.168.0.33:39370 total_threads=32 search_threads=31 offset=46 pid=2072 cross_elite=true",
+      "dist accepted_peer=192.168.0.11:53056",
+      "dist worker request=1 job=1 phase=select input_digest=9b0f11c8123097b3 started=31 budget_ms=8866",
+      "dist worker request=1 completed=31/31 selected_worker=70 elapsed_ms=8439 rx_bytes=1559 tx_bytes=77",
+      "dist worker request=2 job=2 phase=plan input_digest=856c335d4f75a7fc started=31 budget_ms=8739",
+      "dist worker request=2 completed=31/31 selected_worker=48 elapsed_ms=8459 rx_bytes=50572 tx_bytes=32862",
+      "dist worker request=3 job=3 phase=plan input_digest=d20d0635056c5767 started=31 budget_ms=8738",
+      "dist worker request=3 completed=31/31 selected_worker=46 elapsed_ms=8460 rx_bytes=108711 tx_bytes=79753",
+      "dist worker request=4 job=4 phase=plan input_digest=5dc00976d8736373 started=31 budget_ms=8732",
+      "dist worker request=4 completed=31/31 selected_worker=48 elapsed_ms=8454 rx_bytes=174743 tx_bytes=133262",
+      "dist worker request=5 job=5 phase=plan input_digest=d08f79398f473010 started=31 budget_ms=8740",
+      "dist worker request=5 completed=31/31 selected_worker=48 elapsed_ms=8463 rx_bytes=235960 tx_bytes=180578",
+      "dist worker request=6 job=6 phase=plan input_digest=14cc170fa752edc4 started=31 budget_ms=8739",
+      "dist worker request=6 completed=31/31 selected_worker=46 elapsed_ms=8008 rx_bytes=297937 tx_bytes=229124",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:51258",
+      "dist worker request=1 job=7 phase=select input_digest=4c51c769bcea8577 started=31 budget_ms=8101",
+      "dist worker request=1 completed=31/31 selected_worker=56 elapsed_ms=7731 rx_bytes=2496 tx_bytes=77",
+      "dist worker request=2 job=8 phase=plan input_digest=81e3f84ce43631f3 started=31 budget_ms=8691",
+      "dist worker request=2 completed=31/31 selected_worker=65 elapsed_ms=8306 rx_bytes=48482 tx_bytes=17191",
+      "dist worker request=3 job=9 phase=plan input_digest=92ebedf2e4d6befc started=31 budget_ms=8844",
+      "dist worker request=3 completed=31/31 selected_worker=60 elapsed_ms=8455 rx_bytes=163471 tx_bytes=105210",
+      "dist worker request=4 job=10 phase=plan input_digest=99678bdb4c854f1d started=31 budget_ms=8856",
+      "dist worker request=4 completed=31/31 selected_worker=64 elapsed_ms=8469 rx_bytes=282259 tx_bytes=197645",
+      "dist worker request=5 job=11 phase=plan input_digest=392cf3ca06d8898b started=31 budget_ms=8854",
+      "dist worker request=5 completed=31/31 selected_worker=68 elapsed_ms=8462 rx_bytes=396112 tx_bytes=291649",
+      "dist worker request=6 job=12 phase=plan input_digest=263f50fd58d0cc62 started=31 budget_ms=8854",
+      "dist worker request=6 completed=31/31 selected_worker=56 elapsed_ms=8140 rx_bytes=548961 tx_bytes=414669",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:36456",
+      "dist worker request=1 job=13 phase=select input_digest=b2617693af20771a started=31 budget_ms=7860",
+      "dist worker request=1 completed=31/31 selected_worker=66 elapsed_ms=7598 rx_bytes=3694 tx_bytes=77",
+      "dist worker request=2 job=14 phase=plan input_digest=99ad70d08251da74 started=31 budget_ms=8836",
+      "dist worker request=2 completed=31/31 selected_worker=73 elapsed_ms=8545 rx_bytes=145374 tx_bytes=95250",
+      "dist worker request=3 job=15 phase=plan input_digest=125a78259ca9ae81 started=31 budget_ms=8791",
+      "dist worker request=3 completed=31/31 selected_worker=64 elapsed_ms=8498 rx_bytes=326869 tx_bytes=239285",
+      "dist worker request=4 job=16 phase=plan input_digest=78c62baf59b377c5 started=31 budget_ms=8788",
+      "dist worker request=4 completed=31/31 selected_worker=50 elapsed_ms=8496 rx_bytes=513213 tx_bytes=388660",
+      "dist worker request=5 job=17 phase=plan input_digest=ade882bbb783309e started=31 budget_ms=8787",
+      "dist worker request=5 completed=31/31 selected_worker=46 elapsed_ms=8493 rx_bytes=702018 tx_bytes=539407",
+      "dist worker request=6 job=18 phase=plan input_digest=bd0ba4da51acd980 started=31 budget_ms=8787",
+      "dist worker request=6 completed=31/31 selected_worker=60 elapsed_ms=8161 rx_bytes=943623 tx_bytes=754156",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:35046",
+      "dist worker request=1 job=19 phase=select input_digest=68c3d7477ed14d28 started=31 budget_ms=8035",
+      "dist worker request=1 completed=31/31 selected_worker=71 elapsed_ms=7637 rx_bytes=1599 tx_bytes=77",
+      "dist worker request=2 job=20 phase=plan input_digest=4ef3975569f17559 started=31 budget_ms=8690",
+      "dist worker request=2 completed=31/31 selected_worker=49 elapsed_ms=8410 rx_bytes=19264 tx_bytes=9476",
+      "dist worker request=3 job=21 phase=plan input_digest=3fdfa02a2cc852bb started=31 budget_ms=8742",
+      "dist worker request=3 completed=31/31 selected_worker=46 elapsed_ms=8461 rx_bytes=75601 tx_bytes=48001",
+      "dist worker request=4 job=22 phase=plan input_digest=08b1d481fdda87d6 started=31 budget_ms=8734",
+      "dist worker request=4 completed=31/31 selected_worker=56 elapsed_ms=8454 rx_bytes=136978 tx_bytes=88135",
+      "dist worker request=5 job=23 phase=plan input_digest=ca14442564d6a077 started=31 budget_ms=8742",
+      "dist worker request=5 completed=31/31 selected_worker=52 elapsed_ms=8461 rx_bytes=201140 tx_bytes=136157",
+      "dist worker request=6 job=24 phase=plan input_digest=236f3d7155205edc started=31 budget_ms=8741",
+      "dist worker request=6 completed=31/31 selected_worker=54 elapsed_ms=8461 rx_bytes=265258 tx_bytes=184859",
+      "dist worker request=7 job=25 phase=plan input_digest=03c6f5f8a4127a6d started=31 budget_ms=8740",
+      "dist worker request=7 completed=31/31 selected_worker=48 elapsed_ms=8459 rx_bytes=326547 tx_bytes=228597",
+      "dist worker request=8 job=26 phase=plan input_digest=9ead99ebe0d4d701 started=31 budget_ms=8741",
+      "dist worker request=8 completed=31/31 selected_worker=52 elapsed_ms=8461 rx_bytes=388620 tx_bytes=277630",
+      "dist worker request=9 job=27 phase=plan input_digest=9598e01745ac1b8e started=31 budget_ms=8741",
+      "dist worker request=9 completed=31/31 selected_worker=53 elapsed_ms=8459 rx_bytes=447947 tx_bytes=330689",
+      "dist worker request=10 job=28 phase=plan input_digest=5fa8bec1251f358a started=31 budget_ms=8740",
+      "dist worker request=10 completed=31/31 selected_worker=49 elapsed_ms=8460 rx_bytes=506931 tx_bytes=367752",
+      "dist worker request=11 job=29 phase=plan input_digest=ceaacf42da83c332 started=31 budget_ms=8741",
+      "dist worker request=11 completed=31/31 selected_worker=48 elapsed_ms=8008 rx_bytes=583430 tx_bytes=434285",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:52948",
+      "dist worker request=1 job=30 phase=select input_digest=4d87aae2e63bf4fb started=31 budget_ms=8073",
+      "dist worker request=1 completed=31/31 selected_worker=57 elapsed_ms=7706 rx_bytes=2496 tx_bytes=77",
+      "dist worker request=2 job=31 phase=plan input_digest=60d796f407cb892d started=31 budget_ms=8713",
+      "dist worker request=2 completed=31/31 selected_worker=50 elapsed_ms=8332 rx_bytes=77299 tx_bytes=31161",
+      "dist worker request=3 job=32 phase=plan input_digest=548a40611d9cc826 started=31 budget_ms=8846",
+      "dist worker request=3 completed=31/31 selected_worker=55 elapsed_ms=8460 rx_bytes=181528 tx_bytes=118824",
+      "dist worker request=4 job=33 phase=plan input_digest=3954fc769f9c01ec started=31 budget_ms=8854",
+      "dist worker request=4 completed=31/31 selected_worker=75 elapsed_ms=8467 rx_bytes=296893 tx_bytes=215233",
+      "dist worker request=5 job=34 phase=plan input_digest=2cfb88e8c0944f7c started=31 budget_ms=8856",
+      "dist worker request=5 completed=31/31 selected_worker=72 elapsed_ms=8471 rx_bytes=415273 tx_bytes=306677",
+      "dist worker request=6 job=35 phase=plan input_digest=b8205637f0349228 started=31 budget_ms=8853",
+      "dist worker request=6 completed=31/31 selected_worker=49 elapsed_ms=8140 rx_bytes=569100 tx_bytes=440133",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:48862",
+      "dist worker request=1 job=36 phase=select input_digest=4519af74b157cb22 started=31 budget_ms=7856",
+      "dist worker request=1 completed=31/31 selected_worker=56 elapsed_ms=7586 rx_bytes=3700 tx_bytes=77",
+      "dist worker request=2 job=37 phase=plan input_digest=322986d667ba8e4c started=31 budget_ms=8849",
+      "dist worker request=2 completed=31/31 selected_worker=65 elapsed_ms=8549 rx_bytes=88309 tx_bytes=38900",
+      "dist worker request=3 job=38 phase=plan input_digest=de2a29c202b521b2 started=31 budget_ms=8787",
+      "dist worker request=3 completed=31/31 selected_worker=66 elapsed_ms=8488 rx_bytes=271070 tx_bytes=184141",
+      "dist worker request=4 job=39 phase=plan input_digest=7b1212fab41a02bb started=31 budget_ms=8788",
+      "dist worker request=4 completed=31/31 selected_worker=50 elapsed_ms=8491 rx_bytes=456969 tx_bytes=320696",
+      "dist worker request=5 job=40 phase=plan input_digest=83f6a332d9375ad5 started=31 budget_ms=8783",
+      "dist worker request=5 completed=31/31 selected_worker=60 elapsed_ms=8482 rx_bytes=645141 tx_bytes=459063",
+      "dist worker request=6 job=41 phase=plan input_digest=f03ccd133b7fb6ce started=31 budget_ms=8778",
+      "dist worker request=6 completed=31/31 selected_worker=65 elapsed_ms=8479 rx_bytes=834171 tx_bytes=596588",
+      "dist worker request=7 job=42 phase=plan input_digest=2e759e557320bf3a started=31 budget_ms=8793",
+      "dist worker request=7 completed=31/31 selected_worker=58 elapsed_ms=8162 rx_bytes=1084204 tx_bytes=773040",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:47278",
+      "dist worker request=1 job=43 phase=select input_digest=3292fb1be23396a7 started=31 budget_ms=8090",
+      "dist worker request=1 completed=31/31 selected_worker=48 elapsed_ms=7680 rx_bytes=1579 tx_bytes=77",
+      "dist worker request=2 job=44 phase=plan input_digest=95e74eec546b13b0 started=31 budget_ms=8849",
+      "dist worker request=2 completed=31/31 selected_worker=60 elapsed_ms=8556 rx_bytes=36604 tx_bytes=12752",
+      "dist worker request=3 job=45 phase=plan input_digest=23aff93afcc88265 started=31 budget_ms=8758",
+      "dist worker request=3 completed=31/31 selected_worker=67 elapsed_ms=8466 rx_bytes=97336 tx_bytes=59408",
+      "dist worker request=4 job=46 phase=plan input_digest=6813e13b9fbe92e2 started=31 budget_ms=8747",
+      "dist worker request=4 completed=31/31 selected_worker=71 elapsed_ms=8455 rx_bytes=158096 tx_bytes=102990",
+      "dist worker request=5 job=47 phase=plan input_digest=6a4526dd843e7976 started=31 budget_ms=8747",
+      "dist worker request=5 completed=31/31 selected_worker=70 elapsed_ms=8455 rx_bytes=225819 tx_bytes=151722",
+      "dist worker request=6 job=48 phase=plan input_digest=e827fb9e333c0279 started=31 budget_ms=8752",
+      "dist worker request=6 completed=31/31 selected_worker=71 elapsed_ms=8461 rx_bytes=289923 tx_bytes=196825",
+      "dist worker request=7 job=49 phase=plan input_digest=b54298ba204ddeb7 started=31 budget_ms=8748",
+      "dist worker request=7 completed=31/31 selected_worker=61 elapsed_ms=8458 rx_bytes=355504 tx_bytes=246739",
+      "dist worker request=8 job=50 phase=plan input_digest=ae6d747947864863 started=31 budget_ms=8748",
+      "dist worker request=8 completed=31/31 selected_worker=73 elapsed_ms=8458 rx_bytes=418345 tx_bytes=287675",
+      "dist worker request=9 job=51 phase=plan input_digest=b612142ec106adb4 started=31 budget_ms=8745",
+      "dist worker request=9 completed=31/31 selected_worker=48 elapsed_ms=8001 rx_bytes=490290 tx_bytes=340893",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:33042",
+      "dist worker request=1 job=52 phase=select input_digest=58ff21aec032b4b3 started=31 budget_ms=8054",
+      "dist worker request=1 completed=31/31 selected_worker=70 elapsed_ms=7694 rx_bytes=2500 tx_bytes=77",
+      "dist worker request=2 job=53 phase=plan input_digest=37f0ba127604e16d started=31 budget_ms=8727",
+      "dist worker request=2 completed=31/31 selected_worker=71 elapsed_ms=8350 rx_bytes=83534 tx_bytes=38177",
+      "dist worker request=3 job=54 phase=plan input_digest=d8fe7765dc69f2c6 started=31 budget_ms=8841",
+      "dist worker request=3 completed=31/31 selected_worker=66 elapsed_ms=8458 rx_bytes=197930 tx_bytes=132930",
+      "dist worker request=4 job=55 phase=plan input_digest=000579e2e39ef984 started=31 budget_ms=8851",
+      "dist worker request=4 completed=31/31 selected_worker=52 elapsed_ms=8467 rx_bytes=305327 tx_bytes=228618",
+      "dist worker request=5 job=56 phase=plan input_digest=20e1914e5434e458 started=31 budget_ms=8852",
+      "dist worker request=5 completed=31/31 selected_worker=72 elapsed_ms=8471 rx_bytes=420910 tx_bytes=318426",
+      "dist worker request=6 job=57 phase=plan input_digest=d59fd7eaa1422f45 started=31 budget_ms=8849",
+      "dist worker request=6 completed=31/31 selected_worker=53 elapsed_ms=8138 rx_bytes=573289 tx_bytes=422990",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:51082",
+      "dist worker request=1 job=58 phase=select input_digest=c973e38bb18a4355 started=31 budget_ms=8301",
+      "dist worker request=1 completed=31/31 selected_worker=64 elapsed_ms=8021 rx_bytes=3700 tx_bytes=77",
+      "dist worker request=2 job=59 phase=plan input_digest=d24de49a2c14d9cf started=31 budget_ms=8814",
+      "dist worker request=2 completed=31/31 selected_worker=56 elapsed_ms=8527 rx_bytes=54722 tx_bytes=50101",
+      "dist worker request=3 job=60 phase=plan input_digest=7742f9c0a6372a75 started=31 budget_ms=8779",
+      "dist worker request=3 completed=31/31 selected_worker=64 elapsed_ms=8490 rx_bytes=233007 tx_bytes=195744",
+      "dist worker request=4 job=61 phase=plan input_digest=9cb9e3e7b8d17a00 started=31 budget_ms=8790",
+      "dist worker request=4 completed=31/31 selected_worker=56 elapsed_ms=8501 rx_bytes=423591 tx_bytes=345262",
+      "dist worker request=5 job=62 phase=plan input_digest=cb3c671758d29587 started=31 budget_ms=8784",
+      "dist worker request=5 completed=31/31 selected_worker=65 elapsed_ms=8493 rx_bytes=587387 tx_bytes=479817",
+      "dist worker request=6 job=63 phase=plan input_digest=ac08cbba5644027c started=31 budget_ms=8787",
+      "dist worker request=6 completed=31/31 selected_worker=72 elapsed_ms=8166 rx_bytes=842249 tx_bytes=695050",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:51596",
+      "dist worker request=1 job=64 phase=select input_digest=f2761b5a2f606ba6 started=31 budget_ms=8040",
+      "dist worker request=1 completed=31/31 selected_worker=68 elapsed_ms=7640 rx_bytes=1564 tx_bytes=77",
+      "dist worker request=2 job=65 phase=plan input_digest=a7eee535be87c99a started=31 budget_ms=8698",
+      "dist worker request=2 completed=31/31 selected_worker=63 elapsed_ms=8415 rx_bytes=53074 tx_bytes=42335",
+      "dist worker request=3 job=66 phase=plan input_digest=09fe478c45563a40 started=31 budget_ms=8741",
+      "dist worker request=3 completed=31/31 selected_worker=49 elapsed_ms=8456 rx_bytes=104403 tx_bytes=69748",
+      "dist worker request=4 job=67 phase=plan input_digest=4ad8599d0ef41cf4 started=31 budget_ms=8747",
+      "dist worker request=4 completed=31/31 selected_worker=46 elapsed_ms=8463 rx_bytes=165240 tx_bytes=108602",
+      "dist worker request=5 job=68 phase=plan input_digest=720d73560240ad6d started=31 budget_ms=8744",
+      "dist worker request=5 completed=31/31 selected_worker=62 elapsed_ms=8459 rx_bytes=223554 tx_bytes=148797",
+      "dist worker request=6 job=69 phase=plan input_digest=a21479d46c49c319 started=31 budget_ms=8744",
+      "dist worker request=6 completed=31/31 selected_worker=46 elapsed_ms=8009 rx_bytes=246879 tx_bytes=164321",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:52248",
+      "dist worker request=1 job=70 phase=select input_digest=b1f533d13c4268f1 started=31 budget_ms=7896",
+      "dist worker request=1 completed=31/31 selected_worker=70 elapsed_ms=7545 rx_bytes=2520 tx_bytes=77",
+      "dist worker request=2 job=71 phase=plan input_digest=ad8f7236a1072b8a started=31 budget_ms=8684",
+      "dist worker request=2 completed=31/31 selected_worker=52 elapsed_ms=8303 rx_bytes=42059 tx_bytes=44960",
+      "dist worker request=3 job=72 phase=plan input_digest=a765b61116dd1b6b started=31 budget_ms=8839",
+      "dist worker request=3 completed=31/31 selected_worker=74 elapsed_ms=8451 rx_bytes=156930 tx_bytes=135678",
+      "dist worker request=4 job=73 phase=plan input_digest=cba89ae98819f373 started=31 budget_ms=8848",
+      "dist worker request=4 completed=31/31 selected_worker=71 elapsed_ms=8461 rx_bytes=273281 tx_bytes=219918",
+      "dist worker request=5 job=74 phase=plan input_digest=73c5dd2d132cb9d6 started=31 budget_ms=8855",
+      "dist worker request=5 completed=31/31 selected_worker=63 elapsed_ms=8467 rx_bytes=390710 tx_bytes=312189",
+      "dist worker request=6 job=75 phase=plan input_digest=81be26e4554a951e started=31 budget_ms=8856",
+      "dist worker request=6 completed=31/31 selected_worker=56 elapsed_ms=8469 rx_bytes=511778 tx_bytes=413965",
+      "dist worker request=7 job=76 phase=plan input_digest=f0f08cabff41df5a started=31 budget_ms=8855",
+      "dist worker request=7 completed=31/31 selected_worker=49 elapsed_ms=8468 rx_bytes=630525 tx_bytes=500362",
+      "dist worker request=8 job=77 phase=plan input_digest=d60d0f4199ce4b1f started=31 budget_ms=8849",
+      "dist worker request=8 completed=31/31 selected_worker=52 elapsed_ms=8461 rx_bytes=742718 tx_bytes=592421",
+      "dist worker request=9 job=78 phase=plan input_digest=22b046085525c2a6 started=31 budget_ms=8854",
+      "dist worker request=9 completed=31/31 selected_worker=46 elapsed_ms=8143 rx_bytes=895645 tx_bytes=701352",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:48002",
+      "dist worker request=1 job=79 phase=select input_digest=f9ee3a0ac6b16910 started=31 budget_ms=8244",
+      "dist worker request=1 completed=31/31 selected_worker=72 elapsed_ms=8030 rx_bytes=3694 tx_bytes=77",
+      "dist worker request=2 job=80 phase=plan input_digest=430c94a9ec381718 started=31 budget_ms=8819",
+      "dist worker request=2 completed=31/31 selected_worker=50 elapsed_ms=8590 rx_bytes=149528 tx_bytes=97968",
+      "dist worker request=3 job=81 phase=plan input_digest=e3d57dc97a0ef507 started=31 budget_ms=8750",
+      "dist worker request=3 completed=31/31 selected_worker=51 elapsed_ms=8524 rx_bytes=347707 tx_bytes=243042",
+      "dist worker request=4 job=82 phase=plan input_digest=fa8194bf33c65a87 started=31 budget_ms=8748",
+      "dist worker request=4 completed=31/31 selected_worker=62 elapsed_ms=8521 rx_bytes=533597 tx_bytes=392835",
+      "dist worker request=5 job=83 phase=plan input_digest=ab6571f5f68dda1b started=31 budget_ms=8745",
+      "dist worker request=5 completed=31/31 selected_worker=52 elapsed_ms=8517 rx_bytes=726942 tx_bytes=534764",
+      "dist worker request=6 job=84 phase=plan input_digest=c38b39dcf44a7603 started=31 budget_ms=8749",
+      "dist worker request=6 completed=31/31 selected_worker=66 elapsed_ms=8186 rx_bytes=983685 tx_bytes=699835",
+      "dist worker connection_closed=peer disconnected"
+    ],
+    "crossEliteLines": [
+      "cross_elite request=2 origin=46 receiver=Some(49) published=24 received=32 rejected=0 context_mismatch=0 imports=0 improved=0 sent=7 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[3, 8, 3, 2, 3, 2, 3] group_received=[5, 6, 4, 7, 2, 4, 4] group_sent=[3, 7, 2, 2, 3, 2, 2] max_receiver_mailbox_age_ms=0",
+      "cross_elite request=3 origin=46 receiver=Some(49) published=40 received=51 rejected=0 context_mismatch=0 imports=1 improved=1 sent=9 oversized=0 probes=3 probe_ns=8427 repair_ns=574931 duplicates=0 checks=20 eligible=1 max_stall_ms=1506 group_published=[6, 5, 9, 6, 8, 4, 2] group_received=[8, 6, 7, 9, 7, 8, 6] group_sent=[4, 4, 6, 4, 7, 3, 2] max_receiver_mailbox_age_ms=1407",
+      "cross_elite request=4 origin=46 receiver=Some(49) published=56 received=65 rejected=0 context_mismatch=0 imports=2 improved=2 sent=10 oversized=0 probes=6 probe_ns=21351 repair_ns=1992679 duplicates=0 checks=20 eligible=2 max_stall_ms=1003 group_published=[8, 6, 10, 8, 5, 12, 7] group_received=[7, 6, 8, 13, 11, 11, 9] group_sent=[7, 4, 5, 6, 5, 7, 5] max_receiver_mailbox_age_ms=896",
+      "cross_elite request=5 origin=46 receiver=Some(49) published=57 received=54 rejected=0 context_mismatch=0 imports=2 improved=0 sent=8 oversized=0 probes=6 probe_ns=13786 repair_ns=2162398 duplicates=0 checks=20 eligible=2 max_stall_ms=3258 group_published=[11, 7, 6, 9, 6, 8, 10] group_received=[8, 6, 7, 9, 7, 9, 8] group_sent=[6, 6, 4, 6, 5, 5, 5] max_receiver_mailbox_age_ms=2388",
+      "cross_elite request=6 origin=46 receiver=Some(49) published=38 received=40 rejected=0 context_mismatch=0 imports=5 improved=1 sent=9 oversized=0 probes=15 probe_ns=37608 repair_ns=4238032 duplicates=0 checks=31 eligible=5 max_stall_ms=4264 group_published=[5, 5, 5, 6, 5, 6, 6] group_received=[5, 5, 6, 7, 6, 6, 5] group_sent=[3, 3, 3, 2, 4, 5, 5] max_receiver_mailbox_age_ms=4665",
+      "cross_elite request=2 origin=46 receiver=Some(49) published=7 received=16 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[4, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=0",
+      "cross_elite request=3 origin=46 receiver=Some(49) published=45 received=63 rejected=0 context_mismatch=0 imports=0 improved=0 sent=9 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[4, 5, 5, 7, 12, 8, 4] group_received=[8, 9, 9, 7, 9, 8, 13] group_sent=[3, 3, 4, 4, 8, 6, 4] max_receiver_mailbox_age_ms=0",
+      "cross_elite request=4 origin=46 receiver=Some(49) published=49 received=68 rejected=0 context_mismatch=0 imports=2 improved=1 sent=9 oversized=0 probes=6 probe_ns=25200 repair_ns=3464418 duplicates=0 checks=20 eligible=2 max_stall_ms=1752 group_published=[5, 7, 5, 8, 8, 6, 10] group_received=[9, 6, 10, 11, 9, 12, 11] group_sent=[5, 7, 4, 5, 6, 4, 7] max_receiver_mailbox_age_ms=1757",
+      "cross_elite request=5 origin=46 receiver=Some(49) published=61 received=68 rejected=0 context_mismatch=0 imports=2 improved=1 sent=9 oversized=0 probes=6 probe_ns=28254 repair_ns=4538301 duplicates=0 checks=20 eligible=2 max_stall_ms=1258 group_published=[13, 8, 10, 5, 7, 10, 8] group_received=[8, 9, 9, 10, 11, 10, 11] group_sent=[8, 4, 5, 5, 5, 5, 4] max_receiver_mailbox_age_ms=1765",
+      "cross_elite request=6 origin=46 receiver=Some(49) published=71 received=64 rejected=0 context_mismatch=0 imports=5 improved=2 sent=13 oversized=0 probes=15 probe_ns=71402 repair_ns=6258035 duplicates=0 checks=31 eligible=5 max_stall_ms=4012 group_published=[13, 4, 16, 7, 8, 8, 15] group_received=[12, 5, 7, 9, 12, 7, 12] group_sent=[9, 4, 11, 6, 6, 6, 7] max_receiver_mailbox_age_ms=3772",
+      "cross_elite request=2 origin=46 receiver=Some(49) published=21 received=30 rejected=0 context_mismatch=0 imports=3 improved=0 sent=7 oversized=0 probes=9 probe_ns=53931 repair_ns=6011839 duplicates=0 checks=18 eligible=3 max_stall_ms=3768 group_published=[3, 6, 2, 4, 3, 2, 1] group_received=[5, 5, 4, 5, 5, 3, 3] group_sent=[3, 4, 2, 3, 3, 1, 1] max_receiver_mailbox_age_ms=2746",
+      "cross_elite request=3 origin=46 receiver=Some(49) published=72 received=65 rejected=0 context_mismatch=0 imports=2 improved=2 sent=9 oversized=0 probes=6 probe_ns=51597 repair_ns=4397932 duplicates=0 checks=18 eligible=2 max_stall_ms=1012 group_published=[16, 10, 8, 7, 15, 7, 9] group_received=[11, 11, 10, 9, 8, 8, 8] group_sent=[8, 7, 4, 6, 7, 5, 6] max_receiver_mailbox_age_ms=1679",
+      "cross_elite request=4 origin=46 receiver=Some(49) published=64 received=63 rejected=0 context_mismatch=0 imports=1 improved=0 sent=9 oversized=0 probes=3 probe_ns=21180 repair_ns=2058395 duplicates=0 checks=18 eligible=1 max_stall_ms=1511 group_published=[4, 10, 13, 9, 9, 9, 10] group_received=[12, 12, 6, 8, 10, 6, 9] group_sent=[4, 6, 6, 8, 5, 7, 7] max_receiver_mailbox_age_ms=1407",
+      "cross_elite request=5 origin=46 receiver=Some(49) published=59 received=58 rejected=0 context_mismatch=0 imports=0 improved=0 sent=9 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[14, 6, 11, 7, 10, 5, 6] group_received=[9, 10, 8, 8, 6, 10, 7] group_sent=[7, 3, 5, 6, 7, 4, 3] max_receiver_mailbox_age_ms=0",
+      "cross_elite request=6 origin=46 receiver=Some(49) published=92 received=79 rejected=0 context_mismatch=0 imports=2 improved=1 sent=14 oversized=0 probes=6 probe_ns=54803 repair_ns=5053560 duplicates=0 checks=29 eligible=2 max_stall_ms=2012 group_published=[14, 7, 20, 14, 12, 15, 10] group_received=[10, 14, 13, 10, 10, 12, 10] group_sent=[9, 5, 11, 9, 8, 8, 7] max_receiver_mailbox_age_ms=2900",
+      "cross_elite request=2 origin=46 receiver=Some(49) published=7 received=14 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=20 eligible=9 max_stall_ms=4789 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[2, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=1898",
+      "cross_elite request=3 origin=46 receiver=Some(49) published=33 received=44 rejected=0 context_mismatch=0 imports=2 improved=0 sent=7 oversized=0 probes=6 probe_ns=22100 repair_ns=1703018 duplicates=0 checks=20 eligible=2 max_stall_ms=2003 group_published=[3, 3, 5, 7, 5, 4, 6] group_received=[6, 5, 6, 7, 7, 6, 7] group_sent=[3, 3, 2, 4, 5, 3, 4] max_receiver_mailbox_age_ms=2644",
+      "cross_elite request=4 origin=46 receiver=Some(49) published=38 received=45 rejected=0 context_mismatch=0 imports=2 improved=0 sent=7 oversized=0 probes=6 probe_ns=23415 repair_ns=1130202 duplicates=0 checks=20 eligible=2 max_stall_ms=2006 group_published=[4, 4, 12, 6, 4, 3, 5] group_received=[5, 4, 8, 7, 7, 9, 5] group_sent=[4, 3, 7, 3, 3, 3, 3] max_receiver_mailbox_age_ms=2643",
+      "cross_elite request=5 origin=46 receiver=Some(49) published=33 received=54 rejected=0 context_mismatch=0 imports=2 improved=1 sent=9 oversized=0 probes=6 probe_ns=24774 repair_ns=3551087 duplicates=0 checks=20 eligible=2 max_stall_ms=1512 group_published=[6, 2, 6, 3, 6, 4, 6] group_received=[9, 6, 8, 7, 7, 7, 10] group_sent=[5, 2, 4, 3, 5, 4, 4] max_receiver_mailbox_age_ms=908",
+      "cross_elite request=6 origin=46 receiver=Some(49) published=44 received=56 rejected=0 context_mismatch=0 imports=3 improved=1 sent=9 oversized=0 probes=9 probe_ns=24935 repair_ns=3362151 duplicates=0 checks=20 eligible=3 max_stall_ms=3008 group_published=[5, 10, 6, 3, 5, 8, 7] group_received=[7, 9, 9, 9, 8, 7, 7] group_sent=[4, 8, 4, 2, 3, 6, 4] max_receiver_mailbox_age_ms=1889",
+      "cross_elite request=7 origin=46 receiver=Some(49) published=39 received=43 rejected=0 context_mismatch=0 imports=2 improved=1 sent=8 oversized=0 probes=6 probe_ns=23335 repair_ns=2042383 duplicates=0 checks=20 eligible=2 max_stall_ms=1506 group_published=[3, 6, 4, 6, 8, 5, 7] group_received=[6, 5, 6, 9, 6, 6, 5] group_sent=[2, 5, 3, 4, 5, 3, 4] max_receiver_mailbox_age_ms=891",
+      "cross_elite request=8 origin=46 receiver=Some(49) published=46 received=47 rejected=0 context_mismatch=0 imports=2 improved=0 sent=9 oversized=0 probes=6 probe_ns=24538 repair_ns=4226966 duplicates=0 checks=20 eligible=2 max_stall_ms=2007 group_published=[8, 8, 3, 3, 7, 8, 9] group_received=[5, 9, 5, 6, 7, 6, 9] group_sent=[4, 5, 3, 2, 5, 6, 8] max_receiver_mailbox_age_ms=1905",
+      "cross_elite request=9 origin=46 receiver=Some(49) published=43 received=47 rejected=0 context_mismatch=0 imports=3 improved=0 sent=10 oversized=0 probes=9 probe_ns=39915 repair_ns=5263539 duplicates=0 checks=20 eligible=3 max_stall_ms=3765 group_published=[6, 6, 7, 7, 4, 7, 6] group_received=[7, 7, 6, 8, 6, 6, 7] group_sent=[3, 6, 4, 5, 3, 6, 5] max_receiver_mailbox_age_ms=1671",
+      "cross_elite request=10 origin=46 receiver=Some(49) published=38 received=47 rejected=0 context_mismatch=0 imports=2 improved=1 sent=6 oversized=0 probes=6 probe_ns=23434 repair_ns=1725959 duplicates=0 checks=20 eligible=2 max_stall_ms=1505 group_published=[4, 2, 10, 5, 4, 5, 8] group_received=[6, 7, 6, 6, 7, 7, 8] group_sent=[3, 2, 6, 3, 2, 4, 5] max_receiver_mailbox_age_ms=1388",
+      "cross_elite request=11 origin=46 receiver=Some(49) published=39 received=54 rejected=0 context_mismatch=0 imports=6 improved=1 sent=14 oversized=0 probes=16 probe_ns=47740 repair_ns=6052892 duplicates=0 checks=31 eligible=6 max_stall_ms=6268 group_published=[5, 6, 8, 3, 5, 6, 6] group_received=[6, 8, 7, 6, 9, 7, 11] group_sent=[5, 6, 6, 3, 5, 6, 6] max_receiver_mailbox_age_ms=5148",
+      "cross_elite request=2 origin=46 receiver=Some(49) published=15 received=36 rejected=0 context_mismatch=0 imports=3 improved=0 sent=3 oversized=0 probes=4 probe_ns=17374 repair_ns=4130291 duplicates=0 checks=20 eligible=5 max_stall_ms=4768 group_published=[3, 2, 2, 2, 2, 2, 2] group_received=[6, 6, 5, 4, 5, 5, 5] group_sent=[3, 2, 2, 2, 2, 2, 2] max_receiver_mailbox_age_ms=2039",
+      "cross_elite request=3 origin=46 receiver=Some(49) published=59 received=56 rejected=0 context_mismatch=0 imports=3 improved=1 sent=9 oversized=0 probes=9 probe_ns=40218 repair_ns=4966594 duplicates=0 checks=20 eligible=3 max_stall_ms=2512 group_published=[8, 10, 9, 9, 9, 4, 10] group_received=[9, 5, 5, 8, 14, 8, 7] group_sent=[6, 7, 5, 5, 4, 3, 7] max_receiver_mailbox_age_ms=2769",
+      "cross_elite request=4 origin=46 receiver=Some(49) published=60 received=71 rejected=0 context_mismatch=0 imports=1 improved=1 sent=10 oversized=0 probes=3 probe_ns=15207 repair_ns=3468511 duplicates=0 checks=20 eligible=1 max_stall_ms=1002 group_published=[8, 6, 7, 14, 5, 13, 7] group_received=[13, 10, 9, 10, 9, 9, 11] group_sent=[5, 5, 5, 9, 3, 7, 6] max_receiver_mailbox_age_ms=277",
+      "cross_elite request=5 origin=46 receiver=Some(49) published=50 received=71 rejected=0 context_mismatch=0 imports=2 improved=0 sent=9 oversized=0 probes=6 probe_ns=21229 repair_ns=2418170 duplicates=0 checks=20 eligible=2 max_stall_ms=2505 group_published=[13, 7, 5, 6, 7, 5, 7] group_received=[11, 9, 7, 12, 12, 11, 9] group_sent=[9, 4, 5, 5, 5, 4, 5] max_receiver_mailbox_age_ms=1473",
+      "cross_elite request=6 origin=46 receiver=Some(49) published=69 received=83 rejected=0 context_mismatch=0 imports=4 improved=1 sent=15 oversized=0 probes=12 probe_ns=56919 repair_ns=2996105 duplicates=0 checks=31 eligible=4 max_stall_ms=4764 group_published=[8, 11, 11, 6, 16, 10, 7] group_received=[11, 11, 13, 12, 12, 12, 12] group_sent=[5, 7, 8, 5, 10, 8, 5] max_receiver_mailbox_age_ms=2029",
+      "cross_elite request=2 origin=46 receiver=Some(49) published=11 received=17 rejected=0 context_mismatch=0 imports=0 improved=0 sent=2 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=18 eligible=8 max_stall_ms=3778 group_published=[2, 2, 1, 1, 3, 1, 1] group_received=[4, 2, 2, 2, 3, 2, 2] group_sent=[2, 2, 1, 1, 2, 1, 1] max_receiver_mailbox_age_ms=2216",
+      "cross_elite request=3 origin=46 receiver=Some(49) published=60 received=58 rejected=0 context_mismatch=0 imports=1 improved=0 sent=9 oversized=0 probes=3 probe_ns=28805 repair_ns=3032912 duplicates=0 checks=18 eligible=1 max_stall_ms=1006 group_published=[12, 6, 8, 10, 8, 10, 6] group_received=[9, 10, 8, 6, 9, 7, 9] group_sent=[7, 6, 5, 8, 4, 6, 5] max_receiver_mailbox_age_ms=1869",
+      "cross_elite request=4 origin=46 receiver=Some(49) published=60 received=63 rejected=0 context_mismatch=0 imports=2 improved=1 sent=8 oversized=0 probes=6 probe_ns=56926 repair_ns=5619758 duplicates=0 checks=18 eligible=2 max_stall_ms=1261 group_published=[7, 8, 10, 11, 7, 8, 9] group_received=[11, 8, 8, 10, 7, 12, 7] group_sent=[5, 6, 6, 7, 5, 6, 5] max_receiver_mailbox_age_ms=1620",
+      "cross_elite request=5 origin=46 receiver=Some(49) published=53 received=57 rejected=0 context_mismatch=0 imports=1 improved=1 sent=8 oversized=0 probes=3 probe_ns=26449 repair_ns=2362112 duplicates=0 checks=18 eligible=1 max_stall_ms=1001 group_published=[7, 7, 8, 6, 5, 12, 8] group_received=[10, 9, 9, 7, 6, 10, 6] group_sent=[6, 5, 5, 4, 4, 7, 6] max_receiver_mailbox_age_ms=1378",
+      "cross_elite request=6 origin=46 receiver=Some(49) published=57 received=61 rejected=0 context_mismatch=0 imports=1 improved=1 sent=8 oversized=0 probes=3 probe_ns=32612 repair_ns=2279568 duplicates=0 checks=18 eligible=1 max_stall_ms=1008 group_published=[11, 7, 8, 8, 8, 7, 8] group_received=[9, 9, 7, 10, 8, 10, 8] group_sent=[6, 4, 6, 4, 5, 4, 4] max_receiver_mailbox_age_ms=1366",
+      "cross_elite request=7 origin=46 receiver=Some(49) published=76 received=77 rejected=0 context_mismatch=0 imports=3 improved=1 sent=11 oversized=0 probes=9 probe_ns=94789 repair_ns=12110488 duplicates=0 checks=29 eligible=3 max_stall_ms=2263 group_published=[15, 6, 13, 13, 8, 13, 8] group_received=[11, 12, 12, 10, 13, 10, 9] group_sent=[9, 5, 7, 8, 6, 6, 6] max_receiver_mailbox_age_ms=1871",
+      "cross_elite request=2 origin=46 receiver=Some(49) published=8 received=19 rejected=0 context_mismatch=0 imports=0 improved=0 sent=2 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[1, 1, 2, 1, 1, 1, 1] group_received=[6, 3, 2, 2, 2, 2, 2] group_sent=[1, 1, 2, 1, 1, 1, 1] max_receiver_mailbox_age_ms=0",
+      "cross_elite request=3 origin=46 receiver=Some(49) published=43 received=51 rejected=0 context_mismatch=0 imports=3 improved=2 sent=9 oversized=0 probes=9 probe_ns=27912 repair_ns=4936405 duplicates=0 checks=20 eligible=3 max_stall_ms=2008 group_published=[7, 6, 5, 7, 7, 7, 4] group_received=[11, 7, 6, 6, 8, 8, 5] group_sent=[5, 4, 4, 5, 5, 6, 3] max_receiver_mailbox_age_ms=2369",
+      "cross_elite request=4 origin=46 receiver=Some(49) published=43 received=46 rejected=0 context_mismatch=0 imports=2 improved=1 sent=8 oversized=0 probes=6 probe_ns=17002 repair_ns=1901779 duplicates=0 checks=20 eligible=2 max_stall_ms=2003 group_published=[6, 6, 4, 8, 5, 9, 5] group_received=[7, 6, 7, 8, 7, 5, 6] group_sent=[5, 4, 2, 5, 4, 6, 4] max_receiver_mailbox_age_ms=1852",
+      "cross_elite request=5 origin=46 receiver=Some(49) published=55 received=59 rejected=0 context_mismatch=0 imports=1 improved=1 sent=9 oversized=0 probes=3 probe_ns=13396 repair_ns=1210612 duplicates=0 checks=20 eligible=1 max_stall_ms=1002 group_published=[8, 5, 6, 8, 8, 9, 11] group_received=[7, 10, 10, 6, 8, 9, 9] group_sent=[5, 4, 3, 6, 5, 6, 5] max_receiver_mailbox_age_ms=1625",
+      "cross_elite request=6 origin=46 receiver=Some(49) published=49 received=57 rejected=0 context_mismatch=0 imports=2 improved=2 sent=8 oversized=0 probes=6 probe_ns=23046 repair_ns=2066348 duplicates=0 checks=20 eligible=2 max_stall_ms=1003 group_published=[8, 8, 6, 8, 8, 5, 6] group_received=[10, 9, 9, 9, 7, 7, 6] group_sent=[5, 6, 5, 5, 5, 3, 3] max_receiver_mailbox_age_ms=2116",
+      "cross_elite request=7 origin=46 receiver=Some(49) published=59 received=62 rejected=0 context_mismatch=0 imports=3 improved=1 sent=9 oversized=0 probes=9 probe_ns=29766 repair_ns=3444384 duplicates=0 checks=20 eligible=3 max_stall_ms=2256 group_published=[10, 9, 8, 12, 7, 5, 8] group_received=[9, 8, 11, 7, 12, 7, 8] group_sent=[7, 5, 6, 6, 5, 5, 4] max_receiver_mailbox_age_ms=2619",
+      "cross_elite request=8 origin=46 receiver=Some(49) published=38 received=50 rejected=0 context_mismatch=0 imports=2 improved=0 sent=7 oversized=0 probes=6 probe_ns=22472 repair_ns=2083421 duplicates=0 checks=20 eligible=2 max_stall_ms=1503 group_published=[5, 3, 6, 7, 4, 4, 9] group_received=[4, 7, 9, 8, 6, 8, 8] group_sent=[5, 3, 4, 4, 3, 2, 5] max_receiver_mailbox_age_ms=2361",
+      "cross_elite request=9 origin=46 receiver=Some(49) published=54 received=59 rejected=0 context_mismatch=0 imports=5 improved=1 sent=10 oversized=0 probes=15 probe_ns=52300 repair_ns=4604432 duplicates=0 checks=31 eligible=5 max_stall_ms=3759 group_published=[5, 5, 9, 8, 9, 6, 12] group_received=[6, 8, 11, 10, 7, 8, 9] group_sent=[3, 4, 6, 5, 5, 5, 7] max_receiver_mailbox_age_ms=4618",
+      "cross_elite request=2 origin=46 receiver=Some(49) published=14 received=27 rejected=0 context_mismatch=0 imports=3 improved=0 sent=4 oversized=0 probes=5 probe_ns=29336 repair_ns=15560394 duplicates=0 checks=19 eligible=3 max_stall_ms=4315 group_published=[3, 2, 1, 1, 2, 2, 3] group_received=[4, 3, 4, 3, 6, 2, 5] group_sent=[3, 2, 1, 1, 1, 2, 3] max_receiver_mailbox_age_ms=2881",
+      "cross_elite request=3 origin=46 receiver=Some(49) published=62 received=59 rejected=0 context_mismatch=0 imports=2 improved=1 sent=10 oversized=0 probes=6 probe_ns=56438 repair_ns=7069307 duplicates=0 checks=20 eligible=2 max_stall_ms=2016 group_published=[9, 5, 11, 9, 8, 11, 9] group_received=[9, 10, 9, 6, 9, 9, 7] group_sent=[6, 4, 6, 4, 3, 7, 5] max_receiver_mailbox_age_ms=1335",
+      "cross_elite request=4 origin=46 receiver=Some(49) published=52 received=53 rejected=0 context_mismatch=0 imports=2 improved=0 sent=10 oversized=0 probes=6 probe_ns=39923 repair_ns=4869399 duplicates=0 checks=20 eligible=2 max_stall_ms=2259 group_published=[4, 8, 7, 8, 10, 9, 6] group_received=[7, 9, 7, 8, 6, 8, 8] group_sent=[4, 3, 5, 4, 6, 5, 4] max_receiver_mailbox_age_ms=1334",
+      "cross_elite request=5 origin=46 receiver=Some(49) published=49 received=63 rejected=0 context_mismatch=0 imports=3 improved=0 sent=9 oversized=0 probes=9 probe_ns=57008 repair_ns=5098779 duplicates=0 checks=20 eligible=3 max_stall_ms=3759 group_published=[8, 8, 9, 9, 5, 5, 5] group_received=[8, 7, 9, 11, 7, 9, 12] group_sent=[4, 7, 7, 5, 4, 4, 3] max_receiver_mailbox_age_ms=1809",
+      "cross_elite request=6 origin=46 receiver=Some(49) published=54 received=76 rejected=0 context_mismatch=0 imports=3 improved=1 sent=11 oversized=0 probes=9 probe_ns=53581 repair_ns=6223689 duplicates=0 checks=30 eligible=3 max_stall_ms=1763 group_published=[8, 7, 9, 8, 8, 8, 6] group_received=[14, 12, 12, 8, 11, 11, 8] group_sent=[4, 4, 5, 5, 8, 6, 6] max_receiver_mailbox_age_ms=3326",
+      "cross_elite request=2 origin=46 receiver=Some(49) published=9 received=14 rejected=0 context_mismatch=0 imports=0 improved=0 sent=3 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[1, 1, 1, 2, 2, 1, 1] group_received=[2, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 2, 2, 1, 1] max_receiver_mailbox_age_ms=0",
+      "cross_elite request=3 origin=46 receiver=Some(49) published=46 received=65 rejected=0 context_mismatch=0 imports=1 improved=1 sent=9 oversized=0 probes=3 probe_ns=48710 repair_ns=4789437 duplicates=0 checks=18 eligible=1 max_stall_ms=1011 group_published=[7, 7, 10, 5, 3, 7, 7] group_received=[8, 12, 7, 9, 10, 10, 9] group_sent=[4, 6, 7, 4, 3, 5, 3] max_receiver_mailbox_age_ms=2429",
+      "cross_elite request=4 origin=46 receiver=Some(49) published=52 received=61 rejected=0 context_mismatch=0 imports=3 improved=0 sent=9 oversized=0 probes=9 probe_ns=113132 repair_ns=10108975 duplicates=0 checks=19 eligible=3 max_stall_ms=2015 group_published=[3, 5, 9, 9, 7, 10, 9] group_received=[7, 10, 11, 7, 8, 9, 9] group_sent=[3, 4, 5, 5, 5, 8, 4] max_receiver_mailbox_age_ms=1815",
+      "cross_elite request=5 origin=46 receiver=Some(49) published=23 received=41 rejected=0 context_mismatch=0 imports=2 improved=0 sent=8 oversized=0 probes=6 probe_ns=73757 repair_ns=8578658 duplicates=0 checks=19 eligible=2 max_stall_ms=2775 group_published=[5, 2, 6, 2, 3, 2, 3] group_received=[10, 6, 4, 5, 7, 4, 5] group_sent=[3, 2, 4, 2, 2, 2, 2] max_receiver_mailbox_age_ms=3304",
+      "cross_elite request=6 origin=46 receiver=Some(49) published=81 received=76 rejected=0 context_mismatch=0 imports=4 improved=1 sent=14 oversized=0 probes=12 probe_ns=195327 repair_ns=18444284 duplicates=0 checks=29 eligible=4 max_stall_ms=3794 group_published=[13, 12, 10, 12, 11, 16, 7] group_received=[7, 11, 15, 8, 13, 12, 10] group_sent=[8, 7, 6, 9, 8, 9, 6] max_receiver_mailbox_age_ms=3685",
+      "cross_elite request=2 origin=46 receiver=Some(49) published=26 received=35 rejected=0 context_mismatch=0 imports=2 improved=0 sent=10 oversized=0 probes=2 probe_ns=7935 repair_ns=2359183 duplicates=0 checks=20 eligible=3 max_stall_ms=3513 group_published=[3, 5, 2, 1, 5, 4, 6] group_received=[4, 6, 7, 4, 3, 7, 4] group_sent=[3, 4, 2, 1, 4, 3, 5] max_receiver_mailbox_age_ms=2379",
+      "cross_elite request=3 origin=46 receiver=Some(49) published=31 received=37 rejected=0 context_mismatch=0 imports=2 improved=1 sent=4 oversized=0 probes=6 probe_ns=20269 repair_ns=2770548 duplicates=0 checks=20 eligible=2 max_stall_ms=2507 group_published=[3, 4, 7, 4, 4, 5, 4] group_received=[4, 5, 7, 5, 5, 4, 7] group_sent=[2, 2, 4, 3, 2, 4, 2] max_receiver_mailbox_age_ms=2131",
+      "cross_elite request=4 origin=46 receiver=Some(49) published=37 received=48 rejected=0 context_mismatch=0 imports=2 improved=1 sent=7 oversized=0 probes=6 probe_ns=18967 repair_ns=2178487 duplicates=0 checks=20 eligible=2 max_stall_ms=2006 group_published=[6, 4, 3, 12, 2, 5, 5] group_received=[4, 7, 8, 5, 9, 8, 7] group_sent=[4, 3, 2, 6, 2, 3, 3] max_receiver_mailbox_age_ms=2627",
+      "cross_elite request=5 origin=46 receiver=Some(49) published=33 received=51 rejected=0 context_mismatch=0 imports=1 improved=0 sent=7 oversized=0 probes=3 probe_ns=8597 repair_ns=1485117 duplicates=0 checks=20 eligible=1 max_stall_ms=2503 group_published=[5, 6, 4, 5, 5, 4, 4] group_received=[9, 5, 7, 8, 7, 7, 8] group_sent=[4, 5, 3, 4, 4, 4, 4] max_receiver_mailbox_age_ms=2129",
+      "cross_elite request=6 origin=46 receiver=Some(49) published=7 received=14 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=31 eligible=20 max_stall_ms=7525 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[2, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=1894",
+      "cross_elite request=2 origin=46 receiver=Some(49) published=12 received=17 rejected=0 context_mismatch=0 imports=0 improved=0 sent=5 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[1, 4, 2, 2, 1, 1, 1] group_received=[3, 2, 2, 3, 3, 2, 2] group_sent=[1, 3, 2, 2, 1, 1, 1] max_receiver_mailbox_age_ms=0",
+      "cross_elite request=3 origin=46 receiver=Some(49) published=52 received=56 rejected=0 context_mismatch=0 imports=1 improved=0 sent=9 oversized=0 probes=3 probe_ns=20959 repair_ns=1856333 duplicates=0 checks=20 eligible=1 max_stall_ms=1757 group_published=[11, 6, 11, 8, 5, 6, 5] group_received=[7, 7, 8, 6, 8, 10, 10] group_sent=[7, 5, 7, 6, 5, 5, 3] max_receiver_mailbox_age_ms=1770",
+      "cross_elite request=4 origin=46 receiver=Some(49) published=44 received=55 rejected=0 context_mismatch=0 imports=1 improved=0 sent=8 oversized=0 probes=3 probe_ns=19196 repair_ns=2843575 duplicates=0 checks=20 eligible=1 max_stall_ms=1511 group_published=[4, 8, 4, 6, 7, 8, 7] group_received=[7, 9, 6, 8, 9, 10, 6] group_sent=[4, 5, 3, 5, 4, 5, 4] max_receiver_mailbox_age_ms=2282",
+      "cross_elite request=5 origin=46 receiver=Some(49) published=36 received=51 rejected=0 context_mismatch=0 imports=2 improved=1 sent=9 oversized=0 probes=6 probe_ns=36479 repair_ns=4842565 duplicates=0 checks=20 eligible=2 max_stall_ms=1256 group_published=[7, 7, 6, 3, 4, 5, 4] group_received=[11, 8, 5, 5, 10, 6, 6] group_sent=[6, 5, 5, 2, 3, 5, 3] max_receiver_mailbox_age_ms=2757",
+      "cross_elite request=6 origin=46 receiver=Some(49) published=48 received=64 rejected=0 context_mismatch=0 imports=3 improved=0 sent=10 oversized=0 probes=9 probe_ns=55336 repair_ns=5374243 duplicates=0 checks=20 eligible=3 max_stall_ms=2523 group_published=[6, 5, 7, 8, 7, 7, 8] group_received=[11, 10, 9, 10, 8, 9, 7] group_sent=[5, 4, 5, 5, 6, 5, 7] max_receiver_mailbox_age_ms=1011",
+      "cross_elite request=7 origin=46 receiver=Some(49) published=49 received=58 rejected=0 context_mismatch=0 imports=3 improved=1 sent=8 oversized=0 probes=9 probe_ns=58367 repair_ns=5923542 duplicates=0 checks=20 eligible=3 max_stall_ms=3009 group_published=[3, 10, 11, 5, 8, 5, 7] group_received=[10, 6, 10, 6, 8, 9, 9] group_sent=[3, 6, 7, 4, 5, 3, 4] max_receiver_mailbox_age_ms=2263",
+      "cross_elite request=8 origin=46 receiver=Some(49) published=40 received=58 rejected=0 context_mismatch=0 imports=2 improved=0 sent=9 oversized=0 probes=6 probe_ns=41196 repair_ns=3683822 duplicates=0 checks=20 eligible=2 max_stall_ms=1756 group_published=[7, 6, 5, 6, 5, 5, 6] group_received=[9, 10, 10, 7, 10, 7, 5] group_sent=[5, 5, 4, 4, 4, 4, 4] max_receiver_mailbox_age_ms=2269",
+      "cross_elite request=9 origin=46 receiver=Some(49) published=50 received=55 rejected=0 context_mismatch=0 imports=4 improved=1 sent=11 oversized=0 probes=12 probe_ns=69221 repair_ns=8732024 duplicates=0 checks=31 eligible=4 max_stall_ms=4021 group_published=[6, 6, 10, 5, 7, 7, 9] group_received=[11, 9, 6, 7, 7, 10, 5] group_sent=[5, 4, 8, 3, 7, 5, 6] max_receiver_mailbox_age_ms=5796",
+      "cross_elite request=2 origin=46 receiver=Some(49) published=19 received=26 rejected=0 context_mismatch=0 imports=2 improved=0 sent=7 oversized=0 probes=6 probe_ns=34794 repair_ns=10043465 duplicates=0 checks=17 eligible=2 max_stall_ms=2783 group_published=[2, 2, 3, 2, 3, 3, 4] group_received=[5, 5, 3, 2, 4, 4, 3] group_sent=[2, 2, 2, 2, 2, 3, 3] max_receiver_mailbox_age_ms=3738",
+      "cross_elite request=3 origin=46 receiver=Some(49) published=62 received=69 rejected=0 context_mismatch=0 imports=2 improved=2 sent=9 oversized=0 probes=6 probe_ns=64390 repair_ns=4260989 duplicates=0 checks=17 eligible=2 max_stall_ms=1011 group_published=[9, 7, 16, 6, 8, 8, 8] group_received=[11, 11, 8, 10, 10, 11, 8] group_sent=[5, 4, 7, 4, 5, 5, 6] max_receiver_mailbox_age_ms=1631",
+      "cross_elite request=4 origin=46 receiver=Some(49) published=63 received=54 rejected=0 context_mismatch=0 imports=3 improved=0 sent=9 oversized=0 probes=9 probe_ns=61334 repair_ns=6382381 duplicates=0 checks=18 eligible=3 max_stall_ms=3263 group_published=[9, 9, 7, 9, 9, 11, 9] group_received=[9, 8, 7, 7, 8, 8, 7] group_sent=[5, 7, 6, 5, 5, 7, 5] max_receiver_mailbox_age_ms=1269",
+      "cross_elite request=5 origin=46 receiver=Some(49) published=58 received=60 rejected=0 context_mismatch=0 imports=2 improved=1 sent=8 oversized=0 probes=6 probe_ns=58751 repair_ns=1716700 duplicates=0 checks=17 eligible=2 max_stall_ms=1770 group_published=[8, 8, 11, 5, 6, 12, 8] group_received=[9, 8, 7, 7, 11, 9, 9] group_sent=[4, 5, 4, 3, 4, 8, 6] max_receiver_mailbox_age_ms=1649",
+      "cross_elite request=6 origin=46 receiver=Some(49) published=52 received=83 rejected=0 context_mismatch=0 imports=2 improved=1 sent=10 oversized=0 probes=6 probe_ns=72438 repair_ns=4818057 duplicates=0 checks=28 eligible=2 max_stall_ms=2003 group_published=[5, 11, 8, 7, 9, 6, 6] group_received=[12, 11, 11, 12, 13, 13, 11] group_sent=[5, 8, 6, 5, 6, 5, 4] max_receiver_mailbox_age_ms=1893"
+    ],
+    "sharedGraphLines": [],
+    "flags": {
+      "timeout": {
+        "count": 0,
+        "samples": []
+      },
+      "deadline": {
+        "count": 0,
+        "samples": []
+      },
+      "fallback": {
+        "count": 0,
+        "samples": []
+      },
+      "panic": {
+        "count": 0,
+        "samples": []
+      },
+      "rejected": {
+        "count": 72,
+        "samples": [
+          "cross_elite request=2 origin=46 receiver=Some(49) published=24 received=32 rejected=0 context_mismatch=0 imports=0 improved=0 sent=7 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[3, 8, 3, 2, 3, 2, 3] group_received=[5, 6, 4, 7, 2, 4, 4] group_sent=[3, 7, 2, 2, 3, 2, 2] max_receiver_mailbox_age_ms=0",
+          "cross_elite request=3 origin=46 receiver=Some(49) published=40 received=51 rejected=0 context_mismatch=0 imports=1 improved=1 sent=9 oversized=0 probes=3 probe_ns=8427 repair_ns=574931 duplicates=0 checks=20 eligible=1 max_stall_ms=1506 group_published=[6, 5, 9, 6, 8, 4, 2] group_received=[8, 6, 7, 9, 7, 8, 6] group_sent=[4, 4, 6, 4, 7, 3, 2] max_receiver_mailbox_age_ms=1407",
+          "cross_elite request=4 origin=46 receiver=Some(49) published=56 received=65 rejected=0 context_mismatch=0 imports=2 improved=2 sent=10 oversized=0 probes=6 probe_ns=21351 repair_ns=1992679 duplicates=0 checks=20 eligible=2 max_stall_ms=1003 group_published=[8, 6, 10, 8, 5, 12, 7] group_received=[7, 6, 8, 13, 11, 11, 9] group_sent=[7, 4, 5, 6, 5, 7, 5] max_receiver_mailbox_age_ms=896",
+          "cross_elite request=5 origin=46 receiver=Some(49) published=57 received=54 rejected=0 context_mismatch=0 imports=2 improved=0 sent=8 oversized=0 probes=6 probe_ns=13786 repair_ns=2162398 duplicates=0 checks=20 eligible=2 max_stall_ms=3258 group_published=[11, 7, 6, 9, 6, 8, 10] group_received=[8, 6, 7, 9, 7, 9, 8] group_sent=[6, 6, 4, 6, 5, 5, 5] max_receiver_mailbox_age_ms=2388",
+          "cross_elite request=6 origin=46 receiver=Some(49) published=38 received=40 rejected=0 context_mismatch=0 imports=5 improved=1 sent=9 oversized=0 probes=15 probe_ns=37608 repair_ns=4238032 duplicates=0 checks=31 eligible=5 max_stall_ms=4264 group_published=[5, 5, 5, 6, 5, 6, 6] group_received=[5, 5, 6, 7, 6, 6, 5] group_sent=[3, 3, 3, 2, 4, 5, 5] max_receiver_mailbox_age_ms=4665",
+          "cross_elite request=2 origin=46 receiver=Some(49) published=7 received=16 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[4, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=0",
+          "cross_elite request=3 origin=46 receiver=Some(49) published=45 received=63 rejected=0 context_mismatch=0 imports=0 improved=0 sent=9 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[4, 5, 5, 7, 12, 8, 4] group_received=[8, 9, 9, 7, 9, 8, 13] group_sent=[3, 3, 4, 4, 8, 6, 4] max_receiver_mailbox_age_ms=0",
+          "cross_elite request=4 origin=46 receiver=Some(49) published=49 received=68 rejected=0 context_mismatch=0 imports=2 improved=1 sent=9 oversized=0 probes=6 probe_ns=25200 repair_ns=3464418 duplicates=0 checks=20 eligible=2 max_stall_ms=1752 group_published=[5, 7, 5, 8, 8, 6, 10] group_received=[9, 6, 10, 11, 9, 12, 11] group_sent=[5, 7, 4, 5, 6, 4, 7] max_receiver_mailbox_age_ms=1757",
+          "cross_elite request=5 origin=46 receiver=Some(49) published=61 received=68 rejected=0 context_mismatch=0 imports=2 improved=1 sent=9 oversized=0 probes=6 probe_ns=28254 repair_ns=4538301 duplicates=0 checks=20 eligible=2 max_stall_ms=1258 group_published=[13, 8, 10, 5, 7, 10, 8] group_received=[8, 9, 9, 10, 11, 10, 11] group_sent=[8, 4, 5, 5, 5, 5, 4] max_receiver_mailbox_age_ms=1765",
+          "cross_elite request=6 origin=46 receiver=Some(49) published=71 received=64 rejected=0 context_mismatch=0 imports=5 improved=2 sent=13 oversized=0 probes=15 probe_ns=71402 repair_ns=6258035 duplicates=0 checks=31 eligible=5 max_stall_ms=4012 group_published=[13, 4, 16, 7, 8, 8, 15] group_received=[12, 5, 7, 9, 12, 7, 12] group_sent=[9, 4, 11, 6, 6, 6, 7] max_receiver_mailbox_age_ms=3772",
+          "cross_elite request=2 origin=46 receiver=Some(49) published=21 received=30 rejected=0 context_mismatch=0 imports=3 improved=0 sent=7 oversized=0 probes=9 probe_ns=53931 repair_ns=6011839 duplicates=0 checks=18 eligible=3 max_stall_ms=3768 group_published=[3, 6, 2, 4, 3, 2, 1] group_received=[5, 5, 4, 5, 5, 3, 3] group_sent=[3, 4, 2, 3, 3, 1, 1] max_receiver_mailbox_age_ms=2746",
+          "cross_elite request=3 origin=46 receiver=Some(49) published=72 received=65 rejected=0 context_mismatch=0 imports=2 improved=2 sent=9 oversized=0 probes=6 probe_ns=51597 repair_ns=4397932 duplicates=0 checks=18 eligible=2 max_stall_ms=1012 group_published=[16, 10, 8, 7, 15, 7, 9] group_received=[11, 11, 10, 9, 8, 8, 8] group_sent=[8, 7, 4, 6, 7, 5, 6] max_receiver_mailbox_age_ms=1679"
+        ]
+      },
+      "unavailable": {
+        "count": 0,
+        "samples": []
+      },
+      "disconnected": {
+        "count": 0,
+        "samples": []
+      }
+    }
+  },
+  "cpus": [
+    {
+      "cpu": 0,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 1,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 2,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 3,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 4,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 5,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 6,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 7,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 8,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 9,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 10,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 11,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 12,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 13,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 14,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 15,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 16,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 17,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 18,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 19,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 20,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 21,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 22,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 23,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 24,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 25,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 26,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 27,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 28,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 29,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 30,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 31,
+      "governor": "performance",
+      "epp": "performance"
+    }
+  ],
+  "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 03:23:16 2026\nSystem time     : 0.000000840 seconds fast of NTP time\nLast offset     : +0.000000994 seconds\nRMS offset      : 0.000008073 seconds\nFrequency       : 0.443 ppm slow\nResidual freq   : +0.005 ppm\nSkew            : 0.637 ppm\nRoot delay      : 0.000149814 seconds\nRoot dispersion : 0.001071206 seconds\nUpdate interval : 32.4 seconds\nLeap status     : Normal\n",
+  "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   4   377    35  -3272ns[-2278ns] +/- 1083us\n",
+  "clockProbe": {
+    "server": "192.168.0.81",
+    "port": 32123,
+    "samples": [
+      {
+        "serverMinusClientMs": 0.0667572021484375,
+        "roundTripMs": 0.30803680419921875
+      },
+      {
+        "serverMinusClientMs": 0.018835067749023438,
+        "roundTripMs": 0.15687942504882812
+      },
+      {
+        "serverMinusClientMs": 0.009179115295410156,
+        "roundTripMs": 0.25010108947753906
+      },
+      {
+        "serverMinusClientMs": 0.014424324035644531,
+        "roundTripMs": 0.2505779266357422
+      },
+      {
+        "serverMinusClientMs": -0.12183189392089844,
+        "roundTripMs": 0.5736351013183594
+      },
+      {
+        "serverMinusClientMs": 0.012159347534179688,
+        "roundTripMs": 0.2512931823730469
+      },
+      {
+        "serverMinusClientMs": 0.01728534698486328,
+        "roundTripMs": 0.2582073211669922
+      },
+      {
+        "serverMinusClientMs": 0.020503997802734375,
+        "roundTripMs": 0.2617835998535156
+      },
+      {
+        "serverMinusClientMs": 0.023365020751953125,
+        "roundTripMs": 0.26607513427734375
+      },
+      {
+        "serverMinusClientMs": 0.034689903259277344,
+        "roundTripMs": 0.31828880310058594
+      },
+      {
+        "serverMinusClientMs": -0.0902414321899414,
+        "roundTripMs": 0.5810260772705078
+      },
+      {
+        "serverMinusClientMs": -0.02658367156982422,
+        "roundTripMs": 0.5886554718017578
+      },
+      {
+        "serverMinusClientMs": -0.07450580596923828,
+        "roundTripMs": 0.5757808685302734
+      },
+      {
+        "serverMinusClientMs": 0.05412101745605469,
+        "roundTripMs": 0.42819976806640625
+      },
+      {
+        "serverMinusClientMs": -0.21445751190185547,
+        "roundTripMs": 0.9715557098388672
+      },
+      {
+        "serverMinusClientMs": -0.14865398406982422,
+        "roundTripMs": 0.6616115570068359
+      }
+    ],
+    "medianBestHalfOffsetMs": 0.01806020736694336,
+    "minimumRoundTripMs": 0.15687942504882812,
+    "capturedUnix": 1791516232.900609
+  },
+  "launcherAtCompletion": {
+    "path": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/launcher",
+    "sha256": "994d0b9e7f8ca30386fd42a5c403269065e80c5ab7c3a0fbebc5ab80bdb7471c",
+    "text": "#!/bin/sh\nexec env -i PATH=/usr/bin:/bin PROCON37_G007_FUTURE_WEIGHT=0 PROCON37_G007_RESERVE_WEIGHT=15 PROCON37_DISTRIBUTED_TOKEN_FILE=/home/voidlinux-3/procon37-distributed-resume/20261009-D0/cluster.token taskset -c 0-31 /home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver --mode worker --threads 32 --worker-offset 46 --listen 192.168.0.33:39370 --cross-elite on \"$@\"\n"
+  },
+  "processes": [
+    {
+      "pid": 2072,
+      "startTicks": "1266358",
+      "startTicksMatchStartRecord": true,
+      "bootId": "21b738ab-7c59-47e2-bc9f-07075a0e35af",
+      "executable": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+      "executableSha256": "574dd99a8ff0d20035acccca3f4e207ad2d7701308bc10374694137aa0f33016",
+      "cwd": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0",
+      "status": {
+        "Name": "distributed-sol",
+        "State": "S (sleeping)",
+        "Threads": "32",
+        "Cpus_allowed_list": "0-31",
+        "VmRSS": "10754104 kB",
+        "VmHWM": "10815260 kB",
+        "VmSize": "12195120 kB",
+        "VmPeak": "12260656 kB"
+      },
+      "scope": "C012 on short01 worker process lifetime; VmHWM includes all 12 cases"
+    }
+  ],
+  "remainingRuntimeProcesses": [
+    {
+      "pid": 2072,
+      "role": "solver",
+      "executable": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+      "executableSha256": "574dd99a8ff0d20035acccca3f4e207ad2d7701308bc10374694137aa0f33016",
+      "startTicks": "1266358",
+      "status": {
+        "Name": "distributed-sol",
+        "State": "S (sleeping)",
+        "Threads": "32",
+        "Cpus_allowed_list": "0-31",
+        "VmRSS": "10754104 kB",
+        "VmHWM": "10815260 kB",
+        "VmSize": "12195120 kB",
+        "VmPeak": "12260656 kB"
+      }
+    }
+  ]
+}

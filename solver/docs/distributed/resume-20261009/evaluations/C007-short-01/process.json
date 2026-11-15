@@ -1,0 +1,32 @@
+{
+  "stage": "C007-short-01",
+  "status": "running",
+  "label": "分散C007・経路木圧縮と遅延展開・D0基準比較1回目・短縮12件・10秒",
+  "shortMs": 10000,
+  "startedUnix": 1791504436.5196025,
+  "command": [
+    "/home/imak/work/procon37/target/release/server",
+    "run",
+    "12",
+    "--players",
+    "4",
+    "--config",
+    "/home/imak/work/procon37/.server/distributed/evaluations/C007-short-01/run-config.json",
+    "--label",
+    "分散C007・経路木圧縮と遅延展開・D0基準比較1回目・短縮12件・10秒",
+    "--match-port",
+    "11451",
+    "--time-limit-ms",
+    "10000"
+  ],
+  "directory": "/home/imak/work/procon37/.server/distributed/evaluations/C007-short-01",
+  "history": "/home/imak/work/procon37/.server/runs",
+  "version": "C007-compact",
+  "existingRunIds": [
+    "1791503276339409187-91328"
+  ],
+  "pid": 94528,
+  "startTicks": "5444447",
+  "state": "R",
+  "bootId": "0ed549c2-ebe5-4a00-a7fe-2a56c0403979"
+}

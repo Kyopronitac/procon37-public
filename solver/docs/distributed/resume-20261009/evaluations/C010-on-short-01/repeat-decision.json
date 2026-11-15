@@ -1,0 +1,282 @@
+{
+  "adopted": false,
+  "formalEvaluationJustifiedByCurrentResults": false,
+  "decision": "玉数改善は複数seedに分布するが、平均順位と日別種類数は悪化。C010 onを同一版・同条件で1回反復して正式移行を判断する。新候補やGPU実行は追加しない。",
+  "inputs": {
+    "solver/docs/distributed/resume-20261009/evaluations/C010-on-short-01/run.json": "7ffd6a0d5a97c0043e5703356690913b37bb0c022a1524abefe50972c52e3abd",
+    "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-01/run.json": "7d9ee3c404dec6387dc982913a3c6e08b2fe01eb9c076afe1783d10a488c14ae",
+    "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-02/run.json": "c6d3daef4342d1740141bcd5334d3150ca03c3fa33493b6261be938b5a7eaa3b"
+  },
+  "comparisons": {
+    "resume-D0-short-01": {
+      "scoreWinsTiesLosses": {
+        "win": 6,
+        "tie": 2,
+        "loss": 4
+      },
+      "seedDeltas": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rankDelta": 2,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": -5
+          }
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 0
+          }
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 4
+          }
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": -2
+          }
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rankDelta": 1,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": -1
+          }
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 2
+          }
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rankDelta": 1,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": -1,
+            "udon": 3
+          }
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 3
+          }
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 4
+          }
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rankDelta": -3,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 2
+          }
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 2
+          }
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 0
+          }
+        }
+      ],
+      "scoreDeltaSum": {
+        "uniqueBrands": 0,
+        "dailyBrands": -1,
+        "udon": 12
+      },
+      "udonDeltaExcludingSeed11": 12
+    },
+    "resume-D0-short-02": {
+      "scoreWinsTiesLosses": {
+        "win": 8,
+        "tie": 0,
+        "loss": 4
+      },
+      "seedDeltas": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rankDelta": 2,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": -4
+          }
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 2
+          }
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 2
+          }
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rankDelta": -1,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 3
+          }
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rankDelta": 1,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": -1
+          }
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 3
+          }
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rankDelta": 2,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": -1,
+            "udon": -1
+          }
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 1
+          }
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 1
+          }
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": -1
+          }
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rankDelta": 0,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 3
+          }
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rankDelta": -2,
+          "scoreDelta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 12
+          }
+        }
+      ],
+      "scoreDeltaSum": {
+        "uniqueBrands": 0,
+        "dailyBrands": -1,
+        "udon": 20
+      },
+      "udonDeltaExcludingSeed11": 8
+    }
+  }
+}

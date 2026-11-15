@@ -1,0 +1,31 @@
+{
+  "stage": "C013-submit55-regression-01",
+  "startedUnix": 1791570162.1518893,
+  "nominalDurationSeconds": 1970,
+  "estimatedTestFinishJst": "2026-10-10T03:56:00+09:00",
+  "estimatedReviewFinishJst": "2026-10-10T04:05:00+09:00",
+  "seeds": [
+    3,
+    6,
+    7,
+    9
+  ],
+  "version": "C013-scheduled-submission-on-submit55",
+  "bridgeSha256": "923d9d7a58b7797c9dd375b286cc12c0e1481d3e368c3b94708ef62af0e37b94",
+  "serverSha256": "a4380930d6a66dc22bd9c40725ef93b8f648f2053d5a174c63392f4a2a35f252",
+  "solverSha256": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+  "validation": {
+    "bridgeRust": 21,
+    "bridgeScheduledHttp": 7,
+    "bridgeLegacyHttp": 6,
+    "serverRust": 26,
+    "runShConsoleAndMap": 6,
+    "C013Rust": 20,
+    "C013Tcp": 6
+  },
+  "status": "interrupted_by_user",
+  "adoptedVersion": "D0",
+  "newCommitPush": false,
+  "completedCases": 0,
+  "estimatesSuperseded": true
+}

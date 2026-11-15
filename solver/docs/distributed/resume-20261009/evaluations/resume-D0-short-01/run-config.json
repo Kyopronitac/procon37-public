@@ -1,0 +1,16 @@
+{
+  "count": 12,
+  "players": 4,
+  "seed": null,
+  "format": null,
+  "arenaMaps": true,
+  "label": "分散D0・再接続配置と時計同期の基準1回目・短縮12件・10秒",
+  "timeLimitMs": 10000,
+  "teamNames": [
+    "分散D0",
+    "固定並列",
+    "固定第6世代",
+    "固定第8世代"
+  ],
+  "serverProgram": "tester/server/procon-server"
+}

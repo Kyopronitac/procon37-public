@@ -1,0 +1,112 @@
+{
+  "v1": [
+    {
+      "pid": 1852,
+      "uid": 1000,
+      "argv": [
+        "python3",
+        "-u",
+        "tester/server-bridge/distributed.py",
+        "start",
+        ""
+      ],
+      "startTicks": "198495"
+    },
+    {
+      "pid": 1880,
+      "uid": 1000,
+      "argv": [
+        "python3",
+        "-u",
+        "/home/voidlinux-1/procon37-production/D0-records-20261009/distributed.py",
+        "_node",
+        "start",
+        "/home/voidlinux-1/procon37-production/D0-records-20261009",
+        "v1",
+        "a4f618fd648f374f4a9aaae9a8e014a500ffaa34e72ee3ebd677091a98960475",
+        ""
+      ],
+      "startTicks": "198737"
+    },
+    {
+      "pid": 1883,
+      "uid": 1000,
+      "argv": [
+        "python3",
+        "-u",
+        "/home/voidlinux-1/procon37-production/D0-records-20261009/distributed.py",
+        "_node",
+        "run",
+        "/home/voidlinux-1/procon37-production/D0-records-20261009",
+        "v1",
+        ""
+      ],
+      "startTicks": "198743"
+    },
+    {
+      "pid": 1979,
+      "uid": 1000,
+      "argv": [
+        "/home/voidlinux-1/procon37-production/D0-records-20261009/bin/server-bridge",
+        "--server",
+        "http://192.168.0.81:11451",
+        "--token",
+        "[redacted]",
+        "--solver",
+        "/home/voidlinux-1/procon37-production/D0-records-20261009/bin/distributed-solver",
+        "--cwd",
+        "/home/voidlinux-1/procon37-production/D0-records-20261009",
+        "--record-dir",
+        "/home/voidlinux-1/procon37/.server/submissions",
+        "--",
+        "--mode",
+        "coordinator",
+        "--threads",
+        "32",
+        "--seed",
+        "0",
+        "--peers",
+        "192.168.0.22:39370/16/31,192.168.0.33:39370/32/46",
+        ""
+      ],
+      "startTicks": "258293"
+    }
+  ],
+  "v2": [
+    {
+      "pid": 1604,
+      "uid": 1000,
+      "argv": [
+        "python3",
+        "-u",
+        "/home/voidlinux-2/procon37-production/D0-records-20261009/distributed.py",
+        "_node",
+        "start",
+        "/home/voidlinux-2/procon37-production/D0-records-20261009",
+        "v2",
+        "a4f618fd648f374f4a9aaae9a8e014a500ffaa34e72ee3ebd677091a98960475",
+        ""
+      ],
+      "startTicks": "226741"
+    },
+    {
+      "pid": 1606,
+      "uid": 1000,
+      "argv": [
+        "/home/voidlinux-2/procon37-production/D0-records-20261009/bin/distributed-solver",
+        "--mode",
+        "worker",
+        "--threads",
+        "16",
+        "--worker-offset",
+        "31",
+        "--listen",
+        "192.168.0.22:39370",
+        ""
+      ],
+      "startTicks": "226748"
+    }
+  ],
+  "v3": [],
+  "nomlab": []
+}

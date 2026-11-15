@@ -1,0 +1,204 @@
+{
+  "hostname": "NOMLAB-UBUNTU",
+  "capturedAtUtc": "2026-10-09T00:05:22.521083+00:00",
+  "directory": "/home/nomlab-ubuntu/procon37-distributed",
+  "log": {
+    "path": "/home/nomlab-ubuntu/procon37-distributed/resume-team.log",
+    "capturedStartByte": 0,
+    "capturedEndByte": 6604,
+    "sourceSizeAtOpen": 6604,
+    "inode": 36181770,
+    "device": 66306,
+    "mtimeNsAtOpen": 1791504208192294178,
+    "sha256OfCapturedByteRange": "d1ba6849c7892d9390e4486534fbd7590c106eb68d5b98924cd6c2fdcdfb9962",
+    "totalLines": 137,
+    "diagnosticLines": [],
+    "flags": {
+      "timeout": {
+        "count": 0,
+        "samples": []
+      },
+      "deadline": {
+        "count": 0,
+        "samples": []
+      },
+      "fallback": {
+        "count": 0,
+        "samples": []
+      },
+      "panic": {
+        "count": 0,
+        "samples": []
+      },
+      "rejected": {
+        "count": 0,
+        "samples": []
+      },
+      "unavailable": {
+        "count": 0,
+        "samples": []
+      },
+      "disconnected": {
+        "count": 0,
+        "samples": []
+      }
+    }
+  },
+  "cpus": [
+    {
+      "cpu": 0,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 1,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 2,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 3,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 4,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 5,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 6,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 7,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 8,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 9,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 10,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 11,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 12,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 13,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 14,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 15,
+      "governor": "performance",
+      "epp": "performance"
+    }
+  ],
+  "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 00:05:20 2026\nSystem time     : 0.000005077 seconds fast of NTP time\nLast offset     : +0.000004226 seconds\nRMS offset      : 0.000163681 seconds\nFrequency       : 18.394 ppm slow\nResidual freq   : +0.005 ppm\nSkew            : 0.188 ppm\nRoot delay      : 0.001369914 seconds\nRoot dispersion : 0.001050892 seconds\nUpdate interval : 48.7 seconds\nLeap status     : Normal\n",
+  "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^? 185.125.190.122               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 185.125.190.123               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 91.189.91.112                 0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 91.189.91.113                 0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 185.125.190.121               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^* 192.168.0.81                 10   4   377     1    +92us[  +96us] +/- 1783us\n",
+  "clockProbe": {
+    "server": "192.168.0.81",
+    "port": 32123,
+    "samples": [
+      {
+        "serverMinusClientMs": -0.1285076141357422,
+        "roundTripMs": 1.5163421630859375
+      },
+      {
+        "serverMinusClientMs": -0.23484230041503906,
+        "roundTripMs": 1.9197463989257812
+      },
+      {
+        "serverMinusClientMs": -0.09036064147949219,
+        "roundTripMs": 1.7914772033691406
+      },
+      {
+        "serverMinusClientMs": -0.23984909057617188,
+        "roundTripMs": 2.0360946655273438
+      },
+      {
+        "serverMinusClientMs": -0.10716915130615234,
+        "roundTripMs": 1.5590190887451172
+      },
+      {
+        "serverMinusClientMs": -0.10895729064941406,
+        "roundTripMs": 1.5635490417480469
+      },
+      {
+        "serverMinusClientMs": -0.3848075866699219,
+        "roundTripMs": 2.1276473999023438
+      },
+      {
+        "serverMinusClientMs": -0.22017955780029297,
+        "roundTripMs": 2.0630359649658203
+      },
+      {
+        "serverMinusClientMs": -0.38492679595947266,
+        "roundTripMs": 2.2194385528564453
+      },
+      {
+        "serverMinusClientMs": -0.21922588348388672,
+        "roundTripMs": 2.0334720611572266
+      },
+      {
+        "serverMinusClientMs": -0.33020973205566406,
+        "roundTripMs": 2.0551681518554688
+      },
+      {
+        "serverMinusClientMs": -0.23305416107177734,
+        "roundTripMs": 1.9314289093017578
+      },
+      {
+        "serverMinusClientMs": -0.3629922866821289,
+        "roundTripMs": 2.233266830444336
+      },
+      {
+        "serverMinusClientMs": -0.22280216217041016,
+        "roundTripMs": 1.9390583038330078
+      },
+      {
+        "serverMinusClientMs": -0.21004676818847656,
+        "roundTripMs": 2.140522003173828
+      },
+      {
+        "serverMinusClientMs": -0.22137165069580078,
+        "roundTripMs": 1.977682113647461
+      }
+    ],
+    "medianBestHalfOffsetMs": -0.17493963241577148,
+    "minimumRoundTripMs": 1.5163421630859375,
+    "capturedUnix": 1791504323.3627708
+  }
+}

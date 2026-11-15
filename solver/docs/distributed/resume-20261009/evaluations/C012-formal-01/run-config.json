@@ -1,0 +1,16 @@
+{
+  "count": 12,
+  "players": 4,
+  "seed": null,
+  "format": null,
+  "arenaMaps": true,
+  "label": "分散C012・日中解共有の公式時間評価・保存D0正式比較・正式12件",
+  "timeLimitMs": null,
+  "teamNames": [
+    "分散C012-isolated-cooperation-on",
+    "固定並列",
+    "固定第6世代",
+    "固定第8世代"
+  ],
+  "serverProgram": "tester/server/procon-server"
+}

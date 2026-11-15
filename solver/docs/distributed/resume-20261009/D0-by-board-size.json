@@ -1,0 +1,221 @@
+{
+  "metric": "team0 mean rank; smaller is better; ties follow recorded server rank",
+  "shortCondition": "current fixed four-team deployment, all teams 10 seconds, 12 seeds per run, all48AC each",
+  "formalCondition": "initial formal deployment, official limits; different fixed local binary builds/placement from current short runs, reference only",
+  "shortRuns": {
+    "resume-D0-short-01": {
+      "16x16": {
+        "cases": [
+          {
+            "seed": "0",
+            "rank": 1
+          },
+          {
+            "seed": "3",
+            "rank": 1
+          },
+          {
+            "seed": "6",
+            "rank": 2
+          },
+          {
+            "seed": "9",
+            "rank": 4
+          }
+        ],
+        "count": 4,
+        "meanRank": 2.0
+      },
+      "24x24": {
+        "cases": [
+          {
+            "seed": "1",
+            "rank": 1
+          },
+          {
+            "seed": "4",
+            "rank": 1
+          },
+          {
+            "seed": "7",
+            "rank": 1
+          },
+          {
+            "seed": "10",
+            "rank": 1
+          }
+        ],
+        "count": 4,
+        "meanRank": 1.0
+      },
+      "32x32": {
+        "cases": [
+          {
+            "seed": "2",
+            "rank": 1
+          },
+          {
+            "seed": "5",
+            "rank": 1
+          },
+          {
+            "seed": "8",
+            "rank": 1
+          },
+          {
+            "seed": "11",
+            "rank": 1
+          }
+        ],
+        "count": 4,
+        "meanRank": 1.0
+      }
+    },
+    "resume-D0-short-02": {
+      "16x16": {
+        "cases": [
+          {
+            "seed": "0",
+            "rank": 1
+          },
+          {
+            "seed": "3",
+            "rank": 2
+          },
+          {
+            "seed": "6",
+            "rank": 1
+          },
+          {
+            "seed": "9",
+            "rank": 1
+          }
+        ],
+        "count": 4,
+        "meanRank": 1.25
+      },
+      "24x24": {
+        "cases": [
+          {
+            "seed": "1",
+            "rank": 1
+          },
+          {
+            "seed": "4",
+            "rank": 1
+          },
+          {
+            "seed": "7",
+            "rank": 1
+          },
+          {
+            "seed": "10",
+            "rank": 1
+          }
+        ],
+        "count": 4,
+        "meanRank": 1.0
+      },
+      "32x32": {
+        "cases": [
+          {
+            "seed": "2",
+            "rank": 1
+          },
+          {
+            "seed": "5",
+            "rank": 1
+          },
+          {
+            "seed": "8",
+            "rank": 1
+          },
+          {
+            "seed": "11",
+            "rank": 3
+          }
+        ],
+        "count": 4,
+        "meanRank": 1.5
+      }
+    }
+  },
+  "shortCombined": {
+    "16x16": {
+      "count": 8,
+      "meanRank": 1.625,
+      "firstPlaceCount": 5
+    },
+    "24x24": {
+      "count": 8,
+      "meanRank": 1.0,
+      "firstPlaceCount": 8
+    },
+    "32x32": {
+      "count": 8,
+      "meanRank": 1.25,
+      "firstPlaceCount": 7
+    }
+  },
+  "initialFormal": {
+    "16x16": {
+      "count": 4,
+      "meanRank": 2.25,
+      "ranks": [
+        3,
+        1,
+        3,
+        2
+      ]
+    },
+    "24x24": {
+      "count": 4,
+      "meanRank": 1.75,
+      "ranks": [
+        1,
+        4,
+        1,
+        1
+      ]
+    },
+    "32x32": {
+      "count": 4,
+      "meanRank": 1.0,
+      "ranks": [
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  },
+  "inputs": {
+    "solver/docs/distributed/initial-formal-run.json": "b25645bcf83f0b5b7e1abdedddbddaa4b2eea6a78ee72470b91c54aa01074b9b",
+    "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-01/run.json": "7d9ee3c404dec6387dc982913a3c6e08b2fe01eb9c076afe1783d10a488c14ae",
+    ".server/runs/1791503276339409187-91328/0/problem.json": "ff0ffb88986635de1a8e1267a1335572fd842d3ef79fe8712d65b2f557545507",
+    ".server/runs/1791503276339409187-91328/1/problem.json": "2b3941dd6f59f829293b27dc68d2b2c34d3d605d3efade5281832e9c7d0e40b2",
+    ".server/runs/1791503276339409187-91328/2/problem.json": "6ca533612877191615211e13aef7a58a41dde61b3dc5208757008dba1e4d8c57",
+    ".server/runs/1791503276339409187-91328/3/problem.json": "2785f18eca3a8939bc7b950a05f32a9bd5fc2fb8e6b9a8a898b5958cc0bc8874",
+    ".server/runs/1791503276339409187-91328/4/problem.json": "5899d1abc32dc8f2c43901f3ead580f7c9649d94cf64a07ca347c479622ab0a7",
+    ".server/runs/1791503276339409187-91328/5/problem.json": "4a424c2e30e549d223ae6ddc83c5cbb2d697468443e79e3068aa20128c3cd7da",
+    ".server/runs/1791503276339409187-91328/6/problem.json": "6ee5e88d4d9d8e1670fb2b336056f738fbc1c5152786155f6017386fce4d5840",
+    ".server/runs/1791503276339409187-91328/7/problem.json": "42fe65185de532bff862f732c13129c0e81cd1e571cbcb6ab745af732fc18ce3",
+    ".server/runs/1791503276339409187-91328/8/problem.json": "4f2d9885e83e6681cf7a3ec0e0461ebfb53f218f2cebe0494d6d08a207345476",
+    ".server/runs/1791503276339409187-91328/9/problem.json": "fcee126ae6cc31aaaa78cb0f563a3f6f24014e337d75d548db89871ea8601d21",
+    ".server/runs/1791503276339409187-91328/10/problem.json": "603b1dc739999b2e90bc28d7dc417b8d30e50cb00a500c0d700d886124d023e1",
+    ".server/runs/1791503276339409187-91328/11/problem.json": "47ea2520b2e1e418ae308f5daea6e8e42101d3291dcbe01330b33120a0df8c2b",
+    "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-02/run.json": "c6d3daef4342d1740141bcd5334d3150ca03c3fa33493b6261be938b5a7eaa3b",
+    ".server/runs/1791506866153064781-104560/0/problem.json": "ff0ffb88986635de1a8e1267a1335572fd842d3ef79fe8712d65b2f557545507",
+    ".server/runs/1791506866153064781-104560/1/problem.json": "2b3941dd6f59f829293b27dc68d2b2c34d3d605d3efade5281832e9c7d0e40b2",
+    ".server/runs/1791506866153064781-104560/2/problem.json": "6ca533612877191615211e13aef7a58a41dde61b3dc5208757008dba1e4d8c57",
+    ".server/runs/1791506866153064781-104560/3/problem.json": "2785f18eca3a8939bc7b950a05f32a9bd5fc2fb8e6b9a8a898b5958cc0bc8874",
+    ".server/runs/1791506866153064781-104560/4/problem.json": "5899d1abc32dc8f2c43901f3ead580f7c9649d94cf64a07ca347c479622ab0a7",
+    ".server/runs/1791506866153064781-104560/5/problem.json": "4a424c2e30e549d223ae6ddc83c5cbb2d697468443e79e3068aa20128c3cd7da",
+    ".server/runs/1791506866153064781-104560/6/problem.json": "6ee5e88d4d9d8e1670fb2b336056f738fbc1c5152786155f6017386fce4d5840",
+    ".server/runs/1791506866153064781-104560/7/problem.json": "42fe65185de532bff862f732c13129c0e81cd1e571cbcb6ab745af732fc18ce3",
+    ".server/runs/1791506866153064781-104560/8/problem.json": "4f2d9885e83e6681cf7a3ec0e0461ebfb53f218f2cebe0494d6d08a207345476",
+    ".server/runs/1791506866153064781-104560/9/problem.json": "fcee126ae6cc31aaaa78cb0f563a3f6f24014e337d75d548db89871ea8601d21",
+    ".server/runs/1791506866153064781-104560/10/problem.json": "603b1dc739999b2e90bc28d7dc417b8d30e50cb00a500c0d700d886124d023e1",
+    ".server/runs/1791506866153064781-104560/11/problem.json": "47ea2520b2e1e418ae308f5daea6e8e42101d3291dcbe01330b33120a0df8c2b"
+  }
+}

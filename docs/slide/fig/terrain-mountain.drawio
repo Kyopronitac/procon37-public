@@ -1,0 +1,16 @@
+<mxfile host="app.diagrams.net" agent="Codex" version="31.4.5">
+  <diagram id="terrain-mountain" name="山地の六角形">
+    <mxGraphModel dx="48" dy="48" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="48" pageHeight="48" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="terrain-mountain" value="" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.42;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="2.0" y="4.94744111674235" width="44" height="38.1051177665153" as="geometry" />
+        </mxCell>
+        <mxCell id="terrain-mountain-terrain-mark" value="" vertex="1" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;">
+          <mxGeometry x="15.2" y="17.4" width="17.6" height="13.200000000000001" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

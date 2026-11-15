@@ -1,0 +1,16 @@
+{
+  "files": {
+    "probe.stderr": "894cdbe0014c9e62ae22cc395f32ee2639ad3c110a2117d2ee21a1ec2e3fc7c6",
+    "probe.jsonl": "b9cbab8784a9caad0145bc7ed1bb2a5eabfd6f96d9c4e2746cd2ffa12b240c97",
+    "summary.json": "d3977462c5007946f21ceae29d4531f6008886672321717784f7cabc6aba6655",
+    "postflight-raw.txt": "d73104413bfffb0a1497b013c29fe21db573c69303548d4a403d8bb194bbe1fd",
+    "controller.json": "8b2b6c07bfb6357a479456ba3d367b963c1557453acf9cc68f8e063379e409bf"
+  },
+  "probeSourceAggregateSha256": "49222ebe00a1e05e932a03d4c627df7793eba3b829f74b71fc9155ef673c5054",
+  "probeBinarySha256": "5854baa5d0b29b3c004174aa19dbde8e54a7997b25a3d5c461be567de58d7e46",
+  "C009SourceUnchanged": 47,
+  "C009ProductionBinaryUnchanged": true,
+  "remoteProcessesRemaining": [],
+  "remoteGroupRemaining": false,
+  "retryCount": 0
+}

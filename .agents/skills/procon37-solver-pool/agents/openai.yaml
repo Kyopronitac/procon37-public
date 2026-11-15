@@ -1,0 +1,4 @@
+interface:
+  display_name: "procon37 ソルバ世代育成"
+  short_description: "独立した開発者と評価担当で5体のソルバを世代交代させて強化する"
+  default_prompt: "$procon37-solver-pool で3世代育成し、各世代を評価・昇格してcommit・pushしてください。"

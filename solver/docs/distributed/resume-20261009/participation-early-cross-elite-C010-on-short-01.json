@@ -1,0 +1,176 @@
+{
+  "stage": "C010-on-short-01",
+  "capturedAtUtc": "2026-10-09T02:01:17.144239+00:00",
+  "scope": "One early read-only real-communication check, each remote read pinned CPU1 and bounded to last64KiB. Not performance evidence or complete-run aggregation. No configuration, process or fixed-opponent change.",
+  "nodes": {
+    "v1": {
+      "hostname": "VOIDLINUX-1",
+      "capturedAtUtc": "2026-10-09T02:01:17.034388+00:00",
+      "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/stderr.log",
+      "capturedStartByte": 180938,
+      "capturedEndByte": 246474,
+      "sourceSizeAtOpen": 246474,
+      "inode": 267667,
+      "sha256OfCapturedByteRange": "331ae1fe45c9dca37aae7eb33715d617ba5db5978ae4d55d78a10dadef373192",
+      "crossEliteRecords": [
+        {
+          "raw": "cross_elite request=5 origin=0 published=9 received=4 rejected=0 context_mismatch=0 imports=12 improved=4 sent=6 oversized=0",
+          "request": 5,
+          "origin": 0,
+          "published": 9,
+          "received": 4,
+          "rejected": 0,
+          "context_mismatch": 0,
+          "imports": 12,
+          "improved": 4,
+          "sent": 6,
+          "oversized": 0
+        },
+        {
+          "raw": "cross_elite request=6 origin=0 published=1 received=2 rejected=0 context_mismatch=0 imports=8 improved=0 sent=4 oversized=0",
+          "request": 6,
+          "origin": 0,
+          "published": 1,
+          "received": 2,
+          "rejected": 0,
+          "context_mismatch": 0,
+          "imports": 8,
+          "improved": 0,
+          "sent": 4,
+          "oversized": 0
+        }
+      ],
+      "recentRequestLines": [
+        "dist request=5 external_request=4 phase=plan input_digest=f1289176e6b6a167 selected_worker=76 value=35266.670 local_completed=31/31 remote_results=2/2 elapsed_ms=8585 state_digest=1f7c44ae888fc627",
+        "dist request=6 external_request=5 phase=plan input_digest=9bfbc850aac76d40 selected_worker=45 value=35104.362 local_completed=31/31 remote_results=2/2 elapsed_ms=8587 state_digest=fee1e6671cd64b99"
+      ],
+      "authenticationOrPanicLines": []
+    },
+    "v2": {
+      "hostname": "VOIDLINUX-2",
+      "capturedAtUtc": "2026-10-09T02:01:17.037021+00:00",
+      "path": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/resume-team.log",
+      "capturedStartByte": 7996187,
+      "capturedEndByte": 8061723,
+      "sourceSizeAtOpen": 8061723,
+      "inode": 1600756,
+      "sha256OfCapturedByteRange": "ecbfeecbc1d85a7cf6875afd192f8c5f06e3513cc928ab407e7ade6011acc846",
+      "crossEliteRecords": [
+        {
+          "raw": "cross_elite request=3 origin=31 published=8 received=4 rejected=0 context_mismatch=0 imports=8 improved=2 sent=2 oversized=0",
+          "request": 3,
+          "origin": 31,
+          "published": 8,
+          "received": 4,
+          "rejected": 0,
+          "context_mismatch": 0,
+          "imports": 8,
+          "improved": 2,
+          "sent": 2,
+          "oversized": 0
+        },
+        {
+          "raw": "cross_elite request=4 origin=31 published=10 received=3 rejected=0 context_mismatch=0 imports=6 improved=4 sent=1 oversized=0",
+          "request": 4,
+          "origin": 31,
+          "published": 10,
+          "received": 3,
+          "rejected": 0,
+          "context_mismatch": 0,
+          "imports": 6,
+          "improved": 4,
+          "sent": 1,
+          "oversized": 0
+        },
+        {
+          "raw": "cross_elite request=5 origin=31 published=6 received=3 rejected=0 context_mismatch=0 imports=6 improved=2 sent=2 oversized=0",
+          "request": 5,
+          "origin": 31,
+          "published": 6,
+          "received": 3,
+          "rejected": 0,
+          "context_mismatch": 0,
+          "imports": 6,
+          "improved": 2,
+          "sent": 2,
+          "oversized": 0
+        },
+        {
+          "raw": "cross_elite request=6 origin=31 published=1 received=2 rejected=0 context_mismatch=0 imports=4 improved=0 sent=1 oversized=0",
+          "request": 6,
+          "origin": 31,
+          "published": 1,
+          "received": 2,
+          "rejected": 0,
+          "context_mismatch": 0,
+          "imports": 4,
+          "improved": 0,
+          "sent": 1,
+          "oversized": 0
+        }
+      ],
+      "recentRequestLines": [
+        "dist worker request=3 completed=15/15 selected_worker=32 elapsed_ms=8448 rx_bytes=43244 tx_bytes=24516",
+        "dist worker request=4 job=22 phase=plan input_digest=7b8901d75268f22a started=15 budget_ms=8737",
+        "dist worker request=4 completed=15/15 selected_worker=38 elapsed_ms=8438 rx_bytes=67964 tx_bytes=38948",
+        "dist worker request=5 job=23 phase=plan input_digest=f1289176e6b6a167 started=15 budget_ms=8741",
+        "dist worker request=5 completed=15/15 selected_worker=38 elapsed_ms=8443 rx_bytes=92925 tx_bytes=57243",
+        "dist worker request=6 job=24 phase=plan input_digest=9bfbc850aac76d40 started=15 budget_ms=8741",
+        "dist worker request=6 completed=15/15 selected_worker=45 elapsed_ms=8441 rx_bytes=113758 tx_bytes=71503",
+        "dist worker request=7 job=25 phase=plan input_digest=3648a37361e65524 started=15 budget_ms=8741"
+      ],
+      "authenticationOrPanicLines": []
+    },
+    "v3": {
+      "hostname": "VOIDLINUX-3",
+      "capturedAtUtc": "2026-10-09T02:01:17.034912+00:00",
+      "path": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/resume-team.log",
+      "capturedStartByte": 16433594,
+      "capturedEndByte": 16499130,
+      "sourceSizeAtOpen": 16499130,
+      "inode": 42339654,
+      "sha256OfCapturedByteRange": "9dbfe7432d148ce8aa83bcbdae0b6003af91f5a85ccc3a43f38ccc937fa21680",
+      "crossEliteRecords": [
+        {
+          "raw": "cross_elite request=5 origin=46 published=13 received=3 rejected=0 context_mismatch=0 imports=10 improved=5 sent=2 oversized=0",
+          "request": 5,
+          "origin": 46,
+          "published": 13,
+          "received": 3,
+          "rejected": 0,
+          "context_mismatch": 0,
+          "imports": 10,
+          "improved": 5,
+          "sent": 2,
+          "oversized": 0
+        },
+        {
+          "raw": "cross_elite request=6 origin=46 published=1 received=2 rejected=0 context_mismatch=0 imports=10 improved=0 sent=1 oversized=0",
+          "request": 6,
+          "origin": 46,
+          "published": 1,
+          "received": 2,
+          "rejected": 0,
+          "context_mismatch": 0,
+          "imports": 10,
+          "improved": 0,
+          "sent": 1,
+          "oversized": 0
+        }
+      ],
+      "recentRequestLines": [
+        "dist worker request=5 completed=31/31 selected_worker=76 elapsed_ms=8460 rx_bytes=89234 tx_bytes=60936",
+        "dist worker request=6 job=24 phase=plan input_digest=9bfbc850aac76d40 started=31 budget_ms=8741",
+        "dist worker request=6 completed=31/31 selected_worker=71 elapsed_ms=8460 rx_bytes=110067 tx_bytes=75202",
+        "dist worker request=7 job=25 phase=plan input_digest=3648a37361e65524 started=31 budget_ms=8741"
+      ],
+      "authenticationOrPanicLines": []
+    }
+  },
+  "fields": "C010 bus counters emitted at close for actual-day planning. Selection does not create a bus. Host tail ranges need not contain matching requests.",
+  "functionalFinding": {
+    "eachHostHasCompletedActualDayWithSendReceiveImportAndLocalImprovement": true,
+    "allObservedContextMismatchAndOversizedZero": true,
+    "meaning": "The feature has real inter-host traffic and receiver-side imports/local objective improvement. These counters do not prove final submitted score or match rank improvement. Observation is bounded-tail only."
+  }
+}

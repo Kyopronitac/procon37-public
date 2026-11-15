@@ -1,0 +1,30 @@
+{
+  "adopted": false,
+  "formalEvaluationJustifiedByCurrentResults": false,
+  "decision": "C011はD0短縮2比で順位・日別種類数・玉数が悪化し、この試行では改善を確認できなかった。正式は見送り、ユーザー指示のD0ベースの日中通信C012を準備する。",
+  "result": {
+    "team": 0,
+    "rankSum": 20,
+    "scores": {
+      "uniqueBrands": 222,
+      "dailyBrands": 1276,
+      "udon": 2949
+    },
+    "meanRank": 1.6666666666666667
+  },
+  "before": {
+    "team": 0,
+    "rankSum": 15,
+    "scores": {
+      "uniqueBrands": 222,
+      "dailyBrands": 1277,
+      "udon": 2956
+    },
+    "meanRank": 1.25
+  },
+  "comparison": {
+    "win": 4,
+    "tie": 2,
+    "loss": 6
+  }
+}

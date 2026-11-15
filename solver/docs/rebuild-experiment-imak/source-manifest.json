@@ -1,0 +1,224 @@
+[
+  {
+    "solver": "solver01",
+    "commit": "cc3277fa2d95ea7494a4d552429d2c862a9787a7",
+    "binary": "solver-01",
+    "source": "solver/docs/rebuild-experiment-imak/solver01.rs",
+    "original_sources": [
+      {
+        "path": "main.rs",
+        "sha256": "2cd6a61b15b5fa86670784082b5d81abb8c2ebb525db241ccca3dcd71a92f19d"
+      },
+      {
+        "path": "solver/mod.rs",
+        "sha256": "f998044888ab4bcd3e268ab2f432060966cdc1cb68eed7d8eed0245def06b923"
+      },
+      {
+        "path": "solver/alns.rs",
+        "sha256": "95bb8a1fbe5cef7ea87fcce38d680ef07e27e6df4055946ba95205201a0dcd37"
+      },
+      {
+        "path": "solver/assignment.rs",
+        "sha256": "a432a13fb0a7b8f59f8be42685d3c683915ec21b157fafd58398fe8ca8bb14fc"
+      },
+      {
+        "path": "solver/beam.rs",
+        "sha256": "8cd45c9c463b49744ce7d1c95acdf58ada3047396725d0b1ac152c2f85b80ae9"
+      },
+      {
+        "path": "solver/config.rs",
+        "sha256": "89eb8d46945d75809556e72dfe6692d9ac0ebafd4be80a21a331017770739f43"
+      },
+      {
+        "path": "solver/cover.rs",
+        "sha256": "f9033508f823e8e2f251e4a4910d98712db335e1d2b495a1cfc0f17ac3decc58"
+      },
+      {
+        "path": "solver/coverbeam.rs",
+        "sha256": "88f50ca9a165a666fc84320909cb477905c5ff27232040227683bd978460ffc3"
+      },
+      {
+        "path": "solver/greedy.rs",
+        "sha256": "01cd503e98c39e1517c96a0bb87a5d9ae0591592def82fe6f4976b7566d93bdd"
+      },
+      {
+        "path": "solver/horizon.rs",
+        "sha256": "40985b02c6a01c0ac5190d4ffc70bc63907992e84cb9b21a70bc7b925b621fd0"
+      },
+      {
+        "path": "solver/neighborhood.rs",
+        "sha256": "75dc9f312d548cf9ac9702cb3c54aa4ee411197cba3451a222f55e19f0300090"
+      },
+      {
+        "path": "solver/paths.rs",
+        "sha256": "9ed7869fe82cec83904bd9102a53e7b9561d38bff47f8181be79bcb9552ac2d7"
+      },
+      {
+        "path": "solver/population.rs",
+        "sha256": "353a7449395cf2ea87856ef509bbf0ca3f5a010ba3e28311c10180f8c2ad6e40"
+      },
+      {
+        "path": "solver/repair.rs",
+        "sha256": "600faa7c1c12ea40b79244823db79a921b0b2e83ac5a20d5532c4e6debbcf41c"
+      },
+      {
+        "path": "solver/replay.rs",
+        "sha256": "c4df6deb6897dddb82bacaff23e730d14e053ba6e1b9c94ed97590f43a6a9626"
+      },
+      {
+        "path": "solver/supply.rs",
+        "sha256": "c8b2125324897f800c0cc6645595bae5ddca876b787d912e05e9761db6fd5958"
+      },
+      {
+        "path": "solver/target_search.rs",
+        "sha256": "74060cdc6f312e63978d4a7c215e6e2d87be024f79f3bdd8589d4f23aa81bb62"
+      },
+      {
+        "path": "solver/tests.rs",
+        "sha256": "279d778d3bf530598e793c40edf70546b329d30e3bbbc369d471756b0ce5511c"
+      }
+    ],
+    "source_sha256": "e4de07f83715e215c67ac29c55364de6cbd0baf8711dd87236a5afe44fd72582",
+    "packaging_changes": [
+      "外部モジュールを同名のインラインモジュールへ展開",
+      "出典コメントの追加とrustfmtによる整形"
+    ]
+  },
+  {
+    "solver": "solver02",
+    "commit": "cbeaafdf756898ba6f1a0e48a17c51669b580741",
+    "binary": "solver-02",
+    "source": "solver/docs/rebuild-experiment-imak/solver02.rs",
+    "original_sources": [
+      {
+        "path": "main.rs",
+        "sha256": "1b17b625e3db6dab99f6c9ac0a47099d003d8d058736db36b9f1454ca8b44727"
+      },
+      {
+        "path": "solver/mod.rs",
+        "sha256": "f684c8d1714975184f543a63f8cb502c928743656e8d231a01bd1e9fdee348aa"
+      },
+      {
+        "path": "solver/paths.rs",
+        "sha256": "f8ae5a37823fe1e42bae5959ef8c139d9140ed4c2257a8bf324b6199777b2142"
+      },
+      {
+        "path": "solver/tests.rs",
+        "sha256": "50d236c853cf6c29541d7d6302eac1ef8a1cb9f8299b2b205238b4b20ba7f20e"
+      }
+    ],
+    "source_sha256": "486d536cb4be1ee768007f351672104c75deca678dabec8cdc0561424d3446b1",
+    "packaging_changes": [
+      "外部モジュールを同名のインラインモジュールへ展開",
+      "出典コメントの追加とrustfmtによる整形"
+    ]
+  },
+  {
+    "solver": "solver03",
+    "commit": "c42d3ec4f177d24b83caed5001922724ba52c158",
+    "binary": "solver-03",
+    "source": "solver/docs/rebuild-experiment-imak/solver03.rs",
+    "original_sources": [
+      {
+        "path": "main.rs",
+        "sha256": "d7950b1b9c8803ef9458e55ba3c3b87cddbc4880eb6749ce6636bb6aeb9563af"
+      },
+      {
+        "path": "solver/mod.rs",
+        "sha256": "bac820d549db441c6c3fda6298f4ca406a54fa8cddbfd441d53a73f9750a6c81"
+      },
+      {
+        "path": "solver/paths.rs",
+        "sha256": "774c534dca8d7fa3b823f47beb5a92ab7feb725ea14914db4eaf53c525b02f52"
+      },
+      {
+        "path": "solver/tests.rs",
+        "sha256": "105cb939ebc2d90ef97d84b87f96e4224cc13e1822d33e43675ab8fc83e918c6"
+      }
+    ],
+    "source_sha256": "33fdb5240fddd0127d56dc7b4ce0c0b3d76eda3d426bfaf56345c9f9eac5489a",
+    "packaging_changes": [
+      "外部モジュールを同名のインラインモジュールへ展開",
+      "出典コメントの追加とrustfmtによる整形"
+    ]
+  },
+  {
+    "solver": "solver04",
+    "commit": "6961e7b1258f11bb2dfcfe0efa28947a8c0f663a",
+    "binary": "solver-04",
+    "source": "solver/docs/rebuild-experiment-imak/solver04.rs",
+    "original_sources": [
+      {
+        "path": "main.rs",
+        "sha256": "3e0754c77c6a6b8fe4b6394c185d6ae9699cf2967d85def5d794fc56884dd784"
+      },
+      {
+        "path": "solver/mod.rs",
+        "sha256": "c33520446b4080848efb174c22971e64c53aaf4b20fe83a5f7d7ca381f90fd60"
+      },
+      {
+        "path": "solver/paths.rs",
+        "sha256": "e51a97f66b71e9e2b58055e0d40fdb9b1e5ebcf246fcef0c1fbec8708fade1c0"
+      },
+      {
+        "path": "solver/planner.rs",
+        "sha256": "7c70b2635c48c63b6376999ca602339aac8d4e481d42664e7222cf460b50b2a6"
+      },
+      {
+        "path": "solver/search.rs",
+        "sha256": "cd438afa549a2789d3beaae4b1c42e57d2f38ff7ee1ce95b3d83111ead6487f8"
+      },
+      {
+        "path": "solver/tests.rs",
+        "sha256": "ca0f837df4ee4be7560603a8d19f40832a6157b28c2cf1160d21d1edd828517d"
+      }
+    ],
+    "source_sha256": "479dd7d484c07456677336b28cc143e6893e4357a231401a4d0078df3f8de05a",
+    "packaging_changes": [
+      "外部モジュールを同名のインラインモジュールへ展開",
+      "出典コメントの追加とrustfmtによる整形",
+      "テスト用include_str!の相対パスを../official/から../../../official/へ更新"
+    ]
+  },
+  {
+    "solver": "solver05",
+    "commit": "6fd85e7caf9de55d383f11933b1d2213c9e04f77",
+    "binary": "solver-05",
+    "source": "solver/docs/rebuild-experiment-imak/solver05.rs",
+    "original_sources": [
+      {
+        "path": "main.rs",
+        "sha256": "c02a8dfe71c469de071ed1092dcf8606a0ddf6ec5bcfd535dc16cc4aae780814"
+      },
+      {
+        "path": "solver/mod.rs",
+        "sha256": "cdc9f8dcfcd4f38ef343108e59fb5678053bf8b1155dbb6ee197dfd0c7eaa379"
+      },
+      {
+        "path": "solver/network.rs",
+        "sha256": "275cc66337ae2f4d5bd8e463a0ada12a6e1ae3089bfdee0aa3cb46a14a498f55"
+      },
+      {
+        "path": "solver/random.rs",
+        "sha256": "96b25d472fbc8816c85fedb312d2f6c844c792bdd33da177243f42fcadb0924f"
+      },
+      {
+        "path": "solver/routing.rs",
+        "sha256": "3e6ed13a581faa5ff285bb1496a6cda067165acfad88f13355b4ba366d34a548"
+      },
+      {
+        "path": "solver/strategy.rs",
+        "sha256": "3712800189282312d53f57748b7a78a91bdf5e5a0f029aef210f229c5093a21c"
+      },
+      {
+        "path": "solver/tests.rs",
+        "sha256": "5a2852e8ebe3a8b6dabbf1822b12d1b20890380e23bc4af18993da7ec3b1eb9f"
+      }
+    ],
+    "source_sha256": "88e743cbe6c18ef11c8ef94b0a3e4cc8afbe13f5444d8e1a3ac358ecd5e1626f",
+    "packaging_changes": [
+      "外部モジュールを同名のインラインモジュールへ展開",
+      "出典コメントの追加とrustfmtによる整形"
+    ]
+  }
+]

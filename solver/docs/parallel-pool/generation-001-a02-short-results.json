@@ -1,0 +1,14 @@
+{
+  "run_id": "1791377750158564653-234750",
+  "run_json": "/tmp/parallel-pool-g001-a02-smoke-qmqb4l73/1791377750158564653-234750/run.json",
+  "rank_sums": {
+    "0": 8,
+    "1": 12,
+    "2": 12,
+    "3": 10,
+    "4": 12,
+    "5": 6
+  },
+  "all_18_ac": true,
+  "owner": "/root/generation_001_p0"
+}

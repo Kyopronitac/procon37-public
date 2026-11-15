@@ -1,0 +1,32 @@
+{
+  "name": "C009 owner finite probe",
+  "status": "local CPU passed; v2 GPU startup gate failed before performance measurement; cleanup verified; no retry",
+  "createdDate": "2026-10-09",
+  "includedCandidateSourceAggregateSha256": "9f8e182d3573dfc3514502c75ba8a4f11bb9c39be8f2dc2e4294ca675d4b533a",
+  "includedCandidateProductionBinarySha256": "a95804297f7f9aefd808167a6f2772454919f9c014b8f7f3cf0d1e750df32b4b",
+  "files": {
+    ".gitignore": "306fd52e74fca6746e12acc750f232de15e71da917756a1270d74c91f5eb7368",
+    "Cargo.lock": "8a16e6ced44a1a77418d9903cced51e738caea5c829a28f55ca5be72e0f08361",
+    "Cargo.toml": "0cbc3196160ddd2c31891406a11fbe56e6b447cb33372f8c5f76b35a87087f05",
+    "README.md": "54caf2893baeda834b53b9cdd47534bf8cb3700cfe028ee863fbeb058b6d8c56",
+    "docs/procedure.md": "34d96a26310e6ec6b4b8fd62f39cc6f0f889ae80a8a6c8b58f1a604fab7cdf68",
+    "src/main.rs": "ae74b2fe9d95221bca27538d2c7f2eb526758a743c51538e01adb96214abb76f",
+    "src/owner_impl.rs": "317583cb9b9dd43ccd8a5516b622e8b67dc8b4fbe45eae3e9d424b7ca307a81e",
+    "tools/run_v2.py": "d5198ebd687c987191833a658ea5d9f6807ba586aaf653176a936e306fd555bf",
+    "tools/summarize.py": "e520051550a17813d7bd30b03ad0458693d7a7cae6835747e51ec8bdaa8dfe23"
+  },
+  "sourceAggregateSha256": "49222ebe00a1e05e932a03d4c627df7793eba3b829f74b71fc9155ef673c5054",
+  "verification": {
+    "pythonSyntax": "AST parse only, no controller execution",
+    "c009SourceFilesVerified": 47,
+    "c009ProductionBinaryUnchanged": true,
+    "rustCompile": true,
+    "cpuOnlyProbe": true,
+    "remoteGpuProbe": "failed before Ready; 0 owner attempts; complete cleanup"
+  },
+  "preparationSourceAggregateSha256": "292acb92685c1190f5280b83c58200a935628fba8c073707b6333757677a98a2",
+  "binary": {
+    "path": "../../distributed-candidates/c009-gpu-owner/target/release/procon37-c009-owner-probe",
+    "sha256": "5854baa5d0b29b3c004174aa19dbde8e54a7997b25a3d5c461be567de58d7e46"
+  }
+}

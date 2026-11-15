@@ -1,0 +1,16 @@
+   Compiling solver v0.1.0 (/home/jikky/Downloads/procon37/solver/parallel-pool/initial-P0)
+    Finished `release` profile [optimized] target(s) in 3.26s
+     Running unittests main.rs (target/release/deps/solver-c8417b67d266688f)
+
+running 8 tests
+test planner::tests::changed_supplier_generates_a_valid_plan_for_actual_roles ... ok
+test planner::tests::forecast_graph_preserves_reused_selection_numbering ... ok
+test planner::tests::opponent_tree_conserves_travel_budget_and_skips_blocked_cells ... ok
+test planner::tests::parallel_graph_shares_paths_but_keeps_memos_private ... ok
+test planner::tests::rejected_selection_rebinds_roles_and_invalidates_warm_start ... ok
+test planner::tests::rejected_selection_with_no_supplier_respects_observed_fuel ... ok
+test planner::tests::supplier_path_modes_match_public_engine_and_cache ... ok
+test planner::tests::tiny_catch_up_requests_synchronize_without_search ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+

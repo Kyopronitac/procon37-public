@@ -1,0 +1,30 @@
+{
+  "generation": 4,
+  "run_id": "1790589571272463935-106256",
+  "status": "interrupted",
+  "completed": 18,
+  "total": 30,
+  "rank_sums_partial": [
+    38,
+    36,
+    71,
+    82,
+    33
+  ],
+  "all_completed_players_ac": true,
+  "promotion_evaluable": false,
+  "candidate_source_sha256": {
+    "main.rs": "013373bebf28e9d1603e054b744d2fb59838d10b6592d8b427b893c9d3f7de1a",
+    "Cargo.toml": "e53dc87d3ad432badde0ee7348ee7ec128de00e1369077f427b12cd43e7f4cc4",
+    "Cargo.lock": "695ea5661b1d44f9752e1748c7543ae642d67fe26371c4a7ffe513530a76b8f2",
+    "solver/circuit.rs": "83a82c32a4f3af15c13687e648f0c3d5a0319f2783b1323e402f46ae23378554",
+    "solver/escort.rs": "fbd3f2a7672cce50dee359f04d23f4df926c7f1587f6a3cd6f600d3a431d2481",
+    "solver/itinerary.rs": "a679a3a3213377128860f6b8e22e630874d8c5d80252ec282bac4171e27e177e",
+    "solver/joint.rs": "f123c28addc2c639b1c41ccc5336c3c44b81e70228d1ad4762452999e751b743",
+    "solver/patrol_first.rs": "333fd2bc6d5a683468d745a6550283d9f73350fcd1845de4b2d467df7e803bdb",
+    "solver/route_set.rs": "ff47d16b2a273de9515ee35a3cc753b20abf0c9fa276818dad22566869acfa6e",
+    "solver/tomorrow.rs": "e949c75c46b80dc9029cde90380d77631132cc9d24bb53a108b45158e4c18ac2",
+    "solver/tour.rs": "9716fdad94fc02b3c5eab4bfcab7403e1dd9d1cc3b8ab5cb452acce94b6a530e",
+    "solver/window.rs": "7b848ac7500f60569655115b2fd90673655a6b57af28cffd3c78de82bc9f4ec3"
+  }
+}

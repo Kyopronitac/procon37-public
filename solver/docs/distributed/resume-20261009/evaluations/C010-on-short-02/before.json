@@ -1,0 +1,276 @@
+{
+  "createdUnix": 1791512070.5558805,
+  "configurationSha256": "bb8b5ae5604f140bb8af77d97ed8b84eea34d4214b155d5a0b23b9ffc2793a3e",
+  "localFiles": {
+    "solver/distributed-lab/manage.py": "13eb9fa455cea3070378234c88fffaee5a25b43bbe1cb688eb419dc5bdceb2ae",
+    "solver/distributed-lab/lifecycle.py": "d14853b77092eb08260579478e1866496e374fef5682bc6a0877f436f0557bc8",
+    "solver/distributed-lab/team_runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+    "solver/distributed-lab/clock_sync.py": "e4cb308a1bf11df4d3ab6e2fd1bd8e714c978b3754e0e8dc3e26900d73193469",
+    "solver/distributed-lab/switch.py": "93649ab00f0b14dd87cff139cd111a1e9a862524e4610859836b69dff4c058b2",
+    "solver/distributed-candidates/c010-cross-elite/Cargo.lock": "680473abcd7458404d914148c368aa285d4a38b786b4177977a91ec86208b6da",
+    "solver/distributed-candidates/c010-cross-elite/Cargo.toml": "da196d978caee68350afcd73a240959fd89701d660b6c65dc8fdaabfb888907b",
+    "solver/distributed-candidates/c010-cross-elite/common/Cargo.toml": "aacfd3852bfa69b15cff7217c7f5bac52fbc0e9b49663af3c1aad0bb42484d4f",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/match-916.json": "7008196cd912926ab8790029ac1003e1a174a91fc6f3088332cf9abd561401e2",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/match-937.json": "7aa371cfe758f0fcc9edd6429e395dc57e5f1af63827d52fc1dd85edeea2dee2",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/match-941.json": "8168d083b044ee7eb5fd0d401f8f4470f42990ce8468934d5db84b6333bed8cf",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/pasted-16-01.json": "9e065b887faff5acb5dbc41b334a284bd41896ec3b7f362aff047d6bb1eb5622",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/pasted-16-02.json": "aa097fa2ef1536c4032c3547cad95bdadc40c44165bf3a599590feb0bbb9cb50",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/pasted-16-03.json": "d837b29d102c48e749368ebece013db610f5585db277ab8e9a3dbfc8942f0747",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/pasted-16-04.json": "740d0295e8a3ce023a31d0268c4c793171a2c850c0a75b0661af44b2e23ace05",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/pasted-24-01.json": "73e06d501144fb144f96dd257f095a1b9788bc0a42b74959135e50fc58e06488",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/pasted-24-02.json": "c86f8813a88ccf1c9410a720a6d087090fa27982d18caca0638fb212920936cc",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/pasted-24-03.json": "8c016ae2200b6a6ed0e95fb33a7f1370849c7cbeb539e806e11b6496cf0486f1",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/pasted-24-04.json": "93e99e1d08a9ce9ffabfb46ca8757f4cda1ed6f4f1146841745f4dcd82e09b7b",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/pasted-32-01.json": "b319229489edc829037a7edef2f3222eb603e7846074644fdfd5b58113012b50",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/pasted-32-02.json": "e338163d9dc9818572332ec98fbc7c9f0db35065cedc2e7a1e626ee2d30023d3",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/pasted-32-03.json": "b89e0290613e49710bd4630d76208ae0a5bf2af4229422e8ed9524a4eb48eeb3",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/pasted-32-04.json": "79bfa1ab4c7780a0252ec33fea058210e5b92b677d6688dcc84e51bf7d3efc3b",
+    "solver/distributed-candidates/c010-cross-elite/common/fixtures/arena/sources.json": "b8d42d8a5d7bb9b7b7f071d9f4e0fe0400f5011159e73e171bee1e6fa62718c6",
+    "solver/distributed-candidates/c010-cross-elite/common/src/engine.rs": "585e400d715f35da36b43e7c8d1edcb7d477bf00214986025dab340706d223ca",
+    "solver/distributed-candidates/c010-cross-elite/common/src/generator.rs": "8adff182497df2e7dead95f5a94e58cd982c4fab3b50b917af5ee67a3ee8abef",
+    "solver/distributed-candidates/c010-cross-elite/common/src/lib.rs": "524e7898caa8a92c3301e4c91f2d69737026f512608b5f87351308f9d93e6336",
+    "solver/distributed-candidates/c010-cross-elite/common/src/model.rs": "72ec763bb3aad8ebebace68ed5c3c86d48c3066df7e21797c8c3b10f380fc4e1",
+    "solver/distributed-candidates/c010-cross-elite/cross_elite.rs": "4e9aedecf208e140673b5181ca18407e484bac4c3c29f9d7631f02d1f04c153d",
+    "solver/distributed-candidates/c010-cross-elite/main.rs": "b4457bf4cef4e4a5790e0a684c3d18085dd67ec6c0428a33152bd12689a30e1d",
+    "solver/distributed-candidates/c010-cross-elite/official/sample_maps/sample_16.json": "15ba3fd41ca8a69a2e22f707092d23f569ca75350524c2a0ecf956cedcaf823a",
+    "solver/distributed-candidates/c010-cross-elite/official/sample_maps/sample_24.json": "4081cbca170ad09e291015c10b76224bc0d960b4bc3baa72d9d96752c112d9a5",
+    "solver/distributed-candidates/c010-cross-elite/official/sample_maps/sample_32.json": "3293a63681f7f248d39013bab903619968ba7832c0a5368162c508d5ec7fadaa",
+    "solver/distributed-candidates/c010-cross-elite/pool.rs": "e6b06bb34ee875558e84306c2479654d29f509febf55b2ec1c9d1674d9447f9b",
+    "solver/distributed-candidates/c010-cross-elite/runtime.rs": "b7fed497c5d30534e4e502b1d32010201e232c814385237179ad5fbaa5e71011",
+    "solver/distributed-candidates/c010-cross-elite/solver/planner.rs": "4676eac476fae22d09030085f225a5435ab2cc04bd6bd310cf4e075280b39ed4",
+    "solver/distributed-candidates/c010-cross-elite/tests/network.rs": "124fe795a87b611c20d7d0cdd343197789d6057552686a1001b7f3de9780b698",
+    "solver/distributed-candidates/c010-cross-elite/wire.rs": "95a86947b3764634b930bd0c66049f15bc9e801c8c1a824c40e85e3dcfe190e8",
+    "target/release/server": "368ac7cb6334469a0a5735fcfded1d52875ffdfb1cb47ffbea7b03471e4638b0",
+    "tester/server/procon-server": "769e101cbc6b80cce7732dae1e10d911ed1e9efefd3b1f94b6381652aa7741c1",
+    ".server/distributed/bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+    ".server/distributed/bin/pool-solver-06": "055374eca5a4f89b4f6e01e77fb489bf9e0683720ad53b4895adf0704fb62a86",
+    ".server/distributed/bin/pool-solver-08": "a7588e406d40fb1aa76ed606ed2a910a0aee911468f040ef37453037f033c5a2",
+    ".server/distributed/launchers/generation6.sh": "34a9d5f3d7fa57b7977281d862f7559399b1338a59ec58324272f89b03d3d6f4",
+    ".server/distributed/launchers/generation8.sh": "0fbe822a7a8cce9cf8f893fd7c5c5b82a2a10d725ce7ab95d6f571ff6db049d7",
+    ".server/distributed/team2/resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+    ".server/distributed/team3/resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+    "solver/distributed/.gitignore": "d19bf49b880a804f017d7ca0dd7ae36030030699e81c5e5007d1afd3b16a7044",
+    "solver/distributed/Cargo.lock": "680473abcd7458404d914148c368aa285d4a38b786b4177977a91ec86208b6da",
+    "solver/distributed/Cargo.toml": "da196d978caee68350afcd73a240959fd89701d660b6c65dc8fdaabfb888907b",
+    "solver/distributed/README.md": "1dc5a7715467dbc9aec8e3c4e77d256106e55a16eb1ec6f22d7f5cb27e21df11",
+    "solver/distributed/common/Cargo.toml": "aacfd3852bfa69b15cff7217c7f5bac52fbc0e9b49663af3c1aad0bb42484d4f",
+    "solver/distributed/common/fixtures/arena/README.md": "2c55ed0c46fa13d49efe2bf5c517db372e714f49b65d437dfc2c8cae6ed109b7",
+    "solver/distributed/common/fixtures/arena/match-916.json": "7008196cd912926ab8790029ac1003e1a174a91fc6f3088332cf9abd561401e2",
+    "solver/distributed/common/fixtures/arena/match-937.json": "7aa371cfe758f0fcc9edd6429e395dc57e5f1af63827d52fc1dd85edeea2dee2",
+    "solver/distributed/common/fixtures/arena/match-941.json": "8168d083b044ee7eb5fd0d401f8f4470f42990ce8468934d5db84b6333bed8cf",
+    "solver/distributed/common/fixtures/arena/pasted-16-01.json": "9e065b887faff5acb5dbc41b334a284bd41896ec3b7f362aff047d6bb1eb5622",
+    "solver/distributed/common/fixtures/arena/pasted-16-02.json": "aa097fa2ef1536c4032c3547cad95bdadc40c44165bf3a599590feb0bbb9cb50",
+    "solver/distributed/common/fixtures/arena/pasted-16-03.json": "d837b29d102c48e749368ebece013db610f5585db277ab8e9a3dbfc8942f0747",
+    "solver/distributed/common/fixtures/arena/pasted-16-04.json": "740d0295e8a3ce023a31d0268c4c793171a2c850c0a75b0661af44b2e23ace05",
+    "solver/distributed/common/fixtures/arena/pasted-24-01.json": "73e06d501144fb144f96dd257f095a1b9788bc0a42b74959135e50fc58e06488",
+    "solver/distributed/common/fixtures/arena/pasted-24-02.json": "c86f8813a88ccf1c9410a720a6d087090fa27982d18caca0638fb212920936cc",
+    "solver/distributed/common/fixtures/arena/pasted-24-03.json": "8c016ae2200b6a6ed0e95fb33a7f1370849c7cbeb539e806e11b6496cf0486f1",
+    "solver/distributed/common/fixtures/arena/pasted-24-04.json": "93e99e1d08a9ce9ffabfb46ca8757f4cda1ed6f4f1146841745f4dcd82e09b7b",
+    "solver/distributed/common/fixtures/arena/pasted-32-01.json": "b319229489edc829037a7edef2f3222eb603e7846074644fdfd5b58113012b50",
+    "solver/distributed/common/fixtures/arena/pasted-32-02.json": "e338163d9dc9818572332ec98fbc7c9f0db35065cedc2e7a1e626ee2d30023d3",
+    "solver/distributed/common/fixtures/arena/pasted-32-03.json": "b89e0290613e49710bd4630d76208ae0a5bf2af4229422e8ed9524a4eb48eeb3",
+    "solver/distributed/common/fixtures/arena/pasted-32-04.json": "79bfa1ab4c7780a0252ec33fea058210e5b92b677d6688dcc84e51bf7d3efc3b",
+    "solver/distributed/common/fixtures/arena/sources.json": "b8d42d8a5d7bb9b7b7f071d9f4e0fe0400f5011159e73e171bee1e6fa62718c6",
+    "solver/distributed/common/src/engine.rs": "585e400d715f35da36b43e7c8d1edcb7d477bf00214986025dab340706d223ca",
+    "solver/distributed/common/src/generator.rs": "8adff182497df2e7dead95f5a94e58cd982c4fab3b50b917af5ee67a3ee8abef",
+    "solver/distributed/common/src/lib.rs": "524e7898caa8a92c3301e4c91f2d69737026f512608b5f87351308f9d93e6336",
+    "solver/distributed/common/src/model.rs": "72ec763bb3aad8ebebace68ed5c3c86d48c3066df7e21797c8c3b10f380fc4e1",
+    "solver/distributed/main.rs": "b4457bf4cef4e4a5790e0a684c3d18085dd67ec6c0428a33152bd12689a30e1d",
+    "solver/distributed/official/sample_maps/README.md": "733c3fc6f3786aeabb7a02f07f5552d6d0a67c2acec2993b2522f7e82094cd5e",
+    "solver/distributed/official/sample_maps/sample_16.json": "15ba3fd41ca8a69a2e22f707092d23f569ca75350524c2a0ecf956cedcaf823a",
+    "solver/distributed/official/sample_maps/sample_24.json": "4081cbca170ad09e291015c10b76224bc0d960b4bc3baa72d9d96752c112d9a5",
+    "solver/distributed/official/sample_maps/sample_32.json": "3293a63681f7f248d39013bab903619968ba7832c0a5368162c508d5ec7fadaa",
+    "solver/distributed/pool.rs": "74a981b5f1423b16e07b8f0e888e00c797b41b670140921112b874b4a6b27214",
+    "solver/distributed/runtime/generation6.sh": "051341b1c513f6a5584df5e186e8f5609957f740467d24fd296222d17610e691",
+    "solver/distributed/runtime/generation8.sh": "fc80baa7f7bf11987b6010c1c43f4a2170a0c82dee20fb19a6d972551dbca9eb",
+    "solver/distributed/runtime/nomlab.sh": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+    "solver/distributed/runtime/v1.sh": "0064548dd334c4641025cc41e2aae4945c60a9945dd8707094524d62bf2ac1ba",
+    "solver/distributed/runtime/v2.sh": "e17907a7d9e139dfba5ddb0411b121932cb9c627249ec0cb7ac7a7673b061f0c",
+    "solver/distributed/runtime/v3.sh": "ddfac922f91c076bbbca639fcfeb4645226710eb9347b1a508e6e339ba0d0d70",
+    "solver/distributed/runtime.rs": "a8ebea03ba5ef47dafe65305488bb2c60af8a1a7e9c6efaf4ae386dada045922",
+    "solver/distributed/solver/planner.rs": "11e043e33018dee34f41f295d6ae1500497b0bfc7c8c33d5b253a5621587461a",
+    "solver/distributed/tests/network.rs": "791605c460e75b038843ef20f5e00d34eee28f3464617b552511b420cad0d36b",
+    "solver/distributed/tools/deploy.py": "e8607710e718cce7e73e3809c14674d5d722d1a68fc302cc19add72e528d71c7",
+    "solver/distributed/tools/run_evaluation.py": "113dfa50bb7fd114a8df59ecba80b2dd7a286da96adc4386e325092ceda8a145",
+    "solver/distributed/tools/snapshot.py": "ad1e2575d0d7c38d91d03f4f14195e2390c860d0c27080e086858f8f759d0ffb",
+    "solver/distributed/tools/ssh.py": "1d7d5c2936a418d16bff801aad7ceea943e9a60162bf7e0f2108cc9cb38a7502",
+    "solver/distributed/tools/summarize.py": "a07f5f3d21c1b90b25ed9221c8c2bcb817a186ae2d73796faf4977644d13e0e9",
+    "solver/distributed/wire.rs": "7f438dff1998ec9ff6008eb1242e50f2edd5017544f0d589be687147de845f7e"
+  },
+  "local": {
+    "files": {},
+    "processes": [
+      {
+        "pid": 90327,
+        "startTicks": "5306941",
+        "argv": [
+          "python3",
+          "/home/imak/work/procon37/.server/distributed/team2/resume-team-runner.py",
+          "--bridge",
+          "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+          "--solver",
+          "/home/imak/work/procon37/.server/distributed/launchers/generation6.sh",
+          "--server",
+          "http://192.168.0.81:11451",
+          "--team",
+          "2",
+          "--cpus",
+          "0",
+          ""
+        ],
+        "cpus": "0",
+        "threads": 1
+      },
+      {
+        "pid": 90331,
+        "startTicks": "5306976",
+        "argv": [
+          "python3",
+          "/home/imak/work/procon37/.server/distributed/team3/resume-team-runner.py",
+          "--bridge",
+          "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+          "--solver",
+          "/home/imak/work/procon37/.server/distributed/launchers/generation8.sh",
+          "--server",
+          "http://192.168.0.81:11451",
+          "--team",
+          "3",
+          "--cpus",
+          "2",
+          ""
+        ],
+        "cpus": "2",
+        "threads": 1
+      }
+    ],
+    "bootId": "0ed549c2-ebe5-4a00-a7fe-2a56c0403979"
+  },
+  "remote": {
+    "v1": {
+      "files": {
+        "distributed-solver": "a47fbe2a545e6cffa7f63b19c0e660f1a74e72311ec41acbdede8dd2625bedef",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "ebcd6ee7841830d20e4ceafeeea94ccd367558fa8401e39593c1ded75b029897",
+        "resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118"
+      },
+      "processes": [
+        {
+          "pid": 31010,
+          "startTicks": "8396747",
+          "argv": [
+            "python3",
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team-runner.py",
+            "--bridge",
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+            "--solver",
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--team",
+            "0",
+            "--cpus",
+            "0-31",
+            ""
+          ],
+          "cpus": "0-31",
+          "threads": 1
+        }
+      ],
+      "bootId": "a8ef7e33-3ceb-49fd-8cc1-2fac10dd1d50"
+    },
+    "v2": {
+      "files": {
+        "distributed-solver": "a47fbe2a545e6cffa7f63b19c0e660f1a74e72311ec41acbdede8dd2625bedef",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "24da22f8f4542aa7ffd27f6859ca79e4bed5ef7749e8b129c74c46eb5afc90c4"
+      },
+      "processes": [
+        {
+          "pid": 9958,
+          "startTicks": "9029691",
+          "argv": [
+            "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver",
+            "--mode",
+            "worker",
+            "--threads",
+            "16",
+            "--worker-offset",
+            "31",
+            "--listen",
+            "192.168.0.22:39370",
+            "--cross-elite",
+            "on",
+            ""
+          ],
+          "cpus": "0-15",
+          "threads": 16
+        }
+      ],
+      "bootId": "3e1e45ee-b88b-4832-871b-ee0ddb8e4184"
+    },
+    "v3": {
+      "files": {
+        "distributed-solver": "a47fbe2a545e6cffa7f63b19c0e660f1a74e72311ec41acbdede8dd2625bedef",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "994d0b9e7f8ca30386fd42a5c403269065e80c5ab7c3a0fbebc5ab80bdb7471c"
+      },
+      "processes": [
+        {
+          "pid": 1855,
+          "startTicks": "941527",
+          "argv": [
+            "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+            "--mode",
+            "worker",
+            "--threads",
+            "32",
+            "--worker-offset",
+            "46",
+            "--listen",
+            "192.168.0.33:39370",
+            "--cross-elite",
+            "on",
+            ""
+          ],
+          "cpus": "0-31",
+          "threads": 32
+        }
+      ],
+      "bootId": "21b738ab-7c59-47e2-bc9f-07075a0e35af"
+    },
+    "nomlab": {
+      "files": {
+        "bin/distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+        "resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+        "run.sh": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27"
+      },
+      "processes": [
+        {
+          "pid": 29952,
+          "startTicks": "13648591",
+          "argv": [
+            "python3",
+            "/home/nomlab-ubuntu/procon37-distributed/resume-team-runner.py",
+            "--bridge",
+            "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+            "--solver",
+            "/home/nomlab-ubuntu/procon37-distributed/launcher",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--team",
+            "1",
+            "--cpus",
+            "0-15",
+            ""
+          ],
+          "cpus": "0-15",
+          "threads": 1
+        }
+      ],
+      "bootId": "5e7194e2-6254-4f3c-8119-15b50f6db0e2"
+    }
+  },
+  "harnessSha256": "13eb9fa455cea3070378234c88fffaee5a25b43bbe1cb688eb419dc5bdceb2ae"
+}

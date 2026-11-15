@@ -1,0 +1,2644 @@
+{
+  "schemaVersion": 2,
+  "createdAtUtc": "2026-10-09T00:49:15.702175+00:00",
+  "version": "C007-compact",
+  "runId": "1791504436521618109-94528",
+  "label": "分散C007・経路木圧縮と遅延展開・D0基準比較1回目・短縮12件・10秒",
+  "node": "v3",
+  "hostname": "VOIDLINUX-3",
+  "cpuAffinityLocalAndRemoteCollector": "1",
+  "source": {
+    "completion": "solver/docs/distributed/resume-20261009/evaluations/C007-short-01/v3-completion.json",
+    "completionSha256": "f2bbd15877ab628fdb297bd8b17f71df45f3eb0c7804b6917c9fd6f96dfbaade",
+    "manifest": "solver/docs/distributed/resume-20261009/evaluations/C007-short-01/manifest.json",
+    "manifestSha256": "659a0046fa681abe49ed3d84ab1511bf9ac8aec05b47dfd4e7e958a73644c4a1",
+    "run": "solver/docs/distributed/resume-20261009/evaluations/C007-short-01/run.json",
+    "runSha256": "38124db0c9ff119e0dcf79e1c68aa0e7edfba8edaefaef15b4145917da798648",
+    "rawLog": ".server/distributed/graph-metrics/C007-short-01/v3.log",
+    "remotePath": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/resume-team.log",
+    "capturedStartByte": 2611949,
+    "capturedEndByte": 5222894,
+    "capturedBytes": 2610945,
+    "rangeSha256": "fc3a6a78c49f61e372b648a945e4ed0085511f4ad4da5c2914ca61defe51e17d",
+    "rangeSha256Verified": true,
+    "currentRemoteSizeAtRead": 5222894,
+    "recordedInode": 42339654,
+    "currentInode": 42339654,
+    "inodeUnchanged": true
+  },
+  "definitions": {
+    "quantiles": "Linear interpolation on sorted samples at (N-1)*p, not nearest-rank; integer ms logs are truncated by Rust as_millis().",
+    "graphMs": "Wall duration around Graph acquisition in plan_inner only. Includes scheduling delay, cache reuse, and shared cache waiting if present; excludes initial feasible-plan construction, search, later forecast graph construction, and submission. Not CPU time.",
+    "iterations": "Outer stochastic search-loop count for one logged plan_inner call. Includes different role weights, primary/forecast budgets, and different trajectories; not fixed-work throughput.",
+    "sample": "One completed g007 plan_inner diagnostic across all worker threads, not one match or one official score.",
+    "phaseStage": "Phase from preceding dist worker request. Primary day=0 for select, requestId-2 for plan; greater day is forecast. No worker ID in g007 line, so no per-worker pairing.",
+    "caseMapping": "Select requests are associated in log order with serial server run cases. Count validation is necessary, not proof of identical input trajectories.",
+    "graphFraction": "Sum of logged graph_ms per request / (workers started * request elapsed_ms). Scheduling-inclusive descriptive ratio, not measured CPU utilization or guaranteed recoverable wall time.",
+    "score": "Internal g007 score is deliberately not aggregated as official score; worker weights and day vary.",
+    "limits": "No GPU attribution, per-stage deadlines, route-query time, or full cache hit metric exists in D0/C007 logs. Format comparisons across versions are observational, not paired identical graph inputs."
+  },
+  "metrics": {
+    "lineCount": 12841,
+    "plannerRows": 5580,
+    "sharedGraph": {
+      "available": false,
+      "reason": "No structured shared_graph counter line in this captured range."
+    },
+    "allRows": {
+      "samples": 5580,
+      "graphMs": {
+        "count": 5580,
+        "min": 41,
+        "p10": 61.0,
+        "p50": 118.0,
+        "p90": 304.0,
+        "p95": 388.0,
+        "p99": 426.0,
+        "max": 475,
+        "mean": 148.299,
+        "sum": 827510
+      },
+      "iterations": {
+        "count": 5580,
+        "min": 607257,
+        "p10": 1080206.0,
+        "p50": 1976599.5,
+        "p90": 5222640.8,
+        "p95": 5711876.4,
+        "p99": 8072922.2,
+        "max": 11474905,
+        "mean": 2587693.501,
+        "sum": 14439329736
+      },
+      "graphSources": {
+        "count": 5580,
+        "min": 183,
+        "p10": 186.0,
+        "p50": 442.0,
+        "p90": 782.0,
+        "p95": 809.2,
+        "p99": 815.0,
+        "max": 816,
+        "mean": 417.546,
+        "sum": 2329909
+      },
+      "graphTargets": {
+        "count": 5580,
+        "min": 139,
+        "p10": 145.0,
+        "p50": 186.0,
+        "p90": 212.0,
+        "p95": 226.0,
+        "p99": 243.0,
+        "max": 243,
+        "mean": 183.995,
+        "sum": 1026694
+      },
+      "zeroGraphMs": 0,
+      "zeroIterations": 0
+    },
+    "byFormat": {
+      "final": {
+        "samples": 1426,
+        "graphMs": {
+          "count": 1426,
+          "min": 198,
+          "p10": 264.0,
+          "p50": 292.0,
+          "p90": 414.0,
+          "p95": 423.0,
+          "p99": 468.0,
+          "max": 475,
+          "mean": 316.216,
+          "sum": 450924
+        },
+        "iterations": {
+          "count": 1426,
+          "min": 607257,
+          "p10": 783251.0,
+          "p50": 1523745.5,
+          "p90": 3005865.0,
+          "p95": 3685144.75,
+          "p99": 4050585.25,
+          "max": 5583946,
+          "mean": 1917158.69,
+          "sum": 2733868292
+        },
+        "graphSources": {
+          "count": 1426,
+          "min": 745,
+          "p10": 751.0,
+          "p50": 771.0,
+          "p90": 815.0,
+          "p95": 815.0,
+          "p99": 816.0,
+          "max": 816,
+          "mean": 777.518,
+          "sum": 1108740
+        },
+        "graphTargets": {
+          "count": 1426,
+          "min": 171,
+          "p10": 172.0,
+          "p50": 178.0,
+          "p90": 228.0,
+          "p95": 234.0,
+          "p99": 243.0,
+          "max": 243,
+          "mean": 190.98,
+          "sum": 272338
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "first": {
+        "samples": 2604,
+        "graphMs": {
+          "count": 2604,
+          "min": 41,
+          "p10": 58.0,
+          "p50": 70.0,
+          "p90": 78.0,
+          "p95": 81.0,
+          "p99": 138.0,
+          "max": 146,
+          "mean": 69.262,
+          "sum": 180359
+        },
+        "iterations": {
+          "count": 2604,
+          "min": 808317,
+          "p10": 1038387.0,
+          "p50": 1523763.0,
+          "p90": 5629685.8,
+          "p95": 6945928.75,
+          "p99": 8206136.86,
+          "max": 11474905,
+          "mean": 2828164.298,
+          "sum": 7364539831
+        },
+        "graphSources": {
+          "count": 2604,
+          "min": 183,
+          "p10": 186.0,
+          "p50": 206.0,
+          "p90": 212.0,
+          "p95": 212.0,
+          "p99": 213.0,
+          "max": 213,
+          "mean": 200.058,
+          "sum": 520952
+        },
+        "graphTargets": {
+          "count": 2604,
+          "min": 183,
+          "p10": 186.0,
+          "p50": 206.0,
+          "p90": 212.0,
+          "p95": 212.0,
+          "p99": 213.0,
+          "max": 213,
+          "mean": 200.058,
+          "sum": 520952
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "semifinal": {
+        "samples": 1550,
+        "graphMs": {
+          "count": 1550,
+          "min": 86,
+          "p10": 116.0,
+          "p50": 125.0,
+          "p90": 142.0,
+          "p95": 145.0,
+          "p99": 151.0,
+          "max": 219,
+          "mean": 126.598,
+          "sum": 196227
+        },
+        "iterations": {
+          "count": 1550,
+          "min": 929049,
+          "p10": 1509669.2,
+          "p50": 2340343.0,
+          "p90": 4315078.7,
+          "p95": 4913350.35,
+          "p99": 6224842.81,
+          "max": 8880823,
+          "mean": 2800594.589,
+          "sum": 4340921613
+        },
+        "graphSources": {
+          "count": 1550,
+          "min": 438,
+          "p10": 442.0,
+          "p50": 451.0,
+          "p90": 465.0,
+          "p95": 465.0,
+          "p99": 465.0,
+          "max": 465,
+          "mean": 451.753,
+          "sum": 700217
+        },
+        "graphTargets": {
+          "count": 1550,
+          "min": 139,
+          "p10": 143.0,
+          "p50": 149.0,
+          "p90": 161.0,
+          "p95": 162.0,
+          "p99": 168.0,
+          "max": 168,
+          "mean": 150.583,
+          "sum": 233404
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      }
+    },
+    "byPhaseStage": {
+      "plan.forecast": {
+        "samples": 2604,
+        "graphMs": {
+          "count": 2604,
+          "min": 42,
+          "p10": 59.0,
+          "p50": 76.0,
+          "p90": 280.0,
+          "p95": 295.0,
+          "p99": 410.0,
+          "max": 434,
+          "mean": 126.702,
+          "sum": 329933
+        },
+        "iterations": {
+          "count": 2604,
+          "min": 636945,
+          "p10": 922601.6,
+          "p50": 1369906.0,
+          "p90": 1984626.7,
+          "p95": 2130706.2,
+          "p99": 2285842.21,
+          "max": 3354957,
+          "mean": 1386834.109,
+          "sum": 3611316020
+        },
+        "graphSources": {
+          "count": 2604,
+          "min": 186,
+          "p10": 186.0,
+          "p50": 212.0,
+          "p90": 771.0,
+          "p95": 783.0,
+          "p99": 816.0,
+          "max": 816,
+          "mean": 374.413,
+          "sum": 974971
+        },
+        "graphTargets": {
+          "count": 2604,
+          "min": 139,
+          "p10": 145.0,
+          "p50": 186.0,
+          "p90": 212.0,
+          "p95": 213.0,
+          "p99": 230.0,
+          "max": 234,
+          "mean": 185.9,
+          "sum": 484083
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "plan.primary": {
+        "samples": 2232,
+        "graphMs": {
+          "count": 2232,
+          "min": 44,
+          "p10": 68.0,
+          "p50": 126.0,
+          "p90": 318.0,
+          "p95": 412.0,
+          "p99": 455.0,
+          "max": 475,
+          "mean": 163.662,
+          "sum": 365293
+        },
+        "iterations": {
+          "count": 2232,
+          "min": 1192710,
+          "p10": 2136993.6,
+          "p50": 4008321.0,
+          "p90": 5825279.7,
+          "p95": 7014491.8,
+          "p99": 8233077.15,
+          "max": 11474905,
+          "mean": 4023104.566,
+          "sum": 8979569392
+        },
+        "graphSources": {
+          "count": 2232,
+          "min": 183,
+          "p10": 187.0,
+          "p50": 445.0,
+          "p90": 782.0,
+          "p95": 814.0,
+          "p99": 815.0,
+          "max": 815,
+          "mean": 448.764,
+          "sum": 1001641
+        },
+        "graphTargets": {
+          "count": 2232,
+          "min": 140,
+          "p10": 145.0,
+          "p50": 180.5,
+          "p90": 212.0,
+          "p95": 226.0,
+          "p99": 243.0,
+          "max": 243,
+          "mean": 181.639,
+          "sum": 405418
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "select.forecast": {
+        "samples": 372,
+        "graphMs": {
+          "count": 372,
+          "min": 48,
+          "p10": 61.1,
+          "p50": 121.0,
+          "p90": 282.9,
+          "p95": 384.45,
+          "p99": 395.29,
+          "max": 403,
+          "mean": 161.339,
+          "sum": 60018
+        },
+        "iterations": {
+          "count": 372,
+          "min": 607257,
+          "p10": 967916.0,
+          "p50": 2024189.0,
+          "p90": 3118064.6,
+          "p95": 3395344.35,
+          "p99": 3667155.6,
+          "max": 4358323,
+          "mean": 1989508.973,
+          "sum": 740097338
+        },
+        "graphSources": {
+          "count": 372,
+          "min": 185,
+          "p10": 199.0,
+          "p50": 448.5,
+          "p90": 783.0,
+          "p95": 815.0,
+          "p99": 816.0,
+          "max": 816,
+          "mean": 477.14,
+          "sum": 177496
+        },
+        "graphTargets": {
+          "count": 372,
+          "min": 140,
+          "p10": 143.1,
+          "p50": 178.0,
+          "p90": 212.0,
+          "p95": 226.0,
+          "p99": 228.0,
+          "max": 232,
+          "mean": 179.465,
+          "sum": 66761
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "select.primary": {
+        "samples": 372,
+        "graphMs": {
+          "count": 372,
+          "min": 41,
+          "p10": 66.1,
+          "p50": 143.0,
+          "p90": 351.0,
+          "p95": 422.25,
+          "p99": 428.0,
+          "max": 429,
+          "mean": 194.263,
+          "sum": 72266
+        },
+        "iterations": {
+          "count": 372,
+          "min": 995161,
+          "p10": 1446554.8,
+          "p50": 2458398.0,
+          "p90": 4917408.1,
+          "p95": 5044326.0,
+          "p99": 5492528.47,
+          "max": 6882329,
+          "mean": 2979427.382,
+          "sum": 1108346986
+        },
+        "graphSources": {
+          "count": 372,
+          "min": 183,
+          "p10": 196.0,
+          "p50": 444.0,
+          "p90": 776.0,
+          "p95": 809.0,
+          "p99": 809.0,
+          "max": 809,
+          "mean": 472.583,
+          "sum": 175801
+        },
+        "graphTargets": {
+          "count": 372,
+          "min": 160,
+          "p10": 161.0,
+          "p50": 195.0,
+          "p90": 209.0,
+          "p95": 243.0,
+          "p99": 243.0,
+          "max": 243,
+          "mean": 189.333,
+          "sum": 70432
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      }
+    },
+    "byFormatPhaseStage": {
+      "final.plan.forecast": {
+        "samples": 527,
+        "graphMs": {
+          "count": 527,
+          "min": 198,
+          "p10": 260.0,
+          "p50": 279.0,
+          "p90": 402.0,
+          "p95": 410.0,
+          "p99": 422.22,
+          "max": 434,
+          "mean": 301.213,
+          "sum": 158739
+        },
+        "iterations": {
+          "count": 527,
+          "min": 636945,
+          "p10": 688867.4,
+          "p50": 1279708.0,
+          "p90": 1479852.8,
+          "p95": 1525962.5,
+          "p99": 2071507.76,
+          "max": 2320266,
+          "mean": 1197904.091,
+          "sum": 631295456
+        },
+        "graphSources": {
+          "count": 527,
+          "min": 750,
+          "p10": 751.0,
+          "p50": 771.0,
+          "p90": 815.0,
+          "p95": 816.0,
+          "p99": 816.0,
+          "max": 816,
+          "mean": 778.159,
+          "sum": 410090
+        },
+        "graphTargets": {
+          "count": 527,
+          "min": 171,
+          "p10": 172.0,
+          "p50": 177.0,
+          "p90": 227.0,
+          "p95": 230.0,
+          "p99": 231.0,
+          "max": 234,
+          "mean": 187.351,
+          "sum": 98734
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "final.plan.primary": {
+        "samples": 651,
+        "graphMs": {
+          "count": 651,
+          "min": 203,
+          "p10": 279.0,
+          "p50": 299.0,
+          "p90": 420.0,
+          "p95": 437.0,
+          "p99": 474.0,
+          "max": 475,
+          "mean": 324.232,
+          "sum": 211075
+        },
+        "iterations": {
+          "count": 651,
+          "min": 1192710,
+          "p10": 1452166.0,
+          "p50": 2760565.0,
+          "p90": 3751946.0,
+          "p95": 3931227.5,
+          "p99": 4258674.5,
+          "max": 5583946,
+          "mean": 2630521.25,
+          "sum": 1712469334
+        },
+        "graphSources": {
+          "count": 651,
+          "min": 745,
+          "p10": 751.0,
+          "p50": 771.0,
+          "p90": 815.0,
+          "p95": 815.0,
+          "p99": 815.0,
+          "max": 815,
+          "mean": 777.333,
+          "sum": 506044
+        },
+        "graphTargets": {
+          "count": 651,
+          "min": 171,
+          "p10": 172.0,
+          "p50": 178.0,
+          "p90": 227.0,
+          "p95": 234.0,
+          "p99": 243.0,
+          "max": 243,
+          "mean": 191.19,
+          "sum": 124465
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "final.select.forecast": {
+        "samples": 124,
+        "graphMs": {
+          "count": 124,
+          "min": 202,
+          "p10": 259.0,
+          "p50": 277.0,
+          "p90": 389.7,
+          "p95": 393.0,
+          "p99": 398.77,
+          "max": 403,
+          "mean": 298.54,
+          "sum": 37019
+        },
+        "iterations": {
+          "count": 124,
+          "min": 607257,
+          "p10": 650594.7,
+          "p50": 1460675.5,
+          "p90": 1592103.5,
+          "p95": 1615879.5,
+          "p99": 2191338.87,
+          "max": 2395229,
+          "mean": 1262718.331,
+          "sum": 156577073
+        },
+        "graphSources": {
+          "count": 124,
+          "min": 750,
+          "p10": 751.0,
+          "p50": 776.5,
+          "p90": 815.7,
+          "p95": 816.0,
+          "p99": 816.0,
+          "max": 816,
+          "mean": 779.774,
+          "sum": 96692
+        },
+        "graphTargets": {
+          "count": 124,
+          "min": 172,
+          "p10": 172.0,
+          "p50": 178.0,
+          "p90": 226.0,
+          "p95": 227.0,
+          "p99": 229.77,
+          "max": 232,
+          "mean": 188.782,
+          "sum": 23409
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "final.select.primary": {
+        "samples": 124,
+        "graphMs": {
+          "count": 124,
+          "min": 243,
+          "p10": 322.0,
+          "p50": 345.5,
+          "p90": 427.0,
+          "p95": 428.0,
+          "p99": 428.77,
+          "max": 429,
+          "mean": 355.573,
+          "sum": 44091
+        },
+        "iterations": {
+          "count": 124,
+          "min": 995161,
+          "p10": 1035359.3,
+          "p50": 2202637.0,
+          "p90": 2489113.7,
+          "p95": 2545276.2,
+          "p99": 3238908.03,
+          "max": 3634686,
+          "mean": 1883277.653,
+          "sum": 233526429
+        },
+        "graphSources": {
+          "count": 124,
+          "min": 745,
+          "p10": 745.0,
+          "p50": 770.0,
+          "p90": 809.0,
+          "p95": 809.0,
+          "p99": 809.0,
+          "max": 809,
+          "mean": 773.5,
+          "sum": 95914
+        },
+        "graphTargets": {
+          "count": 124,
+          "min": 195,
+          "p10": 195.0,
+          "p50": 196.0,
+          "p90": 243.0,
+          "p95": 243.0,
+          "p99": 243.0,
+          "max": 243,
+          "mean": 207.5,
+          "sum": 25730
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "first.plan.forecast": {
+        "samples": 1488,
+        "graphMs": {
+          "count": 1488,
+          "min": 42,
+          "p10": 57.0,
+          "p50": 69.0,
+          "p90": 76.0,
+          "p95": 78.0,
+          "p99": 81.0,
+          "max": 98,
+          "mean": 66.975,
+          "sum": 99659
+        },
+        "iterations": {
+          "count": 1488,
+          "min": 808317,
+          "p10": 927022.1,
+          "p50": 1318468.5,
+          "p90": 1548808.0,
+          "p95": 1600198.2,
+          "p99": 1988761.18,
+          "max": 2344130,
+          "mean": 1289312.523,
+          "sum": 1918497034
+        },
+        "graphSources": {
+          "count": 1488,
+          "min": 186,
+          "p10": 186.0,
+          "p50": 206.0,
+          "p90": 212.0,
+          "p95": 212.0,
+          "p99": 213.0,
+          "max": 213,
+          "mean": 200.325,
+          "sum": 298084
+        },
+        "graphTargets": {
+          "count": 1488,
+          "min": 186,
+          "p10": 186.0,
+          "p50": 206.0,
+          "p90": 212.0,
+          "p95": 212.0,
+          "p99": 213.0,
+          "max": 213,
+          "mean": 200.325,
+          "sum": 298084
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "first.plan.primary": {
+        "samples": 868,
+        "graphMs": {
+          "count": 868,
+          "min": 44,
+          "p10": 61.0,
+          "p50": 72.0,
+          "p90": 80.0,
+          "p95": 85.0,
+          "p99": 86.0,
+          "max": 118,
+          "mean": 71.354,
+          "sum": 61935
+        },
+        "iterations": {
+          "count": 868,
+          "min": 2849525,
+          "p10": 3242308.9,
+          "p50": 5313949.5,
+          "p90": 7086141.2,
+          "p95": 8115500.9,
+          "p99": 8297980.97,
+          "max": 11474905,
+          "mean": 5249257.97,
+          "sum": 4556355918
+        },
+        "graphSources": {
+          "count": 868,
+          "min": 183,
+          "p10": 186.0,
+          "p50": 204.5,
+          "p90": 212.0,
+          "p95": 212.0,
+          "p99": 213.0,
+          "max": 213,
+          "mean": 199.821,
+          "sum": 173445
+        },
+        "graphTargets": {
+          "count": 868,
+          "min": 183,
+          "p10": 186.0,
+          "p50": 204.5,
+          "p90": 212.0,
+          "p95": 212.0,
+          "p99": 213.0,
+          "max": 213,
+          "mean": 199.821,
+          "sum": 173445
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "first.select.forecast": {
+        "samples": 124,
+        "graphMs": {
+          "count": 124,
+          "min": 48,
+          "p10": 56.0,
+          "p50": 67.0,
+          "p90": 74.0,
+          "p95": 76.0,
+          "p99": 77.77,
+          "max": 79,
+          "mean": 65.782,
+          "sum": 8157
+        },
+        "iterations": {
+          "count": 124,
+          "min": 2008303,
+          "p10": 2088706.6,
+          "p50": 2976791.0,
+          "p90": 3440155.8,
+          "p95": 3517228.0,
+          "p99": 4310575.77,
+          "max": 4358323,
+          "mean": 2907988.089,
+          "sum": 360590523
+        },
+        "graphSources": {
+          "count": 124,
+          "min": 185,
+          "p10": 186.0,
+          "p50": 203.0,
+          "p90": 212.0,
+          "p95": 212.0,
+          "p99": 213.0,
+          "max": 213,
+          "mean": 200.823,
+          "sum": 24902
+        },
+        "graphTargets": {
+          "count": 124,
+          "min": 185,
+          "p10": 186.0,
+          "p50": 203.0,
+          "p90": 212.0,
+          "p95": 212.0,
+          "p99": 213.0,
+          "max": 213,
+          "mean": 200.823,
+          "sum": 24902
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "first.select.primary": {
+        "samples": 124,
+        "graphMs": {
+          "count": 124,
+          "min": 41,
+          "p10": 57.0,
+          "p50": 69.5,
+          "p90": 143.0,
+          "p95": 144.85,
+          "p99": 145.77,
+          "max": 146,
+          "mean": 85.548,
+          "sum": 10608
+        },
+        "iterations": {
+          "count": 124,
+          "min": 2340513,
+          "p10": 2385140.3,
+          "p50": 4687493.5,
+          "p90": 5069339.4,
+          "p95": 5125084.3,
+          "p99": 6414046.49,
+          "max": 6882329,
+          "mean": 4266906.097,
+          "sum": 529096356
+        },
+        "graphSources": {
+          "count": 124,
+          "min": 183,
+          "p10": 183.0,
+          "p50": 199.5,
+          "p90": 209.0,
+          "p95": 209.0,
+          "p99": 209.0,
+          "max": 209,
+          "mean": 197.75,
+          "sum": 24521
+        },
+        "graphTargets": {
+          "count": 124,
+          "min": 183,
+          "p10": 183.0,
+          "p50": 199.5,
+          "p90": 209.0,
+          "p95": 209.0,
+          "p99": 209.0,
+          "max": 209,
+          "mean": 197.75,
+          "sum": 24521
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "semifinal.plan.forecast": {
+        "samples": 589,
+        "graphMs": {
+          "count": 589,
+          "min": 88,
+          "p10": 114.0,
+          "p50": 122.0,
+          "p90": 129.0,
+          "p95": 130.0,
+          "p99": 133.72,
+          "max": 171,
+          "mean": 121.452,
+          "sum": 71535
+        },
+        "iterations": {
+          "count": 589,
+          "min": 982724,
+          "p10": 1429059.2,
+          "p50": 1645505.0,
+          "p90": 2231804.4,
+          "p95": 2276890.8,
+          "p99": 2977179.96,
+          "max": 3354957,
+          "mean": 1802247.08,
+          "sum": 1061523530
+        },
+        "graphSources": {
+          "count": 589,
+          "min": 441,
+          "p10": 442.0,
+          "p50": 451.0,
+          "p90": 465.0,
+          "p95": 465.0,
+          "p99": 465.0,
+          "max": 465,
+          "mean": 452.966,
+          "sum": 266797
+        },
+        "graphTargets": {
+          "count": 589,
+          "min": 139,
+          "p10": 142.0,
+          "p50": 145.0,
+          "p90": 158.0,
+          "p95": 159.0,
+          "p99": 160.0,
+          "max": 163,
+          "mean": 148.158,
+          "sum": 87265
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "semifinal.plan.primary": {
+        "samples": 713,
+        "graphMs": {
+          "count": 713,
+          "min": 86,
+          "p10": 119.2,
+          "p50": 129.0,
+          "p90": 143.0,
+          "p95": 146.4,
+          "p99": 151.88,
+          "max": 219,
+          "mean": 129.429,
+          "sum": 92283
+        },
+        "iterations": {
+          "count": 713,
+          "min": 1710081,
+          "p10": 2791899.8,
+          "p50": 4022252.0,
+          "p90": 5128764.4,
+          "p95": 6072832.8,
+          "p99": 6271178.84,
+          "max": 8880823,
+          "mean": 3801885.189,
+          "sum": 2710744140
+        },
+        "graphSources": {
+          "count": 713,
+          "min": 438,
+          "p10": 442.0,
+          "p50": 451.0,
+          "p90": 465.0,
+          "p95": 465.0,
+          "p99": 465.0,
+          "max": 465,
+          "mean": 451.826,
+          "sum": 322152
+        },
+        "graphTargets": {
+          "count": 713,
+          "min": 140,
+          "p10": 143.0,
+          "p50": 150.0,
+          "p90": 161.0,
+          "p95": 162.0,
+          "p99": 168.0,
+          "max": 168,
+          "mean": 150.783,
+          "sum": 107508
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "semifinal.select.forecast": {
+        "samples": 124,
+        "graphMs": {
+          "count": 124,
+          "min": 94,
+          "p10": 112.3,
+          "p50": 121.0,
+          "p90": 126.0,
+          "p95": 128.0,
+          "p99": 129.77,
+          "max": 131,
+          "mean": 119.694,
+          "sum": 14842
+        },
+        "iterations": {
+          "count": 124,
+          "min": 929049,
+          "p10": 994783.4,
+          "p50": 2094926.0,
+          "p90": 2363342.3,
+          "p95": 2398501.9,
+          "p99": 3087429.51,
+          "max": 3423074,
+          "mean": 1797820.5,
+          "sum": 222929742
+        },
+        "graphSources": {
+          "count": 124,
+          "min": 442,
+          "p10": 442.0,
+          "p50": 448.5,
+          "p90": 465.0,
+          "p95": 465.0,
+          "p99": 465.0,
+          "max": 465,
+          "mean": 450.823,
+          "sum": 55902
+        },
+        "graphTargets": {
+          "count": 124,
+          "min": 140,
+          "p10": 142.0,
+          "p50": 148.0,
+          "p90": 158.0,
+          "p95": 159.85,
+          "p99": 162.77,
+          "max": 163,
+          "mean": 148.79,
+          "sum": 18450
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "semifinal.select.primary": {
+        "samples": 124,
+        "graphMs": {
+          "count": 124,
+          "min": 102,
+          "p10": 137.0,
+          "p50": 143.0,
+          "p90": 149.0,
+          "p95": 149.0,
+          "p99": 179.63,
+          "max": 190,
+          "mean": 141.669,
+          "sum": 17567
+        },
+        "iterations": {
+          "count": 124,
+          "min": 1430603,
+          "p10": 1505710.0,
+          "p50": 3318343.0,
+          "p90": 3645451.1,
+          "p95": 3692733.4,
+          "p99": 4122574.83,
+          "max": 5302131,
+          "mean": 2788098.395,
+          "sum": 345724201
+        },
+        "graphSources": {
+          "count": 124,
+          "min": 438,
+          "p10": 438.0,
+          "p50": 444.0,
+          "p90": 460.0,
+          "p95": 460.0,
+          "p99": 460.0,
+          "max": 460,
+          "mean": 446.5,
+          "sum": 55366
+        },
+        "graphTargets": {
+          "count": 124,
+          "min": 160,
+          "p10": 160.0,
+          "p50": 161.5,
+          "p90": 168.0,
+          "p95": 168.0,
+          "p99": 168.0,
+          "max": 168,
+          "mean": 162.75,
+          "sum": 20181
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      }
+    },
+    "bySeed": {
+      "0": {
+        "samples": 465,
+        "graphMs": {
+          "count": 465,
+          "min": 55,
+          "p10": 72.0,
+          "p50": 77.0,
+          "p90": 85.0,
+          "p95": 140.0,
+          "p99": 145.0,
+          "max": 146,
+          "mean": 80.508,
+          "sum": 37436
+        },
+        "iterations": {
+          "count": 465,
+          "min": 1307001,
+          "p10": 1378141.8,
+          "p50": 1612705.0,
+          "p90": 5843427.2,
+          "p95": 8057038.2,
+          "p99": 8168804.68,
+          "max": 11459332,
+          "mean": 3438460.185,
+          "sum": 1598883986
+        },
+        "graphSources": {
+          "count": 465,
+          "min": 209,
+          "p10": 209.0,
+          "p50": 212.0,
+          "p90": 213.0,
+          "p95": 213.0,
+          "p99": 213.0,
+          "max": 213,
+          "mean": 211.649,
+          "sum": 98417
+        },
+        "graphTargets": {
+          "count": 465,
+          "min": 209,
+          "p10": 209.0,
+          "p50": 212.0,
+          "p90": 213.0,
+          "p95": 213.0,
+          "p99": 213.0,
+          "max": 213,
+          "mean": 211.649,
+          "sum": 98417
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "1": {
+        "samples": 341,
+        "graphMs": {
+          "count": 341,
+          "min": 86,
+          "p10": 114.0,
+          "p50": 120.0,
+          "p90": 138.0,
+          "p95": 142.0,
+          "p99": 170.0,
+          "max": 219,
+          "mean": 122.578,
+          "sum": 41799
+        },
+        "iterations": {
+          "count": 341,
+          "min": 1934509,
+          "p10": 2021999.0,
+          "p50": 3430855.0,
+          "p90": 5718102.0,
+          "p95": 5936567.0,
+          "p99": 6030679.2,
+          "max": 8660096,
+          "mean": 3342853.205,
+          "sum": 1139912943
+        },
+        "graphSources": {
+          "count": 341,
+          "min": 447,
+          "p10": 447.0,
+          "p50": 451.0,
+          "p90": 452.0,
+          "p95": 452.0,
+          "p99": 452.0,
+          "max": 452,
+          "mean": 450.455,
+          "sum": 153605
+        },
+        "graphTargets": {
+          "count": 341,
+          "min": 139,
+          "p10": 140.0,
+          "p50": 143.0,
+          "p90": 162.0,
+          "p95": 162.0,
+          "p99": 162.0,
+          "max": 162,
+          "mean": 145.971,
+          "sum": 49776
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "10": {
+        "samples": 527,
+        "graphMs": {
+          "count": 527,
+          "min": 88,
+          "p10": 118.0,
+          "p50": 124.0,
+          "p90": 143.0,
+          "p95": 145.0,
+          "p99": 161.14,
+          "max": 197,
+          "mean": 126.167,
+          "sum": 66490
+        },
+        "iterations": {
+          "count": 527,
+          "min": 1390664,
+          "p10": 1513620.2,
+          "p50": 2443076.0,
+          "p90": 3179068.0,
+          "p95": 4391949.7,
+          "p99": 4656007.4,
+          "max": 6678562,
+          "mean": 2417123.324,
+          "sum": 1273823992
+        },
+        "graphSources": {
+          "count": 527,
+          "min": 460,
+          "p10": 460.0,
+          "p50": 465.0,
+          "p90": 465.0,
+          "p95": 465.0,
+          "p99": 465.0,
+          "max": 465,
+          "mean": 464.017,
+          "sum": 244537
+        },
+        "graphTargets": {
+          "count": 527,
+          "min": 142,
+          "p10": 143.0,
+          "p50": 143.0,
+          "p90": 161.0,
+          "p95": 161.0,
+          "p99": 161.0,
+          "max": 161,
+          "mean": 146.213,
+          "sum": 77054
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "11": {
+        "samples": 341,
+        "graphMs": {
+          "count": 341,
+          "min": 273,
+          "p10": 382.0,
+          "p50": 410.0,
+          "p90": 433.0,
+          "p95": 467.0,
+          "p99": 474.0,
+          "max": 475,
+          "mean": 406.9,
+          "sum": 138753
+        },
+        "iterations": {
+          "count": 341,
+          "min": 942363,
+          "p10": 1124066.0,
+          "p50": 1566190.0,
+          "p90": 3006247.0,
+          "p95": 3570827.0,
+          "p99": 3705891.2,
+          "max": 4921607,
+          "mean": 1903023.434,
+          "sum": 648930991
+        },
+        "graphSources": {
+          "count": 341,
+          "min": 809,
+          "p10": 809.0,
+          "p50": 815.0,
+          "p90": 816.0,
+          "p95": 816.0,
+          "p99": 816.0,
+          "max": 816,
+          "mean": 813.924,
+          "sum": 277548
+        },
+        "graphTargets": {
+          "count": 341,
+          "min": 224,
+          "p10": 225.0,
+          "p50": 227.0,
+          "p90": 243.0,
+          "p95": 243.0,
+          "p99": 243.0,
+          "max": 243,
+          "mean": 230.413,
+          "sum": 78571
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "2": {
+        "samples": 341,
+        "graphMs": {
+          "count": 341,
+          "min": 213,
+          "p10": 272.0,
+          "p50": 287.0,
+          "p90": 346.0,
+          "p95": 349.0,
+          "p99": 352.0,
+          "max": 353,
+          "mean": 294.012,
+          "sum": 100258
+        },
+        "iterations": {
+          "count": 341,
+          "min": 1243539,
+          "p10": 1327227.0,
+          "p50": 2475231.0,
+          "p90": 3733188.0,
+          "p95": 3891688.0,
+          "p99": 4221398.0,
+          "max": 5583946,
+          "mean": 2300410.478,
+          "sum": 784439973
+        },
+        "graphSources": {
+          "count": 341,
+          "min": 776,
+          "p10": 776.0,
+          "p50": 782.0,
+          "p90": 783.0,
+          "p95": 783.0,
+          "p99": 783.0,
+          "max": 783,
+          "mean": 781.261,
+          "sum": 266410
+        },
+        "graphTargets": {
+          "count": 341,
+          "min": 171,
+          "p10": 171.0,
+          "p50": 172.0,
+          "p90": 195.0,
+          "p95": 195.0,
+          "p99": 195.0,
+          "max": 195,
+          "mean": 176.677,
+          "sum": 60247
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "3": {
+        "samples": 930,
+        "graphMs": {
+          "count": 930,
+          "min": 47,
+          "p10": 63.0,
+          "p50": 72.0,
+          "p90": 78.0,
+          "p95": 80.0,
+          "p99": 81.71,
+          "max": 101,
+          "mean": 71.503,
+          "sum": 66498
+        },
+        "iterations": {
+          "count": 930,
+          "min": 808317,
+          "p10": 883789.0,
+          "p50": 1228353.0,
+          "p90": 4157914.9,
+          "p95": 4768076.2,
+          "p99": 7071906.99,
+          "max": 10137642,
+          "mean": 2170164.788,
+          "sum": 2018253253
+        },
+        "graphSources": {
+          "count": 930,
+          "min": 203,
+          "p10": 206.0,
+          "p50": 206.0,
+          "p90": 207.0,
+          "p95": 207.0,
+          "p99": 207.0,
+          "max": 207,
+          "mean": 206.12,
+          "sum": 191692
+        },
+        "graphTargets": {
+          "count": 930,
+          "min": 203,
+          "p10": 206.0,
+          "p50": 206.0,
+          "p90": 207.0,
+          "p95": 207.0,
+          "p99": 207.0,
+          "max": 207,
+          "mean": 206.12,
+          "sum": 191692
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "4": {
+        "samples": 341,
+        "graphMs": {
+          "count": 341,
+          "min": 93,
+          "p10": 119.0,
+          "p50": 127.0,
+          "p90": 139.0,
+          "p95": 144.0,
+          "p99": 149.6,
+          "max": 172,
+          "mean": 127.408,
+          "sum": 43446
+        },
+        "iterations": {
+          "count": 341,
+          "min": 2013916,
+          "p10": 2150609.0,
+          "p50": 3628166.0,
+          "p90": 5302131.0,
+          "p95": 6205025.0,
+          "p99": 6272636.6,
+          "max": 8880823,
+          "mean": 3480552.54,
+          "sum": 1186868416
+        },
+        "graphSources": {
+          "count": 341,
+          "min": 441,
+          "p10": 441.0,
+          "p50": 445.0,
+          "p90": 445.0,
+          "p95": 445.0,
+          "p99": 446.0,
+          "max": 446,
+          "mean": 444.308,
+          "sum": 151509
+        },
+        "graphTargets": {
+          "count": 341,
+          "min": 147,
+          "p10": 149.0,
+          "p50": 150.0,
+          "p90": 160.0,
+          "p95": 160.0,
+          "p99": 160.0,
+          "max": 160,
+          "mean": 152.519,
+          "sum": 52009
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "5": {
+        "samples": 403,
+        "graphMs": {
+          "count": 403,
+          "min": 198,
+          "p10": 257.0,
+          "p50": 276.0,
+          "p90": 322.8,
+          "p95": 326.0,
+          "p99": 341.0,
+          "max": 342,
+          "mean": 279.767,
+          "sum": 112746
+        },
+        "iterations": {
+          "count": 403,
+          "min": 1177338,
+          "p10": 1320733.8,
+          "p50": 2343197.0,
+          "p90": 3190425.4,
+          "p95": 3895963.7,
+          "p99": 4058770.36,
+          "max": 5434135,
+          "mean": 2250419.422,
+          "sum": 906919027
+        },
+        "graphSources": {
+          "count": 403,
+          "min": 745,
+          "p10": 745.0,
+          "p50": 751.0,
+          "p90": 752.0,
+          "p95": 752.0,
+          "p99": 752.0,
+          "max": 752,
+          "mean": 750.377,
+          "sum": 302402
+        },
+        "graphTargets": {
+          "count": 403,
+          "min": 171,
+          "p10": 172.0,
+          "p50": 175.0,
+          "p90": 195.0,
+          "p95": 195.0,
+          "p99": 195.0,
+          "max": 195,
+          "mean": 177.439,
+          "sum": 71508
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "6": {
+        "samples": 744,
+        "graphMs": {
+          "count": 744,
+          "min": 41,
+          "p10": 52.0,
+          "p50": 60.0,
+          "p90": 68.0,
+          "p95": 70.0,
+          "p99": 84.71,
+          "max": 105,
+          "mean": 59.96,
+          "sum": 44610
+        },
+        "iterations": {
+          "count": 744,
+          "min": 1148498,
+          "p10": 1232019.2,
+          "p50": 1510930.0,
+          "p90": 5597486.7,
+          "p95": 6633362.4,
+          "p99": 7126047.34,
+          "max": 10185733,
+          "mean": 2958043.168,
+          "sum": 2200784117
+        },
+        "graphSources": {
+          "count": 744,
+          "min": 183,
+          "p10": 186.0,
+          "p50": 186.0,
+          "p90": 187.0,
+          "p95": 187.0,
+          "p99": 187.0,
+          "max": 187,
+          "mean": 185.935,
+          "sum": 138336
+        },
+        "graphTargets": {
+          "count": 744,
+          "min": 183,
+          "p10": 186.0,
+          "p50": 186.0,
+          "p90": 187.0,
+          "p95": 187.0,
+          "p99": 187.0,
+          "max": 187,
+          "mean": 185.935,
+          "sum": 138336
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "7": {
+        "samples": 341,
+        "graphMs": {
+          "count": 341,
+          "min": 93,
+          "p10": 122.0,
+          "p50": 129.0,
+          "p90": 143.0,
+          "p95": 147.0,
+          "p99": 150.0,
+          "max": 151,
+          "mean": 130.475,
+          "sum": 44492
+        },
+        "iterations": {
+          "count": 341,
+          "min": 929049,
+          "p10": 1029692.0,
+          "p50": 1794305.0,
+          "p90": 3584280.0,
+          "p95": 4835545.0,
+          "p99": 4932627.6,
+          "max": 7210800,
+          "mean": 2171015.431,
+          "sum": 740316262
+        },
+        "graphSources": {
+          "count": 341,
+          "min": 438,
+          "p10": 438.0,
+          "p50": 442.0,
+          "p90": 443.0,
+          "p95": 443.0,
+          "p99": 443.0,
+          "max": 443,
+          "mean": 441.543,
+          "sum": 150566
+        },
+        "graphTargets": {
+          "count": 341,
+          "min": 156,
+          "p10": 157.0,
+          "p50": 158.0,
+          "p90": 168.0,
+          "p95": 168.0,
+          "p99": 168.0,
+          "max": 168,
+          "mean": 160.015,
+          "sum": 54565
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "8": {
+        "samples": 341,
+        "graphMs": {
+          "count": 341,
+          "min": 211,
+          "p10": 269.0,
+          "p50": 287.0,
+          "p90": 327.0,
+          "p95": 332.0,
+          "p99": 348.0,
+          "max": 349,
+          "mean": 290.812,
+          "sum": 99167
+        },
+        "iterations": {
+          "count": 341,
+          "min": 607257,
+          "p10": 660405.0,
+          "p50": 1080221.0,
+          "p90": 1962806.0,
+          "p95": 2112947.0,
+          "p99": 2326630.4,
+          "max": 3072685,
+          "mean": 1154188.566,
+          "sum": 393578301
+        },
+        "graphSources": {
+          "count": 341,
+          "min": 764,
+          "p10": 764.0,
+          "p50": 771.0,
+          "p90": 771.0,
+          "p95": 771.0,
+          "p99": 771.0,
+          "max": 771,
+          "mean": 769.443,
+          "sum": 262380
+        },
+        "graphTargets": {
+          "count": 341,
+          "min": 177,
+          "p10": 178.0,
+          "p50": 178.0,
+          "p90": 197.0,
+          "p95": 197.0,
+          "p99": 197.0,
+          "max": 197,
+          "mean": 181.853,
+          "sum": 62012
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      },
+      "9": {
+        "samples": 465,
+        "graphMs": {
+          "count": 465,
+          "min": 50,
+          "p10": 64.0,
+          "p50": 68.0,
+          "p90": 74.0,
+          "p95": 77.0,
+          "p99": 80.0,
+          "max": 118,
+          "mean": 68.419,
+          "sum": 31815
+        },
+        "iterations": {
+          "count": 465,
+          "min": 1305886,
+          "p10": 1352026.8,
+          "p50": 1566251.0,
+          "p90": 5715547.8,
+          "p95": 8184150.8,
+          "p99": 8302510.44,
+          "max": 11474905,
+          "mean": 3326061.237,
+          "sum": 1546618475
+        },
+        "graphSources": {
+          "count": 465,
+          "min": 196,
+          "p10": 196.0,
+          "p50": 199.0,
+          "p90": 200.0,
+          "p95": 200.0,
+          "p99": 200.0,
+          "max": 200,
+          "mean": 198.94,
+          "sum": 92507
+        },
+        "graphTargets": {
+          "count": 465,
+          "min": 196,
+          "p10": 196.0,
+          "p50": 199.0,
+          "p90": 200.0,
+          "p95": 200.0,
+          "p99": 200.0,
+          "max": 200,
+          "mean": 198.94,
+          "sum": 92507
+        },
+        "zeroGraphMs": 0,
+        "zeroIterations": 0
+      }
+    },
+    "requests": {
+      "started": 84,
+      "completed": 84,
+      "allExpectedWorkersCompleted": true,
+      "selectCount": 12,
+      "runCaseCount": 12,
+      "caseOrderMappingValidatedByCount": true,
+      "workersStarted": {
+        "count": 84,
+        "min": 31,
+        "p10": 31.0,
+        "p50": 31.0,
+        "p90": 31.0,
+        "p95": 31.0,
+        "p99": 31.0,
+        "max": 31,
+        "mean": 31.0,
+        "sum": 2604
+      },
+      "budgetMs": {
+        "count": 84,
+        "min": 7832,
+        "p10": 8180.3,
+        "p50": 8752.0,
+        "p90": 8861.4,
+        "p95": 8868.0,
+        "p99": 8871.0,
+        "max": 8871,
+        "mean": 8669.929,
+        "sum": 728274
+      },
+      "elapsedMs": {
+        "count": 84,
+        "min": 7436,
+        "p10": 7806.2,
+        "p50": 8337.5,
+        "p90": 8457.0,
+        "p95": 8466.95,
+        "p99": 8484.99,
+        "max": 8524,
+        "mean": 8247.702,
+        "sum": 692807
+      },
+      "loggedGraphMsOverStartedWorkerWallMs": {
+        "count": 84,
+        "min": 0.008481784625260792,
+        "p10": 0.018,
+        "p50": 0.03,
+        "p90": 0.072,
+        "p95": 0.092,
+        "p99": 0.101,
+        "max": 0.10291700988894086,
+        "mean": 0.039,
+        "sum": 3.2346360238460936
+      },
+      "graphFractionByFormat": {
+        "final": {
+          "count": 25,
+          "min": 0.03508736474934421,
+          "p10": 0.041,
+          "p50": 0.069,
+          "p90": 0.096,
+          "p95": 0.1,
+          "p99": 0.102,
+          "max": 0.10291700988894086,
+          "mean": 0.071,
+          "sum": 1.7649538627664731
+        },
+        "first": {
+          "count": 32,
+          "min": 0.008481784625260792,
+          "p10": 0.011,
+          "p50": 0.024,
+          "p90": 0.026,
+          "p95": 0.027,
+          "p99": 0.027,
+          "max": 0.027730951418393733,
+          "mean": 0.022,
+          "sum": 0.6960010735007288
+        },
+        "semifinal": {
+          "count": 27,
+          "min": 0.01490642931003021,
+          "p10": 0.017,
+          "p50": 0.03,
+          "p90": 0.034,
+          "p95": 0.034,
+          "p99": 0.035,
+          "max": 0.03531642055215256,
+          "mean": 0.029,
+          "sum": 0.7736810875788913
+        }
+      }
+    },
+    "parseDiagnostics": {
+      "unattributedPlannerRowCount": 0,
+      "malformedPlannerRowCount": 0,
+      "unattributedLineExamples": [],
+      "malformedLineExamples": [],
+      "warnings": []
+    }
+  },
+  "processMemoryAtCompletion": [
+    {
+      "pid": 1339,
+      "startTicks": "177929",
+      "startTicksMatchStartRecord": true,
+      "bootId": "21b738ab-7c59-47e2-bc9f-07075a0e35af",
+      "executable": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+      "executableSha256": "49eb466a4eb127075bbb5ce9bd90e297ca19f8cb7e61f6af320d585aef53cecc",
+      "cwd": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0",
+      "status": {
+        "Name": "distributed-sol",
+        "State": "S (sleeping)",
+        "Threads": "32",
+        "Cpus_allowed_list": "0-31",
+        "VmRSS": "3035180 kB",
+        "VmHWM": "3035180 kB",
+        "VmSize": "4146016 kB",
+        "VmPeak": "4211552 kB"
+      },
+      "scope": "C007 worker process lifetime; VmHWM includes all 12 cases"
+    }
+  ],
+  "collector": {
+    "path": "/home/imak/work/procon37/solver/docs/distributed/resume-20261009/collect_graph_metrics.py",
+    "sha256": "5741eb37e87c666c67b2c941932757c5edcd150117f60f9b957191a7ceee1578"
+  },
+  "loggingSource": {
+    "path": "solver/distributed-candidates/c007-compact/solver/planner.rs",
+    "sha256": "368982f8f68a28270e76561239354aa52bc5a3b13e823b3ebecdc9a376d38d07"
+  },
+  "comparison": {
+    "baseline": "solver/docs/distributed/resume-20261009/graph-metrics/resume-D0-short-01-v3.json",
+    "baselineSha256": "fe16d22314d779899ba0e6737f75141d343763f77c3886f909776e1cffc5ca50",
+    "baselineRunId": "1791503276339409187-91328",
+    "kind": "observational quantiles, not paired identical input or strength evidence",
+    "byFormat": {
+      "final": {
+        "baselineSamples": 1426,
+        "candidateSamples": 1426,
+        "graphMs": {
+          "p50": {
+            "baseline": 638.0,
+            "candidate": 292.0,
+            "candidateOverBaseline": 0.4577
+          },
+          "p90": {
+            "baseline": 888.0,
+            "candidate": 414.0,
+            "candidateOverBaseline": 0.4662
+          },
+          "mean": {
+            "baseline": 722.634,
+            "candidate": 316.216,
+            "candidateOverBaseline": 0.4376
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 1328318.5,
+            "candidate": 1523745.5,
+            "candidateOverBaseline": 1.1471
+          },
+          "p90": {
+            "baseline": 2871760.5,
+            "candidate": 3005865.0,
+            "candidateOverBaseline": 1.0467
+          },
+          "mean": {
+            "baseline": 1745728.05,
+            "candidate": 1917158.69,
+            "candidateOverBaseline": 1.0982
+          }
+        }
+      },
+      "first": {
+        "baselineSamples": 2604,
+        "candidateSamples": 2604,
+        "graphMs": {
+          "p50": {
+            "baseline": 126.0,
+            "candidate": 70.0,
+            "candidateOverBaseline": 0.5556
+          },
+          "p90": {
+            "baseline": 139.0,
+            "candidate": 78.0,
+            "candidateOverBaseline": 0.5612
+          },
+          "mean": {
+            "baseline": 127.602,
+            "candidate": 69.262,
+            "candidateOverBaseline": 0.5428
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 1492804.5,
+            "candidate": 1523763.0,
+            "candidateOverBaseline": 1.0207
+          },
+          "p90": {
+            "baseline": 5713866.0,
+            "candidate": 5629685.8,
+            "candidateOverBaseline": 0.9853
+          },
+          "mean": {
+            "baseline": 2855237.384,
+            "candidate": 2828164.298,
+            "candidateOverBaseline": 0.9905
+          }
+        }
+      },
+      "semifinal": {
+        "baselineSamples": 1550,
+        "candidateSamples": 1550,
+        "graphMs": {
+          "p50": {
+            "baseline": 261.0,
+            "candidate": 125.0,
+            "candidateOverBaseline": 0.4789
+          },
+          "p90": {
+            "baseline": 306.0,
+            "candidate": 142.0,
+            "candidateOverBaseline": 0.4641
+          },
+          "mean": {
+            "baseline": 274.0,
+            "candidate": 126.598,
+            "candidateOverBaseline": 0.462
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 2289439.0,
+            "candidate": 2340343.0,
+            "candidateOverBaseline": 1.0222
+          },
+          "p90": {
+            "baseline": 4407673.4,
+            "candidate": 4315078.7,
+            "candidateOverBaseline": 0.979
+          },
+          "mean": {
+            "baseline": 2809593.155,
+            "candidate": 2800594.589,
+            "candidateOverBaseline": 0.9968
+          }
+        }
+      }
+    },
+    "byPhaseStage": {
+      "plan.forecast": {
+        "baselineSamples": 2604,
+        "candidateSamples": 2604,
+        "graphMs": {
+          "p50": {
+            "baseline": 138.0,
+            "candidate": 76.0,
+            "candidateOverBaseline": 0.5507
+          },
+          "p90": {
+            "baseline": 629.0,
+            "candidate": 280.0,
+            "candidateOverBaseline": 0.4452
+          },
+          "mean": {
+            "baseline": 264.053,
+            "candidate": 126.702,
+            "candidateOverBaseline": 0.4798
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 1307943.5,
+            "candidate": 1369906.0,
+            "candidateOverBaseline": 1.0474
+          },
+          "p90": {
+            "baseline": 1986745.5,
+            "candidate": 1984626.7,
+            "candidateOverBaseline": 0.9989
+          },
+          "mean": {
+            "baseline": 1332799.491,
+            "candidate": 1386834.109,
+            "candidateOverBaseline": 1.0405
+          }
+        }
+      },
+      "plan.primary": {
+        "baselineSamples": 2232,
+        "candidateSamples": 2232,
+        "graphMs": {
+          "p50": {
+            "baseline": 256.0,
+            "candidate": 126.0,
+            "candidateOverBaseline": 0.4922
+          },
+          "p90": {
+            "baseline": 671.9,
+            "candidate": 318.0,
+            "candidateOverBaseline": 0.4733
+          },
+          "mean": {
+            "baseline": 336.167,
+            "candidate": 163.662,
+            "candidateOverBaseline": 0.4868
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 4034763.0,
+            "candidate": 4008321.0,
+            "candidateOverBaseline": 0.9934
+          },
+          "p90": {
+            "baseline": 5988070.8,
+            "candidate": 5825279.7,
+            "candidateOverBaseline": 0.9728
+          },
+          "mean": {
+            "baseline": 4051837.519,
+            "candidate": 4023104.566,
+            "candidateOverBaseline": 0.9929
+          }
+        }
+      },
+      "select.forecast": {
+        "baselineSamples": 372,
+        "candidateSamples": 372,
+        "graphMs": {
+          "p50": {
+            "baseline": 256.0,
+            "candidate": 121.0,
+            "candidateOverBaseline": 0.4727
+          },
+          "p90": {
+            "baseline": 676.9,
+            "candidate": 282.9,
+            "candidateOverBaseline": 0.4179
+          },
+          "mean": {
+            "baseline": 355.089,
+            "candidate": 161.339,
+            "candidateOverBaseline": 0.4544
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 2000511.5,
+            "candidate": 2024189.0,
+            "candidateOverBaseline": 1.0118
+          },
+          "p90": {
+            "baseline": 3124495.4,
+            "candidate": 3118064.6,
+            "candidateOverBaseline": 0.9979
+          },
+          "mean": {
+            "baseline": 1911517.145,
+            "candidate": 1989508.973,
+            "candidateOverBaseline": 1.0408
+          }
+        }
+      },
+      "select.primary": {
+        "baselineSamples": 372,
+        "candidateSamples": 372,
+        "graphMs": {
+          "p50": {
+            "baseline": 385.5,
+            "candidate": 143.0,
+            "candidateOverBaseline": 0.3709
+          },
+          "p90": {
+            "baseline": 1519.0,
+            "candidate": 351.0,
+            "candidateOverBaseline": 0.2311
+          },
+          "mean": {
+            "baseline": 584.513,
+            "candidate": 194.263,
+            "candidateOverBaseline": 0.3324
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 2418630.5,
+            "candidate": 2458398.0,
+            "candidateOverBaseline": 1.0164
+          },
+          "p90": {
+            "baseline": 4890318.5,
+            "candidate": 4917408.1,
+            "candidateOverBaseline": 1.0055
+          },
+          "mean": {
+            "baseline": 2833118.669,
+            "candidate": 2979427.382,
+            "candidateOverBaseline": 1.0516
+          }
+        }
+      }
+    },
+    "byFormatPhaseStage": {
+      "final.plan.forecast": {
+        "baselineSamples": 527,
+        "candidateSamples": 527,
+        "graphMs": {
+          "p50": {
+            "baseline": 628.0,
+            "candidate": 279.0,
+            "candidateOverBaseline": 0.4443
+          },
+          "p90": {
+            "baseline": 875.0,
+            "candidate": 402.0,
+            "candidateOverBaseline": 0.4594
+          },
+          "mean": {
+            "baseline": 666.903,
+            "candidate": 301.213,
+            "candidateOverBaseline": 0.4517
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 1089473.0,
+            "candidate": 1279708.0,
+            "candidateOverBaseline": 1.1746
+          },
+          "p90": {
+            "baseline": 1293454.0,
+            "candidate": 1479852.8,
+            "candidateOverBaseline": 1.1441
+          },
+          "mean": {
+            "baseline": 1014683.943,
+            "candidate": 1197904.091,
+            "candidateOverBaseline": 1.1806
+          }
+        }
+      },
+      "final.plan.primary": {
+        "baselineSamples": 651,
+        "candidateSamples": 651,
+        "graphMs": {
+          "p50": {
+            "baseline": 638.0,
+            "candidate": 299.0,
+            "candidateOverBaseline": 0.4687
+          },
+          "p90": {
+            "baseline": 882.0,
+            "candidate": 420.0,
+            "candidateOverBaseline": 0.4762
+          },
+          "mean": {
+            "baseline": 689.512,
+            "candidate": 324.232,
+            "candidateOverBaseline": 0.4702
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 2668327.0,
+            "candidate": 2760565.0,
+            "candidateOverBaseline": 1.0346
+          },
+          "p90": {
+            "baseline": 3722325.0,
+            "candidate": 3751946.0,
+            "candidateOverBaseline": 1.008
+          },
+          "mean": {
+            "baseline": 2511334.475,
+            "candidate": 2630521.25,
+            "candidateOverBaseline": 1.0475
+          }
+        }
+      },
+      "final.select.forecast": {
+        "baselineSamples": 124,
+        "candidateSamples": 124,
+        "graphMs": {
+          "p50": {
+            "baseline": 618.0,
+            "candidate": 277.0,
+            "candidateOverBaseline": 0.4482
+          },
+          "p90": {
+            "baseline": 879.0,
+            "candidate": 389.7,
+            "candidateOverBaseline": 0.4433
+          },
+          "mean": {
+            "baseline": 678.073,
+            "candidate": 298.54,
+            "candidateOverBaseline": 0.4403
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 1200729.5,
+            "candidate": 1460675.5,
+            "candidateOverBaseline": 1.2165
+          },
+          "p90": {
+            "baseline": 1336026.2,
+            "candidate": 1592103.5,
+            "candidateOverBaseline": 1.1917
+          },
+          "mean": {
+            "baseline": 1057905.895,
+            "candidate": 1262718.331,
+            "candidateOverBaseline": 1.1936
+          }
+        }
+      },
+      "final.select.primary": {
+        "baselineSamples": 124,
+        "candidateSamples": 124,
+        "graphMs": {
+          "p50": {
+            "baseline": 840.0,
+            "candidate": 345.5,
+            "candidateOverBaseline": 0.4113
+          },
+          "p90": {
+            "baseline": 1917.1,
+            "candidate": 427.0,
+            "candidateOverBaseline": 0.2227
+          },
+          "mean": {
+            "baseline": 1177.944,
+            "candidate": 355.573,
+            "candidateOverBaseline": 0.3019
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 1531427.0,
+            "candidate": 2202637.0,
+            "candidateOverBaseline": 1.4383
+          },
+          "p90": {
+            "baseline": 2207391.4,
+            "candidate": 2489113.7,
+            "candidateOverBaseline": 1.1276
+          },
+          "mean": {
+            "baseline": 1521053.927,
+            "candidate": 1883277.653,
+            "candidateOverBaseline": 1.2381
+          }
+        }
+      },
+      "first.plan.forecast": {
+        "baselineSamples": 1488,
+        "candidateSamples": 1488,
+        "graphMs": {
+          "p50": {
+            "baseline": 123.0,
+            "candidate": 69.0,
+            "candidateOverBaseline": 0.561
+          },
+          "p90": {
+            "baseline": 139.0,
+            "candidate": 76.0,
+            "candidateOverBaseline": 0.5468
+          },
+          "mean": {
+            "baseline": 122.764,
+            "candidate": 66.975,
+            "candidateOverBaseline": 0.5456
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 1289500.5,
+            "candidate": 1318468.5,
+            "candidateOverBaseline": 1.0225
+          },
+          "p90": {
+            "baseline": 1507488.5,
+            "candidate": 1548808.0,
+            "candidateOverBaseline": 1.0274
+          },
+          "mean": {
+            "baseline": 1271942.169,
+            "candidate": 1289312.523,
+            "candidateOverBaseline": 1.0137
+          }
+        }
+      },
+      "first.plan.primary": {
+        "baselineSamples": 868,
+        "candidateSamples": 868,
+        "graphMs": {
+          "p50": {
+            "baseline": 126.0,
+            "candidate": 72.0,
+            "candidateOverBaseline": 0.5714
+          },
+          "p90": {
+            "baseline": 140.0,
+            "candidate": 80.0,
+            "candidateOverBaseline": 0.5714
+          },
+          "mean": {
+            "baseline": 125.838,
+            "candidate": 71.354,
+            "candidateOverBaseline": 0.567
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 5478734.0,
+            "candidate": 5313949.5,
+            "candidateOverBaseline": 0.9699
+          },
+          "p90": {
+            "baseline": 7319929.7,
+            "candidate": 7086141.2,
+            "candidateOverBaseline": 0.9681
+          },
+          "mean": {
+            "baseline": 5352893.181,
+            "candidate": 5249257.97,
+            "candidateOverBaseline": 0.9806
+          }
+        }
+      },
+      "first.select.forecast": {
+        "baselineSamples": 124,
+        "candidateSamples": 124,
+        "graphMs": {
+          "p50": {
+            "baseline": 123.0,
+            "candidate": 67.0,
+            "candidateOverBaseline": 0.5447
+          },
+          "p90": {
+            "baseline": 136.7,
+            "candidate": 74.0,
+            "candidateOverBaseline": 0.5413
+          },
+          "mean": {
+            "baseline": 124.177,
+            "candidate": 65.782,
+            "candidateOverBaseline": 0.5297
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 3037918.5,
+            "candidate": 2976791.0,
+            "candidateOverBaseline": 0.9799
+          },
+          "p90": {
+            "baseline": 3503064.4,
+            "candidate": 3440155.8,
+            "candidateOverBaseline": 0.982
+          },
+          "mean": {
+            "baseline": 2943258.371,
+            "candidate": 2907988.089,
+            "candidateOverBaseline": 0.988
+          }
+        }
+      },
+      "first.select.primary": {
+        "baselineSamples": 124,
+        "candidateSamples": 124,
+        "graphMs": {
+          "p50": {
+            "baseline": 132.0,
+            "candidate": 69.5,
+            "candidateOverBaseline": 0.5265
+          },
+          "p90": {
+            "baseline": 443.0,
+            "candidate": 143.0,
+            "candidateOverBaseline": 0.3228
+          },
+          "mean": {
+            "baseline": 201.427,
+            "candidate": 85.548,
+            "candidateOverBaseline": 0.4247
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 4826679.5,
+            "candidate": 4687493.5,
+            "candidateOverBaseline": 0.9712
+          },
+          "p90": {
+            "baseline": 4963379.5,
+            "candidate": 5069339.4,
+            "candidateOverBaseline": 1.0213
+          },
+          "mean": {
+            "baseline": 4283168.403,
+            "candidate": 4266906.097,
+            "candidateOverBaseline": 0.9962
+          }
+        }
+      },
+      "semifinal.plan.forecast": {
+        "baselineSamples": 589,
+        "candidateSamples": 589,
+        "graphMs": {
+          "p50": {
+            "baseline": 256.0,
+            "candidate": 122.0,
+            "candidateOverBaseline": 0.4766
+          },
+          "p90": {
+            "baseline": 302.0,
+            "candidate": 129.0,
+            "candidateOverBaseline": 0.4272
+          },
+          "mean": {
+            "baseline": 260.55,
+            "candidate": 121.452,
+            "candidateOverBaseline": 0.4661
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 1607675.0,
+            "candidate": 1645505.0,
+            "candidateOverBaseline": 1.0235
+          },
+          "p90": {
+            "baseline": 2211395.6,
+            "candidate": 2231804.4,
+            "candidateOverBaseline": 1.0092
+          },
+          "mean": {
+            "baseline": 1771174.003,
+            "candidate": 1802247.08,
+            "candidateOverBaseline": 1.0175
+          }
+        }
+      },
+      "semifinal.plan.primary": {
+        "baselineSamples": 713,
+        "candidateSamples": 713,
+        "graphMs": {
+          "p50": {
+            "baseline": 264.0,
+            "candidate": 129.0,
+            "candidateOverBaseline": 0.4886
+          },
+          "p90": {
+            "baseline": 305.0,
+            "candidate": 143.0,
+            "candidateOverBaseline": 0.4689
+          },
+          "mean": {
+            "baseline": 269.6,
+            "candidate": 129.429,
+            "candidateOverBaseline": 0.4801
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 4036481.0,
+            "candidate": 4022252.0,
+            "candidateOverBaseline": 0.9965
+          },
+          "p90": {
+            "baseline": 5670259.6,
+            "candidate": 5128764.4,
+            "candidateOverBaseline": 0.9045
+          },
+          "mean": {
+            "baseline": 3874489.927,
+            "candidate": 3801885.189,
+            "candidateOverBaseline": 0.9813
+          }
+        }
+      },
+      "semifinal.select.forecast": {
+        "baselineSamples": 124,
+        "candidateSamples": 124,
+        "graphMs": {
+          "p50": {
+            "baseline": 256.0,
+            "candidate": 121.0,
+            "candidateOverBaseline": 0.4727
+          },
+          "p90": {
+            "baseline": 303.4,
+            "candidate": 126.0,
+            "candidateOverBaseline": 0.4153
+          },
+          "mean": {
+            "baseline": 263.016,
+            "candidate": 119.694,
+            "candidateOverBaseline": 0.4551
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 2000511.5,
+            "candidate": 2094926.0,
+            "candidateOverBaseline": 1.0472
+          },
+          "p90": {
+            "baseline": 2252049.7,
+            "candidate": 2363342.3,
+            "candidateOverBaseline": 1.0494
+          },
+          "mean": {
+            "baseline": 1733387.169,
+            "candidate": 1797820.5,
+            "candidateOverBaseline": 1.0372
+          }
+        }
+      },
+      "semifinal.select.primary": {
+        "baselineSamples": 124,
+        "candidateSamples": 124,
+        "graphMs": {
+          "p50": {
+            "baseline": 284.0,
+            "candidate": 143.0,
+            "candidateOverBaseline": 0.5035
+          },
+          "p90": {
+            "baseline": 650.0,
+            "candidate": 149.0,
+            "candidateOverBaseline": 0.2292
+          },
+          "mean": {
+            "baseline": 374.169,
+            "candidate": 141.669,
+            "candidateOverBaseline": 0.3786
+          }
+        },
+        "iterations": {
+          "p50": {
+            "baseline": 2946459.5,
+            "candidate": 3318343.0,
+            "candidateOverBaseline": 1.1262
+          },
+          "p90": {
+            "baseline": 3573891.1,
+            "candidate": 3645451.1,
+            "candidateOverBaseline": 1.02
+          },
+          "mean": {
+            "baseline": 2695133.677,
+            "candidate": 2788098.395,
+            "candidateOverBaseline": 1.0345
+          }
+        }
+      }
+    },
+    "processMemoryAtCompletion": {
+      "candidate": [
+        {
+          "pid": 1339,
+          "startTicks": "177929",
+          "startTicksMatchStartRecord": true,
+          "bootId": "21b738ab-7c59-47e2-bc9f-07075a0e35af",
+          "executable": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+          "executableSha256": "49eb466a4eb127075bbb5ce9bd90e297ca19f8cb7e61f6af320d585aef53cecc",
+          "cwd": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0",
+          "status": {
+            "Name": "distributed-sol",
+            "State": "S (sleeping)",
+            "Threads": "32",
+            "Cpus_allowed_list": "0-31",
+            "VmRSS": "3035180 kB",
+            "VmHWM": "3035180 kB",
+            "VmSize": "4146016 kB",
+            "VmPeak": "4211552 kB"
+          },
+          "scope": "C007 worker process lifetime; VmHWM includes all 12 cases"
+        }
+      ],
+      "baseline": [],
+      "baselineCompletionSha256": "219f14432b4071b9009f6c9882766beb195a6cbf1d0f6f9e751dd9aa614282ab",
+      "meaning": "Process RSS/HWM from recorded completion only; check per-process lifetime scope. Counter table bytes are not RSS."
+    }
+  }
+}

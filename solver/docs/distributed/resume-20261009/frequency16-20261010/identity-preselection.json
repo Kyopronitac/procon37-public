@@ -1,0 +1,32 @@
+{
+  "checkedAtJst": "2026-10-10T05:59:52.025295+09:00",
+  "candidates": {
+    "c013-scheduled-submission": {
+      "sourceAggregateSha256": "8489b1953f4643d03fb4efd02dd9debf2d3d8ec13df17ceb57230286cece4ca3",
+      "fileCount": 34,
+      "sourceFilesVerified": true,
+      "binary": "solver/distributed-candidates/c013-scheduled-submission/target/release/distributed-solver",
+      "binarySha256": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+      "binaryVerified": true
+    },
+    "c014-share100ms": {
+      "sourceAggregateSha256": "72d83c8e0b6ffccb895f511d4c99fe84f8d47eb7c4d5ec3ac5ce66e8cfed3325",
+      "fileCount": 34,
+      "sourceFilesVerified": true,
+      "binary": "solver/distributed-candidates/c014-share100ms/bin/distributed-solver",
+      "binarySha256": "da81053f69ff5be9f28fd33012e3344352612b5517a6db8ca46cec97af784dee",
+      "binaryVerified": true
+    },
+    "c015-share2000ms": {
+      "sourceAggregateSha256": "2085e8e60cf8fe62c70d0e528b5fcb51eced2961f90c88995709da27fe212069",
+      "fileCount": 34,
+      "sourceFilesVerified": true,
+      "binary": "solver/distributed-candidates/c015-share2000ms/bin/distributed-solver",
+      "binarySha256": "13c261e0512a224172ab49b1db4f733960c96ce522b45d6aba829728769b1972",
+      "binaryVerified": true
+    }
+  },
+  "bridgeSha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+  "bridgeVerified": true,
+  "harnessSha256": "aa46f22ca4314411a7614d3a11e17f52f7c4ebdd6c5eb25d4fff7d0e5eed8d53"
+}

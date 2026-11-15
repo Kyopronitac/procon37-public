@@ -1,0 +1,36 @@
+{
+  "stage": "C006-short-02",
+  "status": "running",
+  "label": "分散C006・探索上限97パーセントの再現性確認2回目・短縮12件・10秒",
+  "shortMs": 10000,
+  "startedUnix": 1791509941.771931,
+  "command": [
+    "/home/imak/work/procon37/target/release/server",
+    "run",
+    "12",
+    "--players",
+    "4",
+    "--config",
+    "/home/imak/work/procon37/.server/distributed/evaluations/C006-short-02/run-config.json",
+    "--label",
+    "分散C006・探索上限97パーセントの再現性確認2回目・短縮12件・10秒",
+    "--match-port",
+    "11451",
+    "--time-limit-ms",
+    "10000"
+  ],
+  "directory": "/home/imak/work/procon37/.server/distributed/evaluations/C006-short-02",
+  "history": "/home/imak/work/procon37/.server/runs",
+  "version": "C006-budget97",
+  "existingRunIds": [
+    "1791503276339409187-91328",
+    "1791504436521618109-94528",
+    "1791505730154449433-101944",
+    "1791506866153064781-104560",
+    "1791508659730277323-111961"
+  ],
+  "pid": 117170,
+  "startTicks": "5994972",
+  "state": "R",
+  "bootId": "0ed549c2-ebe5-4a00-a7fe-2a56c0403979"
+}

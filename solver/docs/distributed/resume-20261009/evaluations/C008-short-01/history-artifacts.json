@@ -1,0 +1,394 @@
+{
+  "runId": "1791505730154449433-101944",
+  "defaultHistory": ".server/runs/1791505730154449433-101944",
+  "files": {
+    "0/config.json": {
+      "bytes": 1456,
+      "sha256": "c68870540294575751f31fc0dd2911b07d9329bffbb354394e5e19c45924380a"
+    },
+    "0/problem.json": {
+      "bytes": 1277,
+      "sha256": "ff0ffb88986635de1a8e1267a1335572fd842d3ef79fe8712d65b2f557545507"
+    },
+    "0/replay.json": {
+      "bytes": 526038,
+      "sha256": "5903aedb89ed726ee59a461218be38bd24ad31b2c9e95e7ac165f9fbd93de181"
+    },
+    "0/server.log": {
+      "bytes": 1898,
+      "sha256": "fe8467dc3ff3965166d51f3381f9ad822e88797a63a050cd3dc3fc227819d99b"
+    },
+    "0/team-0.log": {
+      "bytes": 705,
+      "sha256": "39ac7bb0b5d724d2a0fa296dc94e66df86925156e3cd968464bd7e51c18c9041"
+    },
+    "0/team-1.log": {
+      "bytes": 700,
+      "sha256": "588c2155efd4df9f92b65971b21f49a6249f012ad481e329dd9014fb472f420e"
+    },
+    "0/team-2.log": {
+      "bytes": 704,
+      "sha256": "78cb1fc127ade37ca736b0600995d11be79f855560385c710d03340817c2decc"
+    },
+    "0/team-3.log": {
+      "bytes": 703,
+      "sha256": "b3447ba1a93c6dbf486534ac1e10c94ca52ba916fa96308cb4dea9d8326bb815"
+    },
+    "1/config.json": {
+      "bytes": 2394,
+      "sha256": "7d24a5b30e355571329c2803ee7bb0606633c82d7c5d6b9a325db5c4570d7f97"
+    },
+    "1/problem.json": {
+      "bytes": 2215,
+      "sha256": "2b3941dd6f59f829293b27dc68d2b2c34d3d605d3efade5281832e9c7d0e40b2"
+    },
+    "1/replay.json": {
+      "bytes": 1040888,
+      "sha256": "94be647497d9ebea8d06dda7694a3110a3764939880e6d5d57852c3d0a71f3e2"
+    },
+    "1/server.log": {
+      "bytes": 1898,
+      "sha256": "b4156c7a0d380ad216b4bd2707bdba8918e095feaf0a18f89dc7be92d66a2fb1"
+    },
+    "1/team-0.log": {
+      "bytes": 706,
+      "sha256": "23837b465dbd33139412ca7fb2ff8a3b4cbf17648c8e9ce3a67b9d0f019017ad"
+    },
+    "1/team-1.log": {
+      "bytes": 702,
+      "sha256": "a5a57b7a006afd0d6097b1a43b7cca7bcee7eac6f3e2c0dc65e654c2a4ca0675"
+    },
+    "1/team-2.log": {
+      "bytes": 706,
+      "sha256": "a357186461ca7b947910c116af8669f8684a45de90872926e006ddc950e86c1d"
+    },
+    "1/team-3.log": {
+      "bytes": 706,
+      "sha256": "83f2f7b9bc44f032eb4b951d769d94d4dbd991a2527cd63dc7eeefed83b892b7"
+    },
+    "10/config.json": {
+      "bytes": 2417,
+      "sha256": "7cfbc497bb5b4aa9da361976747460663370bbdb0c18e5e909df2f977c3456b2"
+    },
+    "10/problem.json": {
+      "bytes": 2238,
+      "sha256": "603b1dc739999b2e90bc28d7dc417b8d30e50cb00a500c0d700d886124d023e1"
+    },
+    "10/replay.json": {
+      "bytes": 2306701,
+      "sha256": "ccf1f0fcaeec7adaecefd0f2773560b305f2dd2c447960f4d903712b9223c95c"
+    },
+    "10/server.log": {
+      "bytes": 2834,
+      "sha256": "5b9d1900c3c3e897ba5ca052d67ce6c797d606e6ba9fc952ea3eb5c14f4032c1"
+    },
+    "10/team-0.log": {
+      "bytes": 1021,
+      "sha256": "743e8353eff484809ff35d1e42f82bc5359d0152216f0b42890e9546cd2f8ccc"
+    },
+    "10/team-1.log": {
+      "bytes": 1017,
+      "sha256": "76844f6208acfff1c19f8d70c8649417fe0bb3bb796ba229b608dfc7b07a070c"
+    },
+    "10/team-2.log": {
+      "bytes": 1021,
+      "sha256": "29713cc5e9a05ac0a614b53e291ca27568d5ec4f892fbd1d48c70ef6736527c7"
+    },
+    "10/team-3.log": {
+      "bytes": 1021,
+      "sha256": "3c8f33d6f3b9ad0e323c0a75032841ebcf0daede188d658075cc11608187c2bd"
+    },
+    "11/config.json": {
+      "bytes": 3591,
+      "sha256": "776fa1cd2280dc94a5c375297218e45d8d47c0e5d504f7cbf662555343d2f25d"
+    },
+    "11/problem.json": {
+      "bytes": 3412,
+      "sha256": "47ea2520b2e1e418ae308f5daea6e8e42101d3291dcbe01330b33120a0df8c2b"
+    },
+    "11/replay.json": {
+      "bytes": 1940004,
+      "sha256": "6ec8b5e779ac6fa965859dd3cf6fbc01e0e4e6a867ee0ed280d835dfadcc0ebc"
+    },
+    "11/server.log": {
+      "bytes": 1898,
+      "sha256": "3176b1468a12cf34a87af91c92e74033085539bd9c314eba41b6150e5a18b6d9"
+    },
+    "11/team-0.log": {
+      "bytes": 710,
+      "sha256": "a804f0cd0175cd8b9606ed50e9260c7645998d7a3f84b5e74d77fe3f5f896c60"
+    },
+    "11/team-1.log": {
+      "bytes": 706,
+      "sha256": "cb1bb21bc7fee2cfe1ef4615f6e95bd53e851ab7d1b465150b5c3950734ec142"
+    },
+    "11/team-2.log": {
+      "bytes": 710,
+      "sha256": "2c7de533845e0f2f762c305c680d5b2fbea16741bacd332005b038549201b923"
+    },
+    "11/team-3.log": {
+      "bytes": 710,
+      "sha256": "8d8fc429693cb676d7f68d03b606830760a29e69de23ddb662631b0569202432"
+    },
+    "2/config.json": {
+      "bytes": 3591,
+      "sha256": "38587098156242b1283d6c319d92b13586233eea0c13a88b28cf23d6b9568b88"
+    },
+    "2/problem.json": {
+      "bytes": 3412,
+      "sha256": "6ca533612877191615211e13aef7a58a41dde61b3dc5208757008dba1e4d8c57"
+    },
+    "2/replay.json": {
+      "bytes": 1809204,
+      "sha256": "969475fb32660079e212239b1301f81ea9d8840517ef078d6eb37fa678678280"
+    },
+    "2/server.log": {
+      "bytes": 1898,
+      "sha256": "83cc6425bb214b7219b6d18b3ff63e9ce19bc1b6016094aedc413fe10c532558"
+    },
+    "2/team-0.log": {
+      "bytes": 710,
+      "sha256": "f850bf0044096689f3e34119f397b3111988bec3d79b180bc81c9dacf1b90356"
+    },
+    "2/team-1.log": {
+      "bytes": 706,
+      "sha256": "5a1a1dff6c5c524688a54bedc17743a94ffe45442898957916ecd71f201d7081"
+    },
+    "2/team-2.log": {
+      "bytes": 710,
+      "sha256": "7295b0e818e0e8feac9ef05fa389c48c36e3a67a57140e58d6200588355209c8"
+    },
+    "2/team-3.log": {
+      "bytes": 710,
+      "sha256": "c21085574ff0433d78a936eda6748d11f055889ac69228806b4175287c1f524d"
+    },
+    "3/config.json": {
+      "bytes": 1497,
+      "sha256": "b3f6058bdf2a5176dc69b5ea46549ba3198c2b5daf87eca374aaf6404039065e"
+    },
+    "3/problem.json": {
+      "bytes": 1318,
+      "sha256": "2785f18eca3a8939bc7b950a05f32a9bd5fc2fb8e6b9a8a898b5958cc0bc8874"
+    },
+    "3/replay.json": {
+      "bytes": 2326591,
+      "sha256": "bbd101fbc1a148ce4c8354a40da18518cb27a24e8906f8c85649fa556fdf307c"
+    },
+    "3/server.log": {
+      "bytes": 3458,
+      "sha256": "47a5b00c19fc0f20d82021b4767d11c2bc265821a312cd6f3264caca72a5163c"
+    },
+    "3/team-0.log": {
+      "bytes": 1234,
+      "sha256": "c6afd189d8d3df07020f30854582c9e443b013877cf468905fa5a1aa0c40d00c"
+    },
+    "3/team-1.log": {
+      "bytes": 1229,
+      "sha256": "d56708a0640a19c5bfb62cda16de1bc129c0319cee2f24ff0f49a91ac41463c4"
+    },
+    "3/team-2.log": {
+      "bytes": 1233,
+      "sha256": "7c1b6cb3d0ee5e75041bcf6fc9dd4a55ff604d069237fa559e728be146abb9fa"
+    },
+    "3/team-3.log": {
+      "bytes": 1232,
+      "sha256": "8b1e4e7b3c4dbf448cea2ebf28dde10edf96bb3bad2fcae2665259caeca81c5d"
+    },
+    "4/config.json": {
+      "bytes": 2394,
+      "sha256": "cb83e6f194f2cd68a181c6ccda1c3836aaaf6f963644fc0649c844621efebb67"
+    },
+    "4/problem.json": {
+      "bytes": 2215,
+      "sha256": "5899d1abc32dc8f2c43901f3ead580f7c9649d94cf64a07ca347c479622ab0a7"
+    },
+    "4/replay.json": {
+      "bytes": 852483,
+      "sha256": "08bb1d13032f66463ef8e3e6ee5196a7b5304854459bad3065fc5199e3683894"
+    },
+    "4/server.log": {
+      "bytes": 1898,
+      "sha256": "5b55ece288ee1ed07eda91ca35899a04e8c4dbefc870e7f48c6fd863c03f9a85"
+    },
+    "4/team-0.log": {
+      "bytes": 706,
+      "sha256": "3cfa29e4c8cc912373d05cf037765595846507a74e23aa94401750cdf1cd15df"
+    },
+    "4/team-1.log": {
+      "bytes": 702,
+      "sha256": "78199be052ec0383b379ac3f93083eba0bf7c4be9bc1d917d9211e779e15ac91"
+    },
+    "4/team-2.log": {
+      "bytes": 706,
+      "sha256": "39dc8b4d0ae80ffbefe39a66a010242e7241555539c836ae124797c06c7eb613"
+    },
+    "4/team-3.log": {
+      "bytes": 706,
+      "sha256": "efeef385a1d7e35364689ecb663fcb3f0aa88504668b4def422430d5ddf1423b"
+    },
+    "5/config.json": {
+      "bytes": 3598,
+      "sha256": "46f23b3f3224c987c0779cfc27c6513be3f0605df4ed12b402c51ef236d7a68c"
+    },
+    "5/problem.json": {
+      "bytes": 3419,
+      "sha256": "4a424c2e30e549d223ae6ddc83c5cbb2d697468443e79e3068aa20128c3cd7da"
+    },
+    "5/replay.json": {
+      "bytes": 1926081,
+      "sha256": "4a1c530f65e9d932749b7fb7d67199506d39663f73c55dacd5cb068cd2bce612"
+    },
+    "5/server.log": {
+      "bytes": 2210,
+      "sha256": "10046c031e7737792d986e72325e8035516f31f5ce79a8254b7cffb6d2fadd41"
+    },
+    "5/team-0.log": {
+      "bytes": 815,
+      "sha256": "df16cdb2b19d487ec56cca2bacde2198b2edde981145c3d85c7725693460cf75"
+    },
+    "5/team-1.log": {
+      "bytes": 811,
+      "sha256": "03bd019fba239348161b1bd051a8b700731260c53b9a305985e4f921d959cac7"
+    },
+    "5/team-2.log": {
+      "bytes": 815,
+      "sha256": "28a7d7811e5d30c2e7ca287d8c58baeda48695e9306da2d3e41de49b6a645950"
+    },
+    "5/team-3.log": {
+      "bytes": 815,
+      "sha256": "c1f604497df5c625612706ecc2dd94db970698aff53b5af39f6c834b314a39a3"
+    },
+    "6/config.json": {
+      "bytes": 1477,
+      "sha256": "6dec2c87b824af2a7185d0098bdeeb6187961a42015b8b05504c636b8f5789b9"
+    },
+    "6/problem.json": {
+      "bytes": 1298,
+      "sha256": "6ee5e88d4d9d8e1670fb2b336056f738fbc1c5152786155f6017386fce4d5840"
+    },
+    "6/replay.json": {
+      "bytes": 1072767,
+      "sha256": "545f9253b6f0bb8b91326ba755d58866a4e072b1988fc34c5f0a9fa9edd8655a"
+    },
+    "6/server.log": {
+      "bytes": 2834,
+      "sha256": "6f381cec64fa6decddd35b1fe0df8b8c24eb836e62df369efcf4214d69dd75df"
+    },
+    "6/team-0.log": {
+      "bytes": 1020,
+      "sha256": "6455d398fce7eee8123b0b7197845af2a762508adaaeaa2965475758adb7a6d8"
+    },
+    "6/team-1.log": {
+      "bytes": 1015,
+      "sha256": "6189da3f374b57b4e1fd8aa2d0887ba901dce75bbaa4156a0013c38feaa32ed7"
+    },
+    "6/team-2.log": {
+      "bytes": 1019,
+      "sha256": "e843494928a60ffae71d5b7af6bb59c8b08eeba16dbe5bfd213d0a8aaa4267a6"
+    },
+    "6/team-3.log": {
+      "bytes": 1018,
+      "sha256": "5d20cb4798622eecb24b7ba24af63978f8d88a501abaaf83fec81227f4566171"
+    },
+    "7/config.json": {
+      "bytes": 2398,
+      "sha256": "5d824eba0f85062287c104618eebe9f2ded7aa6dcd49a61f7422eae98cf73ed5"
+    },
+    "7/problem.json": {
+      "bytes": 2219,
+      "sha256": "42fe65185de532bff862f732c13129c0e81cd1e571cbcb6ab745af732fc18ce3"
+    },
+    "7/replay.json": {
+      "bytes": 1827216,
+      "sha256": "328b282c5b211a8cefb166e285500e6b15b0107ab0f17f7c99382d50b388789f"
+    },
+    "7/server.log": {
+      "bytes": 1898,
+      "sha256": "9c0700b85c55c92b19d1fbcb9611a99531a87dd36ff529a70a71708948fa3ea2"
+    },
+    "7/team-0.log": {
+      "bytes": 706,
+      "sha256": "3931d8f79c11e1856809bdf45dce085c4d9578a5da4b13933e66579ca591ebc3"
+    },
+    "7/team-1.log": {
+      "bytes": 702,
+      "sha256": "37c8f372cf74d05eaeba4c6095893ef2a932d1cd40f6ce9426b703124f7da197"
+    },
+    "7/team-2.log": {
+      "bytes": 706,
+      "sha256": "9dbfc25d6d35ecbcb48377e355351bf2b367e3fe482ec5c50f9eb1374dbc241a"
+    },
+    "7/team-3.log": {
+      "bytes": 706,
+      "sha256": "906cc6356ea0c8f20090abc1e0574eae42e900187ed71c6689d7c4c6ff7f24bf"
+    },
+    "8/config.json": {
+      "bytes": 3597,
+      "sha256": "b29798d798502d344d926d760385b0024fa7b173c0a9cbd038d373e7a5abeba8"
+    },
+    "8/problem.json": {
+      "bytes": 3418,
+      "sha256": "4f2d9885e83e6681cf7a3ec0e0461ebfb53f218f2cebe0494d6d08a207345476"
+    },
+    "8/replay.json": {
+      "bytes": 3994157,
+      "sha256": "10c7f7a20162b430decc2a2459867889a09614b14af985dbbcc31d4551ce8360"
+    },
+    "8/server.log": {
+      "bytes": 1898,
+      "sha256": "1a53e99f59906e639c8820c51857babac73330fc51e7dfb81f8bae285ef1124e"
+    },
+    "8/team-0.log": {
+      "bytes": 710,
+      "sha256": "c95f5437b3712f45c632be17182b14824552b0e944dd5041974bdbf406d666db"
+    },
+    "8/team-1.log": {
+      "bytes": 706,
+      "sha256": "57162edd5ca8915e786e11a13a59c4152eb4283c56930fd767532fb20d78c5f6"
+    },
+    "8/team-2.log": {
+      "bytes": 710,
+      "sha256": "cd726ad0f683cbe450ef8b74ad261dfc89c6ed975edb01dfb201b6c5c935b403"
+    },
+    "8/team-3.log": {
+      "bytes": 710,
+      "sha256": "beb7237fb620ec809e974a16447dbc8ba0bb39271c69fcc7b5659b24df46abe8"
+    },
+    "9/config.json": {
+      "bytes": 1461,
+      "sha256": "d75c74eb70175986b04678b7c8603f9f4f3df1ee834eb0da0d700db8b7e52b08"
+    },
+    "9/problem.json": {
+      "bytes": 1282,
+      "sha256": "fcee126ae6cc31aaaa78cb0f563a3f6f24014e337d75d548db89871ea8601d21"
+    },
+    "9/replay.json": {
+      "bytes": 508878,
+      "sha256": "1fce6261a9e48c5cf296ac8260b6b09ee9e9ae15c20c7b8b0cda511ab478245a"
+    },
+    "9/server.log": {
+      "bytes": 1898,
+      "sha256": "99553cb72d999b3c5617a10656dfd5ec5ad826243168ce4072384e1b5cdb6a87"
+    },
+    "9/team-0.log": {
+      "bytes": 705,
+      "sha256": "d6c8029bc9d1e41c4cc958929b6f727fad571b99832c543d75b221ad80c2c6a7"
+    },
+    "9/team-1.log": {
+      "bytes": 700,
+      "sha256": "86cec8daf99562ea5d5f000d20c164b25b170596a6af701104825d27de0b9606"
+    },
+    "9/team-2.log": {
+      "bytes": 704,
+      "sha256": "254b9d39f72e95c76bd51ec7c393d987af0ba1d453e6e3d58d650b403c196a91"
+    },
+    "9/team-3.log": {
+      "bytes": 703,
+      "sha256": "134480fc4679b79778db7776b9f0071d5cdc1f266464d5b2d317ab3504d8ad21"
+    },
+    "run.json": {
+      "bytes": 9475,
+      "sha256": "c4548d177eb78c640db250625aa0ec280eb650e3be00696889712db446a31e48"
+    }
+  }
+}

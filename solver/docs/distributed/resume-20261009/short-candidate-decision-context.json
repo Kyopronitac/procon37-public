@@ -1,0 +1,1548 @@
+{
+  "schemaVersion": 1,
+  "createdDate": "2026-10-09",
+  "status": "decision context only; no adoption and no formal-test success claim",
+  "scope": {
+    "onlyCompletedVerifiedStages": true,
+    "excludedOngoingStages": [
+      "C010-short-01"
+    ],
+    "team": 0,
+    "formatGridSideMeaning": "generator format nominal 16/24/32; arena maps enabled as recorded",
+    "dailyBrandsMeaning": "sum of distinct brands per day across the match; not the all-days union",
+    "rankMeaning": "relative to all four live teams in that run; fixed implementations still have timed-search and traffic variation"
+  },
+  "inputFilesSha256": {
+    "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-01/run.json": "7d9ee3c404dec6387dc982913a3c6e08b2fe01eb9c076afe1783d10a488c14ae",
+    "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-01/results.json": "a7af9b2f7c11756a67b17db2ca910bd160d13a78ebd7819d409714632c506e0d",
+    "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-02/run.json": "c6d3daef4342d1740141bcd5334d3150ca03c3fa33493b6261be938b5a7eaa3b",
+    "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-02/results.json": "b739fddaa99c2a3de576c25a30ceb0266d16c845626b871417d0cc00cde8fd60",
+    "solver/docs/distributed/resume-20261009/evaluations/C006-short-01/run.json": "95bd36fbda3e9e8e1062f5ab488194cde95e25a6f91aa1b2c2ae732e01155cd0",
+    "solver/docs/distributed/resume-20261009/evaluations/C006-short-01/results.json": "40a1940799760b6f6684f9c43b3e3b98349bd8e493564aa514ca883fd2ab5882",
+    "solver/docs/distributed/resume-20261009/evaluations/C006-short-02/run.json": "a09b5271b749a6749e41b2dcf25af8d0ee82adfce06e51e9be1f391ccea19b07",
+    "solver/docs/distributed/resume-20261009/evaluations/C006-short-02/results.json": "fb61adec7c08d41b8de711a5c97e6375b2fca0e331fd77b6d16734ce1499a3e6",
+    "solver/docs/distributed/resume-20261009/evaluations/C007-short-01/run.json": "38124db0c9ff119e0dcf79e1c68aa0e7edfba8edaefaef15b4145917da798648",
+    "solver/docs/distributed/resume-20261009/evaluations/C007-short-01/results.json": "2ca33029f3fa9181034bd6164474333a37502c3cca0cfb0dd780024081e9cd6c",
+    "solver/docs/distributed/resume-20261009/evaluations/C008-short-01/run.json": "bceb8cb67c510a49d43b3f3ec9aad467efc8f69300209f2a800c4b8c37f0492d",
+    "solver/docs/distributed/resume-20261009/evaluations/C008-short-01/results.json": "dd762a2482bd67d73736b8fd335fd8bc8921bba36181dc6cf766ad44c4b1e37d"
+  },
+  "inputAggregateSha256": "17b22015a5ae5aaca1ae5964862ab2fdb1e1e1c5b9330c7a1f48f3fd58a4601b",
+  "runs": {
+    "resume-D0-short-01": {
+      "runId": "1791503276339409187-91328",
+      "inputSha256": {
+        "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-01/run.json": "7d9ee3c404dec6387dc982913a3c6e08b2fe01eb9c076afe1783d10a488c14ae",
+        "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-01/results.json": "a7af9b2f7c11756a67b17db2ca910bd160d13a78ebd7819d409714632c506e0d"
+      },
+      "config": {
+        "count": 12,
+        "format": null,
+        "arenaMaps": true,
+        "players": 4,
+        "timeLimitMs": 10000
+      },
+      "all48AC": true,
+      "verifiedUnchanged": true,
+      "totals": {
+        "meanRank": 1.3333333333333333,
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2964
+      },
+      "byFormat": {
+        "first": {
+          "nominalGridSide": 16,
+          "seeds": [
+            0,
+            3,
+            6,
+            9
+          ],
+          "meanRank": 2.0,
+          "uniqueBrands": 48,
+          "dailyBrands": 334,
+          "udon": 631
+        },
+        "semifinal": {
+          "nominalGridSide": 24,
+          "seeds": [
+            1,
+            4,
+            7,
+            10
+          ],
+          "meanRank": 1.0,
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 880
+        },
+        "final": {
+          "nominalGridSide": 32,
+          "seeds": [
+            2,
+            5,
+            8,
+            11
+          ],
+          "meanRank": 1.0,
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1453
+        }
+      },
+      "bySeed": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 12,
+          "dailyBrands": 56,
+          "udon": 69
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 18,
+          "dailyBrands": 90,
+          "udon": 124
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 24,
+          "dailyBrands": 120,
+          "udon": 207
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 13,
+          "dailyBrands": 130,
+          "udon": 329
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 19,
+          "dailyBrands": 95,
+          "udon": 130
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 25,
+          "dailyBrands": 150,
+          "udon": 334
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rank": 2,
+          "uniqueBrands": 11,
+          "dailyBrands": 88,
+          "udon": 136
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 80,
+          "udon": 266
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 552
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rank": 4,
+          "uniqueBrands": 12,
+          "dailyBrands": 60,
+          "udon": 97
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 128,
+          "udon": 360
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 360
+        }
+      ]
+    },
+    "resume-D0-short-02": {
+      "runId": "1791506866153064781-104560",
+      "inputSha256": {
+        "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-02/run.json": "c6d3daef4342d1740141bcd5334d3150ca03c3fa33493b6261be938b5a7eaa3b",
+        "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-02/results.json": "b739fddaa99c2a3de576c25a30ceb0266d16c845626b871417d0cc00cde8fd60"
+      },
+      "config": {
+        "count": 12,
+        "format": null,
+        "arenaMaps": true,
+        "players": 4,
+        "timeLimitMs": 10000
+      },
+      "all48AC": true,
+      "verifiedUnchanged": true,
+      "totals": {
+        "meanRank": 1.25,
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2956
+      },
+      "byFormat": {
+        "first": {
+          "nominalGridSide": 16,
+          "seeds": [
+            0,
+            3,
+            6,
+            9
+          ],
+          "meanRank": 1.25,
+          "uniqueBrands": 48,
+          "dailyBrands": 334,
+          "udon": 632
+        },
+        "semifinal": {
+          "nominalGridSide": 24,
+          "seeds": [
+            1,
+            4,
+            7,
+            10
+          ],
+          "meanRank": 1.0,
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 879
+        },
+        "final": {
+          "nominalGridSide": 32,
+          "seeds": [
+            2,
+            5,
+            8,
+            11
+          ],
+          "meanRank": 1.5,
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1445
+        }
+      },
+      "bySeed": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 12,
+          "dailyBrands": 56,
+          "udon": 68
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 18,
+          "dailyBrands": 90,
+          "udon": 122
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 24,
+          "dailyBrands": 120,
+          "udon": 209
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rank": 2,
+          "uniqueBrands": 13,
+          "dailyBrands": 130,
+          "udon": 324
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 19,
+          "dailyBrands": 95,
+          "udon": 130
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 25,
+          "dailyBrands": 150,
+          "udon": 333
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 11,
+          "dailyBrands": 88,
+          "udon": 140
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 80,
+          "udon": 268
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 555
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 12,
+          "dailyBrands": 60,
+          "udon": 100
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 128,
+          "udon": 359
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rank": 3,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 348
+        }
+      ]
+    },
+    "C006-short-01": {
+      "runId": "1791508659730277323-111961",
+      "inputSha256": {
+        "solver/docs/distributed/resume-20261009/evaluations/C006-short-01/run.json": "95bd36fbda3e9e8e1062f5ab488194cde95e25a6f91aa1b2c2ae732e01155cd0",
+        "solver/docs/distributed/resume-20261009/evaluations/C006-short-01/results.json": "40a1940799760b6f6684f9c43b3e3b98349bd8e493564aa514ca883fd2ab5882"
+      },
+      "config": {
+        "count": 12,
+        "format": null,
+        "arenaMaps": true,
+        "players": 4,
+        "timeLimitMs": 10000
+      },
+      "all48AC": true,
+      "verifiedUnchanged": true,
+      "totals": {
+        "meanRank": 1.1666666666666667,
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2970
+      },
+      "byFormat": {
+        "first": {
+          "nominalGridSide": 16,
+          "seeds": [
+            0,
+            3,
+            6,
+            9
+          ],
+          "meanRank": 1.25,
+          "uniqueBrands": 48,
+          "dailyBrands": 334,
+          "udon": 631
+        },
+        "semifinal": {
+          "nominalGridSide": 24,
+          "seeds": [
+            1,
+            4,
+            7,
+            10
+          ],
+          "meanRank": 1.25,
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 879
+        },
+        "final": {
+          "nominalGridSide": 32,
+          "seeds": [
+            2,
+            5,
+            8,
+            11
+          ],
+          "meanRank": 1.0,
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1460
+        }
+      },
+      "bySeed": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 12,
+          "dailyBrands": 56,
+          "udon": 66
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 18,
+          "dailyBrands": 90,
+          "udon": 124
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 24,
+          "dailyBrands": 120,
+          "udon": 209
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 13,
+          "dailyBrands": 130,
+          "udon": 326
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 19,
+          "dailyBrands": 95,
+          "udon": 133
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 25,
+          "dailyBrands": 150,
+          "udon": 332
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 11,
+          "dailyBrands": 88,
+          "udon": 141
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rank": 2,
+          "uniqueBrands": 16,
+          "dailyBrands": 80,
+          "udon": 264
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 555
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rank": 2,
+          "uniqueBrands": 12,
+          "dailyBrands": 60,
+          "udon": 98
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 128,
+          "udon": 358
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 364
+        }
+      ]
+    },
+    "C006-short-02": {
+      "runId": "1791509941774759940-117170",
+      "inputSha256": {
+        "solver/docs/distributed/resume-20261009/evaluations/C006-short-02/run.json": "a09b5271b749a6749e41b2dcf25af8d0ee82adfce06e51e9be1f391ccea19b07",
+        "solver/docs/distributed/resume-20261009/evaluations/C006-short-02/results.json": "fb61adec7c08d41b8de711a5c97e6375b2fca0e331fd77b6d16734ce1499a3e6"
+      },
+      "config": {
+        "count": 12,
+        "format": null,
+        "arenaMaps": true,
+        "players": 4,
+        "timeLimitMs": 10000
+      },
+      "all48AC": true,
+      "verifiedUnchanged": true,
+      "totals": {
+        "meanRank": 1.5,
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2963
+      },
+      "byFormat": {
+        "first": {
+          "nominalGridSide": 16,
+          "seeds": [
+            0,
+            3,
+            6,
+            9
+          ],
+          "meanRank": 1.75,
+          "uniqueBrands": 48,
+          "dailyBrands": 334,
+          "udon": 630
+        },
+        "semifinal": {
+          "nominalGridSide": 24,
+          "seeds": [
+            1,
+            4,
+            7,
+            10
+          ],
+          "meanRank": 1.75,
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 879
+        },
+        "final": {
+          "nominalGridSide": 32,
+          "seeds": [
+            2,
+            5,
+            8,
+            11
+          ],
+          "meanRank": 1.0,
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1454
+        }
+      },
+      "bySeed": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 12,
+          "dailyBrands": 56,
+          "udon": 68
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rank": 2,
+          "uniqueBrands": 18,
+          "dailyBrands": 90,
+          "udon": 125
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 24,
+          "dailyBrands": 120,
+          "udon": 207
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 13,
+          "dailyBrands": 130,
+          "udon": 325
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rank": 2,
+          "uniqueBrands": 19,
+          "dailyBrands": 95,
+          "udon": 128
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 25,
+          "dailyBrands": 150,
+          "udon": 333
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 11,
+          "dailyBrands": 88,
+          "udon": 139
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rank": 2,
+          "uniqueBrands": 16,
+          "dailyBrands": 80,
+          "udon": 265
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 556
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rank": 4,
+          "uniqueBrands": 12,
+          "dailyBrands": 60,
+          "udon": 98
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 128,
+          "udon": 361
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 358
+        }
+      ]
+    },
+    "C007-short-01": {
+      "runId": "1791504436521618109-94528",
+      "inputSha256": {
+        "solver/docs/distributed/resume-20261009/evaluations/C007-short-01/run.json": "38124db0c9ff119e0dcf79e1c68aa0e7edfba8edaefaef15b4145917da798648",
+        "solver/docs/distributed/resume-20261009/evaluations/C007-short-01/results.json": "2ca33029f3fa9181034bd6164474333a37502c3cca0cfb0dd780024081e9cd6c"
+      },
+      "config": {
+        "count": 12,
+        "format": null,
+        "arenaMaps": true,
+        "players": 4,
+        "timeLimitMs": 10000
+      },
+      "all48AC": true,
+      "verifiedUnchanged": true,
+      "totals": {
+        "meanRank": 1.5,
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2955
+      },
+      "byFormat": {
+        "first": {
+          "nominalGridSide": 16,
+          "seeds": [
+            0,
+            3,
+            6,
+            9
+          ],
+          "meanRank": 1.5,
+          "uniqueBrands": 48,
+          "dailyBrands": 333,
+          "udon": 638
+        },
+        "semifinal": {
+          "nominalGridSide": 24,
+          "seeds": [
+            1,
+            4,
+            7,
+            10
+          ],
+          "meanRank": 1.5,
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 876
+        },
+        "final": {
+          "nominalGridSide": 32,
+          "seeds": [
+            2,
+            5,
+            8,
+            11
+          ],
+          "meanRank": 1.5,
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1441
+        }
+      },
+      "bySeed": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 12,
+          "dailyBrands": 55,
+          "udon": 71
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rank": 2,
+          "uniqueBrands": 18,
+          "dailyBrands": 90,
+          "udon": 122
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 24,
+          "dailyBrands": 120,
+          "udon": 203
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 13,
+          "dailyBrands": 130,
+          "udon": 327
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rank": 2,
+          "uniqueBrands": 19,
+          "dailyBrands": 95,
+          "udon": 130
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 25,
+          "dailyBrands": 150,
+          "udon": 339
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 11,
+          "dailyBrands": 88,
+          "udon": 143
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 80,
+          "udon": 266
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 556
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rank": 3,
+          "uniqueBrands": 12,
+          "dailyBrands": 60,
+          "udon": 97
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 128,
+          "udon": 358
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rank": 3,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 343
+        }
+      ]
+    },
+    "C008-short-01": {
+      "runId": "1791505730154449433-101944",
+      "inputSha256": {
+        "solver/docs/distributed/resume-20261009/evaluations/C008-short-01/run.json": "bceb8cb67c510a49d43b3f3ec9aad467efc8f69300209f2a800c4b8c37f0492d",
+        "solver/docs/distributed/resume-20261009/evaluations/C008-short-01/results.json": "dd762a2482bd67d73736b8fd335fd8bc8921bba36181dc6cf766ad44c4b1e37d"
+      },
+      "config": {
+        "count": 12,
+        "format": null,
+        "arenaMaps": true,
+        "players": 4,
+        "timeLimitMs": 10000
+      },
+      "all48AC": true,
+      "verifiedUnchanged": true,
+      "totals": {
+        "meanRank": 1.6666666666666667,
+        "uniqueBrands": 222,
+        "dailyBrands": 1273,
+        "udon": 2965
+      },
+      "byFormat": {
+        "first": {
+          "nominalGridSide": 16,
+          "seeds": [
+            0,
+            3,
+            6,
+            9
+          ],
+          "meanRank": 2.5,
+          "uniqueBrands": 48,
+          "dailyBrands": 330,
+          "udon": 627
+        },
+        "semifinal": {
+          "nominalGridSide": 24,
+          "seeds": [
+            1,
+            4,
+            7,
+            10
+          ],
+          "meanRank": 1.5,
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 879
+        },
+        "final": {
+          "nominalGridSide": 32,
+          "seeds": [
+            2,
+            5,
+            8,
+            11
+          ],
+          "meanRank": 1.0,
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1459
+        }
+      },
+      "bySeed": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rank": 2,
+          "uniqueBrands": 12,
+          "dailyBrands": 55,
+          "udon": 69
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rank": 3,
+          "uniqueBrands": 18,
+          "dailyBrands": 90,
+          "udon": 123
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 24,
+          "dailyBrands": 120,
+          "udon": 207
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rank": 4,
+          "uniqueBrands": 13,
+          "dailyBrands": 127,
+          "udon": 318
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 19,
+          "dailyBrands": 95,
+          "udon": 131
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 25,
+          "dailyBrands": 150,
+          "udon": 330
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 11,
+          "dailyBrands": 88,
+          "udon": 141
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 80,
+          "udon": 265
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 561
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rank": 3,
+          "uniqueBrands": 12,
+          "dailyBrands": 60,
+          "udon": 99
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 128,
+          "udon": 360
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 361
+        }
+      ]
+    }
+  },
+  "repeatedVersions": {
+    "D0": {
+      "stages": [
+        "resume-D0-short-01",
+        "resume-D0-short-02"
+      ],
+      "runs": 2,
+      "cases": 24,
+      "meanTotals": {
+        "meanRank": 1.2916666666666665,
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2960
+      },
+      "observedTotalRanges": {
+        "meanRank": {
+          "min": 1.25,
+          "max": 1.3333333333333333
+        },
+        "uniqueBrands": {
+          "min": 222,
+          "max": 222
+        },
+        "dailyBrands": {
+          "min": 1277,
+          "max": 1277
+        },
+        "udon": {
+          "min": 2956,
+          "max": 2964
+        }
+      },
+      "meanByFormat": {
+        "first": {
+          "meanRank": 1.625,
+          "uniqueBrands": 48,
+          "dailyBrands": 334,
+          "udon": 631.5
+        },
+        "semifinal": {
+          "meanRank": 1.0,
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 879.5
+        },
+        "final": {
+          "meanRank": 1.25,
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1449
+        }
+      }
+    },
+    "C006": {
+      "stages": [
+        "C006-short-01",
+        "C006-short-02"
+      ],
+      "runs": 2,
+      "cases": 24,
+      "meanTotals": {
+        "meanRank": 1.3333333333333335,
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2966.5
+      },
+      "observedTotalRanges": {
+        "meanRank": {
+          "min": 1.1666666666666667,
+          "max": 1.5
+        },
+        "uniqueBrands": {
+          "min": 222,
+          "max": 222
+        },
+        "dailyBrands": {
+          "min": 1277,
+          "max": 1277
+        },
+        "udon": {
+          "min": 2963,
+          "max": 2970
+        }
+      },
+      "meanByFormat": {
+        "first": {
+          "meanRank": 1.5,
+          "uniqueBrands": 48,
+          "dailyBrands": 334,
+          "udon": 630.5
+        },
+        "semifinal": {
+          "meanRank": 1.5,
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 879
+        },
+        "final": {
+          "meanRank": 1.0,
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1457
+        }
+      }
+    }
+  },
+  "C006MeanMinusD0MeanBySeed": [
+    {
+      "seed": 0,
+      "format": "first",
+      "candidateMeanMinusBaselineMean": {
+        "rank": 0,
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": -1.5
+      },
+      "D0ObservedRanges": {
+        "rank": [
+          1,
+          1
+        ],
+        "uniqueBrands": [
+          12,
+          12
+        ],
+        "dailyBrands": [
+          56,
+          56
+        ],
+        "udon": [
+          68,
+          69
+        ]
+      }
+    },
+    {
+      "seed": 1,
+      "format": "semifinal",
+      "candidateMeanMinusBaselineMean": {
+        "rank": 0.5,
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": 1.5
+      },
+      "D0ObservedRanges": {
+        "rank": [
+          1,
+          1
+        ],
+        "uniqueBrands": [
+          18,
+          18
+        ],
+        "dailyBrands": [
+          90,
+          90
+        ],
+        "udon": [
+          122,
+          124
+        ]
+      }
+    },
+    {
+      "seed": 2,
+      "format": "final",
+      "candidateMeanMinusBaselineMean": {
+        "rank": 0,
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": 0
+      },
+      "D0ObservedRanges": {
+        "rank": [
+          1,
+          1
+        ],
+        "uniqueBrands": [
+          24,
+          24
+        ],
+        "dailyBrands": [
+          120,
+          120
+        ],
+        "udon": [
+          207,
+          209
+        ]
+      }
+    },
+    {
+      "seed": 3,
+      "format": "first",
+      "candidateMeanMinusBaselineMean": {
+        "rank": -0.5,
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": -1.0
+      },
+      "D0ObservedRanges": {
+        "rank": [
+          1,
+          2
+        ],
+        "uniqueBrands": [
+          13,
+          13
+        ],
+        "dailyBrands": [
+          130,
+          130
+        ],
+        "udon": [
+          324,
+          329
+        ]
+      }
+    },
+    {
+      "seed": 4,
+      "format": "semifinal",
+      "candidateMeanMinusBaselineMean": {
+        "rank": 0.5,
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": 0.5
+      },
+      "D0ObservedRanges": {
+        "rank": [
+          1,
+          1
+        ],
+        "uniqueBrands": [
+          19,
+          19
+        ],
+        "dailyBrands": [
+          95,
+          95
+        ],
+        "udon": [
+          130,
+          130
+        ]
+      }
+    },
+    {
+      "seed": 5,
+      "format": "final",
+      "candidateMeanMinusBaselineMean": {
+        "rank": 0,
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": -1.0
+      },
+      "D0ObservedRanges": {
+        "rank": [
+          1,
+          1
+        ],
+        "uniqueBrands": [
+          25,
+          25
+        ],
+        "dailyBrands": [
+          150,
+          150
+        ],
+        "udon": [
+          333,
+          334
+        ]
+      }
+    },
+    {
+      "seed": 6,
+      "format": "first",
+      "candidateMeanMinusBaselineMean": {
+        "rank": -0.5,
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": 2
+      },
+      "D0ObservedRanges": {
+        "rank": [
+          1,
+          2
+        ],
+        "uniqueBrands": [
+          11,
+          11
+        ],
+        "dailyBrands": [
+          88,
+          88
+        ],
+        "udon": [
+          136,
+          140
+        ]
+      }
+    },
+    {
+      "seed": 7,
+      "format": "semifinal",
+      "candidateMeanMinusBaselineMean": {
+        "rank": 1,
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": -2.5
+      },
+      "D0ObservedRanges": {
+        "rank": [
+          1,
+          1
+        ],
+        "uniqueBrands": [
+          16,
+          16
+        ],
+        "dailyBrands": [
+          80,
+          80
+        ],
+        "udon": [
+          266,
+          268
+        ]
+      }
+    },
+    {
+      "seed": 8,
+      "format": "final",
+      "candidateMeanMinusBaselineMean": {
+        "rank": 0,
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": 2.0
+      },
+      "D0ObservedRanges": {
+        "rank": [
+          1,
+          1
+        ],
+        "uniqueBrands": [
+          28,
+          28
+        ],
+        "dailyBrands": [
+          140,
+          140
+        ],
+        "udon": [
+          552,
+          555
+        ]
+      }
+    },
+    {
+      "seed": 9,
+      "format": "first",
+      "candidateMeanMinusBaselineMean": {
+        "rank": 0.5,
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": -0.5
+      },
+      "D0ObservedRanges": {
+        "rank": [
+          1,
+          4
+        ],
+        "uniqueBrands": [
+          12,
+          12
+        ],
+        "dailyBrands": [
+          60,
+          60
+        ],
+        "udon": [
+          97,
+          100
+        ]
+      }
+    },
+    {
+      "seed": 10,
+      "format": "semifinal",
+      "candidateMeanMinusBaselineMean": {
+        "rank": 0,
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": 0.0
+      },
+      "D0ObservedRanges": {
+        "rank": [
+          1,
+          1
+        ],
+        "uniqueBrands": [
+          16,
+          16
+        ],
+        "dailyBrands": [
+          128,
+          128
+        ],
+        "udon": [
+          359,
+          360
+        ]
+      }
+    },
+    {
+      "seed": 11,
+      "format": "final",
+      "candidateMeanMinusBaselineMean": {
+        "rank": -1,
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": 7
+      },
+      "D0ObservedRanges": {
+        "rank": [
+          1,
+          3
+        ],
+        "uniqueBrands": [
+          28,
+          28
+        ],
+        "dailyBrands": [
+          140,
+          140
+        ],
+        "udon": [
+          348,
+          360
+        ]
+      }
+    }
+  ],
+  "C006MeanMinusD0MeanByFormat": {
+    "first": {
+      "meanRank": -0.125,
+      "uniqueBrands": 0,
+      "dailyBrands": 0,
+      "udon": -1.0
+    },
+    "semifinal": {
+      "meanRank": 0.5,
+      "uniqueBrands": 0,
+      "dailyBrands": 0,
+      "udon": -0.5
+    },
+    "final": {
+      "meanRank": -0.25,
+      "uniqueBrands": 0,
+      "dailyBrands": 0,
+      "udon": 8
+    }
+  },
+  "scoreWinTieLoss": [
+    {
+      "candidate": "C006-short-01",
+      "baseline": "resume-D0-short-01",
+      "wins": 6,
+      "ties": 1,
+      "losses": 5,
+      "comparison": "lexicographic (uniqueBrands,dailyBrands,udon); candidate perspective; same seed, different live match"
+    },
+    {
+      "candidate": "C006-short-01",
+      "baseline": "resume-D0-short-02",
+      "wins": 5,
+      "ties": 2,
+      "losses": 5,
+      "comparison": "lexicographic (uniqueBrands,dailyBrands,udon); candidate perspective; same seed, different live match"
+    },
+    {
+      "candidate": "C006-short-02",
+      "baseline": "resume-D0-short-01",
+      "wins": 5,
+      "ties": 1,
+      "losses": 6,
+      "comparison": "lexicographic (uniqueBrands,dailyBrands,udon); candidate perspective; same seed, different live match"
+    },
+    {
+      "candidate": "C006-short-02",
+      "baseline": "resume-D0-short-02",
+      "wins": 5,
+      "ties": 2,
+      "losses": 5,
+      "comparison": "lexicographic (uniqueBrands,dailyBrands,udon); candidate perspective; same seed, different live match"
+    },
+    {
+      "candidate": "C007-short-01",
+      "baseline": "resume-D0-short-01",
+      "wins": 3,
+      "ties": 3,
+      "losses": 6,
+      "comparison": "lexicographic (uniqueBrands,dailyBrands,udon); candidate perspective; same seed, different live match"
+    },
+    {
+      "candidate": "C007-short-01",
+      "baseline": "resume-D0-short-02",
+      "wins": 4,
+      "ties": 2,
+      "losses": 6,
+      "comparison": "lexicographic (uniqueBrands,dailyBrands,udon); candidate perspective; same seed, different live match"
+    },
+    {
+      "candidate": "C008-short-01",
+      "baseline": "resume-D0-short-01",
+      "wins": 5,
+      "ties": 2,
+      "losses": 5,
+      "comparison": "lexicographic (uniqueBrands,dailyBrands,udon); candidate perspective; same seed, different live match"
+    },
+    {
+      "candidate": "C008-short-01",
+      "baseline": "resume-D0-short-02",
+      "wins": 6,
+      "ties": 0,
+      "losses": 6,
+      "comparison": "lexicographic (uniqueBrands,dailyBrands,udon); candidate perspective; same seed, different live match"
+    }
+  ],
+  "keyObservations": [
+    "D0 2回は平均順位1.3333/1.2500、玉2964/2956。種類222・日別1277は同じ。これらは2回の観測範囲であり、将来のばらつき上限ではない。",
+    "C006 2回平均は順位1.3333（D0 1.2917より0.0417悪化）、種類222/日別1277、玉2966.5（D0平均2960より+6.5）。初回順位1.1667は反復で1.5000となり再現しなかった。",
+    "C006平均玉+6.5はseed11だけで+7.0、他11seed合計は-0.5。D0自体のseed11玉は360/348（差12）であり、特定seedの一回の上振れを改善と判定しない。",
+    "D0のseed9は玉97→100（+3）で順位4→1、seed11は玉360→348（-12）で順位1→3。順位は自チームの小さな差と他チームの結果の双方に影響される。",
+    "C006平均の形式別玉差はfirst -1.0 / semifinal -0.5 / final +8.0。semifinalはD0が両回平均順位1.0、C006が1.25/1.75であり、大盤の改善だけでは総体の安定改善を示さない。",
+    "C007は小盤で日別-1、C008は小盤で日別-4（seed0 -1、seed3 -3）。玉の別盤面での増加と日別種類の欠落を単純に同価値として相殺しない。"
+  ],
+  "decisionGuidance": [
+    "C010完了後は全48AC・識別固定・実共有の稼働を確認し、両D0 runに対する順位/三得点/勝同敗、形式別差、seed9/11を除いた差も示す。",
+    "C010がC006初回程度（順位1.1667、玉は数個程度）なら明確改善と即断せず、同じ凍結版で短縮12件をもう1回だけ確認する。新候補を広げず、その反復で正式評価へ進むかを区切る。",
+    "順位と日別/玉の改善が複数seed・形式へ広がり、既存の観測変動と区別できる強い結果なら、次作開発を優先せず候補正式12件→同配置D0正式12件を早めに実施する。短縮1回は有望性の材料であり、正式改善の証明や採用ではない。",
+    "正式評価へ進むことと採用を分ける。正式の同条件比較で改善が確認されるまで未採用とし、実装/設定を固定したまま公式時間、平均順位、三得点、勝同敗と全48ACで判定する。"
+  ],
+  "limitations": [
+    "D0/C006は各2反復のみ。平均・観測rangeを信頼区間、統計的有意差、将来の変動上限と解釈しない。C007/C008は各1反復のみ。",
+    "同じseedでも各試合は独立した時間制探索で、固定相手の出力と他車由来の交通も変わる。実装だけの因果効果や形式一般への外挿はできない。",
+    "形式ごと4seedしかなく、特定seed除外は集中度を診断する補助表示で、都合のよい採否用除外ではない。採否には全12件を使う。",
+    "この集計は保存run/resultsのみから作成。日別の詳細replayやGPU/探索速度は再評価せず、進行中C010の部分結果を混ぜていない。"
+  ]
+}

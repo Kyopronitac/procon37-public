@@ -1,0 +1,30 @@
+[
+  {
+    "id": "S0",
+    "generation": 6,
+    "source_hashes": {
+      "solver/docs/solver-pool-experiment/solver06/main.rs": "e9e3d0a0523d47922fd349b62e070f2b0c17509f776d2b6cc372bd8ecbd20a56",
+      "solver/docs/solver-pool-experiment/solver06/solver/planner.rs": "1003c94dcc9f1a42b96f55aa568803e0aa800a4a02837d53f8a349d953595a34"
+    },
+    "build_command": "PATH=/home/jikky/.cargo/bin:$PATH cargo build --release --manifest-path solver/docs/solver-pool-experiment/Cargo.toml --bin pool-solver-06 --bin pool-solver-08 --target-dir /tmp/parallel-pool-fixed-target -j 2",
+    "cpu": "0",
+    "team": 4,
+    "host": "192.168.0.22",
+    "binary_sha256": "90cb3b35e7ec1fe71738e5640b9dcd75ae3ebc931741ac1f29b8887d6da041a8",
+    "launcher_args": []
+  },
+  {
+    "id": "S1",
+    "generation": 8,
+    "source_hashes": {
+      "solver/docs/solver-pool-experiment/solver08/main.rs": "017b4d04ae4e7d8310d39f48b3d5ce0a72ff54aacc62fc1ac84b22ea469cc9a7",
+      "solver/docs/solver-pool-experiment/solver08/solver/planner.rs": "a6f4c8c95fdf6f2ec6e3bf3927b4e5963ef7932de7045e33c482ceeba4370a84"
+    },
+    "build_command": "PATH=/home/jikky/.cargo/bin:$PATH cargo build --release --manifest-path solver/docs/solver-pool-experiment/Cargo.toml --bin pool-solver-06 --bin pool-solver-08 --target-dir /tmp/parallel-pool-fixed-target -j 2",
+    "cpu": "2",
+    "team": 5,
+    "host": "192.168.0.22",
+    "binary_sha256": "f5a6bcfc55feb853d7a1f355a11afd7af617fe96393a63b4ec1b05970b6a7ea0",
+    "launcher_args": []
+  }
+]

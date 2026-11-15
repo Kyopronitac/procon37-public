@@ -1,0 +1,73 @@
+warning: function `day_seconds` is never used
+   --> common/src/generator.rs:136:15
+    |
+136 | pub(crate) fn day_seconds(
+    |               ^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `tester` (lib) generated 1 warning
+   Compiling procon37-distributed v0.1.0 (/home/imak/work/procon37/solver/distributed-candidates/c009-gpu-owner)
+    Finished `release` profile [optimized] target(s) in 17.88s
+     Running unittests main.rs (solver/distributed-candidates/c009-gpu-owner/target/release/deps/distributed_solver-86a94ec15cf3df6e)
+
+running 30 tests
+test planner::compact_tests::benchmark::compact_construction_and_queries_microbench ... ignored, finite performance microbench; pin to CPU 1 and run explicitly
+test planner::compact_tests::compact_path_cache_is_lazy_and_exact_comparison_survives_hash_collision ... ok
+test planner::compact_tests::compact_paths_match_d0_eager_routes_costs_and_mode_masks ... compact equivalence seed=0 sources=210 targets=210 paths=264600
+compact equivalence seed=1 sources=447 targets=159 paths=426438
+compact equivalence seed=2 sources=776 targets=197 paths=917232
+compact exact route comparisons=1608270
+ok
+test planner::distributed_pool::synchronization_tests::expired_results_cannot_be_used_for_later_request ... shared_graph context=before_request_101 {"budgetLimitedRequests":0,"buildMs":0.0,"builds":0,"bypasses":0,"completedBuilds":0,"cpuBuildMs":0.0,"cpuBuilds":0,"evictions":0,"failures":0,"gpu":null,"gpuBuilds":0,"hits":0,"liveBaseBytesEstimate":0,"liveCellBytes":0,"liveTables":0,"materializedBytes":0,"materializedPaths":0,"maxEntries":4,"maxWaitMs":2000,"measuredMaxBuildNsPerWork":0,"peakTableBytesEstimate":0,"requests":0,"retainedEntries":0,"retainedTableBytesEstimate":0,"targetRetainedBytes":134217728,"timeouts":0,"waitMs":0.0,"waits":0}
+shared_graph context=before_request_102 {"budgetLimitedRequests":0,"buildMs":0.0,"builds":0,"bypasses":0,"completedBuilds":0,"cpuBuildMs":0.0,"cpuBuilds":0,"evictions":0,"failures":0,"gpu":null,"gpuBuilds":0,"hits":0,"liveBaseBytesEstimate":0,"liveCellBytes":0,"liveTables":0,"materializedBytes":0,"materializedPaths":0,"maxEntries":4,"maxWaitMs":2000,"measuredMaxBuildNsPerWork":0,"peakTableBytesEstimate":0,"requests":0,"retainedEntries":0,"retainedTableBytesEstimate":0,"targetRetainedBytes":134217728,"timeouts":0,"waitMs":0.0,"waits":0}
+shared_graph context=search_pool_drop {"budgetLimitedRequests":0,"buildMs":0.0,"builds":0,"bypasses":0,"completedBuilds":0,"cpuBuildMs":0.0,"cpuBuilds":0,"evictions":0,"failures":0,"gpu":null,"gpuBuilds":0,"hits":0,"liveBaseBytesEstimate":0,"liveCellBytes":0,"liveTables":0,"materializedBytes":0,"materializedPaths":0,"maxEntries":4,"maxWaitMs":2000,"measuredMaxBuildNsPerWork":0,"peakTableBytesEstimate":0,"requests":0,"retainedEntries":0,"retainedTableBytesEstimate":0,"targetRetainedBytes":134217728,"timeouts":0,"waitMs":0.0,"waits":0}
+ok
+test planner::distributed_pool::synchronization_tests::selected_foreign_state_preserves_history_rejection_and_json_roundtrip ... g007 day=0 score=35119.3 iterations=0 hubs=[2, 2, 2, 2] beam_calls=0 beam_layers=0 fleet_calls=0 fleet_accepted=0 fleet_improved=0 fleet_rescues=0 triple_calls=0 triple_accepted=0 triple_improved=0 restart_calls=0 future_candidates=0 future_value=0.0 coverage_guard=0 guard_brands=0 guard_base_brands=0 guard_changed=0 graph_targets=195 graph_sources=776 graph_ms=298
+ok
+test planner::gpu_graph::tests::adapter_rejects_wrong_input_and_expired_deadline ... ok
+test planner::gpu_graph::tests::gpu_adapter_matches_cpu_with_duplicate_positions_traffic_and_sparse_fuel_cache ... C009 CPU-only adapter path checks=59238
+ok
+test planner::gpu_graph::tests::gpu_adapter_matches_full_generated_format_tables_without_driver ... C009 adapter seed=0 cells=256 sources=209 targets=209
+C009 adapter seed=1 cells=576 sources=447 targets=162
+C009 adapter seed=2 cells=1024 sources=776 targets=195
+C009 generated full adapter route checks=1604490
+ok
+test planner::gpu_graph::tests::local_gpu_budget_preserves_cpu_reserve_and_rejects_tiny_slack ... ok
+test planner::gpu_graph::tests::wrong_and_late_gpu_replies_disable_gpu_without_returning_partial_tables ... gpu_owner disabled_after_assembly error="GPU response belongs to a different graph"
+gpu_owner disabled_after_assembly error="GPU assembly deadline elapsed"
+ok
+test planner::graph_cache::tests::different_keys_build_without_holding_the_index_lock ... ok
+test planner::graph_cache::tests::full_key_equality_rejects_hash_collisions_and_preserves_position_order ... ok
+test planner::graph_cache::tests::gpu_owner_panic_notifies_failed_entry_and_allows_cpu_recovery ... 
+thread 'planner::graph_cache::tests::gpu_owner_panic_notifies_failed_entry_and_allows_cpu_recovery' (593) panicked at solver/gpu_graph.rs:186:57:
+injected GPU owner panic
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+ok
+test planner::graph_cache::tests::gpu_owner_publication_attaches_once_and_does_not_pollute_cpu_estimate ... gpu_owner completed {"allocationMs":0.0,"assemblyMs":0.088741,"cells":15,"device":"CPU-only mock","executionReadMs":0.0,"initializationMs":0.0,"rounds":1,"sequence":1,"targets":15,"temporaryBytesEstimate":33300,"uploadMs":0.0,"verificationMs":0.0,"waitMs":0.138529}
+ok
+test planner::graph_cache::tests::identical_workers_share_one_table_and_one_lazy_route ... ok
+test planner::graph_cache::tests::local_deadline_limits_wait_and_reserves_measured_private_build_cost ... ok
+test planner::graph_cache::tests::lru_and_byte_eviction_preserve_active_tables_and_release_accounting ... ok
+test planner::graph_cache::tests::mutable_worker_caches_and_snapshot_restore_remain_private ... ok
+test planner::graph_cache::tests::owner_panic_notifies_waiters_and_a_waiter_rebuilds ... 
+thread '<unnamed>' (632) panicked at solver/graph_cache_tests.rs:102:95:
+injected builder failure
+ok
+test planner::graph_cache::tests::private_bypass_never_dispatches_gpu ... ok
+test planner::graph_cache::tests::slow_owner_allows_bounded_wait_fallback_without_replacing_owner ... ok
+test planner::graph_cache::tests::unavailable_gpu_and_wrong_reply_use_cpu_in_the_same_owner ... gpu_owner cpu_fallback error=Error("injected unavailable/busy/driver error")
+gpu_owner disabled_after_assembly error="GPU response belongs to a different graph"
+ok
+test planner::tests::changed_supplier_generates_a_valid_plan_for_actual_roles ... g007 day=0 score=3084.1 iterations=260833 hubs=[1, 1, 12, 11] beam_calls=7 beam_layers=140 fleet_calls=0 fleet_accepted=0 fleet_improved=0 fleet_rescues=0 triple_calls=16692 triple_accepted=14093 triple_improved=0 restart_calls=11 future_candidates=0 future_value=0.0 coverage_guard=0 guard_brands=0 guard_base_brands=0 guard_changed=0 graph_targets=15 graph_sources=15 graph_ms=0
+ok
+test planner::tests::forecast_graph_preserves_reused_selection_numbering ... ok
+test planner::tests::opponent_tree_conserves_travel_budget_and_skips_blocked_cells ... ok
+test planner::tests::rejected_selection_rebinds_roles_and_invalidates_warm_start ... ok
+test planner::tests::rejected_selection_with_no_supplier_respects_observed_fuel ... ok
+test planner::tests::supplier_path_modes_match_public_engine_and_cache ... ok
+test planner::tests::tiny_catch_up_requests_synchronize_without_search ... ok
+test wire::tests::authentication_is_exact ... ok
+
+test result: ok. 29 passed; 0 failed; 1 ignored; 0 measured; 1 filtered out; finished in 5.07s
+

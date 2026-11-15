@@ -1,0 +1,387 @@
+{
+  "version": "C013-scheduled-submission-on-submit55-dedup",
+  "serverUrl": "http://192.168.0.81:11451",
+  "server": ".server/distributed/submit55/server",
+  "localFiles": {
+    "solver/distributed-lab/manage.py": "2146f6f3e1fb323603b219af3930a7445f6aa461039fa36814b76623c87ba510",
+    "solver/distributed-lab/lifecycle.py": "d14853b77092eb08260579478e1866496e374fef5682bc6a0877f436f0557bc8",
+    "solver/distributed-lab/team_runner.py": "b0ea16a39cc2b86199f1f4cb965ce0b0fcdd3577be7db72786f7018bbda6e22e",
+    "solver/distributed-lab/clock_sync.py": "e4cb308a1bf11df4d3ab6e2fd1bd8e714c978b3754e0e8dc3e26900d73193469",
+    "solver/distributed-lab/switch.py": "1defa9c661c4ff14b8a4067fde362a9c7ab55252f328692843fb99cf9e575876",
+    "solver/distributed-lab/observe.py": "0e5e8feee141961068e91af2740d4bd6c02b2b483edc58f60ab57b28777dc12d",
+    "solver/distributed-candidates/c013-scheduled-submission/Cargo.lock": "680473abcd7458404d914148c368aa285d4a38b786b4177977a91ec86208b6da",
+    "solver/distributed-candidates/c013-scheduled-submission/Cargo.toml": "da196d978caee68350afcd73a240959fd89701d660b6c65dc8fdaabfb888907b",
+    "solver/distributed-candidates/c013-scheduled-submission/common/Cargo.toml": "aacfd3852bfa69b15cff7217c7f5bac52fbc0e9b49663af3c1aad0bb42484d4f",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/match-916.json": "7008196cd912926ab8790029ac1003e1a174a91fc6f3088332cf9abd561401e2",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/match-937.json": "7aa371cfe758f0fcc9edd6429e395dc57e5f1af63827d52fc1dd85edeea2dee2",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/match-941.json": "8168d083b044ee7eb5fd0d401f8f4470f42990ce8468934d5db84b6333bed8cf",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/pasted-16-01.json": "9e065b887faff5acb5dbc41b334a284bd41896ec3b7f362aff047d6bb1eb5622",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/pasted-16-02.json": "aa097fa2ef1536c4032c3547cad95bdadc40c44165bf3a599590feb0bbb9cb50",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/pasted-16-03.json": "d837b29d102c48e749368ebece013db610f5585db277ab8e9a3dbfc8942f0747",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/pasted-16-04.json": "740d0295e8a3ce023a31d0268c4c793171a2c850c0a75b0661af44b2e23ace05",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/pasted-24-01.json": "73e06d501144fb144f96dd257f095a1b9788bc0a42b74959135e50fc58e06488",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/pasted-24-02.json": "c86f8813a88ccf1c9410a720a6d087090fa27982d18caca0638fb212920936cc",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/pasted-24-03.json": "8c016ae2200b6a6ed0e95fb33a7f1370849c7cbeb539e806e11b6496cf0486f1",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/pasted-24-04.json": "93e99e1d08a9ce9ffabfb46ca8757f4cda1ed6f4f1146841745f4dcd82e09b7b",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/pasted-32-01.json": "b319229489edc829037a7edef2f3222eb603e7846074644fdfd5b58113012b50",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/pasted-32-02.json": "e338163d9dc9818572332ec98fbc7c9f0db35065cedc2e7a1e626ee2d30023d3",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/pasted-32-03.json": "b89e0290613e49710bd4630d76208ae0a5bf2af4229422e8ed9524a4eb48eeb3",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/pasted-32-04.json": "79bfa1ab4c7780a0252ec33fea058210e5b92b677d6688dcc84e51bf7d3efc3b",
+    "solver/distributed-candidates/c013-scheduled-submission/common/fixtures/arena/sources.json": "b8d42d8a5d7bb9b7b7f071d9f4e0fe0400f5011159e73e171bee1e6fa62718c6",
+    "solver/distributed-candidates/c013-scheduled-submission/common/src/engine.rs": "585e400d715f35da36b43e7c8d1edcb7d477bf00214986025dab340706d223ca",
+    "solver/distributed-candidates/c013-scheduled-submission/common/src/generator.rs": "8adff182497df2e7dead95f5a94e58cd982c4fab3b50b917af5ee67a3ee8abef",
+    "solver/distributed-candidates/c013-scheduled-submission/common/src/lib.rs": "524e7898caa8a92c3301e4c91f2d69737026f512608b5f87351308f9d93e6336",
+    "solver/distributed-candidates/c013-scheduled-submission/common/src/model.rs": "72ec763bb3aad8ebebace68ed5c3c86d48c3066df7e21797c8c3b10f380fc4e1",
+    "solver/distributed-candidates/c013-scheduled-submission/cross_elite.rs": "2ee188add1fdc805952e2242ab4b736e7cceddc192e1450986e979a4a6579764",
+    "solver/distributed-candidates/c013-scheduled-submission/isolated_tests.rs": "097b588f5e2d3599208d6d2e93204a38e876d37c8059e0805faf6754ef24878e",
+    "solver/distributed-candidates/c013-scheduled-submission/main.rs": "440c5b84e26c11069c354acbbed4b2b14d72af91ad4c172ce2b2ad2c98afef7f",
+    "solver/distributed-candidates/c013-scheduled-submission/official/sample_maps/sample_16.json": "15ba3fd41ca8a69a2e22f707092d23f569ca75350524c2a0ecf956cedcaf823a",
+    "solver/distributed-candidates/c013-scheduled-submission/official/sample_maps/sample_24.json": "4081cbca170ad09e291015c10b76224bc0d960b4bc3baa72d9d96752c112d9a5",
+    "solver/distributed-candidates/c013-scheduled-submission/official/sample_maps/sample_32.json": "3293a63681f7f248d39013bab903619968ba7832c0a5368162c508d5ec7fadaa",
+    "solver/distributed-candidates/c013-scheduled-submission/pool.rs": "ab60ca8bcdf8106daabde9d020631d2bbfb9af3251529c7fbf76e58e90974a6f",
+    "solver/distributed-candidates/c013-scheduled-submission/runtime.rs": "6d5585a380391a9425c82490c3659d3f7b6e54661c60c6c1eb8609eac30413c6",
+    "solver/distributed-candidates/c013-scheduled-submission/solver/planner.rs": "0ba0f8dcb18d1d3878c54bee0366c48002caaf2d005a784c4f34a53e8c1aa7a0",
+    "solver/distributed-candidates/c013-scheduled-submission/tests/network.rs": "8511de52b5b6124158609f010f29ad0cea91780e1649fc379b778fb1b078f184",
+    "solver/distributed-candidates/c013-scheduled-submission/wire.rs": "796deb00269c7cc9d0a0683262db347e516fe6b6274d335cfd960ce9559bfa8d",
+    "solver/distributed-lab/deploy_submission_policy.py": "27c374d97ec2d955d0d379e6457265f083566a3e59375ddc36687f899cf49bc1",
+    "solver/distributed-lab/timed_regression.py": "c6f32fa40d36f9edec3e8df016b8997a6203ee2acf2578c43b91428eb0240bb4",
+    "Cargo.lock": "a788fbbba8d76a6a01e1c1d3b637a3084f6bb44177ff171af4fced06dc68b344",
+    "Cargo.toml": "9878c0f79463d2f3617e6b5b99293c58a7c69d1898c9bbb369d17ed71d7a4a10",
+    "common/Cargo.toml": "4f36462215c8b23506a74f4026089606c50268e1a9c9ee9eb1b8f7b712180dee",
+    "common/src/archive.rs": "e3172d653fb52f2b6b2e0bb0bba5a625ff6155b64287cc0f3dd1cc72b8ccfa9c",
+    "common/src/cli.rs": "2b9f3b7864c62d85a0c68373c955ebd6f501eaf6261c95a2008b6e0791152db7",
+    "common/src/comparison.rs": "ba424ed11866b07ae2f55e2a1c8d8f051d99bb459b5c04ea6afbfa40f9f10860",
+    "common/src/competition.rs": "f7730040aadf31990579a98129ce6a4c782de08855cebe1819d6fd503bc2634c",
+    "common/src/engine.rs": "e02a3335c87475295692a8d6de54110cb33466279cddd94957c57f645f698a49",
+    "common/src/generator.rs": "8adff182497df2e7dead95f5a94e58cd982c4fab3b50b917af5ee67a3ee8abef",
+    "common/src/lib.rs": "4f89320151107bd5b3b99fc0b9d4ccb8816c043e418190f7802d8c7097e9d5f2",
+    "common/src/model.rs": "72ec763bb3aad8ebebace68ed5c3c86d48c3066df7e21797c8c3b10f380fc4e1",
+    "common/src/process.rs": "765181b78efcd0ecc697eb6e2c95aa346d1e698669cb600b019ae7a0f760fe61",
+    "common/src/report.rs": "1db8a27322276a6e62ad0a1e51b04ea68f6b61eb050d1407644f5476a6e68893",
+    "common/src/runner.rs": "f47a83efd8260b17078c4c96601ddbb545fadabbdd03e1fb1bdc63e87973e748",
+    "common/src/server.rs": "f3995087167bc2fb30cec4616fcafd1426a623c9d9966c20485ccf470d611391",
+    "tester/server-bridge/Cargo.toml": "413787729fe19cd671dc4baebb1303e01640d5c1ab1d2fcc3612e6300ae3173f",
+    "tester/server-bridge/src/main.rs": "59635ca054d29dea63eb8076df0fad9775a6acec5b764744de1115a81c2bb793",
+    "tester/server-bridge/src/record.rs": "a9af0eedd2e815f63ab37b62cfe95fb8801d3dad5051f4fc5e423a385c1d9567",
+    "tester/server-bridge/src/schedule.rs": "18f9467b2f0bd41b50ecebf463dfb5efffa3773dc1915453cf14297fe9aca091",
+    "tester/server/Cargo.toml": "1756e47c1811c0311ffc61a46b6368ccbdbe831084cf6f8389b3928a8a47d899",
+    "tester/server/src/gui.rs": "c2e6e0647fda679aee67bb3773f47ba1d445e6059b178c28daa476b6a68253e7",
+    "tester/server/src/main.rs": "65c25ba8df5f22def07192070070c112d1a2b31775ceffd1997db25a40bb4b8f",
+    "tester/server/src/proxy.rs": "feed48652680a14b67b8651ca58feb533a8ce457818b2539fcc3bf820a441c35",
+    "tester/server/src/runner.rs": "69ef1f80334bdc5ba3fdc7df4f848d19f7f8fb271c7760b6868dcf7a2f67c392",
+    "tester/server/src/state.rs": "689f2b9104dadf512ffd4ed462968ac7dd09958a84a1cb413cac5bbc65a16455",
+    "tester/server-bridge/run.sh": "de491e87543bd2b29aa77fb8f955bbdd876a5964262f2964dc7ecec342ec3391",
+    "tester/server-bridge/distributed/run.sh": "9852d64fc8965106de18f180e58a475f2e95414e685a26f81cf60e69280b9ed5",
+    "tester/server-bridge/console.py": "253ece9c44c1b2e7a1cce189740ecc913566513045cbb1759be59fd173d5626f",
+    "solver/distributed-lab/deploy_submission_dedup.py": "8b9dfd011ed3627d7c62e4bfc2c9fb4ec4ce1a97a2e2850fac3c55f793d8c202",
+    "tester/server-bridge/tests/check_scheduled_submissions.py": "4dacf936c756f18c78e18ff536e80c94c036815415cbf2dd59b3036df72ae410",
+    "tester/server-bridge/tests/test_console.py": "ed018613a485c54bd607a010e7c0b4e46628b9dd7f8c174a455ece7fb4fa5ab3"
+  },
+  "fixedLocalFiles": {
+    "tester/server/procon-server": "769e101cbc6b80cce7732dae1e10d911ed1e9efefd3b1f94b6381652aa7741c1",
+    ".server/distributed/bin/server-bridge": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+    ".server/distributed/bin/pool-solver-06": "055374eca5a4f89b4f6e01e77fb489bf9e0683720ad53b4895adf0704fb62a86",
+    ".server/distributed/bin/pool-solver-08": "a7588e406d40fb1aa76ed606ed2a910a0aee911468f040ef37453037f033c5a2",
+    ".server/distributed/launchers/generation6.sh": "34a9d5f3d7fa57b7977281d862f7559399b1338a59ec58324272f89b03d3d6f4",
+    ".server/distributed/launchers/generation8.sh": "0fbe822a7a8cce9cf8f893fd7c5c5b82a2a10d725ce7ab95d6f571ff6db049d7",
+    ".server/distributed/team2/resume-team-runner.py": "b0ea16a39cc2b86199f1f4cb965ce0b0fcdd3577be7db72786f7018bbda6e22e",
+    ".server/distributed/team3/resume-team-runner.py": "b0ea16a39cc2b86199f1f4cb965ce0b0fcdd3577be7db72786f7018bbda6e22e",
+    ".server/distributed/submit55/server": "a4380930d6a66dc22bd9c40725ef93b8f648f2053d5a174c63392f4a2a35f252"
+  },
+  "localProcesses": [
+    {
+      "matchArg": "/home/imak/work/procon37/.server/distributed/team2/resume-team-runner.py",
+      "cpus": "0"
+    },
+    {
+      "matchArg": "/home/imak/work/procon37/.server/distributed/team3/resume-team-runner.py",
+      "cpus": "2"
+    }
+  ],
+  "localTeams": {
+    "local2": {
+      "directory": "/home/imak/work/procon37/.server/distributed/team2",
+      "cpus": "0",
+      "files": {
+        "resume-team-runner.py": "b0ea16a39cc2b86199f1f4cb965ce0b0fcdd3577be7db72786f7018bbda6e22e"
+      },
+      "processes": [
+        {
+          "matchArg": "/home/imak/work/procon37/.server/distributed/team2/resume-team-runner.py",
+          "cpus": "0"
+        }
+      ],
+      "launch": [
+        "python3",
+        "/home/imak/work/procon37/.server/distributed/team2/resume-team-runner.py",
+        "--bridge",
+        "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+        "--solver",
+        "/home/imak/work/procon37/.server/distributed/launchers/generation6.sh",
+        "--server",
+        "http://192.168.0.81:11451",
+        "--team",
+        "2",
+        "--cpus",
+        "0",
+        "--submit-at-ms",
+        "55000"
+      ]
+    },
+    "local3": {
+      "directory": "/home/imak/work/procon37/.server/distributed/team3",
+      "cpus": "2",
+      "files": {
+        "resume-team-runner.py": "b0ea16a39cc2b86199f1f4cb965ce0b0fcdd3577be7db72786f7018bbda6e22e"
+      },
+      "processes": [
+        {
+          "matchArg": "/home/imak/work/procon37/.server/distributed/team3/resume-team-runner.py",
+          "cpus": "2"
+        }
+      ],
+      "launch": [
+        "python3",
+        "/home/imak/work/procon37/.server/distributed/team3/resume-team-runner.py",
+        "--bridge",
+        "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+        "--solver",
+        "/home/imak/work/procon37/.server/distributed/launchers/generation8.sh",
+        "--server",
+        "http://192.168.0.81:11451",
+        "--team",
+        "3",
+        "--cpus",
+        "2",
+        "--submit-at-ms",
+        "55000"
+      ]
+    }
+  },
+  "nodes": {
+    "v1": {
+      "home": "/home/voidlinux-1",
+      "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0",
+      "cpus": "0-31",
+      "arguments": [
+        "--mode",
+        "coordinator",
+        "--threads",
+        "32",
+        "--seed",
+        "0",
+        "--peers",
+        "192.168.0.22:39370/16/31,192.168.0.33:39370/32/46"
+      ],
+      "files": {
+        "distributed-solver": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+        "server-bridge": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+        "launcher": "554844e79c7826abe4899277196db862d4becf8e343870e6ccedf07d67affba4",
+        "resume-team-runner.py": "b0ea16a39cc2b86199f1f4cb965ce0b0fcdd3577be7db72786f7018bbda6e22e"
+      },
+      "user": "voidlinux-1",
+      "address": "192.168.0.11",
+      "fixed": false,
+      "launch": [
+        "python3",
+        "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team-runner.py",
+        "--bridge",
+        "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+        "--solver",
+        "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+        "--server",
+        "http://192.168.0.81:11451",
+        "--team",
+        "0",
+        "--cpus",
+        "0-31",
+        "--submit-at-ms",
+        "5000,15000,25000,35000,45000,55000",
+        "--stream-responses"
+      ],
+      "processes": [
+        {
+          "matchArg": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team-runner.py",
+          "cpus": "0-31"
+        }
+      ]
+    },
+    "v2": {
+      "home": "/home/voidlinux-2",
+      "directory": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0",
+      "cpus": "0-15",
+      "arguments": [
+        "--mode",
+        "worker",
+        "--threads",
+        "16",
+        "--worker-offset",
+        "31",
+        "--listen",
+        "192.168.0.22:39370"
+      ],
+      "files": {
+        "distributed-solver": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+        "server-bridge": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+        "launcher": "24da22f8f4542aa7ffd27f6859ca79e4bed5ef7749e8b129c74c46eb5afc90c4"
+      },
+      "user": "voidlinux-2",
+      "address": "192.168.0.22",
+      "fixed": false,
+      "launch": [
+        "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/launcher"
+      ],
+      "processes": [
+        {
+          "matchArg": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver",
+          "cpus": "0-15",
+          "threads": 16
+        }
+      ]
+    },
+    "v3": {
+      "home": "/home/voidlinux-3",
+      "directory": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0",
+      "cpus": "0-31",
+      "arguments": [
+        "--mode",
+        "worker",
+        "--threads",
+        "32",
+        "--worker-offset",
+        "46",
+        "--listen",
+        "192.168.0.33:39370"
+      ],
+      "files": {
+        "distributed-solver": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+        "server-bridge": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+        "launcher": "994d0b9e7f8ca30386fd42a5c403269065e80c5ab7c3a0fbebc5ab80bdb7471c"
+      },
+      "user": "voidlinux-3",
+      "address": "192.168.0.33",
+      "fixed": false,
+      "launch": [
+        "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/launcher"
+      ],
+      "processes": [
+        {
+          "matchArg": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+          "cpus": "0-31",
+          "threads": 32
+        }
+      ]
+    },
+    "nomlab": {
+      "home": "/home/nomlab-ubuntu",
+      "directory": "/home/nomlab-ubuntu/procon37-distributed",
+      "user": "nomlab-ubuntu",
+      "address": "192.168.0.55",
+      "cpus": "0-15",
+      "fixed": true,
+      "files": {
+        "bin/distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "bin/server-bridge": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+        "launcher": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+        "resume-team-runner.py": "b0ea16a39cc2b86199f1f4cb965ce0b0fcdd3577be7db72786f7018bbda6e22e",
+        "run.sh": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27"
+      },
+      "processes": [
+        {
+          "matchArg": "/home/nomlab-ubuntu/procon37-distributed/resume-team-runner.py",
+          "cpus": "0-15"
+        }
+      ],
+      "launch": [
+        "python3",
+        "/home/nomlab-ubuntu/procon37-distributed/resume-team-runner.py",
+        "--bridge",
+        "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+        "--solver",
+        "/home/nomlab-ubuntu/procon37-distributed/launcher",
+        "--server",
+        "http://192.168.0.81:11451",
+        "--team",
+        "1",
+        "--cpus",
+        "0-15",
+        "--submit-at-ms",
+        "55000"
+      ]
+    }
+  },
+  "serverCpus": "1,3,5,7",
+  "environmentIdentity": {
+    "revision": "restart-20261009-5800H-performance",
+    "localCpu": {
+      "Model name": "AMD Ryzen 7 5800H with Radeon Graphics",
+      "CPU(s)": "16",
+      "Thread(s) per core": "2",
+      "Core(s) per socket": "8",
+      "Socket(s)": "1",
+      "NUMA node(s)": "1"
+    },
+    "remoteCpu": {
+      "v1": {
+        "Model name": "AMD Ryzen 9 9955HX3D 16-Core Processor",
+        "CPU(s)": "32",
+        "Thread(s) per core": "2",
+        "Core(s) per socket": "16",
+        "Socket(s)": "1",
+        "NUMA node(s)": "1"
+      },
+      "v2": {
+        "Model name": "AMD Ryzen 7 250 w/ Radeon 780M Graphics",
+        "CPU(s)": "16",
+        "Thread(s) per core": "2",
+        "Core(s) per socket": "8",
+        "Socket(s)": "1",
+        "NUMA node(s)": "1"
+      },
+      "v3": {
+        "Model name": "AMD Ryzen 9 9955HX 16-Core Processor",
+        "CPU(s)": "32",
+        "Thread(s) per core": "2",
+        "Core(s) per socket": "16",
+        "Socket(s)": "1",
+        "NUMA node(s)": "1"
+      },
+      "nomlab": {
+        "Model name": "AMD Ryzen 9 5900HS with Radeon Graphics",
+        "CPU(s)": "16",
+        "Thread(s) per core": "2",
+        "Core(s) per socket": "8",
+        "Socket(s)": "1",
+        "NUMA node(s)": "1"
+      }
+    },
+    "localPowerProfile": "performance",
+    "remoteGovernor": "performance",
+    "remoteEpp": "performance",
+    "localFixedSolverCpu": {
+      "generation6": "0",
+      "generation8": "2"
+    },
+    "serverCpu": "1,3,5,7",
+    "submissionPolicy": {
+      "revision": "20261010-user-submit55",
+      "selectionAndDay": true,
+      "distributedMs": [
+        5000,
+        15000,
+        25000,
+        35000,
+        45000,
+        55000
+      ],
+      "fixedMs": [
+        55000
+      ],
+      "serverTimeLimitOverride": null,
+      "authorization": "User explicitly requested all solvers submit at 55sec and distributed at 5,15,...55sec.",
+      "skipUnchangedPayload": true,
+      "equality": "JSON answer value versus last actually attempted payload within the same phase",
+      "duplicatePolicyAuthorization": "User requested skipping unchanged second/later submissions and restarting the interrupted test."
+    }
+  }
+}

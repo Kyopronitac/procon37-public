@@ -1,0 +1,46 @@
+{
+  "capturedAtUtc": "2026-10-09T01:55:51.439268+00:00",
+  "directory": "/home/nomlab-ubuntu/procon37-distributed",
+  "logs": [
+    {
+      "path": "/home/nomlab-ubuntu/procon37-distributed/stderr.log",
+      "capturedStartByte": 0,
+      "capturedEndByte": 77115,
+      "sha256OfCapturedByteRange": "682c26b9482340e1307fa1b906d1b2f881e2255ec196a0fb6a6fc217f400a724",
+      "mtimeNsAtOpen": 1791510839827326044,
+      "totalLines": 382,
+      "diagnosticLines": [],
+      "sharedGraphLines": [],
+      "flags": {
+        "timeout": {
+          "count": 0,
+          "samples": []
+        },
+        "deadline": {
+          "count": 0,
+          "samples": []
+        },
+        "fallback": {
+          "count": 0,
+          "samples": []
+        },
+        "panic": {
+          "count": 0,
+          "samples": []
+        },
+        "rejected": {
+          "count": 0,
+          "samples": []
+        },
+        "unavailable": {
+          "count": 0,
+          "samples": []
+        },
+        "disconnected": {
+          "count": 0,
+          "samples": []
+        }
+      }
+    }
+  ]
+}

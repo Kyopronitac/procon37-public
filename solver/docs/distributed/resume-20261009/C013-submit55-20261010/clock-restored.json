@@ -1,0 +1,370 @@
+{
+  "v1": {
+    "before": {
+      "args": [
+        "-n",
+        "sources"
+      ],
+      "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    "commands": [
+      {
+        "args": [
+          "add",
+          "server",
+          "192.168.0.81",
+          "port",
+          "32123",
+          "iburst",
+          "minpoll",
+          "0",
+          "maxpoll",
+          "4",
+          "prefer",
+          "trust",
+          "require"
+        ],
+        "stdout": "200 OK\n",
+        "stderr": "",
+        "exitCode": 0
+      },
+      {
+        "args": [
+          "burst",
+          "4/8",
+          "192.168.0.81"
+        ],
+        "stdout": "200 OK\n",
+        "stderr": "",
+        "exitCode": 0
+      },
+      {
+        "args": [
+          "makestep"
+        ],
+        "stdout": "200 OK\n",
+        "stderr": "",
+        "exitCode": 0
+      },
+      {
+        "args": [
+          "waitsync",
+          "20",
+          "0.002",
+          "0",
+          "1"
+        ],
+        "stdout": "try: 1, refid: C0A80051, correction: 0.000000000, skew: 0.187\n",
+        "stderr": "",
+        "exitCode": 0
+      }
+    ],
+    "tracking": {
+      "args": [
+        "-n",
+        "tracking"
+      ],
+      "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 18:12:51 2026\nSystem time     : 0.000000000 seconds fast of NTP time\nLast offset     : -0.000100211 seconds\nRMS offset      : 0.000397087 seconds\nFrequency       : 188.028 ppm fast\nResidual freq   : -39.304 ppm\nSkew            : 0.187 ppm\nRoot delay      : 0.000345509 seconds\nRoot dispersion : 0.001091042 seconds\nUpdate interval : 1.0 seconds\nLeap status     : Normal\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    "sources": {
+      "args": [
+        "-n",
+        "sources"
+      ],
+      "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   0    37     0    -12us[ -112us] +/- 1182us\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    "persistentConfiguration": [
+      {
+        "path": "/etc/chrony.conf",
+        "backup": "/var/tmp/procon37-clock-20261009T145140Z/etc/chrony.conf",
+        "sha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+        "expected": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c"
+      }
+    ]
+  },
+  "v2": {
+    "before": {
+      "args": [
+        "-n",
+        "sources"
+      ],
+      "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    "commands": [
+      {
+        "args": [
+          "add",
+          "server",
+          "192.168.0.81",
+          "port",
+          "32123",
+          "iburst",
+          "minpoll",
+          "0",
+          "maxpoll",
+          "4",
+          "prefer",
+          "trust",
+          "require"
+        ],
+        "stdout": "200 OK\n",
+        "stderr": "",
+        "exitCode": 0
+      },
+      {
+        "args": [
+          "burst",
+          "4/8",
+          "192.168.0.81"
+        ],
+        "stdout": "200 OK\n",
+        "stderr": "",
+        "exitCode": 0
+      },
+      {
+        "args": [
+          "makestep"
+        ],
+        "stdout": "200 OK\n",
+        "stderr": "",
+        "exitCode": 0
+      },
+      {
+        "args": [
+          "waitsync",
+          "20",
+          "0.002",
+          "0",
+          "1"
+        ],
+        "stdout": "try: 1, refid: C0A80051, correction: 0.000000000, skew: 0.439\n",
+        "stderr": "",
+        "exitCode": 0
+      }
+    ],
+    "tracking": {
+      "args": [
+        "-n",
+        "tracking"
+      ],
+      "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 18:12:53 2026\nSystem time     : 0.000000000 seconds slow of NTP time\nLast offset     : +0.000139334 seconds\nRMS offset      : 0.000346839 seconds\nFrequency       : 5.238 ppm fast\nResidual freq   : +77.031 ppm\nSkew            : 0.439 ppm\nRoot delay      : 0.001260851 seconds\nRoot dispersion : 0.001156406 seconds\nUpdate interval : 1.0 seconds\nLeap status     : Normal\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    "sources": {
+      "args": [
+        "-n",
+        "sources"
+      ],
+      "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   0    37     0  +9494ns[ +149us] +/- 1641us\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    "persistentConfiguration": [
+      {
+        "path": "/etc/chrony.conf",
+        "backup": "/var/tmp/procon37-clock-20261009T145140Z/etc/chrony.conf",
+        "sha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+        "expected": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c"
+      }
+    ]
+  },
+  "v3": {
+    "before": {
+      "args": [
+        "-n",
+        "sources"
+      ],
+      "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    "commands": [
+      {
+        "args": [
+          "add",
+          "server",
+          "192.168.0.81",
+          "port",
+          "32123",
+          "iburst",
+          "minpoll",
+          "0",
+          "maxpoll",
+          "4",
+          "prefer",
+          "trust",
+          "require"
+        ],
+        "stdout": "200 OK\n",
+        "stderr": "",
+        "exitCode": 0
+      },
+      {
+        "args": [
+          "burst",
+          "4/8",
+          "192.168.0.81"
+        ],
+        "stdout": "200 OK\n",
+        "stderr": "",
+        "exitCode": 0
+      },
+      {
+        "args": [
+          "makestep"
+        ],
+        "stdout": "200 OK\n",
+        "stderr": "",
+        "exitCode": 0
+      },
+      {
+        "args": [
+          "waitsync",
+          "20",
+          "0.002",
+          "0",
+          "1"
+        ],
+        "stdout": "try: 1, refid: C0A80051, correction: 0.000000001, skew: 0.327\n",
+        "stderr": "",
+        "exitCode": 0
+      }
+    ],
+    "tracking": {
+      "args": [
+        "-n",
+        "tracking"
+      ],
+      "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 18:12:55 2026\nSystem time     : 0.000000001 seconds fast of NTP time\nLast offset     : -0.000494040 seconds\nRMS offset      : 0.000840621 seconds\nFrequency       : 2.091 ppm slow\nResidual freq   : -160.346 ppm\nSkew            : 0.327 ppm\nRoot delay      : 0.001201763 seconds\nRoot dispersion : 0.001461085 seconds\nUpdate interval : 1.0 seconds\nLeap status     : Normal\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    "sources": {
+      "args": [
+        "-n",
+        "sources"
+      ],
+      "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   0    37     0   -214us[ -708us] +/- 1611us\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    "persistentConfiguration": [
+      {
+        "path": "/etc/chrony.conf",
+        "backup": "/var/tmp/procon37-clock-20261009T145140Z/etc/chrony.conf",
+        "sha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+        "expected": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c"
+      }
+    ]
+  },
+  "nomlab": {
+    "before": {
+      "args": [
+        "-n",
+        "sources"
+      ],
+      "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    "commands": [
+      {
+        "args": [
+          "add",
+          "server",
+          "192.168.0.81",
+          "port",
+          "32123",
+          "iburst",
+          "minpoll",
+          "0",
+          "maxpoll",
+          "4",
+          "prefer",
+          "trust",
+          "require"
+        ],
+        "stdout": "200 OK\n",
+        "stderr": "",
+        "exitCode": 0
+      },
+      {
+        "args": [
+          "burst",
+          "4/8",
+          "192.168.0.81"
+        ],
+        "stdout": "200 OK\n",
+        "stderr": "",
+        "exitCode": 0
+      },
+      {
+        "args": [
+          "makestep"
+        ],
+        "stdout": "200 OK\n",
+        "stderr": "",
+        "exitCode": 0
+      },
+      {
+        "args": [
+          "waitsync",
+          "20",
+          "0.002",
+          "0",
+          "1"
+        ],
+        "stdout": "try: 1, refid: C0A80051, correction: 0.000000000, skew: 0.362\n",
+        "stderr": "",
+        "exitCode": 0
+      }
+    ],
+    "tracking": {
+      "args": [
+        "-n",
+        "tracking"
+      ],
+      "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 18:12:58 2026\nSystem time     : 0.000000000 seconds fast of NTP time\nLast offset     : -0.000071747 seconds\nRMS offset      : 0.000430438 seconds\nFrequency       : 20.792 ppm slow\nResidual freq   : -20.659 ppm\nSkew            : 0.362 ppm\nRoot delay      : 0.001834941 seconds\nRoot dispersion : 0.001084466 seconds\nUpdate interval : 1.0 seconds\nLeap status     : Normal\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    "sources": {
+      "args": [
+        "-n",
+        "sources"
+      ],
+      "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   0    37     0  -9764ns[  -82us] +/- 1929us\n",
+      "stderr": "",
+      "exitCode": 0
+    },
+    "persistentConfiguration": [
+      {
+        "path": "/etc/chrony/chrony.conf",
+        "backup": "/var/tmp/procon37-clock-20261009T145140Z/etc/chrony/chrony.conf",
+        "sha256": "3d3bb53ddee1a78de319508913c08b34891b66e5e168356f2d9ca217ab85ba68",
+        "expected": "3d3bb53ddee1a78de319508913c08b34891b66e5e168356f2d9ca217ab85ba68"
+      },
+      {
+        "path": "/etc/chrony/sources.d/ubuntu-ntp-pools.sources",
+        "backup": "/var/tmp/procon37-clock-20261009T145140Z/etc/chrony/sources.d/ubuntu-ntp-pools.sources",
+        "sha256": "e5eb19e7e5dd56164698bfd44b24a76d40f517de84245726b953c4a681c8f095",
+        "expected": "e5eb19e7e5dd56164698bfd44b24a76d40f517de84245726b953c4a681c8f095"
+      },
+      {
+        "path": "/etc/chrony/conf.d/ubuntu-nts.conf",
+        "backup": "/var/tmp/procon37-clock-20261009T145140Z/etc/chrony/conf.d/ubuntu-nts.conf",
+        "sha256": "4355f44d20dc1bda2db04ea005910c7742cd244aa6f688a0da75aca3544c157a",
+        "expected": "4355f44d20dc1bda2db04ea005910c7742cd244aa6f688a0da75aca3544c157a"
+      }
+    ]
+  }
+}

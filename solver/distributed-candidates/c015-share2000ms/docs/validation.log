@@ -1,0 +1,112 @@
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.26
+   Compiling quote v1.0.47
+   Compiling zerocopy v0.8.57
+   Compiling serde_core v1.0.229
+   Compiling zmij v1.0.23
+   Compiling anyhow v1.0.104
+   Compiling serde v1.0.229
+   Compiling syn v3.0.6
+   Compiling serde_json v1.0.151
+   Compiling memchr v2.8.3
+   Compiling rand_core v0.6.4
+   Compiling itoa v1.0.18
+   Compiling serde_derive v1.0.229
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling tester v0.1.0 (/home/imak/work/procon37/solver/distributed-candidates/c015-share2000ms/common)
+warning: function `day_seconds` is never used
+   --> common/src/generator.rs:136:15
+    |
+136 | pub(crate) fn day_seconds(
+    |               ^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `tester` (lib) generated 1 warning
+   Compiling procon37-distributed v0.1.0 (/home/imak/work/procon37/solver/distributed-candidates/c015-share2000ms)
+warning: value assigned to `active` is never read
+   --> runtime.rs:615:21
+    |
+615 |                     active = None;
+    |                     ^^^^^^
+    |
+    = help: maybe it is overwritten before being read?
+    = note: `#[warn(unused_assignments)]` (part of `#[warn(unused)]`) on by default
+
+warning: method `begin` is never used
+   --> solver/../pool.rs:360:12
+    |
+241 | impl SearchPool {
+    | --------------- method in this implementation
+...
+360 |     pub fn begin(&mut self, id: u64, task: &Task, deadline: Instant) -> usize {
+    |            ^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `procon37-distributed` (bin "distributed-solver" test) generated 1 warning (1 duplicate)
+warning: `procon37-distributed` (bin "distributed-solver") generated 2 warnings
+    Finished `release` profile [optimized] target(s) in 13.15s
+     Running unittests main.rs (/tmp/procon37-sharefreq-c015-20261010/release/deps/distributed_solver-151cf677b76cedae)
+
+running 20 tests
+test planner::cross_elite::tests::all_formats_legal_batches_fit_or_chunk_and_preserve_every_group ... c012_batch format=first bytes=4619 offers=7
+c012_max_batch format=first bytes=11619 offers=7
+c012_batch format=semifinal bytes=8006 offers=7
+c012_max_batch format=semifinal bytes=16756 offers=7
+c012_batch format=final bytes=12491 offers=7
+c012_max_batch format=final bytes=24706 offers=7
+ok
+test planner::cross_elite::tests::envelope_all_context_fields_and_any_bad_member_reject_whole_batch ... ok
+test planner::cross_elite::tests::per_group_sequences_prebind_relay_and_round_robin_do_not_starve_low_values ... ok
+test planner::cross_elite::tests::receiver_roles_are_sparse_generalized_and_cannot_export_or_read_local_elite ... ok
+test planner::cross_elite::tests::timing_objective_close_and_seed_mutation_preserve_incumbent ... cross_elite request=20 origin=31 receiver=Some(35) published=0 received=7 rejected=0 context_mismatch=0 imports=0 improved=0 sent=0 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=5 eligible=1 max_stall_ms=1250 group_published=[0, 0, 0, 0, 0, 0, 0] group_received=[1, 1, 1, 1, 1, 1, 1] group_sent=[0, 0, 0, 0, 0, 0, 0] max_receiver_mailbox_age_ms=0
+cross_elite request=20 origin=0 receiver=Some(7) published=7 received=0 rejected=0 context_mismatch=0 imports=0 improved=0 sent=0 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[0, 0, 0, 0, 0, 0, 0] group_sent=[0, 0, 0, 0, 0, 0, 0] max_receiver_mailbox_age_ms=0
+ok
+test planner::distributed_pool::synchronization_tests::begin_cross_dispatches_all_groups_but_never_selection_or_off ... ok
+test planner::distributed_pool::synchronization_tests::expired_results_cannot_be_used_for_later_request ... ok
+test planner::distributed_pool::synchronization_tests::in_flight_candidates_are_current_task_snapshots_and_rollouts_never_escape ... g007 day=0 score=36740.6 iterations=1874717 hubs=[41, 2, 21, 85] beam_calls=82 beam_layers=1299 fleet_calls=0 fleet_accepted=0 fleet_improved=0 fleet_rescues=0 triple_calls=121511 triple_accepted=15226 triple_improved=5 restart_calls=11 future_candidates=0 future_value=0.0 coverage_guard=0 guard_brands=0 guard_base_brands=0 guard_changed=0 graph_targets=195 graph_sources=776 graph_ms=371
+g007 reverse_warm day=1 score=24404.754
+g007 day=1 score=36859.3 iterations=1131911 hubs=[150, 120, 141, 70] beam_calls=48 beam_layers=865 fleet_calls=0 fleet_accepted=0 fleet_improved=0 fleet_rescues=0 triple_calls=73048 triple_accepted=10160 triple_improved=9 restart_calls=11 future_candidates=0 future_value=0.0 coverage_guard=0 guard_brands=0 guard_base_brands=0 guard_changed=0 graph_targets=173 graph_sources=782 graph_ms=248
+p0 selection worker=0 supplier=0 value=64365.488
+g007 day=0 score=36738.3 iterations=2105267 hubs=[139, 22, 53, 5] beam_calls=93 beam_layers=1583 fleet_calls=0 fleet_accepted=0 fleet_improved=0 fleet_rescues=0 triple_calls=135596 triple_accepted=17373 triple_improved=5 restart_calls=11 future_candidates=0 future_value=0.0 coverage_guard=0 guard_brands=0 guard_base_brands=0 guard_changed=0 graph_targets=195 graph_sources=776 graph_ms=240
+g007 reverse_warm day=1 score=24827.236
+g007 day=1 score=36819.4 iterations=941438 hubs=[174, 174, 13, 100] beam_calls=40 beam_layers=610 fleet_calls=0 fleet_accepted=0 fleet_improved=0 fleet_rescues=0 triple_calls=60563 triple_accepted=8371 triple_improved=10 restart_calls=11 future_candidates=0 future_value=0.0 coverage_guard=0 guard_brands=0 guard_base_brands=0 guard_changed=0 graph_targets=175 graph_sources=782 graph_ms=216
+p0 rollout day=0 raw=36720.000 canonical=36738.314 robust_next=36819.424 scenarios=1 combined=64335.484
+ok
+test planner::distributed_pool::synchronization_tests::selected_foreign_state_preserves_history_rejection_and_json_roundtrip ... g007 day=0 score=35119.3 iterations=0 hubs=[2, 2, 2, 2] beam_calls=0 beam_layers=0 fleet_calls=0 fleet_accepted=0 fleet_improved=0 fleet_rescues=0 triple_calls=0 triple_accepted=0 triple_improved=0 restart_calls=0 future_candidates=0 future_value=0.0 coverage_guard=0 guard_brands=0 guard_base_brands=0 guard_changed=0 graph_targets=195 graph_sources=776 graph_ms=315
+ok
+test planner::tests::changed_supplier_generates_a_valid_plan_for_actual_roles ... g007 day=0 score=3084.1 iterations=366050 hubs=[1, 1, 1, 1] beam_calls=10 beam_layers=200 fleet_calls=0 fleet_accepted=0 fleet_improved=0 fleet_rescues=0 triple_calls=23620 triple_accepted=19999 triple_improved=0 restart_calls=11 future_candidates=0 future_value=0.0 coverage_guard=0 guard_brands=0 guard_base_brands=0 guard_changed=0 graph_targets=15 graph_sources=15 graph_ms=0
+ok
+test planner::tests::forecast_graph_preserves_reused_selection_numbering ... ok
+test planner::tests::opponent_tree_conserves_travel_budget_and_skips_blocked_cells ... ok
+test planner::tests::rejected_selection_rebinds_roles_and_invalidates_warm_start ... ok
+test planner::tests::rejected_selection_with_no_supplier_respects_observed_fuel ... ok
+test planner::tests::supplier_path_modes_match_public_engine_and_cache ... ok
+test planner::tests::tiny_catch_up_requests_synchronize_without_search ... ok
+test runtime::streaming_tests::progress_is_context_checked_and_never_completes_peer ... dist peer=127.0.0.1:37441 request=2 completed=1/1 elapsed_ms=1000 rx_bytes=9157 tx_bytes=0
+ok
+test wire::tests::authentication_is_exact ... ok
+test wire::tests::fragmented_frames_and_oversized_frames ... ok
+test wire::tests::optional_oversize_and_backpressure_preserve_final_result ... ok
+
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.21s
+
+     Running tests/network.rs (/tmp/procon37-sharefreq-c015-20261010/release/deps/network-47aad54cf510765b)
+
+running 6 tests
+test comparison_mode_uses_sixteen_total_threads ... comparison process record: /tmp/procon37-parallel16-test-77982
+ok
+test cross_elite_enabled_cluster_returns_valid_results_and_stops ... cross_network_records=/tmp/procon37-cross-test-77982-1791575831365069971
+ok
+test non_reserve15_donors_reach_receiver_through_real_pool_and_tcp ... c012_group0_network_records=/tmp/procon37-c012-group0-77982-1791575835886988138
+ok
+test old_versions_and_mixed_feature_flags_are_rejected_without_stopping_worker ... c012_auth_records=/tmp/procon37-c012-auth-77982
+ok
+test real_cluster_reconnects_and_keeps_adopted_state ... process records and logs: /tmp/procon37-dist-test-77982-1791575840447
+ok
+test streaming_restores_earlier_accepted_answer_across_days ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 23.67s
+

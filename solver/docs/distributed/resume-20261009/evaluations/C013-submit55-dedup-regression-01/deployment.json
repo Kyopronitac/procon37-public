@@ -1,0 +1,50 @@
+{
+  "status": "deployed-not-started",
+  "bridgeSha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+  "sourceChanges": {
+    "solver/distributed-lab/observe.py": {
+      "before": "dffed3f07d341fecfc2f1aaf6c53f2d15b16927edc0109c1ee4cc368cdd53f38",
+      "after": "0e5e8feee141961068e91af2740d4bd6c02b2b483edc58f60ab57b28777dc12d"
+    },
+    "solver/distributed-lab/timed_regression.py": {
+      "before": "56a11f354a2963f099e5b1f05fa0ce7420d59f7c7148f0268a7c2b909f1107d0",
+      "after": "c6f32fa40d36f9edec3e8df016b8997a6203ee2acf2578c43b91428eb0240bb4"
+    },
+    "tester/server-bridge/src/main.rs": {
+      "before": "308bcd999e5f500a45f5a9a5218ad3a3e178ce7928b31f6aa50c14b2aa4b28ad",
+      "after": "59635ca054d29dea63eb8076df0fad9775a6acec5b764744de1115a81c2bb793"
+    },
+    "tester/server-bridge/src/schedule.rs": {
+      "before": "e1185c533f3d4de89cf9bfe62e0ecaccc55f01916c2d86cb35a9c95d3ab17974",
+      "after": "18f9467b2f0bd41b50ecebf463dfb5efffa3773dc1915453cf14297fe9aca091"
+    }
+  },
+  "authorization": "User requested skipping unchanged second/later submissions and restarting the interrupted test.",
+  "remote": [
+    {
+      "host": "v1",
+      "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+      "backup": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/backups/20261010T033312-submit55-dedup-C013/server-bridge",
+      "sha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90"
+    },
+    {
+      "host": "v2",
+      "path": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/server-bridge",
+      "backup": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/backups/20261010T033312-submit55-dedup-C013/server-bridge",
+      "sha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90"
+    },
+    {
+      "host": "v3",
+      "path": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/server-bridge",
+      "backup": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/backups/20261010T033312-submit55-dedup-C013/server-bridge",
+      "sha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90"
+    },
+    {
+      "host": "nomlab",
+      "path": "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+      "backup": "/home/nomlab-ubuntu/procon37-distributed/backups/20261010T033312-submit55-dedup-C013/bin/server-bridge",
+      "sha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90"
+    }
+  ],
+  "version": "C013-scheduled-submission-on-submit55-dedup"
+}

@@ -1,0 +1,199 @@
+{
+  "generatedAt": "2026-10-09T15:58:00.627598+00:00",
+  "cases": [
+    {
+      "seed": 0,
+      "format": "first",
+      "daySeconds": [
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "selectSeconds": 60,
+      "startDelaySeconds": 5,
+      "problemCanonicalSha256": "c6881e786edf787a2064106dd8c10faff2f35134c79810e3b4c80003e7d36d83",
+      "nominalSeconds": 365
+    },
+    {
+      "seed": 1,
+      "format": "semifinal",
+      "daySeconds": [
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "selectSeconds": 90,
+      "startDelaySeconds": 5,
+      "problemCanonicalSha256": "27eba8564d80cc7840ab2211f57f69d998989239d5b39bbc455dd0234f658128",
+      "nominalSeconds": 395
+    },
+    {
+      "seed": 2,
+      "format": "final",
+      "daySeconds": [
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "selectSeconds": 120,
+      "startDelaySeconds": 5,
+      "problemCanonicalSha256": "196e3881bf66cc811507191d3ca443eccbf55892cafb8d6a2764552e87aa56a5",
+      "nominalSeconds": 425
+    },
+    {
+      "seed": 3,
+      "format": "first",
+      "daySeconds": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "selectSeconds": 60,
+      "startDelaySeconds": 5,
+      "problemCanonicalSha256": "4e7d7e1022639243ee9a9252aba6e86de22b9a3f5f48fb6746792ea04f10bc0f",
+      "nominalSeconds": 665
+    },
+    {
+      "seed": 4,
+      "format": "semifinal",
+      "daySeconds": [
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "selectSeconds": 90,
+      "startDelaySeconds": 5,
+      "problemCanonicalSha256": "21d62043ad57eb40f54709a702078e77f11686f81255da0cee96fc0c244f4005",
+      "nominalSeconds": 395
+    },
+    {
+      "seed": 5,
+      "format": "final",
+      "daySeconds": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "selectSeconds": 120,
+      "startDelaySeconds": 5,
+      "problemCanonicalSha256": "f98f005eb58df9b8096b3fe24cc40c75db20d549301b19aebbff8caec17e7f31",
+      "nominalSeconds": 485
+    },
+    {
+      "seed": 6,
+      "format": "first",
+      "daySeconds": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "selectSeconds": 60,
+      "startDelaySeconds": 5,
+      "problemCanonicalSha256": "44fb446acf5277e5bdeb4e45fda457d38d070b5280a196d57df2a88b3fb6386a",
+      "nominalSeconds": 545
+    },
+    {
+      "seed": 7,
+      "format": "semifinal",
+      "daySeconds": [
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "selectSeconds": 90,
+      "startDelaySeconds": 5,
+      "problemCanonicalSha256": "6db371038cb20ae1a130afc3dc18ebd72b2d34070f2e019e471621d733b28db5",
+      "nominalSeconds": 395
+    },
+    {
+      "seed": 8,
+      "format": "final",
+      "daySeconds": [
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "selectSeconds": 120,
+      "startDelaySeconds": 5,
+      "problemCanonicalSha256": "42138dee5fd48cec034f027d9e7a37a3cc8f63b73e152d6f9c80071654b3c1b3",
+      "nominalSeconds": 425
+    },
+    {
+      "seed": 9,
+      "format": "first",
+      "daySeconds": [
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "selectSeconds": 60,
+      "startDelaySeconds": 5,
+      "problemCanonicalSha256": "8f0086d8cb0f3a74397c3acfbb4f9c51fe5cb1cd3e477368c250bc157e294079",
+      "nominalSeconds": 365
+    },
+    {
+      "seed": 10,
+      "format": "semifinal",
+      "daySeconds": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "selectSeconds": 90,
+      "startDelaySeconds": 5,
+      "problemCanonicalSha256": "d41aa2c1b9e1642a81f891e824f6665b87110c13da9c1fdd4d75bd7221e82ec7",
+      "nominalSeconds": 575
+    },
+    {
+      "seed": 11,
+      "format": "final",
+      "daySeconds": [
+        60,
+        60,
+        60,
+        60,
+        60
+      ],
+      "selectSeconds": 120,
+      "startDelaySeconds": 5,
+      "problemCanonicalSha256": "066af97a8f5b71cbc999e34370d4e7b2984fc863eb903263240823f42fc00956",
+      "nominalSeconds": 425
+    }
+  ],
+  "nominalSeconds": 5460,
+  "totalDays": 72
+}

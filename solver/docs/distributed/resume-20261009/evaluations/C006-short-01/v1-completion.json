@@ -1,0 +1,290 @@
+{
+  "hostname": "VOIDLINUX-1",
+  "capturedAtUtc": "2026-10-09T01:34:01.103162+00:00",
+  "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0",
+  "log": {
+    "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team.log",
+    "capturedStartByte": 26193,
+    "capturedEndByte": 32687,
+    "previousCapturedRangeSha256Verified": true,
+    "previousRangeStartByte": 19708,
+    "previousRangeEndByte": 26193,
+    "previousRangeSha256": "1eaf026d58ca22e6b1a65cce6714cd4a81fdfff43d8ee80e26a62ab8ae6b1bed",
+    "sourceSizeAtOpen": 32687,
+    "inode": 267665,
+    "device": 2050,
+    "mtimeNsAtOpen": 1791509560139739476,
+    "sha256OfCapturedByteRange": "5ff48f5fd8f6e29e04cd628449c2795d9d383b6d3e8286939a110410a3101b4a",
+    "totalLines": 137,
+    "diagnosticLines": [],
+    "sharedGraphLines": [],
+    "flags": {
+      "timeout": {
+        "count": 0,
+        "samples": []
+      },
+      "deadline": {
+        "count": 0,
+        "samples": []
+      },
+      "fallback": {
+        "count": 0,
+        "samples": []
+      },
+      "panic": {
+        "count": 0,
+        "samples": []
+      },
+      "rejected": {
+        "count": 0,
+        "samples": []
+      },
+      "unavailable": {
+        "count": 0,
+        "samples": []
+      },
+      "disconnected": {
+        "count": 0,
+        "samples": []
+      }
+    }
+  },
+  "cpus": [
+    {
+      "cpu": 0,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 1,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 2,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 3,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 4,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 5,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 6,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 7,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 8,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 9,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 10,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 11,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 12,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 13,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 14,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 15,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 16,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 17,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 18,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 19,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 20,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 21,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 22,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 23,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 24,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 25,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 26,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 27,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 28,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 29,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 30,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 31,
+      "governor": "performance",
+      "epp": "performance"
+    }
+  ],
+  "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 01:33:51 2026\nSystem time     : 0.000042084 seconds fast of NTP time\nLast offset     : +0.000085919 seconds\nRMS offset      : 0.000027895 seconds\nFrequency       : 4.993 ppm fast\nResidual freq   : +0.849 ppm\nSkew            : 0.944 ppm\nRoot delay      : 0.000252819 seconds\nRoot dispersion : 0.001056283 seconds\nUpdate interval : 48.4 seconds\nLeap status     : Normal\n",
+  "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   4   377    10    +21us[ +107us] +/- 1134us\n",
+  "clockProbe": {
+    "server": "192.168.0.81",
+    "port": 32123,
+    "samples": [
+      {
+        "serverMinusClientMs": -0.05710124969482422,
+        "roundTripMs": 0.38170814514160156
+      },
+      {
+        "serverMinusClientMs": -0.2301931381225586,
+        "roundTripMs": 0.7536411285400391
+      },
+      {
+        "serverMinusClientMs": -0.33414363861083984,
+        "roundTripMs": 0.7693767547607422
+      },
+      {
+        "serverMinusClientMs": -0.27167797088623047,
+        "roundTripMs": 0.6601810455322266
+      },
+      {
+        "serverMinusClientMs": -0.29861927032470703,
+        "roundTripMs": 0.7693767547607422
+      },
+      {
+        "serverMinusClientMs": -0.26977062225341797,
+        "roundTripMs": 0.6821155548095703
+      },
+      {
+        "serverMinusClientMs": -0.39124488830566406,
+        "roundTripMs": 0.9508132934570312
+      },
+      {
+        "serverMinusClientMs": -0.27680397033691406,
+        "roundTripMs": 0.705718994140625
+      },
+      {
+        "serverMinusClientMs": -0.2840757369995117,
+        "roundTripMs": 0.7607936859130859
+      },
+      {
+        "serverMinusClientMs": -0.17368793487548828,
+        "roundTripMs": 0.6978511810302734
+      },
+      {
+        "serverMinusClientMs": -0.12564659118652344,
+        "roundTripMs": 0.6527900695800781
+      },
+      {
+        "serverMinusClientMs": -0.15151500701904297,
+        "roundTripMs": 0.7817745208740234
+      },
+      {
+        "serverMinusClientMs": -0.1881122589111328,
+        "roundTripMs": 0.7596015930175781
+      },
+      {
+        "serverMinusClientMs": -0.08285045623779297,
+        "roundTripMs": 0.5705356597900391
+      },
+      {
+        "serverMinusClientMs": -0.06377696990966797,
+        "roundTripMs": 0.4394054412841797
+      },
+      {
+        "serverMinusClientMs": -0.3445148468017578,
+        "roundTripMs": 1.0333061218261719
+      }
+    ],
+    "medianBestHalfOffsetMs": -0.14966726303100586,
+    "minimumRoundTripMs": 0.38170814514160156,
+    "capturedUnix": 1791509641.926008
+  },
+  "processes": []
+}

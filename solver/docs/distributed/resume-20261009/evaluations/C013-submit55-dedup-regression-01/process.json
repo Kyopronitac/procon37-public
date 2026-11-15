@@ -1,0 +1,29 @@
+{
+  "stage": "C013-submit55-dedup-regression-01",
+  "status": "running",
+  "label": "分散C013・55秒提出と5秒開始10秒毎確認・同一内容再提出省略・前回締切超過4件の再検証",
+  "seeds": [
+    3,
+    6,
+    7,
+    9
+  ],
+  "shortMs": null,
+  "isFormalFullTest": false,
+  "startedUnix": 1791570846.7168899,
+  "directory": "/home/imak/work/procon37/.server/distributed/evaluations/C013-submit55-dedup-regression-01",
+  "history": "/home/imak/work/procon37/.server/runs",
+  "version": "C013-scheduled-submission-on-submit55-dedup",
+  "runs": [],
+  "pid": 69239,
+  "startTicks": "2282498",
+  "state": "R",
+  "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422",
+  "command": [
+    "/usr/bin/python3",
+    "/home/imak/work/procon37/solver/distributed-lab/timed_regression.py",
+    "execute",
+    "--stage",
+    "C013-submit55-dedup-regression-01"
+  ]
+}

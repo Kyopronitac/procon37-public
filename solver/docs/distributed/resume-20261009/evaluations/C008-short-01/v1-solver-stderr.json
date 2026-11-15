@@ -1,0 +1,80 @@
+{
+  "capturedAtUtc": "2026-10-09T00:45:28.386616+00:00",
+  "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0",
+  "logs": [
+    {
+      "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/stderr.log",
+      "capturedStartByte": 0,
+      "capturedEndByte": 165696,
+      "sha256OfCapturedByteRange": "9d304531920977a42d97e6aeee1cf0c75ae9ef9c8c4f1a547bbaea73f6a39143",
+      "mtimeNsAtOpen": 1791506628218765530,
+      "totalLines": 800,
+      "diagnosticLines": [
+        "dist mode=coordinator total_threads=32 cluster_threads=80 search_threads=77 session=1791506566068419029",
+        "dist peer=192.168.0.22:39370 request=1 completed=15/15 elapsed_ms=7935 rx_bytes=14089 tx_bytes=3675",
+        "dist peer=192.168.0.33:39370 request=1 completed=31/31 elapsed_ms=7964 rx_bytes=14122 tx_bytes=3675",
+        "dist request=1 external_request=0 phase=select input_digest=f9ee3a0ac6b16910 selected_worker=8 value=76508.988 local_completed=31/31 remote_results=2/2 elapsed_ms=8072 state_digest=f4d2eb3408aab09a",
+        "dist peer=192.168.0.22:39370 request=2 completed=15/15 elapsed_ms=8283 rx_bytes=47166 tx_bytes=28282",
+        "dist peer=192.168.0.33:39370 request=2 completed=31/31 elapsed_ms=8312 rx_bytes=47264 tx_bytes=28282",
+        "dist request=2 external_request=1 phase=plan input_digest=f653a64d52d48cdc selected_worker=3 value=76530.841 local_completed=31/31 remote_results=2/2 elapsed_ms=8420 state_digest=c40faa01d740ba60",
+        "dist peer=192.168.0.22:39370 request=3 completed=15/15 elapsed_ms=8432 rx_bytes=84599 tx_bytes=70937",
+        "dist peer=192.168.0.33:39370 request=3 completed=31/31 elapsed_ms=8462 rx_bytes=84614 tx_bytes=70937",
+        "dist request=3 external_request=2 phase=plan input_digest=384159b487c07cb1 selected_worker=30 value=75732.064 local_completed=31/31 remote_results=2/2 elapsed_ms=8570 state_digest=2f0e0d4b9fe4f85b",
+        "dist peer=192.168.0.22:39370 request=4 completed=15/15 elapsed_ms=8440 rx_bytes=125921 tx_bytes=118282",
+        "dist peer=192.168.0.33:39370 request=4 completed=31/31 elapsed_ms=8476 rx_bytes=125930 tx_bytes=118282",
+        "dist request=4 external_request=3 phase=plan input_digest=8e99a2d7c2113c59 selected_worker=70 value=75724.427 local_completed=31/31 remote_results=2/2 elapsed_ms=8584 state_digest=e72cf004bce141f8",
+        "dist peer=192.168.0.22:39370 request=5 completed=15/15 elapsed_ms=8442 rx_bytes=166208 tx_bytes=169600",
+        "dist peer=192.168.0.33:39370 request=5 completed=31/31 elapsed_ms=8476 rx_bytes=166217 tx_bytes=169600",
+        "dist request=5 external_request=4 phase=plan input_digest=2804ff0f3d62dbfa selected_worker=24 value=76052.367 local_completed=31/31 remote_results=2/2 elapsed_ms=8581 state_digest=f8780c4d0e6ed727",
+        "dist peer=192.168.0.22:39370 request=6 completed=15/15 elapsed_ms=8064 rx_bytes=206194 tx_bytes=219757",
+        "dist peer=192.168.0.33:39370 request=6 completed=31/31 elapsed_ms=8066 rx_bytes=206175 tx_bytes=219757",
+        "dist request=6 external_request=5 phase=plan input_digest=c0e73adee20ed864 selected_worker=66 value=43499.333 local_completed=31/31 remote_results=2/2 elapsed_ms=8201 state_digest=fb6e7968bdf66a0a"
+      ],
+      "sharedGraphLines": [
+        "shared_graph context=before_request_1 {\"budgetLimitedRequests\":0,\"buildMs\":0.0,\"builds\":0,\"bypasses\":0,\"completedBuilds\":0,\"evictions\":0,\"failures\":0,\"hits\":0,\"liveBaseBytesEstimate\":0,\"liveCellBytes\":0,\"liveTables\":0,\"materializedBytes\":0,\"materializedPaths\":0,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":0,\"peakTableBytesEstimate\":0,\"requests\":0,\"retainedEntries\":0,\"retainedTableBytesEstimate\":0,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":0.0,\"waits\":0}",
+        "shared_graph context=before_request_2 {\"budgetLimitedRequests\":62,\"buildMs\":14959.809892,\"builds\":32,\"bypasses\":27,\"completedBuilds\":32,\"evictions\":4,\"failures\":0,\"hits\":30,\"liveBaseBytesEstimate\":68308120,\"liveCellBytes\":14125840,\"liveTables\":1,\"materializedBytes\":509288664,\"materializedPaths\":3574907,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":374,\"peakTableBytesEstimate\":2580762904,\"requests\":62,\"retainedEntries\":1,\"retainedTableBytesEstimate\":82433960,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":3876.640188,\"waits\":30}",
+        "shared_graph context=before_request_3 {\"budgetLimitedRequests\":124,\"buildMs\":23871.519084,\"builds\":64,\"bypasses\":54,\"completedBuilds\":64,\"evictions\":9,\"failures\":0,\"hits\":60,\"liveBaseBytesEstimate\":69448431,\"liveCellBytes\":14748264,\"liveTables\":1,\"materializedBytes\":1015314224,\"materializedPaths\":7079954,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":374,\"peakTableBytesEstimate\":2582663820,\"requests\":124,\"retainedEntries\":1,\"retainedTableBytesEstimate\":84196695,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":7412.93457,\"waits\":60}",
+        "shared_graph context=before_request_4 {\"budgetLimitedRequests\":186,\"buildMs\":33265.693109,\"builds\":96,\"bypasses\":81,\"completedBuilds\":96,\"evictions\":14,\"failures\":0,\"hits\":90,\"liveBaseBytesEstimate\":68308120,\"liveCellBytes\":12924920,\"liveTables\":1,\"materializedBytes\":1477192744,\"materializedPaths\":10443339,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":374,\"peakTableBytesEstimate\":2582663820,\"requests\":186,\"retainedEntries\":1,\"retainedTableBytesEstimate\":81233040,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":10906.631361,\"waits\":90}",
+        "shared_graph context=before_request_5 {\"budgetLimitedRequests\":248,\"buildMs\":42205.696235,\"builds\":128,\"bypasses\":108,\"completedBuilds\":128,\"evictions\":19,\"failures\":0,\"hits\":120,\"liveBaseBytesEstimate\":68544066,\"liveCellBytes\":13334672,\"liveTables\":1,\"materializedBytes\":1947243776,\"materializedPaths\":14220961,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":374,\"peakTableBytesEstimate\":2582663820,\"requests\":248,\"retainedEntries\":1,\"retainedTableBytesEstimate\":81878738,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":14694.479683,\"waits\":120}",
+        "shared_graph context=before_request_6 {\"budgetLimitedRequests\":310,\"buildMs\":51339.138933,\"builds\":160,\"bypasses\":135,\"completedBuilds\":160,\"evictions\":24,\"failures\":0,\"hits\":150,\"liveBaseBytesEstimate\":70051341,\"liveCellBytes\":16416432,\"liveTables\":1,\"materializedBytes\":2467114648,\"materializedPaths\":17963733,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":374,\"peakTableBytesEstimate\":2611524454,\"requests\":310,\"retainedEntries\":1,\"retainedTableBytesEstimate\":86467773,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":18117.816639,\"waits\":150}"
+      ],
+      "flags": {
+        "timeout": {
+          "count": 6,
+          "samples": [
+            "shared_graph context=before_request_1 {\"budgetLimitedRequests\":0,\"buildMs\":0.0,\"builds\":0,\"bypasses\":0,\"completedBuilds\":0,\"evictions\":0,\"failures\":0,\"hits\":0,\"liveBaseBytesEstimate\":0,\"liveCellBytes\":0,\"liveTables\":0,\"materializedBytes\":0,\"materializedPaths\":0,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":0,\"peakTableBytesEstimate\":0,\"requests\":0,\"retainedEntries\":0,\"retainedTableBytesEstimate\":0,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":0.0,\"waits\":0}",
+            "shared_graph context=before_request_2 {\"budgetLimitedRequests\":62,\"buildMs\":14959.809892,\"builds\":32,\"bypasses\":27,\"completedBuilds\":32,\"evictions\":4,\"failures\":0,\"hits\":30,\"liveBaseBytesEstimate\":68308120,\"liveCellBytes\":14125840,\"liveTables\":1,\"materializedBytes\":509288664,\"materializedPaths\":3574907,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":374,\"peakTableBytesEstimate\":2580762904,\"requests\":62,\"retainedEntries\":1,\"retainedTableBytesEstimate\":82433960,\"targetRetainedBytes\":13",
+            "shared_graph context=before_request_3 {\"budgetLimitedRequests\":124,\"buildMs\":23871.519084,\"builds\":64,\"bypasses\":54,\"completedBuilds\":64,\"evictions\":9,\"failures\":0,\"hits\":60,\"liveBaseBytesEstimate\":69448431,\"liveCellBytes\":14748264,\"liveTables\":1,\"materializedBytes\":1015314224,\"materializedPaths\":7079954,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":374,\"peakTableBytesEstimate\":2582663820,\"requests\":124,\"retainedEntries\":1,\"retainedTableBytesEstimate\":84196695,\"targetRetainedBytes\"",
+            "shared_graph context=before_request_4 {\"budgetLimitedRequests\":186,\"buildMs\":33265.693109,\"builds\":96,\"bypasses\":81,\"completedBuilds\":96,\"evictions\":14,\"failures\":0,\"hits\":90,\"liveBaseBytesEstimate\":68308120,\"liveCellBytes\":12924920,\"liveTables\":1,\"materializedBytes\":1477192744,\"materializedPaths\":10443339,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":374,\"peakTableBytesEstimate\":2582663820,\"requests\":186,\"retainedEntries\":1,\"retainedTableBytesEstimate\":81233040,\"targetRetainedByte",
+            "shared_graph context=before_request_5 {\"budgetLimitedRequests\":248,\"buildMs\":42205.696235,\"builds\":128,\"bypasses\":108,\"completedBuilds\":128,\"evictions\":19,\"failures\":0,\"hits\":120,\"liveBaseBytesEstimate\":68544066,\"liveCellBytes\":13334672,\"liveTables\":1,\"materializedBytes\":1947243776,\"materializedPaths\":14220961,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":374,\"peakTableBytesEstimate\":2582663820,\"requests\":248,\"retainedEntries\":1,\"retainedTableBytesEstimate\":81878738,\"targetRetained",
+            "shared_graph context=before_request_6 {\"budgetLimitedRequests\":310,\"buildMs\":51339.138933,\"builds\":160,\"bypasses\":135,\"completedBuilds\":160,\"evictions\":24,\"failures\":0,\"hits\":150,\"liveBaseBytesEstimate\":70051341,\"liveCellBytes\":16416432,\"liveTables\":1,\"materializedBytes\":2467114648,\"materializedPaths\":17963733,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":374,\"peakTableBytesEstimate\":2611524454,\"requests\":310,\"retainedEntries\":1,\"retainedTableBytesEstimate\":86467773,\"targetRetained"
+          ]
+        },
+        "deadline": {
+          "count": 0,
+          "samples": []
+        },
+        "fallback": {
+          "count": 0,
+          "samples": []
+        },
+        "panic": {
+          "count": 0,
+          "samples": []
+        },
+        "rejected": {
+          "count": 0,
+          "samples": []
+        },
+        "unavailable": {
+          "count": 0,
+          "samples": []
+        },
+        "disconnected": {
+          "count": 0,
+          "samples": []
+        }
+      }
+    }
+  ]
+}

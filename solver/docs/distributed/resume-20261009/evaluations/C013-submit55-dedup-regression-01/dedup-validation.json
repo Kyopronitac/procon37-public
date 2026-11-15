@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "bridgeSha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+  "policy": "Per phase, skip if answer JSON equals last actually attempted HTTP payload; first submission always eligible; no score comparison.",
+  "tests": {
+    "rust": 22,
+    "consoleAndMap": 6,
+    "scheduledHttp": 8,
+    "legacyHttp": 6
+  },
+  "fixedSolverBinariesUnchanged": true,
+  "C013SourceFilesVerified": 34,
+  "C013BinarySha256": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+  "interruptedStage": "C013-submit55-regression-01",
+  "nextStage": "C013-submit55-dedup-regression-01",
+  "sourceSha256": {
+    "tester/server-bridge/src/main.rs": "59635ca054d29dea63eb8076df0fad9775a6acec5b764744de1115a81c2bb793",
+    "tester/server-bridge/src/schedule.rs": "18f9467b2f0bd41b50ecebf463dfb5efffa3773dc1915453cf14297fe9aca091"
+  }
+}

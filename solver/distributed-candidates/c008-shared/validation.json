@@ -1,0 +1,152 @@
+{
+  "candidate": "C008-shared",
+  "recordedAt": "2026-10-09T00:16:04.887515+00:00",
+  "status": "unadopted; local correctness and localhost network checks complete; no performance, remote deployment or server evaluation",
+  "sourceAggregateSha256": "ff0e146e8ebf18f9934708eb85a274a3ede3f237e22c8430922dccf544da0a60",
+  "parentSourceAggregateSha256": "8db728384c9a6cc3727c8def4a0e4f6720a5dd54b370ab33675e4789415e731f",
+  "changedExistingFiles": [
+    "pool.rs",
+    "solver/planner.rs",
+    "solver/compact_tests.rs"
+  ],
+  "addedSourceFiles": [
+    "solver/graph_cache.rs",
+    "solver/graph_cache_tests.rs"
+  ],
+  "binary": {
+    "path": "target/release/distributed-solver",
+    "sha256": "651d075b36969555b360f6b21f77fcac6a2612dae5c6f0e1d7ef4758a7545491"
+  },
+  "unitTests": {
+    "passed": 20,
+    "failed": 0,
+    "ignored": 1,
+    "filtered": 1,
+    "durationSeconds": 3.1,
+    "log": "docs/unit-tests.log",
+    "logSha256": "22ea651d6919226b3d7fae749502b0d54644b85b840beaff7c17ee4ea3efeb2c",
+    "filteredReason": "Initial non-network unit pass filtered TCP; subsequently executed the exact TCP test with explicit parent permission and passed",
+    "ignoredReason": "inherited C007 finite microbench; not run for C008",
+    "expectedPanic": "owner_panic_notifies_waiters_and_a_waiter_rebuilds injects a builder panic; waiter recovers, test passes",
+    "passedIncludingTcp": 21,
+    "tcpPreviouslyFiltered": {
+      "passed": 1,
+      "failed": 0,
+      "log": "docs/tcp-unit.log",
+      "logSha256": "4459a6ae0ffc997496a4acabe4492c132ed8c12821c7322c5610393c7bb6b587"
+    }
+  },
+  "compactEquivalence": {
+    "exactPathComparisons": 1608270,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "generatedPlayers": 4,
+    "arenaMaps": true,
+    "pathModes": 6,
+    "checks": [
+      "D0 eager route cells/time/fuel/shop order/mode mask match",
+      "no eager route expansion",
+      "forced route fingerprint collision remains exact"
+    ]
+  },
+  "sharingTests": {
+    "count": 8,
+    "checks": [
+      "31 worker same table and same lazy route Arc/pointer; builds=1",
+      "full key equality under forced signature collisions",
+      "traffic normalization, agent/anchor position order, duplicate positions",
+      "different-key construction progresses outside index mutex",
+      "panic owner notifies; waiter rebuilds and caches result",
+      "wait timeout privately rebuilds without replacing owner",
+      "LRU/byte eviction keeps active Arc valid and final accounting returns to zero",
+      "worker memo/supplier/non-target fuel cache isolation and snapshot handle persistence",
+      "local deadline cap and measured rebuild reserve"
+    ]
+  },
+  "networkTests": {
+    "passed": 2,
+    "failed": 0,
+    "durationSeconds": 3.34,
+    "cpuAffinity": "1",
+    "network": "localhost only; require_escalated approved",
+    "log": "docs/network.log",
+    "logSha256": "64a6d39812c2f6ca95d3d08d90d4f9fa1779e03212a443424b49a3636c194772",
+    "runner": "docs/network-runner.json",
+    "processRecords": [
+      {
+        "pid": 97732,
+        "stopped": true,
+        "record": "docs/network-processes/procon37-parallel16-test-97730/parallel16.process.json",
+        "pidPresent": false
+      },
+      {
+        "pid": 97755,
+        "stopped": true,
+        "record": "docs/network-processes/procon37-dist-test-97730-1791504923968/coordinator.process.json",
+        "pidPresent": false
+      },
+      {
+        "pid": 97757,
+        "stopped": true,
+        "record": "docs/network-processes/procon37-dist-test-97730-1791504923968/worker-a-restarted.process.json",
+        "pidPresent": false
+      },
+      {
+        "pid": 97749,
+        "stopped": true,
+        "record": "docs/network-processes/procon37-dist-test-97730-1791504923968/worker-a.process.json",
+        "pidPresent": false
+      },
+      {
+        "pid": 97752,
+        "stopped": true,
+        "record": "docs/network-processes/procon37-dist-test-97730-1791504923968/worker-b.process.json",
+        "pidPresent": false
+      }
+    ]
+  },
+  "microbench": {
+    "status": "not run; design only"
+  },
+  "serverEvaluation": false,
+  "remoteDeployment": false,
+  "budget": "D0 search budget percentages and TCP/submission paths unchanged; only graph wait bounded by existing local deadline",
+  "memoryLimit": "4 retained entries; 128 MiB estimated retained tables soft target, not process RSS cap",
+  "processes": {
+    "remainingCandidateProcesses": false,
+    "note": "all five candidate children recorded stopped and /proc PID absent; both cargo test PIDs waited and absent; no remote processes started",
+    "checkedAt": "2026-10-09T00:16:04.887515+00:00"
+  },
+  "readOnlyReview": {
+    "status": "complete; no material correctness findings",
+    "agent": "/root/evaluation_audit",
+    "scope": [
+      "exact full PreparedGraph equality and GraphTables dependencies",
+      "OnceLock paths and worker-private mutable caches",
+      "owner panic Failed/notify and identity checked eviction/retry",
+      "absolute deadline preserved across retry",
+      "Arc lifetime after LRU eviction",
+      "cache handle propagation across SearchPool solver recreation, restore, probe"
+    ],
+    "remainingLimits": [
+      "non-interruptible build can outlast local budget",
+      "128 MiB is retained table soft estimate, not hard RSS limit"
+    ]
+  },
+  "buildLog": {
+    "path": "docs/build.log",
+    "sha256": "011885210781736b762a97ae1f83dbd64165c916f2d499597770ddc694a40425"
+  },
+  "warning": "existing dead_code common/src/generator.rs:day_seconds; rustfmt component unavailable, no formatting install attempted",
+  "toolchain": {
+    "rustc": "1.94.0 (4a4ef493e 2026-03-02)",
+    "cargo": "1.94.0 (85eff7c80 2026-01-15)",
+    "profile": "release",
+    "cpuAffinity": "1",
+    "buildJobs": 1,
+    "testThreads": 1
+  }
+}

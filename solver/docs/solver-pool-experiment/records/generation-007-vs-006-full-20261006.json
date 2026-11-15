@@ -1,0 +1,427 @@
+{
+  "description": "同一5人対戦内の第7世代対第6世代比較",
+  "runs": [
+    {
+      "kind": "new",
+      "run_id": "1791285875078752198-24835",
+      "host": 1,
+      "valid": true,
+      "errors": [],
+      "groups": {
+        "all": {
+          "count": 30,
+          "wins": 14,
+          "draws": 3,
+          "losses": 13,
+          "gen7_scores": [
+            543,
+            3684,
+            8407
+          ],
+          "gen6_scores": [
+            543,
+            3677,
+            8413
+          ],
+          "gen7_rank_sum": 65,
+          "gen6_rank_sum": 68,
+          "gen7_average_rank": 2.1666666666666665,
+          "gen6_average_rank": 2.2666666666666666
+        },
+        "first": {
+          "count": 10,
+          "wins": 4,
+          "draws": 2,
+          "losses": 4,
+          "gen7_scores": [
+            124,
+            887,
+            1700
+          ],
+          "gen6_scores": [
+            124,
+            885,
+            1691
+          ],
+          "gen7_rank_sum": 17,
+          "gen6_rank_sum": 19,
+          "gen7_average_rank": 1.7,
+          "gen6_average_rank": 1.9
+        },
+        "semifinal": {
+          "count": 10,
+          "wins": 6,
+          "draws": 1,
+          "losses": 3,
+          "gen7_scores": [
+            179,
+            1176,
+            2350
+          ],
+          "gen6_scores": [
+            179,
+            1171,
+            2331
+          ],
+          "gen7_rank_sum": 22,
+          "gen6_rank_sum": 30,
+          "gen7_average_rank": 2.2,
+          "gen6_average_rank": 3.0
+        },
+        "final": {
+          "count": 10,
+          "wins": 4,
+          "draws": 0,
+          "losses": 6,
+          "gen7_scores": [
+            240,
+            1621,
+            4357
+          ],
+          "gen6_scores": [
+            240,
+            1621,
+            4391
+          ],
+          "gen7_rank_sum": 26,
+          "gen6_rank_sum": 19,
+          "gen7_average_rank": 2.6,
+          "gen6_average_rank": 1.9
+        }
+      },
+      "diagnostics": {
+        "model mismatch": 0,
+        "score mismatch": 0,
+        "validation fallback": 0,
+        "panic": 0
+      },
+      "audit": {
+        "kind": "new",
+        "run_id": "1791285875078752198-24835",
+        "freeze_unchanged": true,
+        "expected_sources_match": true,
+        "exit_code": 0,
+        "process_environment_verified": true,
+        "archive_sha256": "3e3f8df1f8c7292af11de0558064d4212ef9f5dc552eaa857d7543f48b87b6cf",
+        "export_zip_sha256": "c0e9a477bc8082c8abd6e22935dd42c8c59ba0f81728416c2e86e705bb27b685",
+        "frozen_files": 148
+      },
+      "all_players_ac": true,
+      "warnings": 0,
+      "all_player_rank_sums": {
+        "pool-generation-007": 65,
+        "pool-generation-002": 101,
+        "pool-generation-006": 68,
+        "pool-generation-004": 91,
+        "pool-generation-003": 99
+      },
+      "config": {
+        "mode": "game",
+        "targetName": "pool-generation-007",
+        "opponents": [
+          {
+            "name": "pool-generation-002",
+            "solver": {
+              "program": "/home/voidlinux-1/procon37-g67-compare-20261006-2020/target/release/game-sample-1",
+              "args": [
+                "0"
+              ],
+              "cwd": "/home/voidlinux-1/procon37-g67-compare-20261006-2020",
+              "env": {}
+            },
+            "build": null,
+            "solverParallel": false,
+            "version": "comparison-g67-source-002"
+          },
+          {
+            "name": "pool-generation-006",
+            "solver": {
+              "program": "/home/voidlinux-1/procon37-g67-compare-20261006-2020/target/release/game-sample-2",
+              "args": [
+                "0"
+              ],
+              "cwd": "/home/voidlinux-1/procon37-g67-compare-20261006-2020",
+              "env": {}
+            },
+            "build": null,
+            "solverParallel": false,
+            "version": "comparison-g67-source-006"
+          },
+          {
+            "name": "pool-generation-004",
+            "solver": {
+              "program": "/home/voidlinux-1/procon37-g67-compare-20261006-2020/target/release/game-sample-3",
+              "args": [
+                "0"
+              ],
+              "cwd": "/home/voidlinux-1/procon37-g67-compare-20261006-2020",
+              "env": {}
+            },
+            "build": null,
+            "solverParallel": false,
+            "version": "comparison-g67-source-004"
+          },
+          {
+            "name": "pool-generation-003",
+            "solver": {
+              "program": "/home/voidlinux-1/procon37-g67-compare-20261006-2020/target/release/game-sample-4",
+              "args": [
+                "0"
+              ],
+              "cwd": "/home/voidlinux-1/procon37-g67-compare-20261006-2020",
+              "env": {}
+            },
+            "build": null,
+            "solverParallel": false,
+            "version": "comparison-g67-source-003"
+          }
+        ],
+        "count": 30,
+        "seed": null,
+        "format": null,
+        "arenaMaps": true,
+        "jobs": 6,
+        "solverParallel": false,
+        "label": "第7世代対第6世代・new基準・既定時間フル30件・SSH6並列",
+        "build": null,
+        "solver": {
+          "program": "/home/voidlinux-1/procon37-g67-compare-20261006-2020/target/release/solver",
+          "args": [
+            "0"
+          ],
+          "cwd": "/home/voidlinux-1/procon37-g67-compare-20261006-2020",
+          "env": {}
+        },
+        "timeLimitMs": null
+      },
+      "execution": {
+        "availableCpus": 32,
+        "jobs": 6
+      }
+    },
+    {
+      "kind": "old",
+      "run_id": "1791285869712555957-25681",
+      "host": 3,
+      "valid": true,
+      "errors": [],
+      "groups": {
+        "all": {
+          "count": 30,
+          "wins": 18,
+          "draws": 1,
+          "losses": 11,
+          "gen7_scores": [
+            542,
+            3590,
+            7474
+          ],
+          "gen6_scores": [
+            542,
+            3579,
+            7408
+          ],
+          "gen7_rank_sum": 74,
+          "gen6_rank_sum": 82,
+          "gen7_average_rank": 2.466666666666667,
+          "gen6_average_rank": 2.7333333333333334
+        },
+        "first": {
+          "count": 10,
+          "wins": 6,
+          "draws": 1,
+          "losses": 3,
+          "gen7_scores": [
+            123,
+            803,
+            1381
+          ],
+          "gen6_scores": [
+            123,
+            799,
+            1354
+          ],
+          "gen7_rank_sum": 21,
+          "gen6_rank_sum": 25,
+          "gen7_average_rank": 2.1,
+          "gen6_average_rank": 2.5
+        },
+        "semifinal": {
+          "count": 10,
+          "wins": 7,
+          "draws": 0,
+          "losses": 3,
+          "gen7_scores": [
+            174,
+            1111,
+            2159
+          ],
+          "gen6_scores": [
+            174,
+            1104,
+            2127
+          ],
+          "gen7_rank_sum": 22,
+          "gen6_rank_sum": 30,
+          "gen7_average_rank": 2.2,
+          "gen6_average_rank": 3.0
+        },
+        "final": {
+          "count": 10,
+          "wins": 5,
+          "draws": 0,
+          "losses": 5,
+          "gen7_scores": [
+            245,
+            1676,
+            3934
+          ],
+          "gen6_scores": [
+            245,
+            1676,
+            3927
+          ],
+          "gen7_rank_sum": 31,
+          "gen6_rank_sum": 27,
+          "gen7_average_rank": 3.1,
+          "gen6_average_rank": 2.7
+        }
+      },
+      "diagnostics": {
+        "model mismatch": 0,
+        "score mismatch": 0,
+        "validation fallback": 0,
+        "panic": 0
+      },
+      "audit": {
+        "kind": "old",
+        "run_id": "1791285869712555957-25681",
+        "freeze_unchanged": true,
+        "expected_sources_match": true,
+        "exit_code": 0,
+        "process_environment_verified": true,
+        "archive_sha256": "dad5885d43f8062f69072e1abf2775e169257773cb7408a7a1d610517d49b3a9",
+        "export_zip_sha256": "b547e19548a767c1e021ffde3b6b05cb653e9eaf9d2e5b425297fa4546f0d876",
+        "frozen_files": 148
+      },
+      "all_players_ac": true,
+      "warnings": 0,
+      "all_player_rank_sums": {
+        "pool-generation-007": 74,
+        "pool-generation-002": 100,
+        "pool-generation-006": 82,
+        "pool-generation-004": 90,
+        "pool-generation-003": 82
+      },
+      "config": {
+        "mode": "game",
+        "targetName": "pool-generation-007",
+        "opponents": [
+          {
+            "name": "pool-generation-002",
+            "solver": {
+              "program": "/home/voidlinux-3/procon37-g67-compare-20261006-2020/target/release/game-sample-1",
+              "args": [
+                "0"
+              ],
+              "cwd": "/home/voidlinux-3/procon37-g67-compare-20261006-2020",
+              "env": {}
+            },
+            "build": null,
+            "solverParallel": false,
+            "version": "comparison-g67-source-002"
+          },
+          {
+            "name": "pool-generation-006",
+            "solver": {
+              "program": "/home/voidlinux-3/procon37-g67-compare-20261006-2020/target/release/game-sample-2",
+              "args": [
+                "0"
+              ],
+              "cwd": "/home/voidlinux-3/procon37-g67-compare-20261006-2020",
+              "env": {}
+            },
+            "build": null,
+            "solverParallel": false,
+            "version": "comparison-g67-source-006"
+          },
+          {
+            "name": "pool-generation-004",
+            "solver": {
+              "program": "/home/voidlinux-3/procon37-g67-compare-20261006-2020/target/release/game-sample-3",
+              "args": [
+                "0"
+              ],
+              "cwd": "/home/voidlinux-3/procon37-g67-compare-20261006-2020",
+              "env": {}
+            },
+            "build": null,
+            "solverParallel": false,
+            "version": "comparison-g67-source-004"
+          },
+          {
+            "name": "pool-generation-003",
+            "solver": {
+              "program": "/home/voidlinux-3/procon37-g67-compare-20261006-2020/target/release/game-sample-4",
+              "args": [
+                "0"
+              ],
+              "cwd": "/home/voidlinux-3/procon37-g67-compare-20261006-2020",
+              "env": {}
+            },
+            "build": null,
+            "solverParallel": false,
+            "version": "comparison-g67-source-003"
+          }
+        ],
+        "count": 30,
+        "seed": null,
+        "format": null,
+        "arenaMaps": false,
+        "jobs": 6,
+        "solverParallel": false,
+        "label": "第7世代対第6世代・old基準・既定時間フル30件・SSH6並列",
+        "build": null,
+        "solver": {
+          "program": "/home/voidlinux-3/procon37-g67-compare-20261006-2020/target/release/solver",
+          "args": [
+            "0"
+          ],
+          "cwd": "/home/voidlinux-3/procon37-g67-compare-20261006-2020",
+          "env": {}
+        },
+        "timeLimitMs": null
+      },
+      "execution": {
+        "availableCpus": 32,
+        "jobs": 6
+      }
+    }
+  ],
+  "same_source_files_between_hosts": true,
+  "source_commit": "0d368b1245828343429df7c8946fe8c2625a933a",
+  "expected_source_sha256": {
+    "main.rs": "017b4d04ae4e7d8310d39f48b3d5ce0a72ff54aacc62fc1ac84b22ea469cc9a7",
+    "solver/planner.rs": "cd9700025a440c5a0fde3e2e30f180d0371ed0e7ef071489c53acf904ed62a1a",
+    "tester/game/samples/src/pool-generation-006/planner.rs": "1003c94dcc9f1a42b96f55aa568803e0aa800a4a02837d53f8a349d953595a34"
+  },
+  "conditions": {
+    "count_per_basis": 30,
+    "seeds": "0〜29",
+    "format": "auto (each 10)",
+    "jobs": 6,
+    "time_limit": "default",
+    "exploration_seed": 0,
+    "players": [
+      "generation-007",
+      "generation-002",
+      "generation-006",
+      "generation-004",
+      "generation-003"
+    ],
+    "comparison": "同一試合内・全30件・第7世代から見た第6世代への勝敗",
+    "new_basis": "arenaMaps=true",
+    "old_basis": "arenaMaps=false"
+  },
+  "completed_at": "2026-10-06T12:06:56.496Z"
+}

@@ -1,0 +1,184 @@
+{
+  "beforeRunId": "1791504436521618109-94528",
+  "afterRunId": "1791505730154449433-101944",
+  "scoreOrder": [
+    "uniqueBrands",
+    "dailyBrands",
+    "udon"
+  ],
+  "comparison": {
+    "win": 7,
+    "tie": 0,
+    "loss": 5
+  },
+  "seeds": [
+    {
+      "seed": "0",
+      "before": [
+        12,
+        55,
+        71
+      ],
+      "after": [
+        12,
+        55,
+        69
+      ],
+      "outcome": "loss"
+    },
+    {
+      "seed": "1",
+      "before": [
+        18,
+        90,
+        122
+      ],
+      "after": [
+        18,
+        90,
+        123
+      ],
+      "outcome": "win"
+    },
+    {
+      "seed": "2",
+      "before": [
+        24,
+        120,
+        203
+      ],
+      "after": [
+        24,
+        120,
+        207
+      ],
+      "outcome": "win"
+    },
+    {
+      "seed": "3",
+      "before": [
+        13,
+        130,
+        327
+      ],
+      "after": [
+        13,
+        127,
+        318
+      ],
+      "outcome": "loss"
+    },
+    {
+      "seed": "4",
+      "before": [
+        19,
+        95,
+        130
+      ],
+      "after": [
+        19,
+        95,
+        131
+      ],
+      "outcome": "win"
+    },
+    {
+      "seed": "5",
+      "before": [
+        25,
+        150,
+        339
+      ],
+      "after": [
+        25,
+        150,
+        330
+      ],
+      "outcome": "loss"
+    },
+    {
+      "seed": "6",
+      "before": [
+        11,
+        88,
+        143
+      ],
+      "after": [
+        11,
+        88,
+        141
+      ],
+      "outcome": "loss"
+    },
+    {
+      "seed": "7",
+      "before": [
+        16,
+        80,
+        266
+      ],
+      "after": [
+        16,
+        80,
+        265
+      ],
+      "outcome": "loss"
+    },
+    {
+      "seed": "8",
+      "before": [
+        28,
+        140,
+        556
+      ],
+      "after": [
+        28,
+        140,
+        561
+      ],
+      "outcome": "win"
+    },
+    {
+      "seed": "9",
+      "before": [
+        12,
+        60,
+        97
+      ],
+      "after": [
+        12,
+        60,
+        99
+      ],
+      "outcome": "win"
+    },
+    {
+      "seed": "10",
+      "before": [
+        16,
+        128,
+        358
+      ],
+      "after": [
+        16,
+        128,
+        360
+      ],
+      "outcome": "win"
+    },
+    {
+      "seed": "11",
+      "before": [
+        28,
+        140,
+        343
+      ],
+      "after": [
+        28,
+        140,
+        361
+      ],
+      "outcome": "win"
+    }
+  ]
+}

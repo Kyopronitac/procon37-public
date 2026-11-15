@@ -1,0 +1,614 @@
+{
+  "generation": 1,
+  "baseline_run_id": "1790497420833602579-11702",
+  "baseline_commit": "d431c5c9eac49a87df4443a833ff2b106ae44bfa",
+  "conditions": {
+    "mode": "game",
+    "opponents": [
+      {
+        "name": "incumbent-d431c5c",
+        "solver": {
+          "program": "/home/bandai/Work/procon37/target/release/game-sample-1",
+          "args": [
+            "0"
+          ],
+          "cwd": "/home/bandai/Work/procon37",
+          "env": {}
+        },
+        "build": {
+          "program": "cargo",
+          "args": [
+            "build",
+            "--release",
+            "-p",
+            "game-samples"
+          ],
+          "cwd": "/home/bandai/Work/procon37",
+          "env": {}
+        },
+        "solverParallel": false,
+        "version": "pool-incumbent-d431c5c-v1"
+      },
+      {
+        "name": "generation-2",
+        "solver": {
+          "program": "/home/bandai/Work/procon37/target/release/game-sample-2",
+          "args": [
+            "0"
+          ],
+          "cwd": "/home/bandai/Work/procon37",
+          "env": {}
+        },
+        "build": {
+          "program": "cargo",
+          "args": [
+            "build",
+            "--release",
+            "-p",
+            "game-samples"
+          ],
+          "cwd": "/home/bandai/Work/procon37",
+          "env": {}
+        },
+        "solverParallel": false,
+        "version": "generation-2-run-1790460437109075929-3-v1"
+      },
+      {
+        "name": "generation-3",
+        "solver": {
+          "program": "/home/bandai/Work/procon37/target/release/game-sample-3",
+          "args": [
+            "0"
+          ],
+          "cwd": "/home/bandai/Work/procon37",
+          "env": {}
+        },
+        "build": {
+          "program": "cargo",
+          "args": [
+            "build",
+            "--release",
+            "-p",
+            "game-samples"
+          ],
+          "cwd": "/home/bandai/Work/procon37",
+          "env": {}
+        },
+        "solverParallel": false,
+        "version": "generation-3-run-1790470439563416580-3-v1"
+      },
+      {
+        "name": "generation-4",
+        "solver": {
+          "program": "/home/bandai/Work/procon37/target/release/game-sample-4",
+          "args": [
+            "0"
+          ],
+          "cwd": "/home/bandai/Work/procon37",
+          "env": {}
+        },
+        "build": {
+          "program": "cargo",
+          "args": [
+            "build",
+            "--release",
+            "-p",
+            "game-samples"
+          ],
+          "cwd": "/home/bandai/Work/procon37",
+          "env": {}
+        },
+        "solverParallel": false,
+        "version": "generation-4-run-1790477477827802838-3-v1"
+      }
+    ],
+    "count": 30,
+    "seed": null,
+    "format": null,
+    "jobs": null,
+    "solverParallel": false,
+    "label": "pool第1世代・新規候補・フル30件",
+    "build": {
+      "program": "cargo",
+      "args": [
+        "build",
+        "--release",
+        "-p",
+        "solver"
+      ],
+      "cwd": "/home/bandai/Work/procon37",
+      "env": {}
+    },
+    "solver": {
+      "program": "/home/bandai/Work/procon37/target/release/solver",
+      "args": [
+        "0"
+      ],
+      "cwd": "/home/bandai/Work/procon37",
+      "env": {}
+    },
+    "timeLimitMs": null
+  },
+  "players_before": [
+    {
+      "fixed_id": 0,
+      "name": "対象ソルバ",
+      "rank_sum": 70,
+      "mean_rank": 2.3333333333333335,
+      "score_totals": {
+        "uniqueBrands": 542,
+        "dailyBrands": 3585,
+        "udon": 7001
+      }
+    },
+    {
+      "fixed_id": 1,
+      "name": "generation-1",
+      "rank_sum": 129,
+      "mean_rank": 4.3,
+      "score_totals": {
+        "uniqueBrands": 542,
+        "dailyBrands": 3591,
+        "udon": 6062
+      }
+    },
+    {
+      "fixed_id": 2,
+      "name": "generation-2",
+      "rank_sum": 101,
+      "mean_rank": 3.3666666666666667,
+      "score_totals": {
+        "uniqueBrands": 542,
+        "dailyBrands": 3587,
+        "udon": 6620
+      }
+    },
+    {
+      "fixed_id": 3,
+      "name": "generation-3",
+      "rank_sum": 65,
+      "mean_rank": 2.1666666666666665,
+      "score_totals": {
+        "uniqueBrands": 542,
+        "dailyBrands": 3579,
+        "udon": 7116
+      }
+    },
+    {
+      "fixed_id": 4,
+      "name": "generation-4",
+      "rank_sum": 76,
+      "mean_rank": 2.533333333333333,
+      "score_totals": {
+        "uniqueBrands": 542,
+        "dailyBrands": 3580,
+        "udon": 6992
+      }
+    }
+  ],
+  "replaced_fixed_id": 1,
+  "target_original_source_sha256": {
+    "main.rs": "4fd6bfc5e335c53a2fb187e28091710b38ae538bf3d4f7d3ad86733b9f784e74",
+    "solver/planner.rs": "7034eb8a807526eb42d405f23bf8df6a6d359f27f52cf31e94ad65653e110f3c",
+    "solver/roads.rs": "f4b3f92baa02e8fc4909032cec0cb63d7aa08674356ab1eadacc3aabcea30820"
+  },
+  "mapping_after": {
+    "0": "新規候補",
+    "1": "旧対象 fixed_id=0",
+    "2": "fixed_id=2",
+    "3": "fixed_id=3",
+    "4": "fixed_id=4"
+  },
+  "baseline_opponent_identities": [
+    "content-v3:cb08d898688a368c2b8390ebd8441ff3",
+    "content-v3:9a9ab938bfefbab3e8a33615fac7eeed",
+    "content-v3:56f35b9e994a6d51f80a179b577d9914",
+    "content-v3:7fe1ff4e3ac1d92f47fe4bf6e3dc3fad"
+  ],
+  "all_150_player_results": "AC",
+  "push": false,
+  "opponent_executable_sha256_after": {
+    "1": "1c7af5baa3503345b50150860b8204573d5bd2d0b2b3cd396a1f9992278d675c",
+    "2": "f258e102e4cd26f5ac89f6c2022c51b065300765bc6bb45075e069597730a048",
+    "3": "aec652d9cf2f0d99aca9a450ebc5660e69af9ed102e6394f59203043330aa2f7",
+    "4": "7883989c978b73c21f5c44a2295921df57f7cd4460f85e2c0e3dfc628f6dbb68"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "run_id": "1790502219390216833-20376",
+      "source_sha256": {
+        "main.rs": "e1644c4f1bcc43a1d2b1ad29bdf820675f57b83dd538204c662859911a5944f9",
+        "solver/horizon.rs": "4bd60ed25e0885b9b3237d9cfa41f098b792dfabe149b5a981f17d2498894340",
+        "Cargo.toml": "e53dc87d3ad432badde0ee7348ee7ec128de00e1369077f427b12cd43e7f4cc4"
+      },
+      "players": [
+        {
+          "player": 0,
+          "name": "対象ソルバ",
+          "rank_sum": 87,
+          "mean_rank": 2.9,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3569,
+            "udon": 7085
+          }
+        },
+        {
+          "player": 1,
+          "name": "incumbent-d431c5c",
+          "rank_sum": 87,
+          "mean_rank": 2.9,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3584,
+            "udon": 6966
+          }
+        },
+        {
+          "player": 2,
+          "name": "generation-2",
+          "rank_sum": 125,
+          "mean_rank": 4.166666666666667,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3585,
+            "udon": 6627
+          }
+        },
+        {
+          "player": 3,
+          "name": "generation-3",
+          "rank_sum": 66,
+          "mean_rank": 2.2,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3587,
+            "udon": 7143
+          }
+        },
+        {
+          "player": 4,
+          "name": "generation-4",
+          "rank_sum": 71,
+          "mean_rank": 2.3666666666666667,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3588,
+            "udon": 7001
+          }
+        }
+      ],
+      "promoted": false,
+      "reason": "対象順位合計87、相手首位66"
+    },
+    {
+      "attempt": 2,
+      "run_id": "1790507070180733256-26899",
+      "source_sha256": {
+        "main.rs": "e1644c4f1bcc43a1d2b1ad29bdf820675f57b83dd538204c662859911a5944f9",
+        "solver/horizon.rs": "b99181525d2c812511e5921d857583f3aa61f606636ec1a29e7e7a11f011bf96",
+        "Cargo.toml": "e53dc87d3ad432badde0ee7348ee7ec128de00e1369077f427b12cd43e7f4cc4"
+      },
+      "players": [
+        {
+          "player": 0,
+          "name": "対象ソルバ",
+          "rank_sum": 84,
+          "mean_rank": 2.8,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3582,
+            "udon": 7077
+          }
+        },
+        {
+          "player": 1,
+          "name": "incumbent-d431c5c",
+          "rank_sum": 87,
+          "mean_rank": 2.9,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3583,
+            "udon": 7000
+          }
+        },
+        {
+          "player": 2,
+          "name": "generation-2",
+          "rank_sum": 126,
+          "mean_rank": 4.2,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3584,
+            "udon": 6584
+          }
+        },
+        {
+          "player": 3,
+          "name": "generation-3",
+          "rank_sum": 53,
+          "mean_rank": 1.7666666666666666,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3590,
+            "udon": 7197
+          }
+        },
+        {
+          "player": 4,
+          "name": "generation-4",
+          "rank_sum": 83,
+          "mean_rank": 2.7666666666666666,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3583,
+            "udon": 7004
+          }
+        }
+      ],
+      "promoted": false,
+      "reason": "対象順位合計84、首位53"
+    },
+    {
+      "attempt": 3,
+      "run_id": "1790510702960127745-31664",
+      "source_sha256": {
+        "main.rs": "e1644c4f1bcc43a1d2b1ad29bdf820675f57b83dd538204c662859911a5944f9",
+        "solver/horizon.rs": "a6bd1590747019552c370f403c360fc7a629b1b29af8e7f68abceef9e51ef126",
+        "Cargo.toml": "e53dc87d3ad432badde0ee7348ee7ec128de00e1369077f427b12cd43e7f4cc4"
+      },
+      "players": [
+        {
+          "player": 0,
+          "name": "対象ソルバ",
+          "rank_sum": 73,
+          "mean_rank": 2.433333333333333,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3571,
+            "udon": 7180
+          }
+        },
+        {
+          "player": 1,
+          "name": "incumbent-d431c5c",
+          "rank_sum": 86,
+          "mean_rank": 2.8666666666666667,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3587,
+            "udon": 6974
+          }
+        },
+        {
+          "player": 2,
+          "name": "generation-2",
+          "rank_sum": 120,
+          "mean_rank": 4.0,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3588,
+            "udon": 6626
+          }
+        },
+        {
+          "player": 3,
+          "name": "generation-3",
+          "rank_sum": 67,
+          "mean_rank": 2.2333333333333334,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3584,
+            "udon": 7135
+          }
+        },
+        {
+          "player": 4,
+          "name": "generation-4",
+          "rank_sum": 77,
+          "mean_rank": 2.566666666666667,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3583,
+            "udon": 7044
+          }
+        }
+      ],
+      "promoted": false,
+      "reason": "対象順位合計73、首位67"
+    },
+    {
+      "attempt": 4,
+      "run_id": "1790514898855274043-34366",
+      "source_sha256": {
+        "main.rs": "e1644c4f1bcc43a1d2b1ad29bdf820675f57b83dd538204c662859911a5944f9",
+        "solver/horizon.rs": "128791709d7dbb8e5ffa034e020fcea4b8ab22dee0962255f06d46df5b44b70b",
+        "Cargo.toml": "e53dc87d3ad432badde0ee7348ee7ec128de00e1369077f427b12cd43e7f4cc4"
+      },
+      "players": [
+        {
+          "player": 0,
+          "name": "対象ソルバ",
+          "rank_sum": 68,
+          "mean_rank": 2.2666666666666666,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3583,
+            "udon": 7214
+          }
+        },
+        {
+          "player": 1,
+          "name": "incumbent-d431c5c",
+          "rank_sum": 94,
+          "mean_rank": 3.1333333333333333,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3584,
+            "udon": 6991
+          }
+        },
+        {
+          "player": 2,
+          "name": "generation-2",
+          "rank_sum": 126,
+          "mean_rank": 4.2,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3585,
+            "udon": 6600
+          }
+        },
+        {
+          "player": 3,
+          "name": "generation-3",
+          "rank_sum": 60,
+          "mean_rank": 2.0,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3588,
+            "udon": 7144
+          }
+        },
+        {
+          "player": 4,
+          "name": "generation-4",
+          "rank_sum": 86,
+          "mean_rank": 2.8666666666666667,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3585,
+            "udon": 6984
+          }
+        }
+      ],
+      "promoted": false,
+      "reason": "対象順位合計68、首位60"
+    },
+    {
+      "attempt": 5,
+      "run_id": "1790521499134996039-41850",
+      "source_sha256": {
+        "main.rs": "e1644c4f1bcc43a1d2b1ad29bdf820675f57b83dd538204c662859911a5944f9",
+        "solver/horizon.rs": "4f2a8b9b3132706a750ac01a88de74a2f208ca022e2794f7fa0ae11ae883cad2",
+        "Cargo.toml": "e53dc87d3ad432badde0ee7348ee7ec128de00e1369077f427b12cd43e7f4cc4"
+      },
+      "players": [
+        {
+          "player": 0,
+          "name": "対象ソルバ",
+          "rank_sum": 52,
+          "mean_rank": 1.7333333333333334,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3586,
+            "udon": 7245
+          }
+        },
+        {
+          "player": 1,
+          "name": "incumbent-d431c5c",
+          "rank_sum": 90,
+          "mean_rank": 3.0,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3587,
+            "udon": 7009
+          }
+        },
+        {
+          "player": 2,
+          "name": "generation-2",
+          "rank_sum": 126,
+          "mean_rank": 4.2,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3588,
+            "udon": 6613
+          }
+        },
+        {
+          "player": 3,
+          "name": "generation-3",
+          "rank_sum": 74,
+          "mean_rank": 2.466666666666667,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3581,
+            "udon": 7158
+          }
+        },
+        {
+          "player": 4,
+          "name": "generation-4",
+          "rank_sum": 90,
+          "mean_rank": 3.0,
+          "all_ac": true,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3584,
+            "udon": 7011
+          }
+        }
+      ],
+      "promoted": true,
+      "opponent_identities": [
+        "content-v3:f623548e493bc98dcb6f44bd709c60f6",
+        "content-v3:b3476a1e4d75b358a3eba2ff3147784c",
+        "content-v3:2fe1f4a2dae18bde9f54b915d860ce32",
+        "content-v3:4b19cf3514f5d9742d58a5fc7d326471"
+      ]
+    }
+  ],
+  "promoted": true,
+  "promotion_run_id": "1790521499134996039-41850",
+  "comparison": [
+    {
+      "baseline_fixed_id": 1,
+      "counts": {
+        "wins": 26,
+        "ties": 0,
+        "losses": 4
+      },
+      "note": "相手配置変更による交通差あり。問題seed/形式は同一、厳密な同構成比較ではない。"
+    },
+    {
+      "baseline_fixed_id": 0,
+      "counts": {
+        "wins": 21,
+        "ties": 2,
+        "losses": 7
+      },
+      "note": "相手配置変更による交通差あり。問題seed/形式は同一、厳密な同構成比較ではない。"
+    }
+  ],
+  "commit_result": "ユーザー指示により省略",
+  "push_result": "ユーザー指示により省略",
+  "generation_counted_without_push": true,
+  "archive_policy": "削除対象はプロジェクト外の一時領域に保存"
+}

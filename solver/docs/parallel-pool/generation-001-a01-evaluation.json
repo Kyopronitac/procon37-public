@@ -1,0 +1,33 @@
+{
+  "evaluation": {
+    "role": "generation_candidate",
+    "generation": 1,
+    "attempt": 1,
+    "target_id": "P0",
+    "label": "並列pool・第1世代P0候補a01・正式12件",
+    "wrapper_pid": 232404,
+    "log": "/home/jikky/Downloads/procon37/.server/parallel-pool/g001-a01-formal.log",
+    "process_record": "/home/jikky/Downloads/procon37/.server/parallel-pool/g001-a01-formal-process.json",
+    "status": "running",
+    "roster": "solver/docs/parallel-pool/generation-001-a01-roster.json",
+    "preflight": "solver/docs/parallel-pool/generation-001-a01-formal-preflight.json",
+    "run_id": "1791376569994106771-232406",
+    "run_json": "/home/jikky/Downloads/procon37/.server/runs/1791376569994106771-232406/run.json",
+    "pid": 232406
+  },
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "並列pool・第1世代P0候補a01・正式12件",
+    "players": 6,
+    "teamNames": [],
+    "timeLimitMs": null,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "selection_run_id": "1791368679639311227-219585",
+  "developer_id": "/root/generation_001_p0",
+  "source_identity": "solver/docs/parallel-pool/generation-001-P0-a01-identity.json",
+  "roster": "solver/docs/parallel-pool/generation-001-a01-roster.json"
+}

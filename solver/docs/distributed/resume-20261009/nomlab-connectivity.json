@@ -1,0 +1,15 @@
+{
+  "atJst": "2026-10-09T07:46:30.089868+09:00",
+  "ssh": "No route to host",
+  "neighbor": "FAILED",
+  "wakeOnLanAttempt": {
+    "source": "192.168.0.81",
+    "destination": "192.168.0.255:9",
+    "mac": "f8:e4:3b:62:a3:90",
+    "identityBasis": "前回実機記録の有線NIC名 enxf8e43b62a390 から推定。現在のMACとWoL対応は未確認。",
+    "packetCount": 1,
+    "sent": true,
+    "wakeConfirmed": false
+  },
+  "afterWakeSsh": "No route to host"
+}

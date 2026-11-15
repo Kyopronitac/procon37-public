@@ -1,0 +1,81 @@
+{
+  "runId": "1791513062075302492-124172",
+  "all48AC": true,
+  "players": [
+    {
+      "team": 0,
+      "rankSum": 20,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2949
+      },
+      "meanRank": 1.6666666666666667
+    },
+    {
+      "team": 1,
+      "rankSum": 23,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 2926
+      },
+      "meanRank": 1.9166666666666667
+    },
+    {
+      "team": 2,
+      "rankSum": 40,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 2844
+      },
+      "meanRank": 3.3333333333333335
+    },
+    {
+      "team": 3,
+      "rankSum": 29,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 2899
+      },
+      "meanRank": 2.4166666666666665
+    }
+  ],
+  "version": "C011-terminal-reachability",
+  "stage": "C011-short-01",
+  "verifiedUnchanged": true,
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "分散C011・翌日の到達可能性を終端評価へ追加・正式評価候補選別・短縮12件・10秒",
+    "players": 4,
+    "teamNames": [
+      "分散C011-terminal-reachability",
+      "固定並列",
+      "固定第6世代",
+      "固定第8世代"
+    ],
+    "timeLimitMs": 10000,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "comparison": {
+    "win": 4,
+    "tie": 2,
+    "loss": 6
+  },
+  "beforeRunId": "1791506866153064781-104560",
+  "before": {
+    "team": 0,
+    "rankSum": 15,
+    "scores": {
+      "uniqueBrands": 222,
+      "dailyBrands": 1277,
+      "udon": 2956
+    },
+    "meanRank": 1.25
+  }
+}

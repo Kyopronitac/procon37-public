@@ -1,0 +1,134 @@
+{
+  "exit": 0,
+  "stderr": "",
+  "after": {
+    "policy11": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy8": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy6": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy28": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy18": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy4": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy26": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy16": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy2": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy24": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy14": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy0": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy22": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy12": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy9": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy30": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy20": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy10": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy7": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy29": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy19": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy5": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy27": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy17": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy3": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy25": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy15": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy1": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy23": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy13": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy31": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    },
+    "policy21": {
+      "scaling_governor": "performance",
+      "energy_performance_preference": "performance"
+    }
+  }
+}

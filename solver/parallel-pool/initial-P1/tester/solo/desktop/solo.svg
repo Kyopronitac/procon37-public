@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <!-- procon37-managed-launcher-v1 -->
+  <title id="title">solo</title>
+  <desc id="desc">深い青緑の角丸タイル。翡翠色の六角形の盤面に白い車が1台。</desc>
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#234753"/><stop offset="1" stop-color="#0B202D"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="0.8" y2="1">
+      <stop stop-color="#8CEBD3"/><stop offset="1" stop-color="#2CB6A6"/>
+    </linearGradient>
+    <linearGradient id="car" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#DDF7EF"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#base)"/>
+  <rect x="9" y="9" width="238" height="238" rx="55" fill="none" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2"/>
+  <path d="M128 43 202 86v86l-74 43-74-43V86Z" fill="#041A25" opacity="0.35" transform="translate(0 7)"/>
+  <path d="M128 43 202 86v86l-74 43-74-43V86Z" fill="url(#board)" stroke="#BAF8E5" stroke-opacity="0.35" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M80 161v-44c0-23 15-38 38-38h20c23 0 38 15 38 38v44" fill="none" stroke="#157B78" stroke-opacity="0.65" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="80" cy="164" r="7" fill="#DFFAF0"/>
+  <path d="m167 151 9 13 9-13" fill="none" stroke="#DFFAF0" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="100" y="95" width="56" height="86" rx="18" fill="#07585D" opacity="0.24"/>
+  <g fill="#173F4B">
+    <rect x="96" y="106" width="12" height="18" rx="5"/>
+    <rect x="148" y="106" width="12" height="18" rx="5"/>
+    <rect x="96" y="149" width="12" height="18" rx="5"/>
+    <rect x="148" y="149" width="12" height="18" rx="5"/>
+  </g>
+  <rect x="103" y="88" width="50" height="88" rx="17" fill="url(#car)"/>
+  <path d="M111 110q17-7 34 0l-3 19h-28Z" fill="#225660"/>
+  <path d="m116 113 13-3" fill="none" stroke="#94D5D5" stroke-width="3" stroke-linecap="round"/>
+  <rect x="114" y="149" width="28" height="9" rx="4" fill="#43827F"/>
+  <path d="M112 99h5m22 0h5" stroke="#68CBBB" stroke-width="4" stroke-linecap="round"/>
+</svg>

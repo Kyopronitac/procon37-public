@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="ai-distributed" name="3台で77探索と3制御を動かす構成">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1080" pageHeight="285">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pc2" value="PC 2：16T&lt;br&gt;探索15 ＋ 制御1&lt;br&gt;worker" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2FBE4;strokeColor=#668E38;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSize=25;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="10" y="10" width="300" height="140" />
+        </mxCell>
+        <mxCell id="pc1" value="PC 1：32T&lt;br&gt;探索31 ＋ 制御1&lt;br&gt;coordinator" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2E8;strokeColor=#C46128;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSize=25;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="390" y="10" width="300" height="140" />
+        </mxCell>
+        <mxCell id="pc3" value="PC 3：32T&lt;br&gt;探索31 ＋ 制御1&lt;br&gt;worker" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF7FF;strokeColor=#185B80;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSize=25;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="770" y="10" width="300" height="140" />
+        </mxCell>
+        <mxCell id="submit" value="PC 1で集約・提出" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2F5;strokeColor=#97283C;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSize=25;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="390" y="210" width="300" height="70" />
+        </mxCell>
+        <mxCell id="edge0" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#666666;strokeWidth=2.3;endArrow=block;endFill=1;startArrow=block;startFill=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="310" y="80" />
+            <mxPoint as="targetPoint" x="390" y="80" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#666666;strokeWidth=2.3;endArrow=block;endFill=1;startArrow=block;startFill=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="690" y="80" />
+            <mxPoint as="targetPoint" x="770" y="80" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#666666;strokeWidth=2.3;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="540" y="150" />
+            <mxPoint as="targetPoint" x="540" y="210" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

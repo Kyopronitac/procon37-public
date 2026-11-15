@@ -1,0 +1,38 @@
+# 記録用ソルバだけを明示的にビルドする独立ワークスペース。
+# ルートの開発用 solver パッケージ・既定ビルドには影響しない。
+[workspace]
+resolver = "2"
+
+[package]
+name = "solver-records"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[[bin]]
+name = "solver-01"
+path = "solver01.rs"
+
+[[bin]]
+name = "solver-02"
+path = "solver02.rs"
+
+[[bin]]
+name = "solver-03"
+path = "solver03.rs"
+
+[[bin]]
+name = "solver-04"
+path = "solver04.rs"
+
+[[bin]]
+name = "solver-05"
+path = "solver05.rs"
+
+[dependencies]
+tester = { path = "../../../tester/solo" }
+serde_json = "=1.0.151"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1

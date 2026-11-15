@@ -1,0 +1,185 @@
+{
+  "retrievedOn": "2026-10-04",
+  "cases": [
+    {
+      "match": 937,
+      "format": "first",
+      "url": "https://procon37arena.online/arena/matches/937",
+      "team": "終焉の使徒",
+      "rank": 6,
+      "players": 10,
+      "score": {
+        "uniqueBrands": 13,
+        "dailyBrands": 130,
+        "udon": 317
+      },
+      "answerSeconds": 576.8122217655182,
+      "tiebroken": true,
+      "departure": 1790928900,
+      "file": "match-937.json",
+      "source": "public-api",
+      "sha256": "7aa371cfe758f0fcc9edd6429e395dc57e5f1af63827d52fc1dd85edeea2dee2"
+    },
+    {
+      "match": 941,
+      "format": "semifinal",
+      "url": "https://procon37arena.online/arena/matches/941",
+      "team": "終焉の使徒",
+      "rank": 6,
+      "players": 10,
+      "score": {
+        "uniqueBrands": 16,
+        "dailyBrands": 80,
+        "udon": 258
+      },
+      "answerSeconds": 288.4574661254883,
+      "tiebroken": false,
+      "departure": 1790932500,
+      "file": "match-941.json",
+      "source": "public-api",
+      "sha256": "8168d083b044ee7eb5fd0d401f8f4470f42990ce8468934d5db84b6333bed8cf"
+    },
+    {
+      "match": 916,
+      "format": "final",
+      "url": "https://procon37arena.online/arena/matches/916",
+      "team": "終焉の使徒",
+      "rank": 3,
+      "players": 10,
+      "score": {
+        "uniqueBrands": 28,
+        "dailyBrands": 140,
+        "udon": 363
+      },
+      "answerSeconds": 288.51022815704346,
+      "tiebroken": false,
+      "departure": 1790910000,
+      "file": "match-916.json",
+      "source": "public-api",
+      "sha256": "7008196cd912926ab8790029ac1003e1a174a91fc6f3088332cf9abd561401e2"
+    },
+    {
+      "file": "pasted-16-01.json",
+      "format": "first",
+      "source": "user-paste",
+      "providedOn": "2026-10-04",
+      "players": 10,
+      "sha256": "9e065b887faff5acb5dbc41b334a284bd41896ec3b7f362aff047d6bb1eb5622"
+    },
+    {
+      "file": "pasted-16-02.json",
+      "format": "first",
+      "source": "user-paste",
+      "providedOn": "2026-10-04",
+      "players": 10,
+      "sha256": "aa097fa2ef1536c4032c3547cad95bdadc40c44165bf3a599590feb0bbb9cb50"
+    },
+    {
+      "file": "pasted-16-03.json",
+      "format": "first",
+      "source": "user-paste",
+      "providedOn": "2026-10-04",
+      "players": 10,
+      "sha256": "d837b29d102c48e749368ebece013db610f5585db277ab8e9a3dbfc8942f0747"
+    },
+    {
+      "file": "pasted-16-04.json",
+      "format": "first",
+      "source": "user-paste",
+      "providedOn": "2026-10-04",
+      "players": 10,
+      "sha256": "740d0295e8a3ce023a31d0268c4c793171a2c850c0a75b0661af44b2e23ace05"
+    },
+    {
+      "file": "pasted-24-01.json",
+      "format": "semifinal",
+      "source": "user-paste",
+      "providedOn": "2026-10-04",
+      "players": 10,
+      "sha256": "73e06d501144fb144f96dd257f095a1b9788bc0a42b74959135e50fc58e06488"
+    },
+    {
+      "file": "pasted-24-02.json",
+      "format": "semifinal",
+      "source": "user-paste",
+      "providedOn": "2026-10-04",
+      "players": 10,
+      "sha256": "c86f8813a88ccf1c9410a720a6d087090fa27982d18caca0638fb212920936cc"
+    },
+    {
+      "file": "pasted-24-03.json",
+      "format": "semifinal",
+      "source": "user-paste",
+      "providedOn": "2026-10-04",
+      "players": 10,
+      "sha256": "8c016ae2200b6a6ed0e95fb33a7f1370849c7cbeb539e806e11b6496cf0486f1"
+    },
+    {
+      "file": "pasted-24-04.json",
+      "format": "semifinal",
+      "source": "user-paste",
+      "providedOn": "2026-10-04",
+      "players": 10,
+      "sha256": "93e99e1d08a9ce9ffabfb46ca8757f4cda1ed6f4f1146841745f4dcd82e09b7b"
+    },
+    {
+      "file": "pasted-32-01.json",
+      "format": "final",
+      "source": "user-paste",
+      "providedOn": "2026-10-04",
+      "players": 10,
+      "sha256": "b319229489edc829037a7edef2f3222eb603e7846074644fdfd5b58113012b50"
+    },
+    {
+      "file": "pasted-32-02.json",
+      "format": "final",
+      "source": "user-paste",
+      "providedOn": "2026-10-04",
+      "players": 10,
+      "sha256": "e338163d9dc9818572332ec98fbc7c9f0db35065cedc2e7a1e626ee2d30023d3"
+    },
+    {
+      "file": "pasted-32-03.json",
+      "format": "final",
+      "source": "user-paste",
+      "providedOn": "2026-10-04",
+      "players": 10,
+      "sha256": "b89e0290613e49710bd4630d76208ae0a5bf2af4229422e8ed9524a4eb48eeb3"
+    },
+    {
+      "file": "pasted-32-04.json",
+      "format": "final",
+      "source": "user-paste",
+      "providedOn": "2026-10-04",
+      "players": 10,
+      "sha256": "79bfa1ab4c7780a0252ec33fea058210e5b92b677d6688dcc84e51bf7d3efc3b"
+    }
+  ],
+  "shuffle": {
+    "method": "追加ファイル名を SHA-256(\"2026-10-04:{width}:{file}\") の昇順に並べる。既存分は先頭固定。",
+    "seed": "2026-10-04"
+  },
+  "banks": {
+    "first": [
+      "match-937.json",
+      "pasted-16-01.json",
+      "pasted-16-04.json",
+      "pasted-16-02.json",
+      "pasted-16-03.json"
+    ],
+    "semifinal": [
+      "match-941.json",
+      "pasted-24-03.json",
+      "pasted-24-02.json",
+      "pasted-24-01.json",
+      "pasted-24-04.json"
+    ],
+    "final": [
+      "match-916.json",
+      "pasted-32-04.json",
+      "pasted-32-03.json",
+      "pasted-32-02.json",
+      "pasted-32-01.json"
+    ]
+  }
+}

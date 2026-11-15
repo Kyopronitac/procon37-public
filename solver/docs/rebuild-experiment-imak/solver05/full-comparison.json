@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "baseline": "1790078107295326017-2",
+  "runs": [
+    {
+      "id": "1790078107295326017-2",
+      "label": "ゼロ再構築v22・保存済み先読み維持とCPU最適化・単独実行フル60件",
+      "importedFrom": null,
+      "status": "completed",
+      "verdict": "AC",
+      "total": 60,
+      "completed": 60,
+      "verdicts": {
+        "AC": 60,
+        "WA": 0,
+        "TLE": 0,
+        "RE": 0
+      },
+      "execution": {
+        "availableCpus": 32,
+        "jobs": 24
+      },
+      "solverParallel": false,
+      "timeLimitMs": null
+    },
+    {
+      "id": "1790132294294766223-2",
+      "label": "新規構築v17・経路高速化と低温探索および通過セル合流・単独本番条件フル60件",
+      "importedFrom": null,
+      "status": "completed",
+      "verdict": "AC",
+      "total": 60,
+      "completed": 60,
+      "verdicts": {
+        "AC": 60,
+        "WA": 0,
+        "TLE": 0,
+        "RE": 0
+      },
+      "execution": {
+        "availableCpus": 32,
+        "jobs": 24
+      },
+      "solverParallel": false,
+      "timeLimitMs": null
+    }
+  ],
+  "scopes": [
+    {
+      "format": null,
+      "seeds": 60,
+      "matched": 60,
+      "accepted": 60,
+      "different": 0,
+      "missing": 0,
+      "unavailable": 0,
+      "nonAc": 0,
+      "results": [
+        {
+          "id": "1790078107295326017-2",
+          "outcomes": null,
+          "scores": {
+            "uniqueBrands": 1055,
+            "dailyBrands": 7108,
+            "udon": 15913
+          },
+          "delta": null
+        },
+        {
+          "id": "1790132294294766223-2",
+          "outcomes": {
+            "wins": 45,
+            "draws": 6,
+            "losses": 9
+          },
+          "scores": {
+            "uniqueBrands": 1055,
+            "dailyBrands": 7120,
+            "udon": 16150
+          },
+          "delta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 12,
+            "udon": 237
+          }
+        }
+      ]
+    },
+    {
+      "format": "first",
+      "seeds": 20,
+      "matched": 20,
+      "accepted": 20,
+      "different": 0,
+      "missing": 0,
+      "unavailable": 0,
+      "nonAc": 0,
+      "results": [
+        {
+          "id": "1790078107295326017-2",
+          "outcomes": null,
+          "scores": {
+            "uniqueBrands": 244,
+            "dailyBrands": 1565,
+            "udon": 2888
+          },
+          "delta": null
+        },
+        {
+          "id": "1790132294294766223-2",
+          "outcomes": {
+            "wins": 16,
+            "draws": 2,
+            "losses": 2
+          },
+          "scores": {
+            "uniqueBrands": 244,
+            "dailyBrands": 1572,
+            "udon": 2919
+          },
+          "delta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 7,
+            "udon": 31
+          }
+        }
+      ]
+    },
+    {
+      "format": "semifinal",
+      "seeds": 20,
+      "matched": 20,
+      "accepted": 20,
+      "different": 0,
+      "missing": 0,
+      "unavailable": 0,
+      "nonAc": 0,
+      "results": [
+        {
+          "id": "1790078107295326017-2",
+          "outcomes": null,
+          "scores": {
+            "uniqueBrands": 332,
+            "dailyBrands": 2270,
+            "udon": 5078
+          },
+          "delta": null
+        },
+        {
+          "id": "1790132294294766223-2",
+          "outcomes": {
+            "wins": 14,
+            "draws": 4,
+            "losses": 2
+          },
+          "scores": {
+            "uniqueBrands": 332,
+            "dailyBrands": 2275,
+            "udon": 5172
+          },
+          "delta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 5,
+            "udon": 94
+          }
+        }
+      ]
+    },
+    {
+      "format": "final",
+      "seeds": 20,
+      "matched": 20,
+      "accepted": 20,
+      "different": 0,
+      "missing": 0,
+      "unavailable": 0,
+      "nonAc": 0,
+      "results": [
+        {
+          "id": "1790078107295326017-2",
+          "outcomes": null,
+          "scores": {
+            "uniqueBrands": 479,
+            "dailyBrands": 3273,
+            "udon": 7947
+          },
+          "delta": null
+        },
+        {
+          "id": "1790132294294766223-2",
+          "outcomes": {
+            "wins": 15,
+            "draws": 0,
+            "losses": 5
+          },
+          "scores": {
+            "uniqueBrands": 479,
+            "dailyBrands": 3273,
+            "udon": 8059
+          },
+          "delta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": 112
+          }
+        }
+      ]
+    }
+  ]
+}

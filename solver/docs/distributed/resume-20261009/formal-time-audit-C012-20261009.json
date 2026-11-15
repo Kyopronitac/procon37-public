@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "capturedAtUtc": "2026-10-09T03:13:27.695953+00:00",
+  "auditType": "static read-only configuration/source audit; no formal run performed",
+  "candidate": "C012-isolated-cooperation-on",
+  "switchRecord": ".server/distributed/switches/20261009T120816-C012-isolated-cooperation-on",
+  "switchStatus": "ready",
+  "switchFinishedUnix": 1791515304.3806407,
+  "candidateSource": {
+    "fileCount": 34,
+    "aggregateSha256": "10acfa3bde81f1dddf1d80ed4ff2fbe0288395fc4eb6dd0923a410607ed8a541",
+    "eachFileMatchesManifest": true,
+    "files": {
+      "Cargo.lock": "680473abcd7458404d914148c368aa285d4a38b786b4177977a91ec86208b6da",
+      "Cargo.toml": "da196d978caee68350afcd73a240959fd89701d660b6c65dc8fdaabfb888907b",
+      "common/Cargo.toml": "aacfd3852bfa69b15cff7217c7f5bac52fbc0e9b49663af3c1aad0bb42484d4f",
+      "common/fixtures/arena/match-916.json": "7008196cd912926ab8790029ac1003e1a174a91fc6f3088332cf9abd561401e2",
+      "common/fixtures/arena/match-937.json": "7aa371cfe758f0fcc9edd6429e395dc57e5f1af63827d52fc1dd85edeea2dee2",
+      "common/fixtures/arena/match-941.json": "8168d083b044ee7eb5fd0d401f8f4470f42990ce8468934d5db84b6333bed8cf",
+      "common/fixtures/arena/pasted-16-01.json": "9e065b887faff5acb5dbc41b334a284bd41896ec3b7f362aff047d6bb1eb5622",
+      "common/fixtures/arena/pasted-16-02.json": "aa097fa2ef1536c4032c3547cad95bdadc40c44165bf3a599590feb0bbb9cb50",
+      "common/fixtures/arena/pasted-16-03.json": "d837b29d102c48e749368ebece013db610f5585db277ab8e9a3dbfc8942f0747",
+      "common/fixtures/arena/pasted-16-04.json": "740d0295e8a3ce023a31d0268c4c793171a2c850c0a75b0661af44b2e23ace05",
+      "common/fixtures/arena/pasted-24-01.json": "73e06d501144fb144f96dd257f095a1b9788bc0a42b74959135e50fc58e06488",
+      "common/fixtures/arena/pasted-24-02.json": "c86f8813a88ccf1c9410a720a6d087090fa27982d18caca0638fb212920936cc",
+      "common/fixtures/arena/pasted-24-03.json": "8c016ae2200b6a6ed0e95fb33a7f1370849c7cbeb539e806e11b6496cf0486f1",
+      "common/fixtures/arena/pasted-24-04.json": "93e99e1d08a9ce9ffabfb46ca8757f4cda1ed6f4f1146841745f4dcd82e09b7b",
+      "common/fixtures/arena/pasted-32-01.json": "b319229489edc829037a7edef2f3222eb603e7846074644fdfd5b58113012b50",
+      "common/fixtures/arena/pasted-32-02.json": "e338163d9dc9818572332ec98fbc7c9f0db35065cedc2e7a1e626ee2d30023d3",
+      "common/fixtures/arena/pasted-32-03.json": "b89e0290613e49710bd4630d76208ae0a5bf2af4229422e8ed9524a4eb48eeb3",
+      "common/fixtures/arena/pasted-32-04.json": "79bfa1ab4c7780a0252ec33fea058210e5b92b677d6688dcc84e51bf7d3efc3b",
+      "common/fixtures/arena/sources.json": "b8d42d8a5d7bb9b7b7f071d9f4e0fe0400f5011159e73e171bee1e6fa62718c6",
+      "common/src/engine.rs": "585e400d715f35da36b43e7c8d1edcb7d477bf00214986025dab340706d223ca",
+      "common/src/generator.rs": "8adff182497df2e7dead95f5a94e58cd982c4fab3b50b917af5ee67a3ee8abef",
+      "common/src/lib.rs": "524e7898caa8a92c3301e4c91f2d69737026f512608b5f87351308f9d93e6336",
+      "common/src/model.rs": "72ec763bb3aad8ebebace68ed5c3c86d48c3066df7e21797c8c3b10f380fc4e1",
+      "cross_elite.rs": "2ee188add1fdc805952e2242ab4b736e7cceddc192e1450986e979a4a6579764",
+      "isolated_tests.rs": "097b588f5e2d3599208d6d2e93204a38e876d37c8059e0805faf6754ef24878e",
+      "main.rs": "b4457bf4cef4e4a5790e0a684c3d18085dd67ec6c0428a33152bd12689a30e1d",
+      "official/sample_maps/sample_16.json": "15ba3fd41ca8a69a2e22f707092d23f569ca75350524c2a0ecf956cedcaf823a",
+      "official/sample_maps/sample_24.json": "4081cbca170ad09e291015c10b76224bc0d960b4bc3baa72d9d96752c112d9a5",
+      "official/sample_maps/sample_32.json": "3293a63681f7f248d39013bab903619968ba7832c0a5368162c508d5ec7fadaa",
+      "pool.rs": "2923414cb050660191c7b402720261c764062f2af96a51bc614ca9e58af34475",
+      "runtime.rs": "1be48dd911e1389231b3e3c54f6a467c7e1f22a7937916d9b0dc09d4753aef95",
+      "solver/planner.rs": "6ea875ef7a33e1956a583f3c112e403b6f4cd4d4b96ed1130481d0dff762c7c3",
+      "tests/network.rs": "04726c2be15384a4a0299f551482565863706da0d258c4662646f2844f816554",
+      "wire.rs": "ef7473493cbdd33041a2f45d4a22dc0d554d3f28f95f1f172f5d760d7dcfc3eb"
+    }
+  },
+  "candidateBinary": {
+    "path": "solver/distributed-candidates/c012-isolated-cooperation/target/release/distributed-solver",
+    "sha256": "574dd99a8ff0d20035acccca3f4e207ad2d7701308bc10374694137aa0f33016",
+    "bytes": 2047432,
+    "matchesValidationSwitchAndThreeRemoteAfterRecords": true
+  },
+  "inputRecordsSha256": {
+    ".server/distributed/switches/20261009T120816-C012-isolated-cooperation-on/switch.json": "54e72f3d533451b4aaed1059895eaa9dd25af5411edc87a70788a9fc341253c2",
+    ".server/distributed/switches/20261009T120816-C012-isolated-cooperation-on/planned-config.json": "f27bfc73d3404792ae16f42f3e8c86fc6d45cd34b56897278763ab7997e8d48e",
+    ".server/distributed/switches/20261009T120816-C012-isolated-cooperation-on/after.json": "86b55dce8cae55cf02ef45300d4574a1cbc4911b03e2cec68ff52e3d2fdda03d",
+    "solver/distributed-candidates/c012-isolated-cooperation/source-manifest.json": "9d575f217e9701c0150d41c254a3a1dba34695c087ffbbc996ec2ba3933af426",
+    "solver/distributed-candidates/c012-isolated-cooperation/validation.json": "ced8c3ab83563b0a0e656d49012012d3d4df96af24bef24f266d449eedfd00e7",
+    "solver/docs/distributed/resume-20261009/participation-start-C010-on-short-02.json": "f2becc7b66c3ababa28ecc50eca134487576af6cadff199281c22738be6ad950",
+    "solver/docs/distributed/resume-20261009/reconnected-inventory.json": "820f5cccb08f54129eed9a6a94dacbb268b89e52f970c2864985df1adec0ee1e",
+    "solver/docs/distributed/resume-20261009/local-restoration.json": "d2c1cc9e96d9ae2e096510e01b48bcfb6689aef9cd63dcebb5a341203b03ce24",
+    "solver/docs/distributed/resume-20261009/cpu-environment.json": "6f9ec0ce7a386c8e47cbb9042a42067802211518dc98e351f3a0431a59a3c95a"
+  },
+  "sourceFilesSha256": {
+    "solver/distributed-lab/manage.py": "13eb9fa455cea3070378234c88fffaee5a25b43bbe1cb688eb419dc5bdceb2ae",
+    "solver/distributed-lab/team_runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+    "solver/distributed-lab/switch.py": "1defa9c661c4ff14b8a4067fde362a9c7ab55252f328692843fb99cf9e575876",
+    "tester/server/src/main.rs": "65c25ba8df5f22def07192070070c112d1a2b31775ceffd1997db25a40bb4b8f",
+    "tester/server/src/runner.rs": "f505d86daa51d0f4b41d240e66c5f045fb00cf5c493647498afa0b23c52dc65d",
+    "tester/server/src/proxy.rs": "405055394eb47e32d311862c16535a1cb3fdc4fa9564b9cf32a1197564a057ca",
+    "tester/server-bridge/src/main.rs": "30332a9510a96c3bd26b24aeeedbf316349a35fb91c365af5dd22f153e961fe2",
+    "common/src/model.rs": "72ec763bb3aad8ebebace68ed5c3c86d48c3066df7e21797c8c3b10f380fc4e1",
+    "common/src/generator.rs": "8adff182497df2e7dead95f5a94e58cd982c4fab3b50b917af5ee67a3ee8abef",
+    "solver/distributed/solver/planner.rs": "11e043e33018dee34f41f295d6ae1500497b0bfc7c8c33d5b253a5621587461a",
+    "solver/distributed/runtime.rs": "a8ebea03ba5ef47dafe65305488bb2c60af8a1a7e9c6efaf4ae386dada045922"
+  },
+  "capturedActualLaunchers": {
+    "v1": {
+      "savedPath": ".server/distributed/switches/20261009T120816-C012-isolated-cooperation-on/v1-launcher",
+      "remotePath": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+      "text": "#!/bin/sh\nexec env -i PATH=/usr/bin:/bin PROCON37_G007_FUTURE_WEIGHT=0 PROCON37_G007_RESERVE_WEIGHT=15 PROCON37_DISTRIBUTED_TOKEN_FILE=/home/voidlinux-1/procon37-distributed-resume/20261009-D0/cluster.token taskset -c 0-31 /home/voidlinux-1/procon37-distributed-resume/20261009-D0/distributed-solver --mode coordinator --threads 32 --seed 0 --peers 192.168.0.22:39370/16/31,192.168.0.33:39370/32/46 --cross-elite on \"$@\"\n",
+      "sha256": "ebcd6ee7841830d20e4ceafeeea94ccd367558fa8401e39593c1ded75b029897",
+      "matchesInstallPlannedAndAfter": true,
+      "cpus": "0-31"
+    },
+    "v2": {
+      "savedPath": ".server/distributed/switches/20261009T120816-C012-isolated-cooperation-on/v2-launcher",
+      "remotePath": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/launcher",
+      "text": "#!/bin/sh\nexec env -i PATH=/usr/bin:/bin PROCON37_G007_FUTURE_WEIGHT=0 PROCON37_G007_RESERVE_WEIGHT=15 PROCON37_DISTRIBUTED_TOKEN_FILE=/home/voidlinux-2/procon37-distributed-resume/20261009-D0/cluster.token taskset -c 0-15 /home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver --mode worker --threads 16 --worker-offset 31 --listen 192.168.0.22:39370 --cross-elite on \"$@\"\n",
+      "sha256": "24da22f8f4542aa7ffd27f6859ca79e4bed5ef7749e8b129c74c46eb5afc90c4",
+      "matchesInstallPlannedAndAfter": true,
+      "cpus": "0-15"
+    },
+    "v3": {
+      "savedPath": ".server/distributed/switches/20261009T120816-C012-isolated-cooperation-on/v3-launcher",
+      "remotePath": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/launcher",
+      "text": "#!/bin/sh\nexec env -i PATH=/usr/bin:/bin PROCON37_G007_FUTURE_WEIGHT=0 PROCON37_G007_RESERVE_WEIGHT=15 PROCON37_DISTRIBUTED_TOKEN_FILE=/home/voidlinux-3/procon37-distributed-resume/20261009-D0/cluster.token taskset -c 0-31 /home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver --mode worker --threads 32 --worker-offset 46 --listen 192.168.0.33:39370 --cross-elite on \"$@\"\n",
+      "sha256": "994d0b9e7f8ca30386fd42a5c403269065e80c5ab7c3a0fbebc5ab80bdb7471c",
+      "matchesInstallPlannedAndAfter": true,
+      "cpus": "0-31"
+    },
+    "nomlab": {
+      "path": "/home/nomlab-ubuntu/procon37-distributed/launcher",
+      "sha256": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+      "text": "#!/bin/sh\nexport PROCON37_G007_FUTURE_WEIGHT=0\nexport PROCON37_G007_RESERVE_WEIGHT=15\nexec taskset -c 0-15 /home/nomlab-ubuntu/procon37-distributed/bin/distributed-solver --mode parallel --threads 16 --seed 0 \"$@\"\n",
+      "sourceRecord": "solver/docs/distributed/resume-20261009/participation-start-C010-on-short-02.json",
+      "matchesC012SwitchAfter": true,
+      "cpus": "0-15",
+      "note": "launcher bytes captured previously, independently bound to C012 switch-after by SHA; no fresh SSH read"
+    },
+    "generation6.sh": {
+      "path": ".server/distributed/launchers/generation6.sh",
+      "text": "#!/bin/sh\nBASE=$(CDPATH= cd -- \"$(dirname -- \"$0\")/..\" && pwd)\nexec env -i PATH=/usr/bin:/bin taskset -c 0 \"$BASE/bin/pool-solver-06\" \"$@\"\n",
+      "sha256": "34a9d5f3d7fa57b7977281d862f7559399b1338a59ec58324272f89b03d3d6f4",
+      "matchesC012FixedManifest": true
+    },
+    "generation8.sh": {
+      "path": ".server/distributed/launchers/generation8.sh",
+      "text": "#!/bin/sh\nBASE=$(CDPATH= cd -- \"$(dirname -- \"$0\")/..\" && pwd)\nexec env -i PATH=/usr/bin:/bin taskset -c 2 \"$BASE/bin/pool-solver-08\" \"$@\"\n",
+      "sha256": "0fbe822a7a8cce9cf8f893fd7c5c5b82a2a10d725ce7ab95d6f571ff6db049d7",
+      "matchesC012FixedManifest": true
+    }
+  },
+  "fixedIdentity": {
+    "localFiles": {
+      "target/release/server": "368ac7cb6334469a0a5735fcfded1d52875ffdfb1cb47ffbea7b03471e4638b0",
+      "tester/server/procon-server": "769e101cbc6b80cce7732dae1e10d911ed1e9efefd3b1f94b6381652aa7741c1",
+      ".server/distributed/bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+      ".server/distributed/bin/pool-solver-06": "055374eca5a4f89b4f6e01e77fb489bf9e0683720ad53b4895adf0704fb62a86",
+      ".server/distributed/bin/pool-solver-08": "a7588e406d40fb1aa76ed606ed2a910a0aee911468f040ef37453037f033c5a2",
+      ".server/distributed/launchers/generation6.sh": "34a9d5f3d7fa57b7977281d862f7559399b1338a59ec58324272f89b03d3d6f4",
+      ".server/distributed/launchers/generation8.sh": "0fbe822a7a8cce9cf8f893fd7c5c5b82a2a10d725ce7ab95d6f571ff6db049d7",
+      ".server/distributed/team2/resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+      ".server/distributed/team3/resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118"
+    },
+    "nomlabFiles": {
+      "bin/distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+      "launcher": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+      "resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+      "run.sh": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27"
+    },
+    "localProcesses": [
+      {
+        "matchArg": "/home/imak/work/procon37/.server/distributed/team2/resume-team-runner.py",
+        "cpus": "0"
+      },
+      {
+        "matchArg": "/home/imak/work/procon37/.server/distributed/team3/resume-team-runner.py",
+        "cpus": "2"
+      }
+    ],
+    "nomlabLaunch": [
+      "python3",
+      "/home/nomlab-ubuntu/procon37-distributed/resume-team-runner.py",
+      "--bridge",
+      "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+      "--solver",
+      "/home/nomlab-ubuntu/procon37-distributed/launcher",
+      "--server",
+      "http://192.168.0.81:11451",
+      "--team",
+      "1",
+      "--cpus",
+      "0-15"
+    ],
+    "v1Launch": [
+      "python3",
+      "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team-runner.py",
+      "--bridge",
+      "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+      "--solver",
+      "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+      "--server",
+      "http://192.168.0.81:11451",
+      "--team",
+      "0",
+      "--cpus",
+      "0-31"
+    ],
+    "allRegisteredLocalFileHashesMatch": true,
+    "allRemoteAfterHashesMatchPlanned": true,
+    "allFourTeamRunnerHashesMatchReadSource": true
+  },
+  "formalTimePath": [
+    {
+      "file": "solver/distributed-lab/manage.py",
+      "lines": "clean_environment, launch, main --short-ms",
+      "finding": "argparse --short-ms has no non-None default; omitted -> None. New stage required; new run-config writes timeLimitMs:null. Server command only appends --time-limit-ms when short_ms is not None. No --output-dir."
+    },
+    {
+      "file": "tester/server/src/main.rs",
+      "lines": "60-65,108",
+      "finding": "Loads supplied fresh --config; only explicit --time-limit-ms overrides time_limit_ms."
+    },
+    {
+      "file": "tester/server/src/runner.rs",
+      "lines": "145-154,294-331",
+      "finding": "None preserves generated/fixture daySeconds and uses format.parameters().4 as -kind-deadline (60/90/120sec). Same one problem/official server schedule applies all4 teams; shortened=false."
+    },
+    {
+      "file": "common/src/model.rs; common/src/generator.rs",
+      "lines": "model33-37; generator114-147",
+      "finding": "Selection first/semifinal/final60/90/120sec; samples/arena keep original daySeconds; procedural fallback60sec/day. No blanket replacement of arena schedules."
+    },
+    {
+      "file": "tester/server/src/proxy.rs",
+      "lines": "103-104",
+      "finding": "Shortened selection-deadline hint is enabled only if active.shortened. Official run uses normal path."
+    },
+    {
+      "file": "solver/distributed-lab/team_runner.py",
+      "lines": "environment and command",
+      "finding": "All4 captured runner hashes match source; PATH/LANG only; bridge args only server/token/solver; no --select-ms or --solver-arg budget options."
+    },
+    {
+      "file": "tester/server-bridge/src/main.rs",
+      "lines": "31,362-380,404-408,849-856,1088-1100",
+      "finding": "No supplied select override; official map-sized selection deadline and actual per-day endsAt. Requests pass remaining wall time minus normal500ms network margin, bounded by original daySeconds."
+    },
+    {
+      "file": "solver/distributed-candidates/c012-isolated-cooperation/runtime.rs; pool.rs",
+      "lines": "runtime173-181,375-388,545-561; pool226-230",
+      "finding": "Coordinator derives deadline from request.time_limit_ms; normal margin5% clamped250..1500ms, peer budget remaining minus150ms; worker accepts budget up to600000ms and uses it as deadline; pool computes actual remaining time. No fixed10sec test cap."
+    }
+  ],
+  "environmentAudit": {
+    "manageRemoved": "PROCON37_* plus SELECT_MS and TIME_LIMIT_MS",
+    "allTeamRunnerPassesOnly": [
+      "PATH",
+      "LANG"
+    ],
+    "voidLaunchers": "env -i; only PATH, FUTURE_WEIGHT=0, RESERVE_WEIGHT=15, token file path",
+    "localFixedLaunchers": "env -i PATH, taskset0 or2; no time or budget flags",
+    "nomlabLauncher": "does not clear itself but fixed runner clears first; only FUTURE_WEIGHT=0 and RESERVE_WEIGHT=15 added; taskset0-15 threads16",
+    "budgetOverrideFound": false
+  },
+  "algorithmBudgetNotTestOverride": {
+    "d0InheritedPlanBudget": "min(limit-110ms,limit*91/100), >=1ms; line1077 matches D0 exactly",
+    "d0InheritedPrimaryRolloutShare": "67% primary when rollout enabled; remainder forecasts with usual180ms margin",
+    "d0InheritedSelectionShare": "62% first phase when rollout enabled; remaining forecast with usual150ms margin",
+    "c012Specific": "receiver-only250ms check,1sec stall,1sec cooldown,750ms remaining reserve,100ms restart guard,25ms cooperative repair; these bound optional repair, not whole exploration",
+    "officialRunAction": "retain frozen algorithm coefficients; removing91% or changing repair thresholds would create a new unevaluated candidate; omit only test short-ms override",
+    "shortBenchModules": "C012 production Cargo/source has no GPU/compact microbench or C00697% setting"
+  },
+  "nomlabHardware": {
+    "model": "AMD Ryzen 9 5900HS with Radeon Graphics",
+    "physicalCores": 8,
+    "logicalCpus": 16,
+    "onlineCpus": "0-15",
+    "configuredThreads": 16,
+    "note": "Previously observed actual8C16T rather than initial requested16C32T; all16 actual CPUs used and fixed opponent unchanged. This audit did not re-query hardware."
+  },
+  "formalCommandTemplate": "taskset -c 1,3,5,7 python3 solver/distributed-lab/manage.py run C012-formal-01 --label 分散C012・隔離協調on・正式12件",
+  "beforeFormalAndAfterRunChecks": [
+    "Use newstage and omit --short-ms; actual generated command must omit --time-limit-ms/--output-dir and run-config timeLimitMs must be null",
+    "Verify current candidate/fixed/launcher hashes against this freeze; any change requires new audit and evaluation identity",
+    "12 seeds0..11 automatic3x4 formats, arenaMaps true, same4 teams; confirm all4 bridges schedule and actual request limits in full run",
+    "Check problem.json daySeconds and official server -kind-deadline60/90/120sec; same schedule allteams, remaining bridge limits can differ slightly due receipt time",
+    "Keep serverCPU1,3,5,7, localfixed0/2, VOID32/16/32 and actualNOM16 unchanged",
+    "Confirm fullrun all48AC, participation, termination and before/afterhashes; no outcome claimed by staticaudit"
+  ],
+  "limitations": [
+    "No remote connection, process change, build, benchmark or C012 evaluation-result read during this audit. Actual remote bytes are bound through recorded switch-after hashes, not a fresh measurement.",
+    "Static source/binary identity checks do not establish actual fullrun runtime or successful deadlines; fullrun command/problem/bridge trace must be recorded.",
+    "Fixed opponents are black boxes; only launch wrappers, public protocol, stored binary hashes and frozen configuration were inspected, not their implementation.",
+    "No binary reverse engineering or protected-path access. Official time means shared server schedule; bridge transport and solver algorithm safety margins remain by design."
+  ]
+}

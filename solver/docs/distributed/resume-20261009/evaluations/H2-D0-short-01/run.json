@@ -1,0 +1,831 @@
+{
+  "schemaVersion": 3,
+  "id": "1791557693555197384-34655",
+  "status": "completed",
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "分散D0・再開後Ryzen5800H環境の基準1回目・固定4チーム・短縮12件・10秒",
+    "players": 4,
+    "teamNames": [
+      "分散D0",
+      "固定並列",
+      "固定第6世代",
+      "固定第8世代"
+    ],
+    "timeLimitMs": 10000,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "verdict": "AC",
+  "total": 12,
+  "completed": 12,
+  "cases": [
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "分散D0",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 56,
+            "udon": 68
+          },
+          "status": "AC",
+          "answerTimeMs": 42436,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "固定並列",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 57,
+            "udon": 67
+          },
+          "status": "AC",
+          "answerTimeMs": 44431,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "固定第6世代",
+          "rank": 4,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 54,
+            "udon": 61
+          },
+          "status": "AC",
+          "answerTimeMs": 42797,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "固定第8世代",
+          "rank": 3,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 54,
+            "udon": 71
+          },
+          "status": "AC",
+          "answerTimeMs": 42901,
+          "warnings": 0
+        }
+      ],
+      "seed": "0",
+      "format": "first",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 12,
+        "dailyBrands": 56,
+        "udon": 68
+      },
+      "answerTimeMs": 42436,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "分散D0",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 123
+          },
+          "status": "AC",
+          "answerTimeMs": 42442,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "固定並列",
+          "rank": 4,
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 119
+          },
+          "status": "AC",
+          "answerTimeMs": 44474,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "固定第6世代",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 124
+          },
+          "status": "AC",
+          "answerTimeMs": 42805,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "固定第8世代",
+          "rank": 3,
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 120
+          },
+          "status": "AC",
+          "answerTimeMs": 42914,
+          "warnings": 0
+        }
+      ],
+      "seed": "1",
+      "format": "semifinal",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 18,
+        "dailyBrands": 90,
+        "udon": 123
+      },
+      "answerTimeMs": 42442,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "分散D0",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 210
+          },
+          "status": "AC",
+          "answerTimeMs": 42645,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "固定並列",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 205
+          },
+          "status": "AC",
+          "answerTimeMs": 44681,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "固定第6世代",
+          "rank": 4,
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 198
+          },
+          "status": "AC",
+          "answerTimeMs": 42793,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "固定第8世代",
+          "rank": 3,
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 199
+          },
+          "status": "AC",
+          "answerTimeMs": 42968,
+          "warnings": 0
+        }
+      ],
+      "seed": "2",
+      "format": "final",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 24,
+        "dailyBrands": 120,
+        "udon": 210
+      },
+      "answerTimeMs": 42645,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "分散D0",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 13,
+            "dailyBrands": 130,
+            "udon": 324
+          },
+          "status": "AC",
+          "answerTimeMs": 85464,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "固定並列",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 13,
+            "dailyBrands": 130,
+            "udon": 324
+          },
+          "status": "AC",
+          "answerTimeMs": 89513,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "固定第6世代",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 13,
+            "dailyBrands": 130,
+            "udon": 327
+          },
+          "status": "AC",
+          "answerTimeMs": 85626,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "固定第8世代",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 13,
+            "dailyBrands": 130,
+            "udon": 324
+          },
+          "status": "AC",
+          "answerTimeMs": 85943,
+          "warnings": 0
+        }
+      ],
+      "seed": "3",
+      "format": "first",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 13,
+        "dailyBrands": 130,
+        "udon": 324
+      },
+      "answerTimeMs": 85464,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "分散D0",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 19,
+            "dailyBrands": 95,
+            "udon": 130
+          },
+          "status": "AC",
+          "answerTimeMs": 42444,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "固定並列",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 19,
+            "dailyBrands": 95,
+            "udon": 131
+          },
+          "status": "AC",
+          "answerTimeMs": 44487,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "固定第6世代",
+          "rank": 3,
+          "score": {
+            "uniqueBrands": 19,
+            "dailyBrands": 95,
+            "udon": 129
+          },
+          "status": "AC",
+          "answerTimeMs": 42806,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "固定第8世代",
+          "rank": 4,
+          "score": {
+            "uniqueBrands": 19,
+            "dailyBrands": 95,
+            "udon": 125
+          },
+          "status": "AC",
+          "answerTimeMs": 42944,
+          "warnings": 0
+        }
+      ],
+      "seed": "4",
+      "format": "semifinal",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 19,
+        "dailyBrands": 95,
+        "udon": 130
+      },
+      "answerTimeMs": 42444,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "分散D0",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 25,
+            "dailyBrands": 150,
+            "udon": 335
+          },
+          "status": "AC",
+          "answerTimeMs": 51223,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "固定並列",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 25,
+            "dailyBrands": 150,
+            "udon": 332
+          },
+          "status": "AC",
+          "answerTimeMs": 53662,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "固定第6世代",
+          "rank": 4,
+          "score": {
+            "uniqueBrands": 25,
+            "dailyBrands": 150,
+            "udon": 293
+          },
+          "status": "AC",
+          "answerTimeMs": 51345,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "固定第8世代",
+          "rank": 3,
+          "score": {
+            "uniqueBrands": 25,
+            "dailyBrands": 150,
+            "udon": 317
+          },
+          "status": "AC",
+          "answerTimeMs": 51501,
+          "warnings": 0
+        }
+      ],
+      "seed": "5",
+      "format": "final",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 25,
+        "dailyBrands": 150,
+        "udon": 335
+      },
+      "answerTimeMs": 51223,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "分散D0",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 11,
+            "dailyBrands": 88,
+            "udon": 140
+          },
+          "status": "AC",
+          "answerTimeMs": 68204,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "固定並列",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 11,
+            "dailyBrands": 88,
+            "udon": 142
+          },
+          "status": "AC",
+          "answerTimeMs": 71465,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "固定第6世代",
+          "rank": 3,
+          "score": {
+            "uniqueBrands": 11,
+            "dailyBrands": 88,
+            "udon": 137
+          },
+          "status": "AC",
+          "answerTimeMs": 68581,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "固定第8世代",
+          "rank": 4,
+          "score": {
+            "uniqueBrands": 11,
+            "dailyBrands": 88,
+            "udon": 135
+          },
+          "status": "AC",
+          "answerTimeMs": 68699,
+          "warnings": 0
+        }
+      ],
+      "seed": "6",
+      "format": "first",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 11,
+        "dailyBrands": 88,
+        "udon": 140
+      },
+      "answerTimeMs": 68204,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "分散D0",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 16,
+            "dailyBrands": 80,
+            "udon": 265
+          },
+          "status": "AC",
+          "answerTimeMs": 42542,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "固定並列",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 16,
+            "dailyBrands": 80,
+            "udon": 265
+          },
+          "status": "AC",
+          "answerTimeMs": 44568,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "固定第6世代",
+          "rank": 4,
+          "score": {
+            "uniqueBrands": 16,
+            "dailyBrands": 80,
+            "udon": 261
+          },
+          "status": "AC",
+          "answerTimeMs": 42693,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "固定第8世代",
+          "rank": 3,
+          "score": {
+            "uniqueBrands": 16,
+            "dailyBrands": 80,
+            "udon": 264
+          },
+          "status": "AC",
+          "answerTimeMs": 43004,
+          "warnings": 0
+        }
+      ],
+      "seed": "7",
+      "format": "semifinal",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 16,
+        "dailyBrands": 80,
+        "udon": 265
+      },
+      "answerTimeMs": 42542,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "分散D0",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 28,
+            "dailyBrands": 140,
+            "udon": 553
+          },
+          "status": "AC",
+          "answerTimeMs": 42576,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "固定並列",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 28,
+            "dailyBrands": 140,
+            "udon": 549
+          },
+          "status": "AC",
+          "answerTimeMs": 44633,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "固定第6世代",
+          "rank": 4,
+          "score": {
+            "uniqueBrands": 28,
+            "dailyBrands": 140,
+            "udon": 539
+          },
+          "status": "AC",
+          "answerTimeMs": 42916,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "固定第8世代",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 28,
+            "dailyBrands": 140,
+            "udon": 549
+          },
+          "status": "AC",
+          "answerTimeMs": 42885,
+          "warnings": 0
+        }
+      ],
+      "seed": "8",
+      "format": "final",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 28,
+        "dailyBrands": 140,
+        "udon": 553
+      },
+      "answerTimeMs": 42576,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "分散D0",
+          "rank": 4,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 60,
+            "udon": 97
+          },
+          "status": "AC",
+          "answerTimeMs": 42583,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "固定並列",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 60,
+            "udon": 100
+          },
+          "status": "AC",
+          "answerTimeMs": 44619,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "固定第6世代",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 60,
+            "udon": 100
+          },
+          "status": "AC",
+          "answerTimeMs": 42741,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "固定第8世代",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 60,
+            "udon": 100
+          },
+          "status": "AC",
+          "answerTimeMs": 42915,
+          "warnings": 0
+        }
+      ],
+      "seed": "9",
+      "format": "first",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 12,
+        "dailyBrands": 60,
+        "udon": 97
+      },
+      "answerTimeMs": 42583,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "分散D0",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 16,
+            "dailyBrands": 128,
+            "udon": 362
+          },
+          "status": "AC",
+          "answerTimeMs": 68388,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "固定並列",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 16,
+            "dailyBrands": 128,
+            "udon": 360
+          },
+          "status": "AC",
+          "answerTimeMs": 71446,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "固定第6世代",
+          "rank": 4,
+          "score": {
+            "uniqueBrands": 16,
+            "dailyBrands": 128,
+            "udon": 355
+          },
+          "status": "AC",
+          "answerTimeMs": 68567,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "固定第8世代",
+          "rank": 3,
+          "score": {
+            "uniqueBrands": 16,
+            "dailyBrands": 128,
+            "udon": 357
+          },
+          "status": "AC",
+          "answerTimeMs": 68694,
+          "warnings": 0
+        }
+      ],
+      "seed": "10",
+      "format": "semifinal",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 16,
+        "dailyBrands": 128,
+        "udon": 362
+      },
+      "answerTimeMs": 68388,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "分散D0",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 28,
+            "dailyBrands": 140,
+            "udon": 354
+          },
+          "status": "AC",
+          "answerTimeMs": 42736,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "固定並列",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 28,
+            "dailyBrands": 140,
+            "udon": 352
+          },
+          "status": "AC",
+          "answerTimeMs": 45558,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "固定第6世代",
+          "rank": 3,
+          "score": {
+            "uniqueBrands": 28,
+            "dailyBrands": 140,
+            "udon": 343
+          },
+          "status": "AC",
+          "answerTimeMs": 43052,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "固定第8世代",
+          "rank": 4,
+          "score": {
+            "uniqueBrands": 28,
+            "dailyBrands": 140,
+            "udon": 339
+          },
+          "status": "AC",
+          "answerTimeMs": 43026,
+          "warnings": 0
+        }
+      ],
+      "seed": "11",
+      "format": "final",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 28,
+        "dailyBrands": 140,
+        "udon": 354
+      },
+      "answerTimeMs": 42736,
+      "warnings": 0,
+      "error": null
+    }
+  ],
+  "error": null
+}

@@ -1,0 +1,543 @@
+{
+  "hostname": "VOIDLINUX-3",
+  "capturedAtUtc": "2026-10-09T02:47:15.981598+00:00",
+  "directory": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0",
+  "log": {
+    "path": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/resume-team.log",
+    "capturedStartByte": 20957570,
+    "capturedEndByte": 23724072,
+    "previousCapturedRangeSha256Verified": true,
+    "previousRangeStartByte": 18336185,
+    "previousRangeEndByte": 20957570,
+    "previousRangeSha256": "674764224afe018eb171a1468657a0681dd50f3ca2e17b9e91730c63c7eeeaef",
+    "sourceSizeAtOpen": 23724072,
+    "inode": 42339654,
+    "device": 66306,
+    "mtimeNsAtOpen": 1791513960591268250,
+    "sha256OfCapturedByteRange": "b5b863dbff1076d7c7079afbdde55510556719197bfbf836df6035c8347ec9eb",
+    "totalLines": 15145,
+    "diagnosticLines": [
+      "dist mode=worker listen=192.168.0.33:39370 total_threads=32 search_threads=31 offset=46 pid=1943",
+      "dist accepted_peer=192.168.0.11:58266",
+      "dist worker request=1 job=1 phase=select input_digest=9b0f11c8123097b3 started=31 budget_ms=8813",
+      "dist worker request=1 completed=31/31 selected_worker=59 elapsed_ms=8389 rx_bytes=1540 tx_bytes=58",
+      "dist worker request=2 job=2 phase=plan input_digest=ad1d2da8b11d88ee started=31 budget_ms=8772",
+      "dist worker request=2 completed=31/31 selected_worker=51 elapsed_ms=8493 rx_bytes=9743 tx_bytes=4686",
+      "dist worker request=3 job=3 phase=plan input_digest=aa3a7c18dc052501 started=31 budget_ms=8739",
+      "dist worker request=3 completed=31/31 selected_worker=47 elapsed_ms=8460 rx_bytes=23297 tx_bytes=14833",
+      "dist worker request=4 job=4 phase=plan input_digest=609ec1c43348a331 started=31 budget_ms=8733",
+      "dist worker request=4 completed=31/31 selected_worker=54 elapsed_ms=8456 rx_bytes=38407 tx_bytes=26527",
+      "dist worker request=5 job=5 phase=plan input_digest=e62d15d4f3920025 started=31 budget_ms=8738",
+      "dist worker request=5 completed=31/31 selected_worker=61 elapsed_ms=8460 rx_bytes=54303 tx_bytes=38980",
+      "dist worker request=6 job=6 phase=plan input_digest=aaa6c4af47c0b124 started=31 budget_ms=8736",
+      "dist worker request=6 completed=31/31 selected_worker=46 elapsed_ms=8004 rx_bytes=70294 tx_bytes=51533",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:48592",
+      "dist worker request=1 job=7 phase=select input_digest=4c51c769bcea8577 started=31 budget_ms=8090",
+      "dist worker request=1 completed=31/31 selected_worker=56 elapsed_ms=7726 rx_bytes=2477 tx_bytes=58",
+      "dist worker request=2 job=8 phase=plan input_digest=f36791df586c75af started=31 budget_ms=8682",
+      "dist worker request=2 completed=31/31 selected_worker=51 elapsed_ms=8298 rx_bytes=18263 tx_bytes=8944",
+      "dist worker request=3 job=9 phase=plan input_digest=bc589154676f4716 started=31 budget_ms=8839",
+      "dist worker request=3 completed=31/31 selected_worker=46 elapsed_ms=8448 rx_bytes=45551 tx_bytes=29643",
+      "dist worker request=4 job=10 phase=plan input_digest=6a7f5d8db994d27c started=31 budget_ms=8850",
+      "dist worker request=4 completed=31/31 selected_worker=70 elapsed_ms=8459 rx_bytes=75111 tx_bytes=52615",
+      "dist worker request=5 job=11 phase=plan input_digest=d0d00e82b2b11511 started=31 budget_ms=8857",
+      "dist worker request=5 completed=31/31 selected_worker=53 elapsed_ms=8465 rx_bytes=106992 tx_bytes=77884",
+      "dist worker request=6 job=12 phase=plan input_digest=b0712b82e87f63e1 started=31 budget_ms=8858",
+      "dist worker request=6 completed=31/31 selected_worker=48 elapsed_ms=8143 rx_bytes=139293 tx_bytes=103583",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:47470",
+      "dist worker request=1 job=13 phase=select input_digest=b2617693af20771a started=31 budget_ms=7873",
+      "dist worker request=1 completed=31/31 selected_worker=52 elapsed_ms=7611 rx_bytes=3675 tx_bytes=58",
+      "dist worker request=2 job=14 phase=plan input_digest=1bdc69831a7a24a4 started=31 budget_ms=8815",
+      "dist worker request=2 completed=31/31 selected_worker=64 elapsed_ms=8526 rx_bytes=26814 tx_bytes=13185",
+      "dist worker request=3 job=15 phase=plan input_digest=beba90bcab5fb1cd started=31 budget_ms=8790",
+      "dist worker request=3 completed=31/31 selected_worker=69 elapsed_ms=8497 rx_bytes=69054 tx_bytes=46037",
+      "dist worker request=4 job=16 phase=plan input_digest=a6ebf603f5d484a0 started=31 budget_ms=8785",
+      "dist worker request=4 completed=31/31 selected_worker=64 elapsed_ms=8494 rx_bytes=116632 tx_bytes=84254",
+      "dist worker request=5 job=17 phase=plan input_digest=0f31770fe12d8eb2 started=31 budget_ms=8783",
+      "dist worker request=5 completed=31/31 selected_worker=46 elapsed_ms=8492 rx_bytes=168360 tx_bytes=126576",
+      "dist worker request=6 job=18 phase=plan input_digest=dfbd629d78baa3cd started=31 budget_ms=8790",
+      "dist worker request=6 completed=31/31 selected_worker=55 elapsed_ms=8168 rx_bytes=221011 tx_bytes=169832",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:52744",
+      "dist worker request=1 job=19 phase=select input_digest=68c3d7477ed14d28 started=31 budget_ms=8063",
+      "dist worker request=1 completed=31/31 selected_worker=51 elapsed_ms=7665 rx_bytes=1580 tx_bytes=58",
+      "dist worker request=2 job=20 phase=plan input_digest=5f73416ae4a58d72 started=31 budget_ms=8847",
+      "dist worker request=2 completed=31/31 selected_worker=57 elapsed_ms=8563 rx_bytes=9262 tx_bytes=4422",
+      "dist worker request=3 job=21 phase=plan input_digest=e4a36706a77d0c54 started=31 budget_ms=8747",
+      "dist worker request=3 completed=31/31 selected_worker=52 elapsed_ms=8467 rx_bytes=21305 tx_bytes=13612",
+      "dist worker request=4 job=22 phase=plan input_digest=4b8b4b21a4436b46 started=31 budget_ms=8745",
+      "dist worker request=4 completed=31/31 selected_worker=49 elapsed_ms=8465 rx_bytes=34478 tx_bytes=23805",
+      "dist worker request=5 job=23 phase=plan input_digest=0e5f5def34857e92 started=31 budget_ms=8740",
+      "dist worker request=5 completed=31/31 selected_worker=49 elapsed_ms=8460 rx_bytes=48201 tx_bytes=34520",
+      "dist worker request=6 job=24 phase=plan input_digest=d97b057c62c20ce5 started=31 budget_ms=8738",
+      "dist worker request=6 completed=31/31 selected_worker=55 elapsed_ms=8457 rx_bytes=61824 tx_bytes=45244",
+      "dist worker request=7 job=25 phase=plan input_digest=bf4179cc0be172e0 started=31 budget_ms=8740",
+      "dist worker request=7 completed=31/31 selected_worker=56 elapsed_ms=8459 rx_bytes=75146 tx_bytes=55441",
+      "dist worker request=8 job=26 phase=plan input_digest=2819992c8bad2292 started=31 budget_ms=8737",
+      "dist worker request=8 completed=31/31 selected_worker=53 elapsed_ms=8456 rx_bytes=88753 tx_bytes=66008",
+      "dist worker request=9 job=27 phase=plan input_digest=49ec125af406aaa9 started=31 budget_ms=8740",
+      "dist worker request=9 completed=31/31 selected_worker=64 elapsed_ms=8462 rx_bytes=102301 tx_bytes=76698",
+      "dist worker request=10 job=28 phase=plan input_digest=9b976d54ba02fdf6 started=31 budget_ms=8741",
+      "dist worker request=10 completed=31/31 selected_worker=51 elapsed_ms=8460 rx_bytes=115807 tx_bytes=87256",
+      "dist worker request=11 job=29 phase=plan input_digest=2f8f472a7000fa85 started=31 budget_ms=8745",
+      "dist worker request=11 completed=31/31 selected_worker=68 elapsed_ms=8015 rx_bytes=129987 tx_bytes=98450",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:57704",
+      "dist worker request=1 job=30 phase=select input_digest=4d87aae2e63bf4fb started=31 budget_ms=8020",
+      "dist worker request=1 completed=31/31 selected_worker=50 elapsed_ms=7655 rx_bytes=2477 tx_bytes=58",
+      "dist worker request=2 job=31 phase=plan input_digest=ef588634d6e0da71 started=31 budget_ms=8759",
+      "dist worker request=2 completed=31/31 selected_worker=47 elapsed_ms=8376 rx_bytes=16360 tx_bytes=7954",
+      "dist worker request=3 job=32 phase=plan input_digest=3ca9799e9eeca22b started=31 budget_ms=8850",
+      "dist worker request=3 completed=31/31 selected_worker=56 elapsed_ms=8463 rx_bytes=41428 tx_bytes=27317",
+      "dist worker request=4 job=33 phase=plan input_digest=96a639da5b56cb3d started=31 budget_ms=8856",
+      "dist worker request=4 completed=31/31 selected_worker=55 elapsed_ms=8469 rx_bytes=68173 tx_bytes=48353",
+      "dist worker request=5 job=34 phase=plan input_digest=f36ec1db8c4c2554 started=31 budget_ms=8862",
+      "dist worker request=5 completed=31/31 selected_worker=63 elapsed_ms=8475 rx_bytes=96908 tx_bytes=71358",
+      "dist worker request=6 job=35 phase=plan input_digest=7d6fc3f56862dbf0 started=31 budget_ms=8854",
+      "dist worker request=6 completed=31/31 selected_worker=54 elapsed_ms=8144 rx_bytes=126059 tx_bytes=94751",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:51194",
+      "dist worker request=1 job=36 phase=select input_digest=4519af74b157cb22 started=31 budget_ms=8261",
+      "dist worker request=1 completed=31/31 selected_worker=63 elapsed_ms=7976 rx_bytes=3681 tx_bytes=58",
+      "dist worker request=2 job=37 phase=plan input_digest=4ea01258dd1f5b14 started=31 budget_ms=8853",
+      "dist worker request=2 completed=31/31 selected_worker=47 elapsed_ms=8553 rx_bytes=29144 tx_bytes=14312",
+      "dist worker request=3 job=38 phase=plan input_digest=40a0ed8415c50518 started=31 budget_ms=8796",
+      "dist worker request=3 completed=31/31 selected_worker=71 elapsed_ms=8497 rx_bytes=75400 tx_bytes=49872",
+      "dist worker request=4 job=39 phase=plan input_digest=a2f247b8753b03e9 started=31 budget_ms=8784",
+      "dist worker request=4 completed=31/31 selected_worker=76 elapsed_ms=8487 rx_bytes=124855 tx_bytes=88574",
+      "dist worker request=5 job=40 phase=plan input_digest=c63c9abf3be866f5 started=31 budget_ms=8795",
+      "dist worker request=5 completed=31/31 selected_worker=73 elapsed_ms=8494 rx_bytes=176690 tx_bytes=129717",
+      "dist worker request=6 job=41 phase=plan input_digest=d97caf83d2aabaca started=31 budget_ms=8792",
+      "dist worker request=6 completed=31/31 selected_worker=69 elapsed_ms=8496 rx_bytes=228288 tx_bytes=170574",
+      "dist worker request=7 job=42 phase=plan input_digest=cf89479d4a253cc3 started=31 budget_ms=8783",
+      "dist worker request=7 completed=31/31 selected_worker=47 elapsed_ms=8153 rx_bytes=280007 tx_bytes=211633",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:53720",
+      "dist worker request=1 job=43 phase=select input_digest=3292fb1be23396a7 started=31 budget_ms=8003",
+      "dist worker request=1 completed=31/31 selected_worker=65 elapsed_ms=7597 rx_bytes=1560 tx_bytes=58",
+      "dist worker request=2 job=44 phase=plan input_digest=4967c862ce613881 started=31 budget_ms=8726",
+      "dist worker request=2 completed=31/31 selected_worker=57 elapsed_ms=8434 rx_bytes=9307 tx_bytes=4402",
+      "dist worker request=3 job=45 phase=plan input_digest=2ad2f6848e80e510 started=31 budget_ms=8746",
+      "dist worker request=3 completed=31/31 selected_worker=74 elapsed_ms=8454 rx_bytes=22437 tx_bytes=14281",
+      "dist worker request=4 job=46 phase=plan input_digest=0fc824efc4260a0d started=31 budget_ms=8749",
+      "dist worker request=4 completed=31/31 selected_worker=73 elapsed_ms=8457 rx_bytes=36217 tx_bytes=24806",
+      "dist worker request=5 job=47 phase=plan input_digest=00c5bcf1e47d79c5 started=31 budget_ms=8747",
+      "dist worker request=5 completed=31/31 selected_worker=50 elapsed_ms=8456 rx_bytes=50914 tx_bytes=36254",
+      "dist worker request=6 job=48 phase=plan input_digest=b21991431abaa8d1 started=31 budget_ms=8749",
+      "dist worker request=6 completed=31/31 selected_worker=67 elapsed_ms=8458 rx_bytes=65678 tx_bytes=47797",
+      "dist worker request=7 job=49 phase=plan input_digest=deeded8a1bdfe5b2 started=31 budget_ms=8744",
+      "dist worker request=7 completed=31/31 selected_worker=57 elapsed_ms=8453 rx_bytes=80414 tx_bytes=59293",
+      "dist worker request=8 job=50 phase=plan input_digest=499176901b5b704d started=31 budget_ms=8746",
+      "dist worker request=8 completed=31/31 selected_worker=57 elapsed_ms=8455 rx_bytes=95077 tx_bytes=70739",
+      "dist worker request=9 job=51 phase=plan input_digest=e9005ab2f4c669a8 started=31 budget_ms=8751",
+      "dist worker request=9 completed=31/31 selected_worker=46 elapsed_ms=8007 rx_bytes=109871 tx_bytes=82358",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:49120",
+      "dist worker request=1 job=52 phase=select input_digest=58ff21aec032b4b3 started=31 budget_ms=7921",
+      "dist worker request=1 completed=31/31 selected_worker=49 elapsed_ms=7566 rx_bytes=2481 tx_bytes=58",
+      "dist worker request=2 job=53 phase=plan input_digest=14ba77ae3cd196ec started=31 budget_ms=8852",
+      "dist worker request=2 completed=31/31 selected_worker=71 elapsed_ms=8470 rx_bytes=16776 tx_bytes=8192",
+      "dist worker request=3 job=54 phase=plan input_digest=5a0c9e87f430d1a4 started=31 budget_ms=8854",
+      "dist worker request=3 completed=31/31 selected_worker=49 elapsed_ms=8470 rx_bytes=40555 tx_bytes=26546",
+      "dist worker request=4 job=55 phase=plan input_digest=90d7b40106e8f575 started=31 budget_ms=8852",
+      "dist worker request=4 completed=31/31 selected_worker=58 elapsed_ms=8468 rx_bytes=66442 tx_bytes=47070",
+      "dist worker request=5 job=56 phase=plan input_digest=37c49bc58090ec8c started=31 budget_ms=8851",
+      "dist worker request=5 completed=31/31 selected_worker=71 elapsed_ms=8472 rx_bytes=93973 tx_bytes=68896",
+      "dist worker request=6 job=57 phase=plan input_digest=aab5e67795592ebf started=31 budget_ms=8850",
+      "dist worker request=6 completed=31/31 selected_worker=46 elapsed_ms=8139 rx_bytes=121438 tx_bytes=90516",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:33398",
+      "dist worker request=1 job=58 phase=select input_digest=c973e38bb18a4355 started=31 budget_ms=8139",
+      "dist worker request=1 completed=31/31 selected_worker=50 elapsed_ms=7866 rx_bytes=3681 tx_bytes=58",
+      "dist worker request=2 job=59 phase=plan input_digest=ab59f65aa5f9c6fb started=31 budget_ms=8767",
+      "dist worker request=2 completed=31/31 selected_worker=58 elapsed_ms=8480 rx_bytes=27221 tx_bytes=13489",
+      "dist worker request=3 job=60 phase=plan input_digest=0a94c09831c9ea64 started=31 budget_ms=8782",
+      "dist worker request=3 completed=31/31 selected_worker=50 elapsed_ms=8492 rx_bytes=70052 tx_bytes=47997",
+      "dist worker request=4 job=61 phase=plan input_digest=1bb2b6fa31649f6c started=31 budget_ms=8785",
+      "dist worker request=4 completed=31/31 selected_worker=51 elapsed_ms=8495 rx_bytes=116469 tx_bytes=85452",
+      "dist worker request=5 job=62 phase=plan input_digest=66e17dfc826963d3 started=31 budget_ms=8791",
+      "dist worker request=5 completed=31/31 selected_worker=66 elapsed_ms=8500 rx_bytes=165060 tx_bytes=125055",
+      "dist worker request=6 job=63 phase=plan input_digest=c46ca6e3abf1ff9a started=31 budget_ms=8787",
+      "dist worker request=6 completed=31/31 selected_worker=75 elapsed_ms=8172 rx_bytes=214387 tx_bytes=165619",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:53780",
+      "dist worker request=1 job=64 phase=select input_digest=f2761b5a2f606ba6 started=31 budget_ms=7872",
+      "dist worker request=1 completed=31/31 selected_worker=48 elapsed_ms=7478 rx_bytes=1545 tx_bytes=58",
+      "dist worker request=2 job=65 phase=plan input_digest=9a5060f8258a511b started=31 budget_ms=8850",
+      "dist worker request=2 completed=31/31 selected_worker=58 elapsed_ms=8562 rx_bytes=8928 tx_bytes=4237",
+      "dist worker request=3 job=66 phase=plan input_digest=666c95e1f97c5ea0 started=31 budget_ms=8752",
+      "dist worker request=3 completed=31/31 selected_worker=73 elapsed_ms=8467 rx_bytes=21788 tx_bytes=14051",
+      "dist worker request=4 job=67 phase=plan input_digest=ddb298b8b7ee705a started=31 budget_ms=8742",
+      "dist worker request=4 completed=31/31 selected_worker=52 elapsed_ms=8458 rx_bytes=35043 tx_bytes=24232",
+      "dist worker request=5 job=68 phase=plan input_digest=1307a481716e4a73 started=31 budget_ms=8748",
+      "dist worker request=5 completed=31/31 selected_worker=63 elapsed_ms=8463 rx_bytes=48851 tx_bytes=34983",
+      "dist worker request=6 job=69 phase=plan input_digest=1ec5e982bcf7b9c6 started=31 budget_ms=8745",
+      "dist worker request=6 completed=31/31 selected_worker=46 elapsed_ms=8008 rx_bytes=62777 tx_bytes=45837",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:55148",
+      "dist worker request=1 job=70 phase=select input_digest=b1f533d13c4268f1 started=31 budget_ms=8135",
+      "dist worker request=1 completed=31/31 selected_worker=53 elapsed_ms=7766 rx_bytes=2501 tx_bytes=58",
+      "dist worker request=2 job=71 phase=plan input_digest=80231eaa3306e770 started=31 budget_ms=8847",
+      "dist worker request=2 completed=31/31 selected_worker=60 elapsed_ms=8459 rx_bytes=17439 tx_bytes=8563",
+      "dist worker request=3 job=72 phase=plan input_digest=abcf7061d1cde9d9 started=31 budget_ms=8856",
+      "dist worker request=3 completed=31/31 selected_worker=52 elapsed_ms=8468 rx_bytes=43914 tx_bytes=29121",
+      "dist worker request=4 job=73 phase=plan input_digest=4fc6c21146117d5e started=31 budget_ms=8855",
+      "dist worker request=4 completed=31/31 selected_worker=71 elapsed_ms=8469 rx_bytes=72255 tx_bytes=51547",
+      "dist worker request=5 job=74 phase=plan input_digest=7d3d849751971caf started=31 budget_ms=8855",
+      "dist worker request=5 completed=31/31 selected_worker=51 elapsed_ms=8467 rx_bytes=102021 tx_bytes=75403",
+      "dist worker request=6 job=75 phase=plan input_digest=3df6203859b9a303 started=31 budget_ms=8850",
+      "dist worker request=6 completed=31/31 selected_worker=59 elapsed_ms=8462 rx_bytes=132312 tx_bytes=99622",
+      "dist worker request=7 job=76 phase=plan input_digest=443883330be0bad2 started=31 budget_ms=8855",
+      "dist worker request=7 completed=31/31 selected_worker=70 elapsed_ms=8469 rx_bytes=162444 tx_bytes=123735",
+      "dist worker request=8 job=77 phase=plan input_digest=ad18d1cda59ffccd started=31 budget_ms=8845",
+      "dist worker request=8 completed=31/31 selected_worker=60 elapsed_ms=8457 rx_bytes=192215 tx_bytes=147502",
+      "dist worker request=9 job=78 phase=plan input_digest=eafd813f31ac5fd2 started=31 budget_ms=8853",
+      "dist worker request=9 completed=31/31 selected_worker=56 elapsed_ms=8136 rx_bytes=222499 tx_bytes=171784",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:55346",
+      "dist worker request=1 job=79 phase=select input_digest=f9ee3a0ac6b16910 started=31 budget_ms=8024",
+      "dist worker request=1 completed=31/31 selected_worker=56 elapsed_ms=7818 rx_bytes=3675 tx_bytes=58",
+      "dist worker request=2 job=80 phase=plan input_digest=ddc0bef5c27bce70 started=31 budget_ms=8842",
+      "dist worker request=2 completed=31/31 selected_worker=64 elapsed_ms=8613 rx_bytes=28236 tx_bytes=14068",
+      "dist worker request=3 job=81 phase=plan input_digest=5f730faaaace6bfd started=31 budget_ms=8754",
+      "dist worker request=3 completed=31/31 selected_worker=73 elapsed_ms=8527 rx_bytes=70855 tx_bytes=47043",
+      "dist worker request=4 job=82 phase=plan input_digest=19312efac81969e3 started=31 budget_ms=8740",
+      "dist worker request=4 completed=31/31 selected_worker=59 elapsed_ms=8512 rx_bytes=117685 tx_bytes=83876",
+      "dist worker request=5 job=83 phase=plan input_digest=e1bbca912a523dfb started=31 budget_ms=8745",
+      "dist worker request=5 completed=31/31 selected_worker=71 elapsed_ms=8517 rx_bytes=169368 tx_bytes=125528",
+      "dist worker request=6 job=84 phase=plan input_digest=6a7316f9b99b9537 started=31 budget_ms=8747",
+      "dist worker request=6 completed=31/31 selected_worker=71 elapsed_ms=8188 rx_bytes=220402 tx_bytes=166559",
+      "dist worker connection_closed=peer disconnected"
+    ],
+    "crossEliteLines": [],
+    "sharedGraphLines": [],
+    "flags": {
+      "timeout": {
+        "count": 0,
+        "samples": []
+      },
+      "deadline": {
+        "count": 0,
+        "samples": []
+      },
+      "fallback": {
+        "count": 72,
+        "samples": [
+          "c011 terminal day=0 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+          "c011 terminal day=1 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+          "c011 terminal day=2 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+          "c011 terminal day=3 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+          "c011 terminal day=4 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+          "c011 terminal day=0 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+          "c011 terminal day=1 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+          "c011 terminal day=2 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+          "c011 terminal day=3 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+          "c011 terminal day=4 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+          "c011 terminal day=0 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+          "c011 terminal day=1 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback"
+        ]
+      },
+      "panic": {
+        "count": 0,
+        "samples": []
+      },
+      "rejected": {
+        "count": 0,
+        "samples": []
+      },
+      "unavailable": {
+        "count": 0,
+        "samples": []
+      },
+      "disconnected": {
+        "count": 0,
+        "samples": []
+      }
+    }
+  },
+  "cpus": [
+    {
+      "cpu": 0,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 1,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 2,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 3,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 4,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 5,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 6,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 7,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 8,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 9,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 10,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 11,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 12,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 13,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 14,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 15,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 16,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 17,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 18,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 19,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 20,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 21,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 22,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 23,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 24,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 25,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 26,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 27,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 28,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 29,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 30,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 31,
+      "governor": "performance",
+      "epp": "performance"
+    }
+  ],
+  "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 02:47:01 2026\nSystem time     : 0.000000065 seconds fast of NTP time\nLast offset     : -0.000071142 seconds\nRMS offset      : 0.000032935 seconds\nFrequency       : 1.518 ppm slow\nResidual freq   : -1.349 ppm\nSkew            : 1.948 ppm\nRoot delay      : 0.000148103 seconds\nRoot dispersion : 0.001092315 seconds\nUpdate interval : 16.0 seconds\nLeap status     : Normal\n",
+  "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   4   377    14    -14us[  -85us] +/- 1082us\n",
+  "clockProbe": {
+    "server": "192.168.0.81",
+    "port": 32123,
+    "samples": [
+      {
+        "serverMinusClientMs": 0.12481212615966797,
+        "roundTripMs": 0.33736228942871094
+      },
+      {
+        "serverMinusClientMs": 0.0762939453125,
+        "roundTripMs": 0.2899169921875
+      },
+      {
+        "serverMinusClientMs": 0.08189678192138672,
+        "roundTripMs": 0.3039836883544922
+      },
+      {
+        "serverMinusClientMs": 0.08356571197509766,
+        "roundTripMs": 0.22673606872558594
+      },
+      {
+        "serverMinusClientMs": 0.08296966552734375,
+        "roundTripMs": 0.24557113647460938
+      },
+      {
+        "serverMinusClientMs": 0.09763240814208984,
+        "roundTripMs": 0.26535987854003906
+      },
+      {
+        "serverMinusClientMs": 0.08165836334228516,
+        "roundTripMs": 0.22673606872558594
+      },
+      {
+        "serverMinusClientMs": 0.08308887481689453,
+        "roundTripMs": 0.19049644470214844
+      },
+      {
+        "serverMinusClientMs": 0.08440017700195312,
+        "roundTripMs": 0.2422332763671875
+      },
+      {
+        "serverMinusClientMs": 0.09334087371826172,
+        "roundTripMs": 0.25391578674316406
+      },
+      {
+        "serverMinusClientMs": 0.0692605972290039,
+        "roundTripMs": 0.2586841583251953
+      },
+      {
+        "serverMinusClientMs": 0.08499622344970703,
+        "roundTripMs": 0.2548694610595703
+      },
+      {
+        "serverMinusClientMs": 0.06723403930664062,
+        "roundTripMs": 0.17261505126953125
+      },
+      {
+        "serverMinusClientMs": 0.07855892181396484,
+        "roundTripMs": 0.2257823944091797
+      },
+      {
+        "serverMinusClientMs": 0.08761882781982422,
+        "roundTripMs": 0.2601146697998047
+      },
+      {
+        "serverMinusClientMs": 0.09298324584960938,
+        "roundTripMs": 0.2307891845703125
+      }
+    ],
+    "medianBestHalfOffsetMs": 0.08302927017211914,
+    "minimumRoundTripMs": 0.17261505126953125,
+    "capturedUnix": 1791514036.7910337
+  },
+  "launcherAtCompletion": {
+    "path": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/launcher",
+    "sha256": "e41fd115af140cd5260f36b0a8f88749f3c1ae7edf67c176a8a4ceef1cec21af",
+    "text": "#!/bin/sh\nexec env -i PATH=/usr/bin:/bin PROCON37_G007_FUTURE_WEIGHT=0 PROCON37_G007_RESERVE_WEIGHT=15 PROCON37_DISTRIBUTED_TOKEN_FILE=/home/voidlinux-3/procon37-distributed-resume/20261009-D0/cluster.token taskset -c 0-31 /home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver --mode worker --threads 32 --worker-offset 46 --listen 192.168.0.33:39370 \"$@\"\n"
+  },
+  "processes": [
+    {
+      "pid": 1943,
+      "startTicks": "1040916",
+      "startTicksMatchStartRecord": true,
+      "bootId": "21b738ab-7c59-47e2-bc9f-07075a0e35af",
+      "executable": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+      "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+      "cwd": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0",
+      "status": {
+        "Name": "distributed-sol",
+        "State": "S (sleeping)",
+        "Threads": "32",
+        "Cpus_allowed_list": "0-31",
+        "VmRSS": "10750628 kB",
+        "VmHWM": "10818716 kB",
+        "VmSize": "12129184 kB",
+        "VmPeak": "12325792 kB"
+      },
+      "scope": "C011 short01 worker process lifetime; VmHWM includes all 12 cases"
+    }
+  ],
+  "remainingRuntimeProcesses": [
+    {
+      "pid": 1943,
+      "role": "solver",
+      "executable": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+      "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+      "startTicks": "1040916",
+      "status": {
+        "Name": "distributed-sol",
+        "State": "S (sleeping)",
+        "Threads": "32",
+        "Cpus_allowed_list": "0-31",
+        "VmRSS": "10750628 kB",
+        "VmHWM": "10818716 kB",
+        "VmSize": "12129184 kB",
+        "VmPeak": "12325792 kB"
+      }
+    }
+  ]
+}

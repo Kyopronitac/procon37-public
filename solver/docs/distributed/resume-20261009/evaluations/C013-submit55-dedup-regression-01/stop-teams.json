@@ -1,0 +1,151 @@
+{
+  "local3": {
+    "record": {
+      "pid": 69174,
+      "startTicks": "2280171",
+      "state": "R",
+      "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422",
+      "session": 69174,
+      "uid": 1000,
+      "command": [
+        "python3",
+        "/home/imak/work/procon37/.server/distributed/team3/resume-team-runner.py",
+        "--bridge",
+        "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+        "--solver",
+        "/home/imak/work/procon37/.server/distributed/launchers/generation8.sh",
+        "--server",
+        "http://192.168.0.81:11451",
+        "--team",
+        "3",
+        "--cpus",
+        "2",
+        "--submit-at-ms",
+        "55000"
+      ],
+      "startedUnix": 1791570823.4416416,
+      "log": "/home/imak/work/procon37/.server/distributed/team3/resume-team.log"
+    },
+    "alive": false
+  },
+  "local2": {
+    "record": {
+      "pid": 69170,
+      "startTicks": "2280137",
+      "state": "R",
+      "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422",
+      "session": 69170,
+      "uid": 1000,
+      "command": [
+        "python3",
+        "/home/imak/work/procon37/.server/distributed/team2/resume-team-runner.py",
+        "--bridge",
+        "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+        "--solver",
+        "/home/imak/work/procon37/.server/distributed/launchers/generation6.sh",
+        "--server",
+        "http://192.168.0.81:11451",
+        "--team",
+        "2",
+        "--cpus",
+        "0",
+        "--submit-at-ms",
+        "55000"
+      ],
+      "startedUnix": 1791570823.1056573,
+      "log": "/home/imak/work/procon37/.server/distributed/team2/resume-team.log"
+    },
+    "alive": false
+  },
+  "nomlab": {
+    "record": {
+      "pid": 15187,
+      "startTicks": "2267204",
+      "state": "R",
+      "bootId": "6c4c3c67-7b03-49c0-9073-e209bfa9cf68",
+      "session": 15187,
+      "uid": 1000,
+      "command": [
+        "python3",
+        "/home/nomlab-ubuntu/procon37-distributed/resume-team-runner.py",
+        "--bridge",
+        "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+        "--solver",
+        "/home/nomlab-ubuntu/procon37-distributed/launcher",
+        "--server",
+        "http://192.168.0.81:11451",
+        "--team",
+        "1",
+        "--cpus",
+        "0-15",
+        "--submit-at-ms",
+        "55000"
+      ],
+      "startedUnix": 1791570822.6675487,
+      "log": "/home/nomlab-ubuntu/procon37-distributed/resume-team.log"
+    },
+    "alive": false
+  },
+  "v1": {
+    "record": {
+      "pid": 7231,
+      "startTicks": "2253882",
+      "state": "R",
+      "bootId": "7393e939-6ceb-4ae1-80dd-666ab95671f1",
+      "session": 7231,
+      "uid": 1000,
+      "command": [
+        "python3",
+        "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team-runner.py",
+        "--bridge",
+        "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+        "--solver",
+        "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+        "--server",
+        "http://192.168.0.81:11451",
+        "--team",
+        "0",
+        "--cpus",
+        "0-31",
+        "--submit-at-ms",
+        "5000,15000,25000,35000,45000,55000",
+        "--stream-responses"
+      ],
+      "startedUnix": 1791570821.8278584,
+      "log": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team.log"
+    },
+    "alive": false
+  },
+  "v3": {
+    "record": {
+      "pid": 1888,
+      "startTicks": "1425438",
+      "state": "R",
+      "bootId": "f828f174-169c-4a64-91c8-a220c554ae58",
+      "session": 1888,
+      "uid": 1000,
+      "command": [
+        "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/launcher"
+      ],
+      "startedUnix": 1791570821.2130146,
+      "log": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/resume-team.log"
+    },
+    "alive": false
+  },
+  "v2": {
+    "record": {
+      "pid": 3230,
+      "startTicks": "2281725",
+      "state": "R",
+      "bootId": "9903a715-edd1-4b7b-afba-100dd929dbaf",
+      "session": 3230,
+      "uid": 1000,
+      "command": [
+        "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/launcher"
+      ],
+      "startedUnix": 1791570820.5908406,
+      "log": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/resume-team.log"
+    },
+    "alive": false
+  }
+}

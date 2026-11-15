@@ -1,0 +1,321 @@
+{
+  "deployment": {
+    "at": "2026-10-10T06:19:38.015861+09:00",
+    "repository": "/home/voidlinux-1/procon37",
+    "backup": "/home/voidlinux-1/procon37.before-repository-deploy-20261010-061937",
+    "selectedRelease": "/home/voidlinux-1/procon37-competition/releases/C013-6cdcd06d40e4",
+    "archiveSha256": "5d4e165934cea3e8079f32027cd7ecad0a18206650463e2489a73131199333be",
+    "entrySha256": "f2a276f9e4a499bc24982cc789b3f81b2bf9d600a3b7ac9ce9364e9041ac934a",
+    "status": [
+      {
+        "role": "v1",
+        "running": false,
+        "pid": null,
+        "identity_mismatch": false,
+        "orphans": []
+      },
+      {
+        "role": "v2",
+        "running": false,
+        "pid": 4041,
+        "identity_mismatch": false,
+        "orphans": []
+      },
+      {
+        "role": "v3",
+        "running": false,
+        "pid": 2321,
+        "identity_mismatch": false,
+        "orphans": []
+      }
+    ],
+    "endpointUnset": {
+      "returnCode": 1,
+      "output": "[run.sh] solver_exited result=start_failed reason=endpoint_unset\n[run.sh] solver_exited result=runner_stopped exit_code=1\n"
+    },
+    "records": "/home/voidlinux-1/procon37-competition/releases/C013-6cdcd06d40e4/records",
+    "logs": "/home/voidlinux-1/procon37-competition/releases/C013-6cdcd06d40e4/logs",
+    "gitHeadRef": "ref: refs/heads/feat/parallel-distributed-solver"
+  },
+  "releaseVerification": [
+    {
+      "role": "v1",
+      "manifestVerified": true,
+      "solverSha256": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+      "bridgeSha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+      "manifestSha256": "656eeb345c232a68385fdc5cbcf2fa09de475589b8f1f34406d4421ec7eafb63",
+      "cpus": "0-31",
+      "workerPort": 39371,
+      "gitVersion": "git version 2.55.0",
+      "origin": "https://github.com/Kyopronitac/procon37.git",
+      "initialRepositoryHead": "49fc7da245d49213be5c81d236098487ad5d61ed",
+      "initialTrackedFiles": 1702
+    },
+    {
+      "role": "v2",
+      "manifestVerified": true,
+      "solverSha256": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+      "bridgeSha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+      "manifestSha256": "656eeb345c232a68385fdc5cbcf2fa09de475589b8f1f34406d4421ec7eafb63",
+      "cpus": "0-15",
+      "workerPort": 39371
+    },
+    {
+      "role": "v3",
+      "manifestVerified": true,
+      "solverSha256": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+      "bridgeSha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+      "manifestSha256": "656eeb345c232a68385fdc5cbcf2fa09de475589b8f1f34406d4421ec7eafb63",
+      "cpus": "0-31",
+      "workerPort": 39371
+    }
+  ],
+  "wrapperChecks": {
+    "shellSyntax": "passed",
+    "checks": [
+      {
+        "name": "selected default: empty endpoint, exit propagated",
+        "passed": true
+      },
+      {
+        "name": "selected status: endpoint env propagated",
+        "passed": true
+      },
+      {
+        "name": "selected stop",
+        "passed": true
+      },
+      {
+        "name": "selected rejects --config",
+        "passed": true
+      },
+      {
+        "name": "selected rejects trailing arguments",
+        "passed": true
+      },
+      {
+        "name": "broken selection never falls back",
+        "passed": true
+      },
+      {
+        "name": "ordinary directory is rejected",
+        "passed": true
+      },
+      {
+        "name": "D0 legacy defaults retained",
+        "passed": true
+      }
+    ],
+    "realSolverStarted": false,
+    "networkRequests": 0
+  },
+  "gitInstallation": {
+    "version": "git version 2.55.0",
+    "executable": "/usr/bin/git",
+    "execPath": "/usr/libexec/git-core",
+    "perlModules": "perl modules OK",
+    "localInitCommitCloneFsck": "passed",
+    "touchedExistingRepositories": false,
+    "ordinaryXbpsInstallation": true,
+    "installedPackages": {
+      "git": {
+        "pkgver": "git-2.55.0_1",
+        "sha256": "9d2bfe36b6fd6d1542c5b703da46952f8b271cfdd925fa25deb18bf5a44e7548",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "ca-certificates>=0",
+          "perl-Authen-SASL>=0",
+          "perl-MIME-tools>=0",
+          "perl-Net-SMTP-SSL>=0",
+          "glibc>=2.41_1",
+          "libcrypto3>=3.5.4_1",
+          "libcurl>=7.75.0_2",
+          "expat>=2.0.0_1",
+          "libpcre2>=10.22_1",
+          "libssl3>=3.5.4_1",
+          "zlib>=1.2.3_1"
+        ]
+      },
+      "perl-Net-SMTP-SSL": {
+        "pkgver": "perl-Net-SMTP-SSL-1.04_3",
+        "sha256": "e9ebcc3fc181b206957a5d36cde5af13e8c1221f9e84a586dab1468a30b385ea",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "perl>=0",
+          "perl-IO-Socket-SSL>=0",
+          "perl>=0",
+          "perl>=0"
+        ]
+      },
+      "perl": {
+        "pkgver": "perl-5.42.3_1",
+        "sha256": "81d77e70e1a894742efd380d79581e2df889f0f752ae571263b11b7937ec4398",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "less>=0",
+          "libxcrypt-devel>=0",
+          "bzip2>=1.0.5_1",
+          "glibc>=2.41_1",
+          "libxcrypt>=4.4.36_1",
+          "libdb>=5.3.21_1",
+          "gdbm>=1.16_1",
+          "zlib>=1.2.3_1"
+        ]
+      },
+      "libxcrypt-devel": {
+        "pkgver": "libxcrypt-devel-4.4.38_1",
+        "sha256": "51711765b657b2c20d066a7b9a387290fea19613bcf7c795680171c7db2b68d0",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "libxcrypt>=4.4.38_1"
+        ]
+      },
+      "perl-IO-Socket-SSL": {
+        "pkgver": "perl-IO-Socket-SSL-2.095_1",
+        "sha256": "df46bf10fd840b077022ad1c2f02cc024fdcd0d9e09d97a30863bc90d0ab5d87",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "perl>=0",
+          "perl-Net-SSLeay>=0",
+          "perl-URI>=0",
+          "perl>=0",
+          "perl>=0"
+        ]
+      },
+      "perl-URI": {
+        "pkgver": "perl-URI-5.21_1",
+        "sha256": "19b1a8f50f05c3cc8b78f2cbc361e6024b502c527a3e7f1efa64f29fea3c8570",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "perl>=0",
+          "perl>=0",
+          "perl>=0"
+        ]
+      },
+      "perl-Net-SSLeay": {
+        "pkgver": "perl-Net-SSLeay-1.94_3",
+        "sha256": "2a1253de9a4d29055094b64eed7a54d11dc06734183c10dd84f0a4361ba4f542",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "perl>=0",
+          "perl>=0",
+          "perl>=0",
+          "glibc>=2.41_1",
+          "libcrypto3>=3.5.4_1",
+          "perl>=5.42.0_1",
+          "libssl3>=3.5.4_1",
+          "zlib>=1.2.3_1"
+        ]
+      },
+      "perl-MIME-tools": {
+        "pkgver": "perl-MIME-tools-5.515_1",
+        "sha256": "d0cabc13367135d5a65fc577499a71f83513012d6584c80c39b7e1b229e76f67",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "perl>=0",
+          "perl-Convert-BinHex>=0",
+          "perl-IO-stringy>=0",
+          "perl-MailTools>=0",
+          "perl>=0",
+          "perl>=0"
+        ]
+      },
+      "perl-MailTools": {
+        "pkgver": "perl-MailTools-2.21_3",
+        "sha256": "b5c17964d6c241e2583ce029d4050a0a552ce2e7ec60acdad3b67497270a29dc",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "perl>=0",
+          "perl-TimeDate>=0",
+          "perl>=0",
+          "perl>=0"
+        ]
+      },
+      "perl-TimeDate": {
+        "pkgver": "perl-TimeDate-2.33_2",
+        "sha256": "3804c0043f9ee8c4d6019cd588822f984de08eda1b85fe98f53b20e065f0e93f",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "perl>=0",
+          "perl>=0",
+          "perl>=0"
+        ]
+      },
+      "perl-IO-stringy": {
+        "pkgver": "perl-IO-stringy-2.113_2",
+        "sha256": "1c21c20c76136167fc163228f4e51b432467d22cd7cb13520184819762c93eaa",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "perl>=0",
+          "perl>=0",
+          "perl>=0"
+        ]
+      },
+      "perl-Convert-BinHex": {
+        "pkgver": "perl-Convert-BinHex-1.125_3",
+        "sha256": "aa39ae11b13d2e9ed9474564787721afc6db8dda30dba4c86f9cbcb54b08ce16",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "perl>=0",
+          "perl>=0",
+          "perl>=0"
+        ]
+      },
+      "perl-Authen-SASL": {
+        "pkgver": "perl-Authen-SASL-2.2000_1",
+        "sha256": "0018bf2e1e97e239cf98e36c03c70c8d83d8d5500b06d3641b0fa9d9031cc0c3",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "perl>=0",
+          "perl-Digest-HMAC>=0",
+          "perl-Crypt-URandom>=0",
+          "perl>=0",
+          "perl>=0"
+        ]
+      },
+      "perl-Crypt-URandom": {
+        "pkgver": "perl-Crypt-URandom-0.54_1",
+        "sha256": "443a9215c83918784fd3812e72c130aef1ee2b279fb8404df84a174494cde198",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "perl>=0",
+          "perl>=0",
+          "perl>=0",
+          "glibc>=2.41_1",
+          "perl>=5.42.0_1"
+        ]
+      },
+      "perl-Digest-HMAC": {
+        "pkgver": "perl-Digest-HMAC-1.04_1",
+        "sha256": "100982800b368bfa751288e2d3f80f145887e215c6506e32591cc36f81a521e5",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "perl>=0",
+          "perl>=0",
+          "perl>=0"
+        ]
+      },
+      "libxcrypt": {
+        "pkgver": "libxcrypt-4.4.38_1",
+        "sha256": "598cf5256b00325aab7d6e6cc98ccdfbe9bd16d34f19449880931db3d86a9c4a",
+        "repository": "https://repo-default.voidlinux.org/current",
+        "dependencies": [
+          "glibc>=2.39_1"
+        ]
+      }
+    },
+    "checkedUnix": 1791580790.9863253,
+    "installLogSha256": "c9dc85396111c86f7ccc7862ba145c9395ea02679ad23040b63a55dfb435f553"
+  },
+  "solverRebuilt": false,
+  "bridgeRebuilt": false,
+  "matchesRun": 0,
+  "userChangesPreservedInBackup": true,
+  "transfer": {
+    "method": "Local full Git clone with normal origin URL, opaque tar over SSH; final changes synchronized via Git bundle",
+    "baseCommit": "49fc7da245d49213be5c81d236098487ad5d61ed",
+    "trackedRepositoryOnly": true,
+    "localUntrackedExperimentsIncluded": false
+  },
+  "finalCommitPushRecord": ".server/distributed/repository-deployment-finalization.json"
+}

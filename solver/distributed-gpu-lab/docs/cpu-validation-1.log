@@ -1,0 +1,37 @@
+   Compiling procon37-distributed-gpu-lab v0.1.0 (/home/imak/work/procon37/solver/distributed-gpu-lab)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.49s
+     Running unittests src/lib.rs (solver/distributed-gpu-lab/target/debug/deps/procon37_distributed_gpu_lab-a1e6f7af05ebdcf5)
+
+running 2 tests
+test producer::tests::rejected_startup_gate_never_loads_opencl ... ok
+test producer::tests::timeout_disables_admission_and_shutdown_does_not_join_blocked_backend ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running unittests src/bin/gpu-smoke.rs (solver/distributed-gpu-lab/target/debug/deps/gpu_smoke-1fb28410fa0d7a1c)
+
+running 2 tests
+test tests::deterministic_fixtures_keep_duplicate_targets ... ok
+test tests::explicit_modes_and_json_escaping ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/conformance.rs (solver/distributed-gpu-lab/target/debug/deps/conformance-aecf1ff9420576ef)
+
+running 6 tests
+test exact_tie_chooses_largest_cell_not_neighbor_direction ... ok
+test fuel_minimum_is_separate_from_time_route_fuel ... ok
+test maximum_32_square_shape_and_duplicate_targets ... ok
+test one_cell_and_disconnected_components_keep_zero_unused_next ... ok
+test rejects_bad_shapes_weights_asymmetry_and_corrupt_gpu_tables ... ok
+test synchronous_relaxation_matches_strict_heap_and_tree_scalars ... CPU-only strict heap/Jacobi/scalar checked routes=13200
+ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.37s
+
+   Doc-tests procon37_distributed_gpu_lab
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -1,0 +1,43 @@
+<mxfile host="65bd71144e">
+    <diagram id="pool-lns" name="LNSの破壊・修復と焼きなましの受理">
+        <mxGraphModel dx="1042" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1060" pageHeight="260" math="0" shadow="0">
+            <root>
+                <mxCell id="0" />
+                <mxCell id="1" parent="0" />
+                <mxCell id="b0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF7FF;strokeColor=#185B80;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=25;fontStyle=1;spacing=8;align=center;verticalAlign=middle;" value="最良の計画" vertex="1">
+                    <mxGeometry height="130" width="221.25" x="20" y="25" as="geometry" />
+                </mxCell>
+                <mxCell id="n0" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=2;" value="他車の巡回と&#10;補給の行動は保持" vertex="1">
+                    <mxGeometry height="65" width="221.25" x="20" y="175" as="geometry" />
+                </mxCell>
+                <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2E8;strokeColor=#E96B28;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=25;fontStyle=1;spacing=8;align=center;verticalAlign=middle;" value="破壊&#10;訪問の一部を除去" vertex="1">
+                    <mxGeometry height="130" width="221.25" x="286.25" y="25" as="geometry" />
+                </mxCell>
+                <mxCell id="a1" edge="1" parent="1" source="b0" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#97283C;strokeWidth=2;" target="b1">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="n1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=2;" value="一部の巡回車から&#10;複数の訪問を外す" vertex="1">
+                    <mxGeometry height="65" width="221.25" x="286.25" y="175" as="geometry" />
+                </mxCell>
+                <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2F5;strokeColor=#97283C;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=25;fontStyle=1;spacing=8;align=center;verticalAlign=middle;" value="再構築&lt;br&gt;訪問を再挿入" vertex="1">
+                    <mxGeometry height="130" width="221.25" x="552.5" y="25" as="geometry" />
+                </mxCell>
+                <mxCell id="a2" edge="1" parent="1" source="b1" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#97283C;strokeWidth=2;" target="b2">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="n2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=2;" value="獲得の増分と&#10;増える移動時間で選ぶ" vertex="1">
+                    <mxGeometry height="65" width="221.25" x="552.5" y="175" as="geometry" />
+                </mxCell>
+                <mxCell id="b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2FBE4;strokeColor=#668E38;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=20;fontStyle=1;spacing=8;align=center;verticalAlign=middle;" value="焼きなましで&lt;br&gt;採用するか判断する" vertex="1">
+                    <mxGeometry height="130" width="221.25" x="818.75" y="25" as="geometry" />
+                </mxCell>
+                <mxCell id="a3" edge="1" parent="1" source="b2" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#97283C;strokeWidth=2;" target="b3">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="n3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=2;" value="近傍を採用したら&lt;br&gt;現在の計画を更新する" vertex="1">
+                    <mxGeometry height="65" width="221.25" x="818.75" y="175" as="geometry" />
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

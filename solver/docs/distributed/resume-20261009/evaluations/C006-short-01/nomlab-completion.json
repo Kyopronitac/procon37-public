@@ -1,0 +1,210 @@
+{
+  "hostname": "NOMLAB-UBUNTU",
+  "capturedAtUtc": "2026-10-09T01:34:01.161612+00:00",
+  "directory": "/home/nomlab-ubuntu/procon37-distributed",
+  "log": {
+    "path": "/home/nomlab-ubuntu/procon37-distributed/resume-team.log",
+    "capturedStartByte": 25514,
+    "capturedEndByte": 31770,
+    "previousCapturedRangeSha256Verified": true,
+    "previousRangeStartByte": 19258,
+    "previousRangeEndByte": 25514,
+    "previousRangeSha256": "d56a8e9ad31d2f27ad5085107bb7057a3306cd36681b7d8edf35cd7d09da80c5",
+    "sourceSizeAtOpen": 31770,
+    "inode": 36181770,
+    "device": 66306,
+    "mtimeNsAtOpen": 1791509560172079999,
+    "sha256OfCapturedByteRange": "e44c0de5c6e75da9a04a4a83841c95bf37110be0848279f7ae970cb610c017f5",
+    "totalLines": 134,
+    "diagnosticLines": [],
+    "sharedGraphLines": [],
+    "flags": {
+      "timeout": {
+        "count": 0,
+        "samples": []
+      },
+      "deadline": {
+        "count": 0,
+        "samples": []
+      },
+      "fallback": {
+        "count": 0,
+        "samples": []
+      },
+      "panic": {
+        "count": 0,
+        "samples": []
+      },
+      "rejected": {
+        "count": 0,
+        "samples": []
+      },
+      "unavailable": {
+        "count": 0,
+        "samples": []
+      },
+      "disconnected": {
+        "count": 0,
+        "samples": []
+      }
+    }
+  },
+  "cpus": [
+    {
+      "cpu": 0,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 1,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 2,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 3,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 4,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 5,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 6,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 7,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 8,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 9,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 10,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 11,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 12,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 13,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 14,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 15,
+      "governor": "performance",
+      "epp": "performance"
+    }
+  ],
+  "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 01:33:38 2026\nSystem time     : 0.000005204 seconds fast of NTP time\nLast offset     : +0.000006948 seconds\nRMS offset      : 0.000021300 seconds\nFrequency       : 18.106 ppm slow\nResidual freq   : +0.026 ppm\nSkew            : 0.447 ppm\nRoot delay      : 0.001371703 seconds\nRoot dispersion : 0.001075908 seconds\nUpdate interval : 64.6 seconds\nLeap status     : Normal\n",
+  "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^? 185.125.190.122               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 185.125.190.123               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 91.189.91.112                 0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 91.189.91.113                 0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 185.125.190.121               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^* 192.168.0.81                 10   4   377    23    -34us[  -27us] +/- 1762us\n",
+  "clockProbe": {
+    "server": "192.168.0.81",
+    "port": 32123,
+    "samples": [
+      {
+        "serverMinusClientMs": 0.014543533325195312,
+        "roundTripMs": 1.522064208984375
+      },
+      {
+        "serverMinusClientMs": -0.1558065414428711,
+        "roundTripMs": 2.0287036895751953
+      },
+      {
+        "serverMinusClientMs": 0.0005960464477539062,
+        "roundTripMs": 1.5513896942138672
+      },
+      {
+        "serverMinusClientMs": 0.1939535140991211,
+        "roundTripMs": 2.0072460174560547
+      },
+      {
+        "serverMinusClientMs": -0.3191232681274414,
+        "roundTripMs": 2.2079944610595703
+      },
+      {
+        "serverMinusClientMs": 0.0019073486328125,
+        "roundTripMs": 1.5501976013183594
+      },
+      {
+        "serverMinusClientMs": -0.17213821411132812,
+        "roundTripMs": 1.9173622131347656
+      },
+      {
+        "serverMinusClientMs": 0.011444091796875,
+        "roundTripMs": 1.5110969543457031
+      },
+      {
+        "serverMinusClientMs": 0.0034570693969726562,
+        "roundTripMs": 1.5065670013427734
+      },
+      {
+        "serverMinusClientMs": 0.01633167266845703,
+        "roundTripMs": 1.6829967498779297
+      },
+      {
+        "serverMinusClientMs": -0.15354156494140625,
+        "roundTripMs": 2.1338462829589844
+      },
+      {
+        "serverMinusClientMs": -0.10538101196289062,
+        "roundTripMs": 1.995086669921875
+      },
+      {
+        "serverMinusClientMs": -0.10716915130615234,
+        "roundTripMs": 2.020597457885742
+      },
+      {
+        "serverMinusClientMs": -0.19729137420654297,
+        "roundTripMs": 2.0172595977783203
+      },
+      {
+        "serverMinusClientMs": -0.10418891906738281,
+        "roundTripMs": 1.9140243530273438
+      },
+      {
+        "serverMinusClientMs": 0.019073486328125,
+        "roundTripMs": 1.5234947204589844
+      }
+    ],
+    "medianBestHalfOffsetMs": 0.007450580596923828,
+    "minimumRoundTripMs": 1.5065670013427734,
+    "capturedUnix": 1791509642.0006213
+  },
+  "processes": []
+}

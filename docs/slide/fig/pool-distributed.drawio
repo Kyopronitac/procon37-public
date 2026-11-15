@@ -1,0 +1,34 @@
+<mxfile host="65bd71144e">
+    <diagram id="pool-distributed" name="分散探索の拡張方針">
+        <mxGraphModel dx="1532" dy="308" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1060" pageHeight="290" math="1" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="input" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF7FF;strokeColor=#185B80;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=22;align=center;verticalAlign=middle;spacing=8;" value="同じ当日の状態&lt;br&gt;共通の車種の割当" vertex="1">
+                    <mxGeometry height="95" width="220" y="98" as="geometry"/>
+                </mxCell>
+                <mxCell id="output" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2F5;strokeColor=#97283C;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=21;align=center;verticalAlign=middle;spacing=8;" value="各計画を集計し&lt;br&gt;評価関数 `G(x)`&amp;nbsp;で比較&lt;br&gt;最良計画を保存 `\to` 提出" vertex="1">
+                    <mxGeometry height="125" width="245" x="810" y="83" as="geometry"/>
+                </mxCell>
+                <mxCell id="host1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2E8;strokeColor=#E96B28;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=21;align=center;verticalAlign=middle;spacing=8;" value="PC 1：複数の探索を並列実行&lt;br&gt;異なる乱数 → 全車の計画" vertex="1">
+                    <mxGeometry height="95" width="425" x="305" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="host2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2FBE4;strokeColor=#668E38;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=21;align=center;verticalAlign=middle;spacing=8;" value="PC 2：複数の探索を並列実行&lt;br&gt;異なる乱数 → 全車の計画" vertex="1">
+                    <mxGeometry height="95" width="425" x="305" y="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="in1" edge="1" parent="1" source="input" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#97283C;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="host1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="out1" edge="1" parent="1" source="host1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#97283C;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="output">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="in2" edge="1" parent="1" source="input" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#97283C;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="host2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="out2" edge="1" parent="1" source="host2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;endFill=1;strokeColor=#97283C;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="output">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

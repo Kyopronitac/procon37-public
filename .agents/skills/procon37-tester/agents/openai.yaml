@@ -1,0 +1,4 @@
+interface:
+  display_name: "procon37 対戦・単独テスタ"
+  short_description: "CUIでソルバの実行・比較を行い、必要に応じてGUIで盤面やリプレイを確認する"
+  default_prompt: "$procon37-tester を使ってソルバをCUIで検証・比較し、必要に応じてGUIで動作を確認してください。"

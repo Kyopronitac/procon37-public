@@ -1,0 +1,1408 @@
+{
+  "capturedAtUtc": "2026-10-09T01:21:25.579273+00:00",
+  "runId": "1791506866153064781-104560",
+  "scope": "Saved public problem/replay/run results only; small local CPU3 analysis, no solver or remote execution.",
+  "boundDefinition": "Positive-stock distinct brands, counted once over the game and once per day with positive steps. Ignores movement, fuel, congestion, collection assignment and route feasibility; an upper bound, not an attainability proof.",
+  "stockResetEvidence": "Every recorded day starts with exactly the problem stock vector; checked across all 72 days.",
+  "all48PlayersAC": true,
+  "formatCounts": {
+    "first": 4,
+    "semifinal": 4,
+    "final": 4
+  },
+  "actual": {
+    "uniqueBrands": 222,
+    "dailyBrands": 1277,
+    "udon": 2956
+  },
+  "stockOnlyUpperBound": {
+    "uniqueBrands": 222,
+    "dailyBrands": 1281
+  },
+  "gap": {
+    "uniqueBrands": 0,
+    "dailyBrands": 4
+  },
+  "casesAtBothBounds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "cases": [
+    {
+      "seed": 0,
+      "format": "first",
+      "days": 5,
+      "spots": 16,
+      "presentBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "positiveStockBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "zeroStockSpots": 0,
+      "actual": {
+        "uniqueBrands": 12,
+        "dailyBrands": 56,
+        "udon": 68
+      },
+      "stockOnlyUpperBound": {
+        "uniqueBrands": 12,
+        "dailyBrands": 60
+      },
+      "gap": {
+        "uniqueBrands": 0,
+        "dailyBrands": 4
+      },
+      "daily": [
+        {
+          "day": 1,
+          "steps": 32,
+          "actualDailyBrands": 12,
+          "stockOnlyUpperBound": 12,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 2,
+          "steps": 36,
+          "actualDailyBrands": 11,
+          "stockOnlyUpperBound": 12,
+          "missingBrands": [
+            10
+          ],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 3,
+          "steps": 40,
+          "actualDailyBrands": 11,
+          "stockOnlyUpperBound": 12,
+          "missingBrands": [
+            10
+          ],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 4,
+          "steps": 40,
+          "actualDailyBrands": 11,
+          "stockOnlyUpperBound": 12,
+          "missingBrands": [
+            10
+          ],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 5,
+          "steps": 48,
+          "actualDailyBrands": 11,
+          "stockOnlyUpperBound": 12,
+          "missingBrands": [
+            11
+          ],
+          "initialStockEqualsProblem": true
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "format": "semifinal",
+      "days": 5,
+      "spots": 24,
+      "presentBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "positiveStockBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "zeroStockSpots": 0,
+      "actual": {
+        "uniqueBrands": 18,
+        "dailyBrands": 90,
+        "udon": 122
+      },
+      "stockOnlyUpperBound": {
+        "uniqueBrands": 18,
+        "dailyBrands": 90
+      },
+      "gap": {
+        "uniqueBrands": 0,
+        "dailyBrands": 0
+      },
+      "daily": [
+        {
+          "day": 1,
+          "steps": 48,
+          "actualDailyBrands": 18,
+          "stockOnlyUpperBound": 18,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 2,
+          "steps": 56,
+          "actualDailyBrands": 18,
+          "stockOnlyUpperBound": 18,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 3,
+          "steps": 68,
+          "actualDailyBrands": 18,
+          "stockOnlyUpperBound": 18,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 4,
+          "steps": 68,
+          "actualDailyBrands": 18,
+          "stockOnlyUpperBound": 18,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 5,
+          "steps": 72,
+          "actualDailyBrands": 18,
+          "stockOnlyUpperBound": 18,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "format": "final",
+      "days": 5,
+      "spots": 32,
+      "presentBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "positiveStockBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "zeroStockSpots": 0,
+      "actual": {
+        "uniqueBrands": 24,
+        "dailyBrands": 120,
+        "udon": 209
+      },
+      "stockOnlyUpperBound": {
+        "uniqueBrands": 24,
+        "dailyBrands": 120
+      },
+      "gap": {
+        "uniqueBrands": 0,
+        "dailyBrands": 0
+      },
+      "daily": [
+        {
+          "day": 1,
+          "steps": 64,
+          "actualDailyBrands": 24,
+          "stockOnlyUpperBound": 24,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 2,
+          "steps": 76,
+          "actualDailyBrands": 24,
+          "stockOnlyUpperBound": 24,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 3,
+          "steps": 88,
+          "actualDailyBrands": 24,
+          "stockOnlyUpperBound": 24,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 4,
+          "steps": 88,
+          "actualDailyBrands": 24,
+          "stockOnlyUpperBound": 24,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 5,
+          "steps": 100,
+          "actualDailyBrands": 24,
+          "stockOnlyUpperBound": 24,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        }
+      ]
+    },
+    {
+      "seed": 3,
+      "format": "first",
+      "days": 10,
+      "spots": 16,
+      "presentBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "positiveStockBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "zeroStockSpots": 0,
+      "actual": {
+        "uniqueBrands": 13,
+        "dailyBrands": 130,
+        "udon": 324
+      },
+      "stockOnlyUpperBound": {
+        "uniqueBrands": 13,
+        "dailyBrands": 130
+      },
+      "gap": {
+        "uniqueBrands": 0,
+        "dailyBrands": 0
+      },
+      "daily": [
+        {
+          "day": 1,
+          "steps": 122,
+          "actualDailyBrands": 13,
+          "stockOnlyUpperBound": 13,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 2,
+          "steps": 82,
+          "actualDailyBrands": 13,
+          "stockOnlyUpperBound": 13,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 3,
+          "steps": 97,
+          "actualDailyBrands": 13,
+          "stockOnlyUpperBound": 13,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 4,
+          "steps": 119,
+          "actualDailyBrands": 13,
+          "stockOnlyUpperBound": 13,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 5,
+          "steps": 56,
+          "actualDailyBrands": 13,
+          "stockOnlyUpperBound": 13,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 6,
+          "steps": 85,
+          "actualDailyBrands": 13,
+          "stockOnlyUpperBound": 13,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 7,
+          "steps": 121,
+          "actualDailyBrands": 13,
+          "stockOnlyUpperBound": 13,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 8,
+          "steps": 128,
+          "actualDailyBrands": 13,
+          "stockOnlyUpperBound": 13,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 9,
+          "steps": 92,
+          "actualDailyBrands": 13,
+          "stockOnlyUpperBound": 13,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 10,
+          "steps": 55,
+          "actualDailyBrands": 13,
+          "stockOnlyUpperBound": 13,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        }
+      ]
+    },
+    {
+      "seed": 4,
+      "format": "semifinal",
+      "days": 5,
+      "spots": 24,
+      "presentBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "positiveStockBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "zeroStockSpots": 0,
+      "actual": {
+        "uniqueBrands": 19,
+        "dailyBrands": 95,
+        "udon": 130
+      },
+      "stockOnlyUpperBound": {
+        "uniqueBrands": 19,
+        "dailyBrands": 95
+      },
+      "gap": {
+        "uniqueBrands": 0,
+        "dailyBrands": 0
+      },
+      "daily": [
+        {
+          "day": 1,
+          "steps": 48,
+          "actualDailyBrands": 19,
+          "stockOnlyUpperBound": 19,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 2,
+          "steps": 49,
+          "actualDailyBrands": 19,
+          "stockOnlyUpperBound": 19,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 3,
+          "steps": 50,
+          "actualDailyBrands": 19,
+          "stockOnlyUpperBound": 19,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 4,
+          "steps": 52,
+          "actualDailyBrands": 19,
+          "stockOnlyUpperBound": 19,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 5,
+          "steps": 52,
+          "actualDailyBrands": 19,
+          "stockOnlyUpperBound": 19,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        }
+      ]
+    },
+    {
+      "seed": 5,
+      "format": "final",
+      "days": 6,
+      "spots": 32,
+      "presentBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "positiveStockBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "zeroStockSpots": 0,
+      "actual": {
+        "uniqueBrands": 25,
+        "dailyBrands": 150,
+        "udon": 333
+      },
+      "stockOnlyUpperBound": {
+        "uniqueBrands": 25,
+        "dailyBrands": 150
+      },
+      "gap": {
+        "uniqueBrands": 0,
+        "dailyBrands": 0
+      },
+      "daily": [
+        {
+          "day": 1,
+          "steps": 64,
+          "actualDailyBrands": 25,
+          "stockOnlyUpperBound": 25,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 2,
+          "steps": 64,
+          "actualDailyBrands": 25,
+          "stockOnlyUpperBound": 25,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 3,
+          "steps": 64,
+          "actualDailyBrands": 25,
+          "stockOnlyUpperBound": 25,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 4,
+          "steps": 67,
+          "actualDailyBrands": 25,
+          "stockOnlyUpperBound": 25,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 5,
+          "steps": 74,
+          "actualDailyBrands": 25,
+          "stockOnlyUpperBound": 25,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 6,
+          "steps": 84,
+          "actualDailyBrands": 25,
+          "stockOnlyUpperBound": 25,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        }
+      ]
+    },
+    {
+      "seed": 6,
+      "format": "first",
+      "days": 8,
+      "spots": 16,
+      "presentBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "positiveStockBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "zeroStockSpots": 0,
+      "actual": {
+        "uniqueBrands": 11,
+        "dailyBrands": 88,
+        "udon": 140
+      },
+      "stockOnlyUpperBound": {
+        "uniqueBrands": 11,
+        "dailyBrands": 88
+      },
+      "gap": {
+        "uniqueBrands": 0,
+        "dailyBrands": 0
+      },
+      "daily": [
+        {
+          "day": 1,
+          "steps": 32,
+          "actualDailyBrands": 11,
+          "stockOnlyUpperBound": 11,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 2,
+          "steps": 35,
+          "actualDailyBrands": 11,
+          "stockOnlyUpperBound": 11,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 3,
+          "steps": 43,
+          "actualDailyBrands": 11,
+          "stockOnlyUpperBound": 11,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 4,
+          "steps": 53,
+          "actualDailyBrands": 11,
+          "stockOnlyUpperBound": 11,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 5,
+          "steps": 54,
+          "actualDailyBrands": 11,
+          "stockOnlyUpperBound": 11,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 6,
+          "steps": 60,
+          "actualDailyBrands": 11,
+          "stockOnlyUpperBound": 11,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 7,
+          "steps": 70,
+          "actualDailyBrands": 11,
+          "stockOnlyUpperBound": 11,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 8,
+          "steps": 74,
+          "actualDailyBrands": 11,
+          "stockOnlyUpperBound": 11,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        }
+      ]
+    },
+    {
+      "seed": 7,
+      "format": "semifinal",
+      "days": 5,
+      "spots": 24,
+      "presentBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "positiveStockBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "zeroStockSpots": 0,
+      "actual": {
+        "uniqueBrands": 16,
+        "dailyBrands": 80,
+        "udon": 268
+      },
+      "stockOnlyUpperBound": {
+        "uniqueBrands": 16,
+        "dailyBrands": 80
+      },
+      "gap": {
+        "uniqueBrands": 0,
+        "dailyBrands": 0
+      },
+      "daily": [
+        {
+          "day": 1,
+          "steps": 146,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 2,
+          "steps": 174,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 3,
+          "steps": 111,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 4,
+          "steps": 66,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 5,
+          "steps": 82,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        }
+      ]
+    },
+    {
+      "seed": 8,
+      "format": "final",
+      "days": 5,
+      "spots": 32,
+      "presentBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "positiveStockBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "zeroStockSpots": 0,
+      "actual": {
+        "uniqueBrands": 28,
+        "dailyBrands": 140,
+        "udon": 555
+      },
+      "stockOnlyUpperBound": {
+        "uniqueBrands": 28,
+        "dailyBrands": 140
+      },
+      "gap": {
+        "uniqueBrands": 0,
+        "dailyBrands": 0
+      },
+      "daily": [
+        {
+          "day": 1,
+          "steps": 185,
+          "actualDailyBrands": 28,
+          "stockOnlyUpperBound": 28,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 2,
+          "steps": 186,
+          "actualDailyBrands": 28,
+          "stockOnlyUpperBound": 28,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 3,
+          "steps": 186,
+          "actualDailyBrands": 28,
+          "stockOnlyUpperBound": 28,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 4,
+          "steps": 187,
+          "actualDailyBrands": 28,
+          "stockOnlyUpperBound": 28,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 5,
+          "steps": 193,
+          "actualDailyBrands": 28,
+          "stockOnlyUpperBound": 28,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        }
+      ]
+    },
+    {
+      "seed": 9,
+      "format": "first",
+      "days": 5,
+      "spots": 16,
+      "presentBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "positiveStockBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "zeroStockSpots": 0,
+      "actual": {
+        "uniqueBrands": 12,
+        "dailyBrands": 60,
+        "udon": 100
+      },
+      "stockOnlyUpperBound": {
+        "uniqueBrands": 12,
+        "dailyBrands": 60
+      },
+      "gap": {
+        "uniqueBrands": 0,
+        "dailyBrands": 0
+      },
+      "daily": [
+        {
+          "day": 1,
+          "steps": 32,
+          "actualDailyBrands": 12,
+          "stockOnlyUpperBound": 12,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 2,
+          "steps": 33,
+          "actualDailyBrands": 12,
+          "stockOnlyUpperBound": 12,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 3,
+          "steps": 41,
+          "actualDailyBrands": 12,
+          "stockOnlyUpperBound": 12,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 4,
+          "steps": 41,
+          "actualDailyBrands": 12,
+          "stockOnlyUpperBound": 12,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 5,
+          "steps": 41,
+          "actualDailyBrands": 12,
+          "stockOnlyUpperBound": 12,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        }
+      ]
+    },
+    {
+      "seed": 10,
+      "format": "semifinal",
+      "days": 8,
+      "spots": 24,
+      "presentBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "positiveStockBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "zeroStockSpots": 0,
+      "actual": {
+        "uniqueBrands": 16,
+        "dailyBrands": 128,
+        "udon": 359
+      },
+      "stockOnlyUpperBound": {
+        "uniqueBrands": 16,
+        "dailyBrands": 128
+      },
+      "gap": {
+        "uniqueBrands": 0,
+        "dailyBrands": 0
+      },
+      "daily": [
+        {
+          "day": 1,
+          "steps": 85,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 2,
+          "steps": 86,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 3,
+          "steps": 88,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 4,
+          "steps": 88,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 5,
+          "steps": 89,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 6,
+          "steps": 89,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 7,
+          "steps": 91,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 8,
+          "steps": 93,
+          "actualDailyBrands": 16,
+          "stockOnlyUpperBound": 16,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        }
+      ]
+    },
+    {
+      "seed": 11,
+      "format": "final",
+      "days": 5,
+      "spots": 32,
+      "presentBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "positiveStockBrands": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "zeroStockSpots": 0,
+      "actual": {
+        "uniqueBrands": 28,
+        "dailyBrands": 140,
+        "udon": 348
+      },
+      "stockOnlyUpperBound": {
+        "uniqueBrands": 28,
+        "dailyBrands": 140
+      },
+      "gap": {
+        "uniqueBrands": 0,
+        "dailyBrands": 0
+      },
+      "daily": [
+        {
+          "day": 1,
+          "steps": 93,
+          "actualDailyBrands": 28,
+          "stockOnlyUpperBound": 28,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 2,
+          "steps": 73,
+          "actualDailyBrands": 28,
+          "stockOnlyUpperBound": 28,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 3,
+          "steps": 81,
+          "actualDailyBrands": 28,
+          "stockOnlyUpperBound": 28,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 4,
+          "steps": 76,
+          "actualDailyBrands": 28,
+          "stockOnlyUpperBound": 28,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        },
+        {
+          "day": 5,
+          "steps": 91,
+          "actualDailyBrands": 28,
+          "stockOnlyUpperBound": 28,
+          "missingBrands": [],
+          "initialStockEqualsProblem": true
+        }
+      ]
+    }
+  ],
+  "inputSha256": {
+    ".server/runs/1791506866153064781-104560/run.json": "14226f7c1cb714b4fe51cb47f34a7ca1e7330674b9ef6b6dcc3a1a74a8c6f550",
+    ".server/runs/1791506866153064781-104560/0/problem.json": "ff0ffb88986635de1a8e1267a1335572fd842d3ef79fe8712d65b2f557545507",
+    ".server/runs/1791506866153064781-104560/0/replay.json": "e5f753d1526846bf3ce54d9454284852ba57d3440086da7bdb2bdda53108b5d7",
+    ".server/runs/1791506866153064781-104560/1/problem.json": "2b3941dd6f59f829293b27dc68d2b2c34d3d605d3efade5281832e9c7d0e40b2",
+    ".server/runs/1791506866153064781-104560/1/replay.json": "0e73e11441d81bdb6effb9da33461caeed194eebb9d517ca5b6ad5459d770a30",
+    ".server/runs/1791506866153064781-104560/2/problem.json": "6ca533612877191615211e13aef7a58a41dde61b3dc5208757008dba1e4d8c57",
+    ".server/runs/1791506866153064781-104560/2/replay.json": "2197f27e818d22d5d19a5736fcbf2f9c405f1ebbc44b16378effcf03aa258c8a",
+    ".server/runs/1791506866153064781-104560/3/problem.json": "2785f18eca3a8939bc7b950a05f32a9bd5fc2fb8e6b9a8a898b5958cc0bc8874",
+    ".server/runs/1791506866153064781-104560/3/replay.json": "07cc4742c8b76211cc0f056adaab6c8f75c22576c825cbd4a6c707920d759e51",
+    ".server/runs/1791506866153064781-104560/4/problem.json": "5899d1abc32dc8f2c43901f3ead580f7c9649d94cf64a07ca347c479622ab0a7",
+    ".server/runs/1791506866153064781-104560/4/replay.json": "76d8062f1aa3295adf777961657cc916705241ad38603d424e191dbe8d0305ff",
+    ".server/runs/1791506866153064781-104560/5/problem.json": "4a424c2e30e549d223ae6ddc83c5cbb2d697468443e79e3068aa20128c3cd7da",
+    ".server/runs/1791506866153064781-104560/5/replay.json": "9106320c8e1b11da5b5b530590f76377b3e95497db3bd6912cb617323d1a9c3f",
+    ".server/runs/1791506866153064781-104560/6/problem.json": "6ee5e88d4d9d8e1670fb2b336056f738fbc1c5152786155f6017386fce4d5840",
+    ".server/runs/1791506866153064781-104560/6/replay.json": "b24bff9f2dfadb1adf5680bd84fd9f30167ed8798ec75fdc26c741d81b619f24",
+    ".server/runs/1791506866153064781-104560/7/problem.json": "42fe65185de532bff862f732c13129c0e81cd1e571cbcb6ab745af732fc18ce3",
+    ".server/runs/1791506866153064781-104560/7/replay.json": "577a66e287ccfdd486555303bbb7ae27ea5ffee00ed1a2de267e322e24276407",
+    ".server/runs/1791506866153064781-104560/8/problem.json": "4f2d9885e83e6681cf7a3ec0e0461ebfb53f218f2cebe0494d6d08a207345476",
+    ".server/runs/1791506866153064781-104560/8/replay.json": "929f3024f725fd706fed5db2d72d593ec3ffdb839e37dfd9350420f2c66e4deb",
+    ".server/runs/1791506866153064781-104560/9/problem.json": "fcee126ae6cc31aaaa78cb0f563a3f6f24014e337d75d548db89871ea8601d21",
+    ".server/runs/1791506866153064781-104560/9/replay.json": "7ab6af157904e0810048a6e742a64b50b82cac1bc73c27c2bd12056980d12755",
+    ".server/runs/1791506866153064781-104560/10/problem.json": "603b1dc739999b2e90bc28d7dc417b8d30e50cb00a500c0d700d886124d023e1",
+    ".server/runs/1791506866153064781-104560/10/replay.json": "f5f22ac746b98ba5d4215e33aba1d834c664778d93d391acea72f98cbd1b3eca",
+    ".server/runs/1791506866153064781-104560/11/problem.json": "47ea2520b2e1e418ae308f5daea6e8e42101d3291dcbe01330b33120a0df8c2b",
+    ".server/runs/1791506866153064781-104560/11/replay.json": "5894ae866e15a18adedf041f0c08fec0a4602d71122e9e98d7576fa4d2c8e34c"
+  }
+}

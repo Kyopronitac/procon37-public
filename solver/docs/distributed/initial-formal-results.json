@@ -1,0 +1,72 @@
+{
+  "runId": "1791414715585964511-304414",
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "分散ソルバ・CPU初期版・固定4チーム初回評価・正式12件",
+    "players": 4,
+    "teamNames": [
+      "分散80スレッド",
+      "固定並列16スレッド",
+      "固定第6世代",
+      "固定第8世代"
+    ],
+    "timeLimitMs": null,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "all48AC": true,
+  "players": [
+    {
+      "team": 0,
+      "name": "distributed",
+      "rankSum": 20,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2989
+      },
+      "meanRank": 1.6666666666666667
+    },
+    {
+      "team": 1,
+      "name": "parallel-fixed",
+      "rankSum": 25,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2962
+      },
+      "meanRank": 2.0833333333333335
+    },
+    {
+      "team": 2,
+      "name": "generation6",
+      "rankSum": 39,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2918
+      },
+      "meanRank": 3.25
+    },
+    {
+      "team": 3,
+      "name": "generation8",
+      "rankSum": 30,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1278,
+        "udon": 2939
+      },
+      "meanRank": 2.5
+    }
+  ],
+  "directComparisonToFixedParallel": {
+    "win": 7,
+    "tie": 2,
+    "loss": 3
+  },
+  "comparisonNote": "同じ12試合内の分散対固定並列。過去の6チーム開始版評価とはチーム数・配置・資源が異なるため前後改善比較に使わない。"
+}

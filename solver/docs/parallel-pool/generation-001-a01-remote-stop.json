@@ -1,0 +1,17 @@
+[
+  {
+    "host": 1,
+    "exitCode": 0,
+    "output": " \nStopped solver 19871\nStopped solver 19887\n\n"
+  },
+  {
+    "host": 2,
+    "exitCode": 0,
+    "output": " \nStopped solver 1011\nStopped solver 1012\n\n"
+  },
+  {
+    "host": 3,
+    "exitCode": 0,
+    "output": " \nStopped solver 16773\nStopped solver 16775\n\n"
+  }
+]

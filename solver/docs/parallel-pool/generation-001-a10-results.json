@@ -1,0 +1,93 @@
+{
+  "runId": "1791382687282330831-246106",
+  "players": [
+    {
+      "id": "P0",
+      "team": 0,
+      "rankSum": 27,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 3001
+      },
+      "meanRank": 2.25
+    },
+    {
+      "id": "P1",
+      "team": 1,
+      "rankSum": 37,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1278,
+        "udon": 2960
+      },
+      "meanRank": 3.0833333333333335
+    },
+    {
+      "id": "P2",
+      "team": 2,
+      "rankSum": 29,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1278,
+        "udon": 2984
+      },
+      "meanRank": 2.4166666666666665
+    },
+    {
+      "id": "P3",
+      "team": 3,
+      "rankSum": 32,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1278,
+        "udon": 2979
+      },
+      "meanRank": 2.6666666666666665
+    },
+    {
+      "id": "S0",
+      "team": 4,
+      "rankSum": 51,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1278,
+        "udon": 2944
+      },
+      "meanRank": 4.25
+    },
+    {
+      "id": "S1",
+      "team": 5,
+      "rankSum": 43,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2962
+      },
+      "meanRank": 3.5833333333333335
+    }
+  ],
+  "lowestParallel": "P1",
+  "strictWinner": [
+    "P0"
+  ],
+  "comparison": {
+    "win": 9,
+    "tie": 0,
+    "loss": 3
+  },
+  "comparisonNote": "他5体と同じ配置・正式条件。交通混雑は他チームの行動変化を含む。",
+  "beforeScores": {
+    "id": "P0",
+    "team": 0,
+    "rankSum": 37,
+    "scores": {
+      "uniqueBrands": 222,
+      "dailyBrands": 1276,
+      "udon": 2969
+    },
+    "meanRank": 3.0833333333333335
+  },
+  "verification": "generation-001-a10-formal-postflight.json"
+}

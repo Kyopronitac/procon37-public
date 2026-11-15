@@ -1,0 +1,49 @@
+{
+  "command": [
+    "taskset",
+    "-c",
+    "3",
+    "/home/imak/work/procon37/solver/distributed-candidates/c009-gpu-owner/target/release/procon37-c009-owner-probe",
+    "--cpu-only"
+  ],
+  "pid": 4,
+  "exitCode": 0,
+  "timedOut": false,
+  "wallSeconds": 2.0689144909993047,
+  "cpu": "3",
+  "gpuStarted": false,
+  "pairs": 6,
+  "pairCoordinates": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ]
+  ],
+  "allPairsMatch": true,
+  "checkedPathScalars": 3208980,
+  "normalShutdown": true,
+  "placementUnchanged": true,
+  "processRemaining": false,
+  "remainingDirectChildren": [],
+  "success": true
+}

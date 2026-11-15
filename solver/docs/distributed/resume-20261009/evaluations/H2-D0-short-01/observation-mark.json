@@ -1,0 +1,1550 @@
+{
+  "stage": "H2-D0-short-01",
+  "phase": "mark",
+  "observerSha256": "dffed3f07d341fecfc2f1aaf6c53f2d15b16927edc0109c1ee4cc368cdd53f38",
+  "configurationSha256": "0e674c8616fb1134180ba008be7b6710c4f6a49ce82c41feb4db54ec70198d98",
+  "nodes": {
+    "v1": {
+      "capturedAtUtc": "2026-10-09T14:54:12.688792+00:00",
+      "phase": "mark",
+      "bootId": "7393e939-6ceb-4ae1-80dd-666ab95671f1",
+      "processes": [
+        {
+          "pid": 2413,
+          "startTicks": "927275",
+          "state": "S",
+          "argv": [
+            "python3",
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team-runner.py",
+            "--bridge",
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+            "--solver",
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--team",
+            "0",
+            "--cpus",
+            "0-31",
+            ""
+          ],
+          "cpus": "0-31",
+          "threads": [
+            {
+              "tid": 2413,
+              "name": "python3",
+              "ticks": 1,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            }
+          ]
+        },
+        {
+          "pid": 2414,
+          "startTicks": "927276",
+          "state": "S",
+          "argv": [
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--token",
+            "[redacted]",
+            "--solver",
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+            ""
+          ],
+          "cpus": "0-31",
+          "threads": [
+            {
+              "tid": 2414,
+              "name": "server-bridge",
+              "ticks": 21,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2415,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2416,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2417,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2418,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2419,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2420,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2421,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2422,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2423,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2424,
+              "name": "tokio-rt-worker",
+              "ticks": 8,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2425,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2426,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2427,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2428,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2429,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2430,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2431,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2432,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2433,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2434,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2435,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2436,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2437,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2438,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2439,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2440,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2441,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2442,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2443,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2444,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2445,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2446,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "scaling_governor": {
+          "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy28/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy18/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy26/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy16/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy24/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy22/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy30/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy20/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy29/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy19/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy27/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy17/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy25/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy23/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy31/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy21/scaling_governor": "performance"
+        },
+        "energy_performance_preference": {
+          "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy28/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy18/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy26/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy16/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy24/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy22/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy30/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy20/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy29/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy19/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy27/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy17/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy25/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy23/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy31/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy21/energy_performance_preference": "performance"
+        }
+      },
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": 0.060677528381347656,
+            "roundTripMs": 0.2110004425048828
+          },
+          {
+            "serverMinusClientMs": -0.00667572021484375,
+            "roundTripMs": 0.5083084106445312
+          },
+          {
+            "serverMinusClientMs": -0.13184547424316406,
+            "roundTripMs": 0.8206367492675781
+          },
+          {
+            "serverMinusClientMs": -0.20873546600341797,
+            "roundTripMs": 1.3835430145263672
+          },
+          {
+            "serverMinusClientMs": -0.17130374908447266,
+            "roundTripMs": 0.7936954498291016
+          },
+          {
+            "serverMinusClientMs": 0.02467632293701172,
+            "roundTripMs": 0.34689903259277344
+          },
+          {
+            "serverMinusClientMs": -0.0776052474975586,
+            "roundTripMs": 0.5543231964111328
+          },
+          {
+            "serverMinusClientMs": -0.14340877532958984,
+            "roundTripMs": 0.7398128509521484
+          }
+        ],
+        "medianBestHalfOffsetMs": 0.009000301361083984,
+        "minimumRoundTripMs": 0.2110004425048828,
+        "capturedUnix": 1791557653.0980833
+      },
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 14:54:00 2026\nSystem time     : 0.000013000 seconds slow of NTP time\nLast offset     : -0.000019469 seconds\nRMS offset      : 0.000043940 seconds\nFrequency       : 183.743 ppm fast\nResidual freq   : -0.032 ppm\nSkew            : 1.112 ppm\nRoot delay      : 0.000249187 seconds\nRoot dispersion : 0.001119374 seconds\nUpdate interval : 16.1 seconds\nLeap status     : Normal\n",
+        "stderr": ""
+      },
+      "logs": {
+        "resume-team.log": {
+          "endByte": 65595,
+          "prefixSha256": "f47d1fb177d1666d41ab80ea5ffd7d3fbaf9c14db3593663f1af318c0065289f"
+        }
+      },
+      "files": {
+        "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "a7c37a7546fee4a62d2c0d5a9f82838e10793e2c3f9a08cd686d9c19c93c5b1a",
+        "resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118"
+      }
+    },
+    "v2": {
+      "capturedAtUtc": "2026-10-09T14:54:12.722456+00:00",
+      "phase": "mark",
+      "bootId": "9903a715-edd1-4b7b-afba-100dd929dbaf",
+      "processes": [
+        {
+          "pid": 2103,
+          "startTicks": "955118",
+          "state": "S",
+          "argv": [
+            "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver",
+            "--mode",
+            "worker",
+            "--threads",
+            "16",
+            "--worker-offset",
+            "31",
+            "--listen",
+            "192.168.0.22:39370",
+            ""
+          ],
+          "cpus": "0-15",
+          "threads": [
+            {
+              "tid": 2103,
+              "name": "distributed-sol",
+              "ticks": 44,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2104,
+              "name": "dist-search-31",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2105,
+              "name": "dist-search-32",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2106,
+              "name": "dist-search-33",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2107,
+              "name": "dist-search-34",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2108,
+              "name": "dist-search-35",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2109,
+              "name": "dist-search-36",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2110,
+              "name": "dist-search-37",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2111,
+              "name": "dist-search-38",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2112,
+              "name": "dist-search-39",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2113,
+              "name": "dist-search-40",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2114,
+              "name": "dist-search-41",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2115,
+              "name": "dist-search-42",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2116,
+              "name": "dist-search-43",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2117,
+              "name": "dist-search-44",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2118,
+              "name": "dist-search-45",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "scaling_governor": {
+          "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance"
+        },
+        "energy_performance_preference": {
+          "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance"
+        }
+      },
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": -0.0016689300537109375,
+            "roundTripMs": 0.21791458129882812
+          },
+          {
+            "serverMinusClientMs": -0.013947486877441406,
+            "roundTripMs": 0.2257823944091797
+          },
+          {
+            "serverMinusClientMs": -0.0045299530029296875,
+            "roundTripMs": 0.23603439331054688
+          },
+          {
+            "serverMinusClientMs": -0.050067901611328125,
+            "roundTripMs": 0.3094673156738281
+          },
+          {
+            "serverMinusClientMs": -0.07450580596923828,
+            "roundTripMs": 0.40650367736816406
+          },
+          {
+            "serverMinusClientMs": -0.005602836608886719,
+            "roundTripMs": 0.21910667419433594
+          },
+          {
+            "serverMinusClientMs": -0.04017353057861328,
+            "roundTripMs": 0.3273487091064453
+          },
+          {
+            "serverMinusClientMs": 0.010013580322265625,
+            "roundTripMs": 0.2503395080566406
+          }
+        ],
+        "medianBestHalfOffsetMs": -0.005066394805908203,
+        "minimumRoundTripMs": 0.21791458129882812,
+        "capturedUnix": 1791557653.1255906
+      },
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 14:54:09 2026\nSystem time     : 0.000003928 seconds fast of NTP time\nLast offset     : -0.000005754 seconds\nRMS offset      : 0.000049001 seconds\nFrequency       : 0.323 ppm fast\nResidual freq   : -0.005 ppm\nSkew            : 0.819 ppm\nRoot delay      : 0.000226686 seconds\nRoot dispersion : 0.001039671 seconds\nUpdate interval : 16.2 seconds\nLeap status     : Normal\n",
+        "stderr": ""
+      },
+      "logs": {
+        "resume-team.log": {
+          "endByte": 12890957,
+          "prefixSha256": "127aaab09d065f9da90afad8b17cc75ebab18bb817ed84d77a264b4b8b7b9c25"
+        }
+      },
+      "files": {
+        "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "cf8cd970a097cc64548e4471e6d68806ec41ab3aa8fdb3544647b27e893474ce"
+      }
+    },
+    "v3": {
+      "capturedAtUtc": "2026-10-09T14:54:12.711944+00:00",
+      "phase": "mark",
+      "bootId": "f828f174-169c-4a64-91c8-a220c554ae58",
+      "processes": [
+        {
+          "pid": 1299,
+          "startTicks": "98831",
+          "state": "S",
+          "argv": [
+            "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+            "--mode",
+            "worker",
+            "--threads",
+            "32",
+            "--worker-offset",
+            "46",
+            "--listen",
+            "192.168.0.33:39370",
+            ""
+          ],
+          "cpus": "0-31",
+          "threads": [
+            {
+              "tid": 1299,
+              "name": "distributed-sol",
+              "ticks": 5,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1300,
+              "name": "dist-search-46",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1301,
+              "name": "dist-search-47",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1302,
+              "name": "dist-search-48",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1303,
+              "name": "dist-search-49",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1304,
+              "name": "dist-search-50",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1305,
+              "name": "dist-search-51",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1306,
+              "name": "dist-search-52",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1307,
+              "name": "dist-search-53",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1308,
+              "name": "dist-search-54",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1309,
+              "name": "dist-search-55",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1310,
+              "name": "dist-search-56",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1311,
+              "name": "dist-search-57",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1312,
+              "name": "dist-search-58",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1313,
+              "name": "dist-search-59",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1314,
+              "name": "dist-search-60",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1315,
+              "name": "dist-search-61",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1316,
+              "name": "dist-search-62",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1317,
+              "name": "dist-search-63",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1318,
+              "name": "dist-search-64",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1319,
+              "name": "dist-search-65",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1320,
+              "name": "dist-search-66",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1321,
+              "name": "dist-search-67",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1322,
+              "name": "dist-search-68",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1323,
+              "name": "dist-search-69",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1324,
+              "name": "dist-search-70",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1325,
+              "name": "dist-search-71",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1326,
+              "name": "dist-search-72",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1327,
+              "name": "dist-search-73",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1328,
+              "name": "dist-search-74",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1329,
+              "name": "dist-search-75",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1330,
+              "name": "dist-search-76",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "scaling_governor": {
+          "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy28/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy18/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy26/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy16/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy24/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy22/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy30/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy20/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy29/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy19/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy27/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy17/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy25/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy23/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy31/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy21/scaling_governor": "performance"
+        },
+        "energy_performance_preference": {
+          "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy28/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy18/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy26/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy16/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy24/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy22/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy30/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy20/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy29/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy19/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy27/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy17/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy25/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy23/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy31/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy21/energy_performance_preference": "performance"
+        }
+      },
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": -0.015377998352050781,
+            "roundTripMs": 0.2624988555908203
+          },
+          {
+            "serverMinusClientMs": -0.03826618194580078,
+            "roundTripMs": 0.30159950256347656
+          },
+          {
+            "serverMinusClientMs": -0.02872943878173828,
+            "roundTripMs": 0.2720355987548828
+          },
+          {
+            "serverMinusClientMs": -0.024557113647460938,
+            "roundTripMs": 0.24700164794921875
+          },
+          {
+            "serverMinusClientMs": 0.07748603820800781,
+            "roundTripMs": 0.3867149353027344
+          },
+          {
+            "serverMinusClientMs": -0.04684925079345703,
+            "roundTripMs": 0.2624988555908203
+          },
+          {
+            "serverMinusClientMs": 0.0059604644775390625,
+            "roundTripMs": 0.6923675537109375
+          },
+          {
+            "serverMinusClientMs": -0.03445148468017578,
+            "roundTripMs": 0.24390220642089844
+          }
+        ],
+        "medianBestHalfOffsetMs": -0.02950429916381836,
+        "minimumRoundTripMs": 0.24390220642089844,
+        "capturedUnix": 1791557653.1154757
+      },
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 14:53:56 2026\nSystem time     : 0.000003265 seconds slow of NTP time\nLast offset     : -0.000002703 seconds\nRMS offset      : 0.000009937 seconds\nFrequency       : 4.876 ppm slow\nResidual freq   : -0.004 ppm\nSkew            : 0.527 ppm\nRoot delay      : 0.000155123 seconds\nRoot dispersion : 0.001054670 seconds\nUpdate interval : 16.2 seconds\nLeap status     : Normal\n",
+        "stderr": ""
+      },
+      "logs": {
+        "resume-team.log": {
+          "endByte": 26363619,
+          "prefixSha256": "577404136eaaf5c6f553ade8ead0dc0558904ff5674ec025a4ebaae1235c291d"
+        }
+      },
+      "files": {
+        "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "e41fd115af140cd5260f36b0a8f88749f3c1ae7edf67c176a8a4ceef1cec21af"
+      }
+    },
+    "nomlab": {
+      "capturedAtUtc": "2026-10-09T14:54:12.738476+00:00",
+      "phase": "mark",
+      "bootId": "6c4c3c67-7b03-49c0-9073-e209bfa9cf68",
+      "processes": [
+        {
+          "pid": 6609,
+          "startTicks": "938381",
+          "state": "S",
+          "argv": [
+            "python3",
+            "/home/nomlab-ubuntu/procon37-distributed/resume-team-runner.py",
+            "--bridge",
+            "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+            "--solver",
+            "/home/nomlab-ubuntu/procon37-distributed/launcher",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--team",
+            "1",
+            "--cpus",
+            "0-15",
+            ""
+          ],
+          "cpus": "0-15",
+          "threads": [
+            {
+              "tid": 6609,
+              "name": "python3",
+              "ticks": 2,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            }
+          ]
+        },
+        {
+          "pid": 6654,
+          "startTicks": "938384",
+          "state": "S",
+          "argv": [
+            "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--token",
+            "[redacted]",
+            "--solver",
+            "/home/nomlab-ubuntu/procon37-distributed/launcher",
+            ""
+          ],
+          "cpus": "0-15",
+          "threads": [
+            {
+              "tid": 6654,
+              "name": "server-bridge",
+              "ticks": 19,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6655,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6656,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6657,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6658,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6659,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6660,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6662,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6664,
+              "name": "tokio-rt-worker",
+              "ticks": 10,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6665,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6666,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6667,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6668,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6669,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6670,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6671,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6672,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "scaling_governor": {
+          "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance"
+        },
+        "energy_performance_preference": {
+          "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance"
+        }
+      },
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": 0.06031990051269531,
+            "roundTripMs": 1.4138221740722656
+          },
+          {
+            "serverMinusClientMs": -0.2142190933227539,
+            "roundTripMs": 2.1860599517822266
+          },
+          {
+            "serverMinusClientMs": 0.095367431640625,
+            "roundTripMs": 1.5330314636230469
+          },
+          {
+            "serverMinusClientMs": -0.10013580322265625,
+            "roundTripMs": 1.9578933715820312
+          },
+          {
+            "serverMinusClientMs": 0.09250640869140625,
+            "roundTripMs": 1.51824951171875
+          },
+          {
+            "serverMinusClientMs": 0.10275840759277344,
+            "roundTripMs": 1.51824951171875
+          },
+          {
+            "serverMinusClientMs": -0.24068355560302734,
+            "roundTripMs": 2.218484878540039
+          },
+          {
+            "serverMinusClientMs": -0.049948692321777344,
+            "roundTripMs": 1.893758773803711
+          }
+        ],
+        "medianBestHalfOffsetMs": 0.09393692016601562,
+        "minimumRoundTripMs": 1.4138221740722656,
+        "capturedUnix": 1791557653.1555264
+      },
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 14:54:07 2026\nSystem time     : 0.000046426 seconds fast of NTP time\nLast offset     : +0.000012781 seconds\nRMS offset      : 0.000021542 seconds\nFrequency       : 23.696 ppm slow\nResidual freq   : +0.095 ppm\nSkew            : 4.437 ppm\nRoot delay      : 0.001879622 seconds\nRoot dispersion : 0.001120244 seconds\nUpdate interval : 16.1 seconds\nLeap status     : Normal\n",
+        "stderr": ""
+      },
+      "logs": {
+        "resume-team.log": {
+          "endByte": 63430,
+          "prefixSha256": "2e44b6931ee497c44ef8aa76e742ab1110bc33b985f6857ed540b12087d69117"
+        }
+      },
+      "files": {
+        "bin/distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+        "resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+        "run.sh": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27"
+      }
+    },
+    "local": {
+      "capturedAtUtc": "2026-10-09T14:54:12.516028+00:00",
+      "phase": "mark",
+      "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422",
+      "processes": [
+        {
+          "pid": 34258,
+          "startTicks": "944294",
+          "state": "S",
+          "argv": [
+            "/usr/bin/python3",
+            "/home/imak/work/procon37/solver/distributed-lab/clock_sync.py",
+            "serve",
+            "--address",
+            "192.168.0.81",
+            "--port",
+            "32123",
+            "--record-dir",
+            "/home/imak/work/procon37/.server/distributed/clock",
+            ""
+          ],
+          "cpus": "1,3,5,7",
+          "threads": [
+            {
+              "tid": 34258,
+              "name": "python3",
+              "ticks": 4,
+              "cpus": "1,3,5,7",
+              "deltaTicks": 0
+            }
+          ]
+        },
+        {
+          "pid": 34385,
+          "startTicks": "951314",
+          "state": "S",
+          "argv": [
+            "python3",
+            "/home/imak/work/procon37/.server/distributed/team2/resume-team-runner.py",
+            "--bridge",
+            "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+            "--solver",
+            "/home/imak/work/procon37/.server/distributed/launchers/generation6.sh",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--team",
+            "2",
+            "--cpus",
+            "0",
+            ""
+          ],
+          "cpus": "0",
+          "threads": [
+            {
+              "tid": 34385,
+              "name": "python3",
+              "ticks": 2,
+              "cpus": "0",
+              "deltaTicks": 0
+            }
+          ]
+        },
+        {
+          "pid": 34386,
+          "startTicks": "951317",
+          "state": "S",
+          "argv": [
+            "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--token",
+            "[redacted]",
+            "--solver",
+            "/home/imak/work/procon37/.server/distributed/launchers/generation6.sh",
+            ""
+          ],
+          "cpus": "0",
+          "threads": [
+            {
+              "tid": 34386,
+              "name": "server-bridge",
+              "ticks": 10,
+              "cpus": "0",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 34387,
+              "name": "tokio-rt-worker",
+              "ticks": 3,
+              "cpus": "0",
+              "deltaTicks": 0
+            }
+          ]
+        },
+        {
+          "pid": 34389,
+          "startTicks": "951348",
+          "state": "S",
+          "argv": [
+            "python3",
+            "/home/imak/work/procon37/.server/distributed/team3/resume-team-runner.py",
+            "--bridge",
+            "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+            "--solver",
+            "/home/imak/work/procon37/.server/distributed/launchers/generation8.sh",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--team",
+            "3",
+            "--cpus",
+            "2",
+            ""
+          ],
+          "cpus": "2",
+          "threads": [
+            {
+              "tid": 34389,
+              "name": "python3",
+              "ticks": 1,
+              "cpus": "2",
+              "deltaTicks": 0
+            }
+          ]
+        },
+        {
+          "pid": 34390,
+          "startTicks": "951351",
+          "state": "S",
+          "argv": [
+            "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--token",
+            "[redacted]",
+            "--solver",
+            "/home/imak/work/procon37/.server/distributed/launchers/generation8.sh",
+            ""
+          ],
+          "cpus": "2",
+          "threads": [
+            {
+              "tid": 34390,
+              "name": "server-bridge",
+              "ticks": 10,
+              "cpus": "2",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 34391,
+              "name": "tokio-rt-worker",
+              "ticks": 3,
+              "cpus": "2",
+              "deltaTicks": 0
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "scaling_governor": {
+          "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance"
+        },
+        "energy_performance_preference": {
+          "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance"
+        }
+      },
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": 0.014543533325195312,
+            "roundTripMs": 0.080108642578125
+          },
+          {
+            "serverMinusClientMs": 0.0032186508178710938,
+            "roundTripMs": 0.09655952453613281
+          },
+          {
+            "serverMinusClientMs": 0.008940696716308594,
+            "roundTripMs": 0.11897087097167969
+          },
+          {
+            "serverMinusClientMs": 0.00667572021484375,
+            "roundTripMs": 0.10585784912109375
+          },
+          {
+            "serverMinusClientMs": 0.006079673767089844,
+            "roundTripMs": 0.06079673767089844
+          },
+          {
+            "serverMinusClientMs": 0.00858306884765625,
+            "roundTripMs": 0.07200241088867188
+          },
+          {
+            "serverMinusClientMs": -0.013589859008789062,
+            "roundTripMs": 0.09441375732421875
+          },
+          {
+            "serverMinusClientMs": -0.007867813110351562,
+            "roundTripMs": 0.095367431640625
+          }
+        ],
+        "medianBestHalfOffsetMs": 0.007331371307373047,
+        "minimumRoundTripMs": 0.06079673767089844,
+        "capturedUnix": 1791557652.9177797
+      },
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : 5BBD5B71 (91.189.91.113)\nStratum         : 3\nRef time (UTC)  : Fri Oct 09 14:51:10 2026\nSystem time     : 0.005694709 seconds slow of NTP time\nLast offset     : -0.000655565 seconds\nRMS offset      : 0.066485494 seconds\nFrequency       : 9.084 ppm slow\nResidual freq   : -0.060 ppm\nSkew            : 9.466 ppm\nRoot delay      : 0.257729739 seconds\nRoot dispersion : 0.013510044 seconds\nUpdate interval : 258.6 seconds\nLeap status     : Normal\n",
+        "stderr": ""
+      },
+      "logs": {},
+      "files": {}
+    }
+  },
+  "scope": "One start sample only. v1/NOM stderr covers the current/final case, not the full run."
+}

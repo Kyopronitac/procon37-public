@@ -1,0 +1,62 @@
+{
+  "build": {
+    "exitCode": 0,
+    "cargoSeconds": 11.96,
+    "cpu": "3",
+    "jobs": 1,
+    "gpuStarted": false
+  },
+  "cpuOnly": {
+    "command": [
+      "taskset",
+      "-c",
+      "3",
+      "/home/imak/work/procon37/solver/distributed-candidates/c009-gpu-owner/target/release/procon37-c009-owner-probe",
+      "--cpu-only"
+    ],
+    "pid": 4,
+    "exitCode": 0,
+    "timedOut": false,
+    "wallSeconds": 2.0689144909993047,
+    "cpu": "3",
+    "gpuStarted": false,
+    "pairs": 6,
+    "pairCoordinates": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "allPairsMatch": true,
+    "checkedPathScalars": 3208980,
+    "normalShutdown": true,
+    "placementUnchanged": true,
+    "processRemaining": false,
+    "remainingDirectChildren": [],
+    "success": true
+  },
+  "sourceAggregateSha256": "49222ebe00a1e05e932a03d4c627df7793eba3b829f74b71fc9155ef673c5054",
+  "binarySha256": "5854baa5d0b29b3c004174aa19dbde8e54a7997b25a3d5c461be567de58d7e46",
+  "c009SourceFilesUnchanged": 47,
+  "c009ProductionBinaryUnchanged": true
+}

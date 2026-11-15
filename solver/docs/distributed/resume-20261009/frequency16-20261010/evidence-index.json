@@ -1,0 +1,467 @@
+{
+  "createdAt": "2026-10-10T06:03:59.991259+09:00",
+  "scope": "User-specified16x16 four-seed comparison; not formal12",
+  "referenceCount": 4,
+  "newCandidateCount": 8,
+  "largeReplaysCopied": false,
+  "notes": [
+    "The seed0 reference is the AC case of a C012 full12 run that had WA in other cases.",
+    "Historical reference mixes C012 seed0 and C013 seed3/6/9; no new baseline run."
+  ],
+  "records": [
+    {
+      "kind": "reference",
+      "version": "C012",
+      "seed": 0,
+      "runId": "1791561513817407923-45859",
+      "sourceRun": ".server/runs/1791561513817407923-45859/run.json",
+      "archivedRun": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/raw-runs/reference-C012-seed0-1791561513817407923-45859.json",
+      "runSha256": "c9474d9f971385261b49f07581e02e70958611bab9026108c0c59144c4bf4aa9",
+      "runBytes": 9759,
+      "runOverallVerdict": "WA",
+      "selectedCaseVerdict": "AC",
+      "selectedCaseAll4AC": true,
+      "caseFiles": {
+        "problem.json": {
+          "sourcePath": ".server/runs/1791561513817407923-45859/0/problem.json",
+          "bytes": 1277,
+          "sha256": "fb7a90c309d5a527a16c0efc45b58bdf2b18f6bcdf7fc70608c994d878ba3912",
+          "copied": false
+        },
+        "config.json": {
+          "sourcePath": ".server/runs/1791561513817407923-45859/0/config.json",
+          "bytes": 1473,
+          "sha256": "fbbde6c282420063f814918b3907d7cfe30ebd5ca6536df193c5ba4dcd975055",
+          "copied": false
+        },
+        "replay.json": {
+          "sourcePath": ".server/runs/1791561513817407923-45859/0/replay.json",
+          "bytes": 526644,
+          "sha256": "c3f4fc064f6fdc075b517559e834446c99b6b1a81dd57b629d2c17f55e763ffe",
+          "copied": false
+        }
+      }
+    },
+    {
+      "kind": "reference",
+      "version": "C013",
+      "seed": 3,
+      "runId": "1791570846766461500-69241",
+      "sourceRun": ".server/runs/1791570846766461500-69241/run.json",
+      "archivedRun": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/raw-runs/reference-C013-seed3-1791570846766461500-69241.json",
+      "runSha256": "61ae59a68afd21018d1cf1d5b7a565e65025e790002fff71a8ce2e3558210a07",
+      "runBytes": 1330,
+      "runOverallVerdict": "AC",
+      "selectedCaseVerdict": "AC",
+      "selectedCaseAll4AC": true,
+      "caseFiles": {
+        "problem.json": {
+          "sourcePath": ".server/runs/1791570846766461500-69241/3/problem.json",
+          "bytes": 1318,
+          "sha256": "a9ef0edf9360fa7aaa6e946ac8b80268231bbdcde41eae006fce7fb49f4af961",
+          "copied": false
+        },
+        "config.json": {
+          "sourcePath": ".server/runs/1791570846766461500-69241/3/config.json",
+          "bytes": 1532,
+          "sha256": "900a1a8a292469ad6d8a34cf941af5a22b2656ffad58ac6a39d960366c8cbe9c",
+          "copied": false
+        },
+        "replay.json": {
+          "sourcePath": ".server/runs/1791570846766461500-69241/3/replay.json",
+          "bytes": 2336395,
+          "sha256": "36643fbfe5631339a8c401dc116f731c88d9bde98631b0f11ad162e68bf4a8f5",
+          "copied": false
+        }
+      }
+    },
+    {
+      "kind": "reference",
+      "version": "C013",
+      "seed": 6,
+      "runId": "1791571511084942906-69717",
+      "sourceRun": ".server/runs/1791571511084942906-69717/run.json",
+      "archivedRun": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/raw-runs/reference-C013-seed6-1791571511084942906-69717.json",
+      "runSha256": "48ea7c62d7f799a4d95bceadbfa96043d898fb9a86d7974c2775b6b2fecba830",
+      "runBytes": 1325,
+      "runOverallVerdict": "AC",
+      "selectedCaseVerdict": "AC",
+      "selectedCaseAll4AC": true,
+      "caseFiles": {
+        "problem.json": {
+          "sourcePath": ".server/runs/1791571511084942906-69717/6/problem.json",
+          "bytes": 1298,
+          "sha256": "6fb6f285800469a40dde8d7b4a9777dbc67461abe8eaae59d65f9b10427b8a73",
+          "copied": false
+        },
+        "config.json": {
+          "sourcePath": ".server/runs/1791571511084942906-69717/6/config.json",
+          "bytes": 1512,
+          "sha256": "b7a93b86d56a04793bfa1ceb7ee48bafd62d39ccadfb8919550b160fed3ebdf3",
+          "copied": false
+        },
+        "replay.json": {
+          "sourcePath": ".server/runs/1791571511084942906-69717/6/replay.json",
+          "bytes": 1075568,
+          "sha256": "9d2b28965a49e6df427fe1627c42b0ec7d5ea147a5838cadb1fd480fcf50332d",
+          "copied": false
+        }
+      }
+    },
+    {
+      "kind": "reference",
+      "version": "C013",
+      "seed": 9,
+      "runId": "1791572451015433291-71066",
+      "sourceRun": ".server/runs/1791572451015433291-71066/run.json",
+      "archivedRun": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/raw-runs/reference-C013-seed9-1791572451015433291-71066.json",
+      "runSha256": "2bc33b4fa18a0f8fce4e282c54dac46e075a5211b4fedf48522ea312239c5915",
+      "runBytes": 1325,
+      "runOverallVerdict": "AC",
+      "selectedCaseVerdict": "AC",
+      "selectedCaseAll4AC": true,
+      "caseFiles": {
+        "problem.json": {
+          "sourcePath": ".server/runs/1791572451015433291-71066/9/problem.json",
+          "bytes": 1282,
+          "sha256": "8cecd3c3f98d7d0692615000aba95ad5cf5d1a1b9178407f98e452f91d7a97ac",
+          "copied": false
+        },
+        "config.json": {
+          "sourcePath": ".server/runs/1791572451015433291-71066/9/config.json",
+          "bytes": 1496,
+          "sha256": "63b10d045010a3be885083019bfd791f75cc6b8e572c1af65a312fff358608a9",
+          "copied": false
+        },
+        "replay.json": {
+          "sourcePath": ".server/runs/1791572451015433291-71066/9/replay.json",
+          "bytes": 512599,
+          "sha256": "9a0cf862b8a430d9bc76b3f3fabf8d5c52fc7bb9663956aab7899111d98fcf31",
+          "copied": false
+        }
+      }
+    },
+    {
+      "kind": "new-candidate",
+      "version": "C014",
+      "seed": 0,
+      "runId": "1791575931706920231-78521",
+      "sourceRun": ".server/runs/1791575931706920231-78521/run.json",
+      "archivedRun": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/raw-runs/new-candidate-C014-seed0-1791575931706920231-78521.json",
+      "runSha256": "3276dadf53dff3fc7beabba449cb1ac93ed1e1064caf55d75c3eeb2077472bed",
+      "runBytes": 1187,
+      "runOverallVerdict": "AC",
+      "selectedCaseVerdict": "AC",
+      "selectedCaseAll4AC": true,
+      "caseFiles": {
+        "problem.json": {
+          "sourcePath": ".server/runs/1791575931706920231-78521/0/problem.json",
+          "bytes": 1277,
+          "sha256": "fb7a90c309d5a527a16c0efc45b58bdf2b18f6bcdf7fc70608c994d878ba3912",
+          "copied": false
+        },
+        "config.json": {
+          "sourcePath": ".server/runs/1791575931706920231-78521/0/config.json",
+          "bytes": 1449,
+          "sha256": "c297331c36cb7bb085321e012388d14b4305bed994fea7034c5a32007995429a",
+          "copied": false
+        },
+        "replay.json": {
+          "sourcePath": ".server/runs/1791575931706920231-78521/0/replay.json",
+          "bytes": 528643,
+          "sha256": "5679c7d2fee594c27d3c54e8372a4f760de2a1828bce2725b2a143b573219f91",
+          "copied": false
+        }
+      }
+    },
+    {
+      "kind": "new-candidate",
+      "version": "C014",
+      "seed": 3,
+      "runId": "1791576296431362123-80082",
+      "sourceRun": ".server/runs/1791576296431362123-80082/run.json",
+      "archivedRun": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/raw-runs/new-candidate-C014-seed3-1791576296431362123-80082.json",
+      "runSha256": "09f7141081b2b63aa9129e869481d40a9cf8491b6fff4b871bb8466768a8ebf1",
+      "runBytes": 1197,
+      "runOverallVerdict": "AC",
+      "selectedCaseVerdict": "AC",
+      "selectedCaseAll4AC": true,
+      "caseFiles": {
+        "problem.json": {
+          "sourcePath": ".server/runs/1791576296431362123-80082/3/problem.json",
+          "bytes": 1318,
+          "sha256": "a9ef0edf9360fa7aaa6e946ac8b80268231bbdcde41eae006fce7fb49f4af961",
+          "copied": false
+        },
+        "config.json": {
+          "sourcePath": ".server/runs/1791576296431362123-80082/3/config.json",
+          "bytes": 1490,
+          "sha256": "e1c99ea533a5191661d369321e9dc970726ec7ec38864d9b28213ce74f12659f",
+          "copied": false
+        },
+        "replay.json": {
+          "sourcePath": ".server/runs/1791576296431362123-80082/3/replay.json",
+          "bytes": 2332555,
+          "sha256": "d80c110c12d08e68705cb70bc9dd180a9b22987ec708a54d0af60d443b1b9689",
+          "copied": false
+        }
+      }
+    },
+    {
+      "kind": "new-candidate",
+      "version": "C014",
+      "seed": 6,
+      "runId": "1791576961316778564-82715",
+      "sourceRun": ".server/runs/1791576961316778564-82715/run.json",
+      "archivedRun": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/raw-runs/new-candidate-C014-seed6-1791576961316778564-82715.json",
+      "runSha256": "eef78ec09ad663a5ee684b35fb44f9c82f99739b77451f4428263833618b34c1",
+      "runBytes": 1192,
+      "runOverallVerdict": "AC",
+      "selectedCaseVerdict": "AC",
+      "selectedCaseAll4AC": true,
+      "caseFiles": {
+        "problem.json": {
+          "sourcePath": ".server/runs/1791576961316778564-82715/6/problem.json",
+          "bytes": 1298,
+          "sha256": "6fb6f285800469a40dde8d7b4a9777dbc67461abe8eaae59d65f9b10427b8a73",
+          "copied": false
+        },
+        "config.json": {
+          "sourcePath": ".server/runs/1791576961316778564-82715/6/config.json",
+          "bytes": 1470,
+          "sha256": "3304749244e5c3c2185db1075fce69b9141e203e1a96e11812bfb4076c286369",
+          "copied": false
+        },
+        "replay.json": {
+          "sourcePath": ".server/runs/1791576961316778564-82715/6/replay.json",
+          "bytes": 1074076,
+          "sha256": "01b02b73d384c63ff77e22b86eeb800e2f4d569075dbf708f4d04764b2845b3e",
+          "copied": false
+        }
+      }
+    },
+    {
+      "kind": "new-candidate",
+      "version": "C014",
+      "seed": 9,
+      "runId": "1791577506021074671-83878",
+      "sourceRun": ".server/runs/1791577506021074671-83878/run.json",
+      "archivedRun": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/raw-runs/new-candidate-C014-seed9-1791577506021074671-83878.json",
+      "runSha256": "9a05daa3343237e00ded9102dc0de5a2b40e8a53014302c0890bd764ff2099e1",
+      "runBytes": 1191,
+      "runOverallVerdict": "AC",
+      "selectedCaseVerdict": "AC",
+      "selectedCaseAll4AC": true,
+      "caseFiles": {
+        "problem.json": {
+          "sourcePath": ".server/runs/1791577506021074671-83878/9/problem.json",
+          "bytes": 1282,
+          "sha256": "8cecd3c3f98d7d0692615000aba95ad5cf5d1a1b9178407f98e452f91d7a97ac",
+          "copied": false
+        },
+        "config.json": {
+          "sourcePath": ".server/runs/1791577506021074671-83878/9/config.json",
+          "bytes": 1454,
+          "sha256": "276844ad1d2f70d129588c13329d7424553ee79c7cf61225981a196a0603ae51",
+          "copied": false
+        },
+        "replay.json": {
+          "sourcePath": ".server/runs/1791577506021074671-83878/9/replay.json",
+          "bytes": 508187,
+          "sha256": "7c2dfd8bf047b1a617bb844e12b64b231668dd5910d79905be4d6441db0a6116",
+          "copied": false
+        }
+      }
+    },
+    {
+      "kind": "new-candidate",
+      "version": "C015",
+      "seed": 0,
+      "runId": "1791577879772743901-84620",
+      "sourceRun": ".server/runs/1791577879772743901-84620/run.json",
+      "archivedRun": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/raw-runs/new-candidate-C015-seed0-1791577879772743901-84620.json",
+      "runSha256": "6c224df76b32afece03b63bfc55204fc587b9a6ed72a2b7576c027caaf054cb1",
+      "runBytes": 1187,
+      "runOverallVerdict": "AC",
+      "selectedCaseVerdict": "AC",
+      "selectedCaseAll4AC": true,
+      "caseFiles": {
+        "problem.json": {
+          "sourcePath": ".server/runs/1791577879772743901-84620/0/problem.json",
+          "bytes": 1277,
+          "sha256": "fb7a90c309d5a527a16c0efc45b58bdf2b18f6bcdf7fc70608c994d878ba3912",
+          "copied": false
+        },
+        "config.json": {
+          "sourcePath": ".server/runs/1791577879772743901-84620/0/config.json",
+          "bytes": 1449,
+          "sha256": "48eda5b2c3281b749efeaebb0ff66b03bc0414783e6c8ef79828fceae6d64b30",
+          "copied": false
+        },
+        "replay.json": {
+          "sourcePath": ".server/runs/1791577879772743901-84620/0/replay.json",
+          "bytes": 529398,
+          "sha256": "0456e1ac85e76e212558695e84f23008537f149e90471d43b4d884607cfbba8c",
+          "copied": false
+        }
+      }
+    },
+    {
+      "kind": "new-candidate",
+      "version": "C015",
+      "seed": 3,
+      "runId": "1791578244448615516-85864",
+      "sourceRun": ".server/runs/1791578244448615516-85864/run.json",
+      "archivedRun": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/raw-runs/new-candidate-C015-seed3-1791578244448615516-85864.json",
+      "runSha256": "adfcc0fce9cbe58592d9dc5c9a75ed404718b8641e735fe83da4fa26cb569c11",
+      "runBytes": 1197,
+      "runOverallVerdict": "AC",
+      "selectedCaseVerdict": "AC",
+      "selectedCaseAll4AC": true,
+      "caseFiles": {
+        "problem.json": {
+          "sourcePath": ".server/runs/1791578244448615516-85864/3/problem.json",
+          "bytes": 1318,
+          "sha256": "a9ef0edf9360fa7aaa6e946ac8b80268231bbdcde41eae006fce7fb49f4af961",
+          "copied": false
+        },
+        "config.json": {
+          "sourcePath": ".server/runs/1791578244448615516-85864/3/config.json",
+          "bytes": 1490,
+          "sha256": "a84d182ce9ac9174d20a72d4b9f41238c2eb378e94c5344668a76be9d8483f7b",
+          "copied": false
+        },
+        "replay.json": {
+          "sourcePath": ".server/runs/1791578244448615516-85864/3/replay.json",
+          "bytes": 2340544,
+          "sha256": "00907270feb13032c1bd06fb6b365c527350c5117f5ed9bbf30681ea946b01ee",
+          "copied": false
+        }
+      }
+    },
+    {
+      "kind": "new-candidate",
+      "version": "C015",
+      "seed": 6,
+      "runId": "1791578909451624765-87001",
+      "sourceRun": ".server/runs/1791578909451624765-87001/run.json",
+      "archivedRun": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/raw-runs/new-candidate-C015-seed6-1791578909451624765-87001.json",
+      "runSha256": "874d075fb2d7d2983826b52ffb88ed0fc8915d4f5d4ff6b8314db2ce06d10f41",
+      "runBytes": 1192,
+      "runOverallVerdict": "AC",
+      "selectedCaseVerdict": "AC",
+      "selectedCaseAll4AC": true,
+      "caseFiles": {
+        "problem.json": {
+          "sourcePath": ".server/runs/1791578909451624765-87001/6/problem.json",
+          "bytes": 1298,
+          "sha256": "6fb6f285800469a40dde8d7b4a9777dbc67461abe8eaae59d65f9b10427b8a73",
+          "copied": false
+        },
+        "config.json": {
+          "sourcePath": ".server/runs/1791578909451624765-87001/6/config.json",
+          "bytes": 1470,
+          "sha256": "4e9bb6610506b01eabf1153a4c0930477f994064e8b17681d7c499758b7ac521",
+          "copied": false
+        },
+        "replay.json": {
+          "sourcePath": ".server/runs/1791578909451624765-87001/6/replay.json",
+          "bytes": 1078431,
+          "sha256": "439a41286fd8eb7e93fe6478ac192a86cb719f0736ab6b6c12b8851792640863",
+          "copied": false
+        }
+      }
+    },
+    {
+      "kind": "new-candidate",
+      "version": "C015",
+      "seed": 9,
+      "runId": "1791579454080818640-89493",
+      "sourceRun": ".server/runs/1791579454080818640-89493/run.json",
+      "archivedRun": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/raw-runs/new-candidate-C015-seed9-1791579454080818640-89493.json",
+      "runSha256": "0dafe6d57533e69b164b64e611a0334e1e1a8d5540e82d349f66768441f6af64",
+      "runBytes": 1190,
+      "runOverallVerdict": "AC",
+      "selectedCaseVerdict": "AC",
+      "selectedCaseAll4AC": true,
+      "caseFiles": {
+        "problem.json": {
+          "sourcePath": ".server/runs/1791579454080818640-89493/9/problem.json",
+          "bytes": 1282,
+          "sha256": "8cecd3c3f98d7d0692615000aba95ad5cf5d1a1b9178407f98e452f91d7a97ac",
+          "copied": false
+        },
+        "config.json": {
+          "sourcePath": ".server/runs/1791579454080818640-89493/9/config.json",
+          "bytes": 1454,
+          "sha256": "cc78ac15996536224711664a558ebc14751edbfbd00f1f1a1ce26ff675f4a449",
+          "copied": false
+        },
+        "replay.json": {
+          "sourcePath": ".server/runs/1791579454080818640-89493/9/replay.json",
+          "bytes": 509605,
+          "sha256": "b440b2539cb452841dc94b81fea7d5c657d2af51b1b646b7627a12513f8508ae",
+          "copied": false
+        }
+      }
+    }
+  ],
+  "completedEvaluationMetadata": [
+    {
+      "version": "C014",
+      "sourcePath": ".server/distributed/evaluations/frequency16-C014-official-01/results.json",
+      "archivedPath": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/evaluation-metadata/C014-results.json",
+      "bytes": 8441,
+      "sha256": "2c883dfaae1c2e48f6f3cb6c643964f1a53fc7007fb4a9c269e3434ac4c51411"
+    },
+    {
+      "version": "C014",
+      "sourcePath": ".server/distributed/evaluations/frequency16-C014-official-01/before.json",
+      "archivedPath": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/evaluation-metadata/C014-before.json",
+      "bytes": 22398,
+      "sha256": "728fc5ca814a64152d628ca181edc1d0943a901bebac34556c55f1cb0701a597"
+    },
+    {
+      "version": "C014",
+      "sourcePath": ".server/distributed/evaluations/frequency16-C014-official-01/after.json",
+      "archivedPath": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/evaluation-metadata/C014-after.json",
+      "bytes": 22398,
+      "sha256": "e97b9cc5fe1eb598c5d56087990059736a3d8d8f4ce70a36f253ca8949d45124"
+    },
+    {
+      "version": "C014",
+      "sourcePath": ".server/distributed/evaluations/frequency16-C014-official-01/manifest.json",
+      "archivedPath": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/evaluation-metadata/C014-manifest.json",
+      "bytes": 20291,
+      "sha256": "87f1060963f0e6d9e60f2ff9b425b818bbe519cab0da8b86e2a81936bd8222be"
+    },
+    {
+      "version": "C015",
+      "sourcePath": ".server/distributed/evaluations/frequency16-C015-official-01/results.json",
+      "archivedPath": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/evaluation-metadata/C015-results.json",
+      "bytes": 8441,
+      "sha256": "34c911acdd7d3264c949badf2a546f3c4e09f3d51acd99919af9d7dbb62edce4"
+    },
+    {
+      "version": "C015",
+      "sourcePath": ".server/distributed/evaluations/frequency16-C015-official-01/before.json",
+      "archivedPath": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/evaluation-metadata/C015-before.json",
+      "bytes": 22435,
+      "sha256": "53269eaac0db047f6bc4823070c5f900536e3702c86ab7577157320d8614180d"
+    },
+    {
+      "version": "C015",
+      "sourcePath": ".server/distributed/evaluations/frequency16-C015-official-01/after.json",
+      "archivedPath": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/evaluation-metadata/C015-after.json",
+      "bytes": 22435,
+      "sha256": "7c44c0a7d03c92e9bfb198191c32df83db050a7554cb0ba132f24b27569f0986"
+    },
+    {
+      "version": "C015",
+      "sourcePath": ".server/distributed/evaluations/frequency16-C015-official-01/manifest.json",
+      "archivedPath": "solver/docs/distributed/resume-20261009/frequency16-20261010/evidence/evaluation-metadata/C015-manifest.json",
+      "bytes": 20329,
+      "sha256": "e8e87503c10d6af1ca93b4f9aa15ff9168888027233b61dbf77712d8abd48f3a"
+    }
+  ]
+}

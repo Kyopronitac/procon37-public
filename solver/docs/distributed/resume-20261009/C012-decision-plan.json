@@ -1,0 +1,988 @@
+{
+  "schemaVersion": 1,
+  "createdAtUtc": "2026-10-09T03:08:42.890422+00:00",
+  "status": "prespecified before author inspected any C012 evaluation result; screening plan, not adoption",
+  "candidateSourceAggregateSha256": "10acfa3bde81f1dddf1d80ed4ff2fbe0288395fc4eb6dd0923a410607ed8a541",
+  "authorRestrictions": {
+    "C012EvaluationResultsRead": false,
+    "remoteOperations": 0,
+    "buildOrTests": false,
+    "localCpuAffinity": [
+      3
+    ]
+  },
+  "inputsSha256": {
+    "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-01/run.json": "7d9ee3c404dec6387dc982913a3c6e08b2fe01eb9c076afe1783d10a488c14ae",
+    "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-01/results.json": "a7af9b2f7c11756a67b17db2ca910bd160d13a78ebd7819d409714632c506e0d",
+    "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-02/run.json": "c6d3daef4342d1740141bcd5334d3150ca03c3fa33493b6261be938b5a7eaa3b",
+    "solver/docs/distributed/resume-20261009/evaluations/resume-D0-short-02/results.json": "b739fddaa99c2a3de576c25a30ceb0266d16c845626b871417d0cc00cde8fd60",
+    "solver/docs/distributed/resume-20261009/evaluations/C010-on-short-01/run.json": "7ffd6a0d5a97c0043e5703356690913b37bb0c022a1524abefe50972c52e3abd",
+    "solver/docs/distributed/resume-20261009/evaluations/C010-on-short-01/results.json": "c92c6facbefe7e5a6f63a701e597b48b72f14dd6c9c4e692bcbb85169b1a2d9d",
+    "solver/docs/distributed/resume-20261009/evaluations/C010-on-short-02/run.json": "b5811d5ed83f5f06493ed3253dd46036c4c6808b639971164672babfe55914f3",
+    "solver/docs/distributed/resume-20261009/evaluations/C010-on-short-02/results.json": "49476ebd125d3409ffa167392212e7dc4b000781ac3c01e0749f9aeb87b19218",
+    "solver/distributed-candidates/c012-isolated-cooperation/source-manifest.json": "9d575f217e9701c0150d41c254a3a1dba34695c087ffbbc996ec2ba3933af426"
+  },
+  "historicalRuns": {
+    "resume-D0-short-01": {
+      "runId": "1791503276339409187-91328",
+      "all48AC": true,
+      "verifiedUnchanged": true,
+      "totals": {
+        "cases": 12,
+        "meanRank": 1.3333333333333333,
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2964
+      },
+      "sameRankCases": 2,
+      "byFormat": {
+        "first": {
+          "cases": 4,
+          "meanRank": 2.0,
+          "uniqueBrands": 48,
+          "dailyBrands": 334,
+          "udon": 631
+        },
+        "semifinal": {
+          "cases": 4,
+          "meanRank": 1.0,
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 880
+        },
+        "final": {
+          "cases": 4,
+          "meanRank": 1.0,
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1453
+        }
+      },
+      "bySeed": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 12,
+          "dailyBrands": 56,
+          "udon": 69,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 18,
+          "dailyBrands": 90,
+          "udon": 124,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 24,
+          "dailyBrands": 120,
+          "udon": 207,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 13,
+          "dailyBrands": 130,
+          "udon": 329,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 19,
+          "dailyBrands": 95,
+          "udon": 130,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 25,
+          "dailyBrands": 150,
+          "udon": 334,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rank": 2,
+          "uniqueBrands": 11,
+          "dailyBrands": 88,
+          "udon": 136,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 80,
+          "udon": 266,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 552,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rank": 4,
+          "uniqueBrands": 12,
+          "dailyBrands": 60,
+          "udon": 97,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 128,
+          "udon": 360,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 360,
+          "sharesRecordedRank": false
+        }
+      ]
+    },
+    "resume-D0-short-02": {
+      "runId": "1791506866153064781-104560",
+      "all48AC": true,
+      "verifiedUnchanged": true,
+      "totals": {
+        "cases": 12,
+        "meanRank": 1.25,
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2956
+      },
+      "sameRankCases": 5,
+      "byFormat": {
+        "first": {
+          "cases": 4,
+          "meanRank": 1.25,
+          "uniqueBrands": 48,
+          "dailyBrands": 334,
+          "udon": 632
+        },
+        "semifinal": {
+          "cases": 4,
+          "meanRank": 1.0,
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 879
+        },
+        "final": {
+          "cases": 4,
+          "meanRank": 1.5,
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1445
+        }
+      },
+      "bySeed": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 12,
+          "dailyBrands": 56,
+          "udon": 68,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 18,
+          "dailyBrands": 90,
+          "udon": 122,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 24,
+          "dailyBrands": 120,
+          "udon": 209,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rank": 2,
+          "uniqueBrands": 13,
+          "dailyBrands": 130,
+          "udon": 324,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 19,
+          "dailyBrands": 95,
+          "udon": 130,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 25,
+          "dailyBrands": 150,
+          "udon": 333,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 11,
+          "dailyBrands": 88,
+          "udon": 140,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 80,
+          "udon": 268,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 555,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 12,
+          "dailyBrands": 60,
+          "udon": 100,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 128,
+          "udon": 359,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rank": 3,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 348,
+          "sharesRecordedRank": false
+        }
+      ]
+    },
+    "C010-on-short-01": {
+      "runId": "1791511015750545757-119460",
+      "all48AC": true,
+      "verifiedUnchanged": true,
+      "totals": {
+        "cases": 12,
+        "meanRank": 1.4166666666666667,
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2976
+      },
+      "sameRankCases": 4,
+      "byFormat": {
+        "first": {
+          "cases": 4,
+          "meanRank": 2.0,
+          "uniqueBrands": 48,
+          "dailyBrands": 333,
+          "udon": 629
+        },
+        "semifinal": {
+          "cases": 4,
+          "meanRank": 1.25,
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 884
+        },
+        "final": {
+          "cases": 4,
+          "meanRank": 1.0,
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1463
+        }
+      },
+      "bySeed": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rank": 3,
+          "uniqueBrands": 12,
+          "dailyBrands": 56,
+          "udon": 64,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 18,
+          "dailyBrands": 90,
+          "udon": 124,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 24,
+          "dailyBrands": 120,
+          "udon": 211,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 13,
+          "dailyBrands": 130,
+          "udon": 327,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rank": 2,
+          "uniqueBrands": 19,
+          "dailyBrands": 95,
+          "udon": 129,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 25,
+          "dailyBrands": 150,
+          "udon": 336,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rank": 3,
+          "uniqueBrands": 11,
+          "dailyBrands": 87,
+          "udon": 139,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 80,
+          "udon": 269,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 556,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 12,
+          "dailyBrands": 60,
+          "udon": 99,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 128,
+          "udon": 362,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 360,
+          "sharesRecordedRank": false
+        }
+      ]
+    },
+    "C010-on-short-02": {
+      "runId": "1791512070563519640-122297",
+      "all48AC": true,
+      "verifiedUnchanged": true,
+      "totals": {
+        "cases": 12,
+        "meanRank": 1.6666666666666667,
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2966
+      },
+      "sameRankCases": 3,
+      "byFormat": {
+        "first": {
+          "cases": 4,
+          "meanRank": 1.75,
+          "uniqueBrands": 48,
+          "dailyBrands": 334,
+          "udon": 635
+        },
+        "semifinal": {
+          "cases": 4,
+          "meanRank": 2.25,
+          "uniqueBrands": 69,
+          "dailyBrands": 392,
+          "udon": 883
+        },
+        "final": {
+          "cases": 4,
+          "meanRank": 1.0,
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1448
+        }
+      },
+      "bySeed": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 12,
+          "dailyBrands": 56,
+          "udon": 68,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rank": 4,
+          "uniqueBrands": 18,
+          "dailyBrands": 89,
+          "udon": 126,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 24,
+          "dailyBrands": 120,
+          "udon": 205,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 13,
+          "dailyBrands": 130,
+          "udon": 328,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rank": 3,
+          "uniqueBrands": 19,
+          "dailyBrands": 95,
+          "udon": 128,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 25,
+          "dailyBrands": 150,
+          "udon": 327,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rank": 1,
+          "uniqueBrands": 11,
+          "dailyBrands": 88,
+          "udon": 141,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 80,
+          "udon": 267,
+          "sharesRecordedRank": true
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 556,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rank": 4,
+          "uniqueBrands": 12,
+          "dailyBrands": 60,
+          "udon": 98,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rank": 1,
+          "uniqueBrands": 16,
+          "dailyBrands": 128,
+          "udon": 362,
+          "sharesRecordedRank": false
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rank": 1,
+          "uniqueBrands": 28,
+          "dailyBrands": 140,
+          "udon": 360,
+          "sharesRecordedRank": false
+        }
+      ]
+    }
+  },
+  "historicalPairwise": [
+    {
+      "candidate": "C010-on-short-01",
+      "baseline": "resume-D0-short-01",
+      "scoreWDL": {
+        "wins": 6,
+        "ties": 2,
+        "losses": 4
+      },
+      "rankWDL": {
+        "wins": 1,
+        "ties": 8,
+        "losses": 3
+      }
+    },
+    {
+      "candidate": "C010-on-short-01",
+      "baseline": "resume-D0-short-02",
+      "scoreWDL": {
+        "wins": 8,
+        "ties": 0,
+        "losses": 4
+      },
+      "rankWDL": {
+        "wins": 2,
+        "ties": 7,
+        "losses": 3
+      }
+    },
+    {
+      "candidate": "C010-on-short-02",
+      "baseline": "resume-D0-short-01",
+      "scoreWDL": {
+        "wins": 5,
+        "ties": 1,
+        "losses": 6
+      },
+      "rankWDL": {
+        "wins": 1,
+        "ties": 9,
+        "losses": 2
+      }
+    },
+    {
+      "candidate": "C010-on-short-02",
+      "baseline": "resume-D0-short-02",
+      "scoreWDL": {
+        "wins": 5,
+        "ties": 1,
+        "losses": 6
+      },
+      "rankWDL": {
+        "wins": 2,
+        "ties": 7,
+        "losses": 3
+      }
+    }
+  ],
+  "historicalTwoRepeatMeans": {
+    "D0": {
+      "totals": {
+        "cases": 12,
+        "meanRank": 1.2916666666666667,
+        "uniqueBrands": 222.0,
+        "dailyBrands": 1277.0,
+        "udon": 2960.0
+      },
+      "byFormat": {
+        "first": {
+          "cases": 4,
+          "meanRank": 1.625,
+          "uniqueBrands": 48.0,
+          "dailyBrands": 334.0,
+          "udon": 631.5
+        },
+        "semifinal": {
+          "cases": 4,
+          "meanRank": 1.0,
+          "uniqueBrands": 69.0,
+          "dailyBrands": 393.0,
+          "udon": 879.5
+        },
+        "final": {
+          "cases": 4,
+          "meanRank": 1.25,
+          "uniqueBrands": 105.0,
+          "dailyBrands": 550.0,
+          "udon": 1449.0
+        }
+      },
+      "bySeed": [
+        {
+          "seed": 0,
+          "format": "first",
+          "rank": 1.0,
+          "uniqueBrands": 12.0,
+          "dailyBrands": 56.0,
+          "udon": 68.5
+        },
+        {
+          "seed": 1,
+          "format": "semifinal",
+          "rank": 1.0,
+          "uniqueBrands": 18.0,
+          "dailyBrands": 90.0,
+          "udon": 123.0
+        },
+        {
+          "seed": 2,
+          "format": "final",
+          "rank": 1.0,
+          "uniqueBrands": 24.0,
+          "dailyBrands": 120.0,
+          "udon": 208.0
+        },
+        {
+          "seed": 3,
+          "format": "first",
+          "rank": 1.5,
+          "uniqueBrands": 13.0,
+          "dailyBrands": 130.0,
+          "udon": 326.5
+        },
+        {
+          "seed": 4,
+          "format": "semifinal",
+          "rank": 1.0,
+          "uniqueBrands": 19.0,
+          "dailyBrands": 95.0,
+          "udon": 130.0
+        },
+        {
+          "seed": 5,
+          "format": "final",
+          "rank": 1.0,
+          "uniqueBrands": 25.0,
+          "dailyBrands": 150.0,
+          "udon": 333.5
+        },
+        {
+          "seed": 6,
+          "format": "first",
+          "rank": 1.5,
+          "uniqueBrands": 11.0,
+          "dailyBrands": 88.0,
+          "udon": 138.0
+        },
+        {
+          "seed": 7,
+          "format": "semifinal",
+          "rank": 1.0,
+          "uniqueBrands": 16.0,
+          "dailyBrands": 80.0,
+          "udon": 267.0
+        },
+        {
+          "seed": 8,
+          "format": "final",
+          "rank": 1.0,
+          "uniqueBrands": 28.0,
+          "dailyBrands": 140.0,
+          "udon": 553.5
+        },
+        {
+          "seed": 9,
+          "format": "first",
+          "rank": 2.5,
+          "uniqueBrands": 12.0,
+          "dailyBrands": 60.0,
+          "udon": 98.5
+        },
+        {
+          "seed": 10,
+          "format": "semifinal",
+          "rank": 1.0,
+          "uniqueBrands": 16.0,
+          "dailyBrands": 128.0,
+          "udon": 359.5
+        },
+        {
+          "seed": 11,
+          "format": "final",
+          "rank": 2.0,
+          "uniqueBrands": 28.0,
+          "dailyBrands": 140.0,
+          "udon": 354.0
+        }
+      ]
+    },
+    "C010": {
+      "totals": {
+        "cases": 12,
+        "meanRank": 1.5416666666666667,
+        "uniqueBrands": 222.0,
+        "dailyBrands": 1276.0,
+        "udon": 2971.0
+      },
+      "byFormat": {
+        "first": {
+          "cases": 4,
+          "meanRank": 1.875,
+          "uniqueBrands": 48.0,
+          "dailyBrands": 333.5,
+          "udon": 632.0
+        },
+        "semifinal": {
+          "cases": 4,
+          "meanRank": 1.75,
+          "uniqueBrands": 69.0,
+          "dailyBrands": 392.5,
+          "udon": 883.5
+        },
+        "final": {
+          "cases": 4,
+          "meanRank": 1.0,
+          "uniqueBrands": 105.0,
+          "dailyBrands": 550.0,
+          "udon": 1455.5
+        }
+      },
+      "scoreWDLAgainstD0Means": {
+        "wins": 5,
+        "ties": 2,
+        "losses": 5
+      },
+      "rankWDLAgainstD0Means": {
+        "wins": 2,
+        "ties": 6,
+        "losses": 4
+      }
+    }
+  },
+  "fixedCondition": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "count": 12,
+    "formats": "automatic, each 4",
+    "arenaMaps": true,
+    "players": 4,
+    "shortTimeLimitMs": 10000,
+    "team0": "3-node cooperative candidate; 31/15/31 search, controls within 80 logical CPUs",
+    "others": "same frozen NOMLAB parallel, local gen6, local gen8 as both current D0 baselines",
+    "outputDir": "default .server/runs/ only"
+  },
+  "definitions": {
+    "primary": "stored server mean rank; lower is better; preserve competition ties",
+    "scoreWDL": "same seed, lexicographic (uniqueBrands,dailyBrands,udon); higher wins; equal all three ties; never use rank as score tie-breaker",
+    "meanScoreWDL": "two candidate repeats averaged per seed versus two D0 repeats averaged per seed; compare 12 vectors; can compare doubled integer sums to avoid floating equality",
+    "rankWDL": "separate per-seed rank comparison, lower wins",
+    "crossPairTable": "all 4 candidate-run vs D0-run combinations are sensitivity display, not 48 independent trials",
+    "boardSize": "format nominal 16/24/32; arena maps remain enabled",
+    "rankTies": "same rank may be shared; do not turn a shared rank1 into sole victory"
+  },
+  "gates": {
+    "validity": [
+      "all 48 AC each run",
+      "source/binary/config/placement/CPU/fixed opponents unchanged throughout run",
+      "12 exact seeds and 3x4 automatic formats, arena on, equal 10sec limits",
+      "3-node participation and owned-process completion verified",
+      "transport or participation failure invalidates mechanism/performance comparison; archive failure then fix under a new source identity; do not cherry-pick seeds"
+    ],
+    "firstRunRepeat": {
+      "normal": {
+        "maxRankSum": 16,
+        "minUniqueBrands": 222,
+        "minDailyBrands": 1277
+      },
+      "scoreAlternative": {
+        "maxRankSum": 18,
+        "minUniqueBrands": 222,
+        "minDailyBrands": 1277,
+        "minUdon": 2976,
+        "scoreWinsAtLeastLossesAgainstEachD0Run": true
+      },
+      "action": "If either route holds, repeat same frozen 12 cases exactly once; otherwise hold C012 and keep D0. No adoption or formal-strength claim from one short run."
+    },
+    "commonAfterTwoRuns": [
+      "each run uniqueBrands >= 222 and dailyBrands >= 1277",
+      "no seed loses uniqueBrands or dailyBrands against the per-seed D0 value in both repeats; D0 values are identical across its two repeats",
+      "each nominal format mean rank over the two candidate repeats is no more than D0 two-repeat format mean + 0.25",
+      "all validity gates pass"
+    ],
+    "formalRankRoute": {
+      "eachRunMaxRankSum": 15,
+      "twoRunMaxRankSum": 29,
+      "twoRunMaxMeanRank": 1.2083333333333333,
+      "candidateMeanScoreWDLAgainstD0Mean": {
+        "minWins": 6,
+        "winsMustExceedLosses": true
+      },
+      "meanUdonMin": 2960,
+      "note": "A modest repeatable screening improvement, not a significance threshold."
+    },
+    "formalScoreRoute": {
+      "eachRunMaxRankSum": 16,
+      "twoRunMaxRankSum": 31,
+      "meanUdonMin": 2976,
+      "eachRunUdonMin": 2968,
+      "candidateMeanScoreWDLAgainstD0Mean": {
+        "minWins": 8,
+        "maxLosses": 3
+      },
+      "formatsWithPositiveMeanUdonDeltaMin": 2,
+      "eachFormatMeanUdonDeltaMin": 0
+    },
+    "afterTwoRunsAction": "If common gates and either formal route pass, prioritize C012 formal 12 plus current-condition D0 formal 12 before another candidate. Otherwise hold, no automatic third short run or threshold loosening.",
+    "invalidRunOrConditionsChange": "Archive every attempted run. Re-run adopted D0 at same new condition if time/config/placement/opponents/CPU condition changes. Invalid runs may be replaced with the reason recorded; a poor valid run is never discarded.",
+    "override": "Parent may choose a separately documented practical override; retain this original plan and state exact failed criteria and reason. Never relabel an override as meeting the prespecified threshold."
+  },
+  "formalStage": {
+    "conditions": "official time limits without hidden search-budget shortening, 12 seeds0..11 automatic formats arena on same four teams; old initial formal is reference only because current fixed builds/placement differ",
+    "baseline": "new D0 formal at current frozen comparison condition",
+    "decision": "Compare mean rank first, all three totals, seed/format paired score and rank WDL, higher-priority score regressions, all48AC, identities. Same rank can improve by broader score gains. One-rank-point-only (1/12) or few-udon-only mixed result is uncertain: one additional frozen pair or keep D0; never adopt solely due short thresholds/counters. Adoption only after full-test evidence and successful commit/push.",
+    "notGuaranteed": "Passing short screen only selects what to test formally; it never predetermines adoption."
+  },
+  "mechanism": {
+    "expected": "receiver IDs7/35/49, 74 independent donors; no select/forecast import; actual published/received groups include non-reserve15 groups",
+    "joinKey": "match seed/run plus node origin and internal request; coordinator external_request/phase maps to actual day. Request IDs restart each match, never sum/rejoin across matches by request alone.",
+    "capture": "complete per-request close lines for all72 plan days on all3 nodes, distinguish absent records from zero; coordinator logs may rotate per match so capture before replacement",
+    "counters": [
+      "checks",
+      "eligible",
+      "group_published",
+      "group_sent",
+      "group_received",
+      "probes",
+      "imports",
+      "improved",
+      "probe_ns",
+      "repair_ns",
+      "max_receiver_mailbox_age_ms",
+      "rejected",
+      "context_mismatch",
+      "oversized"
+    ],
+    "ratios": [
+      "probes/checks and imports/eligible are descriptive with explicit denominators, not probabilities because a check may inspect3 offers and distinct updates overwrite",
+      "improved/imports is immediate local receiver-best change fraction only",
+      "probe_ns/probes is mean evaluated-offer cost; repair_ns/imports is mean successful seeded-branch cost; do not infer per-event percentiles from cumulative totals",
+      "per-request sums of probe_ns+repair_ns divided by receiver active primary wall/budget indicate measured receiver effort, not total CPU or complete wire/serialization overhead"
+    ],
+    "knownMeasurementLimits": [
+      "repair_ns only records finite seeded branches, includes destroy/beam/final evaluate; failed attempts are not complete cost accounted",
+      "25ms is cooperative beam deadline, not a hard bound for initial/final evaluations; mean from aggregate counters does not prove every event <=25ms",
+      "max_receiver_mailbox_age_ms starts local arrival and measures only offers selected by take, before dedup/evaluation; it excludes publication/queue/network delay and offers never taken",
+      "close snapshot can race with final increments from late worker completion; never silently treat partial last lines as complete",
+      "group counters are node/group updates or serialized offers, sent is frame count; relay duplicates and replacement mean neither a byte count nor unique end-to-end candidates"
+    ],
+    "selectedWorker": "worker node selected_worker is node winner; only coordinator selected_worker is final submitted winner. Tabulate daily final winner in {7,35,49} and receiver imports/improved on that same node/request; exclude select and fallback sentinel.",
+    "causalityLimit": "A receiver win can come from its ordinary search; immediate improved may never win the node/global selection or match. Conversely later changes may benefit from an import without incrementing immediate improved. No route ancestry is logged. Correlation supports mechanism operation only, not a causal match gain. Day-to-day chosen state goes to all workers by design.",
+    "diagnosticOnly": "Do not impose a target number of imports/improvements to pass score gates. Zero uptake or missing non-group3 participation needs diagnosis before claiming cooperation works, but never change algorithm during frozen evaluation."
+  },
+  "requiredReport": [
+    "per-run total and per-format rank/3 scores; unique and shared first-place counts separately",
+    "all4 score/rank paired WDL comparisons to D0 plus 12 seed-average comparison; C010 is diagnostic only, not adoption baseline",
+    "per-seed two-repeat scores/rank ranges and repeated higher-priority losses",
+    "leave-one-seed-out rank/udon delta range and positive contribution shares, with all12 kept for actual decision",
+    "counter completeness, uptake, mean probe/repair costs, mailbox maxima and final receiver selections without causal overclaim"
+  ],
+  "limitations": [
+    "Only two repeats of12 seeds exist; nominal format groups have4 seeds, and repeated seeds are not independent new problems. No p-value, statistical significance, confidence interval or observed-range-as-bound claim.",
+    "Fixed solvers are still time-controlled and their outputs/traffic vary; same seed is paired context, not identical world state.",
+    "Thresholds are explicit practical screening choices based on baseline granularity and observed repetition, not statistically estimated minima. Rank threshold improves31 to<=29 total points over24 repeated cases; score threshold +16 exceeds observed D0 total spread8 but does not prove a true gain.",
+    "Candidate results were not inspected; no after-the-fact threshold tuning."
+  ]
+}

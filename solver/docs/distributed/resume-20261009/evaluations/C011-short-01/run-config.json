@@ -1,0 +1,16 @@
+{
+  "count": 12,
+  "players": 4,
+  "seed": null,
+  "format": null,
+  "arenaMaps": true,
+  "label": "分散C011・翌日の到達可能性を終端評価へ追加・正式評価候補選別・短縮12件・10秒",
+  "timeLimitMs": 10000,
+  "teamNames": [
+    "分散C011-terminal-reachability",
+    "固定並列",
+    "固定第6世代",
+    "固定第8世代"
+  ],
+  "serverProgram": "tester/server/procon-server"
+}

@@ -1,0 +1,171 @@
+{
+  "generation": 4,
+  "baseline_run_id": "1790563781811011480-62511",
+  "baseline_rank_sums": [
+    39,
+    63,
+    100,
+    106,
+    130
+  ],
+  "replaced_fixed_id": 4,
+  "discarded_source_archive": "/tmp/procon37-pool-discarded-20260928/generation-004-replaced-fixed-id-4",
+  "discarded_source_sha256": {
+    "tester/game/samples/src/bin/game-sample-4.rs": "a907bc82fabb4f0dd3a69d5e4bbbde02940d20c6464c93a2a40ff75c46d8af0e",
+    "tester/game/samples/Cargo.toml": "d084d80dca9133cc0aac17b96c03abcaeb2ebdb3c4a605e2f8efed9c7309ce26",
+    "Cargo.lock": "695ea5661b1d44f9752e1748c7543ae642d67fe26371c4a7ffe513530a76b8f2"
+  },
+  "mapping_after": {
+    "0": "第4世代",
+    "1": "第2世代",
+    "2": "第1世代",
+    "3": "初期generation-3",
+    "4": "第3世代"
+  },
+  "commit_push_waived_by_user": true,
+  "promoted": true,
+  "opponent_executable_sha256": {
+    "1": "e9fb87864b4c824a0d32a876c71c8ec1e3b4a8cf97a5ac49ad38261f387b9c24",
+    "2": "519ad0e75fbe399c387b49f5ebfa68ffae18abd7fc5ee8fc255b6716a2eff5ab",
+    "3": "aec652d9cf2f0d99aca9a450ebc5660e69af9ed102e6394f59203043330aa2f7",
+    "4": "f4f62872a17ff91fb829b6709634a4b523e036ad3404a487a6c28ad2ac531e26"
+  },
+  "formal_attempts": [
+    {
+      "attempt": 3,
+      "run_id": "1790593543152838402-4",
+      "status": "completed",
+      "verdict": "AC",
+      "completed": 30,
+      "all_players_ac": true,
+      "rank_sums": [
+        64,
+        78,
+        119,
+        123,
+        52
+      ],
+      "scores_target": {
+        "uniqueBrands": 542,
+        "dailyBrands": 3590,
+        "udon": 7431
+      },
+      "opponent_4_scores": {
+        "uniqueBrands": 542,
+        "dailyBrands": 3589,
+        "udon": 7460
+      },
+      "promoted": false,
+      "note": "移行先で再ビルド。元の対戦設定の絶対パスを新ルートに置換。旧baselineとの自動比較は相手識別情報差で0件一致。"
+    },
+    {
+      "attempt": 4,
+      "run_id": "1790597134790638122-4",
+      "status": "completed",
+      "verdict": "AC",
+      "completed": 30,
+      "all_players_ac": true,
+      "rank_sums": [
+        68,
+        73,
+        113,
+        130,
+        55
+      ],
+      "scores_target": {
+        "uniqueBrands": 542,
+        "dailyBrands": 3592,
+        "udon": 7426
+      },
+      "promoted": false,
+      "comparison_to_attempt_3": {
+        "matched": 30,
+        "accepted": 30,
+        "wins": 13,
+        "draws": 2,
+        "losses": 15,
+        "before_scores": {
+          "uniqueBrands": 542,
+          "dailyBrands": 3590,
+          "udon": 7431
+        },
+        "after_scores": {
+          "uniqueBrands": 542,
+          "dailyBrands": 3592,
+          "udon": 7426
+        }
+      }
+    },
+    {
+      "attempt": 5,
+      "run_id": "1790600156388062978-4",
+      "status": "completed",
+      "verdict": "AC",
+      "completed": 30,
+      "all_players_ac": true,
+      "rank_sums": [
+        59,
+        78,
+        112,
+        127,
+        60
+      ],
+      "average_ranks": [
+        1.9666666666666666,
+        2.6,
+        3.7333333333333334,
+        4.233333333333333,
+        2.0
+      ],
+      "scores_target": {
+        "uniqueBrands": 542,
+        "dailyBrands": 3588,
+        "udon": 7462
+      },
+      "promoted": true,
+      "comparison_to_attempt_4": {
+        "matched": 30,
+        "accepted": 30,
+        "wins": 16,
+        "draws": 0,
+        "losses": 14,
+        "before_scores": {
+          "uniqueBrands": 542,
+          "dailyBrands": 3592,
+          "udon": 7426
+        },
+        "after_scores": {
+          "uniqueBrands": 542,
+          "dailyBrands": 3588,
+          "udon": 7462
+        }
+      },
+      "comparison_to_attempt_3": {
+        "matched": 30,
+        "accepted": 30,
+        "wins": 17,
+        "draws": 4,
+        "losses": 9,
+        "before_scores": {
+          "uniqueBrands": 542,
+          "dailyBrands": 3590,
+          "udon": 7431
+        },
+        "after_scores": {
+          "uniqueBrands": 542,
+          "dailyBrands": 3588,
+          "udon": 7462
+        }
+      }
+    }
+  ],
+  "promotion_run_id": "1790600156388062978-4",
+  "promotion_rank_sums": [
+    59,
+    78,
+    112,
+    127,
+    60
+  ],
+  "candidate_executable_sha256": "dd4dbbc5faf3f041afb116d41a830a2a218f96cfefe690d12a008125bd8c6f1f"
+}

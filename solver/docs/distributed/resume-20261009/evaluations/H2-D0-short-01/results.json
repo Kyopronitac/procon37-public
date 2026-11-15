@@ -1,0 +1,65 @@
+{
+  "runId": "1791557693555197384-34655",
+  "all48AC": true,
+  "players": [
+    {
+      "team": 0,
+      "rankSum": 20,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2961
+      },
+      "meanRank": 1.6666666666666667
+    },
+    {
+      "team": 1,
+      "rankSum": 21,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1278,
+        "udon": 2946
+      },
+      "meanRank": 1.75
+    },
+    {
+      "team": 2,
+      "rankSum": 36,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 2867
+      },
+      "meanRank": 3.0
+    },
+    {
+      "team": 3,
+      "rankSum": 35,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 2900
+      },
+      "meanRank": 2.9166666666666665
+    }
+  ],
+  "version": "D0",
+  "stage": "H2-D0-short-01",
+  "verifiedUnchanged": true,
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "分散D0・再開後Ryzen5800H環境の基準1回目・固定4チーム・短縮12件・10秒",
+    "players": 4,
+    "teamNames": [
+      "分散D0",
+      "固定並列",
+      "固定第6世代",
+      "固定第8世代"
+    ],
+    "timeLimitMs": 10000,
+    "serverProgram": "tester/server/procon-server"
+  }
+}

@@ -1,0 +1,3645 @@
+{
+  "recorded_at_utc": "2026-10-08T22:37:43.077598+00:00",
+  "scope": "Read-only SSH inspection and hash-verified SCP of known self-authored GPU lab/candidate assets. No protected implementation read or copied; no remote files/processes/settings changed.",
+  "source_recovery_status": "Rust and OpenCL source files are absent from the known remote lab/candidate deployments and their deployment archives. Recovered binaries, Python tools, design/build manifests, and prior measurements only. Candidate 001/002/004/005 not present in inspected locations.",
+  "newest_recovered": {
+    "standalone_lab": "gpu-lab-compact-r3",
+    "candidate": "isolated-g003-r2"
+  },
+  "hosts": {
+    "v1": {
+      "host": "VOIDLINUX-1",
+      "gpu": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+      "memory_mib": 12227,
+      "driver": "595.104.02",
+      "cuda_driver_version": "13.2",
+      "compute_capability": "12.0",
+      "opencl_device_available": true,
+      "nvcc_found": false,
+      "default_power_limit_w": 65,
+      "max_power_limit_w": 140
+    },
+    "v2": {
+      "host": "VOIDLINUX-2",
+      "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "memory_mib": 8151,
+      "driver": "595.104.02",
+      "cuda_driver_version": "13.2",
+      "compute_capability": "12.0",
+      "opencl_device_available": true,
+      "nvcc_found": false,
+      "default_power_limit_w": 45,
+      "max_power_limit_w": 115
+    },
+    "v3": {
+      "host": "VOIDLINUX-3",
+      "gpu": "AMD Granite Ridge Radeon Graphics",
+      "driver": "amdgpu / Mesa rusticl 26.2.4",
+      "compute_units": 2,
+      "opencl_global_memory_bytes": 17741660160,
+      "memory_kind": "shared system memory",
+      "opencl_device_available": true,
+      "environment": {
+        "RUSTICL_ENABLE": "radeonsi",
+        "LD_LIBRARY_PATH": "$HOME/procon37-distributed/gpu-runtime/libdrm-2.4.134_1/usr/lib"
+      }
+    }
+  },
+  "remote_inventory": {
+    "v1": {
+      "root": "/home/voidlinux-1/procon37-distributed",
+      "artifacts": {
+        "gpu-lab-compact-r3": [
+          {
+            "path": "build-manifest.json",
+            "bytes": 2285,
+            "mtime_unix": 1791428530.5135083,
+            "sha256": "b29592271a9f0cb7c5b42c705a88c06416181d9c0d90c5e2b6362cdb8f95019b",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/build-manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "cpuset_preflight.py",
+            "bytes": 7964,
+            "mtime_unix": 1791428207.3276057,
+            "sha256": "d62b99eff2431c888fbb5ef6017147c9a0cd8b3d8cac58f2d0ba80317af20d5a",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/cpuset_preflight.py",
+            "verified_download": true
+          },
+          {
+            "path": "gpu-lab",
+            "bytes": 1461400,
+            "mtime_unix": 1791428036.58539,
+            "sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/gpu-lab",
+            "verified_download": true
+          },
+          {
+            "path": "monitor.py",
+            "bytes": 10643,
+            "mtime_unix": 1791428437.8194237,
+            "sha256": "eec376c9e100c759fe40b3868865ce8f72a051c322a82024bbe10de743b05a90",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/monitor.py",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-cpuset-warm-compact-warm.jsonl",
+            "bytes": 160174,
+            "mtime_unix": 1791429332.3103387,
+            "sha256": "f9a1771f1fc6541898801a94edbd766eae7d890bc17c15aa55b3d7b5de581e96",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-cpuset-warm-compact-warm.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-cpuset-warm-compact-warm.manifest.json",
+            "bytes": 4088,
+            "mtime_unix": 1791429332.337174,
+            "sha256": "170b83a5efd620972ef976017ddda3a1a9cd7be31dd9fd35d8828b38e18e1da4",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-cpuset-warm-compact-warm.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-cpuset-warm-compact-warm.stderr",
+            "bytes": 0,
+            "mtime_unix": 1791429323.1923738,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-cpuset-warm-compact-warm.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-cpuset-warm-cpuset-preflight.json",
+            "bytes": 425,
+            "mtime_unix": 1791429323.173042,
+            "sha256": "c80872b4c11fb98ada7405be4aa2d0e2075a4998bbaa221f61eee924e0408405",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-cpuset-warm-cpuset-preflight.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-full-compact-finite.jsonl",
+            "bytes": 5876,
+            "mtime_unix": 1791428847.6272001,
+            "sha256": "859987004fffe53b60d7b60814bd71aa3067e9db4670e18782a8c010ebc69b16",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-full-compact-finite.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-full-compact-finite.manifest.json",
+            "bytes": 4100,
+            "mtime_unix": 1791428850.706565,
+            "sha256": "5e07b7f97f64613bc0c00be69f1b290fdaf22cbf8acc4f5484f5fc1ee5cf70dd",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-full-compact-finite.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-full-compact-finite.stderr",
+            "bytes": 52,
+            "mtime_unix": 1791428850.7031882,
+            "sha256": "34bf3402550bcf6bc05b58b34a0e9dc1c158eb93ff2bbfe6efe270b81c83530c",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-full-compact-finite.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-warm-full-compact-warm.jsonl",
+            "bytes": 157709,
+            "mtime_unix": 1791429123.2891414,
+            "sha256": "436d7f4f90e4ca0d0b9ddcbd8e290d2787bd39499b3b72fee288b85fb5be8b8b",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-warm-full-compact-warm.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-warm-full-compact-warm.manifest.json",
+            "bytes": 4086,
+            "mtime_unix": 1791429123.3353994,
+            "sha256": "e5ae3bf84928ce87eaf7ea60b54bd23bfad64ca0335414e85432370a4e0b4f8d",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-warm-full-compact-warm.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-warm-full-compact-warm.stderr",
+            "bytes": 0,
+            "mtime_unix": 1791429114.1421766,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-warm-full-compact-warm.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-warm-smoke-compact-warm.jsonl",
+            "bytes": 7882,
+            "mtime_unix": 1791429038.555467,
+            "sha256": "c53ef2972afd3dd941b772483d8b7db73fb05c5875f89bc75bb9dffbd7559bd3",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-warm-smoke-compact-warm.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-warm-smoke-compact-warm.manifest.json",
+            "bytes": 4066,
+            "mtime_unix": 1791429038.5944045,
+            "sha256": "3426eb10a3b53e8ae90a8562ad5c0e2c3fe07d23e984cc8d38b4d6fc95c5c1a5",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-warm-smoke-compact-warm.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v1-r3-warm-smoke-compact-warm.stderr",
+            "bytes": 0,
+            "mtime_unix": 1791429035.7604775,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-warm-smoke-compact-warm.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "run_compact_bench.py",
+            "bytes": 3573,
+            "mtime_unix": 1791428307.0898218,
+            "sha256": "f6e56d625770cefe1165b8c5253de1a7409f469243db3e3849832d9b1b224524",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/run_compact_bench.py",
+            "verified_download": true
+          },
+          {
+            "path": "v1-r3-cpuset-warm-controller.json",
+            "bytes": 628,
+            "mtime_unix": 1791429332.3845549,
+            "sha256": "cbb1d831ebfbe44e610f85848b7f390d72ce002f0949791d3d281bf750f1ab85",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/v1-r3-cpuset-warm-controller.json",
+            "verified_download": true
+          },
+          {
+            "path": "v1-r3-cpuset-warm-launch.log",
+            "bytes": 981,
+            "mtime_unix": 1791429332.3845549,
+            "sha256": "26e1c7578f3ac7ef523f0b1c986c3f21defd368cd06aee09138fb96606330b63",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/v1-r3-cpuset-warm-launch.log",
+            "verified_download": true
+          },
+          {
+            "path": "v1-r3-full-launch.log",
+            "bytes": 279,
+            "mtime_unix": 1791428850.706565,
+            "sha256": "83052e183fa906a0b3df1aa2897351cdf3794e020322562ef382be8dc15a02c2",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/v1-r3-full-launch.log",
+            "verified_download": true
+          },
+          {
+            "path": "v1-r3-warm-full-launch.log",
+            "bytes": 278,
+            "mtime_unix": 1791429123.3353994,
+            "sha256": "d24641f0c48601926fb78f343afba5e9d9ef263029205ba3782eddf70def4b8d",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/v1-r3-warm-full-launch.log",
+            "verified_download": true
+          },
+          {
+            "path": "v1-r3-warm-smoke-launch.log",
+            "bytes": 281,
+            "mtime_unix": 1791429038.5944045,
+            "sha256": "88bd9e157ee1614dbe9b1b097ba08252eaaea9cc57b08a35874a3103bed8eafe",
+            "local_path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/v1-r3-warm-smoke-launch.log",
+            "verified_download": true
+          }
+        ]
+      }
+    },
+    "v2": {
+      "root": "/home/voidlinux-2/procon37-distributed",
+      "artifacts": {
+        "gpu-lab-20261008": [
+          {
+            "path": "build-manifest.json",
+            "bytes": 966,
+            "mtime_unix": 1791422702.1279023,
+            "sha256": "64c12b7654dc936e7e898c5e0cecd71cfd95e83a4e582e2f1407cc3287f45a9e",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-20261008/build-manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "gpu-lab",
+            "bytes": 1179216,
+            "mtime_unix": 1791422651.944738,
+            "sha256": "ccb42c4d426d6b59fb7e97b56eac78517cc2e03affdc7acd45d4cf82729c4427",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-20261008/gpu-lab",
+            "verified_download": true
+          },
+          {
+            "path": "launch.log",
+            "bytes": 196,
+            "mtime_unix": 1791422840.0066938,
+            "sha256": "83f8e67e2a0af60f0a009c5117153d96cddeeeb40815434eda5e43381a547cd0",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-20261008/launch.log",
+            "verified_download": true
+          },
+          {
+            "path": "monitor.pid",
+            "bytes": 5,
+            "mtime_unix": 1791422828.6244717,
+            "sha256": "a883dafc480d466ee04e0d6da986bd78eb1fdd2178d04693723da3a8f95d42f4",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-20261008/monitor.pid",
+            "verified_download": true
+          },
+          {
+            "path": "monitor.py",
+            "bytes": 6320,
+            "mtime_unix": 1791422702.0778484,
+            "sha256": "4273f3d47c3680ab2083de0e10a8a4b4791e9992c56b738b85f65d2bf400408a",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-20261008/monitor.py",
+            "verified_download": true
+          },
+          {
+            "path": "results/v2.jsonl",
+            "bytes": 30802,
+            "mtime_unix": 1791422839.9168935,
+            "sha256": "847d12b43273a710dc38a5eccdfddc17c4864d0899c50ac62ec52230509a8313",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-20261008/results/v2.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v2.manifest.json",
+            "bytes": 2050,
+            "mtime_unix": 1791422840.0066938,
+            "sha256": "1e477a7781f53c3e01273e343d62ccf91f90bcb818f18727dcd1721f6332c70e",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-20261008/results/v2.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v2.stderr",
+            "bytes": 0,
+            "mtime_unix": 1791422828.6490796,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-20261008/results/v2.stderr",
+            "verified_download": true
+          }
+        ],
+        "gpu-lab-compact-r2": [
+          {
+            "path": "build-manifest.json",
+            "bytes": 1952,
+            "mtime_unix": 1791426133.9147327,
+            "sha256": "6bcc0e6229f07848fa343aa3a885dc08081a9f65e64ff92af5a724b1c004e346",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/build-manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "gpu-lab",
+            "bytes": 1436912,
+            "mtime_unix": 1791425353.4910293,
+            "sha256": "1815fc12a3c534470d96fb2da909d5b21465239cde9b79a3b4e3d999e1ba34e3",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/gpu-lab",
+            "verified_download": true
+          },
+          {
+            "path": "launch.log",
+            "bytes": 537,
+            "mtime_unix": 1791427529.9134026,
+            "sha256": "fd4a5148238e41772e727ca5666199934742d426ca005742545e08a794dd2183",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/launch.log",
+            "verified_download": true
+          },
+          {
+            "path": "monitor.py",
+            "bytes": 8482,
+            "mtime_unix": 1791425080.4034905,
+            "sha256": "a05b3ffc75eb20c3104f116f840f65e95ea6fdedb0507f4230cae36fef85805d",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/monitor.py",
+            "verified_download": true
+          },
+          {
+            "path": "results/v2-compact-finite.jsonl",
+            "bytes": 183941,
+            "mtime_unix": 1791427521.6063094,
+            "sha256": "f19c781540e2d12bfd49a8d4f2281ea5c82783be18f39e12ddbdc1fa93c3b036",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/results/v2-compact-finite.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v2-compact-finite.manifest.json",
+            "bytes": 3408,
+            "mtime_unix": 1791427521.6511104,
+            "sha256": "62ee9fab6b4a0a9bf42fbd30cac0215058a3e92d67e98616a43fbf09dc18faad",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/results/v2-compact-finite.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v2-compact-finite.stderr",
+            "bytes": 0,
+            "mtime_unix": 1791427504.3981164,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/results/v2-compact-finite.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "results/v2-compact-warm.jsonl",
+            "bytes": 122196,
+            "mtime_unix": 1791427529.8344018,
+            "sha256": "04e39d169651f7468547bbf3e2c85d7d339c1850bc35958bed724934383f1011",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/results/v2-compact-warm.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v2-compact-warm.manifest.json",
+            "bytes": 3394,
+            "mtime_unix": 1791427529.9086459,
+            "sha256": "a093af36831a4f1dc584d5a894ff9d83c98be5a538de5135964025aad83758e4",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/results/v2-compact-warm.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v2-compact-warm.stderr",
+            "bytes": 0,
+            "mtime_unix": 1791427521.6803102,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/results/v2-compact-warm.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "run_compact_bench.py",
+            "bytes": 1930,
+            "mtime_unix": 1791425458.7774858,
+            "sha256": "c85b59094796f655f945bd191963bd61f15288e81930d66123d91a38a6a10d21",
+            "local_path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/run_compact_bench.py",
+            "verified_download": true
+          }
+        ],
+        "isolated-g003-r1": [
+          {
+            "path": "README.md",
+            "bytes": 3759,
+            "mtime_unix": 0.0,
+            "sha256": "f98b0f416b635ca979164d7df3b5afaa0e86efb8fb789bbe9642e2c00a6c9d0a",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/README.md",
+            "verified_download": true
+          },
+          {
+            "path": "build-manifest.json",
+            "bytes": 5068,
+            "mtime_unix": 0.0,
+            "sha256": "67b96eb652db65f87c3f057770c350fd5ea1c0617438d55847b87b1e5313f185",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/build-manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "cpu-helper-launch.log",
+            "bytes": 272,
+            "mtime_unix": 1791434336.0231607,
+            "sha256": "d2e73a9be969a396d150fd35a4e6f011ae69c5658bd651434a46be08efdc9fba",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/cpu-helper-launch.log",
+            "verified_download": true
+          },
+          {
+            "path": "distributed-solver",
+            "bytes": 2611560,
+            "mtime_unix": 0.0,
+            "sha256": "5f906bf8faf51dd49963bc4a8e624dbd8c1d0591aed199e254ead874893f103f",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/distributed-solver",
+            "verified_download": true
+          },
+          {
+            "path": "docs/base-manifest.json",
+            "bytes": 1371,
+            "mtime_unix": 0.0,
+            "sha256": "bfb15d41ea4e3ae576730ed9968413feb010baf227a4e63f487b5b1d7dff2440",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/docs/base-manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "docs/design.md",
+            "bytes": 8350,
+            "mtime_unix": 0.0,
+            "sha256": "691354c339dd21341aa4919bc4b31164717d3015e8850ade720ef4ff50520214",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/docs/design.md",
+            "verified_download": true
+          },
+          {
+            "path": "monitor.py",
+            "bytes": 10876,
+            "mtime_unix": 0.0,
+            "sha256": "9a0a219bdb0275b42ba1c712f1769589d48058aa3c89d41208538d69337c575a",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/monitor.py",
+            "verified_download": true
+          },
+          {
+            "path": "opencl-launch.log",
+            "bytes": 268,
+            "mtime_unix": 1791434464.9217618,
+            "sha256": "e0cec6122256de0eb2e19aea9142d4fb8c347ce19e7ea609707bc482a22df547",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/opencl-launch.log",
+            "verified_download": true
+          },
+          {
+            "path": "results/g003-v2-r1-cpu-helper.jsonl",
+            "bytes": 10454,
+            "mtime_unix": 1791434336.0177813,
+            "sha256": "4eb77adc23090562289d07547011b905d11123d8b9552b395be6193112b1ecfd",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/results/g003-v2-r1-cpu-helper.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/g003-v2-r1-cpu-helper.launch.json",
+            "bytes": 619,
+            "mtime_unix": 1791434333.4465694,
+            "sha256": "a95c08c941d1e3cb00a130f500acfd78358108969a9255402df84d4e19c8c9e9",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/results/g003-v2-r1-cpu-helper.launch.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/g003-v2-r1-cpu-helper.manifest.json",
+            "bytes": 7021,
+            "mtime_unix": 1791434336.0231607,
+            "sha256": "a78221244ed7dfd6219829a2c96bdf256bf5cde0a40d1a77fcdd11c81eb0fe74",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/results/g003-v2-r1-cpu-helper.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/g003-v2-r1-cpu-helper.stderr",
+            "bytes": 44748,
+            "mtime_unix": 1791434336.0177813,
+            "sha256": "4ac91683d26f2cbafa81c2e517b06e508b49c5ef4c45c16dee5c4d75a461eba0",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/results/g003-v2-r1-cpu-helper.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "results/g003-v2-r1-opencl.jsonl",
+            "bytes": 9598,
+            "mtime_unix": 1791434464.787785,
+            "sha256": "bdc520f76bae523e12fa113e040bb50f42842a1c7eadf1bebf11e4bfaf76d1bf",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/results/g003-v2-r1-opencl.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/g003-v2-r1-opencl.launch.json",
+            "bytes": 607,
+            "mtime_unix": 1791434462.4949946,
+            "sha256": "8a2130055e3c7860a426acd5b4a6019f85830f5186752206c6eb3bbd50488536",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/results/g003-v2-r1-opencl.launch.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/g003-v2-r1-opencl.manifest.json",
+            "bytes": 7039,
+            "mtime_unix": 1791434464.9217618,
+            "sha256": "a98f45ce74f664f1c74f1013ae2b80991edbfd0ffddcea656fcc1696a4ad0f7f",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/results/g003-v2-r1-opencl.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/g003-v2-r1-opencl.stderr",
+            "bytes": 106336,
+            "mtime_unix": 1791434464.906783,
+            "sha256": "a359d4e88bcfc96ff8a282f1ad55d623b0c437f95d26b8f34c8cc495aed75fa5",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/results/g003-v2-r1-opencl.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "run_profile.py",
+            "bytes": 3880,
+            "mtime_unix": 0.0,
+            "sha256": "db2f9a5f890430b7c0b4eafd5e21ba73a50fabdbc4139741516367bf8bf06202",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/run_profile.py",
+            "verified_download": true
+          }
+        ],
+        "isolated-g003-r2": [
+          {
+            "path": "README.md",
+            "bytes": 3523,
+            "mtime_unix": 0.0,
+            "sha256": "280b545c21d5a49332bd32a13998781d48f99f3b3ff26fe6bb4be452ddc5592e",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/README.md",
+            "verified_download": true
+          },
+          {
+            "path": "build-manifest.json",
+            "bytes": 13169,
+            "mtime_unix": 0.0,
+            "sha256": "9c8a261814c0476a623251f06d5c2c98b816f8b1ec596e6f788e61c98ecd7fbf",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/build-manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "distributed-solver",
+            "bytes": 2635232,
+            "mtime_unix": 0.0,
+            "sha256": "900960520de3c1be97cb1a8a1c5053594a2b24f93e7eed285b756c04dbe00e67",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/distributed-solver",
+            "verified_download": true
+          },
+          {
+            "path": "docs/design.md",
+            "bytes": 4932,
+            "mtime_unix": 0.0,
+            "sha256": "9404e046d70b461d8d9ee031c77733630826886c8042e90f80facb3666d9fb2a",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/docs/design.md",
+            "verified_download": true
+          },
+          {
+            "path": "docs/vendor-manifest.json",
+            "bytes": 6345,
+            "mtime_unix": 0.0,
+            "sha256": "bdff466ebbe90f474bdd84f7210a88a6445866d87969d70a55ec28cbd6ad68f0",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/docs/vendor-manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "monitor.py",
+            "bytes": 11023,
+            "mtime_unix": 0.0,
+            "sha256": "8d4f024c99a703adb017c775ea1c5940d65a2ccaf37d5af9ba8bc5ed94359796",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/monitor.py",
+            "verified_download": true
+          },
+          {
+            "path": "opencl-launch.log",
+            "bytes": 268,
+            "mtime_unix": 1791435951.0049703,
+            "sha256": "a8e41537bc87bf687b923c15abbc9dc7e7455cd7bac962ce6224b7a16013649f",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/opencl-launch.log",
+            "verified_download": true
+          },
+          {
+            "path": "profile-controller.json",
+            "bytes": 423,
+            "mtime_unix": 1791435948.5990698,
+            "sha256": "624d4bfda40f1e34b891abc9fdda07b0313b3b7900dee8f5934b3b127af79488",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/profile-controller.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/g003-v2-r2-opencl.jsonl",
+            "bytes": 10384,
+            "mtime_unix": 1791435950.9983563,
+            "sha256": "207e60db4b847c010afeb1196411fb0977cb25cdded63f8e215421a2acc459df",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/results/g003-v2-r2-opencl.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/g003-v2-r2-opencl.launch.json",
+            "bytes": 607,
+            "mtime_unix": 1791435948.6198878,
+            "sha256": "2f604d8107ace7e64144d6f0f24ac6e13d1744d76231481df28d109dcf0880a1",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/results/g003-v2-r2-opencl.launch.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/g003-v2-r2-opencl.manifest.json",
+            "bytes": 15403,
+            "mtime_unix": 1791435951.0049703,
+            "sha256": "021411b6bed5411e99b2afdb40bda77802523071c473aa71d961b9a3f55f3bae",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/results/g003-v2-r2-opencl.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/g003-v2-r2-opencl.stderr",
+            "bytes": 108492,
+            "mtime_unix": 1791435950.9983563,
+            "sha256": "baf71546c76f2e3a69f6f87af62dc19cad9c30fa638e01eb8791021c6c35a9a5",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/results/g003-v2-r2-opencl.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "run_profile.py",
+            "bytes": 3880,
+            "mtime_unix": 0.0,
+            "sha256": "db2f9a5f890430b7c0b4eafd5e21ba73a50fabdbc4139741516367bf8bf06202",
+            "local_path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/run_profile.py",
+            "verified_download": true
+          }
+        ]
+      }
+    },
+    "v3": {
+      "root": "/home/voidlinux-3/procon37-distributed",
+      "artifacts": {
+        "gpu-lab-20261008": [
+          {
+            "path": "build-manifest.json",
+            "bytes": 966,
+            "mtime_unix": 1791422702.1279023,
+            "sha256": "64c12b7654dc936e7e898c5e0cecd71cfd95e83a4e582e2f1407cc3287f45a9e",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-20261008/build-manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "gpu-lab",
+            "bytes": 1179216,
+            "mtime_unix": 1791422651.944738,
+            "sha256": "ccb42c4d426d6b59fb7e97b56eac78517cc2e03affdc7acd45d4cf82729c4427",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-20261008/gpu-lab",
+            "verified_download": true
+          },
+          {
+            "path": "launch.log",
+            "bytes": 199,
+            "mtime_unix": 1791422839.5885499,
+            "sha256": "579399c111ebf9d666fe0c9d53509bcc4539a08c73e739cb8721cd3a2c31ef48",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-20261008/launch.log",
+            "verified_download": true
+          },
+          {
+            "path": "monitor.pid",
+            "bytes": 5,
+            "mtime_unix": 1791422829.503594,
+            "sha256": "e16def8abd1b5f6ec10af08ee1a02ed7561a0af2572ca29ad96fcb40cdc97763",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-20261008/monitor.pid",
+            "verified_download": true
+          },
+          {
+            "path": "monitor.py",
+            "bytes": 6320,
+            "mtime_unix": 1791422702.0778484,
+            "sha256": "4273f3d47c3680ab2083de0e10a8a4b4791e9992c56b738b85f65d2bf400408a",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-20261008/monitor.py",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3.jsonl",
+            "bytes": 30872,
+            "mtime_unix": 1791422839.5674279,
+            "sha256": "64215caebad8376860f2d1fc1296b10c54571db4692c70233e768dc97984978c",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-20261008/results/v3.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3.manifest.json",
+            "bytes": 2410,
+            "mtime_unix": 1791422839.5885499,
+            "sha256": "6d75ec372f98ca1bb004b0d8371d5424884d4a3185639e45dd2cea4e0b473ab2",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-20261008/results/v3.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3.stderr",
+            "bytes": 0,
+            "mtime_unix": 1791422829.5233471,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-20261008/results/v3.stderr",
+            "verified_download": true
+          }
+        ],
+        "gpu-lab-compact-r2": [
+          {
+            "path": "build-manifest.json",
+            "bytes": 1952,
+            "mtime_unix": 1791426133.9147327,
+            "sha256": "6bcc0e6229f07848fa343aa3a885dc08081a9f65e64ff92af5a724b1c004e346",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r2/build-manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "gpu-lab",
+            "bytes": 1436912,
+            "mtime_unix": 1791425353.4910293,
+            "sha256": "1815fc12a3c534470d96fb2da909d5b21465239cde9b79a3b4e3d999e1ba34e3",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r2/gpu-lab",
+            "verified_download": true
+          },
+          {
+            "path": "launch.log",
+            "bytes": 272,
+            "mtime_unix": 1791427504.6268344,
+            "sha256": "60a45cc938139c9a7d59698b620475acec51ba34baf6d6999db8f88bd0de0791",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r2/launch.log",
+            "verified_download": true
+          },
+          {
+            "path": "monitor.py",
+            "bytes": 8482,
+            "mtime_unix": 1791425080.4034905,
+            "sha256": "a05b3ffc75eb20c3104f116f840f65e95ea6fdedb0507f4230cae36fef85805d",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r2/monitor.py",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-compact-finite.jsonl",
+            "bytes": 3964,
+            "mtime_unix": 1791427504.5673819,
+            "sha256": "9601fa290b76b4468d5ad08a9a6c30046338b4f2edad0e7b54dbca71a0d930a0",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r2/results/v3-compact-finite.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-compact-finite.manifest.json",
+            "bytes": 3688,
+            "mtime_unix": 1791427504.6268344,
+            "sha256": "836dfdd97f2c71a3427425c76ea75c06e31a96e6ad330a17f5b6a740f6553241",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r2/results/v3-compact-finite.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-compact-finite.stderr",
+            "bytes": 109,
+            "mtime_unix": 1791427504.6213822,
+            "sha256": "23e9954743a6072b9fd5aa434941a6f1590874e4c62bd3a0c0b91cfea23869b8",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r2/results/v3-compact-finite.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "run_compact_bench.py",
+            "bytes": 1930,
+            "mtime_unix": 1791425458.7774858,
+            "sha256": "c85b59094796f655f945bd191963bd61f15288e81930d66123d91a38a6a10d21",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r2/run_compact_bench.py",
+            "verified_download": true
+          }
+        ],
+        "gpu-lab-compact-r3": [
+          {
+            "path": "build-manifest.json",
+            "bytes": 2285,
+            "mtime_unix": 1791428530.5135083,
+            "sha256": "b29592271a9f0cb7c5b42c705a88c06416181d9c0d90c5e2b6362cdb8f95019b",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/build-manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "cpuset_preflight.py",
+            "bytes": 7964,
+            "mtime_unix": 1791428207.3276057,
+            "sha256": "d62b99eff2431c888fbb5ef6017147c9a0cd8b3d8cac58f2d0ba80317af20d5a",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/cpuset_preflight.py",
+            "verified_download": true
+          },
+          {
+            "path": "gpu-lab",
+            "bytes": 1461400,
+            "mtime_unix": 1791428036.58539,
+            "sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/gpu-lab",
+            "verified_download": true
+          },
+          {
+            "path": "monitor.py",
+            "bytes": 10643,
+            "mtime_unix": 1791428437.8194237,
+            "sha256": "eec376c9e100c759fe40b3868865ce8f72a051c322a82024bbe10de743b05a90",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/monitor.py",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-full-compact-finite.jsonl",
+            "bytes": 341300,
+            "mtime_unix": 1791428856.6853383,
+            "sha256": "97357afb629d4079b80dffd06bb57e326917506fa3d0352bccae45c03f1959c9",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-full-compact-finite.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-full-compact-finite.manifest.json",
+            "bytes": 4383,
+            "mtime_unix": 1791428856.7008526,
+            "sha256": "b9effd555d02f21c870cf9d690068bdb93c9338ed9926e25491df807cc98fd22",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-full-compact-finite.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-full-compact-finite.stderr",
+            "bytes": 0,
+            "mtime_unix": 1791428847.16327,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-full-compact-finite.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-full-compact-warm.jsonl",
+            "bytes": 180926,
+            "mtime_unix": 1791428864.3613935,
+            "sha256": "ad3b8e2d555b04b2564dad7f5bde53b46bb77e2356e41c1caa6b36dedb35f39f",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-full-compact-warm.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-full-compact-warm.manifest.json",
+            "bytes": 4375,
+            "mtime_unix": 1791428864.3884594,
+            "sha256": "54f6567796618e5269eeeb6a69e8bd7e151cdac770d0a1599493f0ae6d5ff38c",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-full-compact-warm.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-full-compact-warm.stderr",
+            "bytes": 0,
+            "mtime_unix": 1791428856.7273386,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-full-compact-warm.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-full-cpuset-preflight.json",
+            "bytes": 411,
+            "mtime_unix": 1791428847.142325,
+            "sha256": "595d2dd15e572a60942a3a5a01d2cf64500804f033a66ef18b69efc459479466",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-full-cpuset-preflight.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-smoke-compact-finite.jsonl",
+            "bytes": 13865,
+            "mtime_unix": 1791428739.2524805,
+            "sha256": "b34f64e741e2096a986d1085dcb45d5e66fe9e20a8f8c64dac4bd85625122221",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-smoke-compact-finite.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-smoke-compact-finite.manifest.json",
+            "bytes": 4358,
+            "mtime_unix": 1791428739.265667,
+            "sha256": "073a0de5bf205e94f5eaecb7679f1d6917983f4ddd501c3a2c509704d8d32760",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-smoke-compact-finite.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-smoke-compact-finite.stderr",
+            "bytes": 0,
+            "mtime_unix": 1791428739.0114787,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-smoke-compact-finite.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-smoke-compact-warm.jsonl",
+            "bytes": 10164,
+            "mtime_unix": 1791428739.5054824,
+            "sha256": "e0d2234a6528122ea9cd8135600bd58745f28f9ce70a75d9b390f053170ec16a",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-smoke-compact-warm.jsonl",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-smoke-compact-warm.manifest.json",
+            "bytes": 4351,
+            "mtime_unix": 1791428739.5223103,
+            "sha256": "fef451f885b52ed312753c6585353482bc46fbe8e8cfc24fcd2bd3b57959ab60",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-smoke-compact-warm.manifest.json",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-smoke-compact-warm.stderr",
+            "bytes": 0,
+            "mtime_unix": 1791428739.2924807,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-smoke-compact-warm.stderr",
+            "verified_download": true
+          },
+          {
+            "path": "results/v3-r3-smoke-cpuset-preflight.json",
+            "bytes": 413,
+            "mtime_unix": 1791428738.9898586,
+            "sha256": "1da85a2af1675429e87e1dc18062fc88468e7a52cad87f602c04084a7f52d919",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-smoke-cpuset-preflight.json",
+            "verified_download": true
+          },
+          {
+            "path": "run_compact_bench.py",
+            "bytes": 3573,
+            "mtime_unix": 1791428307.0898218,
+            "sha256": "f6e56d625770cefe1165b8c5253de1a7409f469243db3e3849832d9b1b224524",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/run_compact_bench.py",
+            "verified_download": true
+          },
+          {
+            "path": "v3-r3-full-controller.json",
+            "bytes": 550,
+            "mtime_unix": 1791428864.4370642,
+            "sha256": "3d548b27b179e17cb2d07ea429df1235a7c1543d22e84f9f4000d206dfd890c2",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/v3-r3-full-controller.json",
+            "verified_download": true
+          },
+          {
+            "path": "v3-r3-full-launch.log",
+            "bytes": 1180,
+            "mtime_unix": 1791428864.4370642,
+            "sha256": "a27c5b26e87cd8be9bc1f60ebd76576e486974e90fd79f625c91687ebf153419",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/v3-r3-full-launch.log",
+            "verified_download": true
+          },
+          {
+            "path": "v3-r3-smoke-controller.json",
+            "bytes": 570,
+            "mtime_unix": 1791428739.534874,
+            "sha256": "cdda11581bfc64f3c48e4d1e5e031f1151df061df96e260bd7b1825cc39f8319",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/v3-r3-smoke-controller.json",
+            "verified_download": true
+          },
+          {
+            "path": "v3-r3-smoke-launch.log",
+            "bytes": 1202,
+            "mtime_unix": 1791428739.534874,
+            "sha256": "eccdbe60169e1a890888f8d79129b2472e1b9393f139e3b39fb71e3cb4a233c4",
+            "local_path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/v3-r3-smoke-launch.log",
+            "verified_download": true
+          }
+        ]
+      }
+    }
+  },
+  "prior_measurements": [
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-cpuset-warm-compact-warm.jsonl",
+      "sha256": "f9a1771f1fc6541898801a94edbd766eae7d890bc17c15aa55b3d7b5de581e96",
+      "kind": "compact",
+      "completed": true,
+      "variants": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 738.04525,
+            "median": 22.586005,
+            "min": 12.507363999999999,
+            "max": 50.506969
+          },
+          "graph_build_ms": {
+            "sum": 719.758406,
+            "median": 21.954169,
+            "min": 12.08902,
+            "max": 49.568919
+          },
+          "query_ms": {
+            "sum": 18.286844,
+            "median": 0.6728529999999999,
+            "min": 0.360086,
+            "max": 1.3429099999999998
+          },
+          "produce_ms": {
+            "sum": 534.146079,
+            "median": 16.199233,
+            "min": 8.731902999999999,
+            "max": 37.348151
+          },
+          "observed_wall_ms": {
+            "sum": 746.450795,
+            "median": 22.769519,
+            "min": 12.689557,
+            "max": 51.064716000000004
+          },
+          "validate_and_construct_ms": {
+            "sum": 184.068581,
+            "median": 5.6381879999999995,
+            "min": 3.0400430000000003,
+            "max": 12.374576999999999
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 2641.353434,
+            "median": 76.22931899999999,
+            "min": 33.668838,
+            "max": 203.42004
+          },
+          "graph_build_ms": {
+            "sum": 2626.69368,
+            "median": 75.67888599999999,
+            "min": 33.407969,
+            "max": 202.60479
+          },
+          "query_ms": {
+            "sum": 14.659754000000001,
+            "median": 0.534734,
+            "min": 0.219802,
+            "max": 1.356265
+          },
+          "produce_ms": {
+            "sum": 530.690214,
+            "median": 16.250719,
+            "min": 8.685686,
+            "max": 36.752874
+          },
+          "observed_wall_ms": {
+            "sum": 3085.716048,
+            "median": 87.383516,
+            "min": 39.098996,
+            "max": 238.442918
+          },
+          "validate_and_construct_ms": {
+            "sum": 2094.392883,
+            "median": 58.863949,
+            "min": 24.289681,
+            "max": 166.404302
+          }
+        },
+        "gpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 2885.0053599999997,
+            "median": 7.491957,
+            "min": 3.995977,
+            "max": 2639.773707
+          },
+          "graph_build_ms": {
+            "sum": 2864.232044,
+            "median": 6.670135,
+            "min": 3.637835,
+            "max": 2639.275612
+          },
+          "query_ms": {
+            "sum": 20.773316,
+            "median": 0.757742,
+            "min": 0.35814199999999996,
+            "max": 1.900225
+          },
+          "produce_ms": {
+            "sum": 2685.429957,
+            "median": 1.452435,
+            "min": 0.6911470000000001,
+            "max": 2635.8264609999997
+          },
+          "observed_wall_ms": {
+            "sum": 2897.108208,
+            "median": 7.892056999999999,
+            "min": 4.170434,
+            "max": 2640.054894
+          },
+          "validate_and_construct_ms": {
+            "sum": 177.254728,
+            "median": 5.135344,
+            "min": 2.915149,
+            "max": 12.513537999999999
+          }
+        }
+      },
+      "initialization": [
+        {
+          "device": {
+            "compute_units": 46,
+            "driver": "595.104.02",
+            "global_memory_bytes": 12346195968,
+            "group_size": 128,
+            "host_unified_memory": 0,
+            "local_memory_bytes": 49152,
+            "max_allocation_bytes": 3086548992,
+            "max_workgroup_size": 1024,
+            "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+            "opencl_c": "OpenCL C 1.2 ",
+            "vendor": "NVIDIA Corporation",
+            "version": "OpenCL 3.0 CUDA"
+          },
+          "event": "compact_gpu_initialization",
+          "initialization_ms": 2634.8033920000003,
+          "resources": {
+            "cgroup": "15:name=elogind:/20\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/gpu-lab-v1-r3-cpuset-warm\n0::/\n",
+            "clock_ticks_per_second": 100,
+            "snapshot_errors": [],
+            "threads": [
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "R",
+                "system_ticks": 248,
+                "tid": "1488",
+                "user_ticks": 14
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1493",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "cuda-EvtHandlr",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1494",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1495",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1496",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1497",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1498",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1499",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1500",
+                "user_ticks": 0
+              }
+            ],
+            "vanished_threads": []
+          },
+          "stages": [
+            {
+              "stage": "before_opencl",
+              "threads": 1
+            },
+            {
+              "stage": "library_loaded",
+              "threads": 1
+            },
+            {
+              "elapsed_ms": 2559.827404,
+              "stage": "gpu_discovered",
+              "threads": 1
+            },
+            {
+              "elapsed_ms": 2633.048058,
+              "stage": "context_created",
+              "threads": 9
+            },
+            {
+              "elapsed_ms": 2634.8033920000003,
+              "stage": "program_built",
+              "threads": 9
+            }
+          ]
+        }
+      ],
+      "cleanup": [
+        {
+          "cleanup_ms": 64.956599,
+          "event": "compact_gpu_cleanup",
+          "resources": {
+            "cgroup": "15:name=elogind:/20\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/gpu-lab-v1-r3-cpuset-warm\n0::/\n",
+            "clock_ticks_per_second": 100,
+            "snapshot_errors": [],
+            "threads": [
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "R",
+                "system_ticks": 260,
+                "tid": "1488",
+                "user_ticks": 611
+              }
+            ],
+            "vanished_threads": []
+          }
+        }
+      ]
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-full-compact-finite.jsonl",
+      "sha256": "859987004fffe53b60d7b60814bd71aa3067e9db4670e18782a8c010ebc69b16",
+      "kind": "compact",
+      "completed": false,
+      "variants": {
+        "cpu-compact": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 12.504189999999998,
+            "median": 12.504189999999998,
+            "min": 12.504189999999998,
+            "max": 12.504189999999998
+          },
+          "graph_build_ms": {
+            "sum": 12.052812999999997,
+            "median": 12.052812999999997,
+            "min": 12.052812999999997,
+            "max": 12.052812999999997
+          },
+          "query_ms": {
+            "sum": 0.451377,
+            "median": 0.451377,
+            "min": 0.451377,
+            "max": 0.451377
+          },
+          "produce_ms": {
+            "sum": 8.614040999999999,
+            "median": 8.614040999999999,
+            "min": 8.614040999999999,
+            "max": 8.614040999999999
+          },
+          "observed_wall_ms": {
+            "sum": 12.645845,
+            "median": 12.645845,
+            "min": 12.645845,
+            "max": 12.645845
+          },
+          "validate_and_construct_ms": {
+            "sum": 3.4174119999999997,
+            "median": 3.4174119999999997,
+            "min": 3.4174119999999997,
+            "max": 3.4174119999999997
+          }
+        },
+        "cpu-eager": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 34.904506,
+            "median": 34.904506,
+            "min": 34.904506,
+            "max": 34.904506
+          },
+          "graph_build_ms": {
+            "sum": 34.657092,
+            "median": 34.657092,
+            "min": 34.657092,
+            "max": 34.657092
+          },
+          "query_ms": {
+            "sum": 0.247414,
+            "median": 0.247414,
+            "min": 0.247414,
+            "max": 0.247414
+          },
+          "produce_ms": {
+            "sum": 8.709981,
+            "median": 8.709981,
+            "min": 8.709981,
+            "max": 8.709981
+          },
+          "observed_wall_ms": {
+            "sum": 39.478899,
+            "median": 39.478899,
+            "min": 39.478899,
+            "max": 39.478899
+          },
+          "validate_and_construct_ms": {
+            "sum": 25.92506,
+            "median": 25.92506,
+            "min": 25.92506,
+            "max": 25.92506
+          }
+        },
+        "cpu-helper": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 14.016819,
+            "median": 14.016819,
+            "min": 14.016819,
+            "max": 14.016819
+          },
+          "graph_build_ms": {
+            "sum": 13.579679,
+            "median": 13.579679,
+            "min": 13.579679,
+            "max": 13.579679
+          },
+          "query_ms": {
+            "sum": 0.43714,
+            "median": 0.43714,
+            "min": 0.43714,
+            "max": 0.43714
+          },
+          "produce_ms": {
+            "sum": 10.442082000000001,
+            "median": 10.442082000000001,
+            "min": 10.442082000000001,
+            "max": 10.442082000000001
+          },
+          "observed_wall_ms": {
+            "sum": 14.130101000000002,
+            "median": 14.130101000000002,
+            "min": 14.130101000000002,
+            "max": 14.130101000000002
+          },
+          "validate_and_construct_ms": {
+            "sum": 3.117289,
+            "median": 3.117289,
+            "min": 3.117289,
+            "max": 3.117289
+          }
+        }
+      },
+      "initialization": [],
+      "cleanup": []
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-warm-full-compact-warm.jsonl",
+      "sha256": "436d7f4f90e4ca0d0b9ddcbd8e290d2787bd39499b3b72fee288b85fb5be8b8b",
+      "kind": "compact",
+      "completed": true,
+      "variants": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 734.466256,
+            "median": 22.446834,
+            "min": 12.549886,
+            "max": 50.484647
+          },
+          "graph_build_ms": {
+            "sum": 715.805315,
+            "median": 21.800261,
+            "min": 12.127243,
+            "max": 49.253377
+          },
+          "query_ms": {
+            "sum": 18.660941,
+            "median": 0.646573,
+            "min": 0.365276,
+            "max": 1.328131
+          },
+          "produce_ms": {
+            "sum": 533.169386,
+            "median": 16.458489,
+            "min": 8.609833,
+            "max": 37.026318
+          },
+          "observed_wall_ms": {
+            "sum": 743.5310499999999,
+            "median": 22.651729,
+            "min": 12.71707,
+            "max": 51.095814000000004
+          },
+          "validate_and_construct_ms": {
+            "sum": 181.069412,
+            "median": 5.271239,
+            "min": 3.120594,
+            "max": 12.456761
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 2639.81452,
+            "median": 76.09132,
+            "min": 33.801275,
+            "max": 201.616626
+          },
+          "graph_build_ms": {
+            "sum": 2624.65614,
+            "median": 75.555635,
+            "min": 33.524747,
+            "max": 200.759869
+          },
+          "query_ms": {
+            "sum": 15.15838,
+            "median": 0.544381,
+            "min": 0.22906,
+            "max": 1.0764500000000001
+          },
+          "produce_ms": {
+            "sum": 526.260595,
+            "median": 16.144901,
+            "min": 8.632096,
+            "max": 36.440148
+          },
+          "observed_wall_ms": {
+            "sum": 3112.680809,
+            "median": 87.843088,
+            "min": 38.119228,
+            "max": 240.75063799999998
+          },
+          "validate_and_construct_ms": {
+            "sum": 2096.764937,
+            "median": 59.277314,
+            "min": 24.497632,
+            "max": 164.424768
+          }
+        },
+        "gpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 2874.16063,
+            "median": 7.529966,
+            "min": 4.041303,
+            "max": 2631.529618
+          },
+          "graph_build_ms": {
+            "sum": 2853.120063,
+            "median": 6.899413,
+            "min": 3.6606280000000004,
+            "max": 2631.102828
+          },
+          "query_ms": {
+            "sum": 21.040567,
+            "median": 0.631775,
+            "min": 0.364174,
+            "max": 2.215196
+          },
+          "produce_ms": {
+            "sum": 2673.411569,
+            "median": 1.916776,
+            "min": 0.7069570000000001,
+            "max": 2627.647566
+          },
+          "observed_wall_ms": {
+            "sum": 2884.8593260000002,
+            "median": 7.859655999999999,
+            "min": 4.222592,
+            "max": 2631.800016
+          },
+          "validate_and_construct_ms": {
+            "sum": 178.164196,
+            "median": 5.405,
+            "min": 2.919918,
+            "max": 12.485475
+          }
+        }
+      },
+      "initialization": [
+        {
+          "device": {
+            "compute_units": 46,
+            "driver": "595.104.02",
+            "global_memory_bytes": 12346195968,
+            "group_size": 128,
+            "host_unified_memory": 0,
+            "local_memory_bytes": 49152,
+            "max_allocation_bytes": 3086548992,
+            "max_workgroup_size": 1024,
+            "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+            "opencl_c": "OpenCL C 1.2 ",
+            "vendor": "NVIDIA Corporation",
+            "version": "OpenCL 3.0 CUDA"
+          },
+          "event": "compact_gpu_initialization",
+          "initialization_ms": 2626.6475800000003,
+          "resources": {
+            "cgroup": "15:name=elogind:/14\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/\n0::/\n",
+            "clock_ticks_per_second": 100,
+            "snapshot_errors": [],
+            "threads": [
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "R",
+                "system_ticks": 248,
+                "tid": "1444",
+                "user_ticks": 14
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1448",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "cuda-EvtHandlr",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1449",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1450",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1451",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1452",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1453",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1454",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1455",
+                "user_ticks": 0
+              }
+            ],
+            "vanished_threads": []
+          },
+          "stages": [
+            {
+              "stage": "before_opencl",
+              "threads": 1
+            },
+            {
+              "stage": "library_loaded",
+              "threads": 1
+            },
+            {
+              "elapsed_ms": 2552.935143,
+              "stage": "gpu_discovered",
+              "threads": 1
+            },
+            {
+              "elapsed_ms": 2624.8551469999998,
+              "stage": "context_created",
+              "threads": 9
+            },
+            {
+              "elapsed_ms": 2626.6475800000003,
+              "stage": "program_built",
+              "threads": 9
+            }
+          ]
+        }
+      ],
+      "cleanup": [
+        {
+          "cleanup_ms": 64.58561399999999,
+          "event": "compact_gpu_cleanup",
+          "resources": {
+            "cgroup": "15:name=elogind:/14\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/\n0::/\n",
+            "clock_ticks_per_second": 100,
+            "snapshot_errors": [],
+            "threads": [
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "R",
+                "system_ticks": 261,
+                "tid": "1444",
+                "user_ticks": 613
+              }
+            ],
+            "vanished_threads": []
+          }
+        }
+      ]
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-20261009/v1/gpu-lab-compact-r3/results/v1-r3-warm-smoke-compact-warm.jsonl",
+      "sha256": "c53ef2972afd3dd941b772483d8b7db73fb05c5875f89bc75bb9dffbd7559bd3",
+      "kind": "compact",
+      "completed": true,
+      "variants": {
+        "cpu-compact": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 12.190982,
+            "median": 12.190982,
+            "min": 12.190982,
+            "max": 12.190982
+          },
+          "graph_build_ms": {
+            "sum": 12.170283,
+            "median": 12.170283,
+            "min": 12.170283,
+            "max": 12.170283
+          },
+          "query_ms": {
+            "sum": 0.020699,
+            "median": 0.020699,
+            "min": 0.020699,
+            "max": 0.020699
+          },
+          "produce_ms": {
+            "sum": 8.842229,
+            "median": 8.842229,
+            "min": 8.842229,
+            "max": 8.842229
+          },
+          "observed_wall_ms": {
+            "sum": 12.33388,
+            "median": 12.33388,
+            "min": 12.33388,
+            "max": 12.33388
+          },
+          "validate_and_construct_ms": {
+            "sum": 3.3076659999999998,
+            "median": 3.3076659999999998,
+            "min": 3.3076659999999998,
+            "max": 3.3076659999999998
+          }
+        },
+        "cpu-eager": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 33.528806,
+            "median": 33.528806,
+            "min": 33.528806,
+            "max": 33.528806
+          },
+          "graph_build_ms": {
+            "sum": 33.518477000000004,
+            "median": 33.518477000000004,
+            "min": 33.518477000000004,
+            "max": 33.518477000000004
+          },
+          "query_ms": {
+            "sum": 0.010329000000000001,
+            "median": 0.010329000000000001,
+            "min": 0.010329000000000001,
+            "max": 0.010329000000000001
+          },
+          "produce_ms": {
+            "sum": 8.617598000000001,
+            "median": 8.617598000000001,
+            "min": 8.617598000000001,
+            "max": 8.617598000000001
+          },
+          "observed_wall_ms": {
+            "sum": 37.920485,
+            "median": 37.920485,
+            "min": 37.920485,
+            "max": 37.920485
+          },
+          "validate_and_construct_ms": {
+            "sum": 24.877916,
+            "median": 24.877916,
+            "min": 24.877916,
+            "max": 24.877916
+          }
+        },
+        "gpu-compact": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 2586.485259,
+            "median": 2586.485259,
+            "min": 2586.485259,
+            "max": 2586.485259
+          },
+          "graph_build_ms": {
+            "sum": 2586.466053,
+            "median": 2586.466053,
+            "min": 2586.466053,
+            "max": 2586.466053
+          },
+          "query_ms": {
+            "sum": 0.019205999999999997,
+            "median": 0.019205999999999997,
+            "min": 0.019205999999999997,
+            "max": 0.019205999999999997
+          },
+          "produce_ms": {
+            "sum": 2583.032671,
+            "median": 2583.032671,
+            "min": 2583.032671,
+            "max": 2583.032671
+          },
+          "observed_wall_ms": {
+            "sum": 2586.760124,
+            "median": 2586.760124,
+            "min": 2586.760124,
+            "max": 2586.760124
+          },
+          "validate_and_construct_ms": {
+            "sum": 3.414506,
+            "median": 3.414506,
+            "min": 3.414506,
+            "max": 3.414506
+          }
+        }
+      },
+      "initialization": [
+        {
+          "device": {
+            "compute_units": 46,
+            "driver": "595.104.02",
+            "global_memory_bytes": 12346195968,
+            "group_size": 128,
+            "host_unified_memory": 0,
+            "local_memory_bytes": 49152,
+            "max_allocation_bytes": 3086548992,
+            "max_workgroup_size": 1024,
+            "name": "NVIDIA GeForce RTX 5070 Ti Laptop GPU",
+            "opencl_c": "OpenCL C 1.2 ",
+            "vendor": "NVIDIA Corporation",
+            "version": "OpenCL 3.0 CUDA"
+          },
+          "event": "compact_gpu_initialization",
+          "initialization_ms": 2582.001166,
+          "resources": {
+            "cgroup": "15:name=elogind:/9\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/\n0::/\n",
+            "clock_ticks_per_second": 100,
+            "snapshot_errors": [],
+            "threads": [
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "R",
+                "system_ticks": 243,
+                "tid": "1406",
+                "user_ticks": 14
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1410",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "cuda-EvtHandlr",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1411",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1412",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1413",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1414",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1415",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1416",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "1417",
+                "user_ticks": 0
+              }
+            ],
+            "vanished_threads": []
+          },
+          "stages": [
+            {
+              "stage": "before_opencl",
+              "threads": 1
+            },
+            {
+              "stage": "library_loaded",
+              "threads": 1
+            },
+            {
+              "elapsed_ms": 2507.7758870000002,
+              "stage": "gpu_discovered",
+              "threads": 1
+            },
+            {
+              "elapsed_ms": 2580.204715,
+              "stage": "context_created",
+              "threads": 9
+            },
+            {
+              "elapsed_ms": 2582.001166,
+              "stage": "program_built",
+              "threads": 9
+            }
+          ]
+        }
+      ],
+      "cleanup": [
+        {
+          "cleanup_ms": 62.475404,
+          "event": "compact_gpu_cleanup",
+          "resources": {
+            "cgroup": "15:name=elogind:/9\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/\n0::/\n",
+            "clock_ticks_per_second": 100,
+            "snapshot_errors": [],
+            "threads": [
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "R",
+                "system_ticks": 249,
+                "tid": "1406",
+                "user_ticks": 15
+              }
+            ],
+            "vanished_threads": []
+          }
+        }
+      ]
+    },
+    {
+      "host": "v2",
+      "path": ".server/recovered/gpu-20261009/v2/gpu-lab-20261008/results/v2.jsonl",
+      "sha256": "847d12b43273a710dc38a5eccdfddc17c4864d0899c50ac62ec52230509a8313",
+      "kind": "older_gpu_lab",
+      "row_count": 57
+    },
+    {
+      "host": "v2",
+      "path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/results/v2-compact-finite.jsonl",
+      "sha256": "f19c781540e2d12bfd49a8d4f2281ea5c82783be18f39e12ddbdc1fa93c3b036",
+      "kind": "compact",
+      "completed": true,
+      "variants": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 895.691721,
+            "median": 26.498760000000004,
+            "min": 15.022295999999999,
+            "max": 61.99813700000001
+          },
+          "graph_build_ms": {
+            "sum": 863.75246,
+            "median": 25.666704000000003,
+            "min": 14.480369,
+            "max": 59.62192400000001
+          },
+          "query_ms": {
+            "sum": 31.939261000000002,
+            "median": 0.832988,
+            "min": 0.441917,
+            "max": 2.376213
+          },
+          "produce_ms": {
+            "sum": 636.751791,
+            "median": 19.009310000000003,
+            "min": 10.68168,
+            "max": 43.54477
+          },
+          "observed_wall_ms": {
+            "sum": 909.487168,
+            "median": 27.004379,
+            "min": 15.273190000000001,
+            "max": 62.93757599999999
+          },
+          "validate_and_construct_ms": {
+            "sum": 225.409967,
+            "median": 6.600076,
+            "min": 3.727673,
+            "max": 15.974439
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 3069.601369,
+            "median": 87.610228,
+            "min": 40.784199,
+            "max": 232.02313599999997
+          },
+          "graph_build_ms": {
+            "sum": 3049.650816,
+            "median": 86.848775,
+            "min": 40.153534,
+            "max": 231.06039199999998
+          },
+          "query_ms": {
+            "sum": 19.950553,
+            "median": 0.721667,
+            "min": 0.424685,
+            "max": 1.223097
+          },
+          "produce_ms": {
+            "sum": 634.911504,
+            "median": 18.910342,
+            "min": 10.526636,
+            "max": 46.356869
+          },
+          "observed_wall_ms": {
+            "sum": 3608.011327,
+            "median": 98.399481,
+            "min": 52.903914,
+            "max": 272.607347
+          },
+          "validate_and_construct_ms": {
+            "sum": 2413.031625,
+            "median": 67.86291,
+            "min": 29.48512,
+            "max": 184.60168
+          }
+        },
+        "cpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 1075.571772,
+            "median": 32.691995999999996,
+            "min": 18.303402,
+            "max": 72.206851
+          },
+          "graph_build_ms": {
+            "sum": 1045.670802,
+            "median": 31.843868999999998,
+            "min": 17.853149,
+            "max": 70.172917
+          },
+          "query_ms": {
+            "sum": 29.90097,
+            "median": 0.827148,
+            "min": 0.450253,
+            "max": 2.158911
+          },
+          "produce_ms": {
+            "sum": 818.78703,
+            "median": 24.788128999999998,
+            "min": 13.796401999999999,
+            "max": 54.682795
+          },
+          "observed_wall_ms": {
+            "sum": 1096.453434,
+            "median": 33.38581,
+            "min": 18.585898,
+            "max": 73.613276
+          },
+          "validate_and_construct_ms": {
+            "sum": 225.354323,
+            "median": 6.795717,
+            "min": 3.7492039999999998,
+            "max": 15.582657
+          }
+        },
+        "gpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 8872.296661,
+            "median": 327.860984,
+            "min": 298.441439,
+            "max": 388.52804799999996
+          },
+          "graph_build_ms": {
+            "sum": 8841.361654,
+            "median": 326.98706799999997,
+            "min": 297.921654,
+            "max": 386.392952
+          },
+          "query_ms": {
+            "sum": 30.935007,
+            "median": 0.843639,
+            "min": 0.43279,
+            "max": 2.221299
+          },
+          "produce_ms": {
+            "sum": 8610.182807,
+            "median": 318.425675,
+            "min": 294.003338,
+            "max": 370.276844
+          },
+          "observed_wall_ms": {
+            "sum": 8892.280442,
+            "median": 328.365499,
+            "min": 298.755924,
+            "max": 389.986401
+          },
+          "validate_and_construct_ms": {
+            "sum": 229.609239,
+            "median": 6.750692,
+            "min": 3.816061,
+            "max": 17.835786
+          }
+        }
+      },
+      "initialization": [],
+      "cleanup": []
+    },
+    {
+      "host": "v2",
+      "path": ".server/recovered/gpu-20261009/v2/gpu-lab-compact-r2/results/v2-compact-warm.jsonl",
+      "sha256": "04e39d169651f7468547bbf3e2c85d7d339c1850bc35958bed724934383f1011",
+      "kind": "compact",
+      "completed": true,
+      "variants": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 911.411971,
+            "median": 26.864123000000003,
+            "min": 15.218668,
+            "max": 62.65970000000001
+          },
+          "graph_build_ms": {
+            "sum": 876.18588,
+            "median": 26.052645000000002,
+            "min": 14.545382,
+            "max": 60.49096
+          },
+          "query_ms": {
+            "sum": 35.226091,
+            "median": 0.8287709999999999,
+            "min": 0.43261,
+            "max": 3.021846
+          },
+          "produce_ms": {
+            "sum": 643.022195,
+            "median": 19.456878,
+            "min": 10.734219999999999,
+            "max": 44.761857
+          },
+          "observed_wall_ms": {
+            "sum": 930.873233,
+            "median": 27.44303,
+            "min": 15.529686,
+            "max": 63.921780999999996
+          },
+          "validate_and_construct_ms": {
+            "sum": 231.582951,
+            "median": 6.542186,
+            "min": 3.612215,
+            "max": 16.385007
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 3217.002075,
+            "median": 92.513125,
+            "min": 40.166559,
+            "max": 248.301001
+          },
+          "graph_build_ms": {
+            "sum": 3197.525141,
+            "median": 91.856211,
+            "min": 39.667744,
+            "max": 246.885739
+          },
+          "query_ms": {
+            "sum": 19.476934,
+            "median": 0.7051759999999999,
+            "min": 0.423141,
+            "max": 1.415262
+          },
+          "produce_ms": {
+            "sum": 641.097065,
+            "median": 19.217384,
+            "min": 10.565420000000001,
+            "max": 44.564843
+          },
+          "observed_wall_ms": {
+            "sum": 3787.750374,
+            "median": 103.567894,
+            "min": 52.336439,
+            "max": 291.595907
+          },
+          "validate_and_construct_ms": {
+            "sum": 2554.744166,
+            "median": 72.34581299999999,
+            "min": 28.781436,
+            "max": 202.65571
+          }
+        },
+        "gpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 519.5914720000001,
+            "median": 9.872868,
+            "min": 5.366097,
+            "max": 184.98206100000002
+          },
+          "graph_build_ms": {
+            "sum": 488.85834900000003,
+            "median": 9.093,
+            "min": 4.874456,
+            "max": 184.408534
+          },
+          "query_ms": {
+            "sum": 30.733123,
+            "median": 0.779868,
+            "min": 0.424114,
+            "max": 2.58578
+          },
+          "produce_ms": {
+            "sum": 251.76872400000002,
+            "median": 2.290851,
+            "min": 1.190065,
+            "max": 180.631648
+          },
+          "observed_wall_ms": {
+            "sum": 543.715776,
+            "median": 10.621076,
+            "min": 5.754393,
+            "max": 185.61101299999999
+          },
+          "validate_and_construct_ms": {
+            "sum": 235.040843,
+            "median": 6.48096,
+            "min": 3.592207,
+            "max": 16.555039
+          }
+        }
+      },
+      "initialization": [
+        {
+          "device": {
+            "compute_units": 26,
+            "driver": "595.104.02",
+            "global_memory_bytes": 8082096128,
+            "group_size": 128,
+            "host_unified_memory": 0,
+            "local_memory_bytes": 49152,
+            "max_allocation_bytes": 2020524032,
+            "max_workgroup_size": 1024,
+            "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+            "opencl_c": "OpenCL C 1.2 ",
+            "vendor": "NVIDIA Corporation",
+            "version": "OpenCL 3.0 CUDA"
+          },
+          "event": "compact_gpu_initialization",
+          "initialization_ms": 178.682905,
+          "stages": [
+            {
+              "stage": "before_opencl",
+              "threads": 1
+            },
+            {
+              "stage": "library_loaded",
+              "threads": 1
+            },
+            {
+              "elapsed_ms": 79.329065,
+              "stage": "gpu_discovered",
+              "threads": 1
+            },
+            {
+              "elapsed_ms": 175.990533,
+              "stage": "context_created",
+              "threads": 9
+            },
+            {
+              "elapsed_ms": 178.682905,
+              "stage": "program_built",
+              "threads": 9
+            }
+          ]
+        }
+      ],
+      "cleanup": []
+    },
+    {
+      "host": "v2",
+      "path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/results/g003-v2-r1-cpu-helper.jsonl",
+      "sha256": "4eb77adc23090562289d07547011b905d11123d8b9552b395be6193112b1ecfd",
+      "kind": "persistent_candidate_profile",
+      "measurements": 27,
+      "table_mismatch_count": 0,
+      "query_mismatch_count": 0,
+      "engine_paths": 972,
+      "summary": [
+        {
+          "cpu_build_query_sum_ms": 952.0574650000001,
+          "measurements": 27,
+          "note": "All table/query comparisons and public-engine validation occur outside measured producer build/query; inspect stderr build.backend and fallbacks before attributing performance to GPU.",
+          "producer_build_query_sum_ms": 1533.1754500000002,
+          "producer_including_setup_shutdown_ms": 1536.0195940000003,
+          "profile_wall_ms": 2545.8926699999997,
+          "resources_after_shutdown": {
+            "cgroup": "15:name=elogind:/95\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/\n0::/\n",
+            "clock_ticks_per_second": 100,
+            "snapshot_errors": [],
+            "threads": [
+              {
+                "cpu_allowed": "15",
+                "last_cpu": 15,
+                "name": "distributed-sol",
+                "state": "R",
+                "system_ticks": 18,
+                "tid": "3708",
+                "user_ticks": 137
+              }
+            ],
+            "vanished_threads": []
+          },
+          "setup_ms": 1.1020489999999998,
+          "shutdown_ms": 1.742095,
+          "type": "profile_summary"
+        }
+      ],
+      "process": {
+        "binary_sha256": "5f906bf8faf51dd49963bc4a8e624dbd8c1d0591aed199e254ead874893f103f",
+        "benchmark_exit_code": 0,
+        "exit_code": 0,
+        "affinity_violations": [],
+        "peak_tree_threads": 2,
+        "wall_seconds": 2.5505477269998664,
+        "adopted_descendant_cleanup": {
+          "killed_pids": [],
+          "reaped_pids": []
+        }
+      }
+    },
+    {
+      "host": "v2",
+      "path": ".server/recovered/gpu-20261009/v2/isolated-g003-r1/results/g003-v2-r1-opencl.jsonl",
+      "sha256": "bdc520f76bae523e12fa113e040bb50f42842a1c7eadf1bebf11e4bfaf76d1bf",
+      "kind": "persistent_candidate_profile",
+      "measurements": 27,
+      "table_mismatch_count": 0,
+      "query_mismatch_count": 0,
+      "engine_paths": 972,
+      "summary": [],
+      "process": {
+        "binary_sha256": "5f906bf8faf51dd49963bc4a8e624dbd8c1d0591aed199e254ead874893f103f",
+        "benchmark_exit_code": 2,
+        "exit_code": 2,
+        "affinity_violations": [],
+        "peak_tree_threads": 10,
+        "wall_seconds": 2.400649502000306,
+        "adopted_descendant_cleanup": {
+          "killed_pids": [],
+          "reaped_pids": []
+        }
+      }
+    },
+    {
+      "host": "v2",
+      "path": ".server/recovered/gpu-20261009/v2/isolated-g003-r2/results/g003-v2-r2-opencl.jsonl",
+      "sha256": "207e60db4b847c010afeb1196411fb0977cb25cdded63f8e215421a2acc459df",
+      "kind": "persistent_candidate_profile",
+      "measurements": 27,
+      "table_mismatch_count": 0,
+      "query_mismatch_count": 0,
+      "engine_paths": 972,
+      "summary": [
+        {
+          "cpu_build_query_sum_ms": 970.354414,
+          "measurements": 27,
+          "note": "All table/query comparisons and public-engine validation occur outside measured producer build/query; inspect stderr build.backend and fallbacks before attributing performance to GPU.",
+          "producer_build_query_sum_ms": 1007.0271949999999,
+          "producer_including_setup_shutdown_ms": 1322.4430109999998,
+          "profile_wall_ms": 2352.017205,
+          "resources_after_shutdown": {
+            "cgroup": "15:name=elogind:/109\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/\n0::/\n",
+            "clock_ticks_per_second": 100,
+            "snapshot_errors": [],
+            "threads": [
+              {
+                "cpu_allowed": "15",
+                "last_cpu": 15,
+                "name": "distributed-sol",
+                "state": "R",
+                "system_ticks": 21,
+                "tid": "3874",
+                "user_ticks": 132
+              }
+            ],
+            "vanished_threads": []
+          },
+          "setup_ms": 199.052637,
+          "shutdown_ms": 116.363179,
+          "type": "profile_summary"
+        }
+      ],
+      "process": {
+        "binary_sha256": "900960520de3c1be97cb1a8a1c5053594a2b24f93e7eed285b756c04dbe00e67",
+        "benchmark_exit_code": 0,
+        "exit_code": 0,
+        "affinity_violations": [],
+        "peak_tree_threads": 10,
+        "wall_seconds": 2.358706518998588,
+        "adopted_descendant_cleanup": {
+          "killed_pids": [],
+          "reaped_pids": []
+        }
+      }
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-20261009/v3/gpu-lab-20261008/results/v3.jsonl",
+      "sha256": "64215caebad8376860f2d1fc1296b10c54571db4692c70233e768dc97984978c",
+      "kind": "older_gpu_lab",
+      "row_count": 57
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r2/results/v3-compact-finite.jsonl",
+      "sha256": "9601fa290b76b4468d5ad08a9a6c30046338b4f2edad0e7b54dbca71a0d930a0",
+      "kind": "compact",
+      "completed": false,
+      "variants": {
+        "cpu-compact": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 15.736586,
+            "median": 15.736586,
+            "min": 15.736586,
+            "max": 15.736586
+          },
+          "graph_build_ms": {
+            "sum": 15.223803,
+            "median": 15.223803,
+            "min": 15.223803,
+            "max": 15.223803
+          },
+          "query_ms": {
+            "sum": 0.5127830000000001,
+            "median": 0.5127830000000001,
+            "min": 0.5127830000000001,
+            "max": 0.5127830000000001
+          },
+          "produce_ms": {
+            "sum": 11.507966,
+            "median": 11.507966,
+            "min": 11.507966,
+            "max": 11.507966
+          },
+          "observed_wall_ms": {
+            "sum": 15.968010000000001,
+            "median": 15.968010000000001,
+            "min": 15.968010000000001,
+            "max": 15.968010000000001
+          },
+          "validate_and_construct_ms": {
+            "sum": 3.6914510000000003,
+            "median": 3.6914510000000003,
+            "min": 3.6914510000000003,
+            "max": 3.6914510000000003
+          }
+        },
+        "cpu-eager": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 39.490185,
+            "median": 39.490185,
+            "min": 39.490185,
+            "max": 39.490185
+          },
+          "graph_build_ms": {
+            "sum": 39.198347,
+            "median": 39.198347,
+            "min": 39.198347,
+            "max": 39.198347
+          },
+          "query_ms": {
+            "sum": 0.291838,
+            "median": 0.291838,
+            "min": 0.291838,
+            "max": 0.291838
+          },
+          "produce_ms": {
+            "sum": 11.656746,
+            "median": 11.656746,
+            "min": 11.656746,
+            "max": 11.656746
+          },
+          "observed_wall_ms": {
+            "sum": 44.375757,
+            "median": 44.375757,
+            "min": 44.375757,
+            "max": 44.375757
+          },
+          "validate_and_construct_ms": {
+            "sum": 27.516363,
+            "median": 27.516363,
+            "min": 27.516363,
+            "max": 27.516363
+          }
+        },
+        "cpu-helper": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 17.533730000000002,
+            "median": 17.533730000000002,
+            "min": 17.533730000000002,
+            "max": 17.533730000000002
+          },
+          "graph_build_ms": {
+            "sum": 17.07008,
+            "median": 17.07008,
+            "min": 17.07008,
+            "max": 17.07008
+          },
+          "query_ms": {
+            "sum": 0.46365,
+            "median": 0.46365,
+            "min": 0.46365,
+            "max": 0.46365
+          },
+          "produce_ms": {
+            "sum": 13.455012,
+            "median": 13.455012,
+            "min": 13.455012,
+            "max": 13.455012
+          },
+          "observed_wall_ms": {
+            "sum": 17.734347,
+            "median": 17.734347,
+            "min": 17.734347,
+            "max": 17.734347
+          },
+          "validate_and_construct_ms": {
+            "sum": 3.594529,
+            "median": 3.594529,
+            "min": 3.594529,
+            "max": 3.594529
+          }
+        }
+      },
+      "initialization": [],
+      "cleanup": []
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-full-compact-finite.jsonl",
+      "sha256": "97357afb629d4079b80dffd06bb57e326917506fa3d0352bccae45c03f1959c9",
+      "kind": "compact",
+      "completed": true,
+      "variants": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 812.160662,
+            "median": 24.757612999999996,
+            "min": 13.749070999999999,
+            "max": 55.301635000000005
+          },
+          "graph_build_ms": {
+            "sum": 790.86934,
+            "median": 23.919779999999996,
+            "min": 13.218414,
+            "max": 54.131027
+          },
+          "query_ms": {
+            "sum": 21.291322,
+            "median": 0.8240879999999999,
+            "min": 0.40991,
+            "max": 1.18222
+          },
+          "produce_ms": {
+            "sum": 585.137783,
+            "median": 17.764481,
+            "min": 9.733169,
+            "max": 40.601829
+          },
+          "observed_wall_ms": {
+            "sum": 824.283829,
+            "median": 25.122529,
+            "min": 13.872432,
+            "max": 56.24152
+          },
+          "validate_and_construct_ms": {
+            "sum": 203.93403,
+            "median": 5.998635,
+            "min": 3.415244,
+            "max": 14.218552
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 2822.259034,
+            "median": 83.808209,
+            "min": 37.854310000000005,
+            "max": 209.025984
+          },
+          "graph_build_ms": {
+            "sum": 2806.218672,
+            "median": 83.206619,
+            "min": 37.569315,
+            "max": 208.136885
+          },
+          "query_ms": {
+            "sum": 16.040362,
+            "median": 0.5885050000000001,
+            "min": 0.262012,
+            "max": 0.892977
+          },
+          "produce_ms": {
+            "sum": 592.675406,
+            "median": 18.178107999999998,
+            "min": 9.652186,
+            "max": 40.221886
+          },
+          "observed_wall_ms": {
+            "sum": 3268.514023,
+            "median": 95.441226,
+            "min": 42.44979,
+            "max": 245.763696
+          },
+          "validate_and_construct_ms": {
+            "sum": 2211.548567,
+            "median": 63.840920999999994,
+            "min": 27.686655000000002,
+            "max": 168.635963
+          }
+        },
+        "cpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 910.005445,
+            "median": 27.221763,
+            "min": 15.648527,
+            "max": 62.179902000000006
+          },
+          "graph_build_ms": {
+            "sum": 889.596685,
+            "median": 26.49635,
+            "min": 15.167955,
+            "max": 61.082731
+          },
+          "query_ms": {
+            "sum": 20.40876,
+            "median": 0.7114060000000001,
+            "min": 0.41,
+            "max": 1.3225330000000002
+          },
+          "produce_ms": {
+            "sum": 690.381767,
+            "median": 20.41038,
+            "min": 11.689623,
+            "max": 47.190873
+          },
+          "observed_wall_ms": {
+            "sum": 926.9212689999999,
+            "median": 27.439541000000002,
+            "min": 15.758654,
+            "max": 63.476056
+          },
+          "validate_and_construct_ms": {
+            "sum": 197.517382,
+            "median": 5.876366,
+            "min": 3.3686760000000002,
+            "max": 13.779247
+          }
+        },
+        "gpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 2032.153544,
+            "median": 65.83447500000001,
+            "min": 54.234981000000005,
+            "max": 106.754942
+          },
+          "graph_build_ms": {
+            "sum": 2011.598654,
+            "median": 65.09750100000001,
+            "min": 53.590541,
+            "max": 105.699791
+          },
+          "query_ms": {
+            "sum": 20.55489,
+            "median": 0.699413,
+            "min": 0.419358,
+            "max": 1.1907059999999998
+          },
+          "produce_ms": {
+            "sum": 1809.889393,
+            "median": 59.194035,
+            "min": 50.186358,
+            "max": 92.374626
+          },
+          "observed_wall_ms": {
+            "sum": 2051.431178,
+            "median": 66.42424199999999,
+            "min": 54.531287999999996,
+            "max": 108.066576
+          },
+          "validate_and_construct_ms": {
+            "sum": 199.963868,
+            "median": 5.965553,
+            "min": 3.255964,
+            "max": 13.700138
+          }
+        }
+      },
+      "initialization": [],
+      "cleanup": []
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-full-compact-warm.jsonl",
+      "sha256": "ad3b8e2d555b04b2564dad7f5bde53b46bb77e2356e41c1caa6b36dedb35f39f",
+      "kind": "compact",
+      "completed": true,
+      "variants": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 830.77849,
+            "median": 25.115876999999998,
+            "min": 13.986466,
+            "max": 58.052220999999996
+          },
+          "graph_build_ms": {
+            "sum": 806.17827,
+            "median": 24.416663999999997,
+            "min": 13.543534000000001,
+            "max": 56.143755999999996
+          },
+          "query_ms": {
+            "sum": 24.60022,
+            "median": 0.733568,
+            "min": 0.39464099999999996,
+            "max": 4.152088
+          },
+          "produce_ms": {
+            "sum": 600.24626,
+            "median": 18.146138,
+            "min": 9.80343,
+            "max": 41.95475
+          },
+          "observed_wall_ms": {
+            "sum": 844.419965,
+            "median": 25.438923,
+            "min": 14.173618000000001,
+            "max": 58.767093
+          },
+          "validate_and_construct_ms": {
+            "sum": 204.172476,
+            "median": 5.887396,
+            "min": 3.3286610000000003,
+            "max": 14.51037
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 2914.719984,
+            "median": 86.105404,
+            "min": 39.142196999999996,
+            "max": 216.214254
+          },
+          "graph_build_ms": {
+            "sum": 2897.448547,
+            "median": 85.52277,
+            "min": 38.835240999999996,
+            "max": 215.341495
+          },
+          "query_ms": {
+            "sum": 17.271437,
+            "median": 0.587975,
+            "min": 0.26852400000000004,
+            "max": 1.546534
+          },
+          "produce_ms": {
+            "sum": 595.637853,
+            "median": 18.378473999999997,
+            "min": 9.935989,
+            "max": 41.303467000000005
+          },
+          "observed_wall_ms": {
+            "sum": 3439.846078,
+            "median": 99.249667,
+            "min": 44.431830999999995,
+            "max": 258.697886
+          },
+          "validate_and_construct_ms": {
+            "sum": 2299.978125,
+            "median": 66.563784,
+            "min": 28.69607,
+            "max": 174.324016
+          }
+        },
+        "gpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 725.033496,
+            "median": 20.241112,
+            "min": 9.216477999999999,
+            "max": 51.453046
+          },
+          "graph_build_ms": {
+            "sum": 704.451055,
+            "median": 19.467379,
+            "min": 8.799444,
+            "max": 50.378037
+          },
+          "query_ms": {
+            "sum": 20.582441,
+            "median": 0.693122,
+            "min": 0.407254,
+            "max": 1.607579
+          },
+          "produce_ms": {
+            "sum": 503.895587,
+            "median": 13.31216,
+            "min": 5.485001,
+            "max": 41.330808
+          },
+          "observed_wall_ms": {
+            "sum": 739.150396,
+            "median": 20.680848,
+            "min": 9.407516,
+            "max": 52.171726
+          },
+          "validate_and_construct_ms": {
+            "sum": 198.825418,
+            "median": 6.158666,
+            "min": 3.231017,
+            "max": 14.381137
+          }
+        }
+      },
+      "initialization": [
+        {
+          "device": {
+            "compute_units": 2,
+            "driver": "26.2.4",
+            "global_memory_bytes": 17741660160,
+            "group_size": 128,
+            "host_unified_memory": 1,
+            "local_memory_bytes": 65536,
+            "max_allocation_bytes": 2147483647,
+            "max_workgroup_size": 1024,
+            "name": "AMD Ryzen 9 9955HX 16-Core Processor (radeonsi, raphael_mendocino, ACO, DRM 3.64, 6.18.55_1)",
+            "opencl_c": "OpenCL C 1.2 ",
+            "vendor": "AMD",
+            "version": "OpenCL 3.1 "
+          },
+          "event": "compact_gpu_initialization",
+          "initialization_ms": 34.346171,
+          "resources": {
+            "cgroup": "15:name=elogind:/66\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/gpu-lab-v3-r3-full\n0::/\n",
+            "clock_ticks_per_second": 100,
+            "snapshot_errors": [],
+            "threads": [
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "R",
+                "system_ticks": 1,
+                "tid": "2812",
+                "user_ticks": 17
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:cs0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2813",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:disk$0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2814",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:sh0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2815",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-la:sh_opt0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2816",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-la:traceq0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2817",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "g:clctxworker0",
+                "state": "R",
+                "system_ticks": 0,
+                "tid": "2818",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-la:traceq0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2819",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "rusticl queue w",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2820",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "rusticl queue s",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2821",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:disk$0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2822",
+                "user_ticks": 0
+              }
+            ],
+            "vanished_threads": []
+          },
+          "stages": [
+            {
+              "stage": "before_opencl",
+              "threads": 1
+            },
+            {
+              "stage": "library_loaded",
+              "threads": 1
+            },
+            {
+              "elapsed_ms": 32.27414,
+              "stage": "gpu_discovered",
+              "threads": 7
+            },
+            {
+              "elapsed_ms": 32.40196,
+              "stage": "context_created",
+              "threads": 10
+            },
+            {
+              "elapsed_ms": 34.346171,
+              "stage": "program_built",
+              "threads": 11
+            }
+          ]
+        }
+      ],
+      "cleanup": [
+        {
+          "cleanup_ms": 0.24867699999999998,
+          "event": "compact_gpu_cleanup",
+          "resources": {
+            "cgroup": "15:name=elogind:/66\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/gpu-lab-v3-r3-full\n0::/\n",
+            "clock_ticks_per_second": 100,
+            "snapshot_errors": [],
+            "threads": [
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "R",
+                "system_ticks": 12,
+                "tid": "2812",
+                "user_ticks": 671
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:cs0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2813",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:disk$0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2814",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:sh0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2815",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-la:sh_opt0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2816",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-la:traceq0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2817",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "g:clctxworker0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2818",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-la:traceq0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2819",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:disk$0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2822",
+                "user_ticks": 0
+              }
+            ],
+            "vanished_threads": []
+          }
+        }
+      ]
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-smoke-compact-finite.jsonl",
+      "sha256": "b34f64e741e2096a986d1085dcb45d5e66fe9e20a8f8c64dac4bd85625122221",
+      "kind": "compact",
+      "completed": true,
+      "variants": {
+        "cpu-compact": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 13.692246000000003,
+            "median": 13.692246000000003,
+            "min": 13.692246000000003,
+            "max": 13.692246000000003
+          },
+          "graph_build_ms": {
+            "sum": 13.668832000000002,
+            "median": 13.668832000000002,
+            "min": 13.668832000000002,
+            "max": 13.668832000000002
+          },
+          "query_ms": {
+            "sum": 0.023414,
+            "median": 0.023414,
+            "min": 0.023414,
+            "max": 0.023414
+          },
+          "produce_ms": {
+            "sum": 9.960297,
+            "median": 9.960297,
+            "min": 9.960297,
+            "max": 9.960297
+          },
+          "observed_wall_ms": {
+            "sum": 13.93433,
+            "median": 13.93433,
+            "min": 13.93433,
+            "max": 13.93433
+          },
+          "validate_and_construct_ms": {
+            "sum": 3.686023,
+            "median": 3.686023,
+            "min": 3.686023,
+            "max": 3.686023
+          }
+        },
+        "cpu-eager": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 37.761059,
+            "median": 37.761059,
+            "min": 37.761059,
+            "max": 37.761059
+          },
+          "graph_build_ms": {
+            "sum": 37.750078,
+            "median": 37.750078,
+            "min": 37.750078,
+            "max": 37.750078
+          },
+          "query_ms": {
+            "sum": 0.010981000000000001,
+            "median": 0.010981000000000001,
+            "min": 0.010981000000000001,
+            "max": 0.010981000000000001
+          },
+          "produce_ms": {
+            "sum": 9.838978,
+            "median": 9.838978,
+            "min": 9.838978,
+            "max": 9.838978
+          },
+          "observed_wall_ms": {
+            "sum": 42.414208,
+            "median": 42.414208,
+            "min": 42.414208,
+            "max": 42.414208
+          },
+          "validate_and_construct_ms": {
+            "sum": 27.885392,
+            "median": 27.885392,
+            "min": 27.885392,
+            "max": 27.885392
+          }
+        },
+        "cpu-helper": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 15.406774999999998,
+            "median": 15.406774999999998,
+            "min": 15.406774999999998,
+            "max": 15.406774999999998
+          },
+          "graph_build_ms": {
+            "sum": 15.385544999999999,
+            "median": 15.385544999999999,
+            "min": 15.385544999999999,
+            "max": 15.385544999999999
+          },
+          "query_ms": {
+            "sum": 0.02123,
+            "median": 0.02123,
+            "min": 0.02123,
+            "max": 0.02123
+          },
+          "produce_ms": {
+            "sum": 11.933691999999999,
+            "median": 11.933691999999999,
+            "min": 11.933691999999999,
+            "max": 11.933691999999999
+          },
+          "observed_wall_ms": {
+            "sum": 15.567556999999999,
+            "median": 15.567556999999999,
+            "min": 15.567556999999999,
+            "max": 15.567556999999999
+          },
+          "validate_and_construct_ms": {
+            "sum": 3.4312240000000003,
+            "median": 3.4312240000000003,
+            "min": 3.4312240000000003,
+            "max": 3.4312240000000003
+          }
+        },
+        "gpu-helper": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 59.80760600000001,
+            "median": 59.80760600000001,
+            "min": 59.80760600000001,
+            "max": 59.80760600000001
+          },
+          "graph_build_ms": {
+            "sum": 59.763693,
+            "median": 59.763693,
+            "min": 59.763693,
+            "max": 59.763693
+          },
+          "query_ms": {
+            "sum": 0.043913,
+            "median": 0.043913,
+            "min": 0.043913,
+            "max": 0.043913
+          },
+          "produce_ms": {
+            "sum": 53.991703,
+            "median": 53.991703,
+            "min": 53.991703,
+            "max": 53.991703
+          },
+          "observed_wall_ms": {
+            "sum": 60.118169,
+            "median": 60.118169,
+            "min": 60.118169,
+            "max": 60.118169
+          },
+          "validate_and_construct_ms": {
+            "sum": 5.749758,
+            "median": 5.749758,
+            "min": 5.749758,
+            "max": 5.749758
+          }
+        }
+      },
+      "initialization": [],
+      "cleanup": []
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-20261009/v3/gpu-lab-compact-r3/results/v3-r3-smoke-compact-warm.jsonl",
+      "sha256": "e0d2234a6528122ea9cd8135600bd58745f28f9ce70a75d9b390f053170ec16a",
+      "kind": "compact",
+      "completed": true,
+      "variants": {
+        "cpu-compact": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 13.830305,
+            "median": 13.830305,
+            "min": 13.830305,
+            "max": 13.830305
+          },
+          "graph_build_ms": {
+            "sum": 13.805097,
+            "median": 13.805097,
+            "min": 13.805097,
+            "max": 13.805097
+          },
+          "query_ms": {
+            "sum": 0.025208,
+            "median": 0.025208,
+            "min": 0.025208,
+            "max": 0.025208
+          },
+          "produce_ms": {
+            "sum": 9.834050000000001,
+            "median": 9.834050000000001,
+            "min": 9.834050000000001,
+            "max": 9.834050000000001
+          },
+          "observed_wall_ms": {
+            "sum": 14.057201000000001,
+            "median": 14.057201000000001,
+            "min": 14.057201000000001,
+            "max": 14.057201000000001
+          },
+          "validate_and_construct_ms": {
+            "sum": 3.948355,
+            "median": 3.948355,
+            "min": 3.948355,
+            "max": 3.948355
+          }
+        },
+        "cpu-eager": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 39.251659,
+            "median": 39.251659,
+            "min": 39.251659,
+            "max": 39.251659
+          },
+          "graph_build_ms": {
+            "sum": 39.240007,
+            "median": 39.240007,
+            "min": 39.240007,
+            "max": 39.240007
+          },
+          "query_ms": {
+            "sum": 0.011652,
+            "median": 0.011652,
+            "min": 0.011652,
+            "max": 0.011652
+          },
+          "produce_ms": {
+            "sum": 9.811366999999999,
+            "median": 9.811366999999999,
+            "min": 9.811366999999999,
+            "max": 9.811366999999999
+          },
+          "observed_wall_ms": {
+            "sum": 44.322443,
+            "median": 44.322443,
+            "min": 44.322443,
+            "max": 44.322443
+          },
+          "validate_and_construct_ms": {
+            "sum": 29.402661,
+            "median": 29.402661,
+            "min": 29.402661,
+            "max": 29.402661
+          }
+        },
+        "gpu-compact": {
+          "n": 1,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "build_plus_queries_ms": {
+            "sum": 44.77698600000001,
+            "median": 44.77698600000001,
+            "min": 44.77698600000001,
+            "max": 44.77698600000001
+          },
+          "graph_build_ms": {
+            "sum": 44.75093700000001,
+            "median": 44.75093700000001,
+            "min": 44.75093700000001,
+            "max": 44.75093700000001
+          },
+          "query_ms": {
+            "sum": 0.026049,
+            "median": 0.026049,
+            "min": 0.026049,
+            "max": 0.026049
+          },
+          "produce_ms": {
+            "sum": 41.192053,
+            "median": 41.192053,
+            "min": 41.192053,
+            "max": 41.192053
+          },
+          "observed_wall_ms": {
+            "sum": 45.145188000000005,
+            "median": 45.145188000000005,
+            "min": 45.145188000000005,
+            "max": 45.145188000000005
+          },
+          "validate_and_construct_ms": {
+            "sum": 3.5371729999999997,
+            "median": 3.5371729999999997,
+            "min": 3.5371729999999997,
+            "max": 3.5371729999999997
+          }
+        }
+      },
+      "initialization": [
+        {
+          "device": {
+            "compute_units": 2,
+            "driver": "26.2.4",
+            "global_memory_bytes": 17741660160,
+            "group_size": 128,
+            "host_unified_memory": 1,
+            "local_memory_bytes": 65536,
+            "max_allocation_bytes": 2147483647,
+            "max_workgroup_size": 1024,
+            "name": "AMD Ryzen 9 9955HX 16-Core Processor (radeonsi, raphael_mendocino, ACO, DRM 3.64, 6.18.55_1)",
+            "opencl_c": "OpenCL C 1.2 ",
+            "vendor": "AMD",
+            "version": "OpenCL 3.1 "
+          },
+          "event": "compact_gpu_initialization",
+          "initialization_ms": 33.714409,
+          "resources": {
+            "cgroup": "15:name=elogind:/64\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/gpu-lab-v3-r3-smoke\n0::/\n",
+            "clock_ticks_per_second": 100,
+            "snapshot_errors": [],
+            "threads": [
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "R",
+                "system_ticks": 2,
+                "tid": "2452",
+                "user_ticks": 16
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:cs0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2453",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:disk$0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2454",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:sh0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2455",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-la:sh_opt0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2456",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-la:traceq0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2457",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "g:clctxworker0",
+                "state": "R",
+                "system_ticks": 0,
+                "tid": "2458",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-la:traceq0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2459",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "rusticl queue w",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2460",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "rusticl queue s",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2461",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:disk$0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2462",
+                "user_ticks": 0
+              }
+            ],
+            "vanished_threads": []
+          },
+          "stages": [
+            {
+              "stage": "before_opencl",
+              "threads": 1
+            },
+            {
+              "stage": "library_loaded",
+              "threads": 1
+            },
+            {
+              "elapsed_ms": 31.759908000000003,
+              "stage": "gpu_discovered",
+              "threads": 7
+            },
+            {
+              "elapsed_ms": 31.892497,
+              "stage": "context_created",
+              "threads": 10
+            },
+            {
+              "elapsed_ms": 33.714409,
+              "stage": "program_built",
+              "threads": 11
+            }
+          ]
+        }
+      ],
+      "cleanup": [
+        {
+          "cleanup_ms": 0.121708,
+          "event": "compact_gpu_cleanup",
+          "resources": {
+            "cgroup": "15:name=elogind:/64\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/gpu-lab-v3-r3-smoke\n0::/\n",
+            "clock_ticks_per_second": 100,
+            "snapshot_errors": [],
+            "threads": [
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab",
+                "state": "R",
+                "system_ticks": 2,
+                "tid": "2452",
+                "user_ticks": 17
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:cs0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2453",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:disk$0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2454",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:sh0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2455",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-la:sh_opt0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2456",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-la:traceq0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2457",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "g:clctxworker0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2458",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-la:traceq0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2459",
+                "user_ticks": 0
+              },
+              {
+                "cpu_allowed": "31",
+                "name": "gpu-lab:disk$0",
+                "state": "S",
+                "system_ticks": 0,
+                "tid": "2462",
+                "user_ticks": 0
+              }
+            ],
+            "vanished_threads": []
+          }
+        }
+      ]
+    }
+  ],
+  "findings": [
+    "The same compact representation should be compared on CPU and GPU. CPU compact already reduces eager graph/path allocation time substantially.",
+    "Warm in-process NVIDIA GPU shortest-table production has lower median graph build/query time than CPU compact; v1 first initialization costs about 2.63 seconds, so initialization and teardown must remain in lifetime accounting.",
+    "Candidate g003-r2 persistent OpenCL helper completed 27 exact table/query comparisons and 972 public-engine paths, exit 0 and no affinity violations. CPU build/query total 970.354414ms versus GPU 1007.027195ms; GPU setup+shutdown included 1322.443011ms, so this IPC design did not establish a net benefit.",
+    "A future GPU experiment should reduce result pipe copies via a shared-memory compact table, or use one persistent in-process producer with measured affinity; CPU search workers should consume a shared immutable table. Preserve CPU fallback and deadline accounting.",
+    "No solver, bridge, GPU-lab, or profile processes were observed on the three inspected PCs during read-only process checks. No matches were run by this inspection."
+  ]
+}

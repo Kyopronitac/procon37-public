@@ -1,0 +1,2924 @@
+{
+  "capturedAtJst": "2026-10-09T11:31:43.719490+09:00",
+  "runId": "1791513062075302492-124172",
+  "stage": "C011-short-01",
+  "mode": "single read-only observation; 250ms per-process CPU activity sample",
+  "expected": {
+    "v1": {
+      "threads": 32,
+      "searchThreads": 31,
+      "cpus": "0-31"
+    },
+    "v2": {
+      "threads": 16,
+      "searchThreads": 15,
+      "cpus": "0-15"
+    },
+    "v3": {
+      "threads": 32,
+      "searchThreads": 31,
+      "cpus": "0-31"
+    },
+    "nomlab": {
+      "threads": 16,
+      "searchThreads": 15,
+      "cpus": "0-15"
+    },
+    "local": {
+      "generation6Cpus": "0",
+      "generation8Cpus": "2",
+      "serverCpus": "1,3,5,7"
+    }
+  },
+  "local": {
+    "host": "PROCON-UBUNTU",
+    "capturedAtUtc": "2026-10-09T02:31:42.590986+00:00",
+    "sampleSeconds": 0.2523117370001273,
+    "clockTicksPerSecond": 100,
+    "processes": [
+      {
+        "pid": 124048,
+        "executable": "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+        "name": "server-bridge",
+        "threads": 3,
+        "cpus": "2",
+        "startTicks": "6301007",
+        "observedPlannerEnvironment": {},
+        "executableSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "threadActivity": [
+          {
+            "tid": 124048,
+            "name": "server-bridge",
+            "state": "S",
+            "cpu": 2,
+            "cpus": "2",
+            "cpuTicks": 14,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124049,
+            "name": "tokio-rt-worker",
+            "state": "S",
+            "cpu": 2,
+            "cpus": "2",
+            "cpuTicks": 7,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124258,
+            "name": "tokio-rt-worker",
+            "state": "S",
+            "cpu": 2,
+            "cpus": "2",
+            "cpuTicks": 0,
+            "deltaCpuTicks": 0
+          }
+        ],
+        "threadsWithPositiveCpuDelta": 0,
+        "totalDeltaCpuTicks": 0,
+        "runningAtEnd": 0
+      },
+      {
+        "pid": 124050,
+        "executable": "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+        "name": "server-bridge",
+        "threads": 3,
+        "cpus": "0",
+        "startTicks": "6301009",
+        "observedPlannerEnvironment": {},
+        "executableSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "threadActivity": [
+          {
+            "tid": 124050,
+            "name": "server-bridge",
+            "state": "S",
+            "cpu": 0,
+            "cpus": "0",
+            "cpuTicks": 14,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124051,
+            "name": "tokio-rt-worker",
+            "state": "S",
+            "cpu": 0,
+            "cpus": "0",
+            "cpuTicks": 7,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124191,
+            "name": "tokio-rt-worker",
+            "state": "S",
+            "cpu": 0,
+            "cpus": "0",
+            "cpuTicks": 0,
+            "deltaCpuTicks": 0
+          }
+        ],
+        "threadsWithPositiveCpuDelta": 0,
+        "totalDeltaCpuTicks": 0,
+        "runningAtEnd": 0
+      },
+      {
+        "pid": 124172,
+        "executable": "/home/imak/work/procon37/target/release/server",
+        "name": "server",
+        "threads": 5,
+        "cpus": "1,3,5,7",
+        "startTicks": "6307002",
+        "observedPlannerEnvironment": {},
+        "executableSha256": "368ac7cb6334469a0a5735fcfded1d52875ffdfb1cb47ffbea7b03471e4638b0",
+        "threadActivity": [
+          {
+            "tid": 124172,
+            "name": "server",
+            "state": "S",
+            "cpu": 7,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 1,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124173,
+            "name": "tokio-rt-worker",
+            "state": "S",
+            "cpu": 5,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 1,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124174,
+            "name": "tokio-rt-worker",
+            "state": "S",
+            "cpu": 5,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 7,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124175,
+            "name": "tokio-rt-worker",
+            "state": "S",
+            "cpu": 7,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 1,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124177,
+            "name": "tokio-rt-worker",
+            "state": "S",
+            "cpu": 7,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 7,
+            "deltaCpuTicks": 0
+          }
+        ],
+        "threadsWithPositiveCpuDelta": 0,
+        "totalDeltaCpuTicks": 0,
+        "runningAtEnd": 0
+      },
+      {
+        "pid": 124178,
+        "executable": "/home/imak/work/procon37/tester/server/procon-server",
+        "name": "procon-server",
+        "threads": 9,
+        "cpus": "1,3,5,7",
+        "startTicks": "6307002",
+        "observedPlannerEnvironment": {},
+        "executableSha256": "769e101cbc6b80cce7732dae1e10d911ed1e9efefd3b1f94b6381652aa7741c1",
+        "threadActivity": [
+          {
+            "tid": 124178,
+            "name": "procon-server",
+            "state": "S",
+            "cpu": 7,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 0,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124179,
+            "name": "procon-server",
+            "state": "S",
+            "cpu": 7,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 2,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124180,
+            "name": "procon-server",
+            "state": "S",
+            "cpu": 1,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 2,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124181,
+            "name": "procon-server",
+            "state": "S",
+            "cpu": 7,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 2,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124182,
+            "name": "procon-server",
+            "state": "S",
+            "cpu": 5,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 0,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124183,
+            "name": "procon-server",
+            "state": "S",
+            "cpu": 3,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 0,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124184,
+            "name": "procon-server",
+            "state": "S",
+            "cpu": 7,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 2,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124185,
+            "name": "procon-server",
+            "state": "S",
+            "cpu": 5,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 3,
+            "deltaCpuTicks": 0
+          },
+          {
+            "tid": 124260,
+            "name": "procon-server",
+            "state": "S",
+            "cpu": 5,
+            "cpus": "1,3,5,7",
+            "cpuTicks": 0,
+            "deltaCpuTicks": 0
+          }
+        ],
+        "threadsWithPositiveCpuDelta": 0,
+        "totalDeltaCpuTicks": 0,
+        "runningAtEnd": 0
+      },
+      {
+        "pid": 124188,
+        "executable": "/home/imak/work/procon37/.server/distributed/bin/pool-solver-08",
+        "name": "pool-solver-08",
+        "threads": 1,
+        "cpus": "2",
+        "startTicks": "6307006",
+        "observedPlannerEnvironment": {},
+        "executableSha256": "a7588e406d40fb1aa76ed606ed2a910a0aee911468f040ef37453037f033c5a2",
+        "threadActivity": [
+          {
+            "tid": 124188,
+            "name": "pool-solver-08",
+            "state": "R",
+            "cpu": 2,
+            "cpus": "2",
+            "cpuTicks": 3128,
+            "deltaCpuTicks": 26
+          }
+        ],
+        "threadsWithPositiveCpuDelta": 1,
+        "totalDeltaCpuTicks": 26,
+        "runningAtEnd": 1
+      },
+      {
+        "pid": 124192,
+        "executable": "/home/imak/work/procon37/.server/distributed/bin/pool-solver-06",
+        "name": "pool-solver-06",
+        "threads": 1,
+        "cpus": "0",
+        "startTicks": "6307006",
+        "observedPlannerEnvironment": {},
+        "executableSha256": "055374eca5a4f89b4f6e01e77fb489bf9e0683720ad53b4895adf0704fb62a86",
+        "threadActivity": [
+          {
+            "tid": 124192,
+            "name": "pool-solver-06",
+            "state": "R",
+            "cpu": 0,
+            "cpus": "0",
+            "cpuTicks": 3117,
+            "deltaCpuTicks": 26
+          }
+        ],
+        "threadsWithPositiveCpuDelta": 1,
+        "totalDeltaCpuTicks": 26,
+        "runningAtEnd": 1
+      }
+    ]
+  },
+  "nodes": {
+    "v1": {
+      "host": "VOIDLINUX-1",
+      "capturedAtUtc": "2026-10-09T02:31:42.680524+00:00",
+      "sampleSeconds": 0.2557150979992002,
+      "clockTicksPerSecond": 100,
+      "processes": [
+        {
+          "pid": 32003,
+          "executable": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+          "name": "server-bridge",
+          "threads": 36,
+          "cpus": "0-31",
+          "startTicks": "8496138",
+          "observedPlannerEnvironment": {},
+          "executableSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+          "threadActivity": [
+            {
+              "tid": 32003,
+              "name": "server-bridge",
+              "state": "S",
+              "cpu": 11,
+              "cpus": "0-31",
+              "cpuTicks": 4,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32004,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 2,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32005,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 24,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32006,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 5,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32007,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 8,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32008,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 4,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32009,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 4,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32010,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 8,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32011,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 25,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32012,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 2,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32013,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 4,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32014,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 10,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32015,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 1,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32016,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 9,
+              "cpus": "0-31",
+              "cpuTicks": 2,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32017,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 15,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32018,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 1,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32019,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 4,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32020,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 29,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32021,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 3,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32022,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 1,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32023,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 11,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32024,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 1,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32025,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 3,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32026,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 15,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32027,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 1,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32028,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 3,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32029,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 25,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32030,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 3,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32031,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 1,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32032,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 9,
+              "cpus": "0-31",
+              "cpuTicks": 1,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32033,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 3,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32034,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 13,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32035,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 28,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32081,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 9,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32082,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 9,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32083,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 9,
+              "cpus": "0-31",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            }
+          ],
+          "threadsWithPositiveCpuDelta": 0,
+          "totalDeltaCpuTicks": 0,
+          "runningAtEnd": 0
+        },
+        {
+          "pid": 32046,
+          "executable": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/distributed-solver",
+          "name": "distributed-sol",
+          "threads": 32,
+          "cpus": "0-31",
+          "startTicks": "8497448",
+          "--mode": "coordinator",
+          "--threads": "32",
+          "--peers": "192.168.0.22:39370/16/31,192.168.0.33:39370/32/46",
+          "observedPlannerEnvironment": {
+            "PROCON37_G007_FUTURE_WEIGHT": "0",
+            "PROCON37_G007_RESERVE_WEIGHT": "15"
+          },
+          "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+          "threadActivity": [
+            {
+              "tid": 32046,
+              "name": "distributed-sol",
+              "state": "S",
+              "cpu": 15,
+              "cpus": "0-31",
+              "cpuTicks": 4,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 32047,
+              "name": "dist-search-0",
+              "state": "R",
+              "cpu": 31,
+              "cpus": "0-31",
+              "cpuTicks": 3107,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32048,
+              "name": "dist-search-1",
+              "state": "R",
+              "cpu": 23,
+              "cpus": "0-31",
+              "cpuTicks": 3114,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32049,
+              "name": "dist-search-2",
+              "state": "R",
+              "cpu": 11,
+              "cpus": "0-31",
+              "cpuTicks": 3110,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32050,
+              "name": "dist-search-3",
+              "state": "R",
+              "cpu": 12,
+              "cpus": "0-31",
+              "cpuTicks": 3105,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32051,
+              "name": "dist-search-4",
+              "state": "R",
+              "cpu": 30,
+              "cpus": "0-31",
+              "cpuTicks": 3113,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32052,
+              "name": "dist-search-5",
+              "state": "R",
+              "cpu": 3,
+              "cpus": "0-31",
+              "cpuTicks": 3107,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32053,
+              "name": "dist-search-6",
+              "state": "R",
+              "cpu": 10,
+              "cpus": "0-31",
+              "cpuTicks": 3105,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32054,
+              "name": "dist-search-7",
+              "state": "R",
+              "cpu": 13,
+              "cpus": "0-31",
+              "cpuTicks": 3108,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32055,
+              "name": "dist-search-8",
+              "state": "R",
+              "cpu": 7,
+              "cpus": "0-31",
+              "cpuTicks": 3111,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32056,
+              "name": "dist-search-9",
+              "state": "R",
+              "cpu": 4,
+              "cpus": "0-31",
+              "cpuTicks": 3113,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32057,
+              "name": "dist-search-10",
+              "state": "R",
+              "cpu": 25,
+              "cpus": "0-31",
+              "cpuTicks": 3112,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32058,
+              "name": "dist-search-11",
+              "state": "R",
+              "cpu": 24,
+              "cpus": "0-31",
+              "cpuTicks": 3108,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32059,
+              "name": "dist-search-12",
+              "state": "R",
+              "cpu": 19,
+              "cpus": "0-31",
+              "cpuTicks": 3111,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32060,
+              "name": "dist-search-13",
+              "state": "R",
+              "cpu": 17,
+              "cpus": "0-31",
+              "cpuTicks": 3115,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32061,
+              "name": "dist-search-14",
+              "state": "R",
+              "cpu": 18,
+              "cpus": "0-31",
+              "cpuTicks": 3111,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32062,
+              "name": "dist-search-15",
+              "state": "R",
+              "cpu": 27,
+              "cpus": "0-31",
+              "cpuTicks": 3112,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32063,
+              "name": "dist-search-16",
+              "state": "R",
+              "cpu": 15,
+              "cpus": "0-31",
+              "cpuTicks": 3109,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32064,
+              "name": "dist-search-17",
+              "state": "R",
+              "cpu": 16,
+              "cpus": "0-31",
+              "cpuTicks": 3105,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32065,
+              "name": "dist-search-18",
+              "state": "R",
+              "cpu": 29,
+              "cpus": "0-31",
+              "cpuTicks": 3110,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32066,
+              "name": "dist-search-19",
+              "state": "R",
+              "cpu": 2,
+              "cpus": "0-31",
+              "cpuTicks": 3112,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32067,
+              "name": "dist-search-20",
+              "state": "R",
+              "cpu": 5,
+              "cpus": "0-31",
+              "cpuTicks": 3114,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32068,
+              "name": "dist-search-21",
+              "state": "R",
+              "cpu": 26,
+              "cpus": "0-31",
+              "cpuTicks": 3110,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32069,
+              "name": "dist-search-22",
+              "state": "R",
+              "cpu": 22,
+              "cpus": "0-31",
+              "cpuTicks": 3104,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32070,
+              "name": "dist-search-23",
+              "state": "R",
+              "cpu": 14,
+              "cpus": "0-31",
+              "cpuTicks": 3106,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32071,
+              "name": "dist-search-24",
+              "state": "R",
+              "cpu": 1,
+              "cpus": "0-31",
+              "cpuTicks": 3103,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 32072,
+              "name": "dist-search-25",
+              "state": "R",
+              "cpu": 8,
+              "cpus": "0-31",
+              "cpuTicks": 3085,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32073,
+              "name": "dist-search-26",
+              "state": "R",
+              "cpu": 28,
+              "cpus": "0-31",
+              "cpuTicks": 3107,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32074,
+              "name": "dist-search-27",
+              "state": "R",
+              "cpu": 20,
+              "cpus": "0-31",
+              "cpuTicks": 3104,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32075,
+              "name": "dist-search-28",
+              "state": "R",
+              "cpu": 0,
+              "cpus": "0-31",
+              "cpuTicks": 3103,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32076,
+              "name": "dist-search-29",
+              "state": "R",
+              "cpu": 21,
+              "cpus": "0-31",
+              "cpuTicks": 3114,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 32077,
+              "name": "dist-search-30",
+              "state": "R",
+              "cpu": 6,
+              "cpus": "0-31",
+              "cpuTicks": 3102,
+              "deltaCpuTicks": 25
+            }
+          ],
+          "threadsWithPositiveCpuDelta": 31,
+          "totalDeltaCpuTicks": 788,
+          "runningAtEnd": 31
+        }
+      ],
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": -0.12552738189697266,
+            "roundTripMs": 0.6062984466552734
+          },
+          {
+            "serverMinusClientMs": 0.03337860107421875,
+            "roundTripMs": 0.1926422119140625
+          },
+          {
+            "serverMinusClientMs": 0.02574920654296875,
+            "roundTripMs": 0.17786026000976562
+          },
+          {
+            "serverMinusClientMs": 0.01919269561767578,
+            "roundTripMs": 0.16188621520996094
+          },
+          {
+            "serverMinusClientMs": 0.03266334533691406,
+            "roundTripMs": 0.19121170043945312
+          },
+          {
+            "serverMinusClientMs": 0.05829334259033203,
+            "roundTripMs": 0.22721290588378906
+          },
+          {
+            "serverMinusClientMs": 0.06783008575439453,
+            "roundTripMs": 0.2548694610595703
+          },
+          {
+            "serverMinusClientMs": 0.05435943603515625,
+            "roundTripMs": 0.22554397583007812
+          },
+          {
+            "serverMinusClientMs": 0.03063678741455078,
+            "roundTripMs": 0.18858909606933594
+          },
+          {
+            "serverMinusClientMs": 0.026106834411621094,
+            "roundTripMs": 0.1742839813232422
+          },
+          {
+            "serverMinusClientMs": 0.03063678741455078,
+            "roundTripMs": 0.18715858459472656
+          },
+          {
+            "serverMinusClientMs": 0.027060508728027344,
+            "roundTripMs": 0.17762184143066406
+          },
+          {
+            "serverMinusClientMs": 0.020623207092285156,
+            "roundTripMs": 0.1685619354248047
+          },
+          {
+            "serverMinusClientMs": 0.02396106719970703,
+            "roundTripMs": 0.17142295837402344
+          },
+          {
+            "serverMinusClientMs": 0.030875205993652344,
+            "roundTripMs": 0.2067089080810547
+          },
+          {
+            "serverMinusClientMs": 0.02849102020263672,
+            "roundTripMs": 0.19860267639160156
+          }
+        ],
+        "medianBestHalfOffsetMs": 0.025928020477294922,
+        "minimumRoundTripMs": 0.16188621520996094,
+        "capturedUnix": 1791513103.496106
+      },
+      "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 02:31:41 2026\nSystem time     : 0.000009522 seconds slow of NTP time\nLast offset     : -0.000013828 seconds\nRMS offset      : 0.000031174 seconds\nFrequency       : 5.678 ppm fast\nResidual freq   : -0.103 ppm\nSkew            : 1.174 ppm\nRoot delay      : 0.000159306 seconds\nRoot dispersion : 0.001015691 seconds\nUpdate interval : 8.1 seconds\nLeap status     : Normal\n",
+      "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   3   377     1   -414ns[  -14us] +/- 1088us\n",
+      "cpus": [
+        {
+          "cpu": 0,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 1,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 2,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 3,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 4,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 5,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 6,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 7,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 8,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 9,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 10,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 11,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 12,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 13,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 14,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 15,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 16,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 17,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 18,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 19,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 20,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 21,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 22,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 23,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 24,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 25,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 26,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 27,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 28,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 29,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 30,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 31,
+          "governor": "performance",
+          "epp": "performance"
+        }
+      ],
+      "launcherIdentity": {
+        "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+        "sha256": "a7c37a7546fee4a62d2c0d5a9f82838e10793e2c3f9a08cd686d9c19c93c5b1a",
+        "text": "#!/bin/sh\nexec env -i PATH=/usr/bin:/bin PROCON37_G007_FUTURE_WEIGHT=0 PROCON37_G007_RESERVE_WEIGHT=15 PROCON37_DISTRIBUTED_TOKEN_FILE=/home/voidlinux-1/procon37-distributed-resume/20261009-D0/cluster.token taskset -c 0-31 /home/voidlinux-1/procon37-distributed-resume/20261009-D0/distributed-solver --mode coordinator --threads 32 --seed 0 --peers 192.168.0.22:39370/16/31,192.168.0.33:39370/32/46 \"$@\"\n"
+      },
+      "startupModeLines": [
+        "dist mode=coordinator total_threads=32 cluster_threads=80 search_threads=77 session=1791513062141764959"
+      ],
+      "logBoundary": {
+        "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team.log",
+        "previousRangeStartByte": 45665,
+        "previousRangeEndByte": 52150,
+        "previousRangeSha256": "4eacd56a7b933eb330280a8f17d84ed24a75a1ca95c23bd5c8145c164e4ec0b3",
+        "previousRangeSha256Verified": true,
+        "capturedStartByte": 52150,
+        "capturedEndByte": 52630,
+        "sourceSizeAtOpen": 52630,
+        "inode": 267665,
+        "device": 2050,
+        "mtimeNsAtOpen": 1791513095735804762,
+        "sha256OfCapturedByteRange": "3fda88a84d6a0bfb624798a9748b9df28cc5f3e4b79b98e5c745d5d998d081de",
+        "completeDiagnosticLines": [],
+        "scope": "Evaluation beginning prefix only, may include launcher startup after previous evaluation; final completion collector must use previousRangeEndByte as full evaluation start."
+      }
+    },
+    "v2": {
+      "host": "VOIDLINUX-2",
+      "capturedAtUtc": "2026-10-09T02:31:42.679166+00:00",
+      "sampleSeconds": 0.25188314499973785,
+      "clockTicksPerSecond": 100,
+      "processes": [
+        {
+          "pid": 10079,
+          "executable": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver",
+          "name": "distributed-sol",
+          "threads": 16,
+          "cpus": "0-15",
+          "startTicks": "9129081",
+          "--mode": "worker",
+          "--threads": "16",
+          "--worker-offset": "31",
+          "--listen": "192.168.0.22:39370",
+          "observedPlannerEnvironment": {
+            "PROCON37_G007_FUTURE_WEIGHT": "0",
+            "PROCON37_G007_RESERVE_WEIGHT": "15"
+          },
+          "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+          "threadActivity": [
+            {
+              "tid": 10079,
+              "name": "distributed-sol",
+              "state": "S",
+              "cpu": 12,
+              "cpus": "0-15",
+              "cpuTicks": 37,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 10080,
+              "name": "dist-search-31",
+              "state": "R",
+              "cpu": 7,
+              "cpus": "0-15",
+              "cpuTicks": 3047,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 10081,
+              "name": "dist-search-32",
+              "state": "R",
+              "cpu": 10,
+              "cpus": "0-15",
+              "cpuTicks": 3052,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 10082,
+              "name": "dist-search-33",
+              "state": "R",
+              "cpu": 2,
+              "cpus": "0-15",
+              "cpuTicks": 3050,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 10083,
+              "name": "dist-search-34",
+              "state": "R",
+              "cpu": 5,
+              "cpus": "0-15",
+              "cpuTicks": 3049,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 10084,
+              "name": "dist-search-35",
+              "state": "R",
+              "cpu": 11,
+              "cpus": "0-15",
+              "cpuTicks": 3047,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 10085,
+              "name": "dist-search-36",
+              "state": "R",
+              "cpu": 14,
+              "cpus": "0-15",
+              "cpuTicks": 3025,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 10086,
+              "name": "dist-search-37",
+              "state": "R",
+              "cpu": 0,
+              "cpus": "0-15",
+              "cpuTicks": 3021,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 10087,
+              "name": "dist-search-38",
+              "state": "R",
+              "cpu": 9,
+              "cpus": "0-15",
+              "cpuTicks": 3053,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 10088,
+              "name": "dist-search-39",
+              "state": "R",
+              "cpu": 8,
+              "cpus": "0-15",
+              "cpuTicks": 3048,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 10089,
+              "name": "dist-search-40",
+              "state": "R",
+              "cpu": 15,
+              "cpus": "0-15",
+              "cpuTicks": 3049,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 10090,
+              "name": "dist-search-41",
+              "state": "R",
+              "cpu": 1,
+              "cpus": "0-15",
+              "cpuTicks": 3052,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 10091,
+              "name": "dist-search-42",
+              "state": "R",
+              "cpu": 12,
+              "cpus": "0-15",
+              "cpuTicks": 3050,
+              "deltaCpuTicks": 24
+            },
+            {
+              "tid": 10092,
+              "name": "dist-search-43",
+              "state": "R",
+              "cpu": 13,
+              "cpus": "0-15",
+              "cpuTicks": 3047,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 10093,
+              "name": "dist-search-44",
+              "state": "R",
+              "cpu": 3,
+              "cpus": "0-15",
+              "cpuTicks": 3047,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 10094,
+              "name": "dist-search-45",
+              "state": "R",
+              "cpu": 4,
+              "cpus": "0-15",
+              "cpuTicks": 3046,
+              "deltaCpuTicks": 25
+            }
+          ],
+          "threadsWithPositiveCpuDelta": 15,
+          "totalDeltaCpuTicks": 377,
+          "runningAtEnd": 15
+        }
+      ],
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": -0.012040138244628906,
+            "roundTripMs": 0.24247169494628906
+          },
+          {
+            "serverMinusClientMs": 0.017881393432617188,
+            "roundTripMs": 0.2512931823730469
+          },
+          {
+            "serverMinusClientMs": 0.012278556823730469,
+            "roundTripMs": 0.2529621124267578
+          },
+          {
+            "serverMinusClientMs": 0.02110004425048828,
+            "roundTripMs": 0.27108192443847656
+          },
+          {
+            "serverMinusClientMs": 0.008940696716308594,
+            "roundTripMs": 0.2453327178955078
+          },
+          {
+            "serverMinusClientMs": 0.0095367431640625,
+            "roundTripMs": 0.24318695068359375
+          },
+          {
+            "serverMinusClientMs": 0.02110004425048828,
+            "roundTripMs": 0.25582313537597656
+          },
+          {
+            "serverMinusClientMs": 0.015616416931152344,
+            "roundTripMs": 0.24819374084472656
+          },
+          {
+            "serverMinusClientMs": 0.02086162567138672,
+            "roundTripMs": 0.22530555725097656
+          },
+          {
+            "serverMinusClientMs": 0.0010728836059570312,
+            "roundTripMs": 0.1933574676513672
+          },
+          {
+            "serverMinusClientMs": 0.022172927856445312,
+            "roundTripMs": 0.22268295288085938
+          },
+          {
+            "serverMinusClientMs": 0.01728534698486328,
+            "roundTripMs": 0.20956993103027344
+          },
+          {
+            "serverMinusClientMs": 0.007987022399902344,
+            "roundTripMs": 0.20194053649902344
+          },
+          {
+            "serverMinusClientMs": 0.007271766662597656,
+            "roundTripMs": 0.1995563507080078
+          },
+          {
+            "serverMinusClientMs": 0.03361701965332031,
+            "roundTripMs": 0.24843215942382812
+          },
+          {
+            "serverMinusClientMs": 0.0247955322265625,
+            "roundTripMs": 0.24271011352539062
+          }
+        ],
+        "medianBestHalfOffsetMs": 0.012636184692382812,
+        "minimumRoundTripMs": 0.1933574676513672,
+        "capturedUnix": 1791513103.4961529
+      },
+      "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 02:31:30 2026\nSystem time     : 0.000000083 seconds slow of NTP time\nLast offset     : +0.000082005 seconds\nRMS offset      : 0.000032207 seconds\nFrequency       : 5.266 ppm fast\nResidual freq   : +0.204 ppm\nSkew            : 1.712 ppm\nRoot delay      : 0.000171092 seconds\nRoot dispersion : 0.001056229 seconds\nUpdate interval : 32.3 seconds\nLeap status     : Normal\n",
+      "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^? 129.250.35.251                2   6     0   18h    -59ms[  +11ms] +/-   64ms\n^? 109.61.109.140                2  10     0   18h    -12ms[  +55ms] +/-  153ms\n^? 133.18.147.168                2  10     0   18h   -129ms[  -61ms] +/-   83ms\n^? 162.159.200.123               3   8     0   18h    -55ms[  +13ms] +/-   73ms\n^* 192.168.0.81                 10   4   377    12  +6238ns[  +88us] +/- 1094us\n",
+      "cpus": [
+        {
+          "cpu": 0,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 1,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 2,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 3,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 4,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 5,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 6,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 7,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 8,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 9,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 10,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 11,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 12,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 13,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 14,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 15,
+          "governor": "performance",
+          "epp": "performance"
+        }
+      ],
+      "launcherIdentity": {
+        "path": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/launcher",
+        "sha256": "cf8cd970a097cc64548e4471e6d68806ec41ab3aa8fdb3544647b27e893474ce",
+        "text": "#!/bin/sh\nexec env -i PATH=/usr/bin:/bin PROCON37_G007_FUTURE_WEIGHT=0 PROCON37_G007_RESERVE_WEIGHT=15 PROCON37_DISTRIBUTED_TOKEN_FILE=/home/voidlinux-2/procon37-distributed-resume/20261009-D0/cluster.token taskset -c 0-15 /home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver --mode worker --threads 16 --worker-offset 31 --listen 192.168.0.22:39370 \"$@\"\n"
+      },
+      "startupModeLines": [],
+      "logBoundary": {
+        "path": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/resume-team.log",
+        "previousRangeStartByte": 8959559,
+        "previousRangeEndByte": 10240913,
+        "previousRangeSha256": "e08c8b130e547bbbc937722c27d441922c2d2416f4c792476b763a6107b57729",
+        "previousRangeSha256Verified": true,
+        "capturedStartByte": 10240913,
+        "capturedEndByte": 10306623,
+        "sourceSizeAtOpen": 10306623,
+        "inode": 1600756,
+        "device": 2050,
+        "mtimeNsAtOpen": 1791513102618699748,
+        "sha256OfCapturedByteRange": "fb6360a937b991bb23de27278612e49c3fe2047c194c2a0eb5c96858b40deda8",
+        "completeDiagnosticLines": [
+          "dist mode=worker listen=192.168.0.22:39370 total_threads=16 search_threads=15 offset=31 pid=10079",
+          "dist accepted_peer=192.168.0.11:58080",
+          "dist worker request=1 job=1 phase=select input_digest=9b0f11c8123097b3 started=15 budget_ms=8813",
+          "dist worker request=1 completed=15/15 selected_worker=34 elapsed_ms=8368 rx_bytes=1540 tx_bytes=58",
+          "dist worker request=2 job=2 phase=plan input_digest=ad1d2da8b11d88ee started=15 budget_ms=8772",
+          "dist worker request=2 completed=15/15 selected_worker=36 elapsed_ms=8472 rx_bytes=9743 tx_bytes=4643",
+          "dist worker request=3 job=3 phase=plan input_digest=aa3a7c18dc052501 started=15 budget_ms=8739",
+          "dist worker request=3 completed=15/15 selected_worker=43 elapsed_ms=8444 rx_bytes=23297 tx_bytes=14801",
+          "dist worker request=4 job=4 phase=plan input_digest=609ec1c43348a331 started=15 budget_ms=8733"
+        ],
+        "scope": "Evaluation beginning prefix only, may include launcher startup after previous evaluation; final completion collector must use previousRangeEndByte as full evaluation start."
+      }
+    },
+    "v3": {
+      "host": "VOIDLINUX-3",
+      "capturedAtUtc": "2026-10-09T02:31:42.668250+00:00",
+      "sampleSeconds": 0.25273306199960643,
+      "clockTicksPerSecond": 100,
+      "processes": [
+        {
+          "pid": 1943,
+          "executable": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+          "name": "distributed-sol",
+          "threads": 32,
+          "cpus": "0-31",
+          "startTicks": "1040916",
+          "--mode": "worker",
+          "--threads": "32",
+          "--worker-offset": "46",
+          "--listen": "192.168.0.33:39370",
+          "observedPlannerEnvironment": {
+            "PROCON37_G007_FUTURE_WEIGHT": "0",
+            "PROCON37_G007_RESERVE_WEIGHT": "15"
+          },
+          "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+          "threadActivity": [
+            {
+              "tid": 1943,
+              "name": "distributed-sol",
+              "state": "S",
+              "cpu": 1,
+              "cpus": "0-31",
+              "cpuTicks": 12,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 1944,
+              "name": "dist-search-46",
+              "state": "R",
+              "cpu": 3,
+              "cpus": "0-31",
+              "cpuTicks": 3070,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1945,
+              "name": "dist-search-47",
+              "state": "R",
+              "cpu": 29,
+              "cpus": "0-31",
+              "cpuTicks": 3071,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1946,
+              "name": "dist-search-48",
+              "state": "R",
+              "cpu": 18,
+              "cpus": "0-31",
+              "cpuTicks": 3069,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1947,
+              "name": "dist-search-49",
+              "state": "R",
+              "cpu": 20,
+              "cpus": "0-31",
+              "cpuTicks": 3071,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1948,
+              "name": "dist-search-50",
+              "state": "R",
+              "cpu": 26,
+              "cpus": "0-31",
+              "cpuTicks": 3072,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1949,
+              "name": "dist-search-51",
+              "state": "R",
+              "cpu": 19,
+              "cpus": "0-31",
+              "cpuTicks": 3069,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 1950,
+              "name": "dist-search-52",
+              "state": "R",
+              "cpu": 14,
+              "cpus": "0-31",
+              "cpuTicks": 3068,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 1951,
+              "name": "dist-search-53",
+              "state": "R",
+              "cpu": 25,
+              "cpus": "0-31",
+              "cpuTicks": 3071,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1952,
+              "name": "dist-search-54",
+              "state": "R",
+              "cpu": 2,
+              "cpus": "0-31",
+              "cpuTicks": 3056,
+              "deltaCpuTicks": 23
+            },
+            {
+              "tid": 1953,
+              "name": "dist-search-55",
+              "state": "R",
+              "cpu": 1,
+              "cpus": "0-31",
+              "cpuTicks": 3070,
+              "deltaCpuTicks": 23
+            },
+            {
+              "tid": 1954,
+              "name": "dist-search-56",
+              "state": "R",
+              "cpu": 27,
+              "cpus": "0-31",
+              "cpuTicks": 3064,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1955,
+              "name": "dist-search-57",
+              "state": "R",
+              "cpu": 15,
+              "cpus": "0-31",
+              "cpuTicks": 3067,
+              "deltaCpuTicks": 24
+            },
+            {
+              "tid": 1956,
+              "name": "dist-search-58",
+              "state": "R",
+              "cpu": 7,
+              "cpus": "0-31",
+              "cpuTicks": 3067,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1957,
+              "name": "dist-search-59",
+              "state": "R",
+              "cpu": 12,
+              "cpus": "0-31",
+              "cpuTicks": 3073,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1958,
+              "name": "dist-search-60",
+              "state": "R",
+              "cpu": 21,
+              "cpus": "0-31",
+              "cpuTicks": 3070,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1959,
+              "name": "dist-search-61",
+              "state": "R",
+              "cpu": 16,
+              "cpus": "0-31",
+              "cpuTicks": 3066,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1960,
+              "name": "dist-search-62",
+              "state": "R",
+              "cpu": 0,
+              "cpus": "0-31",
+              "cpuTicks": 3065,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 1961,
+              "name": "dist-search-63",
+              "state": "R",
+              "cpu": 13,
+              "cpus": "0-31",
+              "cpuTicks": 3071,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1962,
+              "name": "dist-search-64",
+              "state": "R",
+              "cpu": 23,
+              "cpus": "0-31",
+              "cpuTicks": 3064,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1963,
+              "name": "dist-search-65",
+              "state": "R",
+              "cpu": 4,
+              "cpus": "0-31",
+              "cpuTicks": 3071,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1964,
+              "name": "dist-search-66",
+              "state": "R",
+              "cpu": 24,
+              "cpus": "0-31",
+              "cpuTicks": 3072,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1965,
+              "name": "dist-search-67",
+              "state": "R",
+              "cpu": 5,
+              "cpus": "0-31",
+              "cpuTicks": 3071,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 1966,
+              "name": "dist-search-68",
+              "state": "R",
+              "cpu": 11,
+              "cpus": "0-31",
+              "cpuTicks": 3069,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1967,
+              "name": "dist-search-69",
+              "state": "R",
+              "cpu": 17,
+              "cpus": "0-31",
+              "cpuTicks": 3069,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1968,
+              "name": "dist-search-70",
+              "state": "R",
+              "cpu": 22,
+              "cpus": "0-31",
+              "cpuTicks": 3062,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1969,
+              "name": "dist-search-71",
+              "state": "R",
+              "cpu": 28,
+              "cpus": "0-31",
+              "cpuTicks": 3065,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1970,
+              "name": "dist-search-72",
+              "state": "R",
+              "cpu": 9,
+              "cpus": "0-31",
+              "cpuTicks": 3072,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1971,
+              "name": "dist-search-73",
+              "state": "R",
+              "cpu": 30,
+              "cpus": "0-31",
+              "cpuTicks": 3071,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1972,
+              "name": "dist-search-74",
+              "state": "R",
+              "cpu": 6,
+              "cpus": "0-31",
+              "cpuTicks": 3067,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1973,
+              "name": "dist-search-75",
+              "state": "R",
+              "cpu": 10,
+              "cpus": "0-31",
+              "cpuTicks": 3064,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 1974,
+              "name": "dist-search-76",
+              "state": "R",
+              "cpu": 31,
+              "cpus": "0-31",
+              "cpuTicks": 3072,
+              "deltaCpuTicks": 25
+            }
+          ],
+          "threadsWithPositiveCpuDelta": 31,
+          "totalDeltaCpuTicks": 774,
+          "runningAtEnd": 31
+        }
+      ],
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": -0.001430511474609375,
+            "roundTripMs": 0.24747848510742188
+          },
+          {
+            "serverMinusClientMs": 0.044465065002441406,
+            "roundTripMs": 0.2181529998779297
+          },
+          {
+            "serverMinusClientMs": 0.030755996704101562,
+            "roundTripMs": 0.1850128173828125
+          },
+          {
+            "serverMinusClientMs": 0.03540515899658203,
+            "roundTripMs": 0.1914501190185547
+          },
+          {
+            "serverMinusClientMs": 0.018715858459472656,
+            "roundTripMs": 0.16570091247558594
+          },
+          {
+            "serverMinusClientMs": 0.02574920654296875,
+            "roundTripMs": 0.16164779663085938
+          },
+          {
+            "serverMinusClientMs": 0.030994415283203125,
+            "roundTripMs": 0.18596649169921875
+          },
+          {
+            "serverMinusClientMs": 0.02491474151611328,
+            "roundTripMs": 0.17905235290527344
+          },
+          {
+            "serverMinusClientMs": 0.03039836883544922,
+            "roundTripMs": 0.17952919006347656
+          },
+          {
+            "serverMinusClientMs": 0.03337860107421875,
+            "roundTripMs": 0.18644332885742188
+          },
+          {
+            "serverMinusClientMs": 0.029921531677246094,
+            "roundTripMs": 0.18143653869628906
+          },
+          {
+            "serverMinusClientMs": 0.033855438232421875,
+            "roundTripMs": 0.19359588623046875
+          },
+          {
+            "serverMinusClientMs": 0.028371810913085938,
+            "roundTripMs": 0.186920166015625
+          },
+          {
+            "serverMinusClientMs": 0.034332275390625,
+            "roundTripMs": 0.19121170043945312
+          },
+          {
+            "serverMinusClientMs": 0.031113624572753906,
+            "roundTripMs": 0.18715858459472656
+          },
+          {
+            "serverMinusClientMs": 0.033736228942871094,
+            "roundTripMs": 0.19478797912597656
+          }
+        ],
+        "medianBestHalfOffsetMs": 0.030159950256347656,
+        "minimumRoundTripMs": 0.16164779663085938,
+        "capturedUnix": 1791513103.4854972
+      },
+      "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 02:31:39 2026\nSystem time     : 0.000012937 seconds slow of NTP time\nLast offset     : -0.000010368 seconds\nRMS offset      : 0.000039380 seconds\nFrequency       : 4.542 ppm slow\nResidual freq   : -0.020 ppm\nSkew            : 1.912 ppm\nRoot delay      : 0.000139162 seconds\nRoot dispersion : 0.001029528 seconds\nUpdate interval : 16.2 seconds\nLeap status     : Normal\n",
+      "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   4   377     3  -7564ns[  -18us] +/- 1078us\n",
+      "cpus": [
+        {
+          "cpu": 0,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 1,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 2,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 3,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 4,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 5,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 6,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 7,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 8,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 9,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 10,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 11,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 12,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 13,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 14,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 15,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 16,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 17,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 18,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 19,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 20,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 21,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 22,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 23,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 24,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 25,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 26,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 27,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 28,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 29,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 30,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 31,
+          "governor": "performance",
+          "epp": "performance"
+        }
+      ],
+      "launcherIdentity": {
+        "path": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/launcher",
+        "sha256": "e41fd115af140cd5260f36b0a8f88749f3c1ae7edf67c176a8a4ceef1cec21af",
+        "text": "#!/bin/sh\nexec env -i PATH=/usr/bin:/bin PROCON37_G007_FUTURE_WEIGHT=0 PROCON37_G007_RESERVE_WEIGHT=15 PROCON37_DISTRIBUTED_TOKEN_FILE=/home/voidlinux-3/procon37-distributed-resume/20261009-D0/cluster.token taskset -c 0-31 /home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver --mode worker --threads 32 --worker-offset 46 --listen 192.168.0.33:39370 \"$@\"\n"
+      },
+      "startupModeLines": [],
+      "logBoundary": {
+        "path": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/resume-team.log",
+        "previousRangeStartByte": 18336185,
+        "previousRangeEndByte": 20957570,
+        "previousRangeSha256": "674764224afe018eb171a1468657a0681dd50f3ca2e17b9e91730c63c7eeeaef",
+        "previousRangeSha256Verified": true,
+        "capturedStartByte": 20957570,
+        "capturedEndByte": 21092358,
+        "sourceSizeAtOpen": 21092358,
+        "inode": 42339654,
+        "device": 66306,
+        "mtimeNsAtOpen": 1791513102683300673,
+        "sha256OfCapturedByteRange": "8ea38b094687891a508ce3dcbbc69ce18d1941d195652d32bd1d6dd2e77ed3c7",
+        "completeDiagnosticLines": [
+          "dist mode=worker listen=192.168.0.33:39370 total_threads=32 search_threads=31 offset=46 pid=1943",
+          "dist accepted_peer=192.168.0.11:58266",
+          "dist worker request=1 job=1 phase=select input_digest=9b0f11c8123097b3 started=31 budget_ms=8813",
+          "dist worker request=1 completed=31/31 selected_worker=59 elapsed_ms=8389 rx_bytes=1540 tx_bytes=58",
+          "dist worker request=2 job=2 phase=plan input_digest=ad1d2da8b11d88ee started=31 budget_ms=8772",
+          "dist worker request=2 completed=31/31 selected_worker=51 elapsed_ms=8493 rx_bytes=9743 tx_bytes=4686",
+          "dist worker request=3 job=3 phase=plan input_digest=aa3a7c18dc052501 started=31 budget_ms=8739",
+          "dist worker request=3 completed=31/31 selected_worker=47 elapsed_ms=8460 rx_bytes=23297 tx_bytes=14833",
+          "dist worker request=4 job=4 phase=plan input_digest=609ec1c43348a331 started=31 budget_ms=8733"
+        ],
+        "scope": "Evaluation beginning prefix only, may include launcher startup after previous evaluation; final completion collector must use previousRangeEndByte as full evaluation start."
+      }
+    },
+    "nomlab": {
+      "host": "NOMLAB-UBUNTU",
+      "capturedAtUtc": "2026-10-09T02:31:42.765782+00:00",
+      "sampleSeconds": 0.2547077429771889,
+      "clockTicksPerSecond": 100,
+      "processes": [
+        {
+          "pid": 36790,
+          "executable": "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+          "name": "server-bridge",
+          "threads": 20,
+          "cpus": "0-15",
+          "startTicks": "14642711",
+          "observedPlannerEnvironment": {},
+          "executableSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+          "threadActivity": [
+            {
+              "tid": 36790,
+              "name": "server-bridge",
+              "state": "S",
+              "cpu": 8,
+              "cpus": "0-15",
+              "cpuTicks": 10,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36791,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 9,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36792,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 7,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36793,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 8,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36794,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 10,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36795,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 5,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36796,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 14,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36797,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 14,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36798,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 10,
+              "cpus": "0-15",
+              "cpuTicks": 7,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36799,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 3,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36800,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 2,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36801,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 1,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36802,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 10,
+              "cpus": "0-15",
+              "cpuTicks": 1,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36803,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 12,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36804,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 10,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36805,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 2,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36806,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 4,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36951,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 10,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36952,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 10,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36953,
+              "name": "tokio-rt-worker",
+              "state": "S",
+              "cpu": 10,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            }
+          ],
+          "threadsWithPositiveCpuDelta": 0,
+          "totalDeltaCpuTicks": 0,
+          "runningAtEnd": 0
+        },
+        {
+          "pid": 36934,
+          "executable": "/home/nomlab-ubuntu/procon37-distributed/bin/distributed-solver",
+          "name": "distributed-sol",
+          "threads": 16,
+          "cpus": "0-15",
+          "startTicks": "14648713",
+          "--mode": "parallel",
+          "--threads": "16",
+          "observedPlannerEnvironment": {
+            "PROCON37_G007_RESERVE_WEIGHT": "15",
+            "PROCON37_G007_FUTURE_WEIGHT": "0"
+          },
+          "executableSha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+          "threadActivity": [
+            {
+              "tid": 36934,
+              "name": "distributed-sol",
+              "state": "S",
+              "cpu": 11,
+              "cpus": "0-15",
+              "cpuTicks": 0,
+              "deltaCpuTicks": 0
+            },
+            {
+              "tid": 36935,
+              "name": "p0-search-0",
+              "state": "R",
+              "cpu": 3,
+              "cpus": "0-15",
+              "cpuTicks": 3244,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 36936,
+              "name": "p0-search-1",
+              "state": "R",
+              "cpu": 1,
+              "cpus": "0-15",
+              "cpuTicks": 3243,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 36937,
+              "name": "p0-search-2",
+              "state": "R",
+              "cpu": 12,
+              "cpus": "0-15",
+              "cpuTicks": 3243,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 36938,
+              "name": "p0-search-3",
+              "state": "R",
+              "cpu": 4,
+              "cpus": "0-15",
+              "cpuTicks": 3243,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 36939,
+              "name": "p0-search-4",
+              "state": "R",
+              "cpu": 14,
+              "cpus": "0-15",
+              "cpuTicks": 3237,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 36940,
+              "name": "p0-search-5",
+              "state": "R",
+              "cpu": 10,
+              "cpus": "0-15",
+              "cpuTicks": 3239,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 36941,
+              "name": "p0-search-6",
+              "state": "R",
+              "cpu": 7,
+              "cpus": "0-15",
+              "cpuTicks": 3241,
+              "deltaCpuTicks": 24
+            },
+            {
+              "tid": 36942,
+              "name": "p0-search-7",
+              "state": "R",
+              "cpu": 13,
+              "cpus": "0-15",
+              "cpuTicks": 3243,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 36943,
+              "name": "p0-search-8",
+              "state": "R",
+              "cpu": 11,
+              "cpus": "0-15",
+              "cpuTicks": 3244,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 36944,
+              "name": "p0-search-9",
+              "state": "R",
+              "cpu": 2,
+              "cpus": "0-15",
+              "cpuTicks": 3243,
+              "deltaCpuTicks": 26
+            },
+            {
+              "tid": 36945,
+              "name": "p0-search-10",
+              "state": "R",
+              "cpu": 5,
+              "cpus": "0-15",
+              "cpuTicks": 3242,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 36946,
+              "name": "p0-search-11",
+              "state": "R",
+              "cpu": 9,
+              "cpus": "0-15",
+              "cpuTicks": 3242,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 36947,
+              "name": "p0-search-12",
+              "state": "R",
+              "cpu": 15,
+              "cpus": "0-15",
+              "cpuTicks": 3244,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 36948,
+              "name": "p0-search-13",
+              "state": "R",
+              "cpu": 0,
+              "cpus": "0-15",
+              "cpuTicks": 3240,
+              "deltaCpuTicks": 25
+            },
+            {
+              "tid": 36949,
+              "name": "p0-search-14",
+              "state": "R",
+              "cpu": 6,
+              "cpus": "0-15",
+              "cpuTicks": 3243,
+              "deltaCpuTicks": 26
+            }
+          ],
+          "threadsWithPositiveCpuDelta": 15,
+          "totalDeltaCpuTicks": 381,
+          "runningAtEnd": 15
+        }
+      ],
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": 0.009179115295410156,
+            "roundTripMs": 1.4789104461669922
+          },
+          {
+            "serverMinusClientMs": 0.03361701965332031,
+            "roundTripMs": 1.6751289367675781
+          },
+          {
+            "serverMinusClientMs": 0.03886222839355469,
+            "roundTripMs": 1.6002655029296875
+          },
+          {
+            "serverMinusClientMs": 0.000476837158203125,
+            "roundTripMs": 1.5668869018554688
+          },
+          {
+            "serverMinusClientMs": 0.0032186508178710938,
+            "roundTripMs": 1.4812946319580078
+          },
+          {
+            "serverMinusClientMs": -0.00286102294921875,
+            "roundTripMs": 1.4095306396484375
+          },
+          {
+            "serverMinusClientMs": -0.007152557373046875,
+            "roundTripMs": 1.4009475708007812
+          },
+          {
+            "serverMinusClientMs": -0.0030994415283203125,
+            "roundTripMs": 1.4238357543945312
+          },
+          {
+            "serverMinusClientMs": -0.00035762786865234375,
+            "roundTripMs": 1.4164447784423828
+          },
+          {
+            "serverMinusClientMs": -0.0040531158447265625,
+            "roundTripMs": 1.4333724975585938
+          },
+          {
+            "serverMinusClientMs": -0.011444091796875,
+            "roundTripMs": 1.3933181762695312
+          },
+          {
+            "serverMinusClientMs": -0.0032186508178710938,
+            "roundTripMs": 1.4045238494873047
+          },
+          {
+            "serverMinusClientMs": -0.012636184692382812,
+            "roundTripMs": 1.3942718505859375
+          },
+          {
+            "serverMinusClientMs": -0.0034570693969726562,
+            "roundTripMs": 1.4030933380126953
+          },
+          {
+            "serverMinusClientMs": -0.005602836608886719,
+            "roundTripMs": 1.4116764068603516
+          },
+          {
+            "serverMinusClientMs": 0.00095367431640625,
+            "roundTripMs": 1.4324188232421875
+          }
+        ],
+        "medianBestHalfOffsetMs": -0.0045299530029296875,
+        "minimumRoundTripMs": 1.3933181762695312,
+        "capturedUnix": 1791513103.6013741
+      },
+      "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 02:31:37 2026\nSystem time     : 0.000000977 seconds fast of NTP time\nLast offset     : +0.000001721 seconds\nRMS offset      : 0.000015986 seconds\nFrequency       : 18.032 ppm slow\nResidual freq   : +0.000 ppm\nSkew            : 0.138 ppm\nRoot delay      : 0.001361630 seconds\nRoot dispersion : 0.001018228 seconds\nUpdate interval : 8.1 seconds\nLeap status     : Normal\n",
+      "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^? 185.125.190.122               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 185.125.190.123               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 91.189.91.112                 0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 91.189.91.113                 0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 185.125.190.121               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^* 192.168.0.81                 10   3   377     6  -1443ns[ +278ns] +/- 1690us\n",
+      "cpus": [
+        {
+          "cpu": 0,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 1,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 2,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 3,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 4,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 5,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 6,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 7,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 8,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 9,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 10,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 11,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 12,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 13,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 14,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 15,
+          "governor": "performance",
+          "epp": "performance"
+        }
+      ],
+      "launcherIdentity": {
+        "path": "/home/nomlab-ubuntu/procon37-distributed/launcher",
+        "sha256": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+        "text": "#!/bin/sh\nexport PROCON37_G007_FUTURE_WEIGHT=0\nexport PROCON37_G007_RESERVE_WEIGHT=15\nexec taskset -c 0-15 /home/nomlab-ubuntu/procon37-distributed/bin/distributed-solver --mode parallel --threads 16 --seed 0 \"$@\"\n"
+      },
+      "startupModeLines": [],
+      "logBoundary": {
+        "path": "/home/nomlab-ubuntu/procon37-distributed/resume-team.log",
+        "previousRangeStartByte": 44282,
+        "previousRangeEndByte": 50416,
+        "previousRangeSha256": "559e6b29b0816e0ab2af58b6cca33f555fc08cc368b97742daf05c8f7c31c91d",
+        "previousRangeSha256Verified": true,
+        "capturedStartByte": 50416,
+        "capturedEndByte": 50922,
+        "sourceSizeAtOpen": 50922,
+        "inode": 36181770,
+        "device": 66306,
+        "mtimeNsAtOpen": 1791513096153999522,
+        "sha256OfCapturedByteRange": "b9a3ebb7edb564083d68cbf3fca3a80bc8c43b22a6141fd516440a0aba18e5d2",
+        "completeDiagnosticLines": [],
+        "scope": "Evaluation beginning prefix only, may include launcher startup after previous evaluation; final completion collector must use previousRangeEndByte as full evaluation start."
+      }
+    }
+  },
+  "expectedBinarySha256": {
+    "v1": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+    "v2": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+    "v3": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+    "nomlab": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0"
+  },
+  "actualBinaryMatches": {
+    "v1": true,
+    "v2": true,
+    "v3": true,
+    "nomlab": true
+  },
+  "fixedLocalFiles": {
+    "target/release/server": "368ac7cb6334469a0a5735fcfded1d52875ffdfb1cb47ffbea7b03471e4638b0",
+    "tester/server/procon-server": "769e101cbc6b80cce7732dae1e10d911ed1e9efefd3b1f94b6381652aa7741c1",
+    ".server/distributed/bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+    ".server/distributed/bin/pool-solver-06": "055374eca5a4f89b4f6e01e77fb489bf9e0683720ad53b4895adf0704fb62a86",
+    ".server/distributed/bin/pool-solver-08": "a7588e406d40fb1aa76ed606ed2a910a0aee911468f040ef37453037f033c5a2",
+    ".server/distributed/launchers/generation6.sh": "34a9d5f3d7fa57b7977281d862f7559399b1338a59ec58324272f89b03d3d6f4",
+    ".server/distributed/launchers/generation8.sh": "0fbe822a7a8cce9cf8f893fd7c5c5b82a2a10d725ce7ab95d6f571ff6db049d7",
+    ".server/distributed/team2/resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+    ".server/distributed/team3/resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118"
+  },
+  "localExecutableMatches": {
+    "124048": {
+      "file": "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+      "expectedSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+      "actualSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e"
+    },
+    "124050": {
+      "file": "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+      "expectedSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+      "actualSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e"
+    },
+    "124172": {
+      "file": "/home/imak/work/procon37/target/release/server",
+      "expectedSha256": "368ac7cb6334469a0a5735fcfded1d52875ffdfb1cb47ffbea7b03471e4638b0",
+      "actualSha256": "368ac7cb6334469a0a5735fcfded1d52875ffdfb1cb47ffbea7b03471e4638b0"
+    },
+    "124178": {
+      "file": "/home/imak/work/procon37/tester/server/procon-server",
+      "expectedSha256": "769e101cbc6b80cce7732dae1e10d911ed1e9efefd3b1f94b6381652aa7741c1",
+      "actualSha256": "769e101cbc6b80cce7732dae1e10d911ed1e9efefd3b1f94b6381652aa7741c1"
+    },
+    "124188": {
+      "file": "/home/imak/work/procon37/.server/distributed/bin/pool-solver-08",
+      "expectedSha256": "a7588e406d40fb1aa76ed606ed2a910a0aee911468f040ef37453037f033c5a2",
+      "actualSha256": "a7588e406d40fb1aa76ed606ed2a910a0aee911468f040ef37453037f033c5a2"
+    },
+    "124192": {
+      "file": "/home/imak/work/procon37/.server/distributed/bin/pool-solver-06",
+      "expectedSha256": "055374eca5a4f89b4f6e01e77fb489bf9e0683720ad53b4895adf0704fb62a86",
+      "actualSha256": "055374eca5a4f89b4f6e01e77fb489bf9e0683720ad53b4895adf0704fb62a86"
+    }
+  },
+  "observationScope": "Read-only start observation. Parent owns evaluation start/stop/summarization. No environment or runtime configuration changed.",
+  "switchRecord": ".server/distributed/switches/20261009T113042-C011-terminal-reachability/switch.json",
+  "manifestSha256": "37fa5e91dad045c17356c39c356bc2bae0bc17bb3161222b574376efbe497a60",
+  "verifiedAtStart": {
+    "launcherMatches": {
+      "v1": true,
+      "v2": true,
+      "v3": true,
+      "nomlab": true
+    },
+    "localFilesMatch": {
+      "solver/distributed-lab/manage.py": true,
+      "solver/distributed-lab/lifecycle.py": true,
+      "solver/distributed-lab/team_runner.py": true,
+      "solver/distributed-lab/clock_sync.py": true,
+      "solver/distributed-lab/switch.py": true,
+      "solver/distributed-candidates/c011-terminal-reachability/Cargo.lock": true,
+      "solver/distributed-candidates/c011-terminal-reachability/Cargo.toml": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/Cargo.toml": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/match-916.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/match-937.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/match-941.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/pasted-16-01.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/pasted-16-02.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/pasted-16-03.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/pasted-16-04.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/pasted-24-01.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/pasted-24-02.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/pasted-24-03.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/pasted-24-04.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/pasted-32-01.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/pasted-32-02.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/pasted-32-03.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/pasted-32-04.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/fixtures/arena/sources.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/src/engine.rs": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/src/generator.rs": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/src/lib.rs": true,
+      "solver/distributed-candidates/c011-terminal-reachability/common/src/model.rs": true,
+      "solver/distributed-candidates/c011-terminal-reachability/main.rs": true,
+      "solver/distributed-candidates/c011-terminal-reachability/official/sample_maps/sample_16.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/official/sample_maps/sample_24.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/official/sample_maps/sample_32.json": true,
+      "solver/distributed-candidates/c011-terminal-reachability/pool.rs": true,
+      "solver/distributed-candidates/c011-terminal-reachability/runtime.rs": true,
+      "solver/distributed-candidates/c011-terminal-reachability/solver/planner.rs": true,
+      "solver/distributed-candidates/c011-terminal-reachability/terminal_reach.rs": true,
+      "solver/distributed-candidates/c011-terminal-reachability/tests/network.rs": true,
+      "solver/distributed-candidates/c011-terminal-reachability/wire.rs": true
+    },
+    "fixedLocalFilesMatch": {
+      "target/release/server": true,
+      "tester/server/procon-server": true,
+      ".server/distributed/bin/server-bridge": true,
+      ".server/distributed/bin/pool-solver-06": true,
+      ".server/distributed/bin/pool-solver-08": true,
+      ".server/distributed/launchers/generation6.sh": true,
+      ".server/distributed/launchers/generation8.sh": true,
+      ".server/distributed/team2/resume-team-runner.py": true,
+      ".server/distributed/team3/resume-team-runner.py": true
+    },
+    "allCpusPerformance": {
+      "v1": true,
+      "v2": true,
+      "v3": true,
+      "nomlab": true
+    }
+  },
+  "searchActivity": {
+    "v1": {
+      "observedSearchThreads": 31,
+      "activeSearchThreads": 31,
+      "scope": "One 250ms per-host window."
+    },
+    "v2": {
+      "observedSearchThreads": 15,
+      "activeSearchThreads": 15,
+      "scope": "One 250ms per-host window."
+    },
+    "v3": {
+      "observedSearchThreads": 31,
+      "activeSearchThreads": 31,
+      "scope": "One 250ms per-host window."
+    },
+    "nomlab": {
+      "observedSearchThreads": 15,
+      "activeSearchThreads": 15,
+      "scope": "One 250ms per-host window."
+    }
+  },
+  "C011Activation": {
+    "hosts": {
+      "v1": {
+        "executableMatchesC011": true,
+        "launcherEnvironmentCleared": true,
+        "noCrossEliteInLauncher": true,
+        "noCrossEliteInObservedArgs": true,
+        "terminalReachEnabledByDefaultAndNoZeroOverride": true,
+        "futureWeightZero": true,
+        "reserveWeight15": true
+      },
+      "v2": {
+        "executableMatchesC011": true,
+        "launcherEnvironmentCleared": true,
+        "noCrossEliteInLauncher": true,
+        "noCrossEliteInObservedArgs": true,
+        "terminalReachEnabledByDefaultAndNoZeroOverride": true,
+        "futureWeightZero": true,
+        "reserveWeight15": true
+      },
+      "v3": {
+        "executableMatchesC011": true,
+        "launcherEnvironmentCleared": true,
+        "noCrossEliteInLauncher": true,
+        "noCrossEliteInObservedArgs": true,
+        "terminalReachEnabledByDefaultAndNoZeroOverride": true,
+        "futureWeightZero": true,
+        "reserveWeight15": true
+      }
+    },
+    "evidence": "C011 executable SHA verified; observed process environment has no PROCON37_C011_TERMINAL_REACH=0. Frozen Solver::new defaults terminal_reach_enabled to true unless that variable is 0. Actual real-day applicability still depends on the implementation phase/next-step guard; this observation does not count objective applications. C010 CLI flag absent in both launcher and process arguments.",
+    "source": "solver/distributed-candidates/c011-terminal-reachability/solver/planner.rs",
+    "line": 332,
+    "sourceSha256": "d1cac5abcfdbca95d00ad52087d7ad65184807b1312838d68241857349cc9197"
+  }
+}

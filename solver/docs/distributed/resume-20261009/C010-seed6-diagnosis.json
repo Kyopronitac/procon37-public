@@ -1,0 +1,4683 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-10-09T02:23:03.013118+00:00",
+  "status": "read-only diagnostic; no candidate or adoption change",
+  "scope": {
+    "seed": 6,
+    "format": "first",
+    "mapSize": [
+      16,
+      16
+    ],
+    "team": 0,
+    "executionCpuAffinity": [
+      1
+    ],
+    "solverExecutions": 0,
+    "builds": 0,
+    "remoteOperations": 0,
+    "opponentImplementationReads": 0,
+    "protectedPathsRead": false,
+    "dayAndBrandNumbering": "day is 1-based; brand/agent/spot/cell are 0-based"
+  },
+  "problemBytesEqual": true,
+  "problemValuesEqual": true,
+  "target": {
+    "day": 3,
+    "steps": 43,
+    "brand": 10,
+    "spot": 15,
+    "cell": 194,
+    "coordinateZeroBased": {
+      "row": 12,
+      "column": 2
+    },
+    "stock": 3,
+    "brandSpotCount": 1
+  },
+  "runs": {
+    "C010-on-short-01": {
+      "runId": "1791511015750545757-119460",
+      "inputs": {
+        "problem.json": {
+          "path": ".server/runs/1791511015750545757-119460/6/problem.json",
+          "bytes": 1298,
+          "sha256": "6ee5e88d4d9d8e1670fb2b336056f738fbc1c5152786155f6017386fce4d5840"
+        },
+        "replay.json": {
+          "path": ".server/runs/1791511015750545757-119460/6/replay.json",
+          "bytes": 1071276,
+          "sha256": "dbc2bd2614e9728b94cd6e24bf166cfd3e4e9f120821d3c33620cac4d71d7298"
+        },
+        "team-0.log": {
+          "path": ".server/runs/1791511015750545757-119460/6/team-0.log",
+          "bytes": 1028,
+          "sha256": "25b3e7720d147c2a9e9cc06887e006ea8926ff4d6abcc4a71b53fb7c5f66d278"
+        }
+      },
+      "score": {
+        "uniqueBrands": 11,
+        "dailyBrands": 87,
+        "udon": 139
+      },
+      "kinds": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "selectionFailure": null,
+      "daily": [
+        {
+          "day": 1,
+          "steps": 32,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 14,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 23,
+              "fuel": 34
+            },
+            {
+              "kind": 1,
+              "pos": 33,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 99,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 204,
+              "fuel": 34
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 124,
+              "fuel": 11
+            },
+            {
+              "kind": 1,
+              "pos": 168,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 22
+            },
+            {
+              "kind": 0,
+              "pos": 168,
+              "fuel": 34
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "steps": 35,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 15,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 124,
+              "fuel": 11
+            },
+            {
+              "kind": 1,
+              "pos": 168,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 22
+            },
+            {
+              "kind": 0,
+              "pos": 168,
+              "fuel": 34
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 31,
+              "fuel": 10
+            },
+            {
+              "kind": 1,
+              "pos": 40,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 249,
+              "fuel": 19
+            },
+            {
+              "kind": 0,
+              "pos": 64,
+              "fuel": 19
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "steps": 43,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "dailyBrands": 10,
+          "udon": 14,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 31,
+              "fuel": 10
+            },
+            {
+              "kind": 1,
+              "pos": 40,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 249,
+              "fuel": 19
+            },
+            {
+              "kind": 0,
+              "pos": 64,
+              "fuel": 19
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 52,
+              "fuel": 18
+            },
+            {
+              "kind": 1,
+              "pos": 102,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 8,
+              "fuel": 19
+            },
+            {
+              "kind": 0,
+              "pos": 173,
+              "fuel": 25
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "steps": 53,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 16,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 52,
+              "fuel": 18
+            },
+            {
+              "kind": 1,
+              "pos": 102,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 8,
+              "fuel": 19
+            },
+            {
+              "kind": 0,
+              "pos": 173,
+              "fuel": 25
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 173,
+              "fuel": 8
+            },
+            {
+              "kind": 1,
+              "pos": 154,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 64,
+              "fuel": 23
+            },
+            {
+              "kind": 0,
+              "pos": 194,
+              "fuel": 25
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "steps": 54,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 18,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 173,
+              "fuel": 8
+            },
+            {
+              "kind": 1,
+              "pos": 154,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 64,
+              "fuel": 23
+            },
+            {
+              "kind": 0,
+              "pos": 194,
+              "fuel": 25
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 46,
+              "fuel": 8
+            },
+            {
+              "kind": 1,
+              "pos": 110,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 12
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 30
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "steps": 60,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 19,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 46,
+              "fuel": 8
+            },
+            {
+              "kind": 1,
+              "pos": 110,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 12
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 30
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 132,
+              "fuel": 34
+            },
+            {
+              "kind": 1,
+              "pos": 132,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 26
+            },
+            {
+              "kind": 0,
+              "pos": 64,
+              "fuel": 23
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "steps": 70,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 21,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 132,
+              "fuel": 34
+            },
+            {
+              "kind": 1,
+              "pos": 132,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 26
+            },
+            {
+              "kind": 0,
+              "pos": 64,
+              "fuel": 23
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 1,
+              "pos": 206,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "steps": 74,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 22,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 1,
+              "pos": 206,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 52,
+              "fuel": 0
+            },
+            {
+              "kind": 1,
+              "pos": 194,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 64,
+              "fuel": 16
+            },
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 30
+            }
+          ]
+        }
+      ],
+      "targetDay": {
+        "day": 3,
+        "observationDayZeroBased": 2,
+        "steps": 43,
+        "failure": null,
+        "elapsedMs": 8587,
+        "traffic": [
+          {
+            "pos": 4,
+            "status": 1
+          },
+          {
+            "pos": 5,
+            "status": 1
+          },
+          {
+            "pos": 11,
+            "status": 0
+          },
+          {
+            "pos": 12,
+            "status": 0
+          },
+          {
+            "pos": 13,
+            "status": 0
+          },
+          {
+            "pos": 20,
+            "status": 1
+          },
+          {
+            "pos": 22,
+            "status": 1
+          },
+          {
+            "pos": 24,
+            "status": 1
+          },
+          {
+            "pos": 28,
+            "status": 0
+          },
+          {
+            "pos": 30,
+            "status": 1
+          },
+          {
+            "pos": 36,
+            "status": 0
+          },
+          {
+            "pos": 38,
+            "status": 2
+          },
+          {
+            "pos": 39,
+            "status": 1
+          },
+          {
+            "pos": 42,
+            "status": 0
+          },
+          {
+            "pos": 43,
+            "status": 0
+          },
+          {
+            "pos": 44,
+            "status": 0
+          },
+          {
+            "pos": 54,
+            "status": 2
+          },
+          {
+            "pos": 58,
+            "status": 0
+          },
+          {
+            "pos": 69,
+            "status": 1
+          },
+          {
+            "pos": 70,
+            "status": 1
+          },
+          {
+            "pos": 73,
+            "status": 0
+          },
+          {
+            "pos": 74,
+            "status": 0
+          },
+          {
+            "pos": 77,
+            "status": 0
+          },
+          {
+            "pos": 80,
+            "status": 1
+          },
+          {
+            "pos": 92,
+            "status": 1
+          },
+          {
+            "pos": 93,
+            "status": 0
+          },
+          {
+            "pos": 94,
+            "status": 0
+          },
+          {
+            "pos": 96,
+            "status": 2
+          },
+          {
+            "pos": 104,
+            "status": 0
+          },
+          {
+            "pos": 107,
+            "status": 1
+          },
+          {
+            "pos": 110,
+            "status": 0
+          },
+          {
+            "pos": 113,
+            "status": 1
+          },
+          {
+            "pos": 118,
+            "status": 1
+          },
+          {
+            "pos": 119,
+            "status": 1
+          },
+          {
+            "pos": 120,
+            "status": 1
+          },
+          {
+            "pos": 123,
+            "status": 0
+          },
+          {
+            "pos": 126,
+            "status": 0
+          },
+          {
+            "pos": 129,
+            "status": 1
+          },
+          {
+            "pos": 130,
+            "status": 1
+          },
+          {
+            "pos": 131,
+            "status": 2
+          },
+          {
+            "pos": 134,
+            "status": 0
+          },
+          {
+            "pos": 141,
+            "status": 1
+          },
+          {
+            "pos": 147,
+            "status": 2
+          },
+          {
+            "pos": 156,
+            "status": 1
+          },
+          {
+            "pos": 157,
+            "status": 1
+          },
+          {
+            "pos": 162,
+            "status": 2
+          },
+          {
+            "pos": 171,
+            "status": 1
+          },
+          {
+            "pos": 178,
+            "status": 2
+          },
+          {
+            "pos": 182,
+            "status": 1
+          },
+          {
+            "pos": 184,
+            "status": 1
+          },
+          {
+            "pos": 185,
+            "status": 1
+          },
+          {
+            "pos": 187,
+            "status": 1
+          },
+          {
+            "pos": 189,
+            "status": 2
+          },
+          {
+            "pos": 190,
+            "status": 1
+          },
+          {
+            "pos": 197,
+            "status": 0
+          },
+          {
+            "pos": 198,
+            "status": 1
+          },
+          {
+            "pos": 199,
+            "status": 1
+          },
+          {
+            "pos": 220,
+            "status": 1
+          },
+          {
+            "pos": 224,
+            "status": 0
+          },
+          {
+            "pos": 225,
+            "status": 0
+          },
+          {
+            "pos": 230,
+            "status": 1
+          },
+          {
+            "pos": 231,
+            "status": 0
+          },
+          {
+            "pos": 235,
+            "status": 1
+          },
+          {
+            "pos": 241,
+            "status": 0
+          },
+          {
+            "pos": 247,
+            "status": 1
+          },
+          {
+            "pos": 250,
+            "status": 1
+          },
+          {
+            "pos": 251,
+            "status": 1
+          }
+        ],
+        "trafficCanonicalSha256": "716eb7a3994e785eadda994c86ca318ae232ff04df5b8c8d330a0c5b32c7d933",
+        "targetFinalStock": 3,
+        "agents": [
+          {
+            "agent": 0,
+            "start": {
+              "kind": 0,
+              "pos": 31,
+              "fuel": 10
+            },
+            "end": {
+              "kind": 0,
+              "pos": 52,
+              "fuel": 18
+            },
+            "collectedBrands": [
+              0,
+              1,
+              2
+            ],
+            "collectedUdon": 3,
+            "collectAndRefillEvents": [
+              {
+                "step": 1,
+                "pos": 31,
+                "kind": "collect",
+                "agent": 0,
+                "spot": 2,
+                "brand": 1
+              },
+              {
+                "step": 7,
+                "pos": 27,
+                "kind": "refill",
+                "agent": 0,
+                "amount": 32
+              },
+              {
+                "step": 13,
+                "pos": 8,
+                "kind": "collect",
+                "agent": 0,
+                "spot": 0,
+                "brand": 0
+              },
+              {
+                "step": 28,
+                "pos": 52,
+                "kind": "collect",
+                "agent": 0,
+                "spot": 3,
+                "brand": 2
+              }
+            ],
+            "minimumRecordedFuel": 4,
+            "submittedPlan": [
+              0,
+              5,
+              5,
+              4,
+              5,
+              5,
+              5,
+              0,
+              5,
+              5,
+              5,
+              5,
+              4,
+              3,
+              4,
+              -15
+            ],
+            "timeOnly": {
+              "timeSteps": 47,
+              "fuelRequired": 39,
+              "withinDay": false,
+              "cells": [
+                31,
+                46,
+                62,
+                77,
+                94,
+                110,
+                126,
+                141,
+                157,
+                156,
+                171,
+                187,
+                186,
+                185,
+                184,
+                183,
+                182,
+                165,
+                164,
+                163,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                4,
+                4,
+                4,
+                3,
+                3,
+                4,
+                4,
+                4,
+                5,
+                4,
+                4,
+                5,
+                5,
+                5,
+                5,
+                5,
+                0,
+                5,
+                5,
+                5,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 31,
+                  "to": 46,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 46,
+                  "to": 62,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 4,
+                  "cumulativeFuel": 2
+                },
+                {
+                  "from": 62,
+                  "to": 77,
+                  "direction": 4,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 7,
+                  "cumulativeFuel": 4
+                },
+                {
+                  "from": 77,
+                  "to": 94,
+                  "direction": 3,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 6
+                },
+                {
+                  "from": 94,
+                  "to": 110,
+                  "direction": 3,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 9,
+                  "cumulativeFuel": 8
+                },
+                {
+                  "from": 110,
+                  "to": 126,
+                  "direction": 4,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 10,
+                  "cumulativeFuel": 10
+                },
+                {
+                  "from": 126,
+                  "to": 141,
+                  "direction": 4,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 11,
+                  "cumulativeFuel": 12
+                },
+                {
+                  "from": 141,
+                  "to": 157,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 13,
+                  "cumulativeFuel": 14
+                },
+                {
+                  "from": 157,
+                  "to": 156,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 15,
+                  "cumulativeFuel": 16
+                },
+                {
+                  "from": 156,
+                  "to": 171,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 17,
+                  "cumulativeFuel": 18
+                },
+                {
+                  "from": 171,
+                  "to": 187,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 19,
+                  "cumulativeFuel": 20
+                },
+                {
+                  "from": 187,
+                  "to": 186,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 21,
+                  "cumulativeFuel": 22
+                },
+                {
+                  "from": 186,
+                  "to": 185,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 23,
+                  "cumulativeFuel": 23
+                },
+                {
+                  "from": 185,
+                  "to": 184,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 25,
+                  "cumulativeFuel": 25
+                },
+                {
+                  "from": 184,
+                  "to": 183,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 27,
+                  "cumulativeFuel": 27
+                },
+                {
+                  "from": 183,
+                  "to": 182,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 29,
+                  "cumulativeFuel": 28
+                },
+                {
+                  "from": 182,
+                  "to": 165,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 31,
+                  "cumulativeFuel": 30
+                },
+                {
+                  "from": 165,
+                  "to": 164,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 34,
+                  "cumulativeFuel": 32
+                },
+                {
+                  "from": 164,
+                  "to": 163,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 36,
+                  "cumulativeFuel": 33
+                },
+                {
+                  "from": 163,
+                  "to": 162,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 39,
+                  "cumulativeFuel": 35
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 43,
+                  "cumulativeFuel": 37
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 47,
+                  "cumulativeFuel": 39
+                }
+              ],
+              "fullDayWaitAfterArrival": 0
+            },
+            "minimumFuel": {
+              "timeSteps": 50,
+              "fuelRequired": 30,
+              "withinDay": false,
+              "cells": [
+                31,
+                30,
+                29,
+                28,
+                27,
+                26,
+                25,
+                24,
+                23,
+                38,
+                54,
+                69,
+                85,
+                100,
+                116,
+                131,
+                147,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 31,
+                  "to": 30,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 30,
+                  "to": 29,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 4,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 29,
+                  "to": 28,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 7,
+                  "cumulativeFuel": 5
+                },
+                {
+                  "from": 28,
+                  "to": 27,
+                  "direction": 5,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 7
+                },
+                {
+                  "from": 27,
+                  "to": 26,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 10,
+                  "cumulativeFuel": 8
+                },
+                {
+                  "from": 26,
+                  "to": 25,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 12,
+                  "cumulativeFuel": 9
+                },
+                {
+                  "from": 25,
+                  "to": 24,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 14,
+                  "cumulativeFuel": 10
+                },
+                {
+                  "from": 24,
+                  "to": 23,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 16,
+                  "cumulativeFuel": 12
+                },
+                {
+                  "from": 23,
+                  "to": 38,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 18,
+                  "cumulativeFuel": 13
+                },
+                {
+                  "from": 38,
+                  "to": 54,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 22,
+                  "cumulativeFuel": 15
+                },
+                {
+                  "from": 54,
+                  "to": 69,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 26,
+                  "cumulativeFuel": 17
+                },
+                {
+                  "from": 69,
+                  "to": 85,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 28,
+                  "cumulativeFuel": 19
+                },
+                {
+                  "from": 85,
+                  "to": 100,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 30,
+                  "cumulativeFuel": 20
+                },
+                {
+                  "from": 100,
+                  "to": 116,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 32,
+                  "cumulativeFuel": 21
+                },
+                {
+                  "from": 116,
+                  "to": 131,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 34,
+                  "cumulativeFuel": 22
+                },
+                {
+                  "from": 131,
+                  "to": 147,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 38,
+                  "cumulativeFuel": 24
+                },
+                {
+                  "from": 147,
+                  "to": 162,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 42,
+                  "cumulativeFuel": 26
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 46,
+                  "cumulativeFuel": 28
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 50,
+                  "cumulativeFuel": 30
+                }
+              ],
+              "fullDayWaitAfterArrival": 0
+            },
+            "withoutRefill": null,
+            "targetReachableWithoutRefill": false
+          },
+          {
+            "agent": 1,
+            "start": {
+              "kind": 1,
+              "pos": 40,
+              "fuel": 34
+            },
+            "end": {
+              "kind": 1,
+              "pos": 102,
+              "fuel": 34
+            },
+            "collectedBrands": [],
+            "collectedUdon": 0,
+            "collectAndRefillEvents": [],
+            "minimumRecordedFuel": 34,
+            "submittedPlan": [
+              2,
+              2,
+              1,
+              1,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              4,
+              4,
+              3,
+              4,
+              5,
+              5,
+              4,
+              5,
+              5,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "agent": 2,
+            "start": {
+              "kind": 0,
+              "pos": 249,
+              "fuel": 19
+            },
+            "end": {
+              "kind": 0,
+              "pos": 8,
+              "fuel": 19
+            },
+            "collectedBrands": [
+              0,
+              3,
+              4,
+              6,
+              9
+            ],
+            "collectedUdon": 6,
+            "collectAndRefillEvents": [
+              {
+                "step": 1,
+                "pos": 249,
+                "kind": "collect",
+                "agent": 2,
+                "spot": 1,
+                "brand": 0
+              },
+              {
+                "step": 8,
+                "pos": 203,
+                "kind": "collect",
+                "agent": 2,
+                "spot": 6,
+                "brand": 3
+              },
+              {
+                "step": 17,
+                "pos": 191,
+                "kind": "collect",
+                "agent": 2,
+                "spot": 14,
+                "brand": 9
+              },
+              {
+                "step": 21,
+                "pos": 173,
+                "kind": "collect",
+                "agent": 2,
+                "spot": 8,
+                "brand": 4
+              },
+              {
+                "step": 21,
+                "pos": 173,
+                "kind": "refill",
+                "agent": 2,
+                "amount": 28
+              },
+              {
+                "step": 29,
+                "pos": 124,
+                "kind": "collect",
+                "agent": 2,
+                "spot": 10,
+                "brand": 6
+              },
+              {
+                "step": 41,
+                "pos": 8,
+                "kind": "collect",
+                "agent": 2,
+                "spot": 0,
+                "brand": 0
+              }
+            ],
+            "minimumRecordedFuel": 7,
+            "submittedPlan": [
+              2,
+              1,
+              1,
+              1,
+              2,
+              2,
+              1,
+              2,
+              0,
+              5,
+              1,
+              0,
+              0,
+              5,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -2
+            ],
+            "timeOnly": {
+              "timeSteps": 28,
+              "fuelRequired": 19,
+              "withinDay": true,
+              "cells": [
+                249,
+                232,
+                231,
+                215,
+                198,
+                182,
+                165,
+                164,
+                163,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                0,
+                5,
+                0,
+                0,
+                0,
+                0,
+                5,
+                5,
+                5,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 249,
+                  "to": 232,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 232,
+                  "to": 231,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 5,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 231,
+                  "to": 215,
+                  "direction": 0,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 6,
+                  "cumulativeFuel": 5
+                },
+                {
+                  "from": 215,
+                  "to": 198,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 6
+                },
+                {
+                  "from": 198,
+                  "to": 182,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 10,
+                  "cumulativeFuel": 8
+                },
+                {
+                  "from": 182,
+                  "to": 165,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 12,
+                  "cumulativeFuel": 10
+                },
+                {
+                  "from": 165,
+                  "to": 164,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 15,
+                  "cumulativeFuel": 12
+                },
+                {
+                  "from": 164,
+                  "to": 163,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 17,
+                  "cumulativeFuel": 13
+                },
+                {
+                  "from": 163,
+                  "to": 162,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 20,
+                  "cumulativeFuel": 15
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 24,
+                  "cumulativeFuel": 17
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 28,
+                  "cumulativeFuel": 19
+                }
+              ],
+              "fullDayWaitAfterArrival": 15
+            },
+            "minimumFuel": {
+              "timeSteps": 28,
+              "fuelRequired": 19,
+              "withinDay": true,
+              "cells": [
+                249,
+                232,
+                231,
+                215,
+                198,
+                182,
+                165,
+                164,
+                163,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                0,
+                5,
+                0,
+                0,
+                0,
+                0,
+                5,
+                5,
+                5,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 249,
+                  "to": 232,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 232,
+                  "to": 231,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 5,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 231,
+                  "to": 215,
+                  "direction": 0,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 6,
+                  "cumulativeFuel": 5
+                },
+                {
+                  "from": 215,
+                  "to": 198,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 6
+                },
+                {
+                  "from": 198,
+                  "to": 182,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 10,
+                  "cumulativeFuel": 8
+                },
+                {
+                  "from": 182,
+                  "to": 165,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 12,
+                  "cumulativeFuel": 10
+                },
+                {
+                  "from": 165,
+                  "to": 164,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 15,
+                  "cumulativeFuel": 12
+                },
+                {
+                  "from": 164,
+                  "to": 163,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 17,
+                  "cumulativeFuel": 13
+                },
+                {
+                  "from": 163,
+                  "to": 162,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 20,
+                  "cumulativeFuel": 15
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 24,
+                  "cumulativeFuel": 17
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 28,
+                  "cumulativeFuel": 19
+                }
+              ],
+              "fullDayWaitAfterArrival": 15
+            },
+            "withoutRefill": {
+              "timeSteps": 28,
+              "fuelRequired": 19,
+              "withinDay": true,
+              "cells": [
+                249,
+                232,
+                231,
+                215,
+                198,
+                182,
+                165,
+                164,
+                163,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                0,
+                5,
+                0,
+                0,
+                0,
+                0,
+                5,
+                5,
+                5,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 249,
+                  "to": 232,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 232,
+                  "to": 231,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 5,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 231,
+                  "to": 215,
+                  "direction": 0,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 6,
+                  "cumulativeFuel": 5
+                },
+                {
+                  "from": 215,
+                  "to": 198,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 6
+                },
+                {
+                  "from": 198,
+                  "to": 182,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 10,
+                  "cumulativeFuel": 8
+                },
+                {
+                  "from": 182,
+                  "to": 165,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 12,
+                  "cumulativeFuel": 10
+                },
+                {
+                  "from": 165,
+                  "to": 164,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 15,
+                  "cumulativeFuel": 12
+                },
+                {
+                  "from": 164,
+                  "to": 163,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 17,
+                  "cumulativeFuel": 13
+                },
+                {
+                  "from": 163,
+                  "to": 162,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 20,
+                  "cumulativeFuel": 15
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 24,
+                  "cumulativeFuel": 17
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 28,
+                  "cumulativeFuel": 19
+                }
+              ],
+              "fullDayWaitAfterArrival": 15
+            },
+            "targetReachableWithoutRefill": true
+          },
+          {
+            "agent": 3,
+            "start": {
+              "kind": 0,
+              "pos": 64,
+              "fuel": 19
+            },
+            "end": {
+              "kind": 0,
+              "pos": 173,
+              "fuel": 25
+            },
+            "collectedBrands": [
+              3,
+              4,
+              5,
+              7,
+              8
+            ],
+            "collectedUdon": 5,
+            "collectAndRefillEvents": [
+              {
+                "step": 1,
+                "pos": 64,
+                "kind": "collect",
+                "agent": 3,
+                "spot": 5,
+                "brand": 3
+              },
+              {
+                "step": 8,
+                "pos": 112,
+                "kind": "collect",
+                "agent": 3,
+                "spot": 9,
+                "brand": 5
+              },
+              {
+                "step": 20,
+                "pos": 132,
+                "kind": "collect",
+                "agent": 3,
+                "spot": 12,
+                "brand": 7
+              },
+              {
+                "step": 30,
+                "pos": 168,
+                "kind": "collect",
+                "agent": 3,
+                "spot": 13,
+                "brand": 8
+              },
+              {
+                "step": 32,
+                "pos": 185,
+                "kind": "refill",
+                "agent": 3,
+                "amount": 34
+              },
+              {
+                "step": 43,
+                "pos": 173,
+                "kind": "collect",
+                "agent": 3,
+                "spot": 8,
+                "brand": 4
+              }
+            ],
+            "minimumRecordedFuel": 1,
+            "submittedPlan": [
+              3,
+              4,
+              4,
+              2,
+              1,
+              2,
+              2,
+              3,
+              3,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              2,
+              2,
+              1,
+              2,
+              2
+            ],
+            "timeOnly": {
+              "timeSteps": 24,
+              "fuelRequired": 15,
+              "withinDay": true,
+              "cells": [
+                64,
+                81,
+                97,
+                113,
+                129,
+                130,
+                147,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                3,
+                3,
+                4,
+                3,
+                2,
+                3,
+                4,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 64,
+                  "to": 81,
+                  "direction": 3,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 81,
+                  "to": 97,
+                  "direction": 3,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 4,
+                  "cumulativeFuel": 2
+                },
+                {
+                  "from": 97,
+                  "to": 113,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 6,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 113,
+                  "to": 129,
+                  "direction": 3,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 5
+                },
+                {
+                  "from": 129,
+                  "to": 130,
+                  "direction": 2,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 10,
+                  "cumulativeFuel": 7
+                },
+                {
+                  "from": 130,
+                  "to": 147,
+                  "direction": 3,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 12,
+                  "cumulativeFuel": 9
+                },
+                {
+                  "from": 147,
+                  "to": 162,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 16,
+                  "cumulativeFuel": 11
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 20,
+                  "cumulativeFuel": 13
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 24,
+                  "cumulativeFuel": 15
+                }
+              ],
+              "fullDayWaitAfterArrival": 19
+            },
+            "minimumFuel": {
+              "timeSteps": 25,
+              "fuelRequired": 14,
+              "withinDay": true,
+              "cells": [
+                64,
+                81,
+                97,
+                98,
+                115,
+                130,
+                147,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                3,
+                3,
+                2,
+                3,
+                4,
+                3,
+                4,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 64,
+                  "to": 81,
+                  "direction": 3,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 81,
+                  "to": 97,
+                  "direction": 3,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 4,
+                  "cumulativeFuel": 2
+                },
+                {
+                  "from": 97,
+                  "to": 98,
+                  "direction": 2,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 6,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 98,
+                  "to": 115,
+                  "direction": 3,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 4
+                },
+                {
+                  "from": 115,
+                  "to": 130,
+                  "direction": 4,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 11,
+                  "cumulativeFuel": 6
+                },
+                {
+                  "from": 130,
+                  "to": 147,
+                  "direction": 3,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 13,
+                  "cumulativeFuel": 8
+                },
+                {
+                  "from": 147,
+                  "to": 162,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 17,
+                  "cumulativeFuel": 10
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 21,
+                  "cumulativeFuel": 12
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 25,
+                  "cumulativeFuel": 14
+                }
+              ],
+              "fullDayWaitAfterArrival": 18
+            },
+            "withoutRefill": {
+              "timeSteps": 24,
+              "fuelRequired": 15,
+              "withinDay": true,
+              "cells": [
+                64,
+                81,
+                97,
+                113,
+                129,
+                130,
+                147,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                3,
+                3,
+                4,
+                3,
+                2,
+                3,
+                4,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 64,
+                  "to": 81,
+                  "direction": 3,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 81,
+                  "to": 97,
+                  "direction": 3,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 4,
+                  "cumulativeFuel": 2
+                },
+                {
+                  "from": 97,
+                  "to": 113,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 6,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 113,
+                  "to": 129,
+                  "direction": 3,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 5
+                },
+                {
+                  "from": 129,
+                  "to": 130,
+                  "direction": 2,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 10,
+                  "cumulativeFuel": 7
+                },
+                {
+                  "from": 130,
+                  "to": 147,
+                  "direction": 3,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 12,
+                  "cumulativeFuel": 9
+                },
+                {
+                  "from": 147,
+                  "to": 162,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 16,
+                  "cumulativeFuel": 11
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 20,
+                  "cumulativeFuel": 13
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 24,
+                  "cumulativeFuel": 15
+                }
+              ],
+              "fullDayWaitAfterArrival": 19
+            },
+            "targetReachableWithoutRefill": true
+          }
+        ]
+      },
+      "replayRuleChecks": {
+        "days": 8,
+        "newMoveReservations": 762,
+        "fuelBalances": 1684,
+        "collectionScoreBalances": 8
+      }
+    },
+    "resume-D0-short-02": {
+      "runId": "1791506866153064781-104560",
+      "inputs": {
+        "problem.json": {
+          "path": ".server/runs/1791506866153064781-104560/6/problem.json",
+          "bytes": 1298,
+          "sha256": "6ee5e88d4d9d8e1670fb2b336056f738fbc1c5152786155f6017386fce4d5840"
+        },
+        "replay.json": {
+          "path": ".server/runs/1791506866153064781-104560/6/replay.json",
+          "bytes": 1071649,
+          "sha256": "b24bff9f2dfadb1adf5680bd84fd9f30167ed8798ec75fdc26c741d81b619f24"
+        },
+        "team-0.log": {
+          "path": ".server/runs/1791506866153064781-104560/6/team-0.log",
+          "bytes": 1011,
+          "sha256": "171dee8aeb289a856430bdc963defd6291ac7c24bcdcd39e53383a6631a1072f"
+        }
+      },
+      "score": {
+        "uniqueBrands": 11,
+        "dailyBrands": 88,
+        "udon": 140
+      },
+      "kinds": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "selectionFailure": null,
+      "daily": [
+        {
+          "day": 1,
+          "steps": 32,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 14,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 23,
+              "fuel": 34
+            },
+            {
+              "kind": 1,
+              "pos": 33,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 99,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 204,
+              "fuel": 34
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 124,
+              "fuel": 11
+            },
+            {
+              "kind": 1,
+              "pos": 168,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 22
+            },
+            {
+              "kind": 0,
+              "pos": 168,
+              "fuel": 34
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "steps": 35,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 15,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 124,
+              "fuel": 11
+            },
+            {
+              "kind": 1,
+              "pos": 168,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 22
+            },
+            {
+              "kind": 0,
+              "pos": 168,
+              "fuel": 34
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 246,
+              "fuel": 16
+            },
+            {
+              "kind": 1,
+              "pos": 54,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 132,
+              "fuel": 32
+            },
+            {
+              "kind": 0,
+              "pos": 31,
+              "fuel": 15
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "steps": 43,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 15,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 246,
+              "fuel": 16
+            },
+            {
+              "kind": 1,
+              "pos": 54,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 132,
+              "fuel": 32
+            },
+            {
+              "kind": 0,
+              "pos": 31,
+              "fuel": 15
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 124,
+              "fuel": 24
+            },
+            {
+              "kind": 1,
+              "pos": 165,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 9
+            },
+            {
+              "kind": 0,
+              "pos": 168,
+              "fuel": 18
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "steps": 53,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 15,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 124,
+              "fuel": 24
+            },
+            {
+              "kind": 1,
+              "pos": 165,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 9
+            },
+            {
+              "kind": 0,
+              "pos": 168,
+              "fuel": 18
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 31,
+              "fuel": 22
+            },
+            {
+              "kind": 1,
+              "pos": 102,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 64,
+              "fuel": 21
+            },
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 22
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "steps": 54,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 18,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 31,
+              "fuel": 22
+            },
+            {
+              "kind": 1,
+              "pos": 102,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 64,
+              "fuel": 21
+            },
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 22
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 203,
+              "fuel": 34
+            },
+            {
+              "kind": 1,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "steps": 60,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 19,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 203,
+              "fuel": 34
+            },
+            {
+              "kind": 1,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 17
+            },
+            {
+              "kind": 1,
+              "pos": 54,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 52,
+              "fuel": 24
+            },
+            {
+              "kind": 0,
+              "pos": 112,
+              "fuel": 17
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "steps": 70,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 21,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 17
+            },
+            {
+              "kind": 1,
+              "pos": 54,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 52,
+              "fuel": 24
+            },
+            {
+              "kind": 0,
+              "pos": 112,
+              "fuel": 17
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 1,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            }
+          ]
+        },
+        {
+          "day": 8,
+          "steps": 74,
+          "brands": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "dailyBrands": 11,
+          "udon": 23,
+          "startAgents": [
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 1,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 191,
+              "fuel": 34
+            }
+          ],
+          "endAgents": [
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 18
+            },
+            {
+              "kind": 1,
+              "pos": 14,
+              "fuel": 34
+            },
+            {
+              "kind": 0,
+              "pos": 112,
+              "fuel": 19
+            },
+            {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 0
+            }
+          ]
+        }
+      ],
+      "targetDay": {
+        "day": 3,
+        "observationDayZeroBased": 2,
+        "steps": 43,
+        "failure": null,
+        "elapsedMs": 8590,
+        "traffic": [
+          {
+            "pos": 4,
+            "status": 1
+          },
+          {
+            "pos": 5,
+            "status": 1
+          },
+          {
+            "pos": 11,
+            "status": 0
+          },
+          {
+            "pos": 12,
+            "status": 0
+          },
+          {
+            "pos": 13,
+            "status": 0
+          },
+          {
+            "pos": 20,
+            "status": 1
+          },
+          {
+            "pos": 22,
+            "status": 1
+          },
+          {
+            "pos": 24,
+            "status": 1
+          },
+          {
+            "pos": 28,
+            "status": 0
+          },
+          {
+            "pos": 30,
+            "status": 1
+          },
+          {
+            "pos": 36,
+            "status": 1
+          },
+          {
+            "pos": 38,
+            "status": 1
+          },
+          {
+            "pos": 39,
+            "status": 0
+          },
+          {
+            "pos": 42,
+            "status": 0
+          },
+          {
+            "pos": 43,
+            "status": 0
+          },
+          {
+            "pos": 44,
+            "status": 0
+          },
+          {
+            "pos": 54,
+            "status": 1
+          },
+          {
+            "pos": 58,
+            "status": 0
+          },
+          {
+            "pos": 69,
+            "status": 1
+          },
+          {
+            "pos": 70,
+            "status": 0
+          },
+          {
+            "pos": 73,
+            "status": 0
+          },
+          {
+            "pos": 74,
+            "status": 0
+          },
+          {
+            "pos": 77,
+            "status": 0
+          },
+          {
+            "pos": 80,
+            "status": 1
+          },
+          {
+            "pos": 92,
+            "status": 1
+          },
+          {
+            "pos": 93,
+            "status": 0
+          },
+          {
+            "pos": 94,
+            "status": 0
+          },
+          {
+            "pos": 96,
+            "status": 1
+          },
+          {
+            "pos": 104,
+            "status": 0
+          },
+          {
+            "pos": 107,
+            "status": 1
+          },
+          {
+            "pos": 110,
+            "status": 0
+          },
+          {
+            "pos": 113,
+            "status": 1
+          },
+          {
+            "pos": 118,
+            "status": 0
+          },
+          {
+            "pos": 119,
+            "status": 1
+          },
+          {
+            "pos": 120,
+            "status": 0
+          },
+          {
+            "pos": 123,
+            "status": 0
+          },
+          {
+            "pos": 126,
+            "status": 0
+          },
+          {
+            "pos": 129,
+            "status": 1
+          },
+          {
+            "pos": 130,
+            "status": 1
+          },
+          {
+            "pos": 131,
+            "status": 2
+          },
+          {
+            "pos": 134,
+            "status": 1
+          },
+          {
+            "pos": 141,
+            "status": 2
+          },
+          {
+            "pos": 147,
+            "status": 2
+          },
+          {
+            "pos": 156,
+            "status": 1
+          },
+          {
+            "pos": 157,
+            "status": 1
+          },
+          {
+            "pos": 162,
+            "status": 2
+          },
+          {
+            "pos": 171,
+            "status": 1
+          },
+          {
+            "pos": 178,
+            "status": 2
+          },
+          {
+            "pos": 182,
+            "status": 1
+          },
+          {
+            "pos": 184,
+            "status": 1
+          },
+          {
+            "pos": 185,
+            "status": 1
+          },
+          {
+            "pos": 187,
+            "status": 1
+          },
+          {
+            "pos": 189,
+            "status": 2
+          },
+          {
+            "pos": 190,
+            "status": 2
+          },
+          {
+            "pos": 197,
+            "status": 0
+          },
+          {
+            "pos": 198,
+            "status": 0
+          },
+          {
+            "pos": 199,
+            "status": 1
+          },
+          {
+            "pos": 220,
+            "status": 0
+          },
+          {
+            "pos": 224,
+            "status": 0
+          },
+          {
+            "pos": 225,
+            "status": 0
+          },
+          {
+            "pos": 230,
+            "status": 1
+          },
+          {
+            "pos": 231,
+            "status": 0
+          },
+          {
+            "pos": 235,
+            "status": 0
+          },
+          {
+            "pos": 241,
+            "status": 0
+          },
+          {
+            "pos": 247,
+            "status": 1
+          },
+          {
+            "pos": 250,
+            "status": 1
+          },
+          {
+            "pos": 251,
+            "status": 0
+          }
+        ],
+        "trafficCanonicalSha256": "b0c72f2f788e88d0f901d43e28e4bb3c9f152ba708d1444c1ac05db65be83149",
+        "targetFinalStock": 2,
+        "agents": [
+          {
+            "agent": 0,
+            "start": {
+              "kind": 0,
+              "pos": 246,
+              "fuel": 16
+            },
+            "end": {
+              "kind": 0,
+              "pos": 124,
+              "fuel": 24
+            },
+            "collectedBrands": [
+              0,
+              3,
+              4,
+              6,
+              9
+            ],
+            "collectedUdon": 6,
+            "collectAndRefillEvents": [
+              {
+                "step": 1,
+                "pos": 246,
+                "kind": "collect",
+                "agent": 0,
+                "spot": 11,
+                "brand": 6
+              },
+              {
+                "step": 7,
+                "pos": 249,
+                "kind": "collect",
+                "agent": 0,
+                "spot": 1,
+                "brand": 0
+              },
+              {
+                "step": 15,
+                "pos": 203,
+                "kind": "collect",
+                "agent": 0,
+                "spot": 6,
+                "brand": 3
+              },
+              {
+                "step": 23,
+                "pos": 157,
+                "kind": "refill",
+                "agent": 0,
+                "amount": 33
+              },
+              {
+                "step": 25,
+                "pos": 173,
+                "kind": "collect",
+                "agent": 0,
+                "spot": 8,
+                "brand": 4
+              },
+              {
+                "step": 29,
+                "pos": 191,
+                "kind": "collect",
+                "agent": 0,
+                "spot": 14,
+                "brand": 9
+              },
+              {
+                "step": 41,
+                "pos": 124,
+                "kind": "collect",
+                "agent": 0,
+                "spot": 10,
+                "brand": 6
+              }
+            ],
+            "minimumRecordedFuel": 3,
+            "submittedPlan": [
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              3,
+              2,
+              3,
+              0,
+              0,
+              0,
+              0,
+              5,
+              -2
+            ],
+            "timeOnly": {
+              "timeSteps": 25,
+              "fuelRequired": 17,
+              "withinDay": true,
+              "cells": [
+                246,
+                230,
+                215,
+                198,
+                182,
+                165,
+                164,
+                163,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                1,
+                1,
+                0,
+                0,
+                0,
+                5,
+                5,
+                5,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 246,
+                  "to": 230,
+                  "direction": 1,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 230,
+                  "to": 215,
+                  "direction": 1,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 4,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 215,
+                  "to": 198,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 6,
+                  "cumulativeFuel": 4
+                },
+                {
+                  "from": 198,
+                  "to": 182,
+                  "direction": 0,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 7,
+                  "cumulativeFuel": 6
+                },
+                {
+                  "from": 182,
+                  "to": 165,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 9,
+                  "cumulativeFuel": 8
+                },
+                {
+                  "from": 165,
+                  "to": 164,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 12,
+                  "cumulativeFuel": 10
+                },
+                {
+                  "from": 164,
+                  "to": 163,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 14,
+                  "cumulativeFuel": 11
+                },
+                {
+                  "from": 163,
+                  "to": 162,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 17,
+                  "cumulativeFuel": 13
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 21,
+                  "cumulativeFuel": 15
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 25,
+                  "cumulativeFuel": 17
+                }
+              ],
+              "fullDayWaitAfterArrival": 18
+            },
+            "minimumFuel": {
+              "timeSteps": 25,
+              "fuelRequired": 17,
+              "withinDay": true,
+              "cells": [
+                246,
+                230,
+                215,
+                198,
+                182,
+                165,
+                164,
+                163,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                1,
+                1,
+                0,
+                0,
+                0,
+                5,
+                5,
+                5,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 246,
+                  "to": 230,
+                  "direction": 1,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 230,
+                  "to": 215,
+                  "direction": 1,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 4,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 215,
+                  "to": 198,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 6,
+                  "cumulativeFuel": 4
+                },
+                {
+                  "from": 198,
+                  "to": 182,
+                  "direction": 0,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 7,
+                  "cumulativeFuel": 6
+                },
+                {
+                  "from": 182,
+                  "to": 165,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 9,
+                  "cumulativeFuel": 8
+                },
+                {
+                  "from": 165,
+                  "to": 164,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 12,
+                  "cumulativeFuel": 10
+                },
+                {
+                  "from": 164,
+                  "to": 163,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 14,
+                  "cumulativeFuel": 11
+                },
+                {
+                  "from": 163,
+                  "to": 162,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 17,
+                  "cumulativeFuel": 13
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 21,
+                  "cumulativeFuel": 15
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 25,
+                  "cumulativeFuel": 17
+                }
+              ],
+              "fullDayWaitAfterArrival": 18
+            },
+            "withoutRefill": null,
+            "targetReachableWithoutRefill": false
+          },
+          {
+            "agent": 1,
+            "start": {
+              "kind": 1,
+              "pos": 54,
+              "fuel": 34
+            },
+            "end": {
+              "kind": 1,
+              "pos": 165,
+              "fuel": 34
+            },
+            "collectedBrands": [],
+            "collectedUdon": 0,
+            "collectAndRefillEvents": [],
+            "minimumRecordedFuel": 34,
+            "submittedPlan": [
+              1,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              5,
+              4,
+              4,
+              5,
+              5,
+              5,
+              5,
+              5,
+              0,
+              -2
+            ]
+          },
+          {
+            "agent": 2,
+            "start": {
+              "kind": 0,
+              "pos": 132,
+              "fuel": 32
+            },
+            "end": {
+              "kind": 0,
+              "pos": 208,
+              "fuel": 9
+            },
+            "collectedBrands": [
+              2,
+              5,
+              7,
+              10
+            ],
+            "collectedUdon": 4,
+            "collectAndRefillEvents": [
+              {
+                "step": 1,
+                "pos": 132,
+                "kind": "collect",
+                "agent": 2,
+                "spot": 12,
+                "brand": 7
+              },
+              {
+                "step": 12,
+                "pos": 112,
+                "kind": "collect",
+                "agent": 2,
+                "spot": 9,
+                "brand": 5
+              },
+              {
+                "step": 32,
+                "pos": 194,
+                "kind": "collect",
+                "agent": 2,
+                "spot": 15,
+                "brand": 10
+              },
+              {
+                "step": 39,
+                "pos": 208,
+                "kind": "collect",
+                "agent": 2,
+                "spot": 4,
+                "brand": 2
+              }
+            ],
+            "minimumRecordedFuel": 9,
+            "submittedPlan": [
+              0,
+              0,
+              5,
+              5,
+              4,
+              5,
+              3,
+              2,
+              2,
+              3,
+              4,
+              4,
+              3,
+              5,
+              5,
+              4,
+              -4
+            ],
+            "timeOnly": {
+              "timeSteps": 16,
+              "fuelRequired": 9,
+              "withinDay": true,
+              "cells": [
+                132,
+                148,
+                163,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                4,
+                4,
+                5,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 132,
+                  "to": 148,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 148,
+                  "to": 163,
+                  "direction": 4,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 5,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 163,
+                  "to": 162,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 5
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 12,
+                  "cumulativeFuel": 7
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 16,
+                  "cumulativeFuel": 9
+                }
+              ],
+              "fullDayWaitAfterArrival": 27
+            },
+            "minimumFuel": {
+              "timeSteps": 16,
+              "fuelRequired": 9,
+              "withinDay": true,
+              "cells": [
+                132,
+                148,
+                163,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                4,
+                4,
+                5,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 132,
+                  "to": 148,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 148,
+                  "to": 163,
+                  "direction": 4,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 5,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 163,
+                  "to": 162,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 5
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 12,
+                  "cumulativeFuel": 7
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 16,
+                  "cumulativeFuel": 9
+                }
+              ],
+              "fullDayWaitAfterArrival": 27
+            },
+            "withoutRefill": {
+              "timeSteps": 16,
+              "fuelRequired": 9,
+              "withinDay": true,
+              "cells": [
+                132,
+                148,
+                163,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                4,
+                4,
+                5,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 132,
+                  "to": 148,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 148,
+                  "to": 163,
+                  "direction": 4,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 5,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 163,
+                  "to": 162,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 5
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 12,
+                  "cumulativeFuel": 7
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 16,
+                  "cumulativeFuel": 9
+                }
+              ],
+              "fullDayWaitAfterArrival": 27
+            },
+            "targetReachableWithoutRefill": true
+          },
+          {
+            "agent": 3,
+            "start": {
+              "kind": 0,
+              "pos": 31,
+              "fuel": 15
+            },
+            "end": {
+              "kind": 0,
+              "pos": 168,
+              "fuel": 18
+            },
+            "collectedBrands": [
+              1,
+              4,
+              6,
+              8,
+              9
+            ],
+            "collectedUdon": 5,
+            "collectAndRefillEvents": [
+              {
+                "step": 1,
+                "pos": 31,
+                "kind": "collect",
+                "agent": 3,
+                "spot": 2,
+                "brand": 1
+              },
+              {
+                "step": 13,
+                "pos": 124,
+                "kind": "collect",
+                "agent": 3,
+                "spot": 10,
+                "brand": 6
+              },
+              {
+                "step": 19,
+                "pos": 141,
+                "kind": "refill",
+                "agent": 3,
+                "amount": 33
+              },
+              {
+                "step": 25,
+                "pos": 191,
+                "kind": "collect",
+                "agent": 3,
+                "spot": 14,
+                "brand": 9
+              },
+              {
+                "step": 29,
+                "pos": 173,
+                "kind": "collect",
+                "agent": 3,
+                "spot": 8,
+                "brand": 4
+              },
+              {
+                "step": 42,
+                "pos": 168,
+                "kind": "collect",
+                "agent": 3,
+                "spot": 13,
+                "brand": 8
+              }
+            ],
+            "minimumRecordedFuel": 1,
+            "submittedPlan": [
+              4,
+              4,
+              4,
+              4,
+              5,
+              4,
+              3,
+              2,
+              3,
+              3,
+              3,
+              3,
+              0,
+              5,
+              5,
+              5,
+              4,
+              5,
+              5,
+              0,
+              -1
+            ],
+            "timeOnly": {
+              "timeSteps": 43,
+              "fuelRequired": 34,
+              "withinDay": true,
+              "cells": [
+                31,
+                14,
+                13,
+                12,
+                28,
+                43,
+                42,
+                41,
+                40,
+                39,
+                38,
+                54,
+                69,
+                85,
+                100,
+                116,
+                131,
+                147,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                0,
+                5,
+                5,
+                4,
+                4,
+                5,
+                5,
+                5,
+                5,
+                5,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 31,
+                  "to": 14,
+                  "direction": 0,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 14,
+                  "to": 13,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 4,
+                  "cumulativeFuel": 2
+                },
+                {
+                  "from": 13,
+                  "to": 12,
+                  "direction": 5,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 5,
+                  "cumulativeFuel": 4
+                },
+                {
+                  "from": 12,
+                  "to": 28,
+                  "direction": 4,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 6,
+                  "cumulativeFuel": 6
+                },
+                {
+                  "from": 28,
+                  "to": 43,
+                  "direction": 4,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 7,
+                  "cumulativeFuel": 8
+                },
+                {
+                  "from": 43,
+                  "to": 42,
+                  "direction": 5,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 10
+                },
+                {
+                  "from": 42,
+                  "to": 41,
+                  "direction": 5,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 9,
+                  "cumulativeFuel": 12
+                },
+                {
+                  "from": 41,
+                  "to": 40,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 11,
+                  "cumulativeFuel": 13
+                },
+                {
+                  "from": 40,
+                  "to": 39,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 14,
+                  "cumulativeFuel": 15
+                },
+                {
+                  "from": 39,
+                  "to": 38,
+                  "direction": 5,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 15,
+                  "cumulativeFuel": 17
+                },
+                {
+                  "from": 38,
+                  "to": 54,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 17,
+                  "cumulativeFuel": 19
+                },
+                {
+                  "from": 54,
+                  "to": 69,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 19,
+                  "cumulativeFuel": 21
+                },
+                {
+                  "from": 69,
+                  "to": 85,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 21,
+                  "cumulativeFuel": 23
+                },
+                {
+                  "from": 85,
+                  "to": 100,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 23,
+                  "cumulativeFuel": 24
+                },
+                {
+                  "from": 100,
+                  "to": 116,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 25,
+                  "cumulativeFuel": 25
+                },
+                {
+                  "from": 116,
+                  "to": 131,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 27,
+                  "cumulativeFuel": 26
+                },
+                {
+                  "from": 131,
+                  "to": 147,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 31,
+                  "cumulativeFuel": 28
+                },
+                {
+                  "from": 147,
+                  "to": 162,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 35,
+                  "cumulativeFuel": 30
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 39,
+                  "cumulativeFuel": 32
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 43,
+                  "cumulativeFuel": 34
+                }
+              ],
+              "fullDayWaitAfterArrival": 0
+            },
+            "minimumFuel": {
+              "timeSteps": 46,
+              "fuelRequired": 30,
+              "withinDay": false,
+              "cells": [
+                31,
+                30,
+                29,
+                28,
+                27,
+                26,
+                25,
+                24,
+                23,
+                38,
+                54,
+                69,
+                85,
+                100,
+                116,
+                131,
+                147,
+                162,
+                178,
+                194
+              ],
+              "directions": [
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                5,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                3
+              ],
+              "edges": [
+                {
+                  "from": 31,
+                  "to": 30,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 2,
+                  "cumulativeFuel": 1
+                },
+                {
+                  "from": 30,
+                  "to": 29,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 4,
+                  "cumulativeFuel": 3
+                },
+                {
+                  "from": 29,
+                  "to": 28,
+                  "direction": 5,
+                  "duration": 3,
+                  "fuel": 2,
+                  "arrivalStep": 7,
+                  "cumulativeFuel": 5
+                },
+                {
+                  "from": 28,
+                  "to": 27,
+                  "direction": 5,
+                  "duration": 1,
+                  "fuel": 2,
+                  "arrivalStep": 8,
+                  "cumulativeFuel": 7
+                },
+                {
+                  "from": 27,
+                  "to": 26,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 10,
+                  "cumulativeFuel": 8
+                },
+                {
+                  "from": 26,
+                  "to": 25,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 12,
+                  "cumulativeFuel": 9
+                },
+                {
+                  "from": 25,
+                  "to": 24,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 14,
+                  "cumulativeFuel": 10
+                },
+                {
+                  "from": 24,
+                  "to": 23,
+                  "direction": 5,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 16,
+                  "cumulativeFuel": 12
+                },
+                {
+                  "from": 23,
+                  "to": 38,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 18,
+                  "cumulativeFuel": 13
+                },
+                {
+                  "from": 38,
+                  "to": 54,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 20,
+                  "cumulativeFuel": 15
+                },
+                {
+                  "from": 54,
+                  "to": 69,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 22,
+                  "cumulativeFuel": 17
+                },
+                {
+                  "from": 69,
+                  "to": 85,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 2,
+                  "arrivalStep": 24,
+                  "cumulativeFuel": 19
+                },
+                {
+                  "from": 85,
+                  "to": 100,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 26,
+                  "cumulativeFuel": 20
+                },
+                {
+                  "from": 100,
+                  "to": 116,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 28,
+                  "cumulativeFuel": 21
+                },
+                {
+                  "from": 116,
+                  "to": 131,
+                  "direction": 4,
+                  "duration": 2,
+                  "fuel": 1,
+                  "arrivalStep": 30,
+                  "cumulativeFuel": 22
+                },
+                {
+                  "from": 131,
+                  "to": 147,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 34,
+                  "cumulativeFuel": 24
+                },
+                {
+                  "from": 147,
+                  "to": 162,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 38,
+                  "cumulativeFuel": 26
+                },
+                {
+                  "from": 162,
+                  "to": 178,
+                  "direction": 4,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 42,
+                  "cumulativeFuel": 28
+                },
+                {
+                  "from": 178,
+                  "to": 194,
+                  "direction": 3,
+                  "duration": 4,
+                  "fuel": 2,
+                  "arrivalStep": 46,
+                  "cumulativeFuel": 30
+                }
+              ],
+              "fullDayWaitAfterArrival": 0
+            },
+            "withoutRefill": null,
+            "targetReachableWithoutRefill": false
+          }
+        ]
+      },
+      "replayRuleChecks": {
+        "days": 8,
+        "newMoveReservations": 736,
+        "fuelBalances": 1684,
+        "collectionScoreBalances": 8
+      }
+    }
+  },
+  "comparison": {
+    "sameKinds": true,
+    "day2StartsEqual": true,
+    "day3StartsEqual": false,
+    "day3TrafficDifferences": [
+      {
+        "cell": 36,
+        "C010": 0,
+        "D0": 1
+      },
+      {
+        "cell": 38,
+        "C010": 2,
+        "D0": 1
+      },
+      {
+        "cell": 39,
+        "C010": 1,
+        "D0": 0
+      },
+      {
+        "cell": 54,
+        "C010": 2,
+        "D0": 1
+      },
+      {
+        "cell": 70,
+        "C010": 1,
+        "D0": 0
+      },
+      {
+        "cell": 96,
+        "C010": 2,
+        "D0": 1
+      },
+      {
+        "cell": 118,
+        "C010": 1,
+        "D0": 0
+      },
+      {
+        "cell": 120,
+        "C010": 1,
+        "D0": 0
+      },
+      {
+        "cell": 134,
+        "C010": 0,
+        "D0": 1
+      },
+      {
+        "cell": 141,
+        "C010": 1,
+        "D0": 2
+      },
+      {
+        "cell": 190,
+        "C010": 1,
+        "D0": 2
+      },
+      {
+        "cell": 198,
+        "C010": 1,
+        "D0": 0
+      },
+      {
+        "cell": 220,
+        "C010": 1,
+        "D0": 0
+      },
+      {
+        "cell": 235,
+        "C010": 1,
+        "D0": 0
+      },
+      {
+        "cell": 251,
+        "C010": 1,
+        "D0": 0
+      }
+    ],
+    "C010MinusD0Totals": {
+      "uniqueBrands": 0,
+      "dailyBrands": -1,
+      "udon": -1
+    },
+    "dailyDifferences": [
+      {
+        "day": 1,
+        "dailyBrands": 0,
+        "udon": 0
+      },
+      {
+        "day": 2,
+        "dailyBrands": 0,
+        "udon": 0
+      },
+      {
+        "day": 3,
+        "dailyBrands": -1,
+        "udon": -1
+      },
+      {
+        "day": 4,
+        "dailyBrands": 0,
+        "udon": 1
+      },
+      {
+        "day": 5,
+        "dailyBrands": 0,
+        "udon": 0
+      },
+      {
+        "day": 6,
+        "dailyBrands": 0,
+        "udon": 0
+      },
+      {
+        "day": 7,
+        "dailyBrands": 0,
+        "udon": 0
+      },
+      {
+        "day": 8,
+        "dailyBrands": 0,
+        "udon": -1
+      }
+    ]
+  },
+  "method": {
+    "graph": "All traversable cells with the six public hex neighbors; edge time and fuel use the departure cell and that run/day actual traffic. Terrain 0=(2,1), terrain 1=([1,2,4][traffic],2), terrain 2=(3,2); terrain 3 blocked.",
+    "timeOnly": "Dijkstra lexicographic (time,fuel), no fuel cap.",
+    "minimumFuel": "Dijkstra lexicographic (fuel,time).",
+    "withoutRefill": "Dijkstra state (cell,fuel-used), reject cumulative fuel above that collector initial fuel; earliest arrival over all remaining labels.",
+    "collection": "Arrival at or before final step is allowed; positive stock target is unvisited in the actual C010 plan. Extra time can be filled with one wait.",
+    "validation": "All 16 replay days: every new move reservation neighbor/duration/fuelCost/arrival, every frame fuel balance, daily collection count and daily score delta. Every witness edge and cumulative time/fuel verified.",
+    "notSolved": "No joint replanning or supplier-route search; reachability witnesses are only single-car target visits, and do not prove preserving other brands/balls/next-day position."
+  },
+  "objectiveReadback": {
+    "primary": {
+      "unseenBrand": 100000,
+      "dailyBrand": 1500,
+      "ball": 20,
+      "dailyBrandEquivalentBalls": 75
+    },
+    "previousOutcomeModeBallWeight": 12,
+    "terminal": {
+      "reserveWeightsAcrossWorkers": [
+        4,
+        8,
+        12,
+        15,
+        20,
+        30,
+        45
+      ],
+      "canonicalReserveWeight": 15,
+      "mobilityShortfallBasePenalty": 1600,
+      "mobilityShortfallPerFuelPenalty": 20,
+      "otherTerms": "remaining fuel, supplier reach fuel deficit, low-fuel penalty, route completion time, incomplete-route/meeting penalties"
+    },
+    "rolloutEligible": "limit >= 3500 ms and another day exists; actual entry additionally depends on remaining budget and a valid simulated day",
+    "rolloutComparison": "first_raw + 0.75 * worst_next_canonical + 0.05 * (first_canonical - first_raw); otherwise first_canonical",
+    "currentDayPrimaryEvaluateFunctionIdenticalD0C010": true,
+    "brand10AlreadySeenBeforeDay3Both": true,
+    "observedDay3Raw": {
+      "C010": 15280,
+      "D0": 16800,
+      "C010MinusD0": -1520
+    },
+    "interpretation": "Primary raw does not prefer losing one daily brand for a few balls. However route/end-state penalties and next-day rollout are not a lexicographic current-day score. These different-start-state replays do not establish that a feasible all-brand candidate was generated and rejected, nor that search failed to find one."
+  },
+  "logEvidenceScope": {
+    "reviewed": [
+      {
+        "path": "solver/docs/distributed/resume-20261009/evaluations/C010-on-short-01/v1-solver-stderr.json",
+        "bytes": 5316,
+        "sha256": "ee8f59dc05bf54e50765b914200912c61c17620ba7b6f5481bc4c2384e7c2cd7"
+      },
+      {
+        "path": "solver/docs/distributed/resume-20261009/evaluations/C010-on-short-01/v2-completion.json",
+        "bytes": 39083,
+        "sha256": "ed5bacde5bc9e6f4fd6a48371072f0792265a87950286b5f18303ebee75d4b4d"
+      },
+      {
+        "path": "solver/docs/distributed/resume-20261009/evaluations/C010-on-short-01/v3-completion.json",
+        "bytes": 40259,
+        "sha256": "021fa844eab2cca2ebf15f4d095802f4e78d74850f30ec7ea87bf1b29d4978fe"
+      }
+    ],
+    "localTeam0LogContainsPlannerCandidateScores": false,
+    "v1CapturedCoordinatorLogScope": "final seed 11 session only, not seed 6",
+    "retainedWorkerDiagnosticRows": "participation/cross-elite counters; not a complete alternative-solution list or its objective decomposition",
+    "conclusion": "Cannot distinguish intentional objective tradeoff from ungenerated better candidate using the inspected replay/log records. No remote log read was performed."
+  },
+  "ruleAndOwnSourceFiles": [
+    {
+      "path": "common/src/model.rs",
+      "bytes": 10819,
+      "sha256": "72ec763bb3aad8ebebace68ed5c3c86d48c3066df7e21797c8c3b10f380fc4e1"
+    },
+    {
+      "path": "common/src/engine.rs",
+      "bytes": 18207,
+      "sha256": "e02a3335c87475295692a8d6de54110cb33466279cddd94957c57f645f698a49"
+    },
+    {
+      "path": "solver/distributed/solver/planner.rs",
+      "bytes": 110822,
+      "sha256": "11e043e33018dee34f41f295d6ae1500497b0bfc7c8c33d5b253a5621587461a"
+    },
+    {
+      "path": "solver/distributed/pool.rs",
+      "bytes": 17098,
+      "sha256": "74a981b5f1423b16e07b8f0e888e00c797b41b670140921112b874b4a6b27214"
+    },
+    {
+      "path": "solver/distributed/runtime.rs",
+      "bytes": 21899,
+      "sha256": "a8ebea03ba5ef47dafe65305488bb2c60af8a1a7e9c6efaf4ae386dada045922"
+    },
+    {
+      "path": "solver/distributed-candidates/c010-cross-elite/solver/planner.rs",
+      "bytes": 111646,
+      "sha256": "4676eac476fae22d09030085f225a5435ab2cc04bd6bd310cf4e075280b39ed4"
+    },
+    {
+      "path": "solver/distributed-candidates/c010-cross-elite/pool.rs",
+      "bytes": 17586,
+      "sha256": "e6b06bb34ee875558e84306c2479654d29f509febf55b2ec1c9d1674d9447f9b"
+    },
+    {
+      "path": "solver/distributed-candidates/c010-cross-elite/cross_elite.rs",
+      "bytes": 17447,
+      "sha256": "4e9aedecf208e140673b5181ca18407e484bac4c3c29f9d7631f02d1f04c153d"
+    }
+  ],
+  "conclusions": [
+    "The single daily-brand deficit occurs on day 3, brand 10, cell 194. C010 leaves all 3 stock; D0 collects at step 32 using agent 2.",
+    "C010 agents 2 and 3 can independently reach that store from the actual day-3 start and actual traffic without any refill, in 28/24 steps and 19/15 fuel. The start-state/traffic/fuel constraints alone do not make brand 10 impossible.",
+    "The chosen C010 routes visit other brands; preserving all their other brands while adding brand 10 is unproved.",
+    "D0 day-3 state and traffic differ. This is not a same-state solver A/B, and does not establish a cross-elite causal effect.",
+    "The inspected records do not distinguish an objective tradeoff from failure to discover a better joint candidate."
+  ]
+}

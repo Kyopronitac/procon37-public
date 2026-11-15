@@ -1,0 +1,429 @@
+{
+  "v1": {
+    "hostname": "VOIDLINUX-1",
+    "cpus": {
+      "policy11": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy8": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy6": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy28": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy18": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy4": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy26": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy16": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy2": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy24": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy14": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy0": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy22": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy12": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy9": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy30": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy20": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy10": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy7": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy29": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy19": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy5": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy27": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy17": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy3": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy25": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy15": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy1": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy23": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy13": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy31": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy21": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      }
+    },
+    "network": "lo               UNKNOWN        127.0.0.1/8 ::1/128 \nenp3s0           UP             192.168.0.11/24 \nwlp4s0           DOWN           \n",
+    "numaNodes": [
+      "node0"
+    ]
+  },
+  "v2": {
+    "hostname": "VOIDLINUX-2",
+    "cpus": {
+      "policy11": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy8": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy6": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy4": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy2": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy14": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy0": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy12": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy9": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy10": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy7": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy5": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy3": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy15": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy1": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy13": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance",
+        "scaling_driver": "amd-pstate-epp"
+      }
+    },
+    "network": "lo               UNKNOWN        127.0.0.1/8 ::1/128 \nenp4s0           UP             192.168.0.22/24 \nwlo1             DOWN           \n",
+    "numaNodes": [
+      "node0"
+    ]
+  },
+  "v3": {
+    "hostname": "VOIDLINUX-3",
+    "cpus": {
+      "policy11": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy8": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy6": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy28": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy18": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy4": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy26": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy16": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy2": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy24": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy14": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy0": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy22": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy12": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy9": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy30": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy20": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy10": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy7": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy29": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy19": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy5": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy27": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy17": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy3": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy25": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy15": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy1": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy23": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy13": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy31": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      },
+      "policy21": {
+        "scaling_governor": "powersave",
+        "energy_performance_preference": "balance_performance",
+        "scaling_driver": "amd-pstate-epp"
+      }
+    },
+    "network": "lo               UNKNOWN        127.0.0.1/8 ::1/128 \nenp3s0           UP             192.168.0.33/24 \nenp4s0           DOWN           \nenp5s0f0         DOWN           \nenp5s0f1         DOWN           \nwlp6s0           DOWN           \n",
+    "numaNodes": [
+      "node0"
+    ]
+  }
+}

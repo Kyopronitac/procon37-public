@@ -1,0 +1,79 @@
+{
+  "capturedAtUtc": "2026-10-09T02:29:52.657703+00:00",
+  "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0",
+  "logs": [
+    {
+      "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/stderr.log",
+      "capturedStartByte": 0,
+      "capturedEndByte": 162809,
+      "sha256OfCapturedByteRange": "d8ae64379cdd536635480b4b9c427aa850942cdfe148e3cf75cadd441955a09b",
+      "mtimeNsAtOpen": 1791512968406592191,
+      "totalLines": 799,
+      "diagnosticLines": [
+        "dist mode=coordinator total_threads=32 cluster_threads=80 search_threads=77 session=1791512906098051467 cross_elite=true",
+        "dist peer=192.168.0.22:39370 request=1 completed=15/15 elapsed_ms=7861 rx_bytes=14078 tx_bytes=3694",
+        "dist peer=192.168.0.33:39370 request=1 completed=31/31 elapsed_ms=7928 rx_bytes=14114 tx_bytes=3694",
+        "dist request=1 external_request=0 phase=select input_digest=f9ee3a0ac6b16910 selected_worker=2 value=76525.937 local_completed=31/31 remote_results=2/2 elapsed_ms=7993 state_digest=84860d12d9cf9261",
+        "dist peer=192.168.0.22:39370 request=2 completed=15/15 elapsed_ms=8450 rx_bytes=81560 tx_bytes=85686",
+        "dist peer=192.168.0.33:39370 request=2 completed=31/31 elapsed_ms=8518 rx_bytes=81677 tx_bytes=97137",
+        "dist request=2 external_request=1 phase=plan input_digest=e24024728ad69b60 selected_worker=24 value=76556.163 local_completed=31/31 remote_results=2/2 elapsed_ms=8587 state_digest=0aa884d67e4ef1db",
+        "dist peer=192.168.0.22:39370 request=3 completed=15/15 elapsed_ms=8443 rx_bytes=165055 tx_bytes=220022",
+        "dist peer=192.168.0.33:39370 request=3 completed=31/31 elapsed_ms=8511 rx_bytes=188083 tx_bytes=220010",
+        "dist request=3 external_request=2 phase=plan input_digest=8fd472fcfcee9b12 selected_worker=48 value=75668.291 local_completed=31/31 remote_results=2/2 elapsed_ms=8589 state_digest=78fd99ce444c820c",
+        "dist peer=192.168.0.22:39370 request=4 completed=15/15 elapsed_ms=8441 rx_bytes=241005 tx_bytes=324791",
+        "dist peer=192.168.0.33:39370 request=4 completed=31/31 elapsed_ms=8510 rx_bytes=275425 tx_bytes=313414",
+        "dist request=4 external_request=3 phase=plan input_digest=24b22030b47b1d3a selected_worker=73 value=75745.297 local_completed=31/31 remote_results=2/2 elapsed_ms=8576 state_digest=caea693200e7d96e",
+        "dist peer=192.168.0.22:39370 request=5 completed=15/15 elapsed_ms=8449 rx_bytes=362616 tx_bytes=467980",
+        "dist peer=192.168.0.33:39370 request=5 completed=31/31 elapsed_ms=8519 rx_bytes=374169 tx_bytes=456624",
+        "dist request=5 external_request=4 phase=plan input_digest=6ea3cbd48df2db54 selected_worker=45 value=76042.380 local_completed=31/31 remote_results=2/2 elapsed_ms=8589 state_digest=776bc48bd0cffb96",
+        "dist peer=192.168.0.22:39370 request=6 completed=15/15 elapsed_ms=8116 rx_bytes=483542 tx_bytes=668752",
+        "dist peer=192.168.0.33:39370 request=6 completed=31/31 elapsed_ms=8180 rx_bytes=506636 tx_bytes=657404",
+        "dist request=6 external_request=5 phase=plan input_digest=22e5f5ec3dbc7f03 selected_worker=17 value=43479.338 local_completed=31/31 remote_results=2/2 elapsed_ms=8268 state_digest=7024923af0140075"
+      ],
+      "crossEliteLines": [
+        "cross_elite request=2 origin=0 published=4 received=6 rejected=0 context_mismatch=0 imports=12 improved=7 sent=11 oversized=0",
+        "cross_elite request=3 origin=0 published=33 received=10 rejected=0 context_mismatch=0 imports=24 improved=9 sent=15 oversized=0",
+        "cross_elite request=4 origin=0 published=23 received=7 rejected=0 context_mismatch=0 imports=12 improved=1 sent=9 oversized=0",
+        "cross_elite request=5 origin=0 published=15 received=12 rejected=0 context_mismatch=0 imports=36 improved=10 sent=16 oversized=0",
+        "cross_elite request=6 origin=0 published=30 received=15 rejected=0 context_mismatch=0 imports=40 improved=8 sent=26 oversized=0"
+      ],
+      "sharedGraphLines": [],
+      "flags": {
+        "timeout": {
+          "count": 0,
+          "samples": []
+        },
+        "deadline": {
+          "count": 0,
+          "samples": []
+        },
+        "fallback": {
+          "count": 0,
+          "samples": []
+        },
+        "panic": {
+          "count": 0,
+          "samples": []
+        },
+        "rejected": {
+          "count": 5,
+          "samples": [
+            "cross_elite request=2 origin=0 published=4 received=6 rejected=0 context_mismatch=0 imports=12 improved=7 sent=11 oversized=0",
+            "cross_elite request=3 origin=0 published=33 received=10 rejected=0 context_mismatch=0 imports=24 improved=9 sent=15 oversized=0",
+            "cross_elite request=4 origin=0 published=23 received=7 rejected=0 context_mismatch=0 imports=12 improved=1 sent=9 oversized=0",
+            "cross_elite request=5 origin=0 published=15 received=12 rejected=0 context_mismatch=0 imports=36 improved=10 sent=16 oversized=0",
+            "cross_elite request=6 origin=0 published=30 received=15 rejected=0 context_mismatch=0 imports=40 improved=8 sent=26 oversized=0"
+          ]
+        },
+        "unavailable": {
+          "count": 0,
+          "samples": []
+        },
+        "disconnected": {
+          "count": 0,
+          "samples": []
+        }
+      }
+    }
+  ]
+}

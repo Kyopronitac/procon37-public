@@ -1,0 +1,2772 @@
+{
+  "date": "2026-10-09T01:45:15.849339+00:00",
+  "runId": "1791506866153064781-104560",
+  "seed": 0,
+  "format": "first",
+  "score": {
+    "uniqueBrands": 12,
+    "dailyBrands": 56,
+    "udon": 68
+  },
+  "kinds": [
+    0,
+    0,
+    0,
+    1
+  ],
+  "scope": "Read saved public problem/replay and public common rules; small Python calculation pinned CPU1; no solver, build or remote execution.",
+  "method": {
+    "timeOnly": "Dijkstra minimizing (move time, fuel spent) lexicographically; ignores fuel availability.",
+    "withoutRefill": "Dijkstra over (cell, fuelSpent), bounded by actual starting fuel. Minimizes move time then fuel. Refills are not used, so a found path is a concrete feasible single-collector witness; absence is not an impossibility proof when a supplier can help.",
+    "movement": "Public hex adjacency; departure terrain0 2steps/1fuel, terrain2 3steps/2fuel, road status0/1/2 1/2/4steps and2fuel; ponds excluded.",
+    "collection": "After move reflection, including arrival on the final step. A starting-shop collection requires step1. Suppliers excluded. Fuel is charged on move reflection; no-refill witnesses have enough fuel throughout.",
+    "scopeLimitation": "All other collectors can wait, so single-brand witnesses are feasible under the observed daily traffic. This does not prove that the missing brand can be added while preserving all other brands or balls, or that next-day traffic remains unchanged."
+  },
+  "allMissingDaysHaveNoRefillWitness": true,
+  "days": [
+    {
+      "day": 2,
+      "steps": 36,
+      "missingBrands": [
+        10
+      ],
+      "missingShops": [
+        {
+          "brand": 10,
+          "pos": 241,
+          "stocks": 3,
+          "index": 14,
+          "remainingStock": 3
+        }
+      ],
+      "traffic": [
+        {
+          "pos": 9,
+          "status": 0
+        },
+        {
+          "pos": 10,
+          "status": 0
+        },
+        {
+          "pos": 19,
+          "status": 1
+        },
+        {
+          "pos": 20,
+          "status": 1
+        },
+        {
+          "pos": 21,
+          "status": 0
+        },
+        {
+          "pos": 24,
+          "status": 0
+        },
+        {
+          "pos": 27,
+          "status": 1
+        },
+        {
+          "pos": 28,
+          "status": 1
+        },
+        {
+          "pos": 29,
+          "status": 0
+        },
+        {
+          "pos": 30,
+          "status": 0
+        },
+        {
+          "pos": 34,
+          "status": 0
+        },
+        {
+          "pos": 37,
+          "status": 0
+        },
+        {
+          "pos": 38,
+          "status": 0
+        },
+        {
+          "pos": 39,
+          "status": 0
+        },
+        {
+          "pos": 41,
+          "status": 0
+        },
+        {
+          "pos": 50,
+          "status": 0
+        },
+        {
+          "pos": 58,
+          "status": 0
+        },
+        {
+          "pos": 65,
+          "status": 0
+        },
+        {
+          "pos": 74,
+          "status": 0
+        },
+        {
+          "pos": 82,
+          "status": 0
+        },
+        {
+          "pos": 83,
+          "status": 0
+        },
+        {
+          "pos": 91,
+          "status": 0
+        },
+        {
+          "pos": 94,
+          "status": 0
+        },
+        {
+          "pos": 96,
+          "status": 0
+        },
+        {
+          "pos": 97,
+          "status": 0
+        },
+        {
+          "pos": 99,
+          "status": 0
+        },
+        {
+          "pos": 100,
+          "status": 0
+        },
+        {
+          "pos": 104,
+          "status": 0
+        },
+        {
+          "pos": 105,
+          "status": 0
+        },
+        {
+          "pos": 106,
+          "status": 0
+        },
+        {
+          "pos": 107,
+          "status": 0
+        },
+        {
+          "pos": 108,
+          "status": 0
+        },
+        {
+          "pos": 109,
+          "status": 0
+        },
+        {
+          "pos": 110,
+          "status": 0
+        },
+        {
+          "pos": 112,
+          "status": 0
+        },
+        {
+          "pos": 117,
+          "status": 0
+        },
+        {
+          "pos": 120,
+          "status": 0
+        },
+        {
+          "pos": 127,
+          "status": 0
+        },
+        {
+          "pos": 128,
+          "status": 0
+        },
+        {
+          "pos": 131,
+          "status": 0
+        },
+        {
+          "pos": 132,
+          "status": 0
+        },
+        {
+          "pos": 136,
+          "status": 0
+        },
+        {
+          "pos": 137,
+          "status": 0
+        },
+        {
+          "pos": 140,
+          "status": 0
+        },
+        {
+          "pos": 141,
+          "status": 0
+        },
+        {
+          "pos": 142,
+          "status": 0
+        },
+        {
+          "pos": 145,
+          "status": 0
+        },
+        {
+          "pos": 146,
+          "status": 1
+        },
+        {
+          "pos": 154,
+          "status": 0
+        },
+        {
+          "pos": 156,
+          "status": 1
+        },
+        {
+          "pos": 162,
+          "status": 1
+        },
+        {
+          "pos": 170,
+          "status": 1
+        },
+        {
+          "pos": 172,
+          "status": 1
+        },
+        {
+          "pos": 179,
+          "status": 1
+        },
+        {
+          "pos": 180,
+          "status": 1
+        },
+        {
+          "pos": 181,
+          "status": 0
+        },
+        {
+          "pos": 186,
+          "status": 1
+        },
+        {
+          "pos": 189,
+          "status": 1
+        },
+        {
+          "pos": 196,
+          "status": 1
+        },
+        {
+          "pos": 202,
+          "status": 1
+        },
+        {
+          "pos": 205,
+          "status": 1
+        },
+        {
+          "pos": 206,
+          "status": 1
+        },
+        {
+          "pos": 213,
+          "status": 1
+        },
+        {
+          "pos": 219,
+          "status": 1
+        },
+        {
+          "pos": 228,
+          "status": 1
+        },
+        {
+          "pos": 235,
+          "status": 1
+        },
+        {
+          "pos": 236,
+          "status": 0
+        },
+        {
+          "pos": 242,
+          "status": 1
+        },
+        {
+          "pos": 243,
+          "status": 1
+        },
+        {
+          "pos": 244,
+          "status": 1
+        },
+        {
+          "pos": 245,
+          "status": 1
+        },
+        {
+          "pos": 246,
+          "status": 1
+        },
+        {
+          "pos": 247,
+          "status": 1
+        },
+        {
+          "pos": 248,
+          "status": 1
+        },
+        {
+          "pos": 253,
+          "status": 0
+        }
+      ],
+      "trafficStatusCounts": {
+        "0": 47,
+        "1": 28
+      },
+      "supplierStart": {
+        "kind": 1,
+        "pos": 120,
+        "fuel": 40
+      },
+      "actualDailyBrands": 11,
+      "actualUdon": 14,
+      "collectors": [
+        {
+          "agent": 0,
+          "start": {
+            "kind": 0,
+            "pos": 14,
+            "fuel": 11
+          },
+          "end": {
+            "kind": 0,
+            "pos": 36,
+            "fuel": 40
+          },
+          "minimumObservedFuel": 3,
+          "collectedBrands": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "collections": [
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 4,
+              "brand": 2,
+              "step": 1,
+              "cell": 14
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 5,
+              "brand": 3,
+              "step": 2,
+              "cell": 31
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 8,
+              "brand": 5,
+              "step": 13,
+              "cell": 93
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 3,
+              "brand": 1,
+              "step": 21,
+              "cell": 25
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 2,
+              "brand": 1,
+              "step": 24,
+              "cell": 7
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 7,
+              "brand": 4,
+              "step": 28,
+              "cell": 55
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 6,
+              "brand": 4,
+              "step": 32,
+              "cell": 36
+            }
+          ],
+          "refills": [
+            {
+              "kind": "refill",
+              "agent": 0,
+              "amount": 39,
+              "step": 13,
+              "cell": 93
+            },
+            {
+              "kind": "refill",
+              "agent": 0,
+              "amount": 23,
+              "step": 36,
+              "cell": 36
+            }
+          ],
+          "pathsToMissingShops": [
+            {
+              "brand": 10,
+              "targetCell": 241,
+              "timeOnly": {
+                "minimumMoveSteps": 39,
+                "earliestCollectStep": 39,
+                "fuelSpent": 36,
+                "cells": [
+                  14,
+                  30,
+                  29,
+                  28,
+                  27,
+                  42,
+                  58,
+                  73,
+                  89,
+                  104,
+                  120,
+                  135,
+                  134,
+                  150,
+                  165,
+                  181,
+                  196,
+                  212,
+                  228,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "withoutRefill": null,
+              "timeOnlyReachableWithinDay": false,
+              "reachableWithinDayWithoutRefill": false
+            }
+          ]
+        },
+        {
+          "agent": 1,
+          "start": {
+            "kind": 0,
+            "pos": 254,
+            "fuel": 28
+          },
+          "end": {
+            "kind": 0,
+            "pos": 207,
+            "fuel": 26
+          },
+          "minimumObservedFuel": 8,
+          "collectedBrands": [
+            0,
+            8,
+            11
+          ],
+          "collections": [
+            {
+              "kind": "collect",
+              "agent": 1,
+              "spot": 15,
+              "brand": 11,
+              "step": 1,
+              "cell": 254
+            },
+            {
+              "kind": "collect",
+              "agent": 1,
+              "spot": 1,
+              "brand": 0,
+              "step": 17,
+              "cell": 135
+            },
+            {
+              "kind": "collect",
+              "agent": 1,
+              "spot": 12,
+              "brand": 8,
+              "step": 35,
+              "cell": 207
+            }
+          ],
+          "refills": [
+            {
+              "kind": "refill",
+              "agent": 1,
+              "amount": 34,
+              "step": 20,
+              "cell": 137
+            }
+          ],
+          "pathsToMissingShops": [
+            {
+              "brand": 10,
+              "targetCell": 241,
+              "timeOnly": {
+                "minimumMoveSteps": 32,
+                "earliestCollectStep": 32,
+                "fuelSpent": 27,
+                "cells": [
+                  254,
+                  253,
+                  236,
+                  220,
+                  219,
+                  202,
+                  201,
+                  200,
+                  199,
+                  198,
+                  214,
+                  213,
+                  228,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "withoutRefill": {
+                "minimumMoveSteps": 32,
+                "earliestCollectStep": 32,
+                "fuelSpent": 27,
+                "cells": [
+                  254,
+                  253,
+                  236,
+                  220,
+                  219,
+                  202,
+                  201,
+                  200,
+                  199,
+                  198,
+                  214,
+                  213,
+                  228,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "timeOnlyReachableWithinDay": true,
+              "reachableWithinDayWithoutRefill": true
+            }
+          ]
+        },
+        {
+          "agent": 2,
+          "start": {
+            "kind": 0,
+            "pos": 233,
+            "fuel": 14
+          },
+          "end": {
+            "kind": 0,
+            "pos": 161,
+            "fuel": 29
+          },
+          "minimumObservedFuel": 2,
+          "collectedBrands": [
+            0,
+            6,
+            7,
+            9
+          ],
+          "collections": [
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 13,
+              "brand": 9,
+              "step": 1,
+              "cell": 233
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 1,
+              "brand": 0,
+              "step": 24,
+              "cell": 135
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 9,
+              "brand": 6,
+              "step": 32,
+              "cell": 130
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 11,
+              "brand": 7,
+              "step": 36,
+              "cell": 161
+            }
+          ],
+          "refills": [
+            {
+              "kind": "refill",
+              "agent": 2,
+              "amount": 39,
+              "step": 22,
+              "cell": 152
+            }
+          ],
+          "pathsToMissingShops": [
+            {
+              "brand": 10,
+              "targetCell": 241,
+              "timeOnly": {
+                "minimumMoveSteps": 18,
+                "earliestCollectStep": 18,
+                "fuelSpent": 16,
+                "cells": [
+                  233,
+                  249,
+                  248,
+                  247,
+                  246,
+                  245,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "withoutRefill": null,
+              "timeOnlyReachableWithinDay": true,
+              "reachableWithinDayWithoutRefill": false
+            }
+          ]
+        }
+      ],
+      "anyCollectorHasNoRefillWitness": true,
+      "observedMoveDurationsAndFuelCostsMatchPublicRules": true
+    },
+    {
+      "day": 3,
+      "steps": 40,
+      "missingBrands": [
+        10
+      ],
+      "missingShops": [
+        {
+          "brand": 10,
+          "pos": 241,
+          "stocks": 3,
+          "index": 14,
+          "remainingStock": 3
+        }
+      ],
+      "traffic": [
+        {
+          "pos": 9,
+          "status": 0
+        },
+        {
+          "pos": 10,
+          "status": 0
+        },
+        {
+          "pos": 19,
+          "status": 1
+        },
+        {
+          "pos": 20,
+          "status": 1
+        },
+        {
+          "pos": 21,
+          "status": 0
+        },
+        {
+          "pos": 24,
+          "status": 1
+        },
+        {
+          "pos": 27,
+          "status": 1
+        },
+        {
+          "pos": 28,
+          "status": 1
+        },
+        {
+          "pos": 29,
+          "status": 1
+        },
+        {
+          "pos": 30,
+          "status": 1
+        },
+        {
+          "pos": 34,
+          "status": 0
+        },
+        {
+          "pos": 37,
+          "status": 1
+        },
+        {
+          "pos": 38,
+          "status": 1
+        },
+        {
+          "pos": 39,
+          "status": 1
+        },
+        {
+          "pos": 41,
+          "status": 1
+        },
+        {
+          "pos": 50,
+          "status": 0
+        },
+        {
+          "pos": 58,
+          "status": 1
+        },
+        {
+          "pos": 65,
+          "status": 0
+        },
+        {
+          "pos": 74,
+          "status": 1
+        },
+        {
+          "pos": 82,
+          "status": 0
+        },
+        {
+          "pos": 83,
+          "status": 0
+        },
+        {
+          "pos": 91,
+          "status": 1
+        },
+        {
+          "pos": 94,
+          "status": 0
+        },
+        {
+          "pos": 96,
+          "status": 0
+        },
+        {
+          "pos": 97,
+          "status": 0
+        },
+        {
+          "pos": 99,
+          "status": 0
+        },
+        {
+          "pos": 100,
+          "status": 0
+        },
+        {
+          "pos": 104,
+          "status": 1
+        },
+        {
+          "pos": 105,
+          "status": 0
+        },
+        {
+          "pos": 106,
+          "status": 1
+        },
+        {
+          "pos": 107,
+          "status": 1
+        },
+        {
+          "pos": 108,
+          "status": 2
+        },
+        {
+          "pos": 109,
+          "status": 0
+        },
+        {
+          "pos": 110,
+          "status": 0
+        },
+        {
+          "pos": 112,
+          "status": 0
+        },
+        {
+          "pos": 117,
+          "status": 0
+        },
+        {
+          "pos": 120,
+          "status": 1
+        },
+        {
+          "pos": 127,
+          "status": 0
+        },
+        {
+          "pos": 128,
+          "status": 0
+        },
+        {
+          "pos": 131,
+          "status": 1
+        },
+        {
+          "pos": 132,
+          "status": 1
+        },
+        {
+          "pos": 136,
+          "status": 2
+        },
+        {
+          "pos": 137,
+          "status": 1
+        },
+        {
+          "pos": 140,
+          "status": 1
+        },
+        {
+          "pos": 141,
+          "status": 0
+        },
+        {
+          "pos": 142,
+          "status": 0
+        },
+        {
+          "pos": 145,
+          "status": 0
+        },
+        {
+          "pos": 146,
+          "status": 2
+        },
+        {
+          "pos": 154,
+          "status": 1
+        },
+        {
+          "pos": 156,
+          "status": 2
+        },
+        {
+          "pos": 162,
+          "status": 1
+        },
+        {
+          "pos": 170,
+          "status": 2
+        },
+        {
+          "pos": 172,
+          "status": 2
+        },
+        {
+          "pos": 179,
+          "status": 1
+        },
+        {
+          "pos": 180,
+          "status": 1
+        },
+        {
+          "pos": 181,
+          "status": 0
+        },
+        {
+          "pos": 186,
+          "status": 1
+        },
+        {
+          "pos": 189,
+          "status": 2
+        },
+        {
+          "pos": 196,
+          "status": 1
+        },
+        {
+          "pos": 202,
+          "status": 2
+        },
+        {
+          "pos": 205,
+          "status": 2
+        },
+        {
+          "pos": 206,
+          "status": 2
+        },
+        {
+          "pos": 213,
+          "status": 1
+        },
+        {
+          "pos": 219,
+          "status": 2
+        },
+        {
+          "pos": 228,
+          "status": 2
+        },
+        {
+          "pos": 235,
+          "status": 1
+        },
+        {
+          "pos": 236,
+          "status": 1
+        },
+        {
+          "pos": 242,
+          "status": 2
+        },
+        {
+          "pos": 243,
+          "status": 2
+        },
+        {
+          "pos": 244,
+          "status": 2
+        },
+        {
+          "pos": 245,
+          "status": 1
+        },
+        {
+          "pos": 246,
+          "status": 1
+        },
+        {
+          "pos": 247,
+          "status": 1
+        },
+        {
+          "pos": 248,
+          "status": 1
+        },
+        {
+          "pos": 253,
+          "status": 1
+        }
+      ],
+      "trafficStatusCounts": {
+        "0": 24,
+        "1": 36,
+        "2": 15
+      },
+      "supplierStart": {
+        "kind": 1,
+        "pos": 36,
+        "fuel": 40
+      },
+      "actualDailyBrands": 11,
+      "actualUdon": 12,
+      "collectors": [
+        {
+          "agent": 0,
+          "start": {
+            "kind": 0,
+            "pos": 36,
+            "fuel": 40
+          },
+          "end": {
+            "kind": 0,
+            "pos": 93,
+            "fuel": 40
+          },
+          "minimumObservedFuel": 13,
+          "collectedBrands": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "collections": [
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 6,
+              "brand": 4,
+              "step": 1,
+              "cell": 36
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 2,
+              "brand": 1,
+              "step": 7,
+              "cell": 7
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 3,
+              "brand": 1,
+              "step": 11,
+              "cell": 25
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 4,
+              "brand": 2,
+              "step": 23,
+              "cell": 14
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 5,
+              "brand": 3,
+              "step": 25,
+              "cell": 31
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 8,
+              "brand": 5,
+              "step": 37,
+              "cell": 93
+            }
+          ],
+          "refills": [
+            {
+              "kind": "refill",
+              "agent": 0,
+              "amount": 27,
+              "step": 40,
+              "cell": 93
+            }
+          ],
+          "pathsToMissingShops": [
+            {
+              "brand": 10,
+              "targetCell": 241,
+              "timeOnly": {
+                "minimumMoveSteps": 39,
+                "earliestCollectStep": 39,
+                "fuelSpent": 26,
+                "cells": [
+                  36,
+                  53,
+                  68,
+                  84,
+                  100,
+                  117,
+                  133,
+                  150,
+                  165,
+                  181,
+                  196,
+                  212,
+                  228,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "withoutRefill": {
+                "minimumMoveSteps": 39,
+                "earliestCollectStep": 39,
+                "fuelSpent": 26,
+                "cells": [
+                  36,
+                  53,
+                  68,
+                  84,
+                  100,
+                  117,
+                  133,
+                  150,
+                  165,
+                  181,
+                  196,
+                  212,
+                  228,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "timeOnlyReachableWithinDay": true,
+              "reachableWithinDayWithoutRefill": true
+            }
+          ]
+        },
+        {
+          "agent": 1,
+          "start": {
+            "kind": 0,
+            "pos": 207,
+            "fuel": 26
+          },
+          "end": {
+            "kind": 0,
+            "pos": 254,
+            "fuel": 29
+          },
+          "minimumObservedFuel": 14,
+          "collectedBrands": [
+            8,
+            11
+          ],
+          "collections": [
+            {
+              "kind": "collect",
+              "agent": 1,
+              "spot": 12,
+              "brand": 8,
+              "step": 1,
+              "cell": 207
+            },
+            {
+              "kind": "collect",
+              "agent": 1,
+              "spot": 15,
+              "brand": 11,
+              "step": 40,
+              "cell": 254
+            }
+          ],
+          "refills": [
+            {
+              "kind": "refill",
+              "agent": 1,
+              "amount": 26,
+              "step": 24,
+              "cell": 186
+            }
+          ],
+          "pathsToMissingShops": [
+            {
+              "brand": 10,
+              "targetCell": 241,
+              "timeOnly": {
+                "minimumMoveSteps": 52,
+                "earliestCollectStep": 52,
+                "fuelSpent": 31,
+                "cells": [
+                  207,
+                  191,
+                  174,
+                  173,
+                  172,
+                  171,
+                  187,
+                  186,
+                  185,
+                  184,
+                  199,
+                  198,
+                  214,
+                  213,
+                  228,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "withoutRefill": null,
+              "timeOnlyReachableWithinDay": false,
+              "reachableWithinDayWithoutRefill": false
+            }
+          ]
+        },
+        {
+          "agent": 2,
+          "start": {
+            "kind": 0,
+            "pos": 161,
+            "fuel": 29
+          },
+          "end": {
+            "kind": 0,
+            "pos": 233,
+            "fuel": 28
+          },
+          "minimumObservedFuel": 23,
+          "collectedBrands": [
+            0,
+            6,
+            7,
+            9
+          ],
+          "collections": [
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 11,
+              "brand": 7,
+              "step": 1,
+              "cell": 161
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 9,
+              "brand": 6,
+              "step": 6,
+              "cell": 130
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 1,
+              "brand": 0,
+              "step": 16,
+              "cell": 135
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 13,
+              "brand": 9,
+              "step": 40,
+              "cell": 233
+            }
+          ],
+          "refills": [
+            {
+              "kind": "refill",
+              "agent": 2,
+              "amount": 19,
+              "step": 12,
+              "cell": 133
+            },
+            {
+              "kind": "refill",
+              "agent": 2,
+              "amount": 1,
+              "step": 14,
+              "cell": 134
+            },
+            {
+              "kind": "refill",
+              "agent": 2,
+              "amount": 1,
+              "step": 16,
+              "cell": 135
+            },
+            {
+              "kind": "refill",
+              "agent": 2,
+              "amount": 1,
+              "step": 18,
+              "cell": 152
+            },
+            {
+              "kind": "refill",
+              "agent": 2,
+              "amount": 1,
+              "step": 20,
+              "cell": 168
+            }
+          ],
+          "pathsToMissingShops": [
+            {
+              "brand": 10,
+              "targetCell": 241,
+              "timeOnly": {
+                "minimumMoveSteps": 26,
+                "earliestCollectStep": 26,
+                "fuelSpent": 13,
+                "cells": [
+                  161,
+                  178,
+                  194,
+                  195,
+                  212,
+                  228,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "withoutRefill": {
+                "minimumMoveSteps": 26,
+                "earliestCollectStep": 26,
+                "fuelSpent": 13,
+                "cells": [
+                  161,
+                  178,
+                  194,
+                  195,
+                  212,
+                  228,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "timeOnlyReachableWithinDay": true,
+              "reachableWithinDayWithoutRefill": true
+            }
+          ]
+        }
+      ],
+      "anyCollectorHasNoRefillWitness": true,
+      "observedMoveDurationsAndFuelCostsMatchPublicRules": true
+    },
+    {
+      "day": 4,
+      "steps": 40,
+      "missingBrands": [
+        10
+      ],
+      "missingShops": [
+        {
+          "brand": 10,
+          "pos": 241,
+          "stocks": 3,
+          "index": 14,
+          "remainingStock": 3
+        }
+      ],
+      "traffic": [
+        {
+          "pos": 9,
+          "status": 0
+        },
+        {
+          "pos": 10,
+          "status": 0
+        },
+        {
+          "pos": 19,
+          "status": 0
+        },
+        {
+          "pos": 20,
+          "status": 0
+        },
+        {
+          "pos": 21,
+          "status": 0
+        },
+        {
+          "pos": 24,
+          "status": 1
+        },
+        {
+          "pos": 27,
+          "status": 1
+        },
+        {
+          "pos": 28,
+          "status": 1
+        },
+        {
+          "pos": 29,
+          "status": 1
+        },
+        {
+          "pos": 30,
+          "status": 1
+        },
+        {
+          "pos": 34,
+          "status": 0
+        },
+        {
+          "pos": 37,
+          "status": 1
+        },
+        {
+          "pos": 38,
+          "status": 1
+        },
+        {
+          "pos": 39,
+          "status": 1
+        },
+        {
+          "pos": 41,
+          "status": 1
+        },
+        {
+          "pos": 50,
+          "status": 0
+        },
+        {
+          "pos": 58,
+          "status": 1
+        },
+        {
+          "pos": 65,
+          "status": 0
+        },
+        {
+          "pos": 74,
+          "status": 1
+        },
+        {
+          "pos": 82,
+          "status": 0
+        },
+        {
+          "pos": 83,
+          "status": 0
+        },
+        {
+          "pos": 91,
+          "status": 2
+        },
+        {
+          "pos": 94,
+          "status": 1
+        },
+        {
+          "pos": 96,
+          "status": 0
+        },
+        {
+          "pos": 97,
+          "status": 0
+        },
+        {
+          "pos": 99,
+          "status": 0
+        },
+        {
+          "pos": 100,
+          "status": 0
+        },
+        {
+          "pos": 104,
+          "status": 2
+        },
+        {
+          "pos": 105,
+          "status": 1
+        },
+        {
+          "pos": 106,
+          "status": 1
+        },
+        {
+          "pos": 107,
+          "status": 1
+        },
+        {
+          "pos": 108,
+          "status": 1
+        },
+        {
+          "pos": 109,
+          "status": 1
+        },
+        {
+          "pos": 110,
+          "status": 0
+        },
+        {
+          "pos": 112,
+          "status": 0
+        },
+        {
+          "pos": 117,
+          "status": 0
+        },
+        {
+          "pos": 120,
+          "status": 2
+        },
+        {
+          "pos": 127,
+          "status": 0
+        },
+        {
+          "pos": 128,
+          "status": 0
+        },
+        {
+          "pos": 131,
+          "status": 1
+        },
+        {
+          "pos": 132,
+          "status": 1
+        },
+        {
+          "pos": 136,
+          "status": 1
+        },
+        {
+          "pos": 137,
+          "status": 1
+        },
+        {
+          "pos": 140,
+          "status": 1
+        },
+        {
+          "pos": 141,
+          "status": 0
+        },
+        {
+          "pos": 142,
+          "status": 0
+        },
+        {
+          "pos": 145,
+          "status": 0
+        },
+        {
+          "pos": 146,
+          "status": 2
+        },
+        {
+          "pos": 154,
+          "status": 1
+        },
+        {
+          "pos": 156,
+          "status": 2
+        },
+        {
+          "pos": 162,
+          "status": 0
+        },
+        {
+          "pos": 170,
+          "status": 1
+        },
+        {
+          "pos": 172,
+          "status": 2
+        },
+        {
+          "pos": 179,
+          "status": 0
+        },
+        {
+          "pos": 180,
+          "status": 0
+        },
+        {
+          "pos": 181,
+          "status": 0
+        },
+        {
+          "pos": 186,
+          "status": 1
+        },
+        {
+          "pos": 189,
+          "status": 1
+        },
+        {
+          "pos": 196,
+          "status": 1
+        },
+        {
+          "pos": 202,
+          "status": 2
+        },
+        {
+          "pos": 205,
+          "status": 1
+        },
+        {
+          "pos": 206,
+          "status": 1
+        },
+        {
+          "pos": 213,
+          "status": 0
+        },
+        {
+          "pos": 219,
+          "status": 2
+        },
+        {
+          "pos": 228,
+          "status": 1
+        },
+        {
+          "pos": 235,
+          "status": 0
+        },
+        {
+          "pos": 236,
+          "status": 1
+        },
+        {
+          "pos": 242,
+          "status": 2
+        },
+        {
+          "pos": 243,
+          "status": 2
+        },
+        {
+          "pos": 244,
+          "status": 2
+        },
+        {
+          "pos": 245,
+          "status": 0
+        },
+        {
+          "pos": 246,
+          "status": 0
+        },
+        {
+          "pos": 247,
+          "status": 0
+        },
+        {
+          "pos": 248,
+          "status": 2
+        },
+        {
+          "pos": 253,
+          "status": 1
+        }
+      ],
+      "trafficStatusCounts": {
+        "0": 31,
+        "1": 32,
+        "2": 12
+      },
+      "supplierStart": {
+        "kind": 1,
+        "pos": 93,
+        "fuel": 40
+      },
+      "actualDailyBrands": 11,
+      "actualUdon": 13,
+      "collectors": [
+        {
+          "agent": 0,
+          "start": {
+            "kind": 0,
+            "pos": 93,
+            "fuel": 40
+          },
+          "end": {
+            "kind": 0,
+            "pos": 70,
+            "fuel": 40
+          },
+          "minimumObservedFuel": 13,
+          "collectedBrands": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "collections": [
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 8,
+              "brand": 5,
+              "step": 1,
+              "cell": 93
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 5,
+              "brand": 3,
+              "step": 13,
+              "cell": 31
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 4,
+              "brand": 2,
+              "step": 15,
+              "cell": 14
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 3,
+              "brand": 1,
+              "step": 27,
+              "cell": 25
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 2,
+              "brand": 1,
+              "step": 31,
+              "cell": 7
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 7,
+              "brand": 4,
+              "step": 37,
+              "cell": 55
+            }
+          ],
+          "refills": [
+            {
+              "kind": "refill",
+              "agent": 0,
+              "amount": 27,
+              "step": 40,
+              "cell": 70
+            }
+          ],
+          "pathsToMissingShops": [
+            {
+              "brand": 10,
+              "targetCell": 241,
+              "timeOnly": {
+                "minimumMoveSteps": 41,
+                "earliestCollectStep": 41,
+                "fuelSpent": 30,
+                "cells": [
+                  93,
+                  92,
+                  107,
+                  106,
+                  122,
+                  137,
+                  136,
+                  135,
+                  134,
+                  150,
+                  165,
+                  181,
+                  196,
+                  213,
+                  228,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "withoutRefill": {
+                "minimumMoveSteps": 41,
+                "earliestCollectStep": 41,
+                "fuelSpent": 30,
+                "cells": [
+                  93,
+                  92,
+                  107,
+                  106,
+                  122,
+                  137,
+                  136,
+                  135,
+                  134,
+                  150,
+                  165,
+                  181,
+                  196,
+                  213,
+                  228,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "timeOnlyReachableWithinDay": false,
+              "reachableWithinDayWithoutRefill": false
+            }
+          ]
+        },
+        {
+          "agent": 1,
+          "start": {
+            "kind": 0,
+            "pos": 254,
+            "fuel": 29
+          },
+          "end": {
+            "kind": 0,
+            "pos": 207,
+            "fuel": 29
+          },
+          "minimumObservedFuel": 20,
+          "collectedBrands": [
+            8,
+            11
+          ],
+          "collections": [
+            {
+              "kind": "collect",
+              "agent": 1,
+              "spot": 15,
+              "brand": 11,
+              "step": 1,
+              "cell": 254
+            },
+            {
+              "kind": "collect",
+              "agent": 1,
+              "spot": 12,
+              "brand": 8,
+              "step": 30,
+              "cell": 207
+            }
+          ],
+          "refills": [
+            {
+              "kind": "refill",
+              "agent": 1,
+              "amount": 22,
+              "step": 15,
+              "cell": 187
+            }
+          ],
+          "pathsToMissingShops": [
+            {
+              "brand": 10,
+              "targetCell": 241,
+              "timeOnly": {
+                "minimumMoveSteps": 42,
+                "earliestCollectStep": 42,
+                "fuelSpent": 28,
+                "cells": [
+                  254,
+                  253,
+                  236,
+                  235,
+                  219,
+                  202,
+                  201,
+                  200,
+                  199,
+                  198,
+                  214,
+                  213,
+                  228,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "withoutRefill": {
+                "minimumMoveSteps": 42,
+                "earliestCollectStep": 42,
+                "fuelSpent": 28,
+                "cells": [
+                  254,
+                  253,
+                  236,
+                  235,
+                  219,
+                  202,
+                  201,
+                  200,
+                  199,
+                  198,
+                  214,
+                  213,
+                  228,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "timeOnlyReachableWithinDay": false,
+              "reachableWithinDayWithoutRefill": false
+            }
+          ]
+        },
+        {
+          "agent": 2,
+          "start": {
+            "kind": 0,
+            "pos": 233,
+            "fuel": 28
+          },
+          "end": {
+            "kind": 0,
+            "pos": 135,
+            "fuel": 36
+          },
+          "minimumObservedFuel": 1,
+          "collectedBrands": [
+            0,
+            6,
+            7,
+            9
+          ],
+          "collections": [
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 13,
+              "brand": 9,
+              "step": 1,
+              "cell": 233
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 11,
+              "brand": 7,
+              "step": 19,
+              "cell": 161
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 10,
+              "brand": 7,
+              "step": 21,
+              "cell": 160
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 9,
+              "brand": 6,
+              "step": 27,
+              "cell": 130
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 1,
+              "brand": 0,
+              "step": 37,
+              "cell": 135
+            }
+          ],
+          "refills": [
+            {
+              "kind": "refill",
+              "agent": 2,
+              "amount": 39,
+              "step": 32,
+              "cell": 132
+            }
+          ],
+          "pathsToMissingShops": [
+            {
+              "brand": 10,
+              "targetCell": 241,
+              "timeOnly": {
+                "minimumMoveSteps": 23,
+                "earliestCollectStep": 23,
+                "fuelSpent": 16,
+                "cells": [
+                  233,
+                  249,
+                  248,
+                  247,
+                  246,
+                  245,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "withoutRefill": {
+                "minimumMoveSteps": 23,
+                "earliestCollectStep": 23,
+                "fuelSpent": 16,
+                "cells": [
+                  233,
+                  249,
+                  248,
+                  247,
+                  246,
+                  245,
+                  244,
+                  243,
+                  242,
+                  241
+                ]
+              },
+              "timeOnlyReachableWithinDay": true,
+              "reachableWithinDayWithoutRefill": true
+            }
+          ]
+        }
+      ],
+      "anyCollectorHasNoRefillWitness": true,
+      "observedMoveDurationsAndFuelCostsMatchPublicRules": true
+    },
+    {
+      "day": 5,
+      "steps": 48,
+      "missingBrands": [
+        11
+      ],
+      "missingShops": [
+        {
+          "brand": 11,
+          "pos": 254,
+          "stocks": 4,
+          "index": 15,
+          "remainingStock": 4
+        }
+      ],
+      "traffic": [
+        {
+          "pos": 9,
+          "status": 0
+        },
+        {
+          "pos": 10,
+          "status": 0
+        },
+        {
+          "pos": 19,
+          "status": 1
+        },
+        {
+          "pos": 20,
+          "status": 1
+        },
+        {
+          "pos": 21,
+          "status": 1
+        },
+        {
+          "pos": 24,
+          "status": 0
+        },
+        {
+          "pos": 27,
+          "status": 1
+        },
+        {
+          "pos": 28,
+          "status": 1
+        },
+        {
+          "pos": 29,
+          "status": 1
+        },
+        {
+          "pos": 30,
+          "status": 2
+        },
+        {
+          "pos": 34,
+          "status": 0
+        },
+        {
+          "pos": 37,
+          "status": 1
+        },
+        {
+          "pos": 38,
+          "status": 1
+        },
+        {
+          "pos": 39,
+          "status": 1
+        },
+        {
+          "pos": 41,
+          "status": 1
+        },
+        {
+          "pos": 50,
+          "status": 0
+        },
+        {
+          "pos": 58,
+          "status": 1
+        },
+        {
+          "pos": 65,
+          "status": 0
+        },
+        {
+          "pos": 74,
+          "status": 1
+        },
+        {
+          "pos": 82,
+          "status": 0
+        },
+        {
+          "pos": 83,
+          "status": 0
+        },
+        {
+          "pos": 91,
+          "status": 1
+        },
+        {
+          "pos": 94,
+          "status": 1
+        },
+        {
+          "pos": 96,
+          "status": 0
+        },
+        {
+          "pos": 97,
+          "status": 0
+        },
+        {
+          "pos": 99,
+          "status": 0
+        },
+        {
+          "pos": 100,
+          "status": 0
+        },
+        {
+          "pos": 104,
+          "status": 2
+        },
+        {
+          "pos": 105,
+          "status": 0
+        },
+        {
+          "pos": 106,
+          "status": 1
+        },
+        {
+          "pos": 107,
+          "status": 1
+        },
+        {
+          "pos": 108,
+          "status": 1
+        },
+        {
+          "pos": 109,
+          "status": 1
+        },
+        {
+          "pos": 110,
+          "status": 0
+        },
+        {
+          "pos": 112,
+          "status": 0
+        },
+        {
+          "pos": 117,
+          "status": 0
+        },
+        {
+          "pos": 120,
+          "status": 2
+        },
+        {
+          "pos": 127,
+          "status": 0
+        },
+        {
+          "pos": 128,
+          "status": 0
+        },
+        {
+          "pos": 131,
+          "status": 1
+        },
+        {
+          "pos": 132,
+          "status": 2
+        },
+        {
+          "pos": 136,
+          "status": 1
+        },
+        {
+          "pos": 137,
+          "status": 1
+        },
+        {
+          "pos": 140,
+          "status": 1
+        },
+        {
+          "pos": 141,
+          "status": 1
+        },
+        {
+          "pos": 142,
+          "status": 0
+        },
+        {
+          "pos": 145,
+          "status": 0
+        },
+        {
+          "pos": 146,
+          "status": 2
+        },
+        {
+          "pos": 154,
+          "status": 0
+        },
+        {
+          "pos": 156,
+          "status": 2
+        },
+        {
+          "pos": 162,
+          "status": 1
+        },
+        {
+          "pos": 170,
+          "status": 0
+        },
+        {
+          "pos": 172,
+          "status": 2
+        },
+        {
+          "pos": 179,
+          "status": 0
+        },
+        {
+          "pos": 180,
+          "status": 0
+        },
+        {
+          "pos": 181,
+          "status": 0
+        },
+        {
+          "pos": 186,
+          "status": 2
+        },
+        {
+          "pos": 189,
+          "status": 1
+        },
+        {
+          "pos": 196,
+          "status": 0
+        },
+        {
+          "pos": 202,
+          "status": 2
+        },
+        {
+          "pos": 205,
+          "status": 1
+        },
+        {
+          "pos": 206,
+          "status": 1
+        },
+        {
+          "pos": 213,
+          "status": 0
+        },
+        {
+          "pos": 219,
+          "status": 2
+        },
+        {
+          "pos": 228,
+          "status": 1
+        },
+        {
+          "pos": 235,
+          "status": 1
+        },
+        {
+          "pos": 236,
+          "status": 2
+        },
+        {
+          "pos": 242,
+          "status": 2
+        },
+        {
+          "pos": 243,
+          "status": 2
+        },
+        {
+          "pos": 244,
+          "status": 2
+        },
+        {
+          "pos": 245,
+          "status": 1
+        },
+        {
+          "pos": 246,
+          "status": 2
+        },
+        {
+          "pos": 247,
+          "status": 1
+        },
+        {
+          "pos": 248,
+          "status": 2
+        },
+        {
+          "pos": 253,
+          "status": 2
+        }
+      ],
+      "trafficStatusCounts": {
+        "0": 27,
+        "1": 31,
+        "2": 17
+      },
+      "supplierStart": {
+        "kind": 1,
+        "pos": 70,
+        "fuel": 40
+      },
+      "actualDailyBrands": 11,
+      "actualUdon": 15,
+      "collectors": [
+        {
+          "agent": 0,
+          "start": {
+            "kind": 0,
+            "pos": 70,
+            "fuel": 40
+          },
+          "end": {
+            "kind": 0,
+            "pos": 14,
+            "fuel": 10
+          },
+          "minimumObservedFuel": 10,
+          "collectedBrands": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "collections": [
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 7,
+              "brand": 4,
+              "step": 3,
+              "cell": 55
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 6,
+              "brand": 4,
+              "step": 9,
+              "cell": 36
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 2,
+              "brand": 1,
+              "step": 17,
+              "cell": 7
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 3,
+              "brand": 1,
+              "step": 20,
+              "cell": 25
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 8,
+              "brand": 5,
+              "step": 32,
+              "cell": 93
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 5,
+              "brand": 3,
+              "step": 45,
+              "cell": 31
+            },
+            {
+              "kind": "collect",
+              "agent": 0,
+              "spot": 4,
+              "brand": 2,
+              "step": 47,
+              "cell": 14
+            }
+          ],
+          "refills": [
+            {
+              "kind": "refill",
+              "agent": 0,
+              "amount": 2,
+              "step": 3,
+              "cell": 55
+            },
+            {
+              "kind": "refill",
+              "agent": 0,
+              "amount": 1,
+              "step": 5,
+              "cell": 38
+            },
+            {
+              "kind": "refill",
+              "agent": 0,
+              "amount": 2,
+              "step": 7,
+              "cell": 37
+            }
+          ],
+          "pathsToMissingShops": [
+            {
+              "brand": 11,
+              "targetCell": 254,
+              "timeOnly": {
+                "minimumMoveSteps": 36,
+                "earliestCollectStep": 36,
+                "fuelSpent": 25,
+                "cells": [
+                  70,
+                  71,
+                  72,
+                  89,
+                  105,
+                  122,
+                  138,
+                  154,
+                  170,
+                  187,
+                  202,
+                  219,
+                  235,
+                  252,
+                  253,
+                  254
+                ]
+              },
+              "withoutRefill": {
+                "minimumMoveSteps": 36,
+                "earliestCollectStep": 36,
+                "fuelSpent": 25,
+                "cells": [
+                  70,
+                  71,
+                  72,
+                  89,
+                  105,
+                  122,
+                  138,
+                  154,
+                  170,
+                  187,
+                  202,
+                  219,
+                  235,
+                  252,
+                  253,
+                  254
+                ]
+              },
+              "timeOnlyReachableWithinDay": true,
+              "reachableWithinDayWithoutRefill": true
+            }
+          ]
+        },
+        {
+          "agent": 1,
+          "start": {
+            "kind": 0,
+            "pos": 207,
+            "fuel": 29
+          },
+          "end": {
+            "kind": 0,
+            "pos": 233,
+            "fuel": 22
+          },
+          "minimumObservedFuel": 10,
+          "collectedBrands": [
+            0,
+            8,
+            9
+          ],
+          "collections": [
+            {
+              "kind": "collect",
+              "agent": 1,
+              "spot": 12,
+              "brand": 8,
+              "step": 1,
+              "cell": 207
+            },
+            {
+              "kind": "collect",
+              "agent": 1,
+              "spot": 1,
+              "brand": 0,
+              "step": 21,
+              "cell": 135
+            },
+            {
+              "kind": "collect",
+              "agent": 1,
+              "spot": 13,
+              "brand": 9,
+              "step": 46,
+              "cell": 233
+            }
+          ],
+          "refills": [
+            {
+              "kind": "refill",
+              "agent": 1,
+              "amount": 30,
+              "step": 22,
+              "cell": 135
+            }
+          ],
+          "pathsToMissingShops": [
+            {
+              "brand": 11,
+              "targetCell": 254,
+              "timeOnly": {
+                "minimumMoveSteps": 34,
+                "earliestCollectStep": 34,
+                "fuelSpent": 22,
+                "cells": [
+                  207,
+                  206,
+                  205,
+                  189,
+                  172,
+                  171,
+                  187,
+                  202,
+                  219,
+                  235,
+                  252,
+                  253,
+                  254
+                ]
+              },
+              "withoutRefill": {
+                "minimumMoveSteps": 34,
+                "earliestCollectStep": 34,
+                "fuelSpent": 22,
+                "cells": [
+                  207,
+                  206,
+                  205,
+                  189,
+                  172,
+                  171,
+                  187,
+                  202,
+                  219,
+                  235,
+                  252,
+                  253,
+                  254
+                ]
+              },
+              "timeOnlyReachableWithinDay": true,
+              "reachableWithinDayWithoutRefill": true
+            }
+          ]
+        },
+        {
+          "agent": 2,
+          "start": {
+            "kind": 0,
+            "pos": 135,
+            "fuel": 36
+          },
+          "end": {
+            "kind": 0,
+            "pos": 241,
+            "fuel": 5
+          },
+          "minimumObservedFuel": 5,
+          "collectedBrands": [
+            0,
+            6,
+            7,
+            10
+          ],
+          "collections": [
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 1,
+              "brand": 0,
+              "step": 1,
+              "cell": 135
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 9,
+              "brand": 6,
+              "step": 12,
+              "cell": 130
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 10,
+              "brand": 7,
+              "step": 18,
+              "cell": 160
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 11,
+              "brand": 7,
+              "step": 20,
+              "cell": 161
+            },
+            {
+              "kind": "collect",
+              "agent": 2,
+              "spot": 14,
+              "brand": 10,
+              "step": 42,
+              "cell": 241
+            }
+          ],
+          "refills": [],
+          "pathsToMissingShops": [
+            {
+              "brand": 11,
+              "targetCell": 254,
+              "timeOnly": {
+                "minimumMoveSteps": 27,
+                "earliestCollectStep": 27,
+                "fuelSpent": 20,
+                "cells": [
+                  135,
+                  136,
+                  137,
+                  154,
+                  170,
+                  187,
+                  202,
+                  219,
+                  235,
+                  252,
+                  253,
+                  254
+                ]
+              },
+              "withoutRefill": {
+                "minimumMoveSteps": 27,
+                "earliestCollectStep": 27,
+                "fuelSpent": 20,
+                "cells": [
+                  135,
+                  136,
+                  137,
+                  154,
+                  170,
+                  187,
+                  202,
+                  219,
+                  235,
+                  252,
+                  253,
+                  254
+                ]
+              },
+              "timeOnlyReachableWithinDay": true,
+              "reachableWithinDayWithoutRefill": true
+            }
+          ]
+        }
+      ],
+      "anyCollectorHasNoRefillWitness": true,
+      "observedMoveDurationsAndFuelCostsMatchPublicRules": true
+    }
+  ],
+  "inputSha256": {
+    ".server/runs/1791506866153064781-104560/0/problem.json": "ff0ffb88986635de1a8e1267a1335572fd842d3ef79fe8712d65b2f557545507",
+    ".server/runs/1791506866153064781-104560/0/replay.json": "e5f753d1526846bf3ce54d9454284852ba57d3440086da7bdb2bdda53108b5d7",
+    "common/src/model.rs": "72ec763bb3aad8ebebace68ed5c3c86d48c3066df7e21797c8c3b10f380fc4e1",
+    "common/src/engine.rs": "e02a3335c87475295692a8d6de54110cb33466279cddd94957c57f645f698a49"
+  }
+}

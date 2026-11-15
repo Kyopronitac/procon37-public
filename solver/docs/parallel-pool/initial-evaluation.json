@@ -1,0 +1,106 @@
+{
+  "evaluation": {
+    "role": "initial_baseline",
+    "label": "並列pool・初期6体基準・正式12件",
+    "wrapper_pid": 219583,
+    "log": "/home/jikky/Downloads/procon37/.server/parallel-pool/initial-formal.log",
+    "process_record": "/home/jikky/Downloads/procon37/.server/parallel-pool/initial-formal-process.json",
+    "run_id": "1791368679639311227-219585",
+    "run_json": "/home/jikky/Downloads/procon37/.server/runs/1791368679639311227-219585/run.json",
+    "pid": 219585,
+    "status": "completed_all_ac_verified"
+  },
+  "conditions": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "並列pool・初期6体基準・正式12件",
+    "players": 6,
+    "teamNames": [],
+    "timeLimitMs": null,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "monitor": {
+    "automation_id": "pool",
+    "status": "PAUSED",
+    "interval_minutes": 10
+  },
+  "completed_generations": 0,
+  "summary": {
+    "runId": "1791368679639311227-219585",
+    "players": [
+      {
+        "id": "P0",
+        "team": 0,
+        "rankSum": 37,
+        "scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1276,
+          "udon": 2969
+        },
+        "meanRank": 3.0833333333333335
+      },
+      {
+        "id": "P1",
+        "team": 1,
+        "rankSum": 36,
+        "scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1278,
+          "udon": 2983
+        },
+        "meanRank": 3.0
+      },
+      {
+        "id": "P2",
+        "team": 2,
+        "rankSum": 27,
+        "scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1276,
+          "udon": 2982
+        },
+        "meanRank": 2.25
+      },
+      {
+        "id": "P3",
+        "team": 3,
+        "rankSum": 28,
+        "scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1278,
+          "udon": 2966
+        },
+        "meanRank": 2.3333333333333335
+      },
+      {
+        "id": "S0",
+        "team": 4,
+        "rankSum": 45,
+        "scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1276,
+          "udon": 2946
+        },
+        "meanRank": 3.75
+      },
+      {
+        "id": "S1",
+        "team": 5,
+        "rankSum": 37,
+        "scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1277,
+          "udon": 2968
+        },
+        "meanRank": 3.0833333333333335
+      }
+    ],
+    "lowestParallel": "P0",
+    "strictWinner": [
+      "P2"
+    ]
+  },
+  "postflight": "solver/docs/parallel-pool/initial-postflight.json"
+}

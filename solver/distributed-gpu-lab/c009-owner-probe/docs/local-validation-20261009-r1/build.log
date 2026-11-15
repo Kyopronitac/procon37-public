@@ -1,0 +1,82 @@
+     Locking 20 packages to latest Rust 1.94.0 compatible versions
+      Adding zerocopy-derive v0.8.57 (available: v0.8.62)
+   Compiling tester v0.1.0 (/home/imak/work/procon37/solver/distributed-candidates/c009-gpu-owner/common)
+warning: function `day_seconds` is never used
+   --> /home/imak/work/procon37/solver/distributed-candidates/c009-gpu-owner/common/src/generator.rs:136:15
+    |
+136 | pub(crate) fn day_seconds(
+    |               ^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `tester` (lib) generated 1 warning
+   Compiling procon37-distributed-gpu-lab v0.1.0 (/home/imak/work/procon37/solver/distributed-candidates/c009-gpu-owner/gpu)
+   Compiling procon37-c009-owner-probe v0.1.0 (/home/imak/work/procon37/solver/distributed-gpu-lab/c009-owner-probe)
+warning: unused imports: `SearchPool` and `fallback`
+    --> /home/imak/work/procon37/solver/distributed-gpu-lab/c009-owner-probe/../../distributed-candidates/c009-gpu-owner/solver/planner.rs:1699:46
+     |
+1699 | pub(crate) use distributed_pool::{Candidate, SearchPool, Task, fallback};
+     |                                              ^^^^^^^^^^        ^^^^^^^^
+     |
+     = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: constant `VERSION` is never used
+ --> src/../../../distributed-candidates/c009-gpu-owner/wire.rs:8:11
+  |
+8 | pub const VERSION: u32 = 1;
+  |           ^^^^^^^
+  |
+  = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: constant `MAX_FRAME` is never used
+ --> src/../../../distributed-candidates/c009-gpu-owner/wire.rs:9:11
+  |
+9 | pub const MAX_FRAME: usize = 4 * 1024 * 1024;
+  |           ^^^^^^^^^
+
+warning: enum `ClientMessage` is never used
+  --> src/../../../distributed-candidates/c009-gpu-owner/wire.rs:11:10
+   |
+11 | pub enum ClientMessage {
+   |          ^^^^^^^^^^^^^
+
+warning: enum `ServerMessage` is never used
+  --> src/../../../distributed-candidates/c009-gpu-owner/wire.rs:25:10
+   |
+25 | pub enum ServerMessage {
+   |          ^^^^^^^^^^^^^
+
+warning: struct `FramedSocket` is never constructed
+  --> src/../../../distributed-candidates/c009-gpu-owner/wire.rs:45:12
+   |
+45 | pub struct FramedSocket {
+   |            ^^^^^^^^^^^^
+
+warning: associated items `new`, `received_bytes`, `sent_bytes`, `send`, and `poll` are never used
+  --> src/../../../distributed-candidates/c009-gpu-owner/wire.rs:54:12
+   |
+53 | impl FramedSocket {
+   | ----------------- associated items in this implementation
+54 |     pub fn new(socket: TcpStream) -> io::Result<Self> {
+   |            ^^^
+...
+66 |     pub fn received_bytes(&self) -> u64 {
+   |            ^^^^^^^^^^^^^^
+...
+69 |     pub fn sent_bytes(&self) -> u64 {
+   |            ^^^^^^^^^^
+...
+72 |     pub fn send<T: Serialize>(&mut self, value: &T) -> io::Result<()> {
+   |            ^^^^
+...
+86 |     pub fn poll<T: for<'de> Deserialize<'de>>(&mut self) -> io::Result<Vec<T>> {
+   |            ^^^^
+
+warning: function `token_matches` is never used
+   --> src/../../../distributed-candidates/c009-gpu-owner/wire.rs:159:8
+    |
+159 | pub fn token_matches(expected: &str, supplied: &str) -> bool {
+    |        ^^^^^^^^^^^^^
+
+warning: `procon37-c009-owner-probe` (bin "procon37-c009-owner-probe") generated 8 warnings (run `cargo fix --bin "procon37-c009-owner-probe" -p procon37-c009-owner-probe` to apply 1 suggestion)
+    Finished `release` profile [optimized] target(s) in 11.96s

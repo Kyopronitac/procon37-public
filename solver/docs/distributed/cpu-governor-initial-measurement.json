@@ -1,0 +1,88 @@
+{
+  "method": "共通開始版の元15スレッド実行ファイル、同じ4人seed0問題、選択3000msを各3回。時間制探索のため回答差は探索ばらつきを含み、固定時間のelapsedは処理量指標ではない。対戦での最適化効果は後続の同条件12件で評価する。",
+  "results": {
+    "powersave": [
+      {
+        "elapsedMs": 2721.1244819918647,
+        "response": {
+          "answer": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "requestId": 1
+        },
+        "stderr": "lier=2 value=16799.552\np0 selection worker=2 supplier=2 value=16800.756\np0 selection worker=12 supplier=0 value=16801.216\np0 selection worker=5 supplier=1 value=16781.316\np0 selection worker=1 supplier=1 value=16781.800\np0 selection worker=3 supplier=3 value=16780.626\np0 selection worker=8 supplier=0 value=16800.028\np0 selection worker=0 supplier=0 value=16800.916\np0 selection worker=6 supplier=2 value=18175.798\np0 selection worker=9 supplier=1 value=16779.760\np0 selection worker=13 supplier=1 value=16779.752\np0 selection worker=11 supplier=3 value=16780.634\np0 chosen worker=6 value=18175.798\n"
+      },
+      {
+        "elapsedMs": 2719.6403890266083,
+        "response": {
+          "answer": [
+            0,
+            0,
+            1,
+            0
+          ],
+          "requestId": 1
+        },
+        "stderr": "lier=3 value=16781.158\np0 selection worker=0 supplier=0 value=16800.560\np0 selection worker=7 supplier=3 value=16781.158\np0 selection worker=10 supplier=2 value=18175.798\np0 selection worker=4 supplier=0 value=16799.890\np0 selection worker=6 supplier=2 value=18175.798\np0 selection worker=2 supplier=2 value=16781.158\np0 selection worker=13 supplier=1 value=16781.508\np0 selection worker=11 supplier=3 value=16780.756\np0 selection worker=8 supplier=0 value=16800.906\np0 selection worker=5 supplier=1 value=16781.794\np0 selection worker=1 supplier=1 value=16779.876\np0 chosen worker=6 value=18175.798\n"
+      },
+      {
+        "elapsedMs": 2723.1696770177223,
+        "response": {
+          "answer": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "requestId": 1
+        },
+        "stderr": "ier=0 value=16801.234\np0 selection worker=1 supplier=1 value=16779.852\np0 selection worker=2 supplier=2 value=16799.550\np0 selection worker=7 supplier=3 value=16781.158\np0 selection worker=8 supplier=0 value=16800.918\np0 selection worker=4 supplier=0 value=16799.908\np0 selection worker=3 supplier=3 value=16780.446\np0 selection worker=6 supplier=2 value=16781.072\np0 selection worker=10 supplier=2 value=16781.152\np0 selection worker=13 supplier=1 value=16781.318\np0 selection worker=11 supplier=3 value=16780.750\np0 selection worker=12 supplier=0 value=16800.838\np0 chosen worker=0 value=16801.234\n"
+      }
+    ],
+    "performance": [
+      {
+        "elapsedMs": 2722.912463010289,
+        "response": {
+          "answer": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "requestId": 1
+        },
+        "stderr": "ier=0 value=16799.932\np0 selection worker=5 supplier=1 value=16781.324\np0 selection worker=0 supplier=0 value=16799.948\np0 selection worker=7 supplier=3 value=16781.156\np0 selection worker=8 supplier=0 value=16801.212\np0 selection worker=6 supplier=2 value=16781.072\np0 selection worker=1 supplier=1 value=16779.760\np0 selection worker=10 supplier=2 value=16799.552\np0 selection worker=9 supplier=1 value=16781.798\np0 selection worker=11 supplier=3 value=16780.632\np0 selection worker=13 supplier=1 value=16781.316\np0 selection worker=12 supplier=0 value=16799.906\np0 chosen worker=8 value=16801.212\n"
+      },
+      {
+        "elapsedMs": 2720.191162021365,
+        "response": {
+          "answer": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "requestId": 1
+        },
+        "stderr": "ier=1 value=16781.440\np0 selection worker=0 supplier=0 value=16799.914\np0 selection worker=7 supplier=3 value=16781.156\np0 selection worker=12 supplier=0 value=16799.826\np0 selection worker=5 supplier=1 value=16779.752\np0 selection worker=3 supplier=3 value=16780.636\np0 selection worker=4 supplier=0 value=16799.892\np0 selection worker=2 supplier=2 value=16799.556\np0 selection worker=6 supplier=2 value=16781.140\np0 selection worker=10 supplier=2 value=16781.150\np0 selection worker=11 supplier=3 value=16780.638\np0 selection worker=13 supplier=1 value=16781.316\np0 chosen worker=8 value=16801.440\n"
+      },
+      {
+        "elapsedMs": 2721.076802990865,
+        "response": {
+          "answer": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "requestId": 1
+        },
+        "stderr": "ier=3 value=16781.158\np0 selection worker=1 supplier=1 value=16781.796\np0 selection worker=10 supplier=2 value=16781.156\np0 selection worker=0 supplier=0 value=16800.038\np0 selection worker=12 supplier=0 value=16799.982\np0 selection worker=6 supplier=2 value=16799.542\np0 selection worker=2 supplier=2 value=16781.158\np0 selection worker=4 supplier=0 value=16797.794\np0 selection worker=5 supplier=1 value=16779.758\np0 selection worker=9 supplier=1 value=16781.488\np0 selection worker=13 supplier=1 value=16779.756\np0 selection worker=11 supplier=3 value=16780.436\np0 chosen worker=0 value=16800.038\n"
+      }
+    ]
+  },
+  "restoredGovernor": "performance"
+}

@@ -1,0 +1,15 @@
+{
+  "run_json": "/tmp/parallel-pool-g003-p0-v1-0xxvm8hz/short/1791397797577548207-271522/run.json",
+  "rank_sums": [
+    16,
+    16,
+    18,
+    12,
+    32,
+    19
+  ],
+  "all_36_ac": true,
+  "formal_requested": false,
+  "owner": "/root/generation_003_p0",
+  "developer_summary": "/tmp/parallel-pool-g003-p0-v1-0xxvm8hz/summary.json"
+}

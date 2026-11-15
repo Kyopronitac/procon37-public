@@ -1,0 +1,4614 @@
+{
+  "recorded_at_utc": "2026-10-08T22:46:33.063685+00:00",
+  "kind": "GPU/CPU resource microbenchmark; not a four-team match; not adoption evidence",
+  "lab_binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+  "source_available": false,
+  "conditions": {
+    "cases": "seeds 0,1,2 × scenarios initial,mixed,duplicates × repeats3; 4096 synthetic path queries per measurement",
+    "gpu_cpu_affinity": "CPU31 singleton v1 cpuset, all driver/helper threads confined",
+    "cpu_load": "D0 e80474cc... parallel mode, CPU0-30, 30 search+1 control threads, one selection request timeLimitMs60000; independent of GPU lab, no shared results",
+    "governor": "performance (restored by parent before probes)",
+    "cold_meaning": "finite profile creates a fresh helper/context per graph; OS/driver disk caches are not flushed",
+    "warm_meaning": "one context persists across 27 builds; first initialization remains in sum, cleanup added for lifetime comparison"
+  },
+  "inventory": {
+    "v1": {
+      "root": "/home/voidlinux-1/procon37-distributed",
+      "files": [
+        {
+          "path": "gpu-lab-compact-r3/v1-r3-resume20261009-idle-finite-r1-controller.json",
+          "bytes": 702,
+          "sha256": "ccfbc984b32989248bc192639f05c3286b4bcfc66aeb1369afa2ab6dadf19c0a",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/v1-r3-resume20261009-idle-finite-r1-controller.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/v1-r3-resume20261009-idle-r2-controller.json",
+          "bytes": 673,
+          "sha256": "e0313652d6effff35787edaacecafd2c74dee202a51e6e2f055793602a286746",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/v1-r3-resume20261009-idle-r2-controller.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/v1-r3-resume20261009-coload-r2-controller.json",
+          "bytes": 681,
+          "sha256": "bfd91e086580ef0cbef70f92951f604a60669b1a51410c1ce864f7d007c7ab00",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/v1-r3-resume20261009-coload-r2-controller.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/v1-r3-resume20261009-idle-warm-r1-controller.json",
+          "bytes": 693,
+          "sha256": "2f2b40879fe8c8751217b8e43ad0857a5467ec9daaf0dc96b40c0e306b12ecde",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/v1-r3-resume20261009-idle-warm-r1-controller.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/v1-r3-resume20261009-coload-r1-controller.json",
+          "bytes": 681,
+          "sha256": "5fb7895b73d3e65f189d9affcb9b6b71d3923b8d7fdff5dbc6450d4f439cae7e",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/v1-r3-resume20261009-coload-r1-controller.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-coload.stdout",
+          "bytes": 35,
+          "sha256": "cb6d1058f691e12ffcc0513c466b38e67eaa49a8eeb81724899e5330b7cab6df",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-coload.stdout"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-finite.jsonl",
+          "bytes": 306491,
+          "sha256": "aa95770485a89cf35d40e3cc30e7c1e0a88d12bd7302825427a3954aa9c13ea8",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-finite.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-warm.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-warm.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-warm-r1-compact-warm.manifest.json",
+          "bytes": 4090,
+          "sha256": "53b71dfa9d8629461db81bf1885566ef4a7f1cd36f897e051cd6ac397350c60e",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-warm-r1-compact-warm.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-warm.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-warm.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-finite.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-finite.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-finite.manifest.json",
+          "bytes": 4103,
+          "sha256": "92ad2fb63ca52618a363637c404e9dde2c09ed90408e04bbf754e75b75d2bb66",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-finite.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-warm.manifest.json",
+          "bytes": 4093,
+          "sha256": "cd5e9c6ab551122dcdce59a24d9f2e16336a1b43cbf5f750c3fd9d6b0c9a51cf",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-warm.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-coload.gpu-launch.log",
+          "bytes": 1365,
+          "sha256": "b8c229cbbe35ff0040c39571a972e8ec8b4897a4a6d94eb536275209b4116cf7",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-coload.gpu-launch.log"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-finite-r1-cpuset-preflight.json",
+          "bytes": 462,
+          "sha256": "699d1b2508ae8c3da4f030ac88e0f12f61ca0558361017fec486f323dee37cf5",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-finite-r1-cpuset-preflight.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-finite.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-finite.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-warm.jsonl",
+          "bytes": 162035,
+          "sha256": "e7bf3b4813189197154b5a808844a68df84eb8b6c335d43e0187269e2d0f3684",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-warm.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-finite-r1-compact-finite.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-finite-r1-compact-finite.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-cpuset-preflight.json",
+          "bytes": 452,
+          "sha256": "3b8b4974ed88331940c5e67a619c58fa3bcc583674260291c427aa4b6d3f0571",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-cpuset-preflight.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-warm.jsonl",
+          "bytes": 161895,
+          "sha256": "7822c6f493503d7d250034802c12cbde1556a98be2970e6ae2eb93f93afb571a",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-warm.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-warm.manifest.json",
+          "bytes": 4090,
+          "sha256": "36084b6299fdc067365375fbb76b6d93216927ad3087911075ca77143e51739d",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-warm.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-finite.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-finite.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-coload.json",
+          "bytes": 670177,
+          "sha256": "d265a4bdbb049ba2af69f74651ceaf8f92b1da374225590349dd3e5104e23a66",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-coload.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-warm.manifest.json",
+          "bytes": 4093,
+          "sha256": "3839783b57d39c58c8187fb4b5cb708962f63e8004c9b0e3850cd56b327998c1",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-warm.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-warm.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-warm.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-finite.manifest.json",
+          "bytes": 4103,
+          "sha256": "a72146ec93fee4ce18379dc737994e655db4400e647aa9a91f8a7caf5167925a",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-finite.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-finite.jsonl",
+          "bytes": 306877,
+          "sha256": "ca884a035277bf5119d4f60de2fbc2c33c067924eb11f00d59cf9d1b947f4e41",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-finite.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-coload.json",
+          "bytes": 663081,
+          "sha256": "8f891c96fad2e7df019e5a1cfbbf1c5c6631eedc2644843eb80a5122c972ca76",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-coload.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-finite-r1-compact-finite.manifest.json",
+          "bytes": 4104,
+          "sha256": "fb230acfa2bba117e35c88bbf35443c5f06fca823f74e1cee23dee033dd327d5",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-finite-r1-compact-finite.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-coload.request.json",
+          "bytes": 1361,
+          "sha256": "85640b531cdd12ec7d18bbe9c0547bc98b2e621d044583162757abaced82221a",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-coload.request.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-coload.request.json",
+          "bytes": 1361,
+          "sha256": "85640b531cdd12ec7d18bbe9c0547bc98b2e621d044583162757abaced82221a",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-coload.request.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-warm.jsonl",
+          "bytes": 161678,
+          "sha256": "29b9f0f55465e05a7f0fe7cc85fe60f4cee4adfc0943321a7f8b30936aadfdc7",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-warm.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-warm-r1-cpuset-preflight.json",
+          "bytes": 458,
+          "sha256": "242adad8894f0c11f5408a8cbd74b956e39cbe4d2a4fcab9770b35f7ecf86f19",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-warm-r1-cpuset-preflight.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-cpuset-preflight.json",
+          "bytes": 448,
+          "sha256": "231bb45d6164d40f0a0366ebcae91c1aff5c392214ceccf17a24cf5dd21e5d20",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-cpuset-preflight.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-cpuset-preflight.json",
+          "bytes": 452,
+          "sha256": "da31006d80c8af31f650f8f03289bfa8e8133cc518ab8e056ec008057c531c0a",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-cpuset-preflight.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-coload.stderr",
+          "bytes": 38464,
+          "sha256": "1364c76f481a77bcf945faef144051e46ba1bc303889d509488275208c5e48da",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-coload.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-finite.manifest.json",
+          "bytes": 4103,
+          "sha256": "6539eb8d7342169b0c4968df1b2b373b2b3f31a7255d77f1ead6c8cac7b18a30",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-finite.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-finite.jsonl",
+          "bytes": 306815,
+          "sha256": "816294cd6f6b32cdf56f3fc9c4f6a4fb92aa08c0f87a41f823f62c6f0835ec89",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-finite.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-finite-r1-compact-finite.jsonl",
+          "bytes": 308774,
+          "sha256": "676a88a22722f8ff181c3fe818c1c8c76be44355cc639cae87c5b52fe3bbbeb4",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-finite-r1-compact-finite.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-warm-r1-compact-warm.jsonl",
+          "bytes": 162115,
+          "sha256": "1168ea826ce67e8a9032895c20aa61e1494b35a1085134988c569a29edb16608",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-warm-r1-compact-warm.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-coload.stderr",
+          "bytes": 38464,
+          "sha256": "61b7bb6bbb532ed1f6679a49575946bf2ab7c3da475455998e37196fbe5b5a79",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-coload.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-warm-r1-compact-warm.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-warm-r1-compact-warm.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-coload.stdout",
+          "bytes": 35,
+          "sha256": "cb6d1058f691e12ffcc0513c466b38e67eaa49a8eeb81724899e5330b7cab6df",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-coload.stdout"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-coload.gpu-launch.log",
+          "bytes": 1365,
+          "sha256": "fd4c8e80a26c2f90fb1962bfce33f3eb52dca39c145d2992b6cc8c283ec4142a",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-coload.gpu-launch.log"
+        },
+        {
+          "path": "run_cpuset_profile.py",
+          "bytes": 6025,
+          "sha256": "a4f42f310ba303838992f32699aac11054e3949fc92b8fb6988614a1c7c475f7",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/run_cpuset_profile.py"
+        },
+        {
+          "path": "gpu-coload-probe-20261009.py",
+          "bytes": 6597,
+          "sha256": "a2e3634c704643e5e37eb8a606adfcc7a6cd066c02e455feba9bad3a6e560dce",
+          "local_path": ".server/recovered/gpu-probes-20261009/v1/gpu-coload-probe-20261009.py"
+        }
+      ]
+    },
+    "v3": {
+      "root": "/home/voidlinux-3/procon37-distributed",
+      "files": [
+        {
+          "path": "gpu-lab-compact-r3/v3-r3-resume20261009-coload-r1-controller.json",
+          "bytes": 630,
+          "sha256": "f685bf13525469215ad53ad7f097564ec5daf1ba31cbf3488abe553d867911bb",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/v3-r3-resume20261009-coload-r1-controller.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/v3-r3-resume20261009-idle-r2-controller.json",
+          "bytes": 623,
+          "sha256": "0b918cfbd7d7a76cca1ae9bef838ffce140755108516e2bdb8b2faabefd7eba9",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/v3-r3-resume20261009-idle-r2-controller.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/v3-r3-resume20261009-idle-r1-controller.json",
+          "bytes": 620,
+          "sha256": "296aff4f93a8b3d87b3118dd11cad23edc47a19a1dfb2f9a5d9e6979e64de4fa",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/v3-r3-resume20261009-idle-r1-controller.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/v3-r3-resume20261009-coload-r2-controller.json",
+          "bytes": 631,
+          "sha256": "749c3b85ce494e6ce0918199265dd6d45b71cb90b60c73693b22e957dc2717b4",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/v3-r3-resume20261009-coload-r2-controller.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-coload.gpu-launch.log",
+          "bytes": 1323,
+          "sha256": "95218bd50221c44dbc2fc9bb2d27136d0c3dd043fb1c65e3fd248bd346053564",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-coload.gpu-launch.log"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-cpuset-preflight.json",
+          "bytes": 447,
+          "sha256": "16c05e76ba040962ed1eeb8b39255014454f62b5e375e00cd743c834fd31d45e",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-cpuset-preflight.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-cpuset-preflight.json",
+          "bytes": 451,
+          "sha256": "5870e37338d404c3c7cbf631237cdebe504a1346bc30a87574338ebc4e3a3f31",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-cpuset-preflight.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-warm.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-warm.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-finite.jsonl",
+          "bytes": 346353,
+          "sha256": "8b3474c45219b551940aa65ed52fb0e2cbe431b44a03e4a50bb08f81339c04ba",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-finite.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-coload.json",
+          "bytes": 523797,
+          "sha256": "891ae664ac01b22600023c1dccb0a79f5bc865dbcc7bb891b3d194dc99a4ef8e",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-coload.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-warm.manifest.json",
+          "bytes": 4377,
+          "sha256": "0179c474657c32e09cd0b4b5db49925a8bb5a02fcca5048bac972cfd14857f16",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-warm.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-warm.manifest.json",
+          "bytes": 4374,
+          "sha256": "5b09703909adcfa090bd55e32856a830053e8fbb4c3344b415775c8a8cd988a0",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-warm.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-finite.jsonl",
+          "bytes": 346282,
+          "sha256": "ec225e6d8159dd2312bdf622361bf7a57cd064824f50fb871bbb69389ed4677f",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-finite.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-warm.jsonl",
+          "bytes": 182407,
+          "sha256": "2a09ad308dff626c4a971ff414ff0a8f292768c09e76c1c1b597c6c141632306",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-warm.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-cpuset-preflight.json",
+          "bytes": 451,
+          "sha256": "88b2a1abcb64e1dcc1a6ebbb5951262523bef308a3b37fe67966f23674cfce0b",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-cpuset-preflight.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-finite.jsonl",
+          "bytes": 345929,
+          "sha256": "98d37685a791147f8d6a155f445b718eceb89c19ed22f2dd570cd7beecdf03fb",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-finite.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-coload.stderr",
+          "bytes": 38487,
+          "sha256": "70f1cebd74542f231a1d1f7d35757d0c31455dd45535237d55d4f625b0d5322c",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-coload.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-warm.manifest.json",
+          "bytes": 4374,
+          "sha256": "3813978fb220d025854914b1824483ba5eb6f19b342fb14050a4bf0879721cbe",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-warm.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-coload.json",
+          "bytes": 548361,
+          "sha256": "6d6948f26caa272c293f513a994fefc1c586d8f47b29f37f790b7652b2dd66aa",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-coload.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-finite.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-finite.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-coload.stderr",
+          "bytes": 38500,
+          "sha256": "007f1f39b848565d781b13496acf0bc2e7538ba42ac55d685f9c098a4bcb75e2",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-coload.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-finite.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-finite.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-finite.manifest.json",
+          "bytes": 4385,
+          "sha256": "1602f15903fc049c97286ae7ee4704fccf75f741112d58eca930a961c63f44ea",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-finite.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-warm.jsonl",
+          "bytes": 182825,
+          "sha256": "5d97e3906f139dac06f559e3c738e490baf38357adb3f276d987490156d1cb1e",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-warm.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-warm.jsonl",
+          "bytes": 182529,
+          "sha256": "cb9b032a8d9583792ad4b82a060550fd5da852edcf3fb4bbac749f3071c57d06",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-warm.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-warm.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-warm.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-finite.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-finite.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-warm.jsonl",
+          "bytes": 182947,
+          "sha256": "030d67b3e1d276bf48935e1d49781e5e4de18046a60ab8aea9336faaa4c0a7f0",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-warm.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-warm.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-warm.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-coload.gpu-launch.log",
+          "bytes": 1320,
+          "sha256": "2920e5194b00ad09e955f5ddb1772cfc3dbb90599b8422df869b90f4eda1a21d",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-coload.gpu-launch.log"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-finite.manifest.json",
+          "bytes": 4384,
+          "sha256": "4038c99aac62bb72678cefa3f912c9d60aa3b8d11247f70a39a832be342eefe9",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-finite.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-finite.manifest.json",
+          "bytes": 4383,
+          "sha256": "a1fa0fa8ab9b2e8538e04d175279a2489a137aa1017839339a35a67de6fe8a67",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-finite.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-cpuset-preflight.json",
+          "bytes": 447,
+          "sha256": "98827074c45b80781f8c8275ad73f082e84aaabdaa354eb1e44bfae99a88161d",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-cpuset-preflight.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-coload.stdout",
+          "bytes": 35,
+          "sha256": "25fe5ef0a996e285bb33f9e70efc95f392a1204eee54e5c653a5ab64dfc0c608",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-coload.stdout"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-coload.request.json",
+          "bytes": 1361,
+          "sha256": "85640b531cdd12ec7d18bbe9c0547bc98b2e621d044583162757abaced82221a",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-coload.request.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-warm.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-warm.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-warm.manifest.json",
+          "bytes": 4377,
+          "sha256": "7e5d53d2ea4a551e39a70d35268b3849971ca6e686a16362b9736a3ab195f2c1",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-warm.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-finite.stderr",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-finite.stderr"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-finite.jsonl",
+          "bytes": 345585,
+          "sha256": "0c9ae2535ab556bd1b1baee5f7ea5632b30eaa5999b418130a6167a1bd2b2e15",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-finite.jsonl"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-finite.manifest.json",
+          "bytes": 4383,
+          "sha256": "e9f6d9607c58cf3509b4a45c6dafe32ef34126b56a0f789eaed08e22ee019a57",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-finite.manifest.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-coload.request.json",
+          "bytes": 1361,
+          "sha256": "85640b531cdd12ec7d18bbe9c0547bc98b2e621d044583162757abaced82221a",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-coload.request.json"
+        },
+        {
+          "path": "gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-coload.stdout",
+          "bytes": 35,
+          "sha256": "25fe5ef0a996e285bb33f9e70efc95f392a1204eee54e5c653a5ab64dfc0c608",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-coload.stdout"
+        },
+        {
+          "path": "run_cpuset_profile.py",
+          "bytes": 5573,
+          "sha256": "61754f9620ba79aed0d6eaa6dd27e660f60a1033d608ed1aceffb00e777db782",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/run_cpuset_profile.py"
+        },
+        {
+          "path": "gpu-coload-probe-20261009.py",
+          "bytes": 6597,
+          "sha256": "a2e3634c704643e5e37eb8a606adfcc7a6cd066c02e455feba9bad3a6e560dce",
+          "local_path": ".server/recovered/gpu-probes-20261009/v3/gpu-coload-probe-20261009.py"
+        }
+      ]
+    }
+  },
+  "runs": [
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-finite.jsonl",
+      "profile": "finite",
+      "load": "idle",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 112.07977,
+              "median": 12.372463000000002
+            },
+            "1": {
+              "n": 9,
+              "sum": 191.010697,
+              "median": 22.201322
+            },
+            "2": {
+              "n": 9,
+              "sum": 412.710313,
+              "median": 47.758083000000006
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 715.80078,
+            "median": 22.201322,
+            "min": 12.150967000000001,
+            "max": 48.578700999999995
+          },
+          "graph_build_ms": {
+            "sum": 697.232663,
+            "median": 21.553257000000002,
+            "min": 11.756126000000002,
+            "max": 47.581841
+          },
+          "query_ms": {
+            "sum": 18.568117,
+            "median": 0.675447,
+            "min": 0.36261000000000004,
+            "max": 1.096828
+          },
+          "produce_ms": {
+            "sum": 518.443302,
+            "median": 16.200254,
+            "min": 8.646291999999999,
+            "max": 35.314166
+          },
+          "observed_wall_ms": {
+            "sum": 722.761577,
+            "median": 22.39129,
+            "min": 12.251065,
+            "max": 49.088387999999995
+          },
+          "validate_and_construct_ms": {
+            "sum": 176.993707,
+            "median": 5.3006340000000005,
+            "min": 3.000249,
+            "max": 12.254420999999999
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 306.073695,
+              "median": 33.822517999999995
+            },
+            "1": {
+              "n": 9,
+              "sum": 628.549968,
+              "median": 72.851842
+            },
+            "2": {
+              "n": 9,
+              "sum": 1556.399968,
+              "median": 179.61645099999998
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 2491.023631,
+            "median": 72.851842,
+            "min": 33.432334000000004,
+            "max": 185.661171
+          },
+          "graph_build_ms": {
+            "sum": 2476.027485,
+            "median": 72.301119,
+            "min": 33.163941,
+            "max": 184.838598
+          },
+          "query_ms": {
+            "sum": 14.996146,
+            "median": 0.544582,
+            "min": 0.248747,
+            "max": 1.11367
+          },
+          "produce_ms": {
+            "sum": 513.528867,
+            "median": 15.941659,
+            "min": 8.530543999999999,
+            "max": 35.188239
+          },
+          "observed_wall_ms": {
+            "sum": 2896.7072550000003,
+            "median": 82.87886499999999,
+            "min": 37.560339,
+            "max": 221.279728
+          },
+          "validate_and_construct_ms": {
+            "sum": 1960.823834,
+            "median": 56.111194000000005,
+            "min": 24.454431,
+            "max": 149.92281
+          }
+        },
+        "cpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 127.129419,
+              "median": 14.031216
+            },
+            "1": {
+              "n": 9,
+              "sum": 212.588448,
+              "median": 24.428792000000005
+            },
+            "2": {
+              "n": 9,
+              "sum": 465.137625,
+              "median": 53.191055000000006
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 804.855492,
+            "median": 24.428792000000005,
+            "min": 13.800472,
+            "max": 54.708744
+          },
+          "graph_build_ms": {
+            "sum": 786.430895,
+            "median": 23.780175000000003,
+            "min": 13.397827000000001,
+            "max": 53.75263
+          },
+          "query_ms": {
+            "sum": 18.424597,
+            "median": 0.648617,
+            "min": 0.364904,
+            "max": 1.193689
+          },
+          "produce_ms": {
+            "sum": 609.2328,
+            "median": 18.300815,
+            "min": 10.286168,
+            "max": 41.807768
+          },
+          "observed_wall_ms": {
+            "sum": 813.992794,
+            "median": 24.600063,
+            "min": 13.889359,
+            "max": 55.433813
+          },
+          "validate_and_construct_ms": {
+            "sum": 175.675007,
+            "median": 5.339387,
+            "min": 2.942361,
+            "max": 11.947545999999999
+          }
+        },
+        "gpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 4793.904415,
+              "median": 253.00479900000002
+            },
+            "1": {
+              "n": 9,
+              "sum": 2408.348092,
+              "median": 267.04969
+            },
+            "2": {
+              "n": 9,
+              "sum": 2518.402412,
+              "median": 281.2881239999999
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 9720.654919,
+            "median": 267.04969,
+            "min": 241.469306,
+            "max": 2785.2463270000003
+          },
+          "graph_build_ms": {
+            "sum": 9701.568109,
+            "median": 266.270599,
+            "min": 241.052484,
+            "max": 2784.501189
+          },
+          "query_ms": {
+            "sum": 19.08681,
+            "median": 0.661872,
+            "min": 0.374432,
+            "max": 1.171588
+          },
+          "produce_ms": {
+            "sum": 9528.669936,
+            "median": 261.02017700000005,
+            "min": 238.025305,
+            "max": 2781.466135
+          },
+          "observed_wall_ms": {
+            "sum": 9731.03959,
+            "median": 267.343121,
+            "min": 241.661938,
+            "max": 2785.452935
+          },
+          "validate_and_construct_ms": {
+            "sum": 171.30715600000002,
+            "median": 5.187162000000001,
+            "min": 2.828166,
+            "max": 11.865471000000001
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 16.380926195008215,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 0,
+      "cleanup_ms": 0
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-warm.jsonl",
+      "profile": "warm",
+      "load": "coload",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 211.826441,
+              "median": 23.652075
+            },
+            "1": {
+              "n": 9,
+              "sum": 373.708712,
+              "median": 42.940934999999996
+            },
+            "2": {
+              "n": 9,
+              "sum": 833.882271,
+              "median": 95.530622
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1419.417424,
+            "median": 42.940934999999996,
+            "min": 21.835447999999996,
+            "max": 98.03412700000001
+          },
+          "graph_build_ms": {
+            "sum": 1353.469034,
+            "median": 41.523095,
+            "min": 21.042800999999997,
+            "max": 93.525329
+          },
+          "query_ms": {
+            "sum": 65.94839,
+            "median": 1.891519,
+            "min": 0.7371730000000001,
+            "max": 5.401634
+          },
+          "produce_ms": {
+            "sum": 958.430986,
+            "median": 29.766817,
+            "min": 14.678930999999999,
+            "max": 66.11893
+          },
+          "observed_wall_ms": {
+            "sum": 1440.02614,
+            "median": 43.523607999999996,
+            "min": 22.099121999999998,
+            "max": 99.020819
+          },
+          "validate_and_construct_ms": {
+            "sum": 391.348085,
+            "median": 11.632345,
+            "min": 6.058967999999999,
+            "max": 27.848267999999997
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 654.006117,
+              "median": 73.81984800000001
+            },
+            "1": {
+              "n": 9,
+              "sum": 1372.982865,
+              "median": 159.44091699999998
+            },
+            "2": {
+              "n": 9,
+              "sum": 3436.962215,
+              "median": 396.45063700000003
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 5463.951197,
+            "median": 159.44091699999998,
+            "min": 67.31315099999999,
+            "max": 410.921247
+          },
+          "graph_build_ms": {
+            "sum": 5435.200057,
+            "median": 158.367103,
+            "min": 66.232874,
+            "max": 409.456008
+          },
+          "query_ms": {
+            "sum": 28.75114,
+            "median": 1.080277,
+            "min": 0.555502,
+            "max": 1.465239
+          },
+          "produce_ms": {
+            "sum": 955.544223,
+            "median": 29.071262,
+            "min": 14.883254,
+            "max": 65.975401
+          },
+          "observed_wall_ms": {
+            "sum": 6274.41303,
+            "median": 181.06778300000002,
+            "min": 78.33686300000001,
+            "max": 472.50962699999997
+          },
+          "validate_and_construct_ms": {
+            "sum": 4475.762018,
+            "median": 128.100878,
+            "min": 51.313092,
+            "max": 343.292865
+          }
+        },
+        "gpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 1,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 265.32809,
+              "median": 9.123377000000001
+            },
+            "1": {
+              "n": 9,
+              "sum": 134.503489,
+              "median": 14.766625000000001
+            },
+            "2": {
+              "n": 9,
+              "sum": 299.935278,
+              "median": 33.500542
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 699.766857,
+            "median": 15.692692,
+            "min": 8.925193,
+            "max": 192.08732899999998
+          },
+          "graph_build_ms": {
+            "sum": 639.566994,
+            "median": 13.724338999999999,
+            "min": 7.3031120000000005,
+            "max": 191.29791799999998
+          },
+          "query_ms": {
+            "sum": 60.199863,
+            "median": 1.443588,
+            "min": 0.744787,
+            "max": 4.45616
+          },
+          "produce_ms": {
+            "sum": 244.728181,
+            "median": 2.194367,
+            "min": 1.205141,
+            "max": 184.305388
+          },
+          "observed_wall_ms": {
+            "sum": 719.814894,
+            "median": 16.267481,
+            "min": 9.322761,
+            "max": 192.483742
+          },
+          "validate_and_construct_ms": {
+            "sum": 391.997963,
+            "median": 11.546884,
+            "min": 5.960142,
+            "max": 28.098688
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 13.284254821992363,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 182.698002,
+      "cleanup_ms": 73.396875,
+      "gpu_lifetime_measured_ms": 773.163732,
+      "gpu_steady_state_measured_ms": 517.068855,
+      "break_even_builds_approx": 7.662849941306884
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-warm.jsonl",
+      "profile": "warm",
+      "load": "coload",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 210.854511,
+              "median": 23.514849
+            },
+            "1": {
+              "n": 9,
+              "sum": 371.84484299999997,
+              "median": 43.079564999999995
+            },
+            "2": {
+              "n": 9,
+              "sum": 824.465461,
+              "median": 94.402393
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1407.164815,
+            "median": 43.079564999999995,
+            "min": 22.043147,
+            "max": 97.192017
+          },
+          "graph_build_ms": {
+            "sum": 1346.758504,
+            "median": 41.226687999999996,
+            "min": 21.275627,
+            "max": 92.86116200000001
+          },
+          "query_ms": {
+            "sum": 60.406311,
+            "median": 1.452104,
+            "min": 0.738005,
+            "max": 4.413761
+          },
+          "produce_ms": {
+            "sum": 951.58781,
+            "median": 29.026819,
+            "min": 14.808994,
+            "max": 65.508956
+          },
+          "observed_wall_ms": {
+            "sum": 1425.591847,
+            "median": 43.771954,
+            "min": 22.312973,
+            "max": 98.181555
+          },
+          "validate_and_construct_ms": {
+            "sum": 392.39527,
+            "median": 11.733884999999999,
+            "min": 6.0549100000000005,
+            "max": 28.024638
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 648.544439,
+              "median": 73.013165
+            },
+            "1": {
+              "n": 9,
+              "sum": 1369.847595,
+              "median": 157.147356
+            },
+            "2": {
+              "n": 9,
+              "sum": 3362.762454,
+              "median": 383.238018
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 5381.154488,
+            "median": 157.147356,
+            "min": 66.030115,
+            "max": 413.591135
+          },
+          "graph_build_ms": {
+            "sum": 5349.982611,
+            "median": 156.153161,
+            "min": 65.435178,
+            "max": 410.413453
+          },
+          "query_ms": {
+            "sum": 31.171877000000002,
+            "median": 1.01242,
+            "min": 0.5629759999999999,
+            "max": 3.177682
+          },
+          "produce_ms": {
+            "sum": 950.30813,
+            "median": 28.799864000000003,
+            "min": 14.508431,
+            "max": 65.842301
+          },
+          "observed_wall_ms": {
+            "sum": 6165.632888,
+            "median": 178.297326,
+            "min": 75.52099,
+            "max": 496.10544600000003
+          },
+          "validate_and_construct_ms": {
+            "sum": 4396.74786,
+            "median": 127.48210800000001,
+            "min": 50.89203199999999,
+            "max": 344.384753
+          }
+        },
+        "gpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 1,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 267.81548699999996,
+              "median": 9.370451
+            },
+            "1": {
+              "n": 9,
+              "sum": 134.364811,
+              "median": 14.786541000000001
+            },
+            "2": {
+              "n": 9,
+              "sum": 294.856912,
+              "median": 32.786131999999995
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 697.03721,
+            "median": 14.969825,
+            "min": 9.143826,
+            "max": 192.89238699999999
+          },
+          "graph_build_ms": {
+            "sum": 636.545345,
+            "median": 13.555632,
+            "min": 7.316858,
+            "max": 192.0999
+          },
+          "query_ms": {
+            "sum": 60.491865,
+            "median": 1.738823,
+            "min": 0.766719,
+            "max": 5.096913
+          },
+          "produce_ms": {
+            "sum": 249.391099,
+            "median": 2.400704,
+            "min": 1.2190370000000001,
+            "max": 185.993214
+          },
+          "observed_wall_ms": {
+            "sum": 714.418317,
+            "median": 15.57429,
+            "min": 9.555678,
+            "max": 193.303339
+          },
+          "validate_and_construct_ms": {
+            "sum": 382.462402,
+            "median": 11.559437,
+            "min": 6.03397,
+            "max": 27.000828000000002
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 13.076147497995407,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 183.321703,
+      "cleanup_ms": 71.63035099999999,
+      "gpu_lifetime_measured_ms": 768.667561,
+      "gpu_steady_state_measured_ms": 513.7155069999999,
+      "break_even_builds_approx": 7.7046402032693715
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-compact-finite.jsonl",
+      "profile": "finite",
+      "load": "coload",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 187.818791,
+              "median": 20.580752999999998
+            },
+            "1": {
+              "n": 9,
+              "sum": 344.418586,
+              "median": 40.127566
+            },
+            "2": {
+              "n": 9,
+              "sum": 770.543711,
+              "median": 89.104846
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1302.781088,
+            "median": 40.127566,
+            "min": 19.693128,
+            "max": 90.51933
+          },
+          "graph_build_ms": {
+            "sum": 1247.363114,
+            "median": 38.558653,
+            "min": 18.848864,
+            "max": 86.787418
+          },
+          "query_ms": {
+            "sum": 55.417974,
+            "median": 1.6354080000000002,
+            "min": 0.688071,
+            "max": 4.731076
+          },
+          "produce_ms": {
+            "sum": 880.895538,
+            "median": 27.254184000000002,
+            "min": 13.323648,
+            "max": 61.639005
+          },
+          "observed_wall_ms": {
+            "sum": 1317.0068860000001,
+            "median": 40.63589,
+            "min": 19.946122,
+            "max": 91.625595
+          },
+          "validate_and_construct_ms": {
+            "sum": 363.670728,
+            "median": 10.940576,
+            "min": 5.334277999999999,
+            "max": 25.326126000000002
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 552.200116,
+              "median": 60.891293
+            },
+            "1": {
+              "n": 9,
+              "sum": 1252.180352,
+              "median": 144.175207
+            },
+            "2": {
+              "n": 9,
+              "sum": 3115.882581,
+              "median": 357.638999
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 4920.263049,
+            "median": 144.175207,
+            "min": 44.751821,
+            "max": 370.724162
+          },
+          "graph_build_ms": {
+            "sum": 4892.012806,
+            "median": 143.196391,
+            "min": 44.393299,
+            "max": 369.339003
+          },
+          "query_ms": {
+            "sum": 28.250243,
+            "median": 1.048517,
+            "min": 0.358522,
+            "max": 1.634547
+          },
+          "produce_ms": {
+            "sum": 879.914354,
+            "median": 27.286574,
+            "min": 11.234988,
+            "max": 61.781383000000005
+          },
+          "observed_wall_ms": {
+            "sum": 5607.188193,
+            "median": 162.443601,
+            "min": 51.676334,
+            "max": 423.78978099999995
+          },
+          "validate_and_construct_ms": {
+            "sum": 4009.22122,
+            "median": 115.346209,
+            "min": 33.126601,
+            "max": 307.366331
+          }
+        },
+        "cpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 214.468712,
+              "median": 24.148678
+            },
+            "1": {
+              "n": 9,
+              "sum": 396.051048,
+              "median": 45.998942
+            },
+            "2": {
+              "n": 9,
+              "sum": 864.657714,
+              "median": 99.298772
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1475.177474,
+            "median": 45.998942,
+            "min": 18.014889,
+            "max": 101.052501
+          },
+          "graph_build_ms": {
+            "sum": 1425.866098,
+            "median": 44.359747,
+            "min": 17.524499,
+            "max": 97.780422
+          },
+          "query_ms": {
+            "sum": 49.311376,
+            "median": 1.274592,
+            "min": 0.49039000000000005,
+            "max": 3.739656
+          },
+          "produce_ms": {
+            "sum": 1062.225442,
+            "median": 32.97171,
+            "min": 13.736863,
+            "max": 72.71204
+          },
+          "observed_wall_ms": {
+            "sum": 1486.739441,
+            "median": 46.395174999999995,
+            "min": 18.169559,
+            "max": 101.717309
+          },
+          "validate_and_construct_ms": {
+            "sum": 360.85647,
+            "median": 10.803679,
+            "min": 3.761547,
+            "max": 25.305978
+          }
+        },
+        "gpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 5157.0562979999995,
+              "median": 298.670326
+            },
+            "1": {
+              "n": 9,
+              "sum": 2946.1652879999997,
+              "median": 321.1214279999999
+            },
+            "2": {
+              "n": 9,
+              "sum": 3262.66669,
+              "median": 351.750642
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 11365.888276,
+            "median": 327.13380800000004,
+            "min": 276.988075,
+            "max": 2756.260516
+          },
+          "graph_build_ms": {
+            "sum": 11315.982686,
+            "median": 325.917816,
+            "min": 275.93008,
+            "max": 2755.532189
+          },
+          "query_ms": {
+            "sum": 49.90559,
+            "median": 1.312793,
+            "min": 0.470232,
+            "max": 3.9636769999999997
+          },
+          "produce_ms": {
+            "sum": 10951.240258,
+            "median": 315.472419,
+            "min": 269.964478,
+            "max": 2749.9859930000002
+          },
+          "observed_wall_ms": {
+            "sum": 11378.330676,
+            "median": 327.448378,
+            "min": 277.207407,
+            "max": 2756.804176
+          },
+          "validate_and_construct_ms": {
+            "sum": 361.87549,
+            "median": 10.820111,
+            "min": 4.022386,
+            "max": 25.505352
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 24.039356220004265,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 0,
+      "cleanup_ms": 0
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-r2-compact-warm.jsonl",
+      "profile": "warm",
+      "load": "idle",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 114.283146,
+              "median": 12.619756999999998
+            },
+            "1": {
+              "n": 9,
+              "sum": 194.515234,
+              "median": 22.81769
+            },
+            "2": {
+              "n": 9,
+              "sum": 423.009404,
+              "median": 49.27389599999999
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 731.807784,
+            "median": 22.81769,
+            "min": 12.483411,
+            "max": 49.423016000000004
+          },
+          "graph_build_ms": {
+            "sum": 711.774137,
+            "median": 21.833393,
+            "min": 12.061409,
+            "max": 48.457053
+          },
+          "query_ms": {
+            "sum": 20.033647,
+            "median": 0.752672,
+            "min": 0.37073599999999995,
+            "max": 1.437657
+          },
+          "produce_ms": {
+            "sum": 529.855076,
+            "median": 16.467406,
+            "min": 8.647845,
+            "max": 36.273846
+          },
+          "observed_wall_ms": {
+            "sum": 740.714933,
+            "median": 23.048904,
+            "min": 12.661455,
+            "max": 50.367126999999996
+          },
+          "validate_and_construct_ms": {
+            "sum": 180.367068,
+            "median": 5.245922,
+            "min": 3.0377490000000003,
+            "max": 12.30706
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 317.46487,
+              "median": 35.459448
+            },
+            "1": {
+              "n": 9,
+              "sum": 659.4374819999999,
+              "median": 76.034483
+            },
+            "2": {
+              "n": 9,
+              "sum": 1617.279423,
+              "median": 185.859634
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 2594.181775,
+            "median": 76.034483,
+            "min": 33.81396,
+            "max": 192.35747600000002
+          },
+          "graph_build_ms": {
+            "sum": 2577.499363,
+            "median": 75.47737699999999,
+            "min": 33.54764,
+            "max": 191.495168
+          },
+          "query_ms": {
+            "sum": 16.682412,
+            "median": 0.559389,
+            "min": 0.253866,
+            "max": 1.370121
+          },
+          "produce_ms": {
+            "sum": 526.976418,
+            "median": 16.474759,
+            "min": 8.739747000000001,
+            "max": 36.558189999999996
+          },
+          "observed_wall_ms": {
+            "sum": 3034.543564,
+            "median": 87.887612,
+            "min": 38.272275,
+            "max": 228.90796
+          },
+          "validate_and_construct_ms": {
+            "sum": 2048.923183,
+            "median": 58.735056,
+            "min": 24.715570999999997,
+            "max": 155.49836
+          }
+        },
+        "gpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 1,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 202.68224500000005,
+              "median": 5.802798
+            },
+            "1": {
+              "n": 9,
+              "sum": 64.29035,
+              "median": 7.188467999999999
+            },
+            "2": {
+              "n": 9,
+              "sum": 139.541923,
+              "median": 15.532391
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 406.51451800000007,
+            "median": 7.418278,
+            "min": 4.585522,
+            "max": 156.19421600000004
+          },
+          "graph_build_ms": {
+            "sum": 385.451952,
+            "median": 6.631412000000001,
+            "min": 4.149564,
+            "max": 155.73600700000003
+          },
+          "query_ms": {
+            "sum": 21.062566,
+            "median": 0.647655,
+            "min": 0.371818,
+            "max": 1.608858
+          },
+          "produce_ms": {
+            "sum": 208.558838,
+            "median": 2.184879,
+            "min": 1.018852,
+            "max": 152.680764
+          },
+          "observed_wall_ms": {
+            "sum": 417.340607,
+            "median": 7.795075000000001,
+            "min": 4.8730020000000005,
+            "max": 156.468772
+          },
+          "validate_and_construct_ms": {
+            "sum": 175.356411,
+            "median": 5.0350459999999995,
+            "min": 2.903358,
+            "max": 12.420593
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 6.636966719001066,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 151.139253,
+      "cleanup_ms": 68.450415,
+      "gpu_lifetime_measured_ms": 474.9649330000001,
+      "gpu_steady_state_measured_ms": 255.37526500000007,
+      "break_even_builds_approx": 12.444408808291277
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-compact-finite.jsonl",
+      "profile": "finite",
+      "load": "coload",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 188.65168500000001,
+              "median": 20.660202
+            },
+            "1": {
+              "n": 9,
+              "sum": 343.203887,
+              "median": 39.514906
+            },
+            "2": {
+              "n": 9,
+              "sum": 769.470466,
+              "median": 89.16632999999999
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1301.326038,
+            "median": 39.514906,
+            "min": 19.807532,
+            "max": 91.133302
+          },
+          "graph_build_ms": {
+            "sum": 1244.2533389999999,
+            "median": 38.163912,
+            "min": 19.080268999999998,
+            "max": 86.638689
+          },
+          "query_ms": {
+            "sum": 57.072699,
+            "median": 1.683679,
+            "min": 0.690867,
+            "max": 4.494612999999999
+          },
+          "produce_ms": {
+            "sum": 879.043355,
+            "median": 26.988464999999998,
+            "min": 13.302608000000001,
+            "max": 61.684760999999995
+          },
+          "observed_wall_ms": {
+            "sum": 1315.6035120000001,
+            "median": 39.963098,
+            "min": 20.035740999999998,
+            "max": 91.893528
+          },
+          "validate_and_construct_ms": {
+            "sum": 362.429489,
+            "median": 10.841391,
+            "min": 5.44743,
+            "max": 25.350141
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 569.9812479999999,
+              "median": 63.37938
+            },
+            "1": {
+              "n": 9,
+              "sum": 1241.807299,
+              "median": 144.371705
+            },
+            "2": {
+              "n": 9,
+              "sum": 3092.969665,
+              "median": 353.448598
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 4904.758212,
+            "median": 144.371705,
+            "min": 59.77972700000001,
+            "max": 368.044943
+          },
+          "graph_build_ms": {
+            "sum": 4877.82408,
+            "median": 143.38018499999998,
+            "min": 59.097367000000006,
+            "max": 366.676847
+          },
+          "query_ms": {
+            "sum": 26.934132,
+            "median": 0.9915200000000001,
+            "min": 0.568968,
+            "max": 1.6715460000000002
+          },
+          "produce_ms": {
+            "sum": 879.334519,
+            "median": 27.213938,
+            "min": 13.026991,
+            "max": 61.717783
+          },
+          "observed_wall_ms": {
+            "sum": 5615.534289,
+            "median": 163.155788,
+            "min": 69.709487,
+            "max": 423.334826
+          },
+          "validate_and_construct_ms": {
+            "sum": 3995.549026,
+            "median": 115.654096,
+            "min": 45.948447,
+            "max": 304.747197
+          }
+        },
+        "cpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 219.997062,
+              "median": 24.143548
+            },
+            "1": {
+              "n": 9,
+              "sum": 393.459018,
+              "median": 45.260697
+            },
+            "2": {
+              "n": 9,
+              "sum": 864.861898,
+              "median": 99.054854
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1478.317978,
+            "median": 45.260697,
+            "min": 23.157117,
+            "max": 101.597234
+          },
+          "graph_build_ms": {
+            "sum": 1427.381833,
+            "median": 43.960388,
+            "min": 22.450941999999998,
+            "max": 97.740067
+          },
+          "query_ms": {
+            "sum": 50.936145,
+            "median": 1.301482,
+            "min": 0.686999,
+            "max": 4.303524
+          },
+          "produce_ms": {
+            "sum": 1063.207468,
+            "median": 32.945651,
+            "min": 17.11514,
+            "max": 72.755923
+          },
+          "observed_wall_ms": {
+            "sum": 1491.203989,
+            "median": 45.653975,
+            "min": 23.370908,
+            "max": 102.404308
+          },
+          "validate_and_construct_ms": {
+            "sum": 361.41315299999997,
+            "median": 10.681521,
+            "min": 5.303770999999999,
+            "max": 25.405154999999997
+          }
+        },
+        "gpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 5188.213239,
+              "median": 303.646603
+            },
+            "1": {
+              "n": 9,
+              "sum": 2904.752478,
+              "median": 320.816505
+            },
+            "2": {
+              "n": 9,
+              "sum": 3258.333301,
+              "median": 354.071809
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 11351.299018,
+            "median": 322.506465,
+            "min": 294.48214800000005,
+            "max": 2767.646678
+          },
+          "graph_build_ms": {
+            "sum": 11300.782109,
+            "median": 321.201647,
+            "min": 293.71083100000004,
+            "max": 2766.92816
+          },
+          "query_ms": {
+            "sum": 50.516909,
+            "median": 1.319385,
+            "min": 0.7067659999999999,
+            "max": 4.29082
+          },
+          "produce_ms": {
+            "sum": 10935.349342,
+            "median": 311.840605,
+            "min": 287.961814,
+            "max": 2761.497391
+          },
+          "observed_wall_ms": {
+            "sum": 11364.094395,
+            "median": 322.845412,
+            "min": 294.71648700000003,
+            "max": 2767.867442
+          },
+          "validate_and_construct_ms": {
+            "sum": 362.576567,
+            "median": 10.678816000000001,
+            "min": 5.394521,
+            "max": 25.916914
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 24.010952329001157,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 0,
+      "cleanup_ms": 0
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-finite-r1-compact-finite.jsonl",
+      "profile": "finite",
+      "load": "idle",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 110.11933199999999,
+              "median": 12.253799999999998
+            },
+            "1": {
+              "n": 9,
+              "sum": 186.112539,
+              "median": 21.722345
+            },
+            "2": {
+              "n": 9,
+              "sum": 408.578448,
+              "median": 47.633157
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 704.8103189999999,
+            "median": 21.722345,
+            "min": 11.915384999999999,
+            "max": 48.376802
+          },
+          "graph_build_ms": {
+            "sum": 685.2402519999999,
+            "median": 20.969833,
+            "min": 11.561881999999999,
+            "max": 47.113903
+          },
+          "query_ms": {
+            "sum": 19.570067,
+            "median": 0.705253,
+            "min": 0.353503,
+            "max": 1.262899
+          },
+          "produce_ms": {
+            "sum": 508.732058,
+            "median": 15.67569,
+            "min": 8.407563999999999,
+            "max": 35.419393
+          },
+          "observed_wall_ms": {
+            "sum": 712.353891,
+            "median": 21.916739,
+            "min": 12.039767999999999,
+            "max": 48.859007000000005
+          },
+          "validate_and_construct_ms": {
+            "sum": 174.964951,
+            "median": 5.251172,
+            "min": 2.955956,
+            "max": 12.350391
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 302.388302,
+              "median": 33.352404
+            },
+            "1": {
+              "n": 9,
+              "sum": 619.141272,
+              "median": 71.678051
+            },
+            "2": {
+              "n": 9,
+              "sum": 1539.115795,
+              "median": 177.528603
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 2460.645369,
+            "median": 71.678051,
+            "min": 33.169001,
+            "max": 183.050875
+          },
+          "graph_build_ms": {
+            "sum": 2445.435982,
+            "median": 71.137767,
+            "min": 32.867766,
+            "max": 182.175052
+          },
+          "query_ms": {
+            "sum": 15.209387,
+            "median": 0.5415059999999999,
+            "min": 0.23866800000000002,
+            "max": 1.1170959999999999
+          },
+          "produce_ms": {
+            "sum": 502.67852800000003,
+            "median": 15.306418,
+            "min": 8.353141999999998,
+            "max": 35.407451
+          },
+          "observed_wall_ms": {
+            "sum": 2862.340215,
+            "median": 81.586239,
+            "min": 37.205904,
+            "max": 216.603916
+          },
+          "validate_and_construct_ms": {
+            "sum": 1940.963969,
+            "median": 55.425959,
+            "min": 24.300673,
+            "max": 147.403293
+          }
+        },
+        "cpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 125.934397,
+              "median": 13.96467
+            },
+            "1": {
+              "n": 9,
+              "sum": 207.459368,
+              "median": 24.106316000000003
+            },
+            "2": {
+              "n": 9,
+              "sum": 459.548363,
+              "median": 53.324145
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 792.942128,
+            "median": 24.106316000000003,
+            "min": 13.711365,
+            "max": 54.30894299999999
+          },
+          "graph_build_ms": {
+            "sum": 774.446908,
+            "median": 23.500590000000003,
+            "min": 13.327995000000001,
+            "max": 53.335055999999994
+          },
+          "query_ms": {
+            "sum": 18.49522,
+            "median": 0.633158,
+            "min": 0.355988,
+            "max": 1.208277
+          },
+          "produce_ms": {
+            "sum": 599.489193,
+            "median": 18.204134,
+            "min": 10.281759999999998,
+            "max": 41.580181
+          },
+          "observed_wall_ms": {
+            "sum": 802.099363,
+            "median": 24.311481999999998,
+            "min": 13.81534,
+            "max": 54.980182
+          },
+          "validate_and_construct_ms": {
+            "sum": 173.443223,
+            "median": 5.163257,
+            "min": 2.953862,
+            "max": 12.341315
+          }
+        },
+        "gpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 2225.295939,
+              "median": 236.65791
+            },
+            "1": {
+              "n": 9,
+              "sum": 2177.132715,
+              "median": 241.233453
+            },
+            "2": {
+              "n": 9,
+              "sum": 2477.715638,
+              "median": 275.61203499999993
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 6880.144292,
+            "median": 250.44238099999998,
+            "min": 225.91932299999996,
+            "max": 316.04964199999995
+          },
+          "graph_build_ms": {
+            "sum": 6861.451683,
+            "median": 249.75377899999998,
+            "min": 225.26628799999997,
+            "max": 315.62468499999994
+          },
+          "query_ms": {
+            "sum": 18.692609,
+            "median": 0.622518,
+            "min": 0.371427,
+            "max": 1.1219750000000002
+          },
+          "produce_ms": {
+            "sum": 6688.653633,
+            "median": 240.46123599999999,
+            "min": 220.135672,
+            "max": 312.56954199999996
+          },
+          "observed_wall_ms": {
+            "sum": 6891.219187,
+            "median": 250.74039,
+            "min": 226.233662,
+            "max": 316.278832
+          },
+          "validate_and_construct_ms": {
+            "sum": 171.072374,
+            "median": 5.078659,
+            "min": 2.903007,
+            "max": 11.890088
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 13.460119494004175,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 0,
+      "cleanup_ms": 0
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-idle-warm-r1-compact-warm.jsonl",
+      "profile": "warm",
+      "load": "idle",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 112.337597,
+              "median": 12.387762
+            },
+            "1": {
+              "n": 9,
+              "sum": 190.76450200000002,
+              "median": 21.934643
+            },
+            "2": {
+              "n": 9,
+              "sum": 417.181384,
+              "median": 48.208036
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 720.283483,
+            "median": 21.934643,
+            "min": 12.318231,
+            "max": 49.609396000000004
+          },
+          "graph_build_ms": {
+            "sum": 701.8143220000001,
+            "median": 21.302998000000002,
+            "min": 11.882674000000002,
+            "max": 48.246048
+          },
+          "query_ms": {
+            "sum": 18.469161,
+            "median": 0.661651,
+            "min": 0.36074700000000004,
+            "max": 1.363348
+          },
+          "produce_ms": {
+            "sum": 521.717231,
+            "median": 16.040074,
+            "min": 8.509275,
+            "max": 36.107003
+          },
+          "observed_wall_ms": {
+            "sum": 729.441323,
+            "median": 22.487631,
+            "min": 12.46716,
+            "max": 50.234888999999995
+          },
+          "validate_and_construct_ms": {
+            "sum": 178.576319,
+            "median": 5.216587,
+            "min": 3.0114400000000003,
+            "max": 12.161866999999999
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 309.193452,
+              "median": 34.606378
+            },
+            "1": {
+              "n": 9,
+              "sum": 645.921274,
+              "median": 74.628615
+            },
+            "2": {
+              "n": 9,
+              "sum": 1593.806824,
+              "median": 183.761647
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 2548.92155,
+            "median": 74.628615,
+            "min": 32.82245,
+            "max": 190.06923100000003
+          },
+          "graph_build_ms": {
+            "sum": 2532.390186,
+            "median": 74.065519,
+            "min": 32.515945,
+            "max": 188.715251
+          },
+          "query_ms": {
+            "sum": 16.531364,
+            "median": 0.536687,
+            "min": 0.23985,
+            "max": 1.459748
+          },
+          "produce_ms": {
+            "sum": 516.50533,
+            "median": 15.810694,
+            "min": 8.466615000000001,
+            "max": 35.506176
+          },
+          "observed_wall_ms": {
+            "sum": 2983.554435,
+            "median": 85.895705,
+            "min": 37.382085000000004,
+            "max": 227.67716
+          },
+          "validate_and_construct_ms": {
+            "sum": 2014.284025,
+            "median": 57.783031,
+            "min": 23.642015999999998,
+            "max": 153.18690400000003
+          }
+        },
+        "gpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 1,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 2715.9079450000004,
+              "median": 4.4377770000000005
+            },
+            "1": {
+              "n": 9,
+              "sum": 63.504031999999995,
+              "median": 7.261253
+            },
+            "2": {
+              "n": 9,
+              "sum": 137.053708,
+              "median": 15.310875000000001
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 2916.465685,
+            "median": 7.336585,
+            "min": 4.030722,
+            "max": 2679.9726060000003
+          },
+          "graph_build_ms": {
+            "sum": 2896.77968,
+            "median": 6.742841,
+            "min": 3.625893,
+            "max": 2679.4768360000003
+          },
+          "query_ms": {
+            "sum": 19.686005,
+            "median": 0.619643,
+            "min": 0.363712,
+            "max": 1.49224
+          },
+          "produce_ms": {
+            "sum": 2720.696139,
+            "median": 1.395829,
+            "min": 0.702267,
+            "max": 2676.09411
+          },
+          "observed_wall_ms": {
+            "sum": 2927.2964580000003,
+            "median": 7.638722,
+            "min": 4.228193,
+            "max": 2680.210943
+          },
+          "validate_and_construct_ms": {
+            "sum": 174.555114,
+            "median": 5.346069999999999,
+            "min": 2.858864,
+            "max": 12.562228999999999
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 9.045170413010055,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 2675.1590859999997,
+      "cleanup_ms": 63.644417,
+      "gpu_lifetime_measured_ms": 2980.110102,
+      "gpu_steady_state_measured_ms": 241.30659900000046,
+      "break_even_builds_approx": 154.38677115992107
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-finite.jsonl",
+      "profile": "finite",
+      "load": "idle",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 130.3232,
+              "median": 14.262181000000002
+            },
+            "1": {
+              "n": 9,
+              "sum": 215.906624,
+              "median": 24.761986999999994
+            },
+            "2": {
+              "n": 9,
+              "sum": 470.21367100000003,
+              "median": 54.571138
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 816.443495,
+            "median": 24.761986999999994,
+            "min": 13.989417,
+            "max": 55.356587000000005
+          },
+          "graph_build_ms": {
+            "sum": 795.315703,
+            "median": 24.038644999999995,
+            "min": 13.577341,
+            "max": 54.348809
+          },
+          "query_ms": {
+            "sum": 21.127792,
+            "median": 0.766434,
+            "min": 0.405594,
+            "max": 1.249383
+          },
+          "produce_ms": {
+            "sum": 590.70215,
+            "median": 18.050245999999998,
+            "min": 9.886781000000001,
+            "max": 40.718008
+          },
+          "observed_wall_ms": {
+            "sum": 829.089398,
+            "median": 25.06631,
+            "min": 14.212538,
+            "max": 56.398168999999996
+          },
+          "validate_and_construct_ms": {
+            "sum": 202.81633,
+            "median": 5.923677,
+            "min": 3.5135370000000004,
+            "max": 13.901330999999999
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 360.615276,
+              "median": 40.537538000000005
+            },
+            "1": {
+              "n": 9,
+              "sum": 717.724988,
+              "median": 82.42006900000001
+            },
+            "2": {
+              "n": 9,
+              "sum": 1749.670891,
+              "median": 202.73702
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 2828.011155,
+            "median": 82.42006900000001,
+            "min": 38.203381,
+            "max": 207.72098699999998
+          },
+          "graph_build_ms": {
+            "sum": 2812.310495,
+            "median": 81.83497700000001,
+            "min": 37.930698,
+            "max": 206.82387699999998
+          },
+          "query_ms": {
+            "sum": 15.70066,
+            "median": 0.5798519999999999,
+            "min": 0.250812,
+            "max": 1.135739
+          },
+          "produce_ms": {
+            "sum": 598.551481,
+            "median": 17.957731000000003,
+            "min": 9.868677,
+            "max": 39.990247
+          },
+          "observed_wall_ms": {
+            "sum": 3272.959325,
+            "median": 92.952365,
+            "min": 42.807082,
+            "max": 244.104941
+          },
+          "validate_and_construct_ms": {
+            "sum": 2211.873434,
+            "median": 63.746379000000005,
+            "min": 27.993572,
+            "max": 166.715318
+          }
+        },
+        "cpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 142.257293,
+              "median": 15.707913
+            },
+            "1": {
+              "n": 9,
+              "sum": 237.459405,
+              "median": 27.364548000000003
+            },
+            "2": {
+              "n": 9,
+              "sum": 535.86817,
+              "median": 62.118753
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 915.584868,
+            "median": 27.364548000000003,
+            "min": 15.408471000000002,
+            "max": 63.612936000000005
+          },
+          "graph_build_ms": {
+            "sum": 894.518794,
+            "median": 26.669309000000002,
+            "min": 15.000964000000002,
+            "max": 62.550515000000004
+          },
+          "query_ms": {
+            "sum": 21.066074,
+            "median": 0.7040660000000001,
+            "min": 0.40323,
+            "max": 1.36984
+          },
+          "produce_ms": {
+            "sum": 691.329883,
+            "median": 20.803832,
+            "min": 11.517101,
+            "max": 49.150238
+          },
+          "observed_wall_ms": {
+            "sum": 931.986453,
+            "median": 27.806359999999998,
+            "min": 15.526012,
+            "max": 65.04279
+          },
+          "validate_and_construct_ms": {
+            "sum": 201.470105,
+            "median": 5.963171,
+            "min": 3.37679,
+            "max": 14.005458
+          }
+        },
+        "gpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 495.479124,
+              "median": 54.536222
+            },
+            "1": {
+              "n": 9,
+              "sum": 606.4604850000001,
+              "median": 68.641929
+            },
+            "2": {
+              "n": 9,
+              "sum": 923.482978,
+              "median": 104.816016
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 2025.422587,
+            "median": 68.641929,
+            "min": 53.635296000000004,
+            "max": 107.27227500000001
+          },
+          "graph_build_ms": {
+            "sum": 2002.377263,
+            "median": 67.95066700000001,
+            "min": 53.147547,
+            "max": 105.972998
+          },
+          "query_ms": {
+            "sum": 23.045324,
+            "median": 0.711329,
+            "min": 0.410383,
+            "max": 3.0000299999999998
+          },
+          "produce_ms": {
+            "sum": 1789.5516,
+            "median": 59.369845,
+            "min": 49.699042,
+            "max": 92.04696
+          },
+          "observed_wall_ms": {
+            "sum": 2043.374574,
+            "median": 69.086847,
+            "min": 53.956901,
+            "max": 108.34303100000001
+          },
+          "validate_and_construct_ms": {
+            "sum": 211.0447,
+            "median": 6.177575,
+            "min": 3.30804,
+            "max": 13.929134
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 9.558318356997916,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 0,
+      "cleanup_ms": 0
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-finite.jsonl",
+      "profile": "finite",
+      "load": "coload",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 198.12595199999998,
+              "median": 21.448054
+            },
+            "1": {
+              "n": 9,
+              "sum": 340.83824799999996,
+              "median": 39.04711
+            },
+            "2": {
+              "n": 9,
+              "sum": 768.958469,
+              "median": 88.11595500000001
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1307.922669,
+            "median": 39.04711,
+            "min": 21.235604000000002,
+            "max": 90.354451
+          },
+          "graph_build_ms": {
+            "sum": 1246.500589,
+            "median": 37.625523,
+            "min": 20.113740999999997,
+            "max": 85.347341
+          },
+          "query_ms": {
+            "sum": 61.42208,
+            "median": 1.9765020000000002,
+            "min": 0.718433,
+            "max": 5.00711
+          },
+          "produce_ms": {
+            "sum": 875.898787,
+            "median": 26.726446,
+            "min": 14.191728000000001,
+            "max": 59.773436
+          },
+          "observed_wall_ms": {
+            "sum": 1331.519827,
+            "median": 39.886221,
+            "min": 21.642831,
+            "max": 91.58975799999999
+          },
+          "validate_and_construct_ms": {
+            "sum": 367.868083,
+            "median": 10.654757,
+            "min": 5.775527,
+            "max": 25.972436000000002
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 616.742386,
+              "median": 67.918164
+            },
+            "1": {
+              "n": 9,
+              "sum": 1250.326124,
+              "median": 144.711416
+            },
+            "2": {
+              "n": 9,
+              "sum": 3112.5731570000003,
+              "median": 356.460539
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 4979.641667,
+            "median": 144.711416,
+            "min": 66.299897,
+            "max": 367.52598
+          },
+          "graph_build_ms": {
+            "sum": 4948.763074,
+            "median": 143.59126700000002,
+            "min": 65.588397,
+            "max": 365.484134
+          },
+          "query_ms": {
+            "sum": 30.878593,
+            "median": 1.0965250000000002,
+            "min": 0.6066119999999999,
+            "max": 2.041846
+          },
+          "produce_ms": {
+            "sum": 886.107172,
+            "median": 26.478939999999998,
+            "min": 14.525106,
+            "max": 60.092236
+          },
+          "observed_wall_ms": {
+            "sum": 5826.886402,
+            "median": 166.63886399999998,
+            "min": 77.660674,
+            "max": 432.948255
+          },
+          "validate_and_construct_ms": {
+            "sum": 4059.323588,
+            "median": 116.281362,
+            "min": 50.137999,
+            "max": 305.865961
+          }
+        },
+        "cpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 228.89431100000002,
+              "median": 25.452326000000003
+            },
+            "1": {
+              "n": 9,
+              "sum": 389.336098,
+              "median": 44.86096
+            },
+            "2": {
+              "n": 9,
+              "sum": 865.778958,
+              "median": 100.11634699999999
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1484.009367,
+            "median": 44.86096,
+            "min": 24.964185,
+            "max": 101.09700300000002
+          },
+          "graph_build_ms": {
+            "sum": 1429.951977,
+            "median": 43.591459,
+            "min": 24.208924,
+            "max": 97.23065
+          },
+          "query_ms": {
+            "sum": 54.05739,
+            "median": 1.337379,
+            "min": 0.699978,
+            "max": 4.561721
+          },
+          "produce_ms": {
+            "sum": 1060.9893670000001,
+            "median": 32.841493,
+            "min": 18.038353,
+            "max": 71.633793
+          },
+          "observed_wall_ms": {
+            "sum": 1503.826354,
+            "median": 45.82752,
+            "min": 25.284199,
+            "max": 102.493945
+          },
+          "validate_and_construct_ms": {
+            "sum": 365.849213,
+            "median": 10.660027000000001,
+            "min": 5.743036,
+            "max": 26.476765999999998
+          }
+        },
+        "gpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 843.00129,
+              "median": 93.54477
+            },
+            "1": {
+              "n": 9,
+              "sum": 986.45176,
+              "median": 110.826318
+            },
+            "2": {
+              "n": 9,
+              "sum": 1401.411549,
+              "median": 157.267775
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 3230.864599,
+            "median": 110.826318,
+            "min": 87.51356100000001,
+            "max": 162.443783
+          },
+          "graph_build_ms": {
+            "sum": 3170.9068359999997,
+            "median": 108.62375,
+            "min": 86.75269800000001,
+            "max": 158.34321
+          },
+          "query_ms": {
+            "sum": 59.957763,
+            "median": 2.054469,
+            "min": 0.6935659999999999,
+            "max": 4.100573
+          },
+          "produce_ms": {
+            "sum": 2752.014363,
+            "median": 93.42421300000001,
+            "min": 80.281009,
+            "max": 133.193894
+          },
+          "observed_wall_ms": {
+            "sum": 3251.978681,
+            "median": 111.41159,
+            "min": 87.864542,
+            "max": 163.774089
+          },
+          "validate_and_construct_ms": {
+            "sum": 416.10231,
+            "median": 14.98917,
+            "min": 5.681531,
+            "max": 25.735729999999997
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 16.3567644539944,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 0,
+      "cleanup_ms": 0
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r2-compact-warm.jsonl",
+      "profile": "warm",
+      "load": "idle",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 127.60532099999999,
+              "median": 14.187921
+            },
+            "1": {
+              "n": 9,
+              "sum": 218.38099400000002,
+              "median": 25.101234
+            },
+            "2": {
+              "n": 9,
+              "sum": 480.251271,
+              "median": 55.207266
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 826.237586,
+            "median": 25.101234,
+            "min": 13.94318,
+            "max": 56.66881800000001
+          },
+          "graph_build_ms": {
+            "sum": 805.742719,
+            "median": 24.380176000000002,
+            "min": 13.498864,
+            "max": 55.57633100000001
+          },
+          "query_ms": {
+            "sum": 20.494867,
+            "median": 0.726098,
+            "min": 0.406706,
+            "max": 1.092487
+          },
+          "produce_ms": {
+            "sum": 600.26257,
+            "median": 18.444377000000003,
+            "min": 9.853709,
+            "max": 41.720625
+          },
+          "observed_wall_ms": {
+            "sum": 840.736877,
+            "median": 25.326008,
+            "min": 14.1286,
+            "max": 58.235428999999996
+          },
+          "validate_and_construct_ms": {
+            "sum": 203.716355,
+            "median": 5.797219,
+            "min": 3.2985219999999997,
+            "max": 14.077012
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 359.868409,
+              "median": 39.798055
+            },
+            "1": {
+              "n": 9,
+              "sum": 747.036311,
+              "median": 86.270561
+            },
+            "2": {
+              "n": 9,
+              "sum": 1806.410743,
+              "median": 207.425481
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 2913.315463,
+            "median": 86.270561,
+            "min": 39.068311,
+            "max": 214.419883
+          },
+          "graph_build_ms": {
+            "sum": 2896.605182,
+            "median": 85.662716,
+            "min": 38.685831,
+            "max": 213.521722
+          },
+          "query_ms": {
+            "sum": 16.710281,
+            "median": 0.594901,
+            "min": 0.265881,
+            "max": 1.570899
+          },
+          "produce_ms": {
+            "sum": 595.726648,
+            "median": 18.374276,
+            "min": 9.715308,
+            "max": 41.762224
+          },
+          "observed_wall_ms": {
+            "sum": 3424.441462,
+            "median": 98.455789,
+            "min": 44.385925,
+            "max": 253.739508
+          },
+          "validate_and_construct_ms": {
+            "sum": 2299.05614,
+            "median": 66.864722,
+            "min": 28.545553,
+            "max": 172.616943
+          }
+        },
+        "gpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 1,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 128.034779,
+              "median": 10.370632
+            },
+            "1": {
+              "n": 9,
+              "sum": 177.156641,
+              "median": 19.925817
+            },
+            "2": {
+              "n": 9,
+              "sum": 416.926028,
+              "median": 47.157796000000005
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 722.117448,
+            "median": 20.5853,
+            "min": 9.358765,
+            "max": 50.617231
+          },
+          "graph_build_ms": {
+            "sum": 702.125206,
+            "median": 19.862259,
+            "min": 8.955235,
+            "max": 49.598723
+          },
+          "query_ms": {
+            "sum": 19.992242,
+            "median": 0.691833,
+            "min": 0.40353,
+            "max": 1.132964
+          },
+          "produce_ms": {
+            "sum": 501.660766,
+            "median": 13.594794,
+            "min": 5.566494,
+            "max": 41.69634
+          },
+          "observed_wall_ms": {
+            "sum": 736.7137,
+            "median": 20.977138,
+            "min": 9.55771,
+            "max": 51.250464
+          },
+          "validate_and_construct_ms": {
+            "sum": 198.130492,
+            "median": 5.648939,
+            "min": 3.1978530000000003,
+            "max": 14.826734
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 7.649599310003396,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 34.121804,
+      "cleanup_ms": 0.24631399999999998,
+      "gpu_lifetime_measured_ms": 722.363762,
+      "gpu_steady_state_measured_ms": 687.995644,
+      "break_even_builds_approx": 6.712428750458381
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-finite.jsonl",
+      "profile": "finite",
+      "load": "idle",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 129.40611,
+              "median": 14.111686999999998
+            },
+            "1": {
+              "n": 9,
+              "sum": 214.618517,
+              "median": 24.880989999999997
+            },
+            "2": {
+              "n": 9,
+              "sum": 465.55336,
+              "median": 54.023914999999995
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 809.577987,
+            "median": 24.880989999999997,
+            "min": 13.891172000000001,
+            "max": 55.48621200000001
+          },
+          "graph_build_ms": {
+            "sum": 789.619529,
+            "median": 24.133001999999998,
+            "min": 13.429833,
+            "max": 54.46802400000001
+          },
+          "query_ms": {
+            "sum": 19.958458,
+            "median": 0.75405,
+            "min": 0.401496,
+            "max": 1.041101
+          },
+          "produce_ms": {
+            "sum": 588.220611,
+            "median": 17.941540999999997,
+            "min": 9.877353,
+            "max": 40.683181999999995
+          },
+          "observed_wall_ms": {
+            "sum": 822.2348450000001,
+            "median": 25.242651000000002,
+            "min": 14.057395,
+            "max": 56.452211000000005
+          },
+          "validate_and_construct_ms": {
+            "sum": 199.38689,
+            "median": 5.959344,
+            "min": 3.5037190000000002,
+            "max": 13.887013999999999
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 357.902103,
+              "median": 38.805205
+            },
+            "1": {
+              "n": 9,
+              "sum": 722.216474,
+              "median": 82.64997899999999
+            },
+            "2": {
+              "n": 9,
+              "sum": 1784.34101,
+              "median": 206.712108
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 2864.459587,
+            "median": 82.64997899999999,
+            "min": 38.157055,
+            "max": 212.66799500000002
+          },
+          "graph_build_ms": {
+            "sum": 2847.542718,
+            "median": 82.06167099999999,
+            "min": 37.872409,
+            "max": 211.511276
+          },
+          "query_ms": {
+            "sum": 16.916869,
+            "median": 0.5975050000000001,
+            "min": 0.24872799999999998,
+            "max": 1.184992
+          },
+          "produce_ms": {
+            "sum": 591.603473,
+            "median": 17.86715,
+            "min": 9.745403999999999,
+            "max": 40.25753
+          },
+          "observed_wall_ms": {
+            "sum": 3288.4229490000002,
+            "median": 92.94725500000001,
+            "min": 42.741959,
+            "max": 248.243055
+          },
+          "validate_and_construct_ms": {
+            "sum": 2254.037525,
+            "median": 63.650788,
+            "min": 27.983925,
+            "max": 171.86664
+          }
+        },
+        "cpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 142.573509,
+              "median": 15.669752
+            },
+            "1": {
+              "n": 9,
+              "sum": 237.077435,
+              "median": 27.217221
+            },
+            "2": {
+              "n": 9,
+              "sum": 527.658565,
+              "median": 61.043098
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 907.309509,
+            "median": 27.217221,
+            "min": 15.433677999999999,
+            "max": 61.68534700000001
+          },
+          "graph_build_ms": {
+            "sum": 886.566461,
+            "median": 26.491474,
+            "min": 14.985092999999999,
+            "max": 60.671237000000005
+          },
+          "query_ms": {
+            "sum": 20.743047999999998,
+            "median": 0.704607,
+            "min": 0.396477,
+            "max": 1.591087
+          },
+          "produce_ms": {
+            "sum": 685.26665,
+            "median": 20.593134,
+            "min": 11.525457,
+            "max": 46.901744
+          },
+          "observed_wall_ms": {
+            "sum": 924.062911,
+            "median": 27.43467,
+            "min": 15.557391,
+            "max": 63.165575000000004
+          },
+          "validate_and_construct_ms": {
+            "sum": 199.592058,
+            "median": 5.950126,
+            "min": 3.338989,
+            "max": 14.112269
+          }
+        },
+        "gpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 515.925079,
+              "median": 57.08824799999999
+            },
+            "1": {
+              "n": 9,
+              "sum": 611.016064,
+              "median": 67.178644
+            },
+            "2": {
+              "n": 9,
+              "sum": 926.615874,
+              "median": 104.67966
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 2053.557017,
+            "median": 67.178644,
+            "min": 53.982229000000004,
+            "max": 107.27938599999999
+          },
+          "graph_build_ms": {
+            "sum": 2028.851308,
+            "median": 66.48956600000001,
+            "min": 53.574691,
+            "max": 106.05723499999999
+          },
+          "query_ms": {
+            "sum": 24.705709,
+            "median": 0.718002,
+            "min": 0.400415,
+            "max": 3.031739
+          },
+          "produce_ms": {
+            "sum": 1813.533236,
+            "median": 59.875979,
+            "min": 50.157445,
+            "max": 92.38731
+          },
+          "observed_wall_ms": {
+            "sum": 2071.7362,
+            "median": 67.732707,
+            "min": 54.300458000000006,
+            "max": 108.417391
+          },
+          "validate_and_construct_ms": {
+            "sum": 213.579769,
+            "median": 6.172725,
+            "min": 3.373624,
+            "max": 13.684702999999999
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 9.589364930005104,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 0,
+      "cleanup_ms": 0
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-compact-warm.jsonl",
+      "profile": "warm",
+      "load": "coload",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 222.207741,
+              "median": 24.430281000000004
+            },
+            "1": {
+              "n": 9,
+              "sum": 391.740805,
+              "median": 44.97535500000001
+            },
+            "2": {
+              "n": 9,
+              "sum": 874.154118,
+              "median": 101.337706
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1488.102664,
+            "median": 44.97535500000001,
+            "min": 23.432992000000002,
+            "max": 102.14789300000001
+          },
+          "graph_build_ms": {
+            "sum": 1415.1525530000001,
+            "median": 42.840024,
+            "min": 21.959447,
+            "max": 97.36562599999999
+          },
+          "query_ms": {
+            "sum": 72.95011099999999,
+            "median": 1.951596,
+            "min": 0.763738,
+            "max": 5.680248
+          },
+          "produce_ms": {
+            "sum": 993.483125,
+            "median": 30.069823,
+            "min": 15.272073,
+            "max": 68.591844
+          },
+          "observed_wall_ms": {
+            "sum": 1516.30039,
+            "median": 45.984435999999995,
+            "min": 23.841582,
+            "max": 103.61514600000001
+          },
+          "validate_and_construct_ms": {
+            "sum": 418.692706,
+            "median": 12.185961,
+            "min": 6.170842,
+            "max": 30.109517999999998
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 692.649914,
+              "median": 77.65782
+            },
+            "1": {
+              "n": 9,
+              "sum": 1454.340846,
+              "median": 167.393496
+            },
+            "2": {
+              "n": 9,
+              "sum": 3626.298334,
+              "median": 418.82403300000004
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 5773.289094,
+            "median": 167.393496,
+            "min": 72.514852,
+            "max": 430.406237
+          },
+          "graph_build_ms": {
+            "sum": 5740.314941,
+            "median": 166.282754,
+            "min": 71.830313,
+            "max": 428.868792
+          },
+          "query_ms": {
+            "sum": 32.974153,
+            "median": 1.1107420000000001,
+            "min": 0.647961,
+            "max": 2.642978
+          },
+          "produce_ms": {
+            "sum": 998.372583,
+            "median": 30.401117,
+            "min": 15.134975,
+            "max": 69.342388
+          },
+          "observed_wall_ms": {
+            "sum": 6688.710136,
+            "median": 191.361967,
+            "min": 84.044618,
+            "max": 499.200793
+          },
+          "validate_and_construct_ms": {
+            "sum": 4738.758599,
+            "median": 135.774525,
+            "min": 56.151354,
+            "max": 361.219413
+          }
+        },
+        "gpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 1,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 200.23300899999998,
+              "median": 15.616823
+            },
+            "1": {
+              "n": 9,
+              "sum": 249.648942,
+              "median": 28.248582
+            },
+            "2": {
+              "n": 9,
+              "sum": 616.685042,
+              "median": 69.663071
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1066.566993,
+            "median": 28.377947,
+            "min": 13.846288999999999,
+            "max": 78.283378
+          },
+          "graph_build_ms": {
+            "sum": 1005.079065,
+            "median": 26.891247,
+            "min": 12.531582,
+            "max": 77.407137
+          },
+          "query_ms": {
+            "sum": 61.487928,
+            "median": 1.542976,
+            "min": 0.767966,
+            "max": 5.072684
+          },
+          "produce_ms": {
+            "sum": 557.467403,
+            "median": 13.338923000000001,
+            "min": 6.1665540000000005,
+            "max": 69.536754
+          },
+          "observed_wall_ms": {
+            "sum": 1092.60582,
+            "median": 29.255309,
+            "min": 14.488297000000001,
+            "max": 78.864161
+          },
+          "validate_and_construct_ms": {
+            "sum": 444.64834,
+            "median": 12.827689,
+            "min": 6.326325,
+            "max": 32.205275
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 14.392474014995969,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 60.658063,
+      "cleanup_ms": 0.34409799999999996,
+      "gpu_lifetime_measured_ms": 1066.911091,
+      "gpu_steady_state_measured_ms": 1005.9089299999999,
+      "break_even_builds_approx": 3.415760576847313
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-idle-r1-compact-warm.jsonl",
+      "profile": "warm",
+      "load": "idle",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 128.04735399999998,
+              "median": 14.255519
+            },
+            "1": {
+              "n": 9,
+              "sum": 218.211215,
+              "median": 25.116443999999998
+            },
+            "2": {
+              "n": 9,
+              "sum": 481.018847,
+              "median": 54.73293199999999
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 827.277416,
+            "median": 25.116443999999998,
+            "min": 14.077724,
+            "max": 57.373525
+          },
+          "graph_build_ms": {
+            "sum": 806.658532,
+            "median": 24.421445,
+            "min": 13.629069999999999,
+            "max": 56.078405000000004
+          },
+          "query_ms": {
+            "sum": 20.618884,
+            "median": 0.6949989999999999,
+            "min": 0.40338,
+            "max": 1.526024
+          },
+          "produce_ms": {
+            "sum": 599.985037,
+            "median": 18.233009000000003,
+            "min": 9.929561,
+            "max": 42.053623
+          },
+          "observed_wall_ms": {
+            "sum": 842.694781,
+            "median": 25.338663,
+            "min": 14.264856,
+            "max": 58.586220000000004
+          },
+          "validate_and_construct_ms": {
+            "sum": 204.917287,
+            "median": 5.964874,
+            "min": 3.45089,
+            "max": 14.573637999999999
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 358.551836,
+              "median": 39.684361
+            },
+            "1": {
+              "n": 9,
+              "sum": 742.7384460000001,
+              "median": 85.76635
+            },
+            "2": {
+              "n": 9,
+              "sum": 1835.670462,
+              "median": 211.04254300000002
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 2936.960744,
+            "median": 85.76635,
+            "min": 38.909501,
+            "max": 220.86659600000002
+          },
+          "graph_build_ms": {
+            "sum": 2920.376098,
+            "median": 85.20359,
+            "min": 38.571633999999996,
+            "max": 219.53389600000003
+          },
+          "query_ms": {
+            "sum": 16.584646,
+            "median": 0.5949399999999999,
+            "min": 0.265881,
+            "max": 1.3327
+          },
+          "produce_ms": {
+            "sum": 592.93058,
+            "median": 18.352134,
+            "min": 9.613435,
+            "max": 41.582936000000004
+          },
+          "observed_wall_ms": {
+            "sum": 3442.079792,
+            "median": 98.107663,
+            "min": 44.341853,
+            "max": 260.593426
+          },
+          "validate_and_construct_ms": {
+            "sum": 2325.04658,
+            "median": 66.245485,
+            "min": 28.519763,
+            "max": 178.93251800000002
+          }
+        },
+        "gpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 1,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 129.389432,
+              "median": 10.649789
+            },
+            "1": {
+              "n": 9,
+              "sum": 177.864046,
+              "median": 20.126996999999996
+            },
+            "2": {
+              "n": 9,
+              "sum": 424.04762900000003,
+              "median": 47.25006
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 731.301107,
+            "median": 20.426551,
+            "min": 9.497348,
+            "max": 53.19530699999999
+          },
+          "graph_build_ms": {
+            "sum": 711.22021,
+            "median": 19.716574,
+            "min": 9.063049,
+            "max": 52.194481999999994
+          },
+          "query_ms": {
+            "sum": 20.080897,
+            "median": 0.696512,
+            "min": 0.40320900000000004,
+            "max": 1.0423330000000002
+          },
+          "produce_ms": {
+            "sum": 508.41621100000003,
+            "median": 13.485749,
+            "min": 5.603804,
+            "max": 41.357863
+          },
+          "observed_wall_ms": {
+            "sum": 745.537078,
+            "median": 20.796157,
+            "min": 9.685251000000001,
+            "max": 54.341004999999996
+          },
+          "validate_and_construct_ms": {
+            "sum": 201.066383,
+            "median": 6.121529,
+            "min": 3.277022,
+            "max": 13.918644
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 7.689277949000825,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 33.81185,
+      "cleanup_ms": 0.240573,
+      "gpu_lifetime_measured_ms": 731.54168,
+      "gpu_steady_state_measured_ms": 697.489257,
+      "break_even_builds_approx": 7.083969971405477
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-warm.jsonl",
+      "profile": "warm",
+      "load": "coload",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 223.118777,
+              "median": 24.878197000000004
+            },
+            "1": {
+              "n": 9,
+              "sum": 311.005311,
+              "median": 33.206199
+            },
+            "2": {
+              "n": 9,
+              "sum": 850.273624,
+              "median": 99.06468600000001
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1384.397712,
+            "median": 33.206199,
+            "min": 22.908784999999998,
+            "max": 104.265811
+          },
+          "graph_build_ms": {
+            "sum": 1323.130387,
+            "median": 31.949852999999997,
+            "min": 22.082078,
+            "max": 98.674362
+          },
+          "query_ms": {
+            "sum": 61.267325,
+            "median": 1.6065450000000001,
+            "min": 0.7807810000000001,
+            "max": 5.827896
+          },
+          "produce_ms": {
+            "sum": 943.721667,
+            "median": 24.010662,
+            "min": 15.833129000000001,
+            "max": 69.258109
+          },
+          "observed_wall_ms": {
+            "sum": 1413.210057,
+            "median": 33.873256,
+            "min": 23.366387,
+            "max": 105.67831199999999
+          },
+          "validate_and_construct_ms": {
+            "sum": 376.586507,
+            "median": 7.598881,
+            "min": 6.212981999999999,
+            "max": 30.065044
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 698.045516,
+              "median": 77.731599
+            },
+            "1": {
+              "n": 9,
+              "sum": 1120.9796469999999,
+              "median": 107.213243
+            },
+            "2": {
+              "n": 9,
+              "sum": 3484.990762,
+              "median": 410.450324
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 5304.015925,
+            "median": 107.213243,
+            "min": 73.157994,
+            "max": 432.079348
+          },
+          "graph_build_ms": {
+            "sum": 5276.273554,
+            "median": 106.47935100000001,
+            "min": 72.423711,
+            "max": 430.594021
+          },
+          "query_ms": {
+            "sum": 27.742371,
+            "median": 0.749922,
+            "min": 0.596384,
+            "max": 2.7324260000000002
+          },
+          "produce_ms": {
+            "sum": 950.215383,
+            "median": 23.321233,
+            "min": 15.486136,
+            "max": 69.72360599999999
+          },
+          "observed_wall_ms": {
+            "sum": 6170.295342,
+            "median": 124.887851,
+            "min": 84.59082599999999,
+            "max": 501.39208999999994
+          },
+          "validate_and_construct_ms": {
+            "sum": 4323.041198,
+            "median": 83.15139500000001,
+            "min": 56.399862,
+            "max": 360.663926
+          }
+        },
+        "gpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 1,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 196.562937,
+              "median": 15.153369000000001
+            },
+            "1": {
+              "n": 9,
+              "sum": 216.32234599999998,
+              "median": 22.502159999999996
+            },
+            "2": {
+              "n": 9,
+              "sum": 619.613334,
+              "median": 70.78052699999999
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1032.498617,
+            "median": 22.771448,
+            "min": 13.028537,
+            "max": 78.09852900000001
+          },
+          "graph_build_ms": {
+            "sum": 974.36805,
+            "median": 21.810789,
+            "min": 12.24943,
+            "max": 77.24471100000001
+          },
+          "query_ms": {
+            "sum": 58.130567,
+            "median": 0.967943,
+            "min": 0.778916,
+            "max": 5.004135
+          },
+          "produce_ms": {
+            "sum": 554.72771,
+            "median": 13.563386,
+            "min": 5.633159,
+            "max": 70.70652700000001
+          },
+          "observed_wall_ms": {
+            "sum": 1057.285878,
+            "median": 23.486144,
+            "min": 13.562884,
+            "max": 78.609682
+          },
+          "validate_and_construct_ms": {
+            "sum": 416.840737,
+            "median": 7.88997,
+            "min": 5.97329,
+            "max": 32.950016999999995
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 13.100231504999101,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 60.748473,
+      "cleanup_ms": 0.344399,
+      "gpu_lifetime_measured_ms": 1032.843016,
+      "gpu_steady_state_measured_ms": 971.750144,
+      "break_even_builds_approx": 3.9973761435084967
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-compact-finite.jsonl",
+      "profile": "finite",
+      "load": "coload",
+      "variant_stats": {
+        "cpu-compact": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 202.378436,
+              "median": 21.593970000000002
+            },
+            "1": {
+              "n": 9,
+              "sum": 347.730708,
+              "median": 39.747659
+            },
+            "2": {
+              "n": 9,
+              "sum": 773.234522,
+              "median": 88.68826299999999
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1323.343666,
+            "median": 39.747659,
+            "min": 21.368736,
+            "max": 90.684916
+          },
+          "graph_build_ms": {
+            "sum": 1257.847281,
+            "median": 37.95845,
+            "min": 20.612081,
+            "max": 85.605188
+          },
+          "query_ms": {
+            "sum": 65.496385,
+            "median": 2.242033,
+            "min": 0.708545,
+            "max": 5.195735
+          },
+          "produce_ms": {
+            "sum": 886.740156,
+            "median": 26.710566,
+            "min": 14.332833999999998,
+            "max": 60.321137
+          },
+          "observed_wall_ms": {
+            "sum": 1345.451945,
+            "median": 40.576401,
+            "min": 21.769871,
+            "max": 91.94448600000001
+          },
+          "validate_and_construct_ms": {
+            "sum": 368.30577900000003,
+            "median": 11.12368,
+            "min": 5.851109999999999,
+            "max": 26.108993
+          }
+        },
+        "cpu-eager": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 609.290852,
+              "median": 66.983354
+            },
+            "1": {
+              "n": 9,
+              "sum": 1255.173758,
+              "median": 144.226643
+            },
+            "2": {
+              "n": 9,
+              "sum": 3116.893927,
+              "median": 357.642437
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 4981.358537,
+            "median": 144.226643,
+            "min": 65.22904,
+            "max": 368.7675980000001
+          },
+          "graph_build_ms": {
+            "sum": 4952.483031,
+            "median": 142.806379,
+            "min": 64.669266,
+            "max": 367.26839400000006
+          },
+          "query_ms": {
+            "sum": 28.875506,
+            "median": 1.087398,
+            "min": 0.534457,
+            "max": 1.528539
+          },
+          "produce_ms": {
+            "sum": 892.73673,
+            "median": 26.960326,
+            "min": 14.550013,
+            "max": 60.116752000000005
+          },
+          "observed_wall_ms": {
+            "sum": 5785.264314,
+            "median": 164.960062,
+            "min": 75.436064,
+            "max": 431.303828
+          },
+          "validate_and_construct_ms": {
+            "sum": 4055.2481390000003,
+            "median": 116.107023,
+            "min": 49.726523,
+            "max": 307.037928
+          }
+        },
+        "cpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 229.08807000000002,
+              "median": 25.451034000000003
+            },
+            "1": {
+              "n": 9,
+              "sum": 390.26025599999997,
+              "median": 44.748929000000004
+            },
+            "2": {
+              "n": 9,
+              "sum": 869.1537940000001,
+              "median": 99.791875
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 1488.50212,
+            "median": 44.748929000000004,
+            "min": 25.051843000000005,
+            "max": 101.77835700000001
+          },
+          "graph_build_ms": {
+            "sum": 1433.410362,
+            "median": 43.383718,
+            "min": 24.312981000000004,
+            "max": 97.86560800000001
+          },
+          "query_ms": {
+            "sum": 55.091758,
+            "median": 1.361755,
+            "min": 0.699859,
+            "max": 4.500365
+          },
+          "produce_ms": {
+            "sum": 1066.4647850000001,
+            "median": 32.754690000000004,
+            "min": 18.137790000000003,
+            "max": 72.03894700000001
+          },
+          "observed_wall_ms": {
+            "sum": 1508.624827,
+            "median": 45.506095,
+            "min": 25.371764000000002,
+            "max": 103.066062
+          },
+          "validate_and_construct_ms": {
+            "sum": 364.174819,
+            "median": 10.688991999999999,
+            "min": 5.682683,
+            "max": 25.643927
+          }
+        },
+        "gpu-helper": {
+          "n": 27,
+          "fallback_count": 0,
+          "table_mismatch_count": 0,
+          "context_created_count": 0,
+          "per_shape": {
+            "0": {
+              "n": 9,
+              "sum": 853.654302,
+              "median": 94.509708
+            },
+            "1": {
+              "n": 9,
+              "sum": 986.004758,
+              "median": 110.44993
+            },
+            "2": {
+              "n": 9,
+              "sum": 1407.3930639999999,
+              "median": 158.567543
+            }
+          },
+          "build_plus_queries_ms": {
+            "sum": 3247.052124,
+            "median": 110.44993,
+            "min": 90.59882199999998,
+            "max": 163.715879
+          },
+          "graph_build_ms": {
+            "sum": 3189.648674,
+            "median": 108.308857,
+            "min": 89.83601499999999,
+            "max": 159.127107
+          },
+          "query_ms": {
+            "sum": 57.40345,
+            "median": 1.550481,
+            "min": 0.699938,
+            "max": 4.588772
+          },
+          "produce_ms": {
+            "sum": 2762.793658,
+            "median": 93.01144599999999,
+            "min": 83.547241,
+            "max": 134.079052
+          },
+          "observed_wall_ms": {
+            "sum": 3267.355087,
+            "median": 111.03954,
+            "min": 90.90114100000001,
+            "max": 164.92314199999998
+          },
+          "validate_and_construct_ms": {
+            "sum": 423.627821,
+            "median": 15.931515000000001,
+            "min": 5.887178,
+            "max": 25.893857999999998
+          }
+        }
+      },
+      "binary_sha256": "93e9347eedb2ce9d9fcfb0575cf425dd02e33c7a565557747987ec95e617e692",
+      "exit_code": 0,
+      "affinity_violations": [],
+      "monitor_error": null,
+      "completed": true,
+      "reference_count": 9,
+      "public_engine_paths": 324,
+      "wall_seconds": 16.334783236001385,
+      "cleanup": {
+        "killed_pids": [],
+        "reaped_pids": []
+      },
+      "initialization_ms": 0,
+      "cleanup_ms": 0
+    }
+  ],
+  "cpu_coload": [
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r2-coload.json",
+      "label": "v1-r3-resume20261009-coload-r2",
+      "gpu_seconds": 37.70574227400357,
+      "cpu_core_equivalent": 29.896772534225097,
+      "sample_count": 187,
+      "cpu_load_exit_code": 0,
+      "gpu_exit_code": 0,
+      "cpu_load_alive_after_gpu": true,
+      "forced_cleanup": [],
+      "affinity_violation_count": 0
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/results/v1-r3-resume20261009-coload-r1-coload.json",
+      "label": "v1-r3-resume20261009-coload-r1",
+      "gpu_seconds": 37.304251641005976,
+      "cpu_core_equivalent": 29.90034515995778,
+      "sample_count": 185,
+      "cpu_load_exit_code": 0,
+      "gpu_exit_code": 0,
+      "cpu_load_alive_after_gpu": true,
+      "forced_cleanup": [],
+      "affinity_violation_count": 0
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r2-coload.json",
+      "label": "v3-r3-resume20261009-coload-r2",
+      "gpu_seconds": 29.65142639500118,
+      "cpu_core_equivalent": 29.883891189443222,
+      "sample_count": 147,
+      "cpu_load_exit_code": 0,
+      "gpu_exit_code": 0,
+      "cpu_load_alive_after_gpu": true,
+      "forced_cleanup": [],
+      "affinity_violation_count": 0
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/results/v3-r3-resume20261009-coload-r1-coload.json",
+      "label": "v3-r3-resume20261009-coload-r1",
+      "gpu_seconds": 31.060353695997037,
+      "cpu_core_equivalent": 29.885364767099546,
+      "sample_count": 154,
+      "cpu_load_exit_code": 0,
+      "gpu_exit_code": 0,
+      "cpu_load_alive_after_gpu": true,
+      "forced_cleanup": [],
+      "affinity_violation_count": 0
+    }
+  ],
+  "controllers": [
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/v1-r3-resume20261009-idle-finite-r1-controller.json",
+      "result": {
+        "label": "v1-r3-resume20261009-idle-finite-r1",
+        "host": "v1",
+        "group": "/sys/fs/cgroup/cpuset/gpu-lab-v1-r3-resume20261009-idle-finite-r1",
+        "cpu": 31,
+        "mems": 0,
+        "user": "voidlinux-1",
+        "startedUnix": 1791499193.0483093,
+        "status": "completed",
+        "cleanupSignals": [],
+        "pid": 21631,
+        "command": [
+          "python3",
+          "run_compact_bench.py",
+          "--cpu",
+          "31",
+          "--device",
+          "NVIDIA",
+          "--profiles",
+          "finite",
+          "--label",
+          "v1-r3-resume20261009-idle-finite-r1",
+          "--require-cpuset",
+          "/sys/fs/cgroup/cpuset/gpu-lab-v1-r3-resume20261009-idle-finite-r1"
+        ],
+        "exitCode": 0,
+        "remainingPids": [],
+        "groupRemoved": true,
+        "endedUnix": 1791499206.611176
+      }
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/v1-r3-resume20261009-idle-r2-controller.json",
+      "result": {
+        "label": "v1-r3-resume20261009-idle-r2",
+        "host": "v1",
+        "group": "/sys/fs/cgroup/cpuset/gpu-lab-v1-r3-resume20261009-idle-r2",
+        "cpu": 31,
+        "mems": 0,
+        "user": "voidlinux-1",
+        "startedUnix": 1791499407.1468863,
+        "status": "completed",
+        "cleanupSignals": [],
+        "pid": 22465,
+        "command": [
+          "python3",
+          "run_compact_bench.py",
+          "--cpu",
+          "31",
+          "--device",
+          "NVIDIA",
+          "--profiles",
+          "both",
+          "--label",
+          "v1-r3-resume20261009-idle-r2",
+          "--require-cpuset",
+          "/sys/fs/cgroup/cpuset/gpu-lab-v1-r3-resume20261009-idle-r2"
+        ],
+        "exitCode": 0,
+        "remainingPids": [],
+        "groupRemoved": true,
+        "endedUnix": 1791499430.2676432
+      }
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/v1-r3-resume20261009-coload-r2-controller.json",
+      "result": {
+        "label": "v1-r3-resume20261009-coload-r2",
+        "host": "v1",
+        "group": "/sys/fs/cgroup/cpuset/gpu-lab-v1-r3-resume20261009-coload-r2",
+        "cpu": 31,
+        "mems": 0,
+        "user": "voidlinux-1",
+        "startedUnix": 1791499505.9746382,
+        "status": "completed",
+        "cleanupSignals": [],
+        "pid": 23011,
+        "command": [
+          "python3",
+          "run_compact_bench.py",
+          "--cpu",
+          "31",
+          "--device",
+          "NVIDIA",
+          "--profiles",
+          "both",
+          "--label",
+          "v1-r3-resume20261009-coload-r2",
+          "--require-cpuset",
+          "/sys/fs/cgroup/cpuset/gpu-lab-v1-r3-resume20261009-coload-r2"
+        ],
+        "exitCode": 0,
+        "remainingPids": [],
+        "groupRemoved": true,
+        "endedUnix": 1791499543.4599547
+      }
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/v1-r3-resume20261009-idle-warm-r1-controller.json",
+      "result": {
+        "label": "v1-r3-resume20261009-idle-warm-r1",
+        "host": "v1",
+        "group": "/sys/fs/cgroup/cpuset/gpu-lab-v1-r3-resume20261009-idle-warm-r1",
+        "cpu": 31,
+        "mems": 0,
+        "user": "voidlinux-1",
+        "startedUnix": 1791499175.5412784,
+        "status": "completed",
+        "cleanupSignals": [],
+        "pid": 21606,
+        "command": [
+          "python3",
+          "run_compact_bench.py",
+          "--cpu",
+          "31",
+          "--device",
+          "NVIDIA",
+          "--profiles",
+          "warm",
+          "--label",
+          "v1-r3-resume20261009-idle-warm-r1",
+          "--require-cpuset",
+          "/sys/fs/cgroup/cpuset/gpu-lab-v1-r3-resume20261009-idle-warm-r1"
+        ],
+        "exitCode": 0,
+        "remainingPids": [],
+        "groupRemoved": true,
+        "endedUnix": 1791499184.6921282
+      }
+    },
+    {
+      "host": "v1",
+      "path": ".server/recovered/gpu-probes-20261009/v1/gpu-lab-compact-r3/v1-r3-resume20261009-coload-r1-controller.json",
+      "result": {
+        "label": "v1-r3-resume20261009-coload-r1",
+        "host": "v1",
+        "group": "/sys/fs/cgroup/cpuset/gpu-lab-v1-r3-resume20261009-coload-r1",
+        "cpu": 31,
+        "mems": 0,
+        "user": "voidlinux-1",
+        "startedUnix": 1791499333.7076726,
+        "status": "completed",
+        "cleanupSignals": [],
+        "pid": 22078,
+        "command": [
+          "python3",
+          "run_compact_bench.py",
+          "--cpu",
+          "31",
+          "--device",
+          "NVIDIA",
+          "--profiles",
+          "both",
+          "--label",
+          "v1-r3-resume20261009-coload-r1",
+          "--require-cpuset",
+          "/sys/fs/cgroup/cpuset/gpu-lab-v1-r3-resume20261009-coload-r1"
+        ],
+        "exitCode": 0,
+        "remainingPids": [],
+        "groupRemoved": true,
+        "endedUnix": 1791499370.9313374
+      }
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/v3-r3-resume20261009-coload-r1-controller.json",
+      "result": {
+        "label": "v3-r3-resume20261009-coload-r1",
+        "group": "/sys/fs/cgroup/cpuset/gpu-lab-v3-r3-resume20261009-coload-r1",
+        "cpu": 31,
+        "mems": 0,
+        "user": "voidlinux-3",
+        "startedUnix": 1791499334.976258,
+        "status": "completed",
+        "cleanupSignals": [],
+        "pid": 2091,
+        "command": [
+          "python3",
+          "run_compact_bench.py",
+          "--cpu",
+          "31",
+          "--device",
+          "AMD",
+          "--label",
+          "v3-r3-resume20261009-coload-r1",
+          "--require-cpuset",
+          "/sys/fs/cgroup/cpuset/gpu-lab-v3-r3-resume20261009-coload-r1"
+        ],
+        "exitCode": 0,
+        "remainingPids": [],
+        "groupRemoved": true,
+        "endedUnix": 1791499365.9109874
+      }
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/v3-r3-resume20261009-idle-r2-controller.json",
+      "result": {
+        "label": "v3-r3-resume20261009-idle-r2",
+        "group": "/sys/fs/cgroup/cpuset/gpu-lab-v3-r3-resume20261009-idle-r2",
+        "cpu": 31,
+        "mems": 0,
+        "user": "voidlinux-3",
+        "startedUnix": 1791499407.1147566,
+        "status": "completed",
+        "cleanupSignals": [],
+        "pid": 2446,
+        "command": [
+          "python3",
+          "run_compact_bench.py",
+          "--cpu",
+          "31",
+          "--device",
+          "AMD",
+          "--label",
+          "v3-r3-resume20261009-idle-r2",
+          "--require-cpuset",
+          "/sys/fs/cgroup/cpuset/gpu-lab-v3-r3-resume20261009-idle-r2"
+        ],
+        "exitCode": 0,
+        "remainingPids": [],
+        "groupRemoved": true,
+        "endedUnix": 1791499424.4460452
+      }
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/v3-r3-resume20261009-idle-r1-controller.json",
+      "result": {
+        "label": "v3-r3-resume20261009-idle-r1",
+        "group": "/sys/fs/cgroup/cpuset/gpu-lab-v3-r3-resume20261009-idle-r1",
+        "cpu": 31,
+        "mems": 0,
+        "user": "voidlinux-3",
+        "startedUnix": 1791499196.9027562,
+        "status": "completed",
+        "cleanupSignals": [],
+        "pid": 1651,
+        "command": [
+          "python3",
+          "run_compact_bench.py",
+          "--cpu",
+          "31",
+          "--device",
+          "AMD",
+          "--label",
+          "v3-r3-resume20261009-idle-r1",
+          "--require-cpuset",
+          "/sys/fs/cgroup/cpuset/gpu-lab-v3-r3-resume20261009-idle-r1"
+        ],
+        "exitCode": 0,
+        "remainingPids": [],
+        "groupRemoved": true,
+        "endedUnix": 1791499214.3193
+      }
+    },
+    {
+      "host": "v3",
+      "path": ".server/recovered/gpu-probes-20261009/v3/gpu-lab-compact-r3/v3-r3-resume20261009-coload-r2-controller.json",
+      "result": {
+        "label": "v3-r3-resume20261009-coload-r2",
+        "group": "/sys/fs/cgroup/cpuset/gpu-lab-v3-r3-resume20261009-coload-r2",
+        "cpu": 31,
+        "mems": 0,
+        "user": "voidlinux-3",
+        "startedUnix": 1791499507.5174842,
+        "status": "completed",
+        "cleanupSignals": [],
+        "pid": 2954,
+        "command": [
+          "python3",
+          "run_compact_bench.py",
+          "--cpu",
+          "31",
+          "--device",
+          "AMD",
+          "--label",
+          "v3-r3-resume20261009-coload-r2",
+          "--require-cpuset",
+          "/sys/fs/cgroup/cpuset/gpu-lab-v3-r3-resume20261009-coload-r2"
+        ],
+        "exitCode": 0,
+        "remainingPids": [],
+        "groupRemoved": true,
+        "endedUnix": 1791499537.1031547
+      }
+    }
+  ],
+  "validation_summary": {
+    "profile_count": 16,
+    "all_profiles_completed_exit_zero": true,
+    "measurement_count": 1512,
+    "measurement_table_mismatches": 0,
+    "fallback_count": 0,
+    "d0_reference_comparisons": 144,
+    "d0_reference_mismatches": 0,
+    "public_engine_paths": 5184,
+    "profile_affinity_violations": 0,
+    "cpu_load_affinity_violations": 0,
+    "monitor_errors": 0,
+    "postflight": "gpu-probe-postflight.json",
+    "remaining_processes": 0,
+    "remaining_probe_cgroups": 0
+  }
+}

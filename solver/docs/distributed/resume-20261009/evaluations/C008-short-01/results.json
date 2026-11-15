@@ -1,0 +1,81 @@
+{
+  "runId": "1791505730154449433-101944",
+  "all48AC": true,
+  "players": [
+    {
+      "team": 0,
+      "rankSum": 20,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1273,
+        "udon": 2965
+      },
+      "meanRank": 1.6666666666666667
+    },
+    {
+      "team": 1,
+      "rankSum": 22,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2928
+      },
+      "meanRank": 1.8333333333333333
+    },
+    {
+      "team": 2,
+      "rankSum": 40,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1274,
+        "udon": 2857
+      },
+      "meanRank": 3.3333333333333335
+    },
+    {
+      "team": 3,
+      "rankSum": 34,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2876
+      },
+      "meanRank": 2.8333333333333335
+    }
+  ],
+  "version": "C008-shared",
+  "stage": "C008-short-01",
+  "verifiedUnchanged": true,
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "分散C008・機内経路表共有・D0基準比較1回目・短縮12件・10秒",
+    "players": 4,
+    "teamNames": [
+      "分散C008-shared",
+      "固定並列",
+      "固定第6世代",
+      "固定第8世代"
+    ],
+    "timeLimitMs": 10000,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "comparison": {
+    "win": 5,
+    "tie": 2,
+    "loss": 5
+  },
+  "beforeRunId": "1791503276339409187-91328",
+  "before": {
+    "team": 0,
+    "rankSum": 16,
+    "scores": {
+      "uniqueBrands": 222,
+      "dailyBrands": 1277,
+      "udon": 2964
+    },
+    "meanRank": 1.3333333333333333
+  }
+}

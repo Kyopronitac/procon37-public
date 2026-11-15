@@ -1,0 +1,43 @@
+{
+  "evaluation": {
+    "role": "generation_candidate",
+    "generation": 1,
+    "attempt": 1,
+    "target_id": "P0",
+    "label": "並列pool・第1世代P0候補a01・正式12件",
+    "wrapper_pid": 232404,
+    "log": "/home/jikky/Downloads/procon37/.server/parallel-pool/g001-a01-formal.log",
+    "process_record": "/home/jikky/Downloads/procon37/.server/parallel-pool/g001-a01-formal-process.json",
+    "status": "interrupted_by_user",
+    "roster": "solver/docs/parallel-pool/generation-001-a01-roster.json",
+    "preflight": "solver/docs/parallel-pool/generation-001-a01-formal-preflight.json",
+    "run_id": "1791376569994106771-232406",
+    "run_json": "/home/jikky/Downloads/procon37/.server/runs/1791376569994106771-232406/run.json",
+    "pid": 232406,
+    "interruption_reason": "開始済み正式評価も停止し、短縮テスト全体1位の確認前に正式評価を行わない",
+    "interrupted_at": 1791376863.1558223
+  },
+  "process_before_stop": {
+    "command": [
+      "/home/jikky/.cargo/bin/cargo",
+      "run",
+      "--release",
+      "-p",
+      "server",
+      "--",
+      "run",
+      "12",
+      "--players",
+      "6",
+      "--label",
+      "並列pool・第1世代P0候補a01・正式12件"
+    ],
+    "cwd": "/home/jikky/Downloads/procon37",
+    "label": "並列pool・第1世代P0候補a01・正式12件",
+    "pid": 232406,
+    "wrapperPid": 232404,
+    "startedAt": 1791376569.9230895,
+    "exitCode": null
+  },
+  "action": "SIGTERM sent to verified evaluation process group"
+}

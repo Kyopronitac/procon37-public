@@ -1,0 +1,37 @@
+{
+  "atUnix": 1791508625.6011965,
+  "processes": [
+    {
+      "pid": 111561,
+      "stopped": true,
+      "processRecord": "/tmp/procon37-parallel16-test-111559/parallel16.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 111605,
+      "stopped": true,
+      "processRecord": "/tmp/procon37-dist-test-111559-1791508533132/worker-a-restarted.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 111584,
+      "stopped": true,
+      "processRecord": "/tmp/procon37-dist-test-111559-1791508533132/coordinator.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 111581,
+      "stopped": true,
+      "processRecord": "/tmp/procon37-dist-test-111559-1791508533132/worker-b.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 111578,
+      "stopped": true,
+      "processRecord": "/tmp/procon37-dist-test-111559-1791508533132/worker-a.process.json",
+      "pidPresent": false
+    }
+  ],
+  "exactCandidateProcessesRemaining": [],
+  "allRecordedPidsGone": true
+}

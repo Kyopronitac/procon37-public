@@ -1,0 +1,14 @@
+   Compiling solver v0.1.0 (/home/jikky/Downloads/procon37/solver/parallel-pool/initial-P0)
+    Finished `release` profile [optimized] target(s) in 3.41s
+     Running tests/parallel_protocol.rs (target/release/deps/parallel_protocol-1e72dab35c4290cf)
+
+running 1 test
+test json_lines_parallel_multiday_rejection_and_thread_bound ... seed=2 phase="select" id=0 elapsed_ms=13039
+seed=2 phase="plan" id=1 elapsed_ms=11230
+seed=2 phase="plan" id=2 elapsed_ms=11134
+seed=2 phase="plan" id=3 elapsed_ms=36
+seed=2 peak_threads=15 score=Score { unique_brands: 24, daily_brands: 30, udon: 35 }
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 35.50s
+

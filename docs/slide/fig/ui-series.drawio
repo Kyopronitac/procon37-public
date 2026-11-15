@@ -1,0 +1,16 @@
+<mxfile host="65bd71144e">
+  <diagram id="ui-series" name="系列のUI（A系列の例）">
+    <mxGraphModel dx="96" dy="60" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="70" pageHeight="70" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ui-series-A" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#dc2626;strokeColor=#ffffff;strokeWidth=2;shadow=0;" value="" vertex="1">
+          <mxGeometry height="29.444863728670914" width="34" x="18" y="20.277568135664545" as="geometry" />
+        </mxCell>
+        <mxCell id="ui-series-A-waves" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#ffffff;fontSize=17.68;fontStyle=1;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="A" vertex="1">
+          <mxGeometry height="34.0" width="34.0" x="18.0" y="18.0" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,382 @@
+{
+  "stage": "C013-submit55-dedup-regression-01",
+  "verified": true,
+  "nodes": {
+    "v1": [
+      {
+        "matchId": "1791570846766461500-69241-s3",
+        "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/.server/submissions/1791570846827-7232-0",
+        "files": {
+          "problem.json": "002125314739a2a92d1afbb1784aea4147787fc7a637c7bf38cbf3a09ee4890c",
+          "map.json": "d0b2a67849a3b74fc790b26ff75cafcd7065939b5f63fceca765d6736ae82333",
+          "observations.jsonl": "4eca1e25fe14394ceeabd2f954f75bdc11ab534167e873a5ebecfed84cebda6b",
+          "metadata.json": "e63458a31706a0e3553396dbd780cfa6df59653f352eea767a56119eb9fe61f1",
+          "http.jsonl": "f9a4bf6c2916e32b864ac5e4fe041842471a1ff54edb2b7398cfb53325d201a6"
+        },
+        "days": 10,
+        "phases": 11,
+        "submitted": 26,
+        "skipped": 40,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 0,
+        "maximumTargetDelayMs": 3
+      },
+      {
+        "matchId": "1791571511084942906-69717-s6",
+        "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/.server/submissions/1791571512297-7349-0",
+        "files": {
+          "problem.json": "923d5517c745aedb6fbcefae11573dfbde27613e4ba400ef0914e9b18d5e9fb3",
+          "map.json": "bd6053db2956358cdc9cca87326df24cea2e43af156881646d4646bc493f66d0",
+          "observations.jsonl": "12d5500c61bec9b95f53014ade3748245702a865341b14bd170516a5a907a980",
+          "metadata.json": "458137b27d70f57dd81698ab581fd252e364664b5ea39c1ccbd42e10451572ec",
+          "http.jsonl": "1f73ca5aae2a26156093ab75e0643e05995e3cb6fffea28f564da3c379c62cce"
+        },
+        "days": 8,
+        "phases": 9,
+        "submitted": 27,
+        "skipped": 27,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 0,
+        "maximumTargetDelayMs": 2
+      },
+      {
+        "matchId": "1791572056057840612-70037-s7",
+        "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/.server/submissions/1791572057048-7438-0",
+        "files": {
+          "problem.json": "9b450c163a377a26a21993233bf814896d95d73639d14f46e72ac0cfb157f359",
+          "map.json": "87a768f4b1e2972f0a8d0c7eed962c9d3f97395919d1080275d68f6146c03ff0",
+          "observations.jsonl": "5f35f889ec968a2a5f4c2679112a1287b868591583e30d6c1d7ea612d5de896a",
+          "metadata.json": "a0f7dcfa4b7a3d31e51ef7da0ff8607f83639953cd1d6aa801052e5a41f5369f",
+          "http.jsonl": "481f727a2a9a250858220b929f21589d85ad3df737b5447033078534c30ef121"
+        },
+        "days": 5,
+        "phases": 6,
+        "submitted": 22,
+        "skipped": 14,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 0,
+        "maximumTargetDelayMs": 2
+      },
+      {
+        "matchId": "1791572451015433291-71066-s9",
+        "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/.server/submissions/1791572452124-7522-0",
+        "files": {
+          "problem.json": "97a3f7dd24f797aa7fd7b16f255f2483a0aa582485f72caadad0de5d04aa4390",
+          "map.json": "f881da7ca7d9b8c2ebe588041a6b3fdbe541d9be9336703455cc931498c2f002",
+          "observations.jsonl": "d11a027e090e546b3766208041d2d1bcffc715e94078847bf81a1fa5e528e17d",
+          "metadata.json": "9ff3d5466df9f6b85565ea65ff7e5ba3952bda4ed05334a93a756c23d7731f1f",
+          "http.jsonl": "09f07f7d73e464fe63f5bc368ea0328641ef1cb12ec9547dd24269cdf85d00ae"
+        },
+        "days": 5,
+        "phases": 6,
+        "submitted": 11,
+        "skipped": 25,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 1,
+        "maximumTargetDelayMs": 4
+      }
+    ],
+    "nomlab": [
+      {
+        "matchId": "1791570846766461500-69241-s3",
+        "directory": "/home/nomlab-ubuntu/procon37-distributed/.server/submissions/1791570846864-15243-0",
+        "files": {
+          "http.jsonl": "c5c5f948b8ec77dad97b981536c5c61940b57d59cab64cbebaec1cf3f373bfbb",
+          "map.json": "d0b2a67849a3b74fc790b26ff75cafcd7065939b5f63fceca765d6736ae82333",
+          "problem.json": "002125314739a2a92d1afbb1784aea4147787fc7a637c7bf38cbf3a09ee4890c",
+          "observations.jsonl": "c367191b56fe337e2e62df45cc178f6c6078c22e11edff8ccc7ec7a439f59a27",
+          "metadata.json": "15c08cf9b25493dc966c96b88af730e6b4d7272432f717d2bab7d1fad7849437"
+        },
+        "days": 10,
+        "phases": 11,
+        "submitted": 11,
+        "skipped": 0,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 1,
+        "maximumTargetDelayMs": 2
+      },
+      {
+        "matchId": "1791571511084942906-69717-s6",
+        "directory": "/home/nomlab-ubuntu/procon37-distributed/.server/submissions/1791571512045-15488-0",
+        "files": {
+          "http.jsonl": "dbe440f03dc50c382fb80aac9112bab98bfd6dce935e3edf8ed781bf36649175",
+          "map.json": "bd6053db2956358cdc9cca87326df24cea2e43af156881646d4646bc493f66d0",
+          "problem.json": "923d5517c745aedb6fbcefae11573dfbde27613e4ba400ef0914e9b18d5e9fb3",
+          "observations.jsonl": "e69bf414911d4594b308f11e793a7a15acd988c311cec5a8dace4f669444c594",
+          "metadata.json": "6a1487c58e77287ad5997b1b5d7b4da131005361eb3b67d42e43e474d91458ae"
+        },
+        "days": 8,
+        "phases": 9,
+        "submitted": 9,
+        "skipped": 0,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 1,
+        "maximumTargetDelayMs": 2
+      },
+      {
+        "matchId": "1791572056057840612-70037-s7",
+        "directory": "/home/nomlab-ubuntu/procon37-distributed/.server/submissions/1791572057046-15528-0",
+        "files": {
+          "http.jsonl": "7b7b14053ea568fffaa81d09c486f9fa9929f3ab7882563cf454a19bfdcc83f6",
+          "map.json": "87a768f4b1e2972f0a8d0c7eed962c9d3f97395919d1080275d68f6146c03ff0",
+          "problem.json": "9b450c163a377a26a21993233bf814896d95d73639d14f46e72ac0cfb157f359",
+          "observations.jsonl": "239b450ff1ed4ca3ed1639657a37a97f33b9ae11c71d4b6839f3fcce4cc38f1b",
+          "metadata.json": "66f543173882f4a429115240e82c20316553c630b8b61c817b2629376b6ce81d"
+        },
+        "days": 5,
+        "phases": 6,
+        "submitted": 6,
+        "skipped": 0,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 1,
+        "maximumTargetDelayMs": 3
+      },
+      {
+        "matchId": "1791572451015433291-71066-s9",
+        "directory": "/home/nomlab-ubuntu/procon37-distributed/.server/submissions/1791572452049-15569-0",
+        "files": {
+          "http.jsonl": "2bfcc5e18d7da168ca49a3a1a66ffac955771996ae4a53328249bd3bbde78eef",
+          "map.json": "f881da7ca7d9b8c2ebe588041a6b3fdbe541d9be9336703455cc931498c2f002",
+          "problem.json": "97a3f7dd24f797aa7fd7b16f255f2483a0aa582485f72caadad0de5d04aa4390",
+          "observations.jsonl": "34a6502f75c9bddd4eb1daaa178b4ec76d27e066ef33b243ff3224f61dd1e594",
+          "metadata.json": "e205bc6d15e42dcfb3342c41cf4841996e856fb6741f62dbe94fbedb9ff0c1aa"
+        },
+        "days": 5,
+        "phases": 6,
+        "submitted": 6,
+        "skipped": 0,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 1,
+        "maximumTargetDelayMs": 2
+      }
+    ],
+    "local2": [
+      {
+        "matchId": "1791570846766461500-69241-s3",
+        "directory": "/home/imak/work/procon37/.server/distributed/team2/.server/submissions/1791570846878-69171-0",
+        "files": {
+          "http.jsonl": "b615dfefa0a87164d7320d35cf8b5677922a4ec74e63f972612254907b639be7",
+          "metadata.json": "51b4416eba3233e5a086f6b88b09d4f48967dc0ae0c4c2626f8e58524ea6bf4f",
+          "map.json": "d0b2a67849a3b74fc790b26ff75cafcd7065939b5f63fceca765d6736ae82333",
+          "observations.jsonl": "3824a7adc1ab2f93b8cb83e4c2bc8a2c89d97fec6756fe1db6d065a80108dafb",
+          "problem.json": "002125314739a2a92d1afbb1784aea4147787fc7a637c7bf38cbf3a09ee4890c"
+        },
+        "days": 10,
+        "phases": 11,
+        "submitted": 11,
+        "skipped": 0,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 1,
+        "maximumTargetDelayMs": 3
+      },
+      {
+        "matchId": "1791571511084942906-69717-s6",
+        "directory": "/home/imak/work/procon37/.server/distributed/team2/.server/submissions/1791571512039-69731-0",
+        "files": {
+          "http.jsonl": "be25ede5086b89e71a93b718d273eb56847aaf43ff4bea55ecab31464022c74d",
+          "metadata.json": "0d9dd7e7eb1a05e0583637bc1220bca088479e7cbb3df1e4e27a15aa1e16d1a3",
+          "map.json": "bd6053db2956358cdc9cca87326df24cea2e43af156881646d4646bc493f66d0",
+          "observations.jsonl": "c3260a19851c4c829094a001a673e7a2d024171c5f874744246f6ab8f5c7783f",
+          "problem.json": "923d5517c745aedb6fbcefae11573dfbde27613e4ba400ef0914e9b18d5e9fb3"
+        },
+        "days": 8,
+        "phases": 9,
+        "submitted": 9,
+        "skipped": 0,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 1,
+        "maximumTargetDelayMs": 2
+      },
+      {
+        "matchId": "1791572056057840612-70037-s7",
+        "directory": "/home/imak/work/procon37/.server/distributed/team2/.server/submissions/1791572057039-70052-0",
+        "files": {
+          "http.jsonl": "8151334b118a1cbad8bb824d4c7c109c907695c0c106bfc5831164b63a6f907b",
+          "metadata.json": "97e60c76e366986e9e3d3321dd04d8340703ba1188fc19f85aebd9b91fe64bd7",
+          "map.json": "87a768f4b1e2972f0a8d0c7eed962c9d3f97395919d1080275d68f6146c03ff0",
+          "observations.jsonl": "82b7659c12fd94dfa8d872717d54580a65cb57db63780b63c95f7482f0136a0c",
+          "problem.json": "9b450c163a377a26a21993233bf814896d95d73639d14f46e72ac0cfb157f359"
+        },
+        "days": 5,
+        "phases": 6,
+        "submitted": 6,
+        "skipped": 0,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 0,
+        "maximumTargetDelayMs": 2
+      },
+      {
+        "matchId": "1791572451015433291-71066-s9",
+        "directory": "/home/imak/work/procon37/.server/distributed/team2/.server/submissions/1791572452040-71084-0",
+        "files": {
+          "http.jsonl": "2588bfd27f94dc9861ecb0ae2bb85a5062950d3ec96db34f1d4b16972ecabd16",
+          "metadata.json": "b3055b4516d39ca90b3dad68ac889a4171c17b639f51341e9f3ec67542b6f2b9",
+          "map.json": "f881da7ca7d9b8c2ebe588041a6b3fdbe541d9be9336703455cc931498c2f002",
+          "observations.jsonl": "855600e51a1ebc4c3c2d87909fd9e5da34d5c4fe66a14847dd28b4e8479ac618",
+          "problem.json": "97a3f7dd24f797aa7fd7b16f255f2483a0aa582485f72caadad0de5d04aa4390"
+        },
+        "days": 5,
+        "phases": 6,
+        "submitted": 6,
+        "skipped": 0,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 1,
+        "maximumTargetDelayMs": 2
+      }
+    ],
+    "local3": [
+      {
+        "matchId": "1791570846766461500-69241-s3",
+        "directory": "/home/imak/work/procon37/.server/distributed/team3/.server/submissions/1791570846802-69175-0",
+        "files": {
+          "http.jsonl": "0b23e1ba4188d53c183cd74fe1d41658286054a1d1178c9ece7fc86d0fca0a5e",
+          "metadata.json": "fa228fe237c66bba5e329dc7655997f5d6410bfa4b6c57272813b5d7818a1581",
+          "map.json": "d0b2a67849a3b74fc790b26ff75cafcd7065939b5f63fceca765d6736ae82333",
+          "observations.jsonl": "4aee1100b60510bc68dda6ceb67855242d8a753d46fce6e8429aa2dff4ae01d5",
+          "problem.json": "002125314739a2a92d1afbb1784aea4147787fc7a637c7bf38cbf3a09ee4890c"
+        },
+        "days": 10,
+        "phases": 11,
+        "submitted": 11,
+        "skipped": 0,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 1,
+        "maximumTargetDelayMs": 2
+      },
+      {
+        "matchId": "1791571511084942906-69717-s6",
+        "directory": "/home/imak/work/procon37/.server/distributed/team3/.server/submissions/1791571512039-69732-0",
+        "files": {
+          "http.jsonl": "2efc37589fc8ec6d950ba338281b710a8c2881957fc421cf9072ca2955ccd0a9",
+          "metadata.json": "0d9dd7e7eb1a05e0583637bc1220bca088479e7cbb3df1e4e27a15aa1e16d1a3",
+          "map.json": "bd6053db2956358cdc9cca87326df24cea2e43af156881646d4646bc493f66d0",
+          "observations.jsonl": "c8425ed068f58527ce872b1ea9c6c2839d5e17fbf49d700036f477b7e5292ee2",
+          "problem.json": "923d5517c745aedb6fbcefae11573dfbde27613e4ba400ef0914e9b18d5e9fb3"
+        },
+        "days": 8,
+        "phases": 9,
+        "submitted": 9,
+        "skipped": 0,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 0,
+        "maximumTargetDelayMs": 2
+      },
+      {
+        "matchId": "1791572056057840612-70037-s7",
+        "directory": "/home/imak/work/procon37/.server/distributed/team3/.server/submissions/1791572057039-70051-0",
+        "files": {
+          "http.jsonl": "01b8335a3ecb35a13aa9248254435331c6084d18fa89a02502d8d087f5fdf0ed",
+          "metadata.json": "97e60c76e366986e9e3d3321dd04d8340703ba1188fc19f85aebd9b91fe64bd7",
+          "map.json": "87a768f4b1e2972f0a8d0c7eed962c9d3f97395919d1080275d68f6146c03ff0",
+          "observations.jsonl": "4c7fd438f79043d35a6ff6474c0e80367e7516f3c2527ee9cdfe7f3ba45b65cb",
+          "problem.json": "9b450c163a377a26a21993233bf814896d95d73639d14f46e72ac0cfb157f359"
+        },
+        "days": 5,
+        "phases": 6,
+        "submitted": 6,
+        "skipped": 0,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 0,
+        "maximumTargetDelayMs": 2
+      },
+      {
+        "matchId": "1791572451015433291-71066-s9",
+        "directory": "/home/imak/work/procon37/.server/distributed/team3/.server/submissions/1791572452040-71085-0",
+        "files": {
+          "http.jsonl": "e40070af5ea0a4ae047f373300d565c9d687219b6ac8c7a2ba0cb828883f767e",
+          "metadata.json": "b3055b4516d39ca90b3dad68ac889a4171c17b639f51341e9f3ec67542b6f2b9",
+          "map.json": "f881da7ca7d9b8c2ebe588041a6b3fdbe541d9be9336703455cc931498c2f002",
+          "observations.jsonl": "e32709e682c289dfa61f123fb7dff0c9e0cb74901afd81e6058a87525cc3119f",
+          "problem.json": "97a3f7dd24f797aa7fd7b16f255f2483a0aa582485f72caadad0de5d04aa4390"
+        },
+        "days": 5,
+        "phases": 6,
+        "submitted": 6,
+        "skipped": 0,
+        "allPostAccepted": true,
+        "allAnswersFromSolver": true,
+        "exactDedupVerified": true,
+        "allPhaseFirstSubmitted": true,
+        "exactProblemAndMapSaved": true,
+        "observedAllDays": true,
+        "minimumTargetDelayMs": 1,
+        "maximumTargetDelayMs": 2
+      }
+    ]
+  }
+}

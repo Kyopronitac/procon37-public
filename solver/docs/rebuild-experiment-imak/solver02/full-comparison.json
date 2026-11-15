@@ -1,0 +1,1053 @@
+{
+  "date": "2026-09-22",
+  "generator": "hex-udon-v19",
+  "baselineCommit": "cc3277fa2d95ea7494a4d552429d2c862a9787a7",
+  "baselineBinarySha256": "5b0b5f07ed8489177fc7b843b22488d541d1e454ea9b1eba80a59be2283d48a5",
+  "candidateBinarySha256": "02b5b13a60de4f3b6c2c4c2eada0894179779d5e2b978eed8be26eb8c50bf530",
+  "candidateSourceSha256": {
+    "main.rs": "1b17b625e3db6dab99f6c9ac0a47099d003d8d058736db36b9f1454ca8b44727",
+    "Cargo.toml": "9ed506486b760a688c36f32ce5eefb1b420c101a03d0a34c261164a9cc017bcf",
+    "Cargo.lock": "cba8875fe34aa04f30337257a1c743a126dafef7faecfa19455a41f54b462292",
+    "solver/tests.rs": "50d236c853cf6c29541d7d6302eac1ef8a1cb9f8299b2b205238b4b20ba7f20e",
+    "solver/paths.rs": "f8ae5a37823fe1e42bae5959ef8c139d9140ed4c2257a8bf324b6199777b2142",
+    "solver/mod.rs": "f684c8d1714975184f543a63f8cb502c928743656e8d231a01bd1e9fdee348aa"
+  },
+  "audit": {
+    "baseline": "1790047165225427678-56",
+    "candidate": "1790048540695910400-57",
+    "cases": 60,
+    "before": {
+      "uniqueBrands": 1055,
+      "dailyBrands": 7061,
+      "udon": 11765
+    },
+    "after": {
+      "uniqueBrands": 1055,
+      "dailyBrands": 7086,
+      "udon": 13599
+    },
+    "wins_draws_losses": [
+      48,
+      0,
+      12
+    ],
+    "selection_ms_range": [
+      58500,
+      118505
+    ],
+    "daily_ms_range": [
+      58500,
+      58502
+    ],
+    "daily_ms_mean": 58500.01724137931,
+    "daily_requests": 406,
+    "aggregate_score_improved": true,
+    "more_wins_than_losses": true,
+    "changed_cases": [
+      {
+        "seed": 0,
+        "before": [
+          12,
+          53,
+          61
+        ],
+        "after": [
+          12,
+          52,
+          60
+        ]
+      },
+      {
+        "seed": 1,
+        "before": [
+          18,
+          86,
+          97
+        ],
+        "after": [
+          18,
+          90,
+          101
+        ]
+      },
+      {
+        "seed": 2,
+        "before": [
+          24,
+          117,
+          143
+        ],
+        "after": [
+          24,
+          120,
+          171
+        ]
+      },
+      {
+        "seed": 3,
+        "before": [
+          13,
+          62,
+          66
+        ],
+        "after": [
+          13,
+          61,
+          65
+        ]
+      },
+      {
+        "seed": 4,
+        "before": [
+          19,
+          88,
+          96
+        ],
+        "after": [
+          19,
+          91,
+          106
+        ]
+      },
+      {
+        "seed": 5,
+        "before": [
+          25,
+          150,
+          209
+        ],
+        "after": [
+          25,
+          150,
+          218
+        ]
+      },
+      {
+        "seed": 6,
+        "before": [
+          11,
+          88,
+          109
+        ],
+        "after": [
+          11,
+          86,
+          126
+        ]
+      },
+      {
+        "seed": 7,
+        "before": [
+          16,
+          96,
+          317
+        ],
+        "after": [
+          16,
+          96,
+          322
+        ]
+      },
+      {
+        "seed": 8,
+        "before": [
+          28,
+          140,
+          443
+        ],
+        "after": [
+          28,
+          140,
+          467
+        ]
+      },
+      {
+        "seed": 9,
+        "before": [
+          12,
+          60,
+          82
+        ],
+        "after": [
+          12,
+          60,
+          86
+        ]
+      },
+      {
+        "seed": 10,
+        "before": [
+          16,
+          128,
+          305
+        ],
+        "after": [
+          16,
+          128,
+          316
+        ]
+      },
+      {
+        "seed": 11,
+        "before": [
+          25,
+          171,
+          207
+        ],
+        "after": [
+          25,
+          175,
+          253
+        ]
+      },
+      {
+        "seed": 12,
+        "before": [
+          12,
+          84,
+          138
+        ],
+        "after": [
+          12,
+          84,
+          169
+        ]
+      },
+      {
+        "seed": 13,
+        "before": [
+          19,
+          92,
+          94
+        ],
+        "after": [
+          19,
+          94,
+          99
+        ]
+      },
+      {
+        "seed": 14,
+        "before": [
+          20,
+          180,
+          398
+        ],
+        "after": [
+          20,
+          180,
+          535
+        ]
+      },
+      {
+        "seed": 15,
+        "before": [
+          11,
+          110,
+          148
+        ],
+        "after": [
+          11,
+          110,
+          160
+        ]
+      },
+      {
+        "seed": 16,
+        "before": [
+          19,
+          123,
+          141
+        ],
+        "after": [
+          19,
+          129,
+          161
+        ]
+      },
+      {
+        "seed": 17,
+        "before": [
+          24,
+          240,
+          415
+        ],
+        "after": [
+          24,
+          240,
+          573
+        ]
+      },
+      {
+        "seed": 18,
+        "before": [
+          11,
+          88,
+          222
+        ],
+        "after": [
+          11,
+          88,
+          223
+        ]
+      },
+      {
+        "seed": 19,
+        "before": [
+          14,
+          70,
+          94
+        ],
+        "after": [
+          14,
+          70,
+          97
+        ]
+      },
+      {
+        "seed": 20,
+        "before": [
+          27,
+          243,
+          287
+        ],
+        "after": [
+          27,
+          243,
+          336
+        ]
+      },
+      {
+        "seed": 21,
+        "before": [
+          13,
+          117,
+          148
+        ],
+        "after": [
+          13,
+          117,
+          182
+        ]
+      },
+      {
+        "seed": 22,
+        "before": [
+          16,
+          144,
+          317
+        ],
+        "after": [
+          16,
+          144,
+          319
+        ]
+      },
+      {
+        "seed": 23,
+        "before": [
+          28,
+          134,
+          147
+        ],
+        "after": [
+          28,
+          137,
+          179
+        ]
+      },
+      {
+        "seed": 24,
+        "before": [
+          14,
+          65,
+          73
+        ],
+        "after": [
+          14,
+          63,
+          70
+        ]
+      },
+      {
+        "seed": 25,
+        "before": [
+          18,
+          90,
+          123
+        ],
+        "after": [
+          18,
+          90,
+          134
+        ]
+      },
+      {
+        "seed": 26,
+        "before": [
+          20,
+          120,
+          171
+        ],
+        "after": [
+          20,
+          120,
+          211
+        ]
+      },
+      {
+        "seed": 27,
+        "before": [
+          14,
+          70,
+          77
+        ],
+        "after": [
+          14,
+          70,
+          81
+        ]
+      },
+      {
+        "seed": 28,
+        "before": [
+          19,
+          171,
+          194
+        ],
+        "after": [
+          19,
+          171,
+          218
+        ]
+      },
+      {
+        "seed": 29,
+        "before": [
+          24,
+          168,
+          209
+        ],
+        "after": [
+          24,
+          168,
+          210
+        ]
+      },
+      {
+        "seed": 30,
+        "before": [
+          12,
+          84,
+          103
+        ],
+        "after": [
+          12,
+          83,
+          115
+        ]
+      },
+      {
+        "seed": 31,
+        "before": [
+          19,
+          133,
+          159
+        ],
+        "after": [
+          19,
+          133,
+          166
+        ]
+      },
+      {
+        "seed": 32,
+        "before": [
+          21,
+          147,
+          225
+        ],
+        "after": [
+          21,
+          147,
+          284
+        ]
+      },
+      {
+        "seed": 33,
+        "before": [
+          11,
+          66,
+          197
+        ],
+        "after": [
+          11,
+          66,
+          192
+        ]
+      },
+      {
+        "seed": 34,
+        "before": [
+          16,
+          128,
+          145
+        ],
+        "after": [
+          16,
+          128,
+          163
+        ]
+      },
+      {
+        "seed": 35,
+        "before": [
+          27,
+          162,
+          443
+        ],
+        "after": [
+          27,
+          162,
+          457
+        ]
+      },
+      {
+        "seed": 36,
+        "before": [
+          10,
+          70,
+          186
+        ],
+        "after": [
+          10,
+          70,
+          179
+        ]
+      },
+      {
+        "seed": 37,
+        "before": [
+          16,
+          112,
+          413
+        ],
+        "after": [
+          16,
+          112,
+          392
+        ]
+      },
+      {
+        "seed": 38,
+        "before": [
+          21,
+          84,
+          158
+        ],
+        "after": [
+          21,
+          84,
+          203
+        ]
+      },
+      {
+        "seed": 39,
+        "before": [
+          12,
+          72,
+          93
+        ],
+        "after": [
+          12,
+          72,
+          106
+        ]
+      },
+      {
+        "seed": 40,
+        "before": [
+          20,
+          140,
+          413
+        ],
+        "after": [
+          20,
+          140,
+          405
+        ]
+      },
+      {
+        "seed": 41,
+        "before": [
+          20,
+          120,
+          221
+        ],
+        "after": [
+          20,
+          120,
+          326
+        ]
+      },
+      {
+        "seed": 42,
+        "before": [
+          14,
+          70,
+          76
+        ],
+        "after": [
+          14,
+          69,
+          76
+        ]
+      },
+      {
+        "seed": 43,
+        "before": [
+          15,
+          87,
+          105
+        ],
+        "after": [
+          15,
+          90,
+          120
+        ]
+      },
+      {
+        "seed": 44,
+        "before": [
+          24,
+          144,
+          155
+        ],
+        "after": [
+          24,
+          144,
+          204
+        ]
+      },
+      {
+        "seed": 45,
+        "before": [
+          12,
+          108,
+          137
+        ],
+        "after": [
+          12,
+          108,
+          149
+        ]
+      },
+      {
+        "seed": 46,
+        "before": [
+          15,
+          90,
+          111
+        ],
+        "after": [
+          15,
+          90,
+          136
+        ]
+      },
+      {
+        "seed": 47,
+        "before": [
+          27,
+          189,
+          244
+        ],
+        "after": [
+          27,
+          189,
+          276
+        ]
+      },
+      {
+        "seed": 48,
+        "before": [
+          12,
+          60,
+          183
+        ],
+        "after": [
+          12,
+          60,
+          177
+        ]
+      },
+      {
+        "seed": 49,
+        "before": [
+          14,
+          98,
+          215
+        ],
+        "after": [
+          14,
+          98,
+          279
+        ]
+      },
+      {
+        "seed": 50,
+        "before": [
+          27,
+          270,
+          335
+        ],
+        "after": [
+          27,
+          270,
+          408
+        ]
+      },
+      {
+        "seed": 51,
+        "before": [
+          13,
+          62,
+          69
+        ],
+        "after": [
+          13,
+          60,
+          65
+        ]
+      },
+      {
+        "seed": 52,
+        "before": [
+          14,
+          88,
+          97
+        ],
+        "after": [
+          14,
+          95,
+          111
+        ]
+      },
+      {
+        "seed": 53,
+        "before": [
+          24,
+          120,
+          187
+        ],
+        "after": [
+          24,
+          120,
+          247
+        ]
+      },
+      {
+        "seed": 54,
+        "before": [
+          12,
+          108,
+          158
+        ],
+        "after": [
+          12,
+          108,
+          198
+        ]
+      },
+      {
+        "seed": 55,
+        "before": [
+          14,
+          140,
+          317
+        ],
+        "after": [
+          14,
+          140,
+          461
+        ]
+      },
+      {
+        "seed": 56,
+        "before": [
+          20,
+          200,
+          435
+        ],
+        "after": [
+          20,
+          200,
+          583
+        ]
+      },
+      {
+        "seed": 57,
+        "before": [
+          13,
+          65,
+          80
+        ],
+        "after": [
+          13,
+          65,
+          87
+        ]
+      },
+      {
+        "seed": 58,
+        "before": [
+          15,
+          135,
+          273
+        ],
+        "after": [
+          15,
+          135,
+          373
+        ]
+      },
+      {
+        "seed": 59,
+        "before": [
+          23,
+          161,
+          301
+        ],
+        "after": [
+          23,
+          161,
+          413
+        ]
+      }
+    ]
+  },
+  "selectionMsByFormat": {
+    "final": {
+      "min": 118500,
+      "max": 118505
+    },
+    "first": {
+      "min": 58500,
+      "max": 58500
+    },
+    "semifinal": {
+      "min": 88500,
+      "max": 88501
+    }
+  },
+  "testerComparison": {
+    "schemaVersion": 1,
+    "baseline": "1790047165225427678-56",
+    "runs": [
+      {
+        "id": "1790047165225427678-56",
+        "label": "新規構築前・削除直前cc3277fa・基準フル60件",
+        "importedFrom": null,
+        "status": "completed",
+        "verdict": "AC",
+        "total": 60,
+        "completed": 60,
+        "verdicts": {
+          "AC": 60,
+          "WA": 0,
+          "TLE": 0,
+          "RE": 0
+        },
+        "execution": {
+          "availableCpus": 32,
+          "jobs": 24
+        },
+        "solverParallel": false,
+        "timeLimitMs": null
+      },
+      {
+        "id": "1790048540695910400-57",
+        "label": "新規構築・合流時刻同時最適化・候補フル60件",
+        "importedFrom": null,
+        "status": "completed",
+        "verdict": "AC",
+        "total": 60,
+        "completed": 60,
+        "verdicts": {
+          "AC": 60,
+          "WA": 0,
+          "TLE": 0,
+          "RE": 0
+        },
+        "execution": {
+          "availableCpus": 32,
+          "jobs": 24
+        },
+        "solverParallel": false,
+        "timeLimitMs": null
+      }
+    ],
+    "scopes": [
+      {
+        "format": null,
+        "seeds": 60,
+        "matched": 60,
+        "accepted": 60,
+        "different": 0,
+        "missing": 0,
+        "unavailable": 0,
+        "nonAc": 0,
+        "results": [
+          {
+            "id": "1790047165225427678-56",
+            "outcomes": null,
+            "scores": {
+              "uniqueBrands": 1055,
+              "dailyBrands": 7061,
+              "udon": 11765
+            },
+            "delta": null
+          },
+          {
+            "id": "1790048540695910400-57",
+            "outcomes": {
+              "wins": 48,
+              "draws": 0,
+              "losses": 12
+            },
+            "scores": {
+              "uniqueBrands": 1055,
+              "dailyBrands": 7086,
+              "udon": 13599
+            },
+            "delta": {
+              "uniqueBrands": 0,
+              "dailyBrands": 25,
+              "udon": 1834
+            }
+          }
+        ]
+      },
+      {
+        "format": "first",
+        "seeds": 20,
+        "matched": 20,
+        "accepted": 20,
+        "different": 0,
+        "missing": 0,
+        "unavailable": 0,
+        "nonAc": 0,
+        "results": [
+          {
+            "id": "1790047165225427678-56",
+            "outcomes": null,
+            "scores": {
+              "uniqueBrands": 244,
+              "dailyBrands": 1562,
+              "udon": 2406
+            },
+            "delta": null
+          },
+          {
+            "id": "1790048540695910400-57",
+            "outcomes": {
+              "wins": 10,
+              "draws": 0,
+              "losses": 10
+            },
+            "scores": {
+              "uniqueBrands": 244,
+              "dailyBrands": 1552,
+              "udon": 2566
+            },
+            "delta": {
+              "uniqueBrands": 0,
+              "dailyBrands": -10,
+              "udon": 160
+            }
+          }
+        ]
+      },
+      {
+        "format": "semifinal",
+        "seeds": 20,
+        "matched": 20,
+        "accepted": 20,
+        "different": 0,
+        "missing": 0,
+        "unavailable": 0,
+        "nonAc": 0,
+        "results": [
+          {
+            "id": "1790047165225427678-56",
+            "outcomes": null,
+            "scores": {
+              "uniqueBrands": 332,
+              "dailyBrands": 2239,
+              "udon": 4026
+            },
+            "delta": null
+          },
+          {
+            "id": "1790048540695910400-57",
+            "outcomes": {
+              "wins": 18,
+              "draws": 0,
+              "losses": 2
+            },
+            "scores": {
+              "uniqueBrands": 332,
+              "dailyBrands": 2264,
+              "udon": 4479
+            },
+            "delta": {
+              "uniqueBrands": 0,
+              "dailyBrands": 25,
+              "udon": 453
+            }
+          }
+        ]
+      },
+      {
+        "format": "final",
+        "seeds": 20,
+        "matched": 20,
+        "accepted": 20,
+        "different": 0,
+        "missing": 0,
+        "unavailable": 0,
+        "nonAc": 0,
+        "results": [
+          {
+            "id": "1790047165225427678-56",
+            "outcomes": null,
+            "scores": {
+              "uniqueBrands": 479,
+              "dailyBrands": 3260,
+              "udon": 5333
+            },
+            "delta": null
+          },
+          {
+            "id": "1790048540695910400-57",
+            "outcomes": {
+              "wins": 20,
+              "draws": 0,
+              "losses": 0
+            },
+            "scores": {
+              "uniqueBrands": 479,
+              "dailyBrands": 3270,
+              "udon": 6554
+            },
+            "delta": {
+              "uniqueBrands": 0,
+              "dailyBrands": 10,
+              "udon": 1221
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

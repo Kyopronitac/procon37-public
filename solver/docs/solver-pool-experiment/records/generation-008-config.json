@@ -1,0 +1,133 @@
+{
+  "mode": "game",
+  "targetName": "pool-generation-008",
+  "opponents": [
+    {
+      "name": "pool-generation-002",
+      "solver": {
+        "program": "target/release/game-sample-1",
+        "args": [
+          "0"
+        ],
+        "cwd": ".",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": ".",
+        "env": {}
+      },
+      "solverParallel": false,
+      "version": "comparison-g67-source-002"
+    },
+    {
+      "name": "pool-generation-006",
+      "solver": {
+        "program": "target/release/game-sample-2",
+        "args": [
+          "0"
+        ],
+        "cwd": ".",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": ".",
+        "env": {}
+      },
+      "solverParallel": false,
+      "version": "comparison-g67-source-006"
+    },
+    {
+      "name": "pool-generation-004",
+      "solver": {
+        "program": "target/release/game-sample-3",
+        "args": [
+          "0"
+        ],
+        "cwd": ".",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": ".",
+        "env": {}
+      },
+      "solverParallel": false,
+      "version": "comparison-g67-source-004"
+    },
+    {
+      "name": "pool-generation-003",
+      "solver": {
+        "program": "target/release/game-sample-4",
+        "args": [
+          "0"
+        ],
+        "cwd": ".",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": ".",
+        "env": {}
+      },
+      "solverParallel": false,
+      "version": "comparison-g67-source-003"
+    }
+  ],
+  "count": 30,
+  "seed": null,
+  "format": null,
+  "arenaMaps": true,
+  "jobs": null,
+  "solverParallel": false,
+  "label": "第8世代・第7世代継続改善から選定したv117・既定フル30件",
+  "build": {
+    "program": "cargo",
+    "args": [
+      "build",
+      "--release",
+      "--manifest-path",
+      "solver/docs/solver-pool-experiment/Cargo.toml",
+      "--target-dir",
+      "target",
+      "--bin",
+      "pool-solver-08"
+    ],
+    "cwd": ".",
+    "env": {}
+  },
+  "solver": {
+    "program": "target/release/pool-solver-08",
+    "args": [
+      "0"
+    ],
+    "cwd": ".",
+    "env": {}
+  },
+  "timeLimitMs": null
+}

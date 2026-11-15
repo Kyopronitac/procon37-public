@@ -1,0 +1,399 @@
+{
+  "host": "VOIDLINUX-2",
+  "configuredAtUtc": "2026-10-08T23:46:31.598989+00:00",
+  "backupDirectory": "/var/tmp/procon37-clock-20261008T234629Z",
+  "configurationBackups": [
+    {
+      "path": "/etc/chrony.conf",
+      "backup": "/var/tmp/procon37-clock-20261008T234629Z/etc/chrony.conf",
+      "sha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+      "configurationUnchanged": true
+    }
+  ],
+  "persistentConfigurationChanged": false,
+  "before": {
+    "tracking": {
+      "command": [
+        "chronyc",
+        "-n",
+        "tracking"
+      ],
+      "exitCode": 0,
+      "stdout": "Reference ID    : 851293A8 (133.18.147.168)\nStratum         : 3\nRef time (UTC)  : Thu Oct 08 08:20:56 2026\nSystem time     : 0.000090564 seconds slow of NTP time\nLast offset     : -0.001251494 seconds\nRMS offset      : 0.007191047 seconds\nFrequency       : 4.415 ppm fast\nResidual freq   : -0.015 ppm\nSkew            : 2.090 ppm\nRoot delay      : 0.034096867 seconds\nRoot dispersion : 0.184832931 seconds\nUpdate interval : 1030.3 seconds\nLeap status     : Normal",
+      "stderr": ""
+    },
+    "sources": {
+      "command": [
+        "chronyc",
+        "-n",
+        "sources"
+      ],
+      "exitCode": 0,
+      "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^? 129.250.35.251                2   6     0   15h    +11ms[  +11ms] +/-   64ms\n^? 109.61.109.140                2  10     0   15h    +56ms[  +55ms] +/-  153ms\n^? 133.18.147.168                2  10     0   15h    -60ms[  -61ms] +/-   83ms\n^? 162.159.200.123               3   8     0   15h    +14ms[  +13ms] +/-   73ms",
+      "stderr": ""
+    },
+    "probe": {
+      "server": "192.168.0.81",
+      "port": 32123,
+      "samples": [
+        {
+          "serverMinusClientMs": -121.62315845489502,
+          "roundTripMs": 0.25916099548339844
+        },
+        {
+          "serverMinusClientMs": -121.61040306091309,
+          "roundTripMs": 0.32329559326171875
+        },
+        {
+          "serverMinusClientMs": -121.62160873413086,
+          "roundTripMs": 0.339508056640625
+        },
+        {
+          "serverMinusClientMs": -121.60706520080566,
+          "roundTripMs": 0.4038810729980469
+        },
+        {
+          "serverMinusClientMs": -121.61767482757568,
+          "roundTripMs": 0.34737586975097656
+        },
+        {
+          "serverMinusClientMs": -121.61648273468018,
+          "roundTripMs": 0.3993511199951172
+        },
+        {
+          "serverMinusClientMs": -121.61970138549805,
+          "roundTripMs": 0.3571510314941406
+        },
+        {
+          "serverMinusClientMs": -121.62911891937256,
+          "roundTripMs": 0.31685829162597656
+        },
+        {
+          "serverMinusClientMs": -121.67274951934814,
+          "roundTripMs": 0.4189014434814453
+        },
+        {
+          "serverMinusClientMs": -121.65546417236328,
+          "roundTripMs": 0.40149688720703125
+        },
+        {
+          "serverMinusClientMs": -121.61064147949219,
+          "roundTripMs": 0.3657341003417969
+        },
+        {
+          "serverMinusClientMs": -121.66070938110352,
+          "roundTripMs": 0.43582916259765625
+        }
+      ],
+      "medianBestHalfOffsetMs": -121.62065505981445,
+      "minimumRoundTripMs": 0.25916099548339844,
+      "capturedUnix": 1791503189.4836657
+    }
+  },
+  "runtimeCommands": [
+    {
+      "command": [
+        "chronyc",
+        "add",
+        "server",
+        "192.168.0.81",
+        "port",
+        "32123",
+        "iburst",
+        "minpoll",
+        "0",
+        "maxpoll",
+        "4",
+        "prefer",
+        "trust",
+        "require"
+      ],
+      "exitCode": 0,
+      "stdout": "200 OK",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "chronyc",
+        "burst",
+        "4/8",
+        "192.168.0.81"
+      ],
+      "exitCode": 0,
+      "stdout": "200 OK",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "chronyc",
+        "makestep"
+      ],
+      "exitCode": 0,
+      "stdout": "200 OK",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "chronyc",
+        "waitsync",
+        "20",
+        "0.002",
+        "0",
+        "1"
+      ],
+      "exitCode": 0,
+      "stdout": "try: 1, refid: C0A80051, correction: 0.000000023, skew: 2.448",
+      "stderr": ""
+    }
+  ],
+  "after": {
+    "tracking": {
+      "command": [
+        "chronyc",
+        "-n",
+        "tracking"
+      ],
+      "exitCode": 0,
+      "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Thu Oct 08 23:46:29 2026\nSystem time     : 0.000000023 seconds slow of NTP time\nLast offset     : +0.000021129 seconds\nRMS offset      : 0.037077058 seconds\nFrequency       : 4.417 ppm fast\nResidual freq   : +48.458 ppm\nSkew            : 2.448 ppm\nRoot delay      : 0.000298106 seconds\nRoot dispersion : 0.001046317 seconds\nUpdate interval : 0.3 seconds\nLeap status     : Normal",
+      "stderr": ""
+    },
+    "sources": {
+      "command": [
+        "chronyc",
+        "-n",
+        "sources"
+      ],
+      "exitCode": 0,
+      "stdout": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^? 129.250.35.251                2   6     0   15h   -111ms[  +11ms] +/-   64ms\n^? 109.61.109.140                2  10     0   15h    -65ms[  +55ms] +/-  153ms\n^? 133.18.147.168                2  10     0   15h   -181ms[  -61ms] +/-   83ms\n^? 162.159.200.123               3   8     0   15h   -107ms[  +13ms] +/-   73ms\n^* 192.168.0.81                 10   0    17     0  +1476ns[  +23us] +/- 1160us",
+      "stderr": ""
+    },
+    "probe": {
+      "server": "192.168.0.81",
+      "port": 32123,
+      "samples": [
+        {
+          "serverMinusClientMs": 0.0017881393432617188,
+          "roundTripMs": 0.3001689910888672
+        },
+        {
+          "serverMinusClientMs": -0.043392181396484375,
+          "roundTripMs": 0.23126602172851562
+        },
+        {
+          "serverMinusClientMs": -0.019669532775878906,
+          "roundTripMs": 0.2372264862060547
+        },
+        {
+          "serverMinusClientMs": 0.01919269561767578,
+          "roundTripMs": 0.3521442413330078
+        },
+        {
+          "serverMinusClientMs": -0.0661611557006836,
+          "roundTripMs": 0.39505958557128906
+        },
+        {
+          "serverMinusClientMs": -0.02288818359375,
+          "roundTripMs": 0.400543212890625
+        },
+        {
+          "serverMinusClientMs": -0.005245208740234375,
+          "roundTripMs": 0.30994415283203125
+        },
+        {
+          "serverMinusClientMs": -0.01800060272216797,
+          "roundTripMs": 0.4260540008544922
+        },
+        {
+          "serverMinusClientMs": -0.05316734313964844,
+          "roundTripMs": 0.2765655517578125
+        },
+        {
+          "serverMinusClientMs": -0.06210803985595703,
+          "roundTripMs": 0.3540515899658203
+        },
+        {
+          "serverMinusClientMs": -0.021576881408691406,
+          "roundTripMs": 0.31495094299316406
+        },
+        {
+          "serverMinusClientMs": -0.02396106719970703,
+          "roundTripMs": 0.33926963806152344
+        },
+        {
+          "serverMinusClientMs": 0.02014636993408203,
+          "roundTripMs": 0.40078163146972656
+        },
+        {
+          "serverMinusClientMs": -0.015377998352050781,
+          "roundTripMs": 0.36025047302246094
+        },
+        {
+          "serverMinusClientMs": -0.024318695068359375,
+          "roundTripMs": 0.2765655517578125
+        },
+        {
+          "serverMinusClientMs": 0.0054836273193359375,
+          "roundTripMs": 0.36334991455078125
+        },
+        {
+          "serverMinusClientMs": -0.018596649169921875,
+          "roundTripMs": 0.2865791320800781
+        },
+        {
+          "serverMinusClientMs": -0.02396106719970703,
+          "roundTripMs": 0.28252601623535156
+        },
+        {
+          "serverMinusClientMs": -0.03552436828613281,
+          "roundTripMs": 0.21600723266601562
+        },
+        {
+          "serverMinusClientMs": -0.010013580322265625,
+          "roundTripMs": 0.3108978271484375
+        },
+        {
+          "serverMinusClientMs": -0.0015497207641601562,
+          "roundTripMs": 0.35119056701660156
+        },
+        {
+          "serverMinusClientMs": -0.015020370483398438,
+          "roundTripMs": 0.3123283386230469
+        },
+        {
+          "serverMinusClientMs": -0.014066696166992188,
+          "roundTripMs": 0.2980232238769531
+        },
+        {
+          "serverMinusClientMs": 0.01430511474609375,
+          "roundTripMs": 0.34999847412109375
+        }
+      ],
+      "medianBestHalfOffsetMs": -0.01913309097290039,
+      "minimumRoundTripMs": 0.21600723266601562,
+      "capturedUnix": 1791503191.5971227
+    },
+    "ntpdata": {
+      "command": [
+        "chronyc",
+        "-n",
+        "ntpdata",
+        "192.168.0.81"
+      ],
+      "exitCode": 0,
+      "stdout": "Remote address  : 192.168.0.81 (C0A80051)\nRemote port     : 32123\nLocal address   : 192.168.0.22 (C0A80016)\nLeap status     : Normal\nVersion         : 4\nMode            : Server\nStratum         : 10\nPoll interval   : 0 (1 seconds)\nPrecision       : -20 (0.000000954 seconds)\nRoot delay      : 0.000000 seconds\nRoot dispersion : 0.001007 seconds\nReference ID    : 7F7F0101 ()\nReference time  : Thu Oct 08 23:46:30 2026\nOffset          : +0.000032827 seconds\nPeer delay      : 0.000375550 seconds\nPeer dispersion : 0.000001215 seconds\nResponse time   : 0.000063716 seconds\nJitter asymmetry: +0.00\nNTP tests       : 111 111 1111\nInterleaved     : No\nAuthenticated   : No\nTX timestamping : Kernel\nRX timestamping : Kernel\nTotal TX        : 5\nTotal RX        : 5\nTotal valid RX  : 5\nTotal good RX   : 5",
+      "stderr": ""
+    }
+  },
+  "restoreCommand": "sudo chronyc delete 192.168.0.81",
+  "clockStepOnlyBeforeEvaluation": true,
+  "followup": {
+    "capturedAtUtc": "2026-10-08T23:47:11.944630+00:00",
+    "tracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Thu Oct 08 23:47:11 2026\nSystem time     : 0.000014570 seconds fast of NTP time\nLast offset     : +0.000018702 seconds\nRMS offset      : 0.007633843 seconds\nFrequency       : 7.381 ppm fast\nResidual freq   : +0.115 ppm\nSkew            : 1.664 ppm\nRoot delay      : 0.000194433 seconds\nRoot dispersion : 0.001018828 seconds\nUpdate interval : 4.1 seconds\nLeap status     : Normal\n",
+    "sources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^? 129.250.35.251                2   6     0   15h    +53ms[  +11ms] +/-   64ms\n^? 109.61.109.140                2  10     0   15h   +102ms[  +55ms] +/-  153ms\n^? 133.18.147.168                2  10     0   15h    -17ms[  -61ms] +/-   83ms\n^? 162.159.200.123               3   8     0   15h    +59ms[  +13ms] +/-   73ms\n^* 192.168.0.81                 10   2   377     0    +17us[  +35us] +/- 1105us\n",
+    "probe": {
+      "server": "192.168.0.81",
+      "port": 32123,
+      "samples": [
+        {
+          "serverMinusClientMs": 0.016927719116210938,
+          "roundTripMs": 0.2598762512207031
+        },
+        {
+          "serverMinusClientMs": 0.03361701965332031,
+          "roundTripMs": 0.3643035888671875
+        },
+        {
+          "serverMinusClientMs": -0.06079673767089844,
+          "roundTripMs": 0.17404556274414062
+        },
+        {
+          "serverMinusClientMs": -0.009298324584960938,
+          "roundTripMs": 0.2884864807128906
+        },
+        {
+          "serverMinusClientMs": 0.047206878662109375,
+          "roundTripMs": 0.3991127014160156
+        },
+        {
+          "serverMinusClientMs": 0.04482269287109375,
+          "roundTripMs": 0.40149688720703125
+        },
+        {
+          "serverMinusClientMs": -0.011920928955078125,
+          "roundTripMs": 0.2579689025878906
+        },
+        {
+          "serverMinusClientMs": 0.05710124969482422,
+          "roundTripMs": 0.4146099090576172
+        },
+        {
+          "serverMinusClientMs": 0.06842613220214844,
+          "roundTripMs": 0.45680999755859375
+        },
+        {
+          "serverMinusClientMs": 0.03838539123535156,
+          "roundTripMs": 0.3790855407714844
+        },
+        {
+          "serverMinusClientMs": 0.05817413330078125,
+          "roundTripMs": 0.4334449768066406
+        },
+        {
+          "serverMinusClientMs": 0.03504753112792969,
+          "roundTripMs": 0.370025634765625
+        },
+        {
+          "serverMinusClientMs": 0.06723403930664062,
+          "roundTripMs": 0.4057884216308594
+        },
+        {
+          "serverMinusClientMs": 0.005841255187988281,
+          "roundTripMs": 0.3287792205810547
+        },
+        {
+          "serverMinusClientMs": 0.015974044799804688,
+          "roundTripMs": 0.3314018249511719
+        },
+        {
+          "serverMinusClientMs": 0.044345855712890625,
+          "roundTripMs": 0.4000663757324219
+        },
+        {
+          "serverMinusClientMs": 0.003337860107421875,
+          "roundTripMs": 0.3104209899902344
+        },
+        {
+          "serverMinusClientMs": -0.050187110900878906,
+          "roundTripMs": 0.1742839813232422
+        },
+        {
+          "serverMinusClientMs": 0.0059604644775390625,
+          "roundTripMs": 0.3299713134765625
+        },
+        {
+          "serverMinusClientMs": 0.00858306884765625,
+          "roundTripMs": 0.3757476806640625
+        },
+        {
+          "serverMinusClientMs": -0.008463859558105469,
+          "roundTripMs": 0.2796649932861328
+        },
+        {
+          "serverMinusClientMs": -0.012278556823730469,
+          "roundTripMs": 0.2696514129638672
+        },
+        {
+          "serverMinusClientMs": 0.050187110900878906,
+          "roundTripMs": 0.40411949157714844
+        },
+        {
+          "serverMinusClientMs": 0.01919269561767578,
+          "roundTripMs": 0.34689903259277344
+        }
+      ],
+      "medianBestHalfOffsetMs": -0.002562999725341797,
+      "minimumRoundTripMs": 0.17404556274414062,
+      "capturedUnix": 1791503233.158248
+    }
+  }
+}

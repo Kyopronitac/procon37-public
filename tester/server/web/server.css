@@ -1,0 +1,18 @@
+/* 対戦サーバー固有の差分。共通のstyle.cssの後に読み込む。 */
+/* チーム数は1〜16。カードは幅に合わせて折り返す。 */
+.match-standings { grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); }
+@media(max-width:700px) { .match-standings {grid-template-columns:repeat(auto-fill,minmax(130px,1fr)); overflow-x:visible;} }
+.team-cell { white-space:nowrap; }
+.team-cell .rank-badge { margin-right:6px; }
+.team-cell .team-score { font-variant-numeric:tabular-nums; }
+.team-cell small { margin-left:6px; }
+.window-info { margin:0; font-size:12px; overflow-wrap:anywhere; }
+.window-info code { font-size:12px; }
+.window-info.error { margin-top:6px; }
+.team-fields { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:8px 12px; }
+.team-fields label { font-size:12px; font-weight:600; }
+.team-fields input { width:100%; margin-top:4px; color:var(--text, #1f2430); font-weight:400; }
+.log-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:16px; }
+.log-grid .card { margin:0; min-width:0; }
+.log-heading { display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+.log-heading h2 { margin:0; }

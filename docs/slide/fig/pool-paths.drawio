@@ -1,0 +1,523 @@
+<mxfile host="65bd71144e">
+    <diagram id="pool-paths" name="公式サンプル上の同じ最小コストの2経路">
+        <mxGraphModel dx="61" dy="61" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1060" pageHeight="365" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="card-A" parent="1" style="rounded=1;arcSize=9;fillColor=#F1F3F5;strokeColor=#6B7280;strokeWidth=2;" value="" vertex="1">
+                    <mxGeometry height="308" width="515" x="5" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="title-A" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#97283C;fontSize=26;fontStyle=1;" value="経路 A：所要時間を抑える" vertex="1">
+                    <mxGeometry height="31" width="480" x="22.5" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-36" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="41.74232186272208" y="84.44767813727793" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-37" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="78.68696558816623" y="84.44767813727793" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-38" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="115.63160931361038" y="84.44767813727793" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-39" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="152.5762530390545" y="84.44767813727793" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-40" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="189.52089676449867" y="84.44767813727793" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-40-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="202.31889676449867" y="96.52100000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-41" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="226.46554048994284" y="84.44767813727793" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-52" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="23.27" y="116.44267813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-52-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="36.068" y="128.51600000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-53" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="60.21464372544416" y="116.44267813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-54" parent="1" style="shape=hexagon;rotation=90;fillColor=#9ec5e8;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="97.15928745088831" y="116.44267813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-54-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6%20-2%20Q%20-3%20-5%200%20-2%20Q%203%201%206%20-2%20M%20-4.5%203.5%20Q%20-1.5%20.5%201.5%203.5%22%20fill%3D%22none%22%20stroke%3D%22%232260a8%22%20stroke-opacity%3D%22.5%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="109.95728745088832" y="128.51600000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-55" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="134.10393117633242" y="116.44267813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-56" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="171.0485749017766" y="116.44267813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-57" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="207.99321862722076" y="116.44267813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-68" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="41.74232186272208" y="148.43767813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-69" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="78.68696558816623" y="148.43767813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-69-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="91.48496558816623" y="160.51100000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-70" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="115.63160931361038" y="148.43767813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-70-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="128.42960931361037" y="160.51100000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-71" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="152.5762530390545" y="148.43767813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-71-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="165.3742530390545" y="160.51100000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-72" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="189.52089676449867" y="148.43767813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-73" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="226.46554048994284" y="148.43767813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-84" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="23.27" y="180.43267813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-84-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="36.068" y="192.506" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-85" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="60.21464372544416" y="180.43267813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-85-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="73.01264372544416" y="192.506" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-86" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="97.15928745088831" y="180.43267813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-86-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="109.95728745088832" y="192.506" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-87" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="134.10393117633242" y="180.43267813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-87-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="146.90193117633243" y="192.506" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-88" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="171.0485749017766" y="180.43267813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-88-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="183.8465749017766" y="192.506" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-89" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="207.99321862722076" y="180.43267813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-100" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="41.74232186272208" y="212.42767813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-101" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="78.68696558816623" y="212.42767813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-102" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="115.63160931361038" y="212.42767813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-103" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="152.5762530390545" y="212.42767813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-104" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="189.52089676449867" y="212.42767813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-105" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="226.46554048994284" y="212.42767813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-116" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="23.27" y="244.4226781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-116-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="36.068" y="256.496" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-117" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="60.21464372544416" y="244.4226781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-118" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="97.15928745088831" y="244.4226781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-118-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="109.95728745088832" y="256.496" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-119" parent="1" style="shape=hexagon;rotation=90;fillColor=#9ec5e8;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="134.10393117633242" y="244.4226781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-119-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6%20-2%20Q%20-3%20-5%200%20-2%20Q%203%201%206%20-2%20M%20-4.5%203.5%20Q%20-1.5%20.5%201.5%203.5%22%20fill%3D%22none%22%20stroke%3D%22%232260a8%22%20stroke-opacity%3D%22.5%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="146.90193117633243" y="256.496" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-120" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="171.0485749017766" y="244.4226781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-121" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="207.99321862722076" y="244.4226781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-121-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="220.79121862722076" y="256.496" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-132" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="41.74232186272208" y="276.4176781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-133" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="78.68696558816623" y="276.4176781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-134" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="115.63160931361038" y="276.4176781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-135" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="152.5762530390545" y="276.4176781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-136" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="189.52089676449867" y="276.4176781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-A-137" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="226.46554048994284" y="276.4176781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="route-A-0" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="63.07232186272208" y="102.92" as="sourcePoint"/>
+                        <mxPoint x="100.01696558816623" y="102.92" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-A-1" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="100.01696558816623" y="102.92" as="sourcePoint"/>
+                        <mxPoint x="136.96160931361038" y="102.92" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-A-2" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="136.96160931361038" y="102.92" as="sourcePoint"/>
+                        <mxPoint x="173.90625303905452" y="102.92" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-A-3" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="173.90625303905452" y="102.92" as="sourcePoint"/>
+                        <mxPoint x="192.3785749017766" y="134.91500000000002" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-A-4" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="192.3785749017766" y="134.91500000000002" as="sourcePoint"/>
+                        <mxPoint x="210.85089676449869" y="166.91000000000003" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-A-5" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210.85089676449869" y="166.91000000000003" as="sourcePoint"/>
+                        <mxPoint x="229.32321862722077" y="198.905" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-A-6" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="229.32321862722077" y="198.905" as="sourcePoint"/>
+                        <mxPoint x="210.85089676449869" y="230.9" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-A-7" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="210.85089676449869" y="230.9" as="sourcePoint"/>
+                        <mxPoint x="192.3785749017766" y="262.895" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-A-8" edge="1" parent="1" style="edgeStyle=none;endArrow=blockThin;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="spot-A-135-waves">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="192.3785749017766" y="262.895" as="sourcePoint"/>
+                        <mxPoint x="173.90625303905452" y="294.89" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="spot-A-135" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#0284c7;strokeColor=#ffffff;strokeWidth=2;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="16.25564323919543" width="18.770400000000002" x="164.52105303905452" y="286.76217838040225" as="geometry"/>
+                </mxCell>
+                <mxCell id="spot-A-135-waves" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#ffffff;fontSize=9.76;fontStyle=1;" value="B" vertex="1">
+                    <mxGeometry height="18.770400000000002" width="18.770400000000002" x="164.52105303905452" y="285.5048" as="geometry"/>
+                </mxCell>
+                <mxCell id="spot-A-55" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#dc2626;strokeColor=#ffffff;strokeWidth=2;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="16.25564323919543" width="18.770400000000002" x="146.04873117633244" y="126.78717838040231" as="geometry"/>
+                </mxCell>
+                <mxCell id="spot-A-55-waves" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#ffffff;fontSize=9.76;fontStyle=1;" value="A" vertex="1">
+                    <mxGeometry height="18.770400000000002" width="18.770400000000002" x="146.04873117633244" y="125.52980000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="time-A" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#97283C;fontSize=26;fontStyle=1;" value="13 ステップ" vertex="1">
+                    <mxGeometry height="36" width="219" x="285" y="97" as="geometry"/>
+                </mxCell>
+                <mxCell id="fuel-A" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#97283C;fontSize=26;fontStyle=1;" value="消費燃料 14" vertex="1">
+                    <mxGeometry height="36" width="219" x="285" y="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="cost-heading-A" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#242424;fontSize=20;fontStyle=1;" value="コスト（α = 5）" vertex="1">
+                    <mxGeometry height="27" width="219" x="285" y="182" as="geometry"/>
+                </mxCell>
+                <mxCell id="cost-A" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#97283C;fontSize=24;fontStyle=1;" value="10 × 13 ＋ 5 × 14&lt;br&gt;＝ 200" vertex="1">
+                    <mxGeometry height="61" width="219" x="285" y="211" as="geometry"/>
+                </mxCell>
+                <mxCell id="count-A" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#6B7280;fontSize=17;fontStyle=0;" value="平地 4 回 ＋ 道路 5 回" vertex="1">
+                    <mxGeometry height="39" width="232" x="279" y="279" as="geometry"/>
+                </mxCell>
+                <mxCell id="card-B" parent="1" style="rounded=1;arcSize=9;fillColor=#FFF2F5;strokeColor=#6B7280;strokeWidth=2;" value="" vertex="1">
+                    <mxGeometry height="308" width="515" x="540" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="title-B" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#97283C;fontSize=26;fontStyle=1;" value="経路 B：消費燃料を抑える" vertex="1">
+                    <mxGeometry height="31" width="480" x="557.5" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-36" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="576.7423218627221" y="84.44767813727793" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-37" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="613.6869655881662" y="84.44767813727793" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-38" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="650.6316093136104" y="84.44767813727793" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-39" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="687.5762530390544" y="84.44767813727793" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-40" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="724.5208967644986" y="84.44767813727793" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-40-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="737.3188967644986" y="96.52100000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-41" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="761.4655404899428" y="84.44767813727793" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-52" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="558.27" y="116.44267813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-52-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="571.068" y="128.51600000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-53" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="595.2146437254441" y="116.44267813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-54" parent="1" style="shape=hexagon;rotation=90;fillColor=#9ec5e8;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="632.1592874508883" y="116.44267813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-54-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6%20-2%20Q%20-3%20-5%200%20-2%20Q%203%201%206%20-2%20M%20-4.5%203.5%20Q%20-1.5%20.5%201.5%203.5%22%20fill%3D%22none%22%20stroke%3D%22%232260a8%22%20stroke-opacity%3D%22.5%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="644.9572874508883" y="128.51600000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-55" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="669.1039311763324" y="116.44267813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-56" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="706.0485749017765" y="116.44267813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-57" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="742.9932186272207" y="116.44267813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-68" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="576.7423218627221" y="148.43767813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-69" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="613.6869655881662" y="148.43767813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-69-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="626.4849655881662" y="160.51100000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-70" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="650.6316093136104" y="148.43767813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-70-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="663.4296093136104" y="160.51100000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-71" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="687.5762530390544" y="148.43767813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-71-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="700.3742530390545" y="160.51100000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-72" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="724.5208967644986" y="148.43767813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-73" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="761.4655404899428" y="148.43767813727794" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-84" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="558.27" y="180.43267813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-84-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="571.068" y="192.506" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-85" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="595.2146437254441" y="180.43267813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-85-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="608.0126437254441" y="192.506" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-86" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="632.1592874508883" y="180.43267813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-86-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="644.9572874508883" y="192.506" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-87" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="669.1039311763324" y="180.43267813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-87-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="681.9019311763324" y="192.506" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-88" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="706.0485749017765" y="180.43267813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-88-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="718.8465749017765" y="192.506" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-89" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="742.9932186272207" y="180.43267813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-100" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="576.7423218627221" y="212.42767813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-101" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="613.6869655881662" y="212.42767813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-102" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="650.6316093136104" y="212.42767813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-103" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="687.5762530390544" y="212.42767813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-104" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="724.5208967644986" y="212.42767813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-105" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="761.4655404899428" y="212.42767813727792" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-116" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="558.27" y="244.4226781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-116-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="571.068" y="256.496" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-117" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="595.2146437254441" y="244.4226781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-118" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="632.1592874508883" y="244.4226781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-118-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="644.9572874508883" y="256.496" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-119" parent="1" style="shape=hexagon;rotation=90;fillColor=#9ec5e8;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="669.1039311763324" y="244.4226781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-119-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6%20-2%20Q%20-3%20-5%200%20-2%20Q%203%201%206%20-2%20M%20-4.5%203.5%20Q%20-1.5%20.5%201.5%203.5%22%20fill%3D%22none%22%20stroke%3D%22%232260a8%22%20stroke-opacity%3D%22.5%22%20stroke-width%3D%221.3%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="681.9019311763324" y="256.496" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-120" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="706.0485749017765" y="244.4226781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-121" parent="1" style="shape=hexagon;rotation=90;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="742.9932186272207" y="244.4226781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-121-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="12.798" width="17.064" x="755.7912186272207" y="256.496" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-132" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="576.7423218627221" y="276.4176781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-133" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="613.6869655881662" y="276.4176781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-134" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="650.6316093136104" y="276.4176781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-135" parent="1" style="shape=hexagon;rotation=90;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="687.5762530390544" y="276.4176781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-136" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="724.5208967644986" y="276.4176781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="terrain-B-137" parent="1" style="shape=hexagon;rotation=90;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.35;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="36.94464372544415" width="42.660000000000004" x="761.4655404899428" y="276.4176781372779" as="geometry"/>
+                </mxCell>
+                <mxCell id="route-B-0" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="598.0723218627221" y="102.92" as="sourcePoint"/>
+                        <mxPoint x="616.5446437254442" y="134.91500000000002" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-B-1" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="616.5446437254442" y="134.91500000000002" as="sourcePoint"/>
+                        <mxPoint x="635.0169655881663" y="166.91000000000003" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-B-2" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="635.0169655881663" y="166.91000000000003" as="sourcePoint"/>
+                        <mxPoint x="653.4892874508884" y="198.905" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-B-3" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="653.4892874508884" y="198.905" as="sourcePoint"/>
+                        <mxPoint x="671.9616093136104" y="230.9" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-B-4" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="671.9616093136104" y="230.9" as="sourcePoint"/>
+                        <mxPoint x="708.9062530390545" y="230.9" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-B-5" edge="1" parent="1" style="edgeStyle=none;endArrow=none;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="708.9062530390545" y="230.9" as="sourcePoint"/>
+                        <mxPoint x="727.3785749017766" y="262.895" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="route-B-6" edge="1" parent="1" style="edgeStyle=none;endArrow=blockThin;endFill=1;endSize=7;strokeColor=#97283C;strokeWidth=3;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="spot-B-135-waves">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="727.3785749017766" y="262.895" as="sourcePoint"/>
+                        <mxPoint x="708.9062530390545" y="294.89" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="spot-B-135" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#0284c7;strokeColor=#ffffff;strokeWidth=2;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="16.25564323919543" width="18.770400000000002" x="699.5210530390544" y="286.76217838040225" as="geometry"/>
+                </mxCell>
+                <mxCell id="spot-B-135-waves" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#ffffff;fontSize=9.76;fontStyle=1;" value="B" vertex="1">
+                    <mxGeometry height="18.770400000000002" width="18.770400000000002" x="699.5210530390544" y="285.5048" as="geometry"/>
+                </mxCell>
+                <mxCell id="spot-B-55" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#dc2626;strokeColor=#ffffff;strokeWidth=2;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="16.25564323919543" width="18.770400000000002" x="681.0487311763324" y="126.78717838040231" as="geometry"/>
+                </mxCell>
+                <mxCell id="spot-B-55-waves" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#ffffff;fontSize=9.76;fontStyle=1;" value="A" vertex="1">
+                    <mxGeometry height="18.770400000000002" width="18.770400000000002" x="681.0487311763324" y="125.52980000000002" as="geometry"/>
+                </mxCell>
+                <mxCell id="time-B" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#97283C;fontSize=26;fontStyle=1;" value="15 ステップ" vertex="1">
+                    <mxGeometry height="36" width="219" x="820" y="97" as="geometry"/>
+                </mxCell>
+                <mxCell id="fuel-B" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#97283C;fontSize=26;fontStyle=1;" value="消費燃料 10" vertex="1">
+                    <mxGeometry height="36" width="219" x="820" y="135" as="geometry"/>
+                </mxCell>
+                <mxCell id="cost-heading-B" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#242424;fontSize=20;fontStyle=1;" value="コスト（α = 5）" vertex="1">
+                    <mxGeometry height="27" width="219" x="820" y="182" as="geometry"/>
+                </mxCell>
+                <mxCell id="cost-B" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#97283C;fontSize=24;fontStyle=1;" value="10 × 15 ＋ 5 × 10&lt;br&gt;＝ 200" vertex="1">
+                    <mxGeometry height="61" width="219" x="820" y="211" as="geometry"/>
+                </mxCell>
+                <mxCell id="count-B" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#6B7280;fontSize=17;fontStyle=0;" value="平地 4 回 ＋ 山地 2 回&lt;br&gt;＋ 道路 1 回" vertex="1">
+                    <mxGeometry height="39" width="232" x="814" y="279" as="geometry"/>
+                </mxCell>
+                <mxCell id="source" parent="1" style="text;html=1;whiteSpace=wrap;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontColor=#6B7280;fontSize=19;fontStyle=0;" value="引用: 公式サンプル sample_16.json の一部" vertex="1">
+                    <mxGeometry height="27" width="1060" y="334" as="geometry"/>
+                </mxCell>
+                <mxCell id="collector-A" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#2563eb;strokeColor=#ffffff;strokeWidth=1.98;fontColor=#ffffff;fontSize=9.9;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;spacing=0;" value="1" vertex="1">
+                    <mxGeometry height="18" width="18" x="54.07232186272208" y="93.92" as="geometry"/>
+                </mxCell>
+                <mxCell id="collector-B" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#2563eb;strokeColor=#ffffff;strokeWidth=1.98;fontColor=#ffffff;fontSize=9.9;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;spacing=0;" value="1" vertex="1">
+                    <mxGeometry height="18" width="18" x="589.0723218627221" y="93.92" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

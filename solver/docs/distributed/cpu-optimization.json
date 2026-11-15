@@ -1,0 +1,9 @@
+{
+  "action": "全policyをperformance governor/EPPに設定。NUMA各1ノード、全CPU集合使用。対戦測定は初回CPU基準後に同条件で比較する。",
+  "results": {
+    "v1": "\rvoidlinux-1@192.168.0.11's  \r\npowersave\r\nperformance\r\nperformance\r\n",
+    "v2": "\rvoidlinux-2@192.168.0.22's  \r\nperformance\r\nperformance\r\nperformance\r\n",
+    "v3": "\rvoidlinux-3@192.168.0.33's  \r\nperformance\r\nperformance\r\nperformance\r\n",
+    "nomlab": "\rnomlab-ubuntu@192.168.0.55's  \r\nperformance\r\n[sudo: ]  \r\nperformance\r\nperformance\r\n"
+  }
+}

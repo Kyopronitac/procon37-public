@@ -1,0 +1,129 @@
+{
+  "mode": "game",
+  "opponents": [
+    {
+      "name": "pool-generation-002",
+      "solver": {
+        "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-1",
+        "args": [
+          "0"
+        ],
+        "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+        "env": {}
+      },
+      "solverParallel": false,
+      "version": "pool-generation-002-run-1790551749037999892-54402-v1"
+    },
+    {
+      "name": "pool-generation-006",
+      "solver": {
+        "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-2",
+        "args": [
+          "0"
+        ],
+        "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+        "env": {}
+      },
+      "solverParallel": false,
+      "version": "pool-generation-006-commit-a9216446bd0ae6837689a0847bb3f467c2d1d428"
+    },
+    {
+      "name": "pool-generation-004",
+      "solver": {
+        "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-3",
+        "args": [
+          "0"
+        ],
+        "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+        "env": {}
+      },
+      "solverParallel": false,
+      "version": "pool-generation-004-run-1790600156388062978-4-v1"
+    },
+    {
+      "name": "pool-generation-003",
+      "solver": {
+        "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-4",
+        "args": [
+          "0"
+        ],
+        "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+        "env": {}
+      },
+      "solverParallel": false,
+      "version": "pool-generation-003-run-1790563781811011480-62511-v1"
+    }
+  ],
+  "count": 30,
+  "seed": null,
+  "format": null,
+  "jobs": null,
+  "solverParallel": false,
+  "label": "pool第7世代・正式昇格判定・既定条件フル30件・試行3",
+  "build": {
+    "program": "cargo",
+    "args": [
+      "build",
+      "--release",
+      "-p",
+      "solver"
+    ],
+    "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+    "env": {}
+  },
+  "solver": {
+    "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/solver",
+    "args": [
+      "0"
+    ],
+    "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+    "env": {}
+  },
+  "timeLimitMs": null,
+  "arenaMaps": true,
+  "targetName": "pool-generation-007"
+}

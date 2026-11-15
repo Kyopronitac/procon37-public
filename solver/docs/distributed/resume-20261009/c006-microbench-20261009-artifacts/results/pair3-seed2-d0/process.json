@@ -1,0 +1,17 @@
+{
+  "pid": 8396,
+  "command": [
+    "taskset",
+    "-c",
+    "0-15",
+    "/home/voidlinux-2/procon37-distributed-resume/c006-micro-20261009/bin/d0",
+    "--mode",
+    "parallel",
+    "--threads",
+    "16",
+    "--seed",
+    "0"
+  ],
+  "stopped": true,
+  "exitCode": 0
+}

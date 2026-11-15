@@ -1,0 +1,81 @@
+{
+  "stage": "H2-C012-on-short-01",
+  "environment": "restart-20261009-5800H-performance",
+  "comparison": {
+    "win": 6,
+    "tie": 0,
+    "loss": 6
+  },
+  "rankSumDelta": -5,
+  "scoreDelta": [
+    0,
+    0,
+    4
+  ],
+  "formats": {
+    "H2-D0-short-01": {
+      "first": {
+        "count": 4,
+        "meanRank": 2.5,
+        "scores": {
+          "uniqueBrands": 48,
+          "dailyBrands": 334,
+          "udon": 629
+        }
+      },
+      "semifinal": {
+        "count": 4,
+        "meanRank": 1.5,
+        "scores": {
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 880
+        }
+      },
+      "final": {
+        "count": 4,
+        "meanRank": 1.0,
+        "scores": {
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1452
+        }
+      }
+    },
+    "H2-C012-on-short-01": {
+      "first": {
+        "count": 4,
+        "meanRank": 1.0,
+        "scores": {
+          "uniqueBrands": 48,
+          "dailyBrands": 334,
+          "udon": 630
+        }
+      },
+      "semifinal": {
+        "count": 4,
+        "meanRank": 1.25,
+        "scores": {
+          "uniqueBrands": 69,
+          "dailyBrands": 393,
+          "udon": 884
+        }
+      },
+      "final": {
+        "count": 4,
+        "meanRank": 1.5,
+        "scores": {
+          "uniqueBrands": 105,
+          "dailyBrands": 550,
+          "udon": 1451
+        }
+      }
+    }
+  },
+  "decision": "repeat_same_D0_C012_pair",
+  "firstPairRepeatCriterionMet": true,
+  "formalCriterionAssessed": false,
+  "note": "順位改善と種類/日別維持で反復へ。大盤順位1.0→1.5、得点6勝6敗、玉+4なので明確改善とはまだ扱わない。",
+  "clockMaxAbsOffsetMs": 0.10597705841064453,
+  "allPowerSettingsPerformance": true
+}

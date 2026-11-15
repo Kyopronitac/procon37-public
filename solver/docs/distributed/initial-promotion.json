@@ -1,0 +1,21 @@
+{
+  "adoptedVersion": "D0",
+  "sourceCommit": "5d6c740962a1f3e20e77e13df243078df1d29ad2",
+  "branch": "feat/parallel-distributed-solver",
+  "formalRunId": "1791414715585964511-304414",
+  "binarySha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+  "formalSourceHash": "b1834367734437c57537e9c58b1c6ecdc0f2e3d3a83295cfb6f0c1fd30cdd644",
+  "all48AC": true,
+  "rankSum": 20,
+  "meanRank": 1.6666666666666667,
+  "push": {
+    "success": true,
+    "remote": "origin",
+    "ref": "feat/parallel-distributed-solver",
+    "result": "0a6b8a8..5d6c740 HEAD -> feat/parallel-distributed-solver; upstream設定成功",
+    "mode": "通常push、forceなし"
+  },
+  "sourceCommitVerifiedAgainstFormalFiles": 47,
+  "adoptedAtJst": "2026-10-08T09:48:50.784351+09:00",
+  "implementationChangedAfterFormal": false
+}

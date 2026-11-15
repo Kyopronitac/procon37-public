@@ -1,0 +1,154 @@
+{
+  "baseline_hash": "ca0218f665388632f0b365414c6ef80acb6ec7626193190c9c5ce483521c8d7a",
+  "roster": [
+    {
+      "path": "/home/jikky/Downloads/procon37/solver/parallel-pool/generation-003-P0",
+      "status": "frozen_ready_formal",
+      "binary_sha256": "f9138add04ac7b18e307d6af3e1a93381b365308f40673cb704a4f93996bc945",
+      "args": [
+        "0"
+      ],
+      "env": {
+        "PROCON37_G007_FUTURE_WEIGHT": "0",
+        "PROCON37_G007_RESERVE_WEIGHT": "15"
+      },
+      "threads_observed": 15,
+      "host": "192.168.0.11",
+      "team": 0,
+      "cpu": "0-3,8-11,16-19,24-26",
+      "run_pid": 12797,
+      "remote_pid_file": "/home/voidlinux-1/procon37-parallel-pool/teams/P0/run.pid",
+      "launcher_sha256": "ed5a582de0147ead9060212caf4c9b52e15f420cd97b4fff842c0f40e565a310",
+      "log": "/home/voidlinux-1/procon37-parallel-pool/teams/P0/bridge.log",
+      "id": "P0",
+      "source_hash": "b9511c16cc77ad8ac8737db32e441f4c30ad4443bea7f6588c992f05a0f584ae",
+      "source_identity": "solver/docs/parallel-pool/generation-003-P0-v2-identity.json",
+      "launcher_source": "solver/parallel-pool/runtime/generation-003/P0/launcher.sh"
+    },
+    {
+      "path": "/home/jikky/Downloads/procon37/solver/parallel-pool/generation-002-P1",
+      "status": "frozen_ready_formal",
+      "binary_sha256": "ae3c60578f62cab9f8968f15681aa35e6d135b037b3cab5f777065a7d4a29af8",
+      "args": [
+        "206002"
+      ],
+      "env": {
+        "PROCON37_G007_FUTURE_WEIGHT": "0",
+        "PROCON37_G007_RESERVE_WEIGHT": "15"
+      },
+      "threads_observed": 15,
+      "host": "192.168.0.11",
+      "team": 1,
+      "cpu": "4-7,12-15,20-23,28-30",
+      "run_pid": 12745,
+      "remote_pid_file": "/home/voidlinux-1/procon37-parallel-pool/teams/P1/run.pid",
+      "launcher_sha256": "6ff27df7ad965146b60044907c70778fdbf3674ba2314d92c6843877da9f803b",
+      "log": "/home/voidlinux-1/procon37-parallel-pool/teams/P1/bridge.log",
+      "id": "P1",
+      "source_hash": "1f3465499fd5e6d0ea5ee1e193ada24272bae24811fb4f18e82ae1ef19d028d9",
+      "source_identity": "solver/docs/parallel-pool/generation-002-P1-v3-identity.json",
+      "launcher_source": "solver/parallel-pool/runtime/generation-002/P1/launcher.sh"
+    },
+    {
+      "path": "/home/jikky/Downloads/procon37/solver/parallel-pool/initial-P2",
+      "status": "deployed_waiting",
+      "binary_sha256": "c6e6902fe8b8352ba1afb4e5bdad57ca06aa22ba355a2cea9186a87b73178cc9",
+      "args": [
+        "0",
+        "0",
+        "2",
+        "0"
+      ],
+      "env": {},
+      "threads_observed": 15,
+      "host": "192.168.0.33",
+      "team": 2,
+      "cpu": "0-3,8-11,16-19,24-26",
+      "run_pid": 13931,
+      "remote_pid_file": "/home/voidlinux-3/procon37-parallel-pool/teams/P2/run.pid",
+      "launcher_sha256": "99836e8222c435c7885f18bdcb13dffe525b98352e8ac2ae366af1c69c69c0c4",
+      "log": "/home/voidlinux-3/procon37-parallel-pool/teams/P2/bridge.log",
+      "id": "P2",
+      "source_hash": "b6c4b07f1ffc8e202a1a6997555b9c56ea39f9b52be942d329623ed17a712839",
+      "source_identity": "solver/docs/parallel-pool/initial-P2-identity.json",
+      "launcher_source": "solver/docs/parallel-pool/initial-launchers/P2.sh"
+    },
+    {
+      "path": "/home/jikky/Downloads/procon37/solver/parallel-pool/initial-P3",
+      "status": "deployed_waiting",
+      "binary_sha256": "2fb1e61c9bf22bd48c54be0e26ef6de08deb724d9909ba3041bd483eee005da2",
+      "args": [
+        "0",
+        "0",
+        "2",
+        "0"
+      ],
+      "env": {
+        "PROCON37_P3_WORKERS": "14",
+        "PROCON37_G007_FUTURE_WEIGHT": "0",
+        "PROCON37_G007_RESERVE_WEIGHT": "15"
+      },
+      "threads_observed": 15,
+      "host": "192.168.0.33",
+      "team": 3,
+      "cpu": "4-7,12-15,20-23,28-30",
+      "run_pid": 14003,
+      "remote_pid_file": "/home/voidlinux-3/procon37-parallel-pool/teams/P3/run.pid",
+      "launcher_sha256": "ad82a2de113e8ef214d5c4b7e02950a099da7fbf5a2ba9b84d79fe8b60be8f2a",
+      "log": "/home/voidlinux-3/procon37-parallel-pool/teams/P3/bridge.log",
+      "id": "P3",
+      "source_hash": "a6d2c7f5668a39a968f0be2ca96b97cdde2aeaa51432bb199c0de9e827bcf80a",
+      "source_identity": "solver/docs/parallel-pool/initial-P3-identity.json",
+      "launcher_source": "solver/docs/parallel-pool/initial-launchers/P3.sh"
+    },
+    {
+      "id": "S0",
+      "generation": 6,
+      "source_hashes": {
+        "solver/docs/solver-pool-experiment/solver06/main.rs": "e9e3d0a0523d47922fd349b62e070f2b0c17509f776d2b6cc372bd8ecbd20a56",
+        "solver/docs/solver-pool-experiment/solver06/solver/planner.rs": "1003c94dcc9f1a42b96f55aa568803e0aa800a4a02837d53f8a349d953595a34"
+      },
+      "build_command": "PATH=/home/jikky/.cargo/bin:$PATH cargo build --release --manifest-path solver/docs/solver-pool-experiment/Cargo.toml --bin pool-solver-06 --bin pool-solver-08 --target-dir /tmp/parallel-pool-fixed-target -j 2",
+      "cpu": "0",
+      "team": 4,
+      "host": "192.168.0.22",
+      "binary_sha256": "90cb3b35e7ec1fe71738e5640b9dcd75ae3ebc931741ac1f29b8887d6da041a8",
+      "launcher_args": [],
+      "run_pid": 31767,
+      "remote_pid_file": "/home/voidlinux-2/procon37-parallel-pool/teams/S0/run.pid",
+      "log": "/home/voidlinux-2/procon37-parallel-pool/teams/S0/bridge.log",
+      "launcher_sha256": "eefd1f3e1c0d697303cf2fa02ab1ca8aff3c90590aace4c29ea95ffde300a38f",
+      "launcher_source": "solver/docs/parallel-pool/initial-launchers/S0.sh"
+    },
+    {
+      "id": "S1",
+      "generation": 8,
+      "source_hashes": {
+        "solver/docs/solver-pool-experiment/solver08/main.rs": "017b4d04ae4e7d8310d39f48b3d5ce0a72ff54aacc62fc1ac84b22ea469cc9a7",
+        "solver/docs/solver-pool-experiment/solver08/solver/planner.rs": "a6f4c8c95fdf6f2ec6e3bf3927b4e5963ef7932de7045e33c482ceeba4370a84"
+      },
+      "build_command": "PATH=/home/jikky/.cargo/bin:$PATH cargo build --release --manifest-path solver/docs/solver-pool-experiment/Cargo.toml --bin pool-solver-06 --bin pool-solver-08 --target-dir /tmp/parallel-pool-fixed-target -j 2",
+      "cpu": "2",
+      "team": 5,
+      "host": "192.168.0.22",
+      "binary_sha256": "f5a6bcfc55feb853d7a1f355a11afd7af617fe96393a63b4ec1b05970b6a7ea0",
+      "launcher_args": [],
+      "remote_pid_file": "/home/voidlinux-2/procon37-parallel-pool/teams/S1/run.pid",
+      "log": "/home/voidlinux-2/procon37-parallel-pool/teams/S1/bridge.log",
+      "run_pid": 31768,
+      "launcher_sha256": "7bef6997ae7f4651732b38a3fd2fd31006168c1b8742ae39186850c69de1cac9",
+      "launcher_source": "solver/docs/parallel-pool/initial-launchers/S1.sh"
+    }
+  ],
+  "runtime_components": {
+    "target/release/server": "6fa24e4e36c92d1fb2dacca682221c4ca3cc8f8120641f3993a48e0eff8e7a73",
+    "target/release/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+    "tester/server/procon-server": "769e101cbc6b80cce7732dae1e10d911ed1e9efefd3b1f94b6381652aa7741c1",
+    "tester/server-bridge/run.sh": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27",
+    "Cargo.toml": "9878c0f79463d2f3617e6b5b99293c58a7c69d1898c9bbb369d17ed71d7a4a10",
+    "Cargo.lock": "a788fbbba8d76a6a01e1c1d3b637a3084f6bb44177ff171af4fced06dc68b344"
+  },
+  "generation": 3,
+  "attempt": 2,
+  "selection_run_id": "1791391391361612330-262452"
+}

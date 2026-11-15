@@ -1,0 +1,17 @@
+{
+  "recorded_at_utc": "2026-10-08T22:46:48.152641+00:00",
+  "hosts": {
+    "v1": {
+      "remaining_processes": [],
+      "remaining_probe_cgroups": [],
+      "cpu31_thread_siblings": "15,31",
+      "governor": "performance"
+    },
+    "v3": {
+      "remaining_processes": [],
+      "remaining_probe_cgroups": [],
+      "cpu31_thread_siblings": "15,31",
+      "governor": "performance"
+    }
+  }
+}

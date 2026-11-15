@@ -1,0 +1,33 @@
+{
+  "adopted": false,
+  "formalEvaluationJustifiedByCurrentResults": false,
+  "decision": "C010は玉数平均+11だが、平均順位0.25悪化・日別平均1減が反復でも続いた。正式は見送り、検証済みC011の短縮12件を確認する。",
+  "summary": {
+    "D0": {
+      "stages": [
+        "resume-D0-short-01",
+        "resume-D0-short-02"
+      ],
+      "totalCases": 24,
+      "meanRank": 1.2916666666666667,
+      "meanScores": {
+        "uniqueBrands": 222.0,
+        "dailyBrands": 1277.0,
+        "udon": 2960.0
+      }
+    },
+    "C010": {
+      "stages": [
+        "C010-on-short-01",
+        "C010-on-short-02"
+      ],
+      "totalCases": 24,
+      "meanRank": 1.5416666666666667,
+      "meanScores": {
+        "uniqueBrands": 222.0,
+        "dailyBrands": 1276.0,
+        "udon": 2971.0
+      }
+    }
+  }
+}

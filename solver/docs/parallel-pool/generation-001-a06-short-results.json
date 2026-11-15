@@ -1,0 +1,15 @@
+{
+  "run_json": "/tmp/p0-g001-a06.tbcns4k4/1791379836229304941-240291/run.json",
+  "rank_sums": [
+    9,
+    12,
+    6,
+    7,
+    17,
+    10
+  ],
+  "all_18_ac": true,
+  "formal_requested": false,
+  "developer_summary": "/tmp/p0-g001-a06.tbcns4k4/summary.json",
+  "owner": "/root/generation_001_p0"
+}

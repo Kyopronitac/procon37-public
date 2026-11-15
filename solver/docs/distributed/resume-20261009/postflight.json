@@ -1,0 +1,20 @@
+{
+  "capturedAtJst": "2026-10-09T07:50:13.542211+09:00",
+  "localRelatedProcesses": [],
+  "remote": {
+    "v1": {
+      "relatedProcesses": []
+    },
+    "v2": {
+      "relatedProcesses": []
+    },
+    "v3": {
+      "relatedProcesses": []
+    }
+  },
+  "nomlab": "SSH unreachable; remote process state unknown",
+  "evaluationsStarted": 0,
+  "adoptedVersion": "D0",
+  "newCandidateAdopted": false,
+  "newCommitPush": false
+}

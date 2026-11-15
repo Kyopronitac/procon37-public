@@ -1,0 +1,19 @@
+{
+  "version": "D0",
+  "sourceCommit": "5d6c740962a1f3e20e77e13df243078df1d29ad2",
+  "adoptionRecordCommit": "bf0807116eb882bf8cafc54ac01a535dcc26b6b4",
+  "formalRunId": "1791414715585964511-304414",
+  "archiveSha256": "6556afdbc07aedde2c31e0598de19f078bbce178395108c0c6c2d05b42217d7a",
+  "archiveBytes": 2045178,
+  "binaries": {
+    "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+    "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e"
+  },
+  "architecture": "x86_64 Linux/glibc",
+  "glibcSymbolsRequiredMax": {
+    "distributed-solver": "2.34",
+    "server-bridge": "2.39"
+  },
+  "credentialsIncluded": false,
+  "note": "採用済み実行ファイルのコピー。再コンパイルなし。公式URL/チームトークン/SSH認証情報は同梱しない。"
+}

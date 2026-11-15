@@ -1,0 +1,81 @@
+{
+  "runId": "1791504436521618109-94528",
+  "all48AC": true,
+  "players": [
+    {
+      "team": 0,
+      "rankSum": 18,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2955
+      },
+      "meanRank": 1.5
+    },
+    {
+      "team": 1,
+      "rankSum": 26,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1273,
+        "udon": 2926
+      },
+      "meanRank": 2.1666666666666665
+    },
+    {
+      "team": 2,
+      "rankSum": 36,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 2854
+      },
+      "meanRank": 3.0
+    },
+    {
+      "team": 3,
+      "rankSum": 35,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1274,
+        "udon": 2900
+      },
+      "meanRank": 2.9166666666666665
+    }
+  ],
+  "version": "C007-compact",
+  "stage": "C007-short-01",
+  "verifiedUnchanged": true,
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "分散C007・経路木圧縮と遅延展開・D0基準比較1回目・短縮12件・10秒",
+    "players": 4,
+    "teamNames": [
+      "分散C007-compact",
+      "固定並列",
+      "固定第6世代",
+      "固定第8世代"
+    ],
+    "timeLimitMs": 10000,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "comparison": {
+    "win": 3,
+    "tie": 3,
+    "loss": 6
+  },
+  "beforeRunId": "1791503276339409187-91328",
+  "before": {
+    "team": 0,
+    "rankSum": 16,
+    "scores": {
+      "uniqueBrands": 222,
+      "dailyBrands": 1277,
+      "udon": 2964
+    },
+    "meanRank": 1.3333333333333333
+  }
+}

@@ -1,0 +1,25 @@
+<mxfile host="65bd71144e">
+    <diagram id="pool-assignment" name="全日程を試走して車種を選ぶ">
+        <mxGraphModel dx="1143" dy="849" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1060" pageHeight="260" math="0" shadow="0">
+            <root>
+                <mxCell id="0" />
+                <mxCell id="1" parent="0" />
+                <mxCell id="b0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF7FF;strokeColor=#185B80;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=25;fontStyle=1;spacing=8;align=center;verticalAlign=middle;" value="補給車の配置" vertex="1">
+                    <mxGeometry height="130" width="310" x="20" y="25" as="geometry" />
+                </mxCell>
+                <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2E8;strokeColor=#E96B28;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=25;fontStyle=1;spacing=8;align=center;verticalAlign=middle;" value="全日程を試走" vertex="1">
+                    <mxGeometry height="130" width="310" x="375" y="25" as="geometry" />
+                </mxCell>
+                <mxCell id="a1" edge="1" parent="1" source="b0" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#97283C;strokeWidth=2;" target="b1">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2F5;strokeColor=#97283C;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=25;fontStyle=1;spacing=8;align=center;verticalAlign=middle;" value="成績を比較" vertex="1">
+                    <mxGeometry height="130" width="310" x="730" y="25" as="geometry" />
+                </mxCell>
+                <mxCell id="a2" edge="1" parent="1" source="b1" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#97283C;strokeWidth=2;" target="b2">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,81 @@
+{
+  "registered_at": "2026-10-07T06:33:30.770335+00:00",
+  "action": "add_missing_generation_006_and_007_source_snapshots",
+  "scope": "archive_registration_only",
+  "source_and_formal_hashes_matched": true,
+  "source_files_modified": false,
+  "additional_builds_or_tests": false,
+  "active_solver_sha256_before": {
+    "main.rs": "017b4d04ae4e7d8310d39f48b3d5ce0a72ff54aacc62fc1ac84b22ea469cc9a7",
+    "solver/planner.rs": "a6f4c8c95fdf6f2ec6e3bf3927b4e5963ef7932de7045e33c482ceeba4370a84"
+  },
+  "snapshots": [
+    {
+      "id": "solver06",
+      "generation": 6,
+      "source_commit": "a9216446bd0ae6837689a0847bb3f467c2d1d428",
+      "source_kind": "promotion_commit",
+      "source_run": "1791150449580370511-14915",
+      "traditional_solver_pool_generation": true,
+      "files": [
+        {
+          "original": "main.rs",
+          "snapshot": "solver06/main.rs",
+          "sha256": "e9e3d0a0523d47922fd349b62e070f2b0c17509f776d2b6cc372bd8ecbd20a56",
+          "storage": "snapshot"
+        },
+        {
+          "original": "solver/planner.rs",
+          "snapshot": "solver06/solver/planner.rs",
+          "sha256": "1003c94dcc9f1a42b96f55aa568803e0aa800a4a02837d53f8a349d953595a34",
+          "storage": "snapshot"
+        }
+      ],
+      "packaging_changes": [],
+      "entry_point": "solver06/main.rs",
+      "note": "正式昇格時のコミットから対象ソルバの2ファイルをバイト同一で保存。正式評価のソース識別と照合済み。保存時の実装変更・単一ファイル化・追加ビルド・追加テストなし。",
+      "hash_evidence": "records/generation-006.json:formal_result.candidate_source_sha256"
+    },
+    {
+      "id": "solver07",
+      "generation": 7,
+      "source_commit": "da1c7888e251b84689059b61569ec8040809b177",
+      "source_kind": "promotion_commit",
+      "source_run": "1791198519955245014-18519",
+      "traditional_solver_pool_generation": true,
+      "files": [
+        {
+          "original": "main.rs",
+          "snapshot": "solver07/main.rs",
+          "sha256": "017b4d04ae4e7d8310d39f48b3d5ce0a72ff54aacc62fc1ac84b22ea469cc9a7",
+          "storage": "snapshot"
+        },
+        {
+          "original": "solver/planner.rs",
+          "snapshot": "solver07/solver/planner.rs",
+          "sha256": "cd9700025a440c5a0fde3e2e30f180d0371ed0e7ef071489c53acf904ed62a1a",
+          "storage": "snapshot"
+        }
+      ],
+      "packaging_changes": [],
+      "entry_point": "solver07/main.rs",
+      "note": "正式昇格時のコミットから対象ソルバの2ファイルをバイト同一で保存。正式評価のソース識別と照合済み。保存時の実装変更・単一ファイル化・追加ビルド・追加テストなし。",
+      "development_candidate": "v37",
+      "hash_evidence": "records/generation-007.json:formal_candidate_files_sha256（candidate_source_sha256は異なる候補の値が残っているため使用しない）"
+    }
+  ],
+  "historical_records_preserved": true,
+  "note": "第1〜7世代の評価原記録は変更せず、正式昇格時の対象ソルバを保存版へ追加。第7世代の識別にはformal_candidate_files_sha256を採用。",
+  "static_validation": {
+    "cargo_toml_parsed": true,
+    "all_eight_bin_entries_exist": true,
+    "module_paths_verified": true,
+    "snapshot_files_sha256_verified": 25,
+    "promotion_commit_bytes_match": true,
+    "document_links_checked": 157,
+    "historical_records_unchanged": true,
+    "existing_snapshot_sources_unchanged": true,
+    "active_solver_unchanged": true,
+    "builds_and_tests_executed": false
+  }
+}

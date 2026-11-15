@@ -1,0 +1,20 @@
+{
+  "host": "v2",
+  "uid": 1000,
+  "cpu": 15,
+  "port": 49371,
+  "role": "server",
+  "bindIp": "192.168.0.22",
+  "allowedClientIp": "192.168.0.11",
+  "scriptSha256": "1ebad3b6d9c27eca773aa7690c2a832d55989841d6b3539bebfab33d55a6cd80",
+  "peers": [
+    {
+      "host": "v2",
+      "address": "192.168.0.22"
+    },
+    {
+      "host": "v3",
+      "address": "192.168.0.33"
+    }
+  ]
+}

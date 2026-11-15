@@ -1,0 +1,19 @@
+[workspace]
+members = ["common", "gpu"]
+resolver = "2"
+
+[package]
+name = "procon37-distributed"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[[bin]]
+name = "distributed-solver"
+path = "main.rs"
+
+[dependencies]
+tester = { path = "common" }
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = { version = "=1.0.151", features = ["float_roundtrip"] }
+gpu_tables = { package = "procon37-distributed-gpu-lab", path = "gpu" }

@@ -1,0 +1,286 @@
+{
+  "hostname": "VOIDLINUX-1",
+  "capturedAtUtc": "2026-10-09T00:23:54.920740+00:00",
+  "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0",
+  "log": {
+    "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team.log",
+    "capturedStartByte": 6596,
+    "capturedEndByte": 13223,
+    "previousPrefixSha256Verified": true,
+    "sourceSizeAtOpen": 13223,
+    "inode": 267665,
+    "device": 2050,
+    "mtimeNsAtOpen": 1791505368131940914,
+    "sha256OfCapturedByteRange": "47019e667c718bbe793a5424041d45bbd3f32bb6c6adc07129782671e0782674",
+    "totalLines": 138,
+    "diagnosticLines": [],
+    "flags": {
+      "timeout": {
+        "count": 0,
+        "samples": []
+      },
+      "deadline": {
+        "count": 0,
+        "samples": []
+      },
+      "fallback": {
+        "count": 0,
+        "samples": []
+      },
+      "panic": {
+        "count": 0,
+        "samples": []
+      },
+      "rejected": {
+        "count": 0,
+        "samples": []
+      },
+      "unavailable": {
+        "count": 0,
+        "samples": []
+      },
+      "disconnected": {
+        "count": 0,
+        "samples": []
+      }
+    }
+  },
+  "cpus": [
+    {
+      "cpu": 0,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 1,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 2,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 3,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 4,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 5,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 6,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 7,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 8,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 9,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 10,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 11,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 12,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 13,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 14,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 15,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 16,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 17,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 18,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 19,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 20,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 21,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 22,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 23,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 24,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 25,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 26,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 27,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 28,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 29,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 30,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 31,
+      "governor": "performance",
+      "epp": "performance"
+    }
+  ],
+  "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 00:23:22 2026\nSystem time     : 0.000000568 seconds fast of NTP time\nLast offset     : +0.000000613 seconds\nRMS offset      : 0.000004736 seconds\nFrequency       : 4.733 ppm fast\nResidual freq   : +0.001 ppm\nSkew            : 0.031 ppm\nRoot delay      : 0.000148918 seconds\nRoot dispersion : 0.001051274 seconds\nUpdate interval : 48.6 seconds\nLeap status     : Normal\n",
+  "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   4   377    32    +75us[  +76us] +/- 1176us\n",
+  "clockProbe": {
+    "server": "192.168.0.81",
+    "port": 32123,
+    "samples": [
+      {
+        "serverMinusClientMs": -0.18990039825439453,
+        "roundTripMs": 0.25725364685058594
+      },
+      {
+        "serverMinusClientMs": -0.29647350311279297,
+        "roundTripMs": 0.6120204925537109
+      },
+      {
+        "serverMinusClientMs": -0.29838085174560547,
+        "roundTripMs": 0.7169246673583984
+      },
+      {
+        "serverMinusClientMs": -0.1933574676513672,
+        "roundTripMs": 0.3542900085449219
+      },
+      {
+        "serverMinusClientMs": -0.5033016204833984,
+        "roundTripMs": 1.1763572692871094
+      },
+      {
+        "serverMinusClientMs": -0.3222227096557617,
+        "roundTripMs": 0.6983280181884766
+      },
+      {
+        "serverMinusClientMs": -0.22995471954345703,
+        "roundTripMs": 0.3764629364013672
+      },
+      {
+        "serverMinusClientMs": -0.4717111587524414,
+        "roundTripMs": 0.8404254913330078
+      },
+      {
+        "serverMinusClientMs": -0.41043758392333984,
+        "roundTripMs": 0.7383823394775391
+      },
+      {
+        "serverMinusClientMs": -0.40459632873535156,
+        "roundTripMs": 0.7376670837402344
+      },
+      {
+        "serverMinusClientMs": -0.2384185791015625,
+        "roundTripMs": 0.3590583801269531
+      },
+      {
+        "serverMinusClientMs": -0.4305839538574219,
+        "roundTripMs": 0.728607177734375
+      },
+      {
+        "serverMinusClientMs": -0.4220008850097656,
+        "roundTripMs": 0.7476806640625
+      },
+      {
+        "serverMinusClientMs": -0.3116130828857422,
+        "roundTripMs": 0.5049705505371094
+      },
+      {
+        "serverMinusClientMs": -0.23984909057617188,
+        "roundTripMs": 0.4119873046875
+      },
+      {
+        "serverMinusClientMs": -0.3993511199951172,
+        "roundTripMs": 0.7162094116210938
+      }
+    ],
+    "medianBestHalfOffsetMs": -0.2391338348388672,
+    "minimumRoundTripMs": 0.25725364685058594,
+    "capturedUnix": 1791505435.7415855
+  },
+  "processes": []
+}

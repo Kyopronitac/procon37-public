@@ -1,0 +1,43 @@
+{
+  "stage": "H2-D0-short-02",
+  "status": "running",
+  "label": "分散D0・再開後同環境の基準2回目・C012日中通信との反復比較・短縮12件・10秒",
+  "shortMs": 10000,
+  "startedUnix": 1791559682.0266192,
+  "command": [
+    "/home/imak/work/procon37/target/release/server",
+    "run",
+    "12",
+    "--players",
+    "4",
+    "--config",
+    "/home/imak/work/procon37/.server/distributed/evaluations/H2-D0-short-02/run-config.json",
+    "--label",
+    "分散D0・再開後同環境の基準2回目・C012日中通信との反復比較・短縮12件・10秒",
+    "--match-port",
+    "11451",
+    "--time-limit-ms",
+    "10000"
+  ],
+  "directory": "/home/imak/work/procon37/.server/distributed/evaluations/H2-D0-short-02",
+  "history": "/home/imak/work/procon37/.server/runs",
+  "version": "D0",
+  "existingRunIds": [
+    "1791503276339409187-91328",
+    "1791504436521618109-94528",
+    "1791505730154449433-101944",
+    "1791506866153064781-104560",
+    "1791508659730277323-111961",
+    "1791509941774759940-117170",
+    "1791511015750545757-119460",
+    "1791512070563519640-122297",
+    "1791513062075302492-124172",
+    "1791515312515018350-131487",
+    "1791557693555197384-34655",
+    "1791558686429216196-38666"
+  ],
+  "pid": 40678,
+  "startTicks": "1166029",
+  "state": "R",
+  "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422"
+}

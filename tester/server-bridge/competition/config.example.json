@@ -1,0 +1,15 @@
+{
+  "server_url": "http://CHANGE_ME:11451",
+  "remote_directory": "procon37-competition/releases/SELECTED-SHA256",
+  "worker_port": 39371,
+  "select_ms": null,
+  "solver_binary": "/absolute/path/to/evaluated/distributed-solver",
+  "solver_sha256": null,
+  "bridge_binary": "/absolute/path/to/evaluated/server-bridge",
+  "bridge_sha256": "62382f216508f7840904f133933388e9565cb76008c4980acc7fdbd874f3a0a8",
+  "nodes": {
+    "v1": {"ssh": "voidlinux-1@192.168.0.11", "address": "192.168.0.11", "cpus": "0-31"},
+    "v2": {"ssh": "voidlinux-2@192.168.0.22", "address": "192.168.0.22", "cpus": "0-15"},
+    "v3": {"ssh": "voidlinux-3@192.168.0.33", "address": "192.168.0.33", "cpus": "0-31"}
+  }
+}

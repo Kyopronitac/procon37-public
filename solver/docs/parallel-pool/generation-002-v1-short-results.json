@@ -1,0 +1,15 @@
+{
+  "run_json": "/tmp/g002-p1/v1/runs/1791389194827844958-257684/run.json",
+  "rank_sums": [
+    16,
+    21,
+    16,
+    14,
+    26,
+    25
+  ],
+  "all_36_ac": true,
+  "formal_requested": false,
+  "owner": "/root/generation_002_p1",
+  "developer_summary": "/tmp/g002-p1/v1/summary.json"
+}

@@ -1,0 +1,60 @@
+[
+  {
+    "name": "tcp-unit",
+    "cargoPid": 97672,
+    "command": [
+      "cargo",
+      "test",
+      "--manifest-path",
+      "/home/imak/work/procon37/solver/distributed-candidates/c008-shared/Cargo.toml",
+      "--release",
+      "--offline",
+      "-j",
+      "1",
+      "--bin",
+      "distributed-solver",
+      "wire::tests::fragmented_frames_and_oversized_frames",
+      "--",
+      "--exact",
+      "--test-threads=1",
+      "--nocapture"
+    ],
+    "cpuAffinity": [
+      1
+    ],
+    "startedAt": 1791504921.5903864,
+    "timeoutSeconds": 120,
+    "log": "docs/tcp-unit.log",
+    "exitCode": 0,
+    "finishedAt": 1791504921.6541715,
+    "pidPresentAfterWait": false
+  },
+  {
+    "name": "network",
+    "cargoPid": 97677,
+    "command": [
+      "cargo",
+      "test",
+      "--manifest-path",
+      "/home/imak/work/procon37/solver/distributed-candidates/c008-shared/Cargo.toml",
+      "--release",
+      "--offline",
+      "-j",
+      "1",
+      "--test",
+      "network",
+      "--",
+      "--test-threads=1",
+      "--nocapture"
+    ],
+    "cpuAffinity": [
+      1
+    ],
+    "startedAt": 1791504921.6563764,
+    "timeoutSeconds": 120,
+    "log": "docs/network.log",
+    "exitCode": 0,
+    "finishedAt": 1791504927.3494356,
+    "pidPresentAfterWait": false
+  }
+]

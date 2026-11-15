@@ -1,0 +1,160 @@
+{
+  "runId": "1791398310915797261-272849",
+  "runJson": "/tmp/parallel-pool-g003-p0-v2-ld0sh_4d/short/1791398310915797261-272849/run.json",
+  "config": {
+    "count": 6,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "\u4e26\u5217pool\u7b2c3\u4e16\u4ee3P0 v2\u30fb\u7fcc\u65e5\u6bd4\u8f03\u30fb\u77ed\u7e2e6\u4ef66\u79d2",
+    "players": 6,
+    "teamNames": [],
+    "timeLimitMs": 6000,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "allAC": true,
+  "rankSums": [
+    10,
+    15,
+    13,
+    16,
+    27,
+    27
+  ],
+  "identitiesUnchanged": true,
+  "sourceHash": "b9511c16cc77ad8ac8737db32e441f4c30ad4443bea7f6588c992f05a0f584ae",
+  "binaryHash": "f9138add04ac7b18e307d6af3e1a93381b365308f40673cb704a4f93996bc945",
+  "threads": {
+    "P0": {
+      "maxThreads": 15,
+      "maxRssKiB": 3766192,
+      "pids": [
+        6870,
+        6988,
+        7097,
+        7202,
+        7311,
+        7415
+      ],
+      "cpuSets": [
+        "0-3,8-11,16-19,24-26"
+      ]
+    },
+    "P1": {
+      "maxThreads": 15,
+      "maxRssKiB": 3768616,
+      "pids": [
+        6871,
+        6939,
+        7048,
+        7186,
+        7262,
+        7399
+      ],
+      "cpuSets": [
+        "4-7,12-15,20-23,28-30"
+      ]
+    },
+    "S1": {
+      "maxThreads": 1,
+      "maxRssKiB": 272004,
+      "pids": [
+        6629,
+        6672,
+        6710,
+        6753,
+        6797,
+        6836
+      ],
+      "cpuSets": [
+        "2"
+      ]
+    },
+    "S0": {
+      "maxThreads": 1,
+      "maxRssKiB": 912700,
+      "pids": [
+        6631,
+        6670,
+        6712,
+        6751,
+        6795,
+        6838
+      ],
+      "cpuSets": [
+        "0"
+      ]
+    },
+    "P2": {
+      "maxThreads": 15,
+      "maxRssKiB": 3765692,
+      "pids": [
+        28088,
+        28207,
+        28313,
+        28421,
+        28529,
+        28634
+      ],
+      "cpuSets": [
+        "0-3,8-11,16-19,24-26"
+      ]
+    },
+    "P3": {
+      "maxThreads": 15,
+      "maxRssKiB": 3765480,
+      "pids": [
+        28104,
+        28158,
+        28264,
+        28405,
+        28480,
+        28618
+      ],
+      "cpuSets": [
+        "4-7,12-15,20-23,28-30"
+      ]
+    }
+  },
+  "scoreSums": [
+    {
+      "uniqueBrands": 111,
+      "dailyBrands": 641,
+      "udon": 1165
+    },
+    {
+      "uniqueBrands": 111,
+      "dailyBrands": 639,
+      "udon": 1149
+    },
+    {
+      "uniqueBrands": 111,
+      "dailyBrands": 639,
+      "udon": 1167
+    },
+    {
+      "uniqueBrands": 111,
+      "dailyBrands": 639,
+      "udon": 1164
+    },
+    {
+      "uniqueBrands": 111,
+      "dailyBrands": 638,
+      "udon": 1109
+    },
+    {
+      "uniqueBrands": 111,
+      "dailyBrands": 639,
+      "udon": 1133
+    }
+  ],
+  "strictLeader": true,
+  "averageRanks": [
+    1.6666666666666667,
+    2.5,
+    2.1666666666666665,
+    2.6666666666666665,
+    4.5,
+    4.5
+  ]
+}

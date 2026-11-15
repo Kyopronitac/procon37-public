@@ -1,0 +1,410 @@
+{
+  "generation": 5,
+  "baseline_run_id": "1790600156388062978-4",
+  "baseline_rank_sums": [
+    59,
+    78,
+    112,
+    127,
+    60
+  ],
+  "replaced_fixed_id": 3,
+  "mapping_before": {
+    "0": "第4世代",
+    "1": "第2世代",
+    "2": "第1世代",
+    "3": "初期generation-3",
+    "4": "第3世代"
+  },
+  "mapping_after": {
+    "0": "第5世代",
+    "1": "第2世代",
+    "2": "第1世代",
+    "3": "第4世代",
+    "4": "第3世代"
+  },
+  "discarded_source_sha256": {
+    "tester/game/samples/src/bin/game-sample-3.rs": "76384e0b55e22d9bc92aaacfe823f18e1c434a4d8a1d60b9b4a81dfca759e24f"
+  },
+  "promoted": true,
+  "commit_push_waived_by_user": true,
+  "discarded_source_archive": null,
+  "discarded_source_archive_note": "既存の外部退避先はこの端末で書込不可。旧実装は作業ツリーから削除し、閲覧せずに識別用SHA256のみ記録。",
+  "formal_attempts": [
+    {
+      "attempt": 1,
+      "run_id": "1790609514983866994-4",
+      "status": "completed",
+      "verdict": "AC",
+      "completed": 30,
+      "all_players_ac": true,
+      "rank_sums": [
+        90,
+        80,
+        130,
+        66,
+        71
+      ],
+      "scores": [
+        [
+          542,
+          3586,
+          7294
+        ],
+        [
+          542,
+          3589,
+          7287
+        ],
+        [
+          542,
+          3589,
+          7174
+        ],
+        [
+          542,
+          3592,
+          7416
+        ],
+        [
+          542,
+          3587,
+          7410
+        ]
+      ],
+      "promoted": false,
+      "candidate_executable_sha256": "d868644de162398c7b288e656b315c31f4bff05548aebfadb3258ad10990ce6d"
+    },
+    {
+      "attempt": 2,
+      "run_id": "1790613499135756895-3",
+      "status": "completed",
+      "verdict": "AC",
+      "completed": 30,
+      "all_players_ac": true,
+      "rank_sums": [
+        86,
+        77,
+        136,
+        59,
+        74
+      ],
+      "scores": [
+        [
+          542,
+          3585,
+          7365
+        ],
+        [
+          542,
+          3587,
+          7358
+        ],
+        [
+          542,
+          3582,
+          7133
+        ],
+        [
+          542,
+          3594,
+          7441
+        ],
+        [
+          542,
+          3588,
+          7413
+        ]
+      ],
+      "promoted": false,
+      "candidate_executable_sha256": "a4cad76838d65b734f767a7a41a756d2e61117349beb53f301dd577e932bcf8f"
+    },
+    {
+      "attempt": 3,
+      "run_id": "1790627259512301870-3",
+      "status": "completed",
+      "verdict": "AC",
+      "completed": 30,
+      "all_players_ac": true,
+      "rank_sums": [
+        78,
+        94,
+        134,
+        63,
+        63
+      ],
+      "scores": [
+        [
+          542,
+          3591,
+          7418
+        ],
+        [
+          542,
+          3582,
+          7237
+        ],
+        [
+          542,
+          3583,
+          7124
+        ],
+        [
+          542,
+          3586,
+          7463
+        ],
+        [
+          542,
+          3591,
+          7442
+        ]
+      ],
+      "promoted": false,
+      "candidate_executable_sha256": "1376a4f13c46e791f11ee34f6c408e431db5a7fd425704a0a2c52b897cc006e7"
+    },
+    {
+      "attempt": 4,
+      "run_id": "1790630558032951109-3",
+      "status": "completed",
+      "verdict": "AC",
+      "completed": 30,
+      "all_players_ac": true,
+      "rank_sums": [
+        83,
+        88,
+        129,
+        62,
+        67
+      ],
+      "scores": [
+        [
+          542,
+          3586,
+          7371
+        ],
+        [
+          542,
+          3585,
+          7295
+        ],
+        [
+          542,
+          3585,
+          7151
+        ],
+        [
+          542,
+          3590,
+          7458
+        ],
+        [
+          542,
+          3588,
+          7454
+        ]
+      ],
+      "promoted": false,
+      "candidate_executable_sha256": "7217464e8651275e71a66ace106bb207972c0fea2fe00c8e2b7aabce551f55c2"
+    },
+    {
+      "attempt": 5,
+      "run_id": "1790637497509578897-3",
+      "status": "completed",
+      "verdict": "AC",
+      "completed": 30,
+      "all_players_ac": true,
+      "rank_sums": [
+        79,
+        79,
+        140,
+        68,
+        70
+      ],
+      "scores": [
+        [
+          542,
+          3593,
+          7402
+        ],
+        [
+          542,
+          3587,
+          7316
+        ],
+        [
+          542,
+          3585,
+          7122
+        ],
+        [
+          542,
+          3587,
+          7420
+        ],
+        [
+          542,
+          3586,
+          7460
+        ]
+      ],
+      "promoted": false,
+      "candidate_executable_sha256": "75dbad10a87b12727d62bbfd765a4bfd5a969e9cdba81b75db3884def9caa61a"
+    },
+    {
+      "attempt": 6,
+      "run_id": "1790645694916175664-3",
+      "status": "completed",
+      "verdict": "AC",
+      "completed": 30,
+      "all_players_ac": true,
+      "rank_sums": [
+        74,
+        79,
+        136,
+        69,
+        77
+      ],
+      "scores": [
+        [
+          542,
+          3591,
+          7428
+        ],
+        [
+          542,
+          3583,
+          7362
+        ],
+        [
+          542,
+          3586,
+          7136
+        ],
+        [
+          542,
+          3592,
+          7445
+        ],
+        [
+          542,
+          3587,
+          7396
+        ]
+      ],
+      "promoted": false,
+      "candidate_executable_sha256": "72c56f314dcacb0cbe1854e4d0d1df7bfaf002243bde9de3ab5375021b552e07"
+    },
+    {
+      "attempt": 7,
+      "run_id": "1790650628052430535-3",
+      "status": "completed",
+      "verdict": "AC",
+      "completed": 30,
+      "all_players_ac": true,
+      "rank_sums": [
+        76,
+        80,
+        135,
+        67,
+        72
+      ],
+      "scores": [
+        [
+          542,
+          3590,
+          7387
+        ],
+        [
+          542,
+          3580,
+          7294
+        ],
+        [
+          542,
+          3582,
+          7100
+        ],
+        [
+          542,
+          3588,
+          7428
+        ],
+        [
+          542,
+          3589,
+          7423
+        ]
+      ],
+      "promoted": false,
+      "candidate_executable_sha256": "bb6e3f13562b0dd94b3bfe09597b70200e021689cc2b7397ba03b0796349da54"
+    },
+    {
+      "attempt": 8,
+      "run_id": "1790658701286043764-3",
+      "status": "completed",
+      "verdict": "AC",
+      "completed": 30,
+      "all_players_ac": true,
+      "rank_sums": [
+        68,
+        96,
+        122,
+        69,
+        75
+      ],
+      "scores": [
+        [
+          542,
+          3588,
+          7417
+        ],
+        [
+          542,
+          3579,
+          7265
+        ],
+        [
+          542,
+          3582,
+          7139
+        ],
+        [
+          542,
+          3591,
+          7460
+        ],
+        [
+          542,
+          3580,
+          7428
+        ]
+      ],
+      "promoted": true,
+      "candidate_executable_sha256": "2082fd84cd5940fca7ad2949d5cd0329e68325c81964b8789facc51dc3f07cdb"
+    }
+  ],
+  "promotion_run_id": "1790658701286043764-3",
+  "promotion_rank_sums": [
+    68,
+    96,
+    122,
+    69,
+    75
+  ],
+  "promotion_average_ranks": [
+    2.2666666666666666,
+    3.2,
+    4.066666666666666,
+    2.3,
+    2.5
+  ],
+  "candidate_executable_sha256": "2082fd84cd5940fca7ad2949d5cd0329e68325c81964b8789facc51dc3f07cdb",
+  "opponent_identities": [
+    "content-v3:cedae8ad6a7398e6109ffc79f928b988",
+    "content-v3:bb16d26f3e18894cfacbf7a3b026dc15",
+    "content-v3:cc1a0bea4d06b8113f1096728c8e26a1",
+    "content-v3:744090f97aafdfb60eaed6e936de65b2"
+  ],
+  "completed_at": "2026-09-29T05:51:16.383500+00:00"
+}

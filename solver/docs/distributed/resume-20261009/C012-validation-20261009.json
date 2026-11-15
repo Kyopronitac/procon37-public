@@ -1,0 +1,954 @@
+{
+  "candidate": "C012-isolated-cooperation",
+  "status": "unadopted; local release build, 18 unit and 5 localhost TCP tests passed; no server evaluation",
+  "sourceAggregateSha256": "10acfa3bde81f1dddf1d80ed4ff2fbe0288395fc4eb6dd0923a410607ed8a541",
+  "sourceFileCount": 34,
+  "sourceVerifiedAfterTests": true,
+  "binary": {
+    "path": "solver/distributed-candidates/c012-isolated-cooperation/target/release/distributed-solver",
+    "bytes": 2047432,
+    "sha256": "574dd99a8ff0d20035acccca3f4e207ad2d7701308bc10374694137aa0f33016"
+  },
+  "sourceReviewRecord": {
+    "path": "solver/docs/distributed/resume-20261009/C012-review-20261009.json",
+    "bytes": 1247,
+    "sha256": "c4dc164664252e8abe1956618a797d4cd9537918c3e3f122035d58c65b4cee27"
+  },
+  "finalRun": {
+    "command": [
+      "cargo",
+      "test",
+      "--release",
+      "--offline",
+      "-j",
+      "1",
+      "--manifest-path",
+      "solver/distributed-candidates/c012-isolated-cooperation/Cargo.toml",
+      "--",
+      "--test-threads=1",
+      "--nocapture"
+    ],
+    "startedUnix": 1791514848.0268636,
+    "cargoPid": 129715,
+    "cpuAffinity": [
+      1
+    ],
+    "timeoutSeconds": 240,
+    "exitCode": 0,
+    "elapsedSeconds": 74.05562686920166,
+    "artifact": {
+      "path": ".server/distributed/c012-validation/test-processes.json",
+      "bytes": 36754,
+      "sha256": "9456da3fdb899780efde423d02a0945371fdd0ae765715e367bc88d45f19e04c"
+    },
+    "processIdentities": [
+      {
+        "pid": 129715,
+        "ppid": 129714,
+        "startTicks": "6485597",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 129784,
+        "ppid": 129715,
+        "startTicks": "6485629",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 129839,
+        "ppid": 129715,
+        "startTicks": "6485688",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 129868,
+        "ppid": 129715,
+        "startTicks": "6485710",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 129919,
+        "ppid": 129715,
+        "startTicks": "6485883",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 129929,
+        "ppid": 129715,
+        "startTicks": "6486053",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 129985,
+        "ppid": 129715,
+        "startTicks": "6486351",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 129986,
+        "ppid": 129985,
+        "startTicks": "6486351",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130007,
+        "ppid": 129715,
+        "startTicks": "6486376",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130066,
+        "ppid": 129715,
+        "startTicks": "6486598",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130078,
+        "ppid": 129715,
+        "startTicks": "6486685",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130118,
+        "ppid": 129715,
+        "startTicks": "6486937",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130130,
+        "ppid": 129715,
+        "startTicks": "6486979",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130140,
+        "ppid": 129715,
+        "startTicks": "6487025",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130156,
+        "ppid": 129715,
+        "startTicks": "6487068",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130196,
+        "ppid": 129715,
+        "startTicks": "6487443",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130244,
+        "ppid": 129715,
+        "startTicks": "6487746",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130292,
+        "ppid": 129715,
+        "startTicks": "6489233",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130339,
+        "ppid": 129715,
+        "startTicks": "6490950",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130360,
+        "ppid": 129715,
+        "startTicks": "6491183",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130379,
+        "ppid": 130360,
+        "startTicks": "6491183",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130382,
+        "ppid": 130360,
+        "startTicks": "6491185",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130399,
+        "ppid": 130360,
+        "startTicks": "6491637",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130402,
+        "ppid": 130360,
+        "startTicks": "6491639",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130410,
+        "ppid": 130360,
+        "startTicks": "6492095",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130413,
+        "ppid": 130360,
+        "startTicks": "6492096",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130416,
+        "ppid": 130360,
+        "startTicks": "6492099",
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 130418,
+        "ppid": 130360,
+        "startTicks": "6492530",
+        "affinity": [
+          1
+        ]
+      }
+    ]
+  },
+  "releaseCompileSeconds": 53.51,
+  "unitTests": {
+    "passed": 18,
+    "failed": 0,
+    "elapsedSeconds": 2.32
+  },
+  "networkTests": {
+    "passed": 5,
+    "failed": 0,
+    "elapsedSeconds": 17.81,
+    "scope": "localhost; thread cap, on-mode batch, non-reserve15 donor group0 actual pool+TCP, old version/on-off rejection, reconnect and rejected-day state"
+  },
+  "testNames": [
+    "planner::cross_elite::tests::all_formats_legal_batches_fit_or_chunk_and_preserve_every_group",
+    "planner::cross_elite::tests::envelope_all_context_fields_and_any_bad_member_reject_whole_batch",
+    "planner::cross_elite::tests::per_group_sequences_prebind_relay_and_round_robin_do_not_starve_low_values",
+    "planner::cross_elite::tests::receiver_roles_are_sparse_generalized_and_cannot_export_or_read_local_elite",
+    "planner::cross_elite::tests::timing_objective_close_and_seed_mutation_preserve_incumbent",
+    "planner::distributed_pool::synchronization_tests::begin_cross_dispatches_all_groups_but_never_selection_or_off",
+    "planner::distributed_pool::synchronization_tests::expired_results_cannot_be_used_for_later_request",
+    "planner::distributed_pool::synchronization_tests::selected_foreign_state_preserves_history_rejection_and_json_roundtrip",
+    "planner::tests::changed_supplier_generates_a_valid_plan_for_actual_roles",
+    "planner::tests::forecast_graph_preserves_reused_selection_numbering",
+    "planner::tests::opponent_tree_conserves_travel_budget_and_skips_blocked_cells",
+    "planner::tests::rejected_selection_rebinds_roles_and_invalidates_warm_start",
+    "planner::tests::rejected_selection_with_no_supplier_respects_observed_fuel",
+    "planner::tests::supplier_path_modes_match_public_engine_and_cache",
+    "planner::tests::tiny_catch_up_requests_synchronize_without_search",
+    "wire::tests::authentication_is_exact",
+    "wire::tests::fragmented_frames_and_oversized_frames",
+    "wire::tests::optional_oversize_and_backpressure_preserve_final_result",
+    "comparison_mode_uses_sixteen_total_threads",
+    "cross_elite_enabled_cluster_returns_valid_results_and_stops",
+    "non_reserve15_donors_reach_receiver_through_real_pool_and_tcp",
+    "old_versions_and_mixed_feature_flags_are_rejected_without_stopping_worker",
+    "real_cluster_reconnects_and_keeps_adopted_state"
+  ],
+  "packetSizesBytes": {
+    "first": {
+      "actual": {
+        "bytes": 4619,
+        "offers": 7
+      },
+      "maxAcceptedRoutes": {
+        "bytes": 11619,
+        "offers": 7
+      }
+    },
+    "semifinal": {
+      "actual": {
+        "bytes": 8006,
+        "offers": 7
+      },
+      "maxAcceptedRoutes": {
+        "bytes": 16756,
+        "offers": 7
+      }
+    },
+    "final": {
+      "actual": {
+        "bytes": 12491,
+        "offers": 7
+      },
+      "maxAcceptedRoutes": {
+        "bytes": 24706,
+        "offers": 7
+      }
+    }
+  },
+  "packetCapBytes": 32768,
+  "crossEliteObservations": [
+    {
+      "file": ".server/distributed/c012-validation/network/procon37-cross-test-130360-1791514903883496956/coordinator.log",
+      "receiver": "Some(7)",
+      "request": 2,
+      "origin": 6,
+      "published": 3,
+      "received": 4,
+      "rejected": 0,
+      "context_mismatch": 0,
+      "imports": 0,
+      "improved": 0,
+      "sent": 3,
+      "oversized": 0,
+      "probes": 0,
+      "probe_ns": 0,
+      "repair_ns": 0,
+      "duplicates": 0,
+      "checks": 9,
+      "eligible": 0,
+      "max_stall_ms": 1015,
+      "max_receiver_mailbox_age_ms": 0,
+      "group_published": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "group_received": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "group_sent": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": ".server/distributed/c012-validation/network/procon37-cross-test-130360-1791514903883496956/worker.log",
+      "receiver": "Some(35)",
+      "request": 2,
+      "origin": 34,
+      "published": 4,
+      "received": 3,
+      "rejected": 0,
+      "context_mismatch": 0,
+      "imports": 0,
+      "improved": 0,
+      "sent": 4,
+      "oversized": 0,
+      "probes": 0,
+      "probe_ns": 0,
+      "repair_ns": 0,
+      "duplicates": 0,
+      "checks": 9,
+      "eligible": 0,
+      "max_stall_ms": 500,
+      "max_receiver_mailbox_age_ms": 0,
+      "group_published": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ],
+      "group_received": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "group_sent": [
+        0,
+        0,
+        0,
+        4,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": ".server/distributed/c012-validation/network/procon37-c012-group0-130360-1791514908425250725/coordinator.log",
+      "receiver": "None",
+      "request": 2,
+      "origin": 0,
+      "published": 5,
+      "received": 3,
+      "rejected": 0,
+      "context_mismatch": 0,
+      "imports": 0,
+      "improved": 0,
+      "sent": 3,
+      "oversized": 0,
+      "probes": 0,
+      "probe_ns": 0,
+      "repair_ns": 0,
+      "duplicates": 0,
+      "checks": 0,
+      "eligible": 0,
+      "max_stall_ms": 0,
+      "max_receiver_mailbox_age_ms": 0,
+      "group_published": [
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "group_received": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "group_sent": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "file": ".server/distributed/c012-validation/network/procon37-c012-group0-130360-1791514908425250725/worker.log",
+      "receiver": "Some(35)",
+      "request": 2,
+      "origin": 34,
+      "published": 3,
+      "received": 3,
+      "rejected": 0,
+      "context_mismatch": 0,
+      "imports": 0,
+      "improved": 0,
+      "sent": 3,
+      "oversized": 0,
+      "probes": 0,
+      "probe_ns": 0,
+      "repair_ns": 0,
+      "duplicates": 0,
+      "checks": 9,
+      "eligible": 0,
+      "max_stall_ms": 1043,
+      "max_receiver_mailbox_age_ms": 0,
+      "group_published": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "group_received": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "group_sent": [
+        0,
+        0,
+        0,
+        3,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "limits": [
+    "No server or remote performance evaluation; unadopted.",
+    "Timed localhost tests observed real send/receive but eligible/imports/probes were 0. Integrated real-time seed switching was not exercised; gating and mutation/repair/legal outcome were tested separately in unit tests.",
+    "All tests shared CPU1; this is correctness/transport evidence, not representative cluster performance.",
+    "25ms beam deadline is cooperative, not a strict wall-clock upper bound."
+  ],
+  "cleanup": {
+    "monitorRemainingBeforeCleanup": [],
+    "monitorRemainingAfterCleanup": [],
+    "recordedProcessCount": 28,
+    "allRecordedAffinityCpu1": true,
+    "testChildRecords": [
+      {
+        "record": ".server/distributed/c012-validation/network/procon37-parallel16-test-130360/parallel16.process.json",
+        "pid": 130362,
+        "stopped": true
+      },
+      {
+        "record": ".server/distributed/c012-validation/network/procon37-cross-test-130360-1791514903883496956/coordinator.process.json",
+        "pid": 130382,
+        "stopped": true
+      },
+      {
+        "record": ".server/distributed/c012-validation/network/procon37-cross-test-130360-1791514903883496956/worker.process.json",
+        "pid": 130379,
+        "stopped": true
+      },
+      {
+        "record": ".server/distributed/c012-validation/network/procon37-c012-group0-130360-1791514908425250725/coordinator.process.json",
+        "pid": 130402,
+        "stopped": true
+      },
+      {
+        "record": ".server/distributed/c012-validation/network/procon37-c012-group0-130360-1791514908425250725/worker.process.json",
+        "pid": 130399,
+        "stopped": true
+      },
+      {
+        "record": ".server/distributed/c012-validation/network/procon37-c012-auth-130360/worker.process.json",
+        "pid": 130406,
+        "stopped": true
+      },
+      {
+        "record": ".server/distributed/c012-validation/network/procon37-dist-test-130360-1791514912999/coordinator.process.json",
+        "pid": 130416,
+        "stopped": true
+      },
+      {
+        "record": ".server/distributed/c012-validation/network/procon37-dist-test-130360-1791514912999/worker-a-restarted.process.json",
+        "pid": 130418,
+        "stopped": true
+      },
+      {
+        "record": ".server/distributed/c012-validation/network/procon37-dist-test-130360-1791514912999/worker-a.process.json",
+        "pid": 130410,
+        "stopped": true
+      },
+      {
+        "record": ".server/distributed/c012-validation/network/procon37-dist-test-130360-1791514912999/worker-b.process.json",
+        "pid": 130413,
+        "stopped": true
+      }
+    ],
+    "all10TestChildRecordsStopped": true,
+    "testChildrenTooBriefForMonitor": [
+      130362,
+      130406
+    ],
+    "hostPostflight": {
+      "observedUnix": 1791515161.26502,
+      "scope": "host /proc via authorized escalation",
+      "bootId": "0ed549c2-ebe5-4a00-a7fe-2a56c0403979",
+      "checks": [
+        {
+          "pid": 129715,
+          "expectedStartTicks": "6485597",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 129784,
+          "expectedStartTicks": "6485629",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 129839,
+          "expectedStartTicks": "6485688",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 129868,
+          "expectedStartTicks": "6485710",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 129919,
+          "expectedStartTicks": "6485883",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 129929,
+          "expectedStartTicks": "6486053",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 129985,
+          "expectedStartTicks": "6486351",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 129986,
+          "expectedStartTicks": "6486351",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130007,
+          "expectedStartTicks": "6486376",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130066,
+          "expectedStartTicks": "6486598",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130078,
+          "expectedStartTicks": "6486685",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130118,
+          "expectedStartTicks": "6486937",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130130,
+          "expectedStartTicks": "6486979",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130140,
+          "expectedStartTicks": "6487025",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130156,
+          "expectedStartTicks": "6487068",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130196,
+          "expectedStartTicks": "6487443",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130244,
+          "expectedStartTicks": "6487746",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130292,
+          "expectedStartTicks": "6489233",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130339,
+          "expectedStartTicks": "6490950",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130360,
+          "expectedStartTicks": "6491183",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130379,
+          "expectedStartTicks": "6491183",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130382,
+          "expectedStartTicks": "6491185",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130399,
+          "expectedStartTicks": "6491637",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130402,
+          "expectedStartTicks": "6491639",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130410,
+          "expectedStartTicks": "6492095",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130413,
+          "expectedStartTicks": "6492096",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130416,
+          "expectedStartTicks": "6492099",
+          "exists": false,
+          "sameProcess": false
+        },
+        {
+          "pid": 130418,
+          "expectedStartTicks": "6492530",
+          "exists": false,
+          "sameProcess": false
+        }
+      ],
+      "matchingBinaryPids": [],
+      "success": true
+    },
+    "sandboxPostflight": {
+      "observedAtUtc": "2026-10-09T03:07:17.849435+00:00",
+      "scope": "separate sandbox process namespace, not a host-global process audit",
+      "observerPidNamespace": "pid:[4026532673]",
+      "visiblePids": [
+        1,
+        2,
+        3
+      ],
+      "recordedHostPidsVisible": [],
+      "canIndependentlyProveHostCleanup": false,
+      "hostAuditProvidedBy": "/root",
+      "hostAuditArtifact": {
+        "path": ".server/distributed/c012-validation/host-process-postflight.json",
+        "bytes": 3651,
+        "sha256": "13109d30100091aa11e46e29f0086b3b775fca6cfbeba4f62dc4e2dc3d00ff1b"
+      }
+    },
+    "interpretation": "Host audit found no same PID/startTicks among 28 monitored identities and no exact binary executable match. All 10 per-test child records say stopped. The sandbox check alone cannot prove host cleanup."
+  },
+  "artifacts": {
+    "testsLog": {
+      "path": ".server/distributed/c012-validation/tests.log",
+      "bytes": 6538,
+      "sha256": "fdbf2c766ecd88d12505557ec7add0c415dedb2e2d7c13d0470a7bfed4ec4990"
+    },
+    "processMonitor": {
+      "path": ".server/distributed/c012-validation/test-processes.json",
+      "bytes": 36754,
+      "sha256": "9456da3fdb899780efde423d02a0945371fdd0ae765715e367bc88d45f19e04c"
+    },
+    "hostPostflight": {
+      "path": ".server/distributed/c012-validation/host-process-postflight.json",
+      "bytes": 3651,
+      "sha256": "13109d30100091aa11e46e29f0086b3b775fca6cfbeba4f62dc4e2dc3d00ff1b"
+    },
+    "sandboxPostflight": {
+      "path": ".server/distributed/c012-validation/sandbox-process-postflight.json",
+      "bytes": 552,
+      "sha256": "5b2d53ba699c271c7d3efdba541296f5e4bc66bd6b39f047c82c34a8ebe99650"
+    },
+    "copiedNetworkLogsAndProcessRecords": [
+      {
+        "source": "/tmp/procon37-parallel16-test-130360/parallel16.log",
+        "path": ".server/distributed/c012-validation/network/procon37-parallel16-test-130360/parallel16.log",
+        "bytes": 110,
+        "sha256": "994bb91d166f9ca3d2db37ca4fba1a19cd435e3e4b3ed6ff784d86164e3d4927"
+      },
+      {
+        "source": "/tmp/procon37-parallel16-test-130360/parallel16.process.json",
+        "path": ".server/distributed/c012-validation/network/procon37-parallel16-test-130360/parallel16.process.json",
+        "bytes": 38,
+        "sha256": "3631efa271fd8840558d4b7330ea1e2905177210b01c1292c8767757b003b89f"
+      },
+      {
+        "source": "/tmp/procon37-cross-test-130360-1791514903883496956/coordinator.log",
+        "path": ".server/distributed/c012-validation/network/procon37-cross-test-130360-1791514903883496956/coordinator.log",
+        "bytes": 4013,
+        "sha256": "b758f49b9783d922bce10c581dc1ec70fc7e7f6bd7e08aef386758d57a7de0f7"
+      },
+      {
+        "source": "/tmp/procon37-cross-test-130360-1791514903883496956/coordinator.process.json",
+        "path": ".server/distributed/c012-validation/network/procon37-cross-test-130360-1791514903883496956/coordinator.process.json",
+        "bytes": 38,
+        "sha256": "07b5d6f301de766cd4580fd5e91fc49693103246d98245024b0ddbbd1fa70524"
+      },
+      {
+        "source": "/tmp/procon37-cross-test-130360-1791514903883496956/worker.log",
+        "path": ".server/distributed/c012-validation/network/procon37-cross-test-130360-1791514903883496956/worker.log",
+        "bytes": 3475,
+        "sha256": "73d1401e63cd268c3aea3a82e4fa8625bd917d173058599c17ee21b5d751feb3"
+      },
+      {
+        "source": "/tmp/procon37-cross-test-130360-1791514903883496956/worker.process.json",
+        "path": ".server/distributed/c012-validation/network/procon37-cross-test-130360-1791514903883496956/worker.process.json",
+        "bytes": 38,
+        "sha256": "e3b6df2b753952b8a822b7190ef8281326667cfdc0507f17a980266308fbd135"
+      },
+      {
+        "source": "/tmp/procon37-c012-group0-130360-1791514908425250725/coordinator.log",
+        "path": ".server/distributed/c012-validation/network/procon37-c012-group0-130360-1791514908425250725/coordinator.log",
+        "bytes": 3990,
+        "sha256": "e8880e692a8d51ce13ff4cfac8e420ce284f2fda30d5ebf7e4d3fa6a5402736c"
+      },
+      {
+        "source": "/tmp/procon37-c012-group0-130360-1791514908425250725/coordinator.process.json",
+        "path": ".server/distributed/c012-validation/network/procon37-c012-group0-130360-1791514908425250725/coordinator.process.json",
+        "bytes": 38,
+        "sha256": "4c37c70ea8df73dfdaa37808a216b74af3859d3201c0b49e0ad34b038de8d45a"
+      },
+      {
+        "source": "/tmp/procon37-c012-group0-130360-1791514908425250725/worker.log",
+        "path": ".server/distributed/c012-validation/network/procon37-c012-group0-130360-1791514908425250725/worker.log",
+        "bytes": 3469,
+        "sha256": "64c71174bafa36116ad14a8f49b2d3bf3cf47b865a0df6ad7742c74483748a30"
+      },
+      {
+        "source": "/tmp/procon37-c012-group0-130360-1791514908425250725/worker.process.json",
+        "path": ".server/distributed/c012-validation/network/procon37-c012-group0-130360-1791514908425250725/worker.process.json",
+        "bytes": 38,
+        "sha256": "1150503fadf6c6225ab70c198bc0e4352258e8ae7500fbc46d6140b47fe5cf47"
+      },
+      {
+        "source": "/tmp/procon37-c012-auth-130360/worker.log",
+        "path": ".server/distributed/c012-validation/network/procon37-c012-auth-130360/worker.log",
+        "bytes": 442,
+        "sha256": "41a954090ba0e1201067dfd890e29c374fb3dca51e40eb108d36cefb12629b74"
+      },
+      {
+        "source": "/tmp/procon37-c012-auth-130360/worker.process.json",
+        "path": ".server/distributed/c012-validation/network/procon37-c012-auth-130360/worker.process.json",
+        "bytes": 38,
+        "sha256": "4560feeb1a64e03583615c34fbca2d8a6701e4ed3ec1b1d89154f3cbeeb30c78"
+      },
+      {
+        "source": "/tmp/procon37-dist-test-130360-1791514912999/coordinator.log",
+        "path": ".server/distributed/c012-validation/network/procon37-dist-test-130360-1791514912999/coordinator.log",
+        "bytes": 4932,
+        "sha256": "d21533818ced9c1d701c187e89618a460aeea5dda5c2ce1a791bea4d31f5b8bc"
+      },
+      {
+        "source": "/tmp/procon37-dist-test-130360-1791514912999/coordinator.process.json",
+        "path": ".server/distributed/c012-validation/network/procon37-dist-test-130360-1791514912999/coordinator.process.json",
+        "bytes": 38,
+        "sha256": "cc6ca44cfebe27ec2ecebdecd303f197bf1cac0f9d2c8ed99133dc187613a5f7"
+      },
+      {
+        "source": "/tmp/procon37-dist-test-130360-1791514912999/worker-a-restarted.log",
+        "path": ".server/distributed/c012-validation/network/procon37-dist-test-130360-1791514912999/worker-a-restarted.log",
+        "bytes": 3362,
+        "sha256": "648527be2a4b4595f62b535aadabcbf6bb7714f4e775b1b02d55bd74ca64e3e7"
+      },
+      {
+        "source": "/tmp/procon37-dist-test-130360-1791514912999/worker-a-restarted.process.json",
+        "path": ".server/distributed/c012-validation/network/procon37-dist-test-130360-1791514912999/worker-a-restarted.process.json",
+        "bytes": 38,
+        "sha256": "d3429c5715dad48435b365673278757bfa648d9b102ba91b54953e73be8c7856"
+      },
+      {
+        "source": "/tmp/procon37-dist-test-130360-1791514912999/worker-a.log",
+        "path": ".server/distributed/c012-validation/network/procon37-dist-test-130360-1791514912999/worker-a.log",
+        "bytes": 2328,
+        "sha256": "642bdee89982075d71d3c23794d2630ab0d8426505f19f862f5ca63f23fc5449"
+      },
+      {
+        "source": "/tmp/procon37-dist-test-130360-1791514912999/worker-a.process.json",
+        "path": ".server/distributed/c012-validation/network/procon37-dist-test-130360-1791514912999/worker-a.process.json",
+        "bytes": 38,
+        "sha256": "0154e64e279a4cd8853a99e3b350069b44911495c285bb0393e97a99841f28d0"
+      },
+      {
+        "source": "/tmp/procon37-dist-test-130360-1791514912999/worker-b.log",
+        "path": ".server/distributed/c012-validation/network/procon37-dist-test-130360-1791514912999/worker-b.log",
+        "bytes": 6503,
+        "sha256": "badb169362bb39435f094ef494212ac1b0dcd383d0f2704def1ebc78d5502cc4"
+      },
+      {
+        "source": "/tmp/procon37-dist-test-130360-1791514912999/worker-b.process.json",
+        "path": ".server/distributed/c012-validation/network/procon37-dist-test-130360-1791514912999/worker-b.process.json",
+        "bytes": 38,
+        "sha256": "972f538375a10f5b260805b356716103447dcae504488dca67cd221be161b83e"
+      }
+    ],
+    "excluded": "Only *.log and *.process.json from the five test directories were copied. Token files were not read or copied."
+  },
+  "remainingRequiredForEvaluation": [
+    "root deployment/config verification",
+    "fixed 4-team 12-case server short evaluation with runtime imports and deadlines measured"
+  ],
+  "remoteOperationsByThisCollection": 0
+}

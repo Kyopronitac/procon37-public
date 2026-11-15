@@ -1,0 +1,5371 @@
+{
+  "generation": 6,
+  "stage": "reference_evaluation_completed",
+  "baseline_run_id": "1791120005784372412-13076",
+  "baseline_rank_sums": [
+    75,
+    84,
+    131,
+    72,
+    74
+  ],
+  "baseline_average_ranks": [
+    2.5,
+    2.8,
+    4.366666666666666,
+    2.4,
+    2.466666666666667
+  ],
+  "baseline_score_totals": [
+    [
+      543,
+      3681,
+      8343
+    ],
+    [
+      543,
+      3677,
+      8290
+    ],
+    [
+      543,
+      3679,
+      8097
+    ],
+    [
+      543,
+      3682,
+      8382
+    ],
+    [
+      543,
+      3682,
+      8364
+    ]
+  ],
+  "baseline_all_players_ac": true,
+  "baseline_warnings": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "baseline_source_sha256": {
+    "main.rs": "4d3703b6d6c239ae24c91124b7142e156a719663c80c790a149705234439bdd6",
+    "solver/search.rs": "149bcf8edeea344074bb2e8ed5eedfc5a9bf2c34f5534f8784625c241b7df013",
+    "solver/network.rs": "dbe0ca0ddd5dafa2729a5576b0ba784d5925b425bf3710436bf47b20e56f035d",
+    "Cargo.toml": "9878c0f79463d2f3617e6b5b99293c58a7c69d1898c9bbb369d17ed71d7a4a10",
+    "Cargo.lock": "a788fbbba8d76a6a01e1c1d3b637a3084f6bb44177ff171af4fced06dc68b344",
+    "tester/game/samples/src/bin/game-sample-1.rs": "5fd03403a449c3d0a407ce0fe9449e0d510b7be5235803fc869688743eebebdb",
+    "tester/game/samples/src/bin/game-sample-2.rs": "eb86539fa413097f079a4275129b8392d9e756674bcdab1d32d908307834d1fd",
+    "tester/game/samples/src/bin/game-sample-3.rs": "7ffe3910d024e505ce6a3911683e05df92398c964ce48ce50ea13576947788f2",
+    "tester/game/samples/src/bin/game-sample-4.rs": "9c17a019ea6a99aef2e162a28180a5731ab1ada06ec11285f80aa1eba14972a5"
+  },
+  "baseline_remote_sha256": {
+    "main.rs": "4d3703b6d6c239ae24c91124b7142e156a719663c80c790a149705234439bdd6",
+    "solver/search.rs": "149bcf8edeea344074bb2e8ed5eedfc5a9bf2c34f5534f8784625c241b7df013",
+    "solver/network.rs": "dbe0ca0ddd5dafa2729a5576b0ba784d5925b425bf3710436bf47b20e56f035d",
+    "tester/game/samples/src/bin/game-sample-1.rs": "5fd03403a449c3d0a407ce0fe9449e0d510b7be5235803fc869688743eebebdb",
+    "tester/game/samples/src/bin/game-sample-2.rs": "eb86539fa413097f079a4275129b8392d9e756674bcdab1d32d908307834d1fd",
+    "tester/game/samples/src/bin/game-sample-3.rs": "7ffe3910d024e505ce6a3911683e05df92398c964ce48ce50ea13576947788f2",
+    "tester/game/samples/src/bin/game-sample-4.rs": "9c17a019ea6a99aef2e162a28180a5731ab1ada06ec11285f80aa1eba14972a5",
+    "target/release/solver": "3341718d8ded327b087ec2ec674598ba7b07480a6bfebca0122644a6104e645d",
+    "target/release/game-sample-1": "44df9525c3f4f7e970fc3fac2b8a2fd892460644ffd1d881144f51353d1a0d42",
+    "target/release/game-sample-1.d": "8bcf6129c8b7996e8651c196b415496daf4cb7431d371d4faaf53e5503b0dc49",
+    "target/release/game-sample-2": "9f5d7e25987b4fa95d1a61d502005c981c7b962734961478d6f2b95345a0c065",
+    "target/release/game-sample-2.d": "ebdc4c7f780f70f7eac41d3021ab92189c43a543a74363ee849bf90149975b3b",
+    "target/release/game-sample-3": "7a415f5aa02d3f0926fc4eee052357b6cc7dcb6de6d77ba7fca9687bd109d183",
+    "target/release/game-sample-3.d": "d4af1c4745296e898d8b871b8ecc246e7d3c1472538267b5a49de1f51a71dcb9",
+    "target/release/game-sample-4": "46c582e927abb9d67ed42a72fcf25d31fc83783b8f8f4691bc4477fedce9586b",
+    "target/release/game-sample-4.d": "c672912fbd5481e9baa601b9105f6d8ce8226b06259e0a73882052539d3a4b97"
+  },
+  "baseline_result_archive_sha256": "ee1566cf43a184564c33796117eca218307c8ff35669ea86124e18c965908a7d",
+  "baseline_config": {
+    "mode": "game",
+    "targetName": "pool-generation-005",
+    "opponents": [
+      {
+        "name": "pool-generation-002",
+        "solver": {
+          "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-1",
+          "args": [
+            "0"
+          ],
+          "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+          "env": {}
+        },
+        "build": null,
+        "solverParallel": false,
+        "version": "pool-generation-002-run-1790551749037999892-54402-v1"
+      },
+      {
+        "name": "pool-generation-001",
+        "solver": {
+          "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-2",
+          "args": [
+            "0"
+          ],
+          "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+          "env": {}
+        },
+        "build": null,
+        "solverParallel": false,
+        "version": "pool-generation-001-run-1790521499134996039-41850-v1"
+      },
+      {
+        "name": "pool-generation-004",
+        "solver": {
+          "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-3",
+          "args": [
+            "0"
+          ],
+          "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+          "env": {}
+        },
+        "build": null,
+        "solverParallel": false,
+        "version": "pool-generation-004-run-1790600156388062978-4-v1"
+      },
+      {
+        "name": "pool-generation-003",
+        "solver": {
+          "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-4",
+          "args": [
+            "0"
+          ],
+          "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+          "env": {}
+        },
+        "build": null,
+        "solverParallel": false,
+        "version": "pool-generation-003-run-1790563781811011480-62511-v1"
+      }
+    ],
+    "count": 30,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "jobs": null,
+    "solverParallel": false,
+    "label": "pool第6世代・新マップ込みSSH基準・既定6並列フル30件",
+    "build": null,
+    "solver": {
+      "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/solver",
+      "args": [
+        "0"
+      ],
+      "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+      "env": {}
+    },
+    "timeLimitMs": null
+  },
+  "baseline_execution": {
+    "availableCpus": 32,
+    "jobs": 6
+  },
+  "mapping_before": {
+    "0": "generation-005",
+    "1": "generation-002",
+    "2": "generation-001",
+    "3": "generation-004",
+    "4": "generation-003"
+  },
+  "mapping_after": {
+    "0": "generation-006",
+    "1": "generation-002",
+    "2": "generation-005",
+    "3": "generation-004",
+    "4": "generation-003"
+  },
+  "replaced_fixed_id": 2,
+  "discarded_source_sha256": {
+    "tester/game/samples/src/bin/game-sample-2.rs": "eb86539fa413097f079a4275129b8392d9e756674bcdab1d32d908307834d1fd"
+  },
+  "promoted": true,
+  "commit": "a9216446bd0ae6837689a0847bb3f467c2d1d428",
+  "pushed": true,
+  "formal_attempts": [
+    {
+      "attempt": 1,
+      "run_id": "1791150449580370511-14915",
+      "host": "voidlinux-1",
+      "wrapper_pid": 14913,
+      "tester_pid": 14915,
+      "remote_run_json": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/runs/1791150449580370511-14915/run.json",
+      "remote_log": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/pool-g006-formal-1.log",
+      "remote_exit_file": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/pool-g006-formal-1.exit",
+      "remote_freeze_check": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/pool-g006-formal-1.freeze-check.json",
+      "local_freeze_manifest": ".game/pool-g006-formal-1.freeze.json",
+      "freeze_manifest_sha256": "1d272b7c02a359c660a22f9f497b99489cf30b428ea1af08f603957769a7707e",
+      "status": "completed",
+      "count": 30,
+      "time_limit_ms": null,
+      "jobs": null,
+      "actual_jobs": 6,
+      "solver_parallel": false,
+      "seed_range": [
+        0,
+        29
+      ],
+      "format": null,
+      "arena_maps": true,
+      "candidate_source_sha256": {
+        "main.rs": "e9e3d0a0523d47922fd349b62e070f2b0c17509f776d2b6cc372bd8ecbd20a56",
+        "solver/planner.rs": "1003c94dcc9f1a42b96f55aa568803e0aa800a4a02837d53f8a349d953595a34"
+      },
+      "configuration": ".game/pool-g006-host1-config.json",
+      "environment": "env -i HOME=/home/voidlinux-1 PATH=専用toolchain:/usr/bin:/bin LANG=C.UTF-8",
+      "developer_frozen": true,
+      "actual_process_evidence": {
+        "run_id": "1791150449580370511-14915",
+        "status": "running",
+        "completed": 0,
+        "tester_pid": 14915,
+        "argv": [
+          "target/release/game",
+          "run",
+          "30",
+          "--config",
+          ".game/pool-g006-host1-config.json",
+          "--no-build",
+          "--label",
+          "pool第6世代・正式昇格判定・既定条件フル30件・試行1",
+          "--",
+          "0"
+        ],
+        "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+        "environment_keys": [
+          "HOME",
+          "LANG",
+          "PATH"
+        ],
+        "controlled_environment": {
+          "HOME": "/home/voidlinux-1",
+          "PATH": "/home/voidlinux-1/procon37-share-20261003-g001/toolchain/bin:/usr/bin:/bin",
+          "LANG": "C.UTF-8"
+        },
+        "execution": {
+          "availableCpus": 32,
+          "jobs": 6
+        }
+      },
+      "opponent_identities_at_start": [
+        "content-v3:6abeeb40e89ecd016b5e0eb70c88cec8",
+        "content-v3:6afa2888d21f7b03f079fe05a2f3e357",
+        "content-v3:6820fb905f409b9655e64f672d8db46d",
+        "content-v3:9f107ad383c8f566ca695a5ccded5cfd"
+      ],
+      "expected_identities_file": ".game/pool-g006-formal-1.expected-identities.json",
+      "identity_validation_scope": "開始時の実行メタデータを保存。相手の独立した固定性確認は別途、配置替え後のソース・実行ファイルハッシュ一致と評価前後凍結検査で行う。",
+      "latest_verified_progress": {
+        "run_id": "1791150449580370511-14915",
+        "status": "completed",
+        "completed": 30,
+        "total": 30,
+        "wrapper_exit": 0,
+        "freeze_check_exit": 0,
+        "checked_at": "2026-10-04T22:30:40.455463+00:00"
+      }
+    }
+  ],
+  "opponent_source_sha256": {
+    "tester/game/samples/src/bin/game-sample-1.rs": "5fd03403a449c3d0a407ce0fe9449e0d510b7be5235803fc869688743eebebdb",
+    "tester/game/samples/src/bin/game-sample-2.rs": "d2392276b502d6c77db9e12924450c2d9562b5b739dba0c466e7105a56699381",
+    "tester/game/samples/src/bin/game-sample-3.rs": "7ffe3910d024e505ce6a3911683e05df92398c964ce48ce50ea13576947788f2",
+    "tester/game/samples/src/bin/game-sample-4.rs": "9c17a019ea6a99aef2e162a28180a5731ab1ada06ec11285f80aa1eba14972a5",
+    "tester/game/samples/src/pool-generation-005/search.rs": "149bcf8edeea344074bb2e8ed5eedfc5a9bf2c34f5534f8784625c241b7df013",
+    "tester/game/samples/src/pool-generation-005/network.rs": "dbe0ca0ddd5dafa2729a5576b0ba784d5925b425bf3710436bf47b20e56f035d"
+  },
+  "opponents_independent_builds": {
+    "voidlinux-1": true,
+    "voidlinux-3": true
+  },
+  "fixed_opponents_sha256_by_host": {
+    "voidlinux-1": {
+      "tester/game/samples/src/bin/game-sample-1.rs": "5fd03403a449c3d0a407ce0fe9449e0d510b7be5235803fc869688743eebebdb",
+      "tester/game/samples/src/bin/game-sample-2.rs": "d2392276b502d6c77db9e12924450c2d9562b5b739dba0c466e7105a56699381",
+      "tester/game/samples/src/bin/game-sample-3.rs": "7ffe3910d024e505ce6a3911683e05df92398c964ce48ce50ea13576947788f2",
+      "tester/game/samples/src/bin/game-sample-4.rs": "9c17a019ea6a99aef2e162a28180a5731ab1ada06ec11285f80aa1eba14972a5",
+      "tester/game/samples/src/pool-generation-005/search.rs": "149bcf8edeea344074bb2e8ed5eedfc5a9bf2c34f5534f8784625c241b7df013",
+      "tester/game/samples/src/pool-generation-005/network.rs": "dbe0ca0ddd5dafa2729a5576b0ba784d5925b425bf3710436bf47b20e56f035d",
+      "target/release/game-sample-1": "44df9525c3f4f7e970fc3fac2b8a2fd892460644ffd1d881144f51353d1a0d42",
+      "target/release/game-sample-2": "9ba18deaa98f9b245d58ff19d35a30a43920480d8029a60523f8fd1727084cfb",
+      "target/release/game-sample-3": "7a415f5aa02d3f0926fc4eee052357b6cc7dcb6de6d77ba7fca9687bd109d183",
+      "target/release/game-sample-4": "46c582e927abb9d67ed42a72fcf25d31fc83783b8f8f4691bc4477fedce9586b"
+    },
+    "voidlinux-3": {
+      "tester/game/samples/src/bin/game-sample-1.rs": "5fd03403a449c3d0a407ce0fe9449e0d510b7be5235803fc869688743eebebdb",
+      "tester/game/samples/src/bin/game-sample-2.rs": "d2392276b502d6c77db9e12924450c2d9562b5b739dba0c466e7105a56699381",
+      "tester/game/samples/src/bin/game-sample-3.rs": "7ffe3910d024e505ce6a3911683e05df92398c964ce48ce50ea13576947788f2",
+      "tester/game/samples/src/bin/game-sample-4.rs": "9c17a019ea6a99aef2e162a28180a5731ab1ada06ec11285f80aa1eba14972a5",
+      "tester/game/samples/src/pool-generation-005/search.rs": "149bcf8edeea344074bb2e8ed5eedfc5a9bf2c34f5534f8784625c241b7df013",
+      "tester/game/samples/src/pool-generation-005/network.rs": "dbe0ca0ddd5dafa2729a5576b0ba784d5925b425bf3710436bf47b20e56f035d",
+      "target/release/game-sample-1": "cb5f50866f9affd164d18f89b2a4e9553d5af32092fb2d1bb3a75baea38aff20",
+      "target/release/game-sample-2": "69caa9f4cf07416ec88c4fbdab5a9214307c018bc05cd2ef76e0633ff779da04",
+      "target/release/game-sample-3": "41d6df687a6788709ee1c066d3f7b222d4d06891fc4bafef37ddf2c03c290fd0",
+      "target/release/game-sample-4": "f80ebd58a815498aa387380357781a7eaf661dd3b32aef79e2a94049ca56afe9"
+    }
+  },
+  "development_results": [
+    {
+      "run_id": "1791124570797335802-6227",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791124570797335802-6227/run.json",
+      "local_run_json": ".game/pool-g006-development/1791124570797335802-6227.json",
+      "manifest_sha256": "1ab206bc56d8c16b8d573c0ce14b753a0fd450c4fbbdb2eddcf186cdd8b673db",
+      "count": 12,
+      "time_limit_ms": 20000,
+      "all_players_ac": true,
+      "rank_sums": [
+        56,
+        24,
+        31,
+        25,
+        30
+      ],
+      "score_totals": [
+        [
+          222,
+          1264,
+          2727
+        ],
+        [
+          222,
+          1275,
+          2891
+        ],
+        [
+          222,
+          1276,
+          2874
+        ],
+        [
+          222,
+          1276,
+          2902
+        ],
+        [
+          222,
+          1275,
+          2877
+        ]
+      ],
+      "formal": false
+    },
+    {
+      "run_id": "1791124952223565319-6410",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791124952223565319-6410/run.json",
+      "local_run_json": ".game/pool-g006-development/1791124952223565319-6410.json",
+      "manifest_sha256": "3f3ac9d14c5b3b00dbcdf0903038df4960afb9f1dc4765eb471908dcd3cc54f6",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        52,
+        32,
+        30,
+        24,
+        32
+      ],
+      "score_totals": [
+        [
+          222,
+          1275,
+          2722
+        ],
+        [
+          222,
+          1275,
+          2850
+        ],
+        [
+          222,
+          1275,
+          2861
+        ],
+        [
+          222,
+          1275,
+          2894
+        ],
+        [
+          222,
+          1273,
+          2863
+        ]
+      ],
+      "formal": false
+    },
+    {
+      "run_id": "1791125359169085370-6586",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791125359169085370-6586/run.json",
+      "local_run_json": ".game/pool-g006-development/1791125359169085370-6586.json",
+      "manifest_sha256": "64bd8c90f6e84dce6e6329279c2b90349d4132c968c6f7f13d165bd3614f5b03",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        60,
+        29,
+        34,
+        23,
+        28
+      ],
+      "score_totals": [
+        [
+          222,
+          1271,
+          2719
+        ],
+        [
+          222,
+          1276,
+          2866
+        ],
+        [
+          222,
+          1276,
+          2870
+        ],
+        [
+          222,
+          1275,
+          2913
+        ],
+        [
+          222,
+          1277,
+          2884
+        ]
+      ],
+      "formal": false,
+      "outcome": "改善なし・候補提出見送り"
+    },
+    {
+      "run_id": "1791127623873215096-7665",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791127623873215096-7665/run.json",
+      "local_run_json": ".game/pool-g006-development/1791127623873215096-7665.json",
+      "manifest_sha256": "659c368b3cc0fe50720438f1eebc3ff7e0ec852a18db3a075046a35671321b5e",
+      "count": 30,
+      "time_limit_ms": 5000,
+      "all_players_ac": true,
+      "rank_sums": [
+        134,
+        99,
+        68,
+        59,
+        75
+      ],
+      "score_totals": [
+        [
+          543,
+          3669,
+          7778
+        ],
+        [
+          543,
+          3668,
+          8027
+        ],
+        [
+          543,
+          3679,
+          8148
+        ],
+        [
+          543,
+          3677,
+          8199
+        ],
+        [
+          543,
+          3672,
+          8223
+        ]
+      ],
+      "formal": false,
+      "outcome": "決勝10件すべて5位、探索打ち切り修正版へ"
+    },
+    {
+      "run_id": "1791131662151190202-9942",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791131662151190202-9942/run.json",
+      "local_run_json": ".game/pool-g006-development/1791131662151190202-9942.json",
+      "manifest_sha256": "717bc46308b35df2999aef509ad266abc426c40aae2b79a541ba275f3271ce86",
+      "count": 12,
+      "time_limit_ms": 20000,
+      "all_players_ac": true,
+      "rank_sums": [
+        51,
+        36,
+        36,
+        23,
+        25
+      ],
+      "score_totals": [
+        [
+          222,
+          1275,
+          2806
+        ],
+        [
+          222,
+          1274,
+          2879
+        ],
+        [
+          222,
+          1276,
+          2880
+        ],
+        [
+          222,
+          1276,
+          2903
+        ],
+        [
+          222,
+          1276,
+          2885
+        ]
+      ],
+      "formal": false,
+      "outcome": "途中候補保持で順位改善、補給予定と経路の同時再構築版を次に評価"
+    },
+    {
+      "run_id": "1791132152180858445-10135",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791132152180858445-10135/run.json",
+      "local_run_json": ".game/pool-g006-development/1791132152180858445-10135.json",
+      "manifest_sha256": "5cb2007482124dd48d1fae93eef0a67bbaad8329dd74e1f0668ff15114d44082",
+      "count": 12,
+      "time_limit_ms": 20000,
+      "all_players_ac": true,
+      "rank_sums": [
+        48,
+        30,
+        42,
+        25,
+        31
+      ],
+      "score_totals": [
+        [
+          222,
+          1274,
+          2832
+        ],
+        [
+          222,
+          1277,
+          2884
+        ],
+        [
+          222,
+          1272,
+          2844
+        ],
+        [
+          222,
+          1276,
+          2901
+        ],
+        [
+          222,
+          1277,
+          2881
+        ]
+      ],
+      "formal": false,
+      "outcome": "経路・補給予定の同時再構築で順位51→48、全マス接触補給のモデル修正を次に評価"
+    },
+    {
+      "run_id": "1791132800915335824-10347",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791132800915335824-10347/run.json",
+      "local_run_json": ".game/pool-g006-development/1791132800915335824-10347.json",
+      "manifest_sha256": "8dd2aa3bdd44518d1e8b061a11f28c8bb4184f0ffbc56d3f39f3126cf6ac4af4",
+      "count": 12,
+      "time_limit_ms": 20000,
+      "all_players_ac": true,
+      "rank_sums": [
+        50,
+        29,
+        30,
+        26,
+        34
+      ],
+      "score_totals": [
+        [
+          222,
+          1274,
+          2819
+        ],
+        [
+          222,
+          1274,
+          2889
+        ],
+        [
+          222,
+          1275,
+          2863
+        ],
+        [
+          222,
+          1277,
+          2880
+        ],
+        [
+          222,
+          1274,
+          2868
+        ]
+      ],
+      "formal": false,
+      "candidate_change": "全マス接触補給モデル修正・終了位置燃料照合診断"
+    },
+    {
+      "run_id": "1791133319960709165-10552",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791133319960709165-10552/run.json",
+      "local_run_json": ".game/pool-g006-development/1791133319960709165-10552.json",
+      "manifest_sha256": "3e8b84d3d17ac9531e24198bb4d9257346b84f145fecce4ebcb7e3d458e23e60",
+      "count": 12,
+      "time_limit_ms": 20000,
+      "all_players_ac": true,
+      "rank_sums": [
+        50,
+        35,
+        32,
+        22,
+        34
+      ],
+      "score_totals": [
+        [
+          222,
+          1272,
+          2821
+        ],
+        [
+          222,
+          1276,
+          2851
+        ],
+        [
+          222,
+          1276,
+          2868
+        ],
+        [
+          222,
+          1277,
+          2894
+        ],
+        [
+          222,
+          1276,
+          2869
+        ]
+      ],
+      "formal": false,
+      "candidate_change": "全マス接触補給を維持し燃料計算を再利用"
+    },
+    {
+      "run_id": "1791133766706513129-10747",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791133766706513129-10747/run.json",
+      "local_run_json": ".game/pool-g006-development/1791133766706513129-10747.json",
+      "manifest_sha256": "0a4916c997cad17efd2cc3b8d38f5d9ff4c7cb06410181a7043658aa87edf108",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        112,
+        105,
+        77,
+        70,
+        60
+      ],
+      "score_totals": [
+        [
+          543,
+          3677,
+          8086
+        ],
+        [
+          543,
+          3671,
+          8050
+        ],
+        [
+          543,
+          3678,
+          8242
+        ],
+        [
+          543,
+          3679,
+          8264
+        ],
+        [
+          543,
+          3680,
+          8282
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            35,
+            31,
+            30,
+            27,
+            18
+          ],
+          "target_scores": [
+            124,
+            879,
+            1651
+          ],
+          "count": 10
+        },
+        "semifinal": {
+          "rank_sums": [
+            38,
+            34,
+            24,
+            21,
+            21
+          ],
+          "target_scores": [
+            179,
+            1177,
+            2266
+          ],
+          "count": 10
+        },
+        "final": {
+          "rank_sums": [
+            39,
+            40,
+            23,
+            22,
+            21
+          ],
+          "target_scores": [
+            240,
+            1621,
+            4169
+          ],
+          "count": 10
+        }
+      },
+      "formal": false,
+      "candidate_change": "全マス接触補給を維持し燃料計算を再利用"
+    },
+    {
+      "run_id": "1791134509562582506-10998",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791134509562582506-10998/run.json",
+      "local_run_json": ".game/pool-g006-development/1791134509562582506-10998.json",
+      "manifest_sha256": "f1ae40670136e7d79727a35a7a83a0b7eb0710483b02ca9eac2a537650320708",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        118,
+        89,
+        92,
+        69,
+        68
+      ],
+      "score_totals": [
+        [
+          543,
+          3674,
+          8071
+        ],
+        [
+          543,
+          3673,
+          8162
+        ],
+        [
+          543,
+          3674,
+          8218
+        ],
+        [
+          543,
+          3677,
+          8274
+        ],
+        [
+          543,
+          3678,
+          8276
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            33,
+            26,
+            35,
+            29,
+            24
+          ],
+          "target_scores": [
+            124,
+            880,
+            1667
+          ],
+          "count": 10
+        },
+        "semifinal": {
+          "rank_sums": [
+            42,
+            31,
+            30,
+            20,
+            20
+          ],
+          "target_scores": [
+            179,
+            1173,
+            2252
+          ],
+          "count": 10
+        },
+        "final": {
+          "rank_sums": [
+            43,
+            32,
+            27,
+            20,
+            24
+          ],
+          "target_scores": [
+            240,
+            1621,
+            4152
+          ],
+          "count": 10
+        }
+      },
+      "formal": false,
+      "candidate_change": "再構築35%上限・初期探索緩和・翌日必要燃料を超える報酬抑制"
+    },
+    {
+      "run_id": "1791135062011648543-11302",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791135062011648543-11302/run.json",
+      "local_run_json": ".game/pool-g006-development/1791135062011648543-11302.json",
+      "manifest_sha256": "52dc30c67bb69ddfc05e4fcaabe4bd90c8fbe8dd0ebb461733c62f710c7a3e9d",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        104,
+        97,
+        84,
+        70,
+        67
+      ],
+      "score_totals": [
+        [
+          543,
+          3676,
+          8106
+        ],
+        [
+          543,
+          3668,
+          8139
+        ],
+        [
+          543,
+          3678,
+          8172
+        ],
+        [
+          543,
+          3683,
+          8240
+        ],
+        [
+          543,
+          3679,
+          8219
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            37,
+            29,
+            30,
+            23,
+            18
+          ],
+          "target_scores": [
+            124,
+            879,
+            1659
+          ],
+          "count": 10
+        },
+        "semifinal": {
+          "rank_sums": [
+            31,
+            36,
+            22,
+            26,
+            24
+          ],
+          "target_scores": [
+            179,
+            1176,
+            2271
+          ],
+          "count": 10
+        },
+        "final": {
+          "rank_sums": [
+            36,
+            32,
+            32,
+            21,
+            25
+          ],
+          "target_scores": [
+            240,
+            1621,
+            4176
+          ],
+          "count": 10
+        }
+      },
+      "formal": false,
+      "candidate_change": "再構築累積35%上限のみ残す"
+    },
+    {
+      "run_id": "1791135612589881325-11605",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791135612589881325-11605/run.json",
+      "local_run_json": ".game/pool-g006-development/1791135612589881325-11605.json",
+      "manifest_sha256": "dca376c52622e65961eab03561a3169bd21be40ec1168637e6b4d9701a871bc6",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        115,
+        102,
+        86,
+        70,
+        63
+      ],
+      "score_totals": [
+        [
+          543,
+          3676,
+          8073
+        ],
+        [
+          543,
+          3675,
+          8111
+        ],
+        [
+          543,
+          3676,
+          8206
+        ],
+        [
+          543,
+          3681,
+          8242
+        ],
+        [
+          543,
+          3677,
+          8260
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            34,
+            34,
+            30,
+            23,
+            23
+          ],
+          "target_scores": [
+            124,
+            880,
+            1638
+          ],
+          "count": 10
+        },
+        "semifinal": {
+          "rank_sums": [
+            39,
+            29,
+            34,
+            26,
+            16
+          ],
+          "target_scores": [
+            179,
+            1175,
+            2267
+          ],
+          "count": 10
+        },
+        "final": {
+          "rank_sums": [
+            42,
+            39,
+            22,
+            21,
+            24
+          ],
+          "target_scores": [
+            240,
+            1621,
+            4168
+          ],
+          "count": 10
+        }
+      },
+      "formal": false,
+      "candidate_change": "再構築35%上限・担当代替が少ない未獲得種類を優先・挿入候補削減"
+    },
+    {
+      "run_id": "1791136172959288797-11934",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791136172959288797-11934/run.json",
+      "local_run_json": ".game/pool-g006-development/1791136172959288797-11934.json",
+      "manifest_sha256": "476b7a4255f694cb2dd97dcc8e8dbe39acc423e15091734fea3ca8a89c241e4e",
+      "count": 6,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        26,
+        19,
+        14,
+        15,
+        14
+      ],
+      "score_totals": [
+        [
+          111,
+          637,
+          1121
+        ],
+        [
+          111,
+          639,
+          1120
+        ],
+        [
+          111,
+          640,
+          1157
+        ],
+        [
+          111,
+          639,
+          1166
+        ],
+        [
+          111,
+          640,
+          1157
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            9,
+            3,
+            6,
+            9,
+            3
+          ],
+          "target_scores": [
+            25,
+            182,
+            381
+          ],
+          "count": 2
+        },
+        "semifinal": {
+          "rank_sums": [
+            9,
+            9,
+            4,
+            2,
+            5
+          ],
+          "target_scores": [
+            37,
+            185,
+            239
+          ],
+          "count": 2
+        },
+        "final": {
+          "rank_sums": [
+            8,
+            7,
+            4,
+            4,
+            6
+          ],
+          "target_scores": [
+            49,
+            270,
+            501
+          ],
+          "count": 2
+        }
+      },
+      "formal": false,
+      "candidate_change": "再構築累積35%上限のみの版を既定応答時間で評価"
+    },
+    {
+      "run_id": "1791137091968242184-12151",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791137091968242184-12151/run.json",
+      "local_run_json": ".game/pool-g006-development/1791137091968242184-12151.json",
+      "manifest_sha256": "ec2b4a7da4380c8f4af30efa2c829afbfb723843ec679093422f0be879423d8a",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        107,
+        85,
+        88,
+        76,
+        77
+      ],
+      "score_totals": [
+        [
+          543,
+          3671,
+          8080
+        ],
+        [
+          543,
+          3674,
+          8144
+        ],
+        [
+          543,
+          3681,
+          8161
+        ],
+        [
+          543,
+          3681,
+          8218
+        ],
+        [
+          543,
+          3676,
+          8224
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            35,
+            27,
+            29,
+            29,
+            22
+          ],
+          "target_scores": [
+            124,
+            879,
+            1652
+          ],
+          "count": 10
+        },
+        "semifinal": {
+          "rank_sums": [
+            31,
+            27,
+            34,
+            22,
+            30
+          ],
+          "target_scores": [
+            179,
+            1171,
+            2265
+          ],
+          "count": 10
+        },
+        "final": {
+          "rank_sums": [
+            41,
+            31,
+            25,
+            25,
+            25
+          ],
+          "target_scores": [
+            240,
+            1621,
+            4163
+          ],
+          "count": 10
+        }
+      },
+      "formal": false,
+      "candidate_change": "全日の補給後末尾追加訪問を共通終了時評価で採用"
+    },
+    {
+      "run_id": "1791137617684234907-12449",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791137617684234907-12449/run.json",
+      "local_run_json": ".game/pool-g006-development/1791137617684234907-12449.json",
+      "manifest_sha256": "25af409fc216c39d207c7f11013235b734f99dad25c30aa3f947be3eb42a2c94",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        113,
+        99,
+        76,
+        59,
+        82
+      ],
+      "score_totals": [
+        [
+          543,
+          3676,
+          8087
+        ],
+        [
+          543,
+          3669,
+          8148
+        ],
+        [
+          543,
+          3679,
+          8178
+        ],
+        [
+          543,
+          3681,
+          8313
+        ],
+        [
+          543,
+          3674,
+          8200
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            38,
+            29,
+            26,
+            26,
+            22
+          ],
+          "target_scores": [
+            124,
+            878,
+            1643
+          ],
+          "count": 10
+        },
+        "semifinal": {
+          "rank_sums": [
+            30,
+            34,
+            25,
+            21,
+            30
+          ],
+          "target_scores": [
+            179,
+            1177,
+            2292
+          ],
+          "count": 10
+        },
+        "final": {
+          "rank_sums": [
+            45,
+            36,
+            25,
+            12,
+            30
+          ],
+          "target_scores": [
+            240,
+            1621,
+            4152
+          ],
+          "count": 10
+        }
+      },
+      "formal": false,
+      "candidate_change": "不足燃料罰則を不足量二乗/目標残量へ変更"
+    },
+    {
+      "run_id": "1791138410553549484-12819",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791138410553549484-12819/run.json",
+      "local_run_json": ".game/pool-g006-development/1791138410553549484-12819.json",
+      "manifest_sha256": "c93a5108224a10dde5c43bb11001a7b808b60bb0df19099d2cc2c0172cd0d96c",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        141,
+        88,
+        73,
+        58,
+        65
+      ],
+      "score_totals": [
+        [
+          543,
+          3668,
+          7811
+        ],
+        [
+          543,
+          3675,
+          8159
+        ],
+        [
+          543,
+          3680,
+          8190
+        ],
+        [
+          543,
+          3680,
+          8294
+        ],
+        [
+          543,
+          3682,
+          8254
+        ]
+      ],
+      "formal": false,
+      "candidate_change": "在庫上限まで複数車両の翌朝到達見込みを加点",
+      "outcome": "大きく悪化、到達加点を削除し補助点全体を0.1倍にする切り分けへ"
+    },
+    {
+      "run_id": "1791138921021699890-13166",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791138921021699890-13166/run.json",
+      "local_run_json": ".game/pool-g006-development/1791138921021699890-13166.json",
+      "manifest_sha256": "8448216405bc7fc38d8cad741338eb52964ae88864ffb4d03818a39317fe33e1",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        34,
+        48,
+        37,
+        23,
+        30
+      ],
+      "score_totals": [
+        [
+          222,
+          1272,
+          2871
+        ],
+        [
+          222,
+          1270,
+          2856
+        ],
+        [
+          222,
+          1276,
+          2863
+        ],
+        [
+          222,
+          1277,
+          2912
+        ],
+        [
+          222,
+          1276,
+          2883
+        ]
+      ],
+      "formal": false,
+      "candidate_change": "元の燃料・配置補助点全体を0.1倍にする切り分け"
+    },
+    {
+      "run_id": "1791139149806483240-13328",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791139149806483240-13328/run.json",
+      "local_run_json": ".game/pool-g006-development/1791139149806483240-13328.json",
+      "manifest_sha256": "e10d239a0922a3b427d0745191963f280f8380e8d1413900700853824504f013",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        90,
+        102,
+        88,
+        82,
+        72
+      ],
+      "score_totals": [
+        [
+          543,
+          3662,
+          8134
+        ],
+        [
+          543,
+          3673,
+          8108
+        ],
+        [
+          543,
+          3678,
+          8147
+        ],
+        [
+          543,
+          3680,
+          8190
+        ],
+        [
+          543,
+          3677,
+          8219
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            31,
+            34,
+            28,
+            23,
+            23
+          ],
+          "target_scores": [
+            124,
+            875,
+            1678
+          ],
+          "count": 10
+        },
+        "semifinal": {
+          "rank_sums": [
+            22,
+            35,
+            33,
+            35,
+            22
+          ],
+          "target_scores": [
+            179,
+            1167,
+            2316
+          ],
+          "count": 10
+        },
+        "final": {
+          "rank_sums": [
+            37,
+            33,
+            27,
+            24,
+            27
+          ],
+          "target_scores": [
+            240,
+            1620,
+            4140
+          ],
+          "count": 10
+        }
+      },
+      "formal": false,
+      "candidate_change": "元の燃料・配置補助点全体を0.1倍へ変更"
+    },
+    {
+      "run_id": "1791139703266994752-13666",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791139703266994752-13666/run.json",
+      "local_run_json": ".game/pool-g006-development/1791139703266994752-13666.json",
+      "manifest_sha256": "9107ee450f31b6c74a8118ccd5855e3557cfde8627d4ec1ded5c02f59f8d06b0",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        33,
+        45,
+        29,
+        29,
+        38
+      ],
+      "score_totals": [
+        [
+          222,
+          1275,
+          2870
+        ],
+        [
+          222,
+          1271,
+          2860
+        ],
+        [
+          222,
+          1275,
+          2885
+        ],
+        [
+          222,
+          1275,
+          2892
+        ],
+        [
+          222,
+          1274,
+          2873
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            11,
+            20,
+            9,
+            5,
+            12
+          ],
+          "target_scores": [
+            48,
+            332,
+            618
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            9,
+            13,
+            12,
+            12,
+            12
+          ],
+          "target_scores": [
+            69,
+            393,
+            857
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            13,
+            12,
+            8,
+            12,
+            14
+          ],
+          "target_scores": [
+            105,
+            550,
+            1395
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "燃料不足罰則を元の強さに戻し、余剰燃料・配置補助点を0.1倍に維持"
+    },
+    {
+      "run_id": "1791140068381542634-13862",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791140068381542634-13862/run.json",
+      "local_run_json": ".game/pool-g006-development/1791140068381542634-13862.json",
+      "manifest_sha256": "21b3b5fe833e67d5394aa95bddc8359bf48925b8161dfccb89140cb0ec50b69b",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        33,
+        42,
+        42,
+        27,
+        28
+      ],
+      "score_totals": [
+        [
+          222,
+          1275,
+          2847
+        ],
+        [
+          222,
+          1270,
+          2848
+        ],
+        [
+          222,
+          1274,
+          2847
+        ],
+        [
+          222,
+          1275,
+          2877
+        ],
+        [
+          222,
+          1274,
+          2888
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            10,
+            14,
+            13,
+            9,
+            9
+          ],
+          "target_scores": [
+            48,
+            332,
+            610
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            9,
+            13,
+            16,
+            10,
+            9
+          ],
+          "target_scores": [
+            69,
+            393,
+            861
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            14,
+            15,
+            13,
+            8,
+            10
+          ],
+          "target_scores": [
+            105,
+            550,
+            1376
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "燃料不足罰則を維持し、明示補給立ち寄りの挿入・移動を許可"
+    },
+    {
+      "run_id": "1791140440223830287-14060",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791140440223830287-14060/run.json",
+      "local_run_json": ".game/pool-g006-development/1791140440223830287-14060.json",
+      "manifest_sha256": "2ca3f4525de2b9f603a40f8903bea806df5027a272fc1d3af012974d67a4a329",
+      "count": 6,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        21,
+        17,
+        17,
+        14,
+        16
+      ],
+      "score_totals": [
+        [
+          111,
+          637,
+          1126
+        ],
+        [
+          111,
+          639,
+          1141
+        ],
+        [
+          111,
+          639,
+          1153
+        ],
+        [
+          111,
+          640,
+          1149
+        ],
+        [
+          111,
+          639,
+          1154
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            7,
+            2,
+            6,
+            4,
+            8
+          ],
+          "target_scores": [
+            25,
+            184,
+            382
+          ],
+          "count": 2
+        },
+        "semifinal": {
+          "rank_sums": [
+            6,
+            10,
+            7,
+            2,
+            4
+          ],
+          "target_scores": [
+            37,
+            183,
+            245
+          ],
+          "count": 2
+        },
+        "final": {
+          "rank_sums": [
+            8,
+            5,
+            4,
+            8,
+            4
+          ],
+          "target_scores": [
+            49,
+            270,
+            499
+          ],
+          "count": 2
+        }
+      },
+      "formal": false,
+      "candidate_change": "燃料不足罰則を維持し、その他補助点0.1倍候補を既定時間で確認",
+      "comparison_to": "1791136172959288797-11934",
+      "wins_draws_losses": [
+        4,
+        0,
+        2
+      ],
+      "verified_diagnostics": {
+        "log_files": 6,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0
+      }
+    },
+    {
+      "run_id": "1791141328703327445-14282",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791141328703327445-14282/run.json",
+      "local_run_json": ".game/pool-g006-development/1791141328703327445-14282.json",
+      "manifest_sha256": "b368f5f330a4faf830cf754542234beebae71a10dbc8b3c73009d3ec381a8db5",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        30,
+        33,
+        40,
+        29,
+        33
+      ],
+      "score_totals": [
+        [
+          222,
+          1274,
+          2876
+        ],
+        [
+          222,
+          1275,
+          2871
+        ],
+        [
+          222,
+          1276,
+          2865
+        ],
+        [
+          222,
+          1274,
+          2895
+        ],
+        [
+          222,
+          1276,
+          2877
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            9,
+            12,
+            14,
+            9,
+            10
+          ],
+          "target_scores": [
+            48,
+            331,
+            620
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            11,
+            13,
+            13,
+            7,
+            10
+          ],
+          "target_scores": [
+            69,
+            393,
+            848
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            10,
+            8,
+            13,
+            13,
+            13
+          ],
+          "target_scores": [
+            105,
+            550,
+            1408
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "当日2候補と車種上位2構成を翌日試行得点で比較",
+      "comparison_to": "1791139703266994752-13666",
+      "wins_draws_losses": [
+        5,
+        0,
+        7
+      ],
+      "verified_diagnostics": {
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0
+      }
+    },
+    {
+      "run_id": "1791141583655717346-14442",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791141583655717346-14442/run.json",
+      "local_run_json": ".game/pool-g006-development/1791141583655717346-14442.json",
+      "manifest_sha256": "b92de56310084a14b0e0edae1eb8e6ae012a3b4f75eaafa2142ac79e99a2acb9",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        84,
+        107,
+        98,
+        61,
+        77
+      ],
+      "score_totals": [
+        [
+          543,
+          3676,
+          8172
+        ],
+        [
+          543,
+          3669,
+          8161
+        ],
+        [
+          543,
+          3681,
+          8198
+        ],
+        [
+          543,
+          3680,
+          8317
+        ],
+        [
+          543,
+          3675,
+          8256
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            21,
+            31,
+            35,
+            26,
+            26
+          ],
+          "target_scores": [
+            124,
+            881,
+            1672
+          ],
+          "count": 10
+        },
+        "semifinal": {
+          "rank_sums": [
+            28,
+            39,
+            32,
+            17,
+            25
+          ],
+          "target_scores": [
+            179,
+            1174,
+            2275
+          ],
+          "count": 10
+        },
+        "final": {
+          "rank_sums": [
+            35,
+            37,
+            31,
+            18,
+            26
+          ],
+          "target_scores": [
+            240,
+            1621,
+            4225
+          ],
+          "count": 10
+        }
+      },
+      "formal": false,
+      "candidate_change": "当日2候補と車種上位2構成を翌日試行得点で比較",
+      "comparison_to": "1791135062011648543-11302",
+      "wins_draws_losses": [
+        19,
+        1,
+        10
+      ],
+      "verified_diagnostics": {
+        "log_files": 30,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791142309951012721-14760",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791142309951012721-14760/run.json",
+      "local_run_json": ".game/pool-g006-development/1791142309951012721-14760.json",
+      "manifest_sha256": "4c1677683396bc9cf1800122b2822424aec107d340b18b398c230bf10d2be50a",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        30,
+        36,
+        50,
+        26,
+        32
+      ],
+      "score_totals": [
+        [
+          222,
+          1275,
+          2863
+        ],
+        [
+          222,
+          1269,
+          2850
+        ],
+        [
+          222,
+          1276,
+          2830
+        ],
+        [
+          222,
+          1277,
+          2891
+        ],
+        [
+          222,
+          1275,
+          2876
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            11,
+            10,
+            16,
+            10,
+            10
+          ],
+          "target_scores": [
+            48,
+            332,
+            619
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            8,
+            14,
+            18,
+            8,
+            10
+          ],
+          "target_scores": [
+            69,
+            393,
+            859
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            11,
+            12,
+            16,
+            8,
+            12
+          ],
+          "target_scores": [
+            105,
+            550,
+            1385
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "初期2日間の自チーム滞在実績から翌日道路状態を予測",
+      "comparison_to": "1791141328703327445-14282",
+      "wins_draws_losses": [
+        7,
+        0,
+        5
+      ],
+      "verified_diagnostics": {
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791142640579325982-15006",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791142640579325982-15006/run.json",
+      "local_run_json": ".game/pool-g006-development/1791142640579325982-15006.json",
+      "manifest_sha256": "8cf4bed1dd6d66682f80b2fadc5041821087ec5c00717305ac9ec5be48e4ac13",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        38,
+        43,
+        28,
+        25,
+        35
+      ],
+      "score_totals": [
+        [
+          222,
+          1271,
+          2860
+        ],
+        [
+          222,
+          1275,
+          2859
+        ],
+        [
+          222,
+          1275,
+          2895
+        ],
+        [
+          222,
+          1275,
+          2906
+        ],
+        [
+          222,
+          1275,
+          2881
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            8,
+            13,
+            10,
+            10,
+            12
+          ],
+          "target_scores": [
+            48,
+            330,
+            627
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            14,
+            16,
+            10,
+            5,
+            11
+          ],
+          "target_scores": [
+            69,
+            391,
+            849
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            16,
+            14,
+            8,
+            10,
+            12
+          ],
+          "target_scores": [
+            105,
+            550,
+            1384
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "道路予測を維持し第2候補の燃料不足罰則のみ0.1倍へ変更",
+      "comparison_to": "1791142309951012721-14760",
+      "wins_draws_losses": [
+        5,
+        2,
+        5
+      ],
+      "verified_diagnostics": {
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791142977978044464-15248",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791142977978044464-15248/run.json",
+      "local_run_json": ".game/pool-g006-development/1791142977978044464-15248.json",
+      "manifest_sha256": "485b5f7f165f0e258712f3c33131981c41b305056391c1d6cf12a879f2f354d8",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        37,
+        40,
+        31,
+        31,
+        31
+      ],
+      "score_totals": [
+        [
+          222,
+          1273,
+          2848
+        ],
+        [
+          222,
+          1274,
+          2851
+        ],
+        [
+          222,
+          1276,
+          2864
+        ],
+        [
+          222,
+          1275,
+          2882
+        ],
+        [
+          222,
+          1276,
+          2882
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            12,
+            15,
+            9,
+            11,
+            10
+          ],
+          "target_scores": [
+            48,
+            330,
+            614
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            11,
+            13,
+            9,
+            11,
+            12
+          ],
+          "target_scores": [
+            69,
+            393,
+            847
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            14,
+            12,
+            13,
+            9,
+            9
+          ],
+          "target_scores": [
+            105,
+            550,
+            1387
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "燃料罰則緩和を戻し翌日終了時の燃料・配置評価を試行比較へ追加",
+      "comparison_to": "1791142309951012721-14760",
+      "wins_draws_losses": [
+        4,
+        0,
+        8
+      ],
+      "verified_diagnostics": {
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791143300823494776-15483",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791143300823494776-15483/run.json",
+      "local_run_json": ".game/pool-g006-development/1791143300823494776-15483.json",
+      "manifest_sha256": "5e57bc39c2ed40b9f296b9d2a5a7ef181727e3b2401116f4f3b240363efa5ac9",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        40,
+        38,
+        34,
+        28,
+        25
+      ],
+      "score_totals": [
+        [
+          222,
+          1274,
+          2849
+        ],
+        [
+          222,
+          1270,
+          2850
+        ],
+        [
+          222,
+          1276,
+          2857
+        ],
+        [
+          222,
+          1278,
+          2877
+        ],
+        [
+          222,
+          1276,
+          2893
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            17,
+            13,
+            13,
+            6,
+            7
+          ],
+          "target_scores": [
+            48,
+            332,
+            610
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            10,
+            13,
+            11,
+            9,
+            9
+          ],
+          "target_scores": [
+            69,
+            392,
+            851
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            13,
+            12,
+            10,
+            13,
+            9
+          ],
+          "target_scores": [
+            105,
+            550,
+            1388
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "翌日終了評価の追加を戻し燃料・補給車距離を考慮するビーム候補を追加保持",
+      "comparison_to": "1791142309951012721-14760",
+      "wins_draws_losses": [
+        4,
+        0,
+        8
+      ],
+      "verified_diagnostics": {
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791143613789442977-15716",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791143613789442977-15716/run.json",
+      "local_run_json": ".game/pool-g006-development/1791143613789442977-15716.json",
+      "manifest_sha256": "9cdb1a75cf3f1887ff31cc82f6056bf2e26314d2cdb1abfa961e260489fe7882",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        29,
+        47,
+        38,
+        22,
+        32
+      ],
+      "score_totals": [
+        [
+          222,
+          1275,
+          2872
+        ],
+        [
+          222,
+          1270,
+          2843
+        ],
+        [
+          222,
+          1275,
+          2857
+        ],
+        [
+          222,
+          1276,
+          2888
+        ],
+        [
+          222,
+          1274,
+          2864
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            7,
+            17,
+            12,
+            6,
+            13
+          ],
+          "target_scores": [
+            48,
+            332,
+            618
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            10,
+            16,
+            15,
+            8,
+            6
+          ],
+          "target_scores": [
+            69,
+            393,
+            851
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            12,
+            14,
+            11,
+            8,
+            13
+          ],
+          "target_scores": [
+            105,
+            550,
+            1403
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "ビーム候補追加を戻し現在の巡回地点・時刻に補給立ち寄りを合わせる",
+      "comparison_to": "1791142309951012721-14760",
+      "wins_draws_losses": [
+        4,
+        1,
+        7
+      ],
+      "verified_diagnostics": {
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791143913749123819-15955",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791143913749123819-15955/run.json",
+      "local_run_json": ".game/pool-g006-development/1791143913749123819-15955.json",
+      "manifest_sha256": "53851e2980c4952a76d15884dd4d6ec2b1d1d1c0e7058842d4394cd7303610a6",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        27,
+        47,
+        37,
+        27,
+        37
+      ],
+      "score_totals": [
+        [
+          222,
+          1275,
+          2880
+        ],
+        [
+          222,
+          1270,
+          2829
+        ],
+        [
+          222,
+          1275,
+          2882
+        ],
+        [
+          222,
+          1277,
+          2887
+        ],
+        [
+          222,
+          1272,
+          2870
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            8,
+            16,
+            14,
+            8,
+            12
+          ],
+          "target_scores": [
+            48,
+            332,
+            616
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            6,
+            16,
+            14,
+            11,
+            12
+          ],
+          "target_scores": [
+            69,
+            393,
+            865
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            13,
+            15,
+            9,
+            8,
+            13
+          ],
+          "target_scores": [
+            105,
+            550,
+            1399
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "巡回軌跡の補給合流を維持し道路予測を全日へ拡張、候補探索時間の偏りを修正",
+      "comparison_to": "1791143613789442977-15716",
+      "wins_draws_losses": [
+        9,
+        0,
+        3
+      ],
+      "verified_diagnostics": {
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791144120223906337-16120",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791144120223906337-16120/run.json",
+      "local_run_json": ".game/pool-g006-development/1791144120223906337-16120.json",
+      "manifest_sha256": "12ccc8e54d62832eea521209fcd0cb1a3831322fa80395b503f47b6e18643016",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        90,
+        97,
+        89,
+        69,
+        79
+      ],
+      "score_totals": [
+        [
+          543,
+          3668,
+          8156
+        ],
+        [
+          543,
+          3663,
+          8101
+        ],
+        [
+          543,
+          3677,
+          8206
+        ],
+        [
+          543,
+          3680,
+          8274
+        ],
+        [
+          543,
+          3674,
+          8223
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            28,
+            28,
+            36,
+            28,
+            24
+          ],
+          "target_scores": [
+            124,
+            877,
+            1680
+          ],
+          "count": 10
+        },
+        "semifinal": {
+          "rank_sums": [
+            21,
+            36,
+            31,
+            24,
+            26
+          ],
+          "target_scores": [
+            179,
+            1170,
+            2300
+          ],
+          "count": 10
+        },
+        "final": {
+          "rank_sums": [
+            41,
+            33,
+            22,
+            17,
+            29
+          ],
+          "target_scores": [
+            240,
+            1621,
+            4176
+          ],
+          "count": 10
+        }
+      },
+      "formal": false,
+      "candidate_change": "巡回軌跡の補給合流を維持し道路予測を全日へ拡張、候補探索時間の偏りを修正",
+      "comparison_to": "1791141583655717346-14442",
+      "wins_draws_losses": [
+        13,
+        1,
+        16
+      ],
+      "verified_diagnostics": {
+        "log_files": 30,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791144592292924417-16395",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791144592292924417-16395/run.json",
+      "local_run_json": ".game/pool-g006-development/1791144592292924417-16395.json",
+      "manifest_sha256": "92ee2b581c5667711a5e02e26d5108546a7035b123c576ae5be1bbde7d1c3a12",
+      "count": 6,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        26,
+        17,
+        13,
+        17,
+        13
+      ],
+      "score_totals": [
+        [
+          111,
+          639,
+          1119
+        ],
+        [
+          111,
+          639,
+          1160
+        ],
+        [
+          111,
+          639,
+          1172
+        ],
+        [
+          111,
+          640,
+          1137
+        ],
+        [
+          111,
+          640,
+          1158
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            8,
+            5,
+            4,
+            7,
+            4
+          ],
+          "target_scores": [
+            25,
+            184,
+            378
+          ],
+          "count": 2
+        },
+        "semifinal": {
+          "rank_sums": [
+            8,
+            8,
+            6,
+            3,
+            4
+          ],
+          "target_scores": [
+            37,
+            185,
+            248
+          ],
+          "count": 2
+        },
+        "final": {
+          "rank_sums": [
+            10,
+            4,
+            3,
+            7,
+            5
+          ],
+          "target_scores": [
+            49,
+            270,
+            493
+          ],
+          "count": 2
+        }
+      },
+      "formal": false,
+      "candidate_change": "全日の道路予測と翌日比較の候補を既定時間で確認",
+      "comparison_to": "1791140440223830287-14060",
+      "wins_draws_losses": [
+        1,
+        0,
+        5
+      ],
+      "verified_diagnostics": {
+        "log_files": 6,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791145729856514410-16667",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791145729856514410-16667/run.json",
+      "local_run_json": ".game/pool-g006-development/1791145729856514410-16667.json",
+      "manifest_sha256": "6b626b961f1f1f3dffe0f3cd2fa877f613840c9cad54b333ec73c77d41d824a9",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        30,
+        33,
+        40,
+        33,
+        36
+      ],
+      "score_totals": [
+        [
+          222,
+          1275,
+          2873
+        ],
+        [
+          222,
+          1273,
+          2875
+        ],
+        [
+          222,
+          1276,
+          2860
+        ],
+        [
+          222,
+          1277,
+          2885
+        ],
+        [
+          222,
+          1275,
+          2880
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            10,
+            13,
+            11,
+            11,
+            12
+          ],
+          "target_scores": [
+            48,
+            332,
+            618
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            7,
+            10,
+            14,
+            14,
+            11
+          ],
+          "target_scores": [
+            69,
+            393,
+            863
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            13,
+            10,
+            15,
+            8,
+            13
+          ],
+          "target_scores": [
+            105,
+            550,
+            1392
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "当日と翌日の2計画を最後20%の枠で共同探索、交通別キャッシュと2日分モデル照合",
+      "comparison_to": "1791143913749123819-15955",
+      "wins_draws_losses": [
+        5,
+        1,
+        6
+      ],
+      "verified_diagnostics": {
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791145941107374018-16825",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791145941107374018-16825/run.json",
+      "local_run_json": ".game/pool-g006-development/1791145941107374018-16825.json",
+      "manifest_sha256": "7a4cda14d2915a6096eb63732113ebaf75da8f2672b654685fa3cdf8bcdb563e",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        88,
+        107,
+        98,
+        66,
+        80
+      ],
+      "score_totals": [
+        [
+          543,
+          3674,
+          8157
+        ],
+        [
+          543,
+          3674,
+          8105
+        ],
+        [
+          543,
+          3680,
+          8211
+        ],
+        [
+          543,
+          3685,
+          8270
+        ],
+        [
+          543,
+          3679,
+          8242
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            17,
+            43,
+            35,
+            24,
+            27
+          ],
+          "target_scores": [
+            124,
+            883,
+            1689
+          ],
+          "count": 10
+        },
+        "semifinal": {
+          "rank_sums": [
+            32,
+            31,
+            33,
+            24,
+            26
+          ],
+          "target_scores": [
+            179,
+            1170,
+            2295
+          ],
+          "count": 10
+        },
+        "final": {
+          "rank_sums": [
+            39,
+            33,
+            30,
+            18,
+            27
+          ],
+          "target_scores": [
+            240,
+            1621,
+            4173
+          ],
+          "count": 10
+        }
+      },
+      "formal": false,
+      "candidate_change": "当日と翌日の2計画を最後20%の枠で共同探索、交通別キャッシュと2日分モデル照合",
+      "comparison_to": "1791144120223906337-16120",
+      "wins_draws_losses": [
+        16,
+        1,
+        13
+      ],
+      "verified_diagnostics": {
+        "log_files": 30,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791146494246208109-17205",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791146494246208109-17205/run.json",
+      "local_run_json": ".game/pool-g006-development/1791146494246208109-17205.json",
+      "manifest_sha256": "55fbb10acc48b9ee2c879badd07b324cdeb1ff5124379755ba3842a4b423c812",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        38,
+        39,
+        33,
+        27,
+        34
+      ],
+      "score_totals": [
+        [
+          222,
+          1276,
+          2872
+        ],
+        [
+          222,
+          1276,
+          2870
+        ],
+        [
+          222,
+          1276,
+          2885
+        ],
+        [
+          222,
+          1277,
+          2895
+        ],
+        [
+          222,
+          1275,
+          2867
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            10,
+            7,
+            14,
+            11,
+            11
+          ],
+          "target_scores": [
+            48,
+            333,
+            618
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            10,
+            16,
+            10,
+            10,
+            12
+          ],
+          "target_scores": [
+            69,
+            393,
+            865
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            18,
+            16,
+            9,
+            6,
+            11
+          ],
+          "target_scores": [
+            105,
+            550,
+            1389
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "共同探索を維持し翌日道路予測の滞在係数を0.8から1.0へ変更",
+      "comparison_to": "1791145729856514410-16667",
+      "wins_draws_losses": [
+        4,
+        0,
+        8
+      ],
+      "verified_diagnostics": {
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791146944480734056-17448",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791146944480734056-17448/run.json",
+      "local_run_json": ".game/pool-g006-development/1791146944480734056-17448.json",
+      "manifest_sha256": "e09201680c9db8a419c5a20f874621099a4407fca6491b9bdcdc761782dc0be0",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        35,
+        38,
+        41,
+        25,
+        33
+      ],
+      "score_totals": [
+        [
+          222,
+          1276,
+          2863
+        ],
+        [
+          222,
+          1273,
+          2858
+        ],
+        [
+          222,
+          1276,
+          2851
+        ],
+        [
+          222,
+          1276,
+          2898
+        ],
+        [
+          222,
+          1273,
+          2873
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            6,
+            18,
+            12,
+            8,
+            11
+          ],
+          "target_scores": [
+            48,
+            334,
+            620
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            14,
+            10,
+            16,
+            10,
+            9
+          ],
+          "target_scores": [
+            69,
+            392,
+            859
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            15,
+            10,
+            13,
+            7,
+            13
+          ],
+          "target_scores": [
+            105,
+            550,
+            1384
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "道路係数0.8へ戻し同一状態・巡回列の車両評価キャッシュと間引き照合を追加",
+      "comparison_to": "1791145729856514410-16667",
+      "wins_draws_losses": [
+        4,
+        2,
+        6
+      ],
+      "verified_diagnostics": {
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791147288759854481-17683",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791147288759854481-17683/run.json",
+      "local_run_json": ".game/pool-g006-development/1791147288759854481-17683.json",
+      "manifest_sha256": "78c90047c79f8a43f7f54a4b7df18bb142b955ec3fe020b14af79616f99f93b4",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        28,
+        40,
+        36,
+        32,
+        35
+      ],
+      "score_totals": [
+        [
+          222,
+          1276,
+          2872
+        ],
+        [
+          222,
+          1271,
+          2871
+        ],
+        [
+          222,
+          1276,
+          2864
+        ],
+        [
+          222,
+          1278,
+          2857
+        ],
+        [
+          222,
+          1275,
+          2871
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            7,
+            18,
+            10,
+            9,
+            13
+          ],
+          "target_scores": [
+            48,
+            333,
+            616
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            6,
+            13,
+            15,
+            13,
+            10
+          ],
+          "target_scores": [
+            69,
+            393,
+            861
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            15,
+            9,
+            11,
+            10,
+            12
+          ],
+          "target_scores": [
+            105,
+            550,
+            1395
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "車両の直近評価を先に照合し一致時はハッシュ計算を省略",
+      "comparison_to": "1791146944480734056-17448",
+      "wins_draws_losses": [
+        6,
+        1,
+        5
+      ],
+      "verified_diagnostics": {
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791147605088683892-17914",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791147605088683892-17914/run.json",
+      "local_run_json": ".game/pool-g006-development/1791147605088683892-17914.json",
+      "manifest_sha256": "ce8e6562229c1b9bfc3ece7813682f383d234a06480687e102aaf528db0bc193",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        28,
+        41,
+        36,
+        35,
+        35
+      ],
+      "score_totals": [
+        [
+          222,
+          1276,
+          2878
+        ],
+        [
+          222,
+          1274,
+          2848
+        ],
+        [
+          222,
+          1274,
+          2872
+        ],
+        [
+          222,
+          1276,
+          2862
+        ],
+        [
+          222,
+          1273,
+          2869
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            5,
+            16,
+            13,
+            11,
+            13
+          ],
+          "target_scores": [
+            48,
+            334,
+            626
+          ],
+          "count": 4
+        },
+        "semifinal": {
+          "rank_sums": [
+            11,
+            14,
+            12,
+            11,
+            10
+          ],
+          "target_scores": [
+            69,
+            392,
+            858
+          ],
+          "count": 4
+        },
+        "final": {
+          "rank_sums": [
+            12,
+            11,
+            11,
+            13,
+            12
+          ],
+          "target_scores": [
+            105,
+            550,
+            1394
+          ],
+          "count": 4
+        }
+      },
+      "formal": false,
+      "candidate_change": "直近車両評価の再利用を共有ポインタから評価スロット参照へ変更",
+      "comparison_to": "1791146944480734056-17448",
+      "wins_draws_losses": [
+        8,
+        2,
+        2
+      ],
+      "verified_diagnostics": {
+        "run_id": "1791147605088683892-17914",
+        "host": "voidlinux-3",
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "day_logs": 72,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791147852234638599-18071",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791147852234638599-18071/run.json",
+      "local_run_json": ".game/pool-g006-development/1791147852234638599-18071.json",
+      "manifest_sha256": "3ea6244f6d09a22fd87ec78ef5118611a8316395edf038511e69a3c353c231a5",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        85,
+        101,
+        89,
+        70,
+        86
+      ],
+      "score_totals": [
+        [
+          543,
+          3673,
+          8179
+        ],
+        [
+          543,
+          3669,
+          8122
+        ],
+        [
+          543,
+          3677,
+          8202
+        ],
+        [
+          543,
+          3683,
+          8254
+        ],
+        [
+          543,
+          3670,
+          8249
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            23,
+            29,
+            34,
+            25,
+            32
+          ],
+          "target_scores": [
+            124,
+            881,
+            1684
+          ],
+          "count": 10
+        },
+        "semifinal": {
+          "rank_sums": [
+            25,
+            31,
+            30,
+            24,
+            31
+          ],
+          "target_scores": [
+            179,
+            1171,
+            2324
+          ],
+          "count": 10
+        },
+        "final": {
+          "rank_sums": [
+            37,
+            41,
+            25,
+            21,
+            23
+          ],
+          "target_scores": [
+            240,
+            1621,
+            4171
+          ],
+          "count": 10
+        }
+      },
+      "formal": false,
+      "candidate_change": "直近車両評価の再利用を評価スロットで参照し30ケースへ比較を拡張",
+      "comparisons": {
+        "1791145941107374018-16825": [
+          17,
+          1,
+          12
+        ],
+        "1791141583655717346-14442": [
+          14,
+          1,
+          15
+        ]
+      },
+      "verified_diagnostics": {
+        "log_files": 30,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "day_logs": 206,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791148470382093903-18412",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791148470382093903-18412/run.json",
+      "local_run_json": ".game/pool-g006-development/1791148470382093903-18412.json",
+      "manifest_sha256": "e8a7ffd2a5bcffd35392770a6b94b3294f1643bbaf63ded7222e1a2a6479c2fb",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        87,
+        113,
+        92,
+        74,
+        72
+      ],
+      "score_totals": [
+        [
+          543,
+          3676,
+          8170
+        ],
+        [
+          543,
+          3666,
+          8113
+        ],
+        [
+          543,
+          3678,
+          8215
+        ],
+        [
+          543,
+          3683,
+          8259
+        ],
+        [
+          543,
+          3681,
+          8259
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "rank_sums": [
+            20,
+            41,
+            34,
+            31,
+            20
+          ],
+          "target_scores": [
+            124,
+            884,
+            1687
+          ],
+          "count": 10
+        },
+        "semifinal": {
+          "rank_sums": [
+            27,
+            36,
+            35,
+            23,
+            24
+          ],
+          "target_scores": [
+            179,
+            1171,
+            2306
+          ],
+          "count": 10
+        },
+        "final": {
+          "rank_sums": [
+            40,
+            36,
+            23,
+            20,
+            28
+          ],
+          "target_scores": [
+            240,
+            1621,
+            4177
+          ],
+          "count": 10
+        }
+      },
+      "formal": false,
+      "candidate_change": "各車両の翌日の別店舗への移動遅延を評価に追加",
+      "comparison_to": "1791147852234638599-18071",
+      "wins_draws_losses": [
+        14,
+        4,
+        12
+      ],
+      "verified_diagnostics": {
+        "log_files": 30,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "day_logs": 206,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791149024039402448-18754",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791149024039402448-18754/run.json",
+      "local_run_json": ".game/pool-g006-development/1791149024039402448-18754.json",
+      "manifest_sha256": "131bc59858c29f21067119968de8d910c85a05e67f8e2e793fb66678f56dcc09",
+      "count": 30,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        78,
+        109,
+        92,
+        70,
+        85
+      ],
+      "score_totals": [
+        [
+          543,
+          3676,
+          8177
+        ],
+        [
+          543,
+          3662,
+          8065
+        ],
+        [
+          543,
+          3680,
+          8178
+        ],
+        [
+          543,
+          3681,
+          8263
+        ],
+        [
+          543,
+          3672,
+          8224
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 10,
+          "rank_sums": [
+            17,
+            36,
+            31,
+            29,
+            29
+          ],
+          "target_scores": [
+            124,
+            882,
+            1686
+          ]
+        },
+        "semifinal": {
+          "count": 10,
+          "rank_sums": [
+            24,
+            39,
+            32,
+            18,
+            32
+          ],
+          "target_scores": [
+            179,
+            1173,
+            2324
+          ]
+        },
+        "final": {
+          "count": 10,
+          "rank_sums": [
+            37,
+            34,
+            29,
+            23,
+            24
+          ],
+          "target_scores": [
+            240,
+            1621,
+            4167
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "翌日移動遅延評価の到達時間を事前計算して負担を削減",
+      "comparisons": {
+        "1791148470382093903-18412": [
+          11,
+          3,
+          16
+        ],
+        "1791147852234638599-18071": [
+          14,
+          1,
+          15
+        ]
+      },
+      "verified_diagnostics": {
+        "run_id": "1791149024039402448-18754",
+        "host": "voidlinux-3",
+        "log_files": 30,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "day_logs": 206,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    },
+    {
+      "run_id": "1791149528596602133-19063",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g006-dev.g3FpSu/1791149528596602133-19063/run.json",
+      "local_run_json": ".game/pool-g006-development/1791149528596602133-19063.json",
+      "manifest_sha256": "20cf153afa7955a762308110b46c791508fb25f82a70d308e72bcfd0b328555e",
+      "count": 6,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        13,
+        17,
+        21,
+        17,
+        18
+      ],
+      "score_totals": [
+        [
+          111,
+          639,
+          1169
+        ],
+        [
+          111,
+          641,
+          1125
+        ],
+        [
+          111,
+          640,
+          1151
+        ],
+        [
+          111,
+          640,
+          1149
+        ],
+        [
+          111,
+          639,
+          1158
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 2,
+          "rank_sums": [
+            6,
+            3,
+            7,
+            6,
+            7
+          ],
+          "target_scores": [
+            25,
+            184,
+            386
+          ]
+        },
+        "semifinal": {
+          "count": 2,
+          "rank_sums": [
+            4,
+            7,
+            7,
+            5,
+            5
+          ],
+          "target_scores": [
+            37,
+            185,
+            255
+          ]
+        },
+        "final": {
+          "count": 2,
+          "rank_sums": [
+            3,
+            7,
+            7,
+            6,
+            6
+          ],
+          "target_scores": [
+            49,
+            270,
+            528
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "共同探索と移動遅延評価の候補を既定時間で確認",
+      "comparisons": {
+        "1791144592292924417-16395": [
+          5,
+          1,
+          0
+        ],
+        "1791140440223830287-14060": [
+          6,
+          0,
+          0
+        ]
+      },
+      "verified_diagnostics": {
+        "run_id": "1791149528596602133-19063",
+        "host": "voidlinux-3",
+        "log_files": 6,
+        "model_mismatch_count": 0,
+        "validation_failure_count": 0,
+        "panic_count": 0,
+        "day_logs": 36,
+        "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+      }
+    }
+  ],
+  "formal_result": {
+    "run_id": "1791150449580370511-14915",
+    "valid_formal_run": true,
+    "errors": [],
+    "rank_sums": [
+      64,
+      93,
+      95,
+      81,
+      94
+    ],
+    "average_ranks": [
+      2.1333333333333333,
+      3.1,
+      3.1666666666666665,
+      2.7,
+      3.1333333333333333
+    ],
+    "score_totals": [
+      [
+        543,
+        3680,
+        8392
+      ],
+      [
+        543,
+        3676,
+        8240
+      ],
+      [
+        543,
+        3681,
+        8337
+      ],
+      [
+        543,
+        3684,
+        8350
+      ],
+      [
+        543,
+        3681,
+        8291
+      ]
+    ],
+    "warnings": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "opponent_identities": [
+      "content-v3:6abeeb40e89ecd016b5e0eb70c88cec8",
+      "content-v3:6afa2888d21f7b03f079fe05a2f3e357",
+      "content-v3:6820fb905f409b9655e64f672d8db46d",
+      "content-v3:9f107ad383c8f566ca695a5ccded5cfd"
+    ],
+    "target_sole_first": true,
+    "note": "昇格には別途、評価中の実装凍結・識別一致と実際のSSH実行条件を照合する。",
+    "all_players_ac": true,
+    "configuration": {
+      "mode": "game",
+      "targetName": "pool-generation-006",
+      "opponents": [
+        {
+          "name": "pool-generation-002",
+          "solver": {
+            "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-1",
+            "args": [
+              "0"
+            ],
+            "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+            "env": {}
+          },
+          "build": null,
+          "solverParallel": false,
+          "version": "pool-generation-002-run-1790551749037999892-54402-v1"
+        },
+        {
+          "name": "pool-generation-005",
+          "solver": {
+            "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-2",
+            "args": [
+              "0"
+            ],
+            "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+            "env": {}
+          },
+          "build": null,
+          "solverParallel": false,
+          "version": "pool-generation-005-preserved-before-generation-006"
+        },
+        {
+          "name": "pool-generation-004",
+          "solver": {
+            "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-3",
+            "args": [
+              "0"
+            ],
+            "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+            "env": {}
+          },
+          "build": null,
+          "solverParallel": false,
+          "version": "pool-generation-004-run-1790600156388062978-4-v1"
+        },
+        {
+          "name": "pool-generation-003",
+          "solver": {
+            "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-4",
+            "args": [
+              "0"
+            ],
+            "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+            "env": {}
+          },
+          "build": null,
+          "solverParallel": false,
+          "version": "pool-generation-003-run-1790563781811011480-62511-v1"
+        }
+      ],
+      "count": 30,
+      "seed": null,
+      "format": null,
+      "arenaMaps": true,
+      "jobs": null,
+      "solverParallel": false,
+      "label": "pool第6世代・正式昇格判定・既定条件フル30件・試行1",
+      "build": null,
+      "solver": {
+        "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/solver",
+        "args": [
+          "0"
+        ],
+        "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+        "env": {}
+      },
+      "timeLimitMs": null
+    },
+    "execution": {
+      "availableCpus": 32,
+      "jobs": 6
+    },
+    "candidate_source_sha256": {
+      "main.rs": "e9e3d0a0523d47922fd349b62e070f2b0c17509f776d2b6cc372bd8ecbd20a56",
+      "Cargo.toml": "9878c0f79463d2f3617e6b5b99293c58a7c69d1898c9bbb369d17ed71d7a4a10",
+      "Cargo.lock": "a788fbbba8d76a6a01e1c1d3b637a3084f6bb44177ff171af4fced06dc68b344",
+      "solver/planner.rs": "1003c94dcc9f1a42b96f55aa568803e0aa800a4a02837d53f8a349d953595a34",
+      "tester/game/samples/src/bin/game-sample-1.rs": "5fd03403a449c3d0a407ce0fe9449e0d510b7be5235803fc869688743eebebdb",
+      "tester/game/samples/src/bin/game-sample-2.rs": "d2392276b502d6c77db9e12924450c2d9562b5b739dba0c466e7105a56699381",
+      "tester/game/samples/src/bin/game-sample-3.rs": "7ffe3910d024e505ce6a3911683e05df92398c964ce48ce50ea13576947788f2",
+      "tester/game/samples/src/bin/game-sample-4.rs": "9c17a019ea6a99aef2e162a28180a5731ab1ada06ec11285f80aa1eba14972a5",
+      "tester/game/samples/src/pool-generation-005/network.rs": "dbe0ca0ddd5dafa2729a5576b0ba784d5925b425bf3710436bf47b20e56f035d",
+      "tester/game/samples/src/pool-generation-005/search.rs": "149bcf8edeea344074bb2e8ed5eedfc5a9bf2c34f5534f8784625c241b7df013"
+    },
+    "binary_sha256": {
+      "target/release/solver": "55742fefa8a96575636c491023f6519c43d573aedb3eed842f72c7dc081fcb95",
+      "target/release/game-sample-1": "44df9525c3f4f7e970fc3fac2b8a2fd892460644ffd1d881144f51353d1a0d42",
+      "target/release/game-sample-2": "9ba18deaa98f9b245d58ff19d35a30a43920480d8029a60523f8fd1727084cfb",
+      "target/release/game-sample-3": "7a415f5aa02d3f0926fc4eee052357b6cc7dcb6de6d77ba7fca9687bd109d183",
+      "target/release/game-sample-4": "46c582e927abb9d67ed42a72fcf25d31fc83783b8f8f4691bc4477fedce9586b",
+      "target/release/game": "4ff8dc8623cb82989eedc0d931f5d1ef1d4d795db9d68f5d143d9675246bbaad"
+    },
+    "freeze_check": {
+      "unchanged": true,
+      "differences": []
+    },
+    "actual_process_evidence": {
+      "run_id": "1791150449580370511-14915",
+      "status": "running",
+      "completed": 0,
+      "tester_pid": 14915,
+      "argv": [
+        "target/release/game",
+        "run",
+        "30",
+        "--config",
+        ".game/pool-g006-host1-config.json",
+        "--no-build",
+        "--label",
+        "pool第6世代・正式昇格判定・既定条件フル30件・試行1",
+        "--",
+        "0"
+      ],
+      "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+      "environment_keys": [
+        "HOME",
+        "LANG",
+        "PATH"
+      ],
+      "controlled_environment": {
+        "HOME": "/home/voidlinux-1",
+        "PATH": "/home/voidlinux-1/procon37-share-20261003-g001/toolchain/bin:/usr/bin:/bin",
+        "LANG": "C.UTF-8"
+      },
+      "execution": {
+        "availableCpus": 32,
+        "jobs": 6
+      }
+    },
+    "diagnostics": {
+      "run_id": "1791150449580370511-14915",
+      "host": "voidlinux-1",
+      "log_files": 30,
+      "model_mismatch_count": 0,
+      "validation_failure_count": 0,
+      "panic_count": 0,
+      "day_logs": 206,
+      "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+    },
+    "archive_sha256": "41cde5f06fe6d13819c199985be92117cec61a746e8b14cb228a0ec940e898f2",
+    "manifest_sha256": "7e467ed9b132534f4d56198bf076ea0927024d1196d6e02bd86732f9f6bdf3cd",
+    "comparison_to_removed_generation_001": {
+      "wins_draws_losses": [
+        28,
+        0,
+        2
+      ],
+      "score_deltas": [
+        0,
+        1,
+        295
+      ],
+      "scope": "同一seed・既定条件の基準結果を再利用。第1世代を第6世代へ置換し、第5世代は枠0から2へ移動したため対戦構成は異なる。"
+    }
+  },
+  "updated_at": "2026-10-04T22:30:40.455463+00:00",
+  "reference_evaluation_required_before_next_generation": false,
+  "reference_evaluation_request": "非公式練習場の取り込みを無効にした同じ5体の30件を参考評価する。昇格は正式arenaMaps=trueの達成で確定。",
+  "push_receipt": {
+    "implementation_commit": "a9216446bd0ae6837689a0847bb3f467c2d1d428",
+    "remote": "https://github.com/Kyopronitac/procon37.git",
+    "branch": "feat/solver-for-new-map",
+    "remote_sha_verified": "a9216446bd0ae6837689a0847bb3f467c2d1d428",
+    "success": true,
+    "checked_at": "2026-10-04T22:33:15.349422+00:00"
+  },
+  "reference_evaluation": {
+    "run_id": "1791153238991025403-15528",
+    "status": "completed",
+    "host": "voidlinux-1",
+    "wrapper_pid": 15526,
+    "tester_pid": 15528,
+    "remote_root": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+    "remote_manifest": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/runs/1791153238991025403-15528/run.json",
+    "remote_log": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/pool-g006-reference.log",
+    "remote_exit_file": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/pool-g006-reference.exit",
+    "remote_freeze_check": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/pool-g006-reference.freeze-check.json",
+    "config": ".game/pool-g006-reference-config.json",
+    "arena_maps": false,
+    "count": 30,
+    "seed_range": [
+      0,
+      29
+    ],
+    "time_limit_ms": null,
+    "jobs": null,
+    "actual_jobs": 6,
+    "solver_parallel": false,
+    "actual_process_evidence": {
+      "run_id": "1791153238991025403-15528",
+      "tester_pid": 15528,
+      "argv": [
+        "target/release/game",
+        "run",
+        "30",
+        "--config",
+        ".game/pool-g006-reference-config.json",
+        "--no-build",
+        "--no-arena-maps",
+        "--label",
+        "pool第6世代・非公式練習場なし参考評価・既定条件フル30件",
+        "--",
+        "0"
+      ],
+      "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+      "environment_keys": [
+        "HOME",
+        "LANG",
+        "PATH"
+      ],
+      "controlled_environment": {
+        "HOME": "/home/voidlinux-1",
+        "PATH": "/home/voidlinux-1/procon37-share-20261003-g001/toolchain/bin:/usr/bin:/bin",
+        "LANG": "C.UTF-8"
+      },
+      "execution": {
+        "availableCpus": 32,
+        "jobs": 6
+      },
+      "opponent_identities": [
+        "content-v3:6abeeb40e89ecd016b5e0eb70c88cec8",
+        "content-v3:6afa2888d21f7b03f079fe05a2f3e357",
+        "content-v3:6820fb905f409b9655e64f672d8db46d",
+        "content-v3:9f107ad383c8f566ca695a5ccded5cfd"
+      ]
+    },
+    "formal_promotion_already_verified": true,
+    "must_complete_before_next_generation": true,
+    "latest_verified_progress": {
+      "status": "completed",
+      "completed": 30,
+      "total": 30,
+      "wrapper_exit": 0,
+      "freeze_check_exit": 0,
+      "checked_at": "2026-10-04T23:18:50.522046+00:00"
+    }
+  },
+  "reference_result": {
+    "run_id": "1791153238991025403-15528",
+    "valid_reference_run": true,
+    "errors": [],
+    "rank_sums": [
+      68,
+      89,
+      103,
+      77,
+      86
+    ],
+    "average_ranks": [
+      2.2666666666666666,
+      2.966666666666667,
+      3.433333333333333,
+      2.566666666666667,
+      2.8666666666666667
+    ],
+    "score_totals": [
+      [
+        542,
+        3589,
+        7479
+      ],
+      [
+        542,
+        3583,
+        7397
+      ],
+      [
+        542,
+        3588,
+        7428
+      ],
+      [
+        542,
+        3591,
+        7428
+      ],
+      [
+        542,
+        3583,
+        7435
+      ]
+    ],
+    "warnings": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "opponent_identities": [
+      "content-v3:6abeeb40e89ecd016b5e0eb70c88cec8",
+      "content-v3:6afa2888d21f7b03f079fe05a2f3e357",
+      "content-v3:6820fb905f409b9655e64f672d8db46d",
+      "content-v3:9f107ad383c8f566ca695a5ccded5cfd"
+    ],
+    "reference_target_sole_first": true,
+    "note": "参考評価のみ。正式な昇格判定には使用しない。凍結とSSH実条件は別途確認する。",
+    "all_players_ac": true,
+    "configuration": {
+      "mode": "game",
+      "targetName": "pool-generation-006",
+      "opponents": [
+        {
+          "name": "pool-generation-002",
+          "solver": {
+            "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-1",
+            "args": [
+              "0"
+            ],
+            "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+            "env": {}
+          },
+          "build": null,
+          "solverParallel": false,
+          "version": "pool-generation-002-run-1790551749037999892-54402-v1"
+        },
+        {
+          "name": "pool-generation-005",
+          "solver": {
+            "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-2",
+            "args": [
+              "0"
+            ],
+            "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+            "env": {}
+          },
+          "build": null,
+          "solverParallel": false,
+          "version": "pool-generation-005-preserved-before-generation-006"
+        },
+        {
+          "name": "pool-generation-004",
+          "solver": {
+            "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-3",
+            "args": [
+              "0"
+            ],
+            "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+            "env": {}
+          },
+          "build": null,
+          "solverParallel": false,
+          "version": "pool-generation-004-run-1790600156388062978-4-v1"
+        },
+        {
+          "name": "pool-generation-003",
+          "solver": {
+            "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/game-sample-4",
+            "args": [
+              "0"
+            ],
+            "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+            "env": {}
+          },
+          "build": null,
+          "solverParallel": false,
+          "version": "pool-generation-003-run-1790563781811011480-62511-v1"
+        }
+      ],
+      "count": 30,
+      "seed": null,
+      "format": null,
+      "arenaMaps": false,
+      "jobs": null,
+      "solverParallel": false,
+      "label": "pool第6世代・非公式練習場なし参考評価・既定条件フル30件",
+      "build": null,
+      "solver": {
+        "program": "/home/voidlinux-1/procon37-pool-new-map-20261004/target/release/solver",
+        "args": [
+          "0"
+        ],
+        "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+        "env": {}
+      },
+      "timeLimitMs": null
+    },
+    "execution": {
+      "availableCpus": 32,
+      "jobs": 6
+    },
+    "by_format": {
+      "first": {
+        "count": 10,
+        "rank_sums": [
+          23,
+          31,
+          35,
+          22,
+          29
+        ],
+        "average_ranks": [
+          2.3,
+          3.1,
+          3.5,
+          2.2,
+          2.9
+        ],
+        "score_totals": [
+          [
+            123,
+            802,
+            1359
+          ],
+          [
+            123,
+            797,
+            1359
+          ],
+          [
+            123,
+            802,
+            1336
+          ],
+          [
+            123,
+            803,
+            1362
+          ],
+          [
+            123,
+            799,
+            1349
+          ]
+        ]
+      },
+      "semifinal": {
+        "count": 10,
+        "rank_sums": [
+          24,
+          27,
+          32,
+          28,
+          28
+        ],
+        "average_ranks": [
+          2.4,
+          2.7,
+          3.2,
+          2.8,
+          2.8
+        ],
+        "score_totals": [
+          [
+            174,
+            1111,
+            2161
+          ],
+          [
+            174,
+            1110,
+            2151
+          ],
+          [
+            174,
+            1110,
+            2163
+          ],
+          [
+            174,
+            1112,
+            2148
+          ],
+          [
+            174,
+            1108,
+            2147
+          ]
+        ]
+      },
+      "final": {
+        "count": 10,
+        "rank_sums": [
+          21,
+          31,
+          36,
+          27,
+          29
+        ],
+        "average_ranks": [
+          2.1,
+          3.1,
+          3.6,
+          2.7,
+          2.9
+        ],
+        "score_totals": [
+          [
+            245,
+            1676,
+            3959
+          ],
+          [
+            245,
+            1676,
+            3887
+          ],
+          [
+            245,
+            1676,
+            3929
+          ],
+          [
+            245,
+            1676,
+            3918
+          ],
+          [
+            245,
+            1676,
+            3939
+          ]
+        ]
+      }
+    },
+    "source_sha256": {
+      "main.rs": "e9e3d0a0523d47922fd349b62e070f2b0c17509f776d2b6cc372bd8ecbd20a56",
+      "Cargo.toml": "9878c0f79463d2f3617e6b5b99293c58a7c69d1898c9bbb369d17ed71d7a4a10",
+      "Cargo.lock": "a788fbbba8d76a6a01e1c1d3b637a3084f6bb44177ff171af4fced06dc68b344",
+      "solver/planner.rs": "1003c94dcc9f1a42b96f55aa568803e0aa800a4a02837d53f8a349d953595a34",
+      "tester/game/samples/src/bin/game-sample-1.rs": "5fd03403a449c3d0a407ce0fe9449e0d510b7be5235803fc869688743eebebdb",
+      "tester/game/samples/src/bin/game-sample-2.rs": "d2392276b502d6c77db9e12924450c2d9562b5b739dba0c466e7105a56699381",
+      "tester/game/samples/src/bin/game-sample-3.rs": "7ffe3910d024e505ce6a3911683e05df92398c964ce48ce50ea13576947788f2",
+      "tester/game/samples/src/bin/game-sample-4.rs": "9c17a019ea6a99aef2e162a28180a5731ab1ada06ec11285f80aa1eba14972a5",
+      "tester/game/samples/src/pool-generation-005/network.rs": "dbe0ca0ddd5dafa2729a5576b0ba784d5925b425bf3710436bf47b20e56f035d",
+      "tester/game/samples/src/pool-generation-005/search.rs": "149bcf8edeea344074bb2e8ed5eedfc5a9bf2c34f5534f8784625c241b7df013"
+    },
+    "binary_sha256": {
+      "target/release/solver": "55742fefa8a96575636c491023f6519c43d573aedb3eed842f72c7dc081fcb95",
+      "target/release/game-sample-1": "44df9525c3f4f7e970fc3fac2b8a2fd892460644ffd1d881144f51353d1a0d42",
+      "target/release/game-sample-2": "9ba18deaa98f9b245d58ff19d35a30a43920480d8029a60523f8fd1727084cfb",
+      "target/release/game-sample-3": "7a415f5aa02d3f0926fc4eee052357b6cc7dcb6de6d77ba7fca9687bd109d183",
+      "target/release/game-sample-4": "46c582e927abb9d67ed42a72fcf25d31fc83783b8f8f4691bc4477fedce9586b",
+      "target/release/game": "4ff8dc8623cb82989eedc0d931f5d1ef1d4d795db9d68f5d143d9675246bbaad"
+    },
+    "freeze_check": {
+      "unchanged": true,
+      "differences": []
+    },
+    "actual_process_evidence": {
+      "run_id": "1791153238991025403-15528",
+      "tester_pid": 15528,
+      "argv": [
+        "target/release/game",
+        "run",
+        "30",
+        "--config",
+        ".game/pool-g006-reference-config.json",
+        "--no-build",
+        "--no-arena-maps",
+        "--label",
+        "pool第6世代・非公式練習場なし参考評価・既定条件フル30件",
+        "--",
+        "0"
+      ],
+      "cwd": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+      "environment_keys": [
+        "HOME",
+        "LANG",
+        "PATH"
+      ],
+      "controlled_environment": {
+        "HOME": "/home/voidlinux-1",
+        "PATH": "/home/voidlinux-1/procon37-share-20261003-g001/toolchain/bin:/usr/bin:/bin",
+        "LANG": "C.UTF-8"
+      },
+      "execution": {
+        "availableCpus": 32,
+        "jobs": 6
+      },
+      "opponent_identities": [
+        "content-v3:6abeeb40e89ecd016b5e0eb70c88cec8",
+        "content-v3:6afa2888d21f7b03f079fe05a2f3e357",
+        "content-v3:6820fb905f409b9655e64f672d8db46d",
+        "content-v3:9f107ad383c8f566ca695a5ccded5cfd"
+      ]
+    },
+    "diagnostics": {
+      "log_files": 30,
+      "model_mismatch_count": 0,
+      "validation_failure_count": 0,
+      "panic_count": 0,
+      "scope": "対象ソルバの保存stderrログに出力された診断の件数"
+    },
+    "archive_sha256": "f30ca015a5f90bd676820fe428492ee6282ff8d7331feeb12e2544a4048be90c",
+    "manifest_sha256": "17e43f2d663a76f1aaabb2d43bf6190fa210d8e569ba85b69e779b4527d461b9",
+    "comparison": {
+      "schemaVersion": 1,
+      "baseline": "1791150449580370511-14915",
+      "runs": [
+        {
+          "id": "1791150449580370511-14915",
+          "label": "pool第6世代・正式昇格判定・既定条件フル30件・試行1",
+          "importedFrom": null,
+          "status": "completed",
+          "verdict": "AC",
+          "total": 30,
+          "completed": 30,
+          "verdicts": {
+            "AC": 30,
+            "WA": 0,
+            "TLE": 0,
+            "RE": 0
+          },
+          "execution": {
+            "availableCpus": 32,
+            "jobs": 6
+          },
+          "solverParallel": false,
+          "arenaMaps": true,
+          "timeLimitMs": null
+        },
+        {
+          "id": "1791153238991025403-15528",
+          "label": "pool第6世代・非公式練習場なし参考評価・既定条件フル30件",
+          "importedFrom": null,
+          "status": "completed",
+          "verdict": "AC",
+          "total": 30,
+          "completed": 30,
+          "verdicts": {
+            "AC": 30,
+            "WA": 0,
+            "TLE": 0,
+            "RE": 0
+          },
+          "execution": {
+            "availableCpus": 32,
+            "jobs": 6
+          },
+          "solverParallel": false,
+          "arenaMaps": false,
+          "timeLimitMs": null
+        }
+      ],
+      "scopes": [
+        {
+          "format": null,
+          "seeds": 30,
+          "matched": 23,
+          "accepted": 23,
+          "different": 7,
+          "missing": 0,
+          "unavailable": 0,
+          "nonAc": 0,
+          "results": [
+            {
+              "game": {
+                "ranks": [
+                  9,
+                  6,
+                  3,
+                  4,
+                  1
+                ],
+                "averageRank": 2.217391304347826,
+                "playerAverageRanks": [
+                  2.217391304347826,
+                  3.3043478260869565,
+                  3.0,
+                  2.4782608695652173,
+                  3.3043478260869565
+                ],
+                "opponents": [
+                  {
+                    "wins": 16,
+                    "draws": 2,
+                    "losses": 5
+                  },
+                  {
+                    "wins": 16,
+                    "draws": 0,
+                    "losses": 7
+                  },
+                  {
+                    "wins": 11,
+                    "draws": 3,
+                    "losses": 9
+                  },
+                  {
+                    "wins": 16,
+                    "draws": 0,
+                    "losses": 7
+                  }
+                ],
+                "scores": [
+                  {
+                    "uniqueBrands": 421,
+                    "dailyBrands": 2863,
+                    "udon": 6106
+                  },
+                  {
+                    "uniqueBrands": 421,
+                    "dailyBrands": 2861,
+                    "udon": 5968
+                  },
+                  {
+                    "uniqueBrands": 421,
+                    "dailyBrands": 2866,
+                    "udon": 6073
+                  },
+                  {
+                    "uniqueBrands": 421,
+                    "dailyBrands": 2868,
+                    "udon": 6094
+                  },
+                  {
+                    "uniqueBrands": 421,
+                    "dailyBrands": 2865,
+                    "udon": 6022
+                  }
+                ],
+                "accepted": 23
+              },
+              "id": "1791150449580370511-14915",
+              "outcomes": null,
+              "scores": {
+                "uniqueBrands": 421,
+                "dailyBrands": 2863,
+                "udon": 6106
+              },
+              "delta": null
+            },
+            {
+              "game": {
+                "ranks": [
+                  4,
+                  10,
+                  7,
+                  2,
+                  0
+                ],
+                "averageRank": 2.3043478260869565,
+                "playerAverageRanks": [
+                  2.3043478260869565,
+                  2.9130434782608696,
+                  3.608695652173913,
+                  2.347826086956522,
+                  3.0869565217391304
+                ],
+                "opponents": [
+                  {
+                    "wins": 11,
+                    "draws": 3,
+                    "losses": 9
+                  },
+                  {
+                    "wins": 16,
+                    "draws": 2,
+                    "losses": 5
+                  },
+                  {
+                    "wins": 10,
+                    "draws": 3,
+                    "losses": 10
+                  },
+                  {
+                    "wins": 16,
+                    "draws": 1,
+                    "losses": 6
+                  }
+                ],
+                "scores": [
+                  {
+                    "uniqueBrands": 421,
+                    "dailyBrands": 2864,
+                    "udon": 6133
+                  },
+                  {
+                    "uniqueBrands": 421,
+                    "dailyBrands": 2859,
+                    "udon": 6061
+                  },
+                  {
+                    "uniqueBrands": 421,
+                    "dailyBrands": 2863,
+                    "udon": 6101
+                  },
+                  {
+                    "uniqueBrands": 421,
+                    "dailyBrands": 2867,
+                    "udon": 6123
+                  },
+                  {
+                    "uniqueBrands": 421,
+                    "dailyBrands": 2859,
+                    "udon": 6081
+                  }
+                ],
+                "accepted": 23
+              },
+              "id": "1791153238991025403-15528",
+              "outcomes": {
+                "wins": 13,
+                "draws": 1,
+                "losses": 9
+              },
+              "scores": {
+                "uniqueBrands": 421,
+                "dailyBrands": 2864,
+                "udon": 6133
+              },
+              "delta": {
+                "uniqueBrands": 0,
+                "dailyBrands": 1,
+                "udon": 27
+              }
+            }
+          ]
+        },
+        {
+          "format": "first",
+          "seeds": 10,
+          "matched": 7,
+          "accepted": 7,
+          "different": 3,
+          "missing": 0,
+          "unavailable": 0,
+          "nonAc": 0,
+          "results": [
+            {
+              "game": {
+                "ranks": [
+                  4,
+                  2,
+                  0,
+                  0,
+                  1
+                ],
+                "averageRank": 1.8571428571428572,
+                "playerAverageRanks": [
+                  1.8571428571428572,
+                  3.857142857142857,
+                  3.5714285714285716,
+                  2.0,
+                  2.857142857142857
+                ],
+                "opponents": [
+                  {
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1
+                  },
+                  {
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 1
+                  },
+                  {
+                    "wins": 3,
+                    "draws": 2,
+                    "losses": 2
+                  },
+                  {
+                    "wins": 5,
+                    "draws": 0,
+                    "losses": 2
+                  }
+                ],
+                "scores": [
+                  {
+                    "uniqueBrands": 85,
+                    "dailyBrands": 560,
+                    "udon": 1019
+                  },
+                  {
+                    "uniqueBrands": 85,
+                    "dailyBrands": 559,
+                    "udon": 995
+                  },
+                  {
+                    "uniqueBrands": 85,
+                    "dailyBrands": 560,
+                    "udon": 1000
+                  },
+                  {
+                    "uniqueBrands": 85,
+                    "dailyBrands": 564,
+                    "udon": 1018
+                  },
+                  {
+                    "uniqueBrands": 85,
+                    "dailyBrands": 559,
+                    "udon": 1004
+                  }
+                ],
+                "accepted": 7
+              },
+              "id": "1791150449580370511-14915",
+              "outcomes": null,
+              "scores": {
+                "uniqueBrands": 85,
+                "dailyBrands": 560,
+                "udon": 1019
+              },
+              "delta": null
+            },
+            {
+              "game": {
+                "ranks": [
+                  1,
+                  2,
+                  3,
+                  1,
+                  0
+                ],
+                "averageRank": 2.5714285714285716,
+                "playerAverageRanks": [
+                  2.5714285714285716,
+                  3.0,
+                  3.857142857142857,
+                  1.7142857142857142,
+                  3.2857142857142856
+                ],
+                "opponents": [
+                  {
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 2
+                  },
+                  {
+                    "wins": 5,
+                    "draws": 0,
+                    "losses": 2
+                  },
+                  {
+                    "wins": 1,
+                    "draws": 1,
+                    "losses": 5
+                  },
+                  {
+                    "wins": 5,
+                    "draws": 0,
+                    "losses": 2
+                  }
+                ],
+                "scores": [
+                  {
+                    "uniqueBrands": 85,
+                    "dailyBrands": 558,
+                    "udon": 1017
+                  },
+                  {
+                    "uniqueBrands": 85,
+                    "dailyBrands": 554,
+                    "udon": 1018
+                  },
+                  {
+                    "uniqueBrands": 85,
+                    "dailyBrands": 558,
+                    "udon": 999
+                  },
+                  {
+                    "uniqueBrands": 85,
+                    "dailyBrands": 560,
+                    "udon": 1024
+                  },
+                  {
+                    "uniqueBrands": 85,
+                    "dailyBrands": 556,
+                    "udon": 1009
+                  }
+                ],
+                "accepted": 7
+              },
+              "id": "1791153238991025403-15528",
+              "outcomes": {
+                "wins": 3,
+                "draws": 0,
+                "losses": 4
+              },
+              "scores": {
+                "uniqueBrands": 85,
+                "dailyBrands": 558,
+                "udon": 1017
+              },
+              "delta": {
+                "uniqueBrands": 0,
+                "dailyBrands": -2,
+                "udon": -2
+              }
+            }
+          ]
+        },
+        {
+          "format": "semifinal",
+          "seeds": 10,
+          "matched": 8,
+          "accepted": 8,
+          "different": 2,
+          "missing": 0,
+          "unavailable": 0,
+          "nonAc": 0,
+          "results": [
+            {
+              "game": {
+                "ranks": [
+                  2,
+                  1,
+                  1,
+                  4,
+                  0
+                ],
+                "averageRank": 2.875,
+                "playerAverageRanks": [
+                  2.875,
+                  2.875,
+                  2.375,
+                  3.125,
+                  3.25
+                ],
+                "opponents": [
+                  {
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 3
+                  },
+                  {
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 4
+                  },
+                  {
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 4
+                  },
+                  {
+                    "wins": 4,
+                    "draws": 0,
+                    "losses": 4
+                  }
+                ],
+                "scores": [
+                  {
+                    "uniqueBrands": 144,
+                    "dailyBrands": 942,
+                    "udon": 1659
+                  },
+                  {
+                    "uniqueBrands": 144,
+                    "dailyBrands": 941,
+                    "udon": 1646
+                  },
+                  {
+                    "uniqueBrands": 144,
+                    "dailyBrands": 945,
+                    "udon": 1683
+                  },
+                  {
+                    "uniqueBrands": 144,
+                    "dailyBrands": 943,
+                    "udon": 1655
+                  },
+                  {
+                    "uniqueBrands": 144,
+                    "dailyBrands": 945,
+                    "udon": 1661
+                  }
+                ],
+                "accepted": 8
+              },
+              "id": "1791150449580370511-14915",
+              "outcomes": null,
+              "scores": {
+                "uniqueBrands": 144,
+                "dailyBrands": 942,
+                "udon": 1659
+              },
+              "delta": null
+            },
+            {
+              "game": {
+                "ranks": [
+                  1,
+                  4,
+                  3,
+                  0,
+                  0
+                ],
+                "averageRank": 2.25,
+                "playerAverageRanks": [
+                  2.25,
+                  2.5,
+                  3.5,
+                  3.125,
+                  2.625
+                ],
+                "opponents": [
+                  {
+                    "wins": 2,
+                    "draws": 2,
+                    "losses": 4
+                  },
+                  {
+                    "wins": 6,
+                    "draws": 1,
+                    "losses": 1
+                  },
+                  {
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2
+                  },
+                  {
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 3
+                  }
+                ],
+                "scores": [
+                  {
+                    "uniqueBrands": 144,
+                    "dailyBrands": 945,
+                    "udon": 1678
+                  },
+                  {
+                    "uniqueBrands": 144,
+                    "dailyBrands": 944,
+                    "udon": 1670
+                  },
+                  {
+                    "uniqueBrands": 144,
+                    "dailyBrands": 944,
+                    "udon": 1678
+                  },
+                  {
+                    "uniqueBrands": 144,
+                    "dailyBrands": 946,
+                    "udon": 1659
+                  },
+                  {
+                    "uniqueBrands": 144,
+                    "dailyBrands": 942,
+                    "udon": 1660
+                  }
+                ],
+                "accepted": 8
+              },
+              "id": "1791153238991025403-15528",
+              "outcomes": {
+                "wins": 5,
+                "draws": 1,
+                "losses": 2
+              },
+              "scores": {
+                "uniqueBrands": 144,
+                "dailyBrands": 945,
+                "udon": 1678
+              },
+              "delta": {
+                "uniqueBrands": 0,
+                "dailyBrands": 3,
+                "udon": 19
+              }
+            }
+          ]
+        },
+        {
+          "format": "final",
+          "seeds": 10,
+          "matched": 8,
+          "accepted": 8,
+          "different": 2,
+          "missing": 0,
+          "unavailable": 0,
+          "nonAc": 0,
+          "results": [
+            {
+              "game": {
+                "ranks": [
+                  3,
+                  3,
+                  2,
+                  0,
+                  0
+                ],
+                "averageRank": 1.875,
+                "playerAverageRanks": [
+                  1.875,
+                  3.25,
+                  3.125,
+                  2.25,
+                  3.75
+                ],
+                "opponents": [
+                  {
+                    "wins": 6,
+                    "draws": 1,
+                    "losses": 1
+                  },
+                  {
+                    "wins": 6,
+                    "draws": 0,
+                    "losses": 2
+                  },
+                  {
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 3
+                  },
+                  {
+                    "wins": 7,
+                    "draws": 0,
+                    "losses": 1
+                  }
+                ],
+                "scores": [
+                  {
+                    "uniqueBrands": 192,
+                    "dailyBrands": 1361,
+                    "udon": 3428
+                  },
+                  {
+                    "uniqueBrands": 192,
+                    "dailyBrands": 1361,
+                    "udon": 3327
+                  },
+                  {
+                    "uniqueBrands": 192,
+                    "dailyBrands": 1361,
+                    "udon": 3390
+                  },
+                  {
+                    "uniqueBrands": 192,
+                    "dailyBrands": 1361,
+                    "udon": 3421
+                  },
+                  {
+                    "uniqueBrands": 192,
+                    "dailyBrands": 1361,
+                    "udon": 3357
+                  }
+                ],
+                "accepted": 8
+              },
+              "id": "1791150449580370511-14915",
+              "outcomes": null,
+              "scores": {
+                "uniqueBrands": 192,
+                "dailyBrands": 1361,
+                "udon": 3428
+              },
+              "delta": null
+            },
+            {
+              "game": {
+                "ranks": [
+                  2,
+                  4,
+                  1,
+                  1,
+                  0
+                ],
+                "averageRank": 2.125,
+                "playerAverageRanks": [
+                  2.125,
+                  3.25,
+                  3.5,
+                  2.125,
+                  3.375
+                ],
+                "opponents": [
+                  {
+                    "wins": 5,
+                    "draws": 0,
+                    "losses": 3
+                  },
+                  {
+                    "wins": 5,
+                    "draws": 1,
+                    "losses": 2
+                  },
+                  {
+                    "wins": 4,
+                    "draws": 1,
+                    "losses": 3
+                  },
+                  {
+                    "wins": 7,
+                    "draws": 0,
+                    "losses": 1
+                  }
+                ],
+                "scores": [
+                  {
+                    "uniqueBrands": 192,
+                    "dailyBrands": 1361,
+                    "udon": 3438
+                  },
+                  {
+                    "uniqueBrands": 192,
+                    "dailyBrands": 1361,
+                    "udon": 3373
+                  },
+                  {
+                    "uniqueBrands": 192,
+                    "dailyBrands": 1361,
+                    "udon": 3424
+                  },
+                  {
+                    "uniqueBrands": 192,
+                    "dailyBrands": 1361,
+                    "udon": 3440
+                  },
+                  {
+                    "uniqueBrands": 192,
+                    "dailyBrands": 1361,
+                    "udon": 3412
+                  }
+                ],
+                "accepted": 8
+              },
+              "id": "1791153238991025403-15528",
+              "outcomes": {
+                "wins": 5,
+                "draws": 0,
+                "losses": 3
+              },
+              "scores": {
+                "uniqueBrands": 192,
+                "dailyBrands": 1361,
+                "udon": 3438
+              },
+              "delta": {
+                "uniqueBrands": 0,
+                "dailyBrands": 0,
+                "udon": 10
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "different_problem_seeds": [
+      3,
+      7,
+      11,
+      15,
+      19,
+      23,
+      27
+    ],
+    "use": "参考データ。arenaMaps=trueの正式昇格結果を置き換えない。"
+  }
+}

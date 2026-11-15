@@ -1,0 +1,65 @@
+{
+  "runId": "1791503276339409187-91328",
+  "all48AC": true,
+  "players": [
+    {
+      "team": 0,
+      "rankSum": 16,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2964
+      },
+      "meanRank": 1.3333333333333333
+    },
+    {
+      "team": 1,
+      "rankSum": 28,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2911
+      },
+      "meanRank": 2.3333333333333335
+    },
+    {
+      "team": 2,
+      "rankSum": 40,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2847
+      },
+      "meanRank": 3.3333333333333335
+    },
+    {
+      "team": 3,
+      "rankSum": 30,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2916
+      },
+      "meanRank": 2.5
+    }
+  ],
+  "version": "D0",
+  "stage": "resume-D0-short-01",
+  "verifiedUnchanged": true,
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "分散D0・再接続配置と時計同期の基準1回目・短縮12件・10秒",
+    "players": 4,
+    "teamNames": [
+      "分散D0",
+      "固定並列",
+      "固定第6世代",
+      "固定第8世代"
+    ],
+    "timeLimitMs": 10000,
+    "serverProgram": "tester/server/procon-server"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "capturedAtUtc": "2026-10-09T02:47:29.860296+00:00",
+  "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0",
+  "logs": [
+    {
+      "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/stderr.log",
+      "capturedStartByte": 0,
+      "capturedEndByte": 172940,
+      "sha256OfCapturedByteRange": "49caf8bc2af33e77ed7d98f667da55fef709bae36a7624e5b38091b359e07832",
+      "mtimeNsAtOpen": 1791513960394886826,
+      "totalLines": 954,
+      "diagnosticLines": [
+        "dist mode=coordinator total_threads=32 cluster_threads=80 search_threads=77 session=1791513898101461380",
+        "dist peer=192.168.0.22:39370 request=1 completed=15/15 elapsed_ms=7750 rx_bytes=14068 tx_bytes=3675",
+        "dist peer=192.168.0.33:39370 request=1 completed=31/31 elapsed_ms=7818 rx_bytes=14068 tx_bytes=3675",
+        "dist request=1 external_request=0 phase=select input_digest=f9ee3a0ac6b16910 selected_worker=56 value=76531.101 local_completed=31/31 remote_results=2/2 elapsed_ms=7884 state_digest=0e528dd1a24d8687",
+        "dist peer=192.168.0.22:39370 request=2 completed=15/15 elapsed_ms=8545 rx_bytes=47122 tx_bytes=28236",
+        "dist peer=192.168.0.33:39370 request=2 completed=31/31 elapsed_ms=8613 rx_bytes=47043 tx_bytes=28236",
+        "dist request=2 external_request=1 phase=plan input_digest=ddc0bef5c27bce70 selected_worker=9 value=76535.409 local_completed=31/31 remote_results=2/2 elapsed_ms=8678 state_digest=b33d52f73ef4e883",
+        "dist peer=192.168.0.22:39370 request=3 completed=15/15 elapsed_ms=8488 rx_bytes=83932 tx_bytes=70855",
+        "dist peer=192.168.0.33:39370 request=3 completed=31/31 elapsed_ms=8527 rx_bytes=83876 tx_bytes=70855",
+        "dist request=3 external_request=2 phase=plan input_digest=5f730faaaace6bfd selected_worker=23 value=75728.252 local_completed=31/31 remote_results=2/2 elapsed_ms=8596 state_digest=1b3c84ccaf7c3482",
+        "dist peer=192.168.0.22:39370 request=4 completed=15/15 elapsed_ms=8443 rx_bytes=125646 tx_bytes=117685",
+        "dist peer=192.168.0.33:39370 request=4 completed=31/31 elapsed_ms=8512 rx_bytes=125528 tx_bytes=117685",
+        "dist request=4 external_request=3 phase=plan input_digest=19312efac81969e3 selected_worker=59 value=75690.839 local_completed=31/31 remote_results=2/2 elapsed_ms=8579 state_digest=76b8eafdb2a4ae60",
+        "dist peer=192.168.0.22:39370 request=5 completed=15/15 elapsed_ms=8450 rx_bytes=166720 tx_bytes=169368",
+        "dist peer=192.168.0.33:39370 request=5 completed=31/31 elapsed_ms=8517 rx_bytes=166559 tx_bytes=169368",
+        "dist request=5 external_request=4 phase=plan input_digest=e1bbca912a523dfb selected_worker=4 value=76027.365 local_completed=31/31 remote_results=2/2 elapsed_ms=8584 state_digest=7cb3e386c72b6816",
+        "dist peer=192.168.0.22:39370 request=6 completed=15/15 elapsed_ms=8122 rx_bytes=206760 tx_bytes=220402",
+        "dist peer=192.168.0.33:39370 request=6 completed=31/31 elapsed_ms=8188 rx_bytes=206627 tx_bytes=220402",
+        "dist request=6 external_request=5 phase=plan input_digest=6a7316f9b99b9537 selected_worker=3 value=43399.324 local_completed=31/31 remote_results=2/2 elapsed_ms=8261 state_digest=5afe6e99ad649b2b"
+      ],
+      "crossEliteLines": [],
+      "sharedGraphLines": [],
+      "flags": {
+        "timeout": {
+          "count": 0,
+          "samples": []
+        },
+        "deadline": {
+          "count": 0,
+          "samples": []
+        },
+        "fallback": {
+          "count": 5,
+          "samples": [
+            "c011 terminal day=0 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+            "c011 terminal day=1 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+            "c011 terminal day=2 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+            "c011 terminal day=3 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback",
+            "c011 terminal day=4 active=0 build_us=0 far=0 thin=0 penalty=0 reason=short_fallback"
+          ]
+        },
+        "panic": {
+          "count": 0,
+          "samples": []
+        },
+        "rejected": {
+          "count": 0,
+          "samples": []
+        },
+        "unavailable": {
+          "count": 0,
+          "samples": []
+        },
+        "disconnected": {
+          "count": 0,
+          "samples": []
+        }
+      }
+    }
+  ]
+}

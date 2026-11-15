@@ -1,0 +1,276 @@
+{
+  "requestedAfter": "H2-D0-short-02",
+  "capturedAtJst": "2026-10-10T00:44:58.754334+09:00",
+  "teamStop": {
+    "local3": {
+      "record": {
+        "pid": 34389,
+        "startTicks": "951348",
+        "state": "R",
+        "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422",
+        "session": 34389,
+        "uid": 1000,
+        "command": [
+          "python3",
+          "/home/imak/work/procon37/.server/distributed/team3/resume-team-runner.py",
+          "--bridge",
+          "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+          "--solver",
+          "/home/imak/work/procon37/.server/distributed/launchers/generation8.sh",
+          "--server",
+          "http://192.168.0.81:11451",
+          "--team",
+          "3",
+          "--cpus",
+          "2"
+        ],
+        "startedUnix": 1791557535.217642,
+        "log": "/home/imak/work/procon37/.server/distributed/team3/resume-team.log"
+      },
+      "alive": false
+    },
+    "local2": {
+      "record": {
+        "pid": 34385,
+        "startTicks": "951314",
+        "state": "R",
+        "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422",
+        "session": 34385,
+        "uid": 1000,
+        "command": [
+          "python3",
+          "/home/imak/work/procon37/.server/distributed/team2/resume-team-runner.py",
+          "--bridge",
+          "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+          "--solver",
+          "/home/imak/work/procon37/.server/distributed/launchers/generation6.sh",
+          "--server",
+          "http://192.168.0.81:11451",
+          "--team",
+          "2",
+          "--cpus",
+          "0"
+        ],
+        "startedUnix": 1791557534.8796487,
+        "log": "/home/imak/work/procon37/.server/distributed/team2/resume-team.log"
+      },
+      "alive": false
+    },
+    "nomlab": {
+      "record": {
+        "pid": 6609,
+        "startTicks": "938381",
+        "state": "R",
+        "bootId": "6c4c3c67-7b03-49c0-9073-e209bfa9cf68",
+        "session": 6609,
+        "uid": 1000,
+        "command": [
+          "python3",
+          "/home/nomlab-ubuntu/procon37-distributed/resume-team-runner.py",
+          "--bridge",
+          "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+          "--solver",
+          "/home/nomlab-ubuntu/procon37-distributed/launcher",
+          "--server",
+          "http://192.168.0.81:11451",
+          "--team",
+          "1",
+          "--cpus",
+          "0-15"
+        ],
+        "startedUnix": 1791557534.438974,
+        "log": "/home/nomlab-ubuntu/procon37-distributed/resume-team.log"
+      },
+      "alive": false
+    },
+    "v1": {
+      "record": {
+        "pid": 4389,
+        "startTicks": "1138251",
+        "state": "R",
+        "bootId": "7393e939-6ceb-4ae1-80dd-666ab95671f1",
+        "session": 4389,
+        "uid": 1000,
+        "command": [
+          "python3",
+          "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team-runner.py",
+          "--bridge",
+          "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+          "--solver",
+          "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+          "--server",
+          "http://192.168.0.81:11451",
+          "--team",
+          "0",
+          "--cpus",
+          "0-31"
+        ],
+        "startedUnix": 1791559665.5172546,
+        "log": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team.log"
+      },
+      "alive": false
+    },
+    "v3": {
+      "record": {
+        "pid": 1484,
+        "startTicks": "309807",
+        "state": "R",
+        "bootId": "f828f174-169c-4a64-91c8-a220c554ae58",
+        "session": 1484,
+        "uid": 1000,
+        "command": [
+          "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/launcher"
+        ],
+        "startedUnix": 1791559664.9028084,
+        "log": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/resume-team.log"
+      },
+      "alive": false
+    },
+    "v2": {
+      "record": {
+        "pid": 2357,
+        "startTicks": "1166094",
+        "state": "R",
+        "bootId": "9903a715-edd1-4b7b-afba-100dd929dbaf",
+        "session": 2357,
+        "uid": 1000,
+        "command": [
+          "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/launcher"
+        ],
+        "startedUnix": 1791559664.2827516,
+        "log": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/resume-team.log"
+      },
+      "alive": false
+    }
+  },
+  "nodes": {
+    "v1": {
+      "delete": {
+        "exitCode": 0,
+        "stdout": "200 OK\n",
+        "stderr": ""
+      },
+      "sourcesAfter": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n",
+      "persistentConfiguration": {
+        "/etc/chrony.conf": {
+          "sha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "expected": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "unchanged": true
+        }
+      },
+      "remainingProcesses": [],
+      "listeningEvaluationPorts": [],
+      "deploymentSha256": {
+        "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "a7c37a7546fee4a62d2c0d5a9f82838e10793e2c3f9a08cd686d9c19c93c5b1a",
+        "resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118"
+      }
+    },
+    "v2": {
+      "delete": {
+        "exitCode": 0,
+        "stdout": "200 OK\n",
+        "stderr": ""
+      },
+      "sourcesAfter": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n",
+      "persistentConfiguration": {
+        "/etc/chrony.conf": {
+          "sha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "expected": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "unchanged": true
+        }
+      },
+      "remainingProcesses": [],
+      "listeningEvaluationPorts": [],
+      "deploymentSha256": {
+        "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "cf8cd970a097cc64548e4471e6d68806ec41ab3aa8fdb3544647b27e893474ce"
+      }
+    },
+    "v3": {
+      "delete": {
+        "exitCode": 0,
+        "stdout": "200 OK\n",
+        "stderr": ""
+      },
+      "sourcesAfter": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n",
+      "persistentConfiguration": {
+        "/etc/chrony.conf": {
+          "sha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "expected": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "unchanged": true
+        }
+      },
+      "remainingProcesses": [],
+      "listeningEvaluationPorts": [],
+      "deploymentSha256": {
+        "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "e41fd115af140cd5260f36b0a8f88749f3c1ae7edf67c176a8a4ceef1cec21af"
+      }
+    },
+    "nomlab": {
+      "delete": {
+        "exitCode": 0,
+        "stdout": "200 OK\n",
+        "stderr": ""
+      },
+      "sourcesAfter": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n",
+      "persistentConfiguration": {
+        "/etc/chrony/chrony.conf": {
+          "sha256": "3d3bb53ddee1a78de319508913c08b34891b66e5e168356f2d9ca217ab85ba68",
+          "expected": "3d3bb53ddee1a78de319508913c08b34891b66e5e168356f2d9ca217ab85ba68",
+          "unchanged": true
+        },
+        "/etc/chrony/sources.d/ubuntu-ntp-pools.sources": {
+          "sha256": "e5eb19e7e5dd56164698bfd44b24a76d40f517de84245726b953c4a681c8f095",
+          "expected": "e5eb19e7e5dd56164698bfd44b24a76d40f517de84245726b953c4a681c8f095",
+          "unchanged": true
+        },
+        "/etc/chrony/conf.d/ubuntu-nts.conf": {
+          "sha256": "4355f44d20dc1bda2db04ea005910c7742cd244aa6f688a0da75aca3544c157a",
+          "expected": "4355f44d20dc1bda2db04ea005910c7742cd244aa6f688a0da75aca3544c157a",
+          "unchanged": true
+        }
+      },
+      "remainingProcesses": [],
+      "listeningEvaluationPorts": [],
+      "deploymentSha256": {
+        "bin/distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+        "resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+        "run.sh": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27"
+      }
+    }
+  },
+  "clockRecord": {
+    "pid": 34258,
+    "bind": "192.168.0.81",
+    "port": 32123,
+    "startedUnix": 1791557464.7104132,
+    "startTicks": "944294",
+    "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422",
+    "clock": "CLOCK_REALTIME / time.time_ns; same host as problem server",
+    "source": "/home/imak/work/procon37/solver/distributed-lab/clock_sync.py",
+    "allowedClients": [
+      "127.0.0.1",
+      "192.168.0.11",
+      "192.168.0.22",
+      "192.168.0.33",
+      "192.168.0.55",
+      "192.168.0.81"
+    ]
+  },
+  "configurationSha256": "0e674c8616fb1134180ba008be7b6710c4f6a49ce82c41feb4db54ec70198d98",
+  "newEvaluationStarted": false,
+  "clockStopped": true,
+  "local": {
+    "remainingProcesses": [],
+    "listeningEvaluationPorts": [],
+    "serverAlive": false
+  },
+  "success": true
+}

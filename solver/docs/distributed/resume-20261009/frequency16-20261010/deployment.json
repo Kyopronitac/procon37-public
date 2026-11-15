@@ -1,0 +1,149 @@
+{
+  "status": "completed",
+  "startedUnix": 1791579890.1407979,
+  "candidate": "C013",
+  "release": "procon37-competition/releases/C013-6cdcd06d40e4",
+  "stableEntry": "/home/voidlinux-1/procon37-competition/run.sh",
+  "solverSha256": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+  "bridgeSha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+  "archiveSha256": "ed17d98e11334ab129311865db9cca2a388a19ec444f650b690424ed14bee497",
+  "cleanupSha256": "899579ea44c725abe037c96cf8bf78502675fd4aaa66621473813f63e5ade790",
+  "competitionServerConfigured": false,
+  "competitionTokenConfigured": false,
+  "protocolVersion": 4,
+  "crossElite": true,
+  "submitAtMs": [
+    5000,
+    15000,
+    25000,
+    35000,
+    45000,
+    55000
+  ],
+  "threads": [
+    32,
+    16,
+    32
+  ],
+  "workerPort": 39371,
+  "deployOutput": "\rvoidlinux-1@192.168.0.11's  \r\nv1: package, token permissions and CPU allocation OK\r\nv2: package, token permissions and CPU allocation OK\r\nv3: package, token permissions and CPU allocation OK\r\n[deploy] All three nodes deployed and verified. Processes have not been started.\r\n",
+  "deployedUnix": 1791579893.060595,
+  "probeStartedUnix": 1791579914.6240764,
+  "probeOutput": "\rvoidlinux-1@192.168.0.11's  \r\nv1: package, token permissions and CPU allocation OK\r\nv2: package, token permissions and CPU allocation OK\r\nv3: package, token permissions and CPU allocation OK\r\ndist mode=worker listen=192.168.0.22:39371 total_threads=16 search_threads=15 offset=31 pid=4041 cross_elite=true\r\nv2: started PID 4041\r\ndist mode=worker listen=192.168.0.33:39371 total_threads=32 search_threads=31 offset=46 pid=2321 cross_elite=true\r\nv3: started PID 2321\r\ndist accepted_peer=192.168.0.11:60866\r\nv2: wired TCP authentication OK (15 search threads)\r\ndist accepted_peer=192.168.0.11:49330\r\ndist worker connection_closed=peer disconnected\r\nv3: wired TCP authentication OK (31 search threads)\r\ndist mode=coordinator total_threads=32 cluster_threads=80 search_threads=77 session=1791579916795996357 cross_elite=true\r\ndist worker connection_closed=peer disconnected\r\nv3: stopped owned PIDs 2321\r\nv2: stopped owned PIDs 4041\r\n[competition] probe_ok wire=4 cross_elite=on threads=32,16,32 requests=0 http=0\r\n",
+  "probeFinishedUnix": 1791579917.3579893,
+  "activateOutput": "\rvoidlinux-1@192.168.0.11's  \r\nv1: package, token permissions and CPU allocation OK\r\nv2: package, token permissions and CPU allocation OK\r\nv3: package, token permissions and CPU allocation OK\r\n/home/voidlinux-1/procon37-competition/run.sh\r\n/home/voidlinux-2/procon37-competition/run.sh\r\n/home/voidlinux-3/procon37-competition/run.sh\r\n",
+  "activatedUnix": 1791579918.4918184,
+  "entryChecks": {
+    "unsetEndpointExit": 1,
+    "unsetEndpointConsole": "[run.sh] solver_exited result=start_failed reason=endpoint_unset\n[run.sh] solver_exited result=runner_stopped exit_code=1\n",
+    "statusUsesStoredPrivateSshCredential": true,
+    "status": [
+      {
+        "role": "v1",
+        "running": false,
+        "pid": null,
+        "identity_mismatch": false,
+        "orphans": []
+      },
+      {
+        "role": "v2",
+        "running": false,
+        "pid": 4041,
+        "identity_mismatch": false,
+        "orphans": []
+      },
+      {
+        "role": "v3",
+        "running": false,
+        "pid": 2321,
+        "identity_mismatch": false,
+        "orphans": []
+      }
+    ]
+  },
+  "postflight": {
+    "v1": {
+      "hostname": "VOIDLINUX-1",
+      "releaseDirectory": "/home/voidlinux-1/procon37-competition/releases/C013-6cdcd06d40e4",
+      "stableEntry": "/home/voidlinux-1/procon37-competition/run.sh",
+      "stableMode": "0o700",
+      "manifest": {
+        "bin/distributed-solver": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+        "bin/server-bridge": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+        "console.py": "253ece9c44c1b2e7a1cce189740ecc913566513045cbb1759be59fd173d5626f",
+        "distributed.py": "5c252667e7d24fe2da2b7fb8516812580b671470be8a1a0f854024b16b4d4724",
+        "node-config.json": "139722b512519fe0a51c768b249eceaf3931bb7fd86376d95767f92f22f1eaea",
+        "progress.py": "2cd0631299adf89ecb3e3c4b913fa0e6856bcbb78a219cd11d12787268a2a94f",
+        "run.sh": "39a52a1416436205213bf7117a47c63365169bf4a4a7569391f041a2f2b310df",
+        "runtime_base.py": "7ab56ef168dbb703b9c97f0f62226d93d5bbd0cb79df8d9939c0e43099c4bab9",
+        "selection.json": "4feb9ba5e1d321494776e31d3995cbb68a575dd820f23ff549a0169d5187649a"
+      },
+      "solverSha256": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+      "bridgeSha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+      "cpuAllocation": "0-31",
+      "runShExecutable": true,
+      "shellSyntax": "OK",
+      "remainingProcesses": [],
+      "competitionTokenPresent": false,
+      "runtimeSettingsPresent": false
+    },
+    "v2": {
+      "hostname": "VOIDLINUX-2",
+      "releaseDirectory": "/home/voidlinux-2/procon37-competition/releases/C013-6cdcd06d40e4",
+      "stableEntry": "/home/voidlinux-2/procon37-competition/run.sh",
+      "stableMode": "0o700",
+      "manifest": {
+        "bin/distributed-solver": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+        "bin/server-bridge": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+        "console.py": "253ece9c44c1b2e7a1cce189740ecc913566513045cbb1759be59fd173d5626f",
+        "distributed.py": "5c252667e7d24fe2da2b7fb8516812580b671470be8a1a0f854024b16b4d4724",
+        "node-config.json": "139722b512519fe0a51c768b249eceaf3931bb7fd86376d95767f92f22f1eaea",
+        "progress.py": "2cd0631299adf89ecb3e3c4b913fa0e6856bcbb78a219cd11d12787268a2a94f",
+        "run.sh": "39a52a1416436205213bf7117a47c63365169bf4a4a7569391f041a2f2b310df",
+        "runtime_base.py": "7ab56ef168dbb703b9c97f0f62226d93d5bbd0cb79df8d9939c0e43099c4bab9",
+        "selection.json": "4feb9ba5e1d321494776e31d3995cbb68a575dd820f23ff549a0169d5187649a"
+      },
+      "solverSha256": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+      "bridgeSha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+      "cpuAllocation": "0-15",
+      "runShExecutable": true,
+      "shellSyntax": "OK",
+      "remainingProcesses": [],
+      "competitionTokenPresent": false,
+      "runtimeSettingsPresent": false
+    },
+    "v3": {
+      "hostname": "VOIDLINUX-3",
+      "releaseDirectory": "/home/voidlinux-3/procon37-competition/releases/C013-6cdcd06d40e4",
+      "stableEntry": "/home/voidlinux-3/procon37-competition/run.sh",
+      "stableMode": "0o700",
+      "manifest": {
+        "bin/distributed-solver": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+        "bin/server-bridge": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+        "console.py": "253ece9c44c1b2e7a1cce189740ecc913566513045cbb1759be59fd173d5626f",
+        "distributed.py": "5c252667e7d24fe2da2b7fb8516812580b671470be8a1a0f854024b16b4d4724",
+        "node-config.json": "139722b512519fe0a51c768b249eceaf3931bb7fd86376d95767f92f22f1eaea",
+        "progress.py": "2cd0631299adf89ecb3e3c4b913fa0e6856bcbb78a219cd11d12787268a2a94f",
+        "run.sh": "39a52a1416436205213bf7117a47c63365169bf4a4a7569391f041a2f2b310df",
+        "runtime_base.py": "7ab56ef168dbb703b9c97f0f62226d93d5bbd0cb79df8d9939c0e43099c4bab9",
+        "selection.json": "4feb9ba5e1d321494776e31d3995cbb68a575dd820f23ff549a0169d5187649a"
+      },
+      "solverSha256": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+      "bridgeSha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+      "cpuAllocation": "0-31",
+      "runShExecutable": true,
+      "shellSyntax": "OK",
+      "remainingProcesses": [],
+      "competitionTokenPresent": false,
+      "runtimeSettingsPresent": false
+    }
+  },
+  "completedUnix": 1791579973.2197192,
+  "remainingProductionProcesses": 0,
+  "bootstrapRecordSha256": "80f788a6f2521f3fb213974326cd12f3742e6ff0c6e937511ed561d869d6ab61",
+  "completedAtJst": "2026-10-10 06:06:13 JST",
+  "productionSourceFrozen": true,
+  "evaluationSolverAndBridgeUnchanged": true,
+  "productionEntryUserEditable": true,
+  "runtimeCredentialIncludedInGitOrArchive": false
+}

@@ -1,0 +1,151 @@
+<mxfile host="65bd71144e">
+  <diagram id="score-priority" name="勝敗判定の優先順位と4日間の計算例">
+    <mxGraphModel dx="1023" dy="704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1120" pageHeight="465" math="1" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="example-heading" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#97283C;fontSize=24;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="4 日間の獲得例" vertex="1">
+          <mxGeometry height="36" width="350" x="10" y="2" as="geometry" />
+        </mxCell>
+        <mxCell id="day-card-0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F3F5;strokeColor=#6B7280;strokeWidth=2;arcSize=12;" value="" vertex="1">
+          <mxGeometry height="100" width="266" x="10" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="day-title-0" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=19;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="1 日目" vertex="1">
+          <mxGeometry height="26" width="85" x="25" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="day-time-0" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#6B7280;fontSize=16;fontStyle=0;align=right;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="回答 1.2 秒" vertex="1">
+          <mxGeometry height="24" width="112" x="148" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="ball-0-0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dc2626;strokeColor=#ffffff;strokeWidth=2;fontColor=#ffffff;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;" value="A" vertex="1">
+          <mxGeometry height="38" width="38" x="79" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="ball-0-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dc2626;strokeColor=#ffffff;strokeWidth=2;fontColor=#ffffff;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;" value="A" vertex="1">
+          <mxGeometry height="38" width="38" x="124" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="ball-0-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0284c7;strokeColor=#ffffff;strokeWidth=2;fontColor=#ffffff;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;" value="B" vertex="1">
+          <mxGeometry height="38" width="38" x="169" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="day-card-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F3F5;strokeColor=#6B7280;strokeWidth=2;arcSize=12;" value="" vertex="1">
+          <mxGeometry height="100" width="266" x="286" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="day-title-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=19;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="2 日目" vertex="1">
+          <mxGeometry height="26" width="85" x="301" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="day-time-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#6B7280;fontSize=16;fontStyle=0;align=right;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="回答 1.4 秒" vertex="1">
+          <mxGeometry height="24" width="112" x="424" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="ball-1-0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dc2626;strokeColor=#ffffff;strokeWidth=2;fontColor=#ffffff;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;" value="A" vertex="1">
+          <mxGeometry height="38" width="38" x="355" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="ball-1-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#16a34a;strokeColor=#ffffff;strokeWidth=2;fontColor=#ffffff;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;" value="C" vertex="1">
+          <mxGeometry height="38" width="38" x="400" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="ball-1-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#16a34a;strokeColor=#ffffff;strokeWidth=2;fontColor=#ffffff;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;" value="C" vertex="1">
+          <mxGeometry height="38" width="38" x="445" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="day-card-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F3F5;strokeColor=#6B7280;strokeWidth=2;arcSize=12;" value="" vertex="1">
+          <mxGeometry height="100" width="266" x="562" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="day-title-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=19;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="3 日目" vertex="1">
+          <mxGeometry height="26" width="85" x="577" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="day-time-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#6B7280;fontSize=16;fontStyle=0;align=right;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="回答 1.0 秒" vertex="1">
+          <mxGeometry height="24" width="112" x="700" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="ball-2-0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0284c7;strokeColor=#ffffff;strokeWidth=2;fontColor=#ffffff;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;" value="B" vertex="1">
+          <mxGeometry height="38" width="38" x="653.5" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="ball-2-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#0284c7;strokeColor=#ffffff;strokeWidth=2;fontColor=#ffffff;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;" value="B" vertex="1">
+          <mxGeometry height="38" width="38" x="698.5" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="day-card-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F3F5;strokeColor=#6B7280;strokeWidth=2;arcSize=12;" value="" vertex="1">
+          <mxGeometry height="100" width="266" x="838" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="day-title-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=19;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="4 日目" vertex="1">
+          <mxGeometry height="26" width="85" x="853" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="day-time-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#6B7280;fontSize=16;fontStyle=0;align=right;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="回答 1.3 秒" vertex="1">
+          <mxGeometry height="24" width="112" x="976" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="ball-3-0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#16a34a;strokeColor=#ffffff;strokeWidth=2;fontColor=#ffffff;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;" value="C" vertex="1">
+          <mxGeometry height="38" width="38" x="929.5" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="ball-3-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dc2626;strokeColor=#ffffff;strokeWidth=2;fontColor=#ffffff;fontSize=19;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;" value="A" vertex="1">
+          <mxGeometry height="38" width="38" x="974.5" y="91" as="geometry" />
+        </mxCell>
+        <mxCell id="priority-row-0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2F5;strokeColor=#97283C;strokeWidth=2;arcSize=12;" value="" vertex="1">
+          <mxGeometry height="70" width="1094" x="10" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="rank-0" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#97283C;strokeColor=#97283C;fontColor=#FFFFFF;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;strokeWidth=2;" value="1" vertex="1">
+          <mxGeometry height="42" width="42" x="27" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="criterion-0" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="試合全体で獲得したうどんの種類数" vertex="1">
+          <mxGeometry height="30" width="425" x="83" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="calculation-0" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=21;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="{A, B, C}" vertex="1">
+          <mxGeometry height="42" width="390" x="530" y="172" as="geometry" />
+        </mxCell>
+        <mxCell id="result-0" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#97283C;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="3 種類" vertex="1">
+          <mxGeometry height="36" width="168" x="926" y="163" as="geometry" />
+        </mxCell>
+        <mxCell id="preference-0" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#6B7280;fontSize=15;fontStyle=0;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="多い方が勝ち" vertex="1">
+          <mxGeometry height="23" width="168" x="926" y="197" as="geometry" />
+        </mxCell>
+        <mxCell id="priority-row-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F3F5;strokeColor=#6B7280;strokeWidth=2;arcSize=12;" value="" vertex="1">
+          <mxGeometry height="70" width="1094" x="10" y="233" as="geometry" />
+        </mxCell>
+        <mxCell id="rank-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#97283C;strokeColor=#97283C;fontColor=#FFFFFF;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;strokeWidth=2;" value="2" vertex="1">
+          <mxGeometry height="42" width="42" x="27" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="criterion-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="各日に獲得したうどんの種類数の合計" vertex="1">
+          <mxGeometry height="30" width="425" x="83" y="253" as="geometry" />
+        </mxCell>
+        <mxCell id="calculation-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=21;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="2 ＋ 2 ＋ 1 ＋ 2" vertex="1">
+          <mxGeometry height="42" width="390" x="530" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="result-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#97283C;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="7" vertex="1">
+          <mxGeometry height="36" width="168" x="926" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="preference-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#6B7280;fontSize=15;fontStyle=0;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="多い方が勝ち" vertex="1">
+          <mxGeometry height="23" width="168" x="926" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="priority-row-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F3F5;strokeColor=#6B7280;strokeWidth=2;arcSize=12;" value="" vertex="1">
+          <mxGeometry height="70" width="1094" x="10" y="308" as="geometry" />
+        </mxCell>
+        <mxCell id="rank-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#97283C;strokeColor=#97283C;fontColor=#FFFFFF;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;strokeWidth=2;" value="3" vertex="1">
+          <mxGeometry height="42" width="42" x="27" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="criterion-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="試合全体で獲得したうどんの玉数" vertex="1">
+          <mxGeometry height="30" width="425" x="83" y="328" as="geometry" />
+        </mxCell>
+        <mxCell id="calculation-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=21;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="3 ＋ 3 ＋ 2 ＋ 2" vertex="1">
+          <mxGeometry height="42" width="390" x="530" y="322" as="geometry" />
+        </mxCell>
+        <mxCell id="result-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#97283C;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="10 玉" vertex="1">
+          <mxGeometry height="36" width="168" x="926" y="313" as="geometry" />
+        </mxCell>
+        <mxCell id="preference-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#6B7280;fontSize=15;fontStyle=0;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="多い方が勝ち" vertex="1">
+          <mxGeometry height="23" width="168" x="926" y="347" as="geometry" />
+        </mxCell>
+        <mxCell id="priority-row-3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F1F3F5;strokeColor=#6B7280;strokeWidth=2;arcSize=12;" value="" vertex="1">
+          <mxGeometry height="70" width="1094" x="10" y="383" as="geometry" />
+        </mxCell>
+        <mxCell id="rank-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#97283C;strokeColor=#97283C;fontColor=#FFFFFF;fontSize=24;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;strokeWidth=2;" value="4" vertex="1">
+          <mxGeometry height="42" width="42" x="27" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="criterion-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="各日の最後の有効な回答までの時間" vertex="1">
+          <mxGeometry height="30" width="425" x="83" y="403" as="geometry" />
+        </mxCell>
+        <mxCell id="calculation-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=21;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="1.2 ＋ 1.4 ＋ 1.0 ＋ 1.3" vertex="1">
+          <mxGeometry height="42" width="390" x="530" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="result-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#97283C;fontSize=26;fontStyle=1;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="4.9 秒" vertex="1">
+          <mxGeometry height="36" width="168" x="926" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="preference-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#6B7280;fontSize=15;fontStyle=0;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="少ない方が勝ち" vertex="1">
+          <mxGeometry height="23" width="168" x="926" y="422" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

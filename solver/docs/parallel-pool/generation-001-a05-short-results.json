@@ -1,0 +1,15 @@
+{
+  "run_json": "/tmp/p0-g001-a05.lg42nlz7/1791379419976734531-239176/run.json",
+  "rank_sums": [
+    7,
+    9,
+    10,
+    12,
+    17,
+    7
+  ],
+  "all_18_ac": true,
+  "developer_decision": "同率首位のため予選形式の改善を継続",
+  "formal_requested": false,
+  "owner": "/root/generation_001_p0"
+}

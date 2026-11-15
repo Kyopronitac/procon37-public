@@ -1,0 +1,30 @@
+{
+  "sourceAggregateSha256": "906869314d90e4aab5d5d42d9fba95396d25a509b4247759a24e5b87c400155b",
+  "reviewType": "read-only, no execution",
+  "reviewers": [
+    "/root",
+    "/root/evaluation_audit",
+    "/root/gpu_inspect"
+  ],
+  "materialFindings": [
+    {
+      "file": "pool.rs",
+      "line": 328,
+      "issue": "C010 group3-only bus dispatch remains, so other six donor groups cannot publish through the real pool path",
+      "plannedFix": "All Plan workers receive bus; Select and off remain None. Actual begin_cross job-channel regression and non-reserve15 donor localhost regression."
+    }
+  ],
+  "otherMaterialFindings": 0,
+  "limits": [
+    "Compilation and execution not yet performed",
+    "25ms cooperative beam deadline is not a strict wall-clock bound",
+    "Timing or score effects unproven"
+  ],
+  "status": "identified issue fixed; new source read-only review passed; execution pending",
+  "fixedSourceAggregateSha256": "10acfa3bde81f1dddf1d80ed4ff2fbe0288395fc4eb6dd0923a410607ed8a541",
+  "fixVerifiedBy": [
+    "/root",
+    "/root/gpu_inspect"
+  ],
+  "fixScope": "one production dispatch condition plus actual job-channel regression and non-reserve15 donor TCP regression; inverse-transform recovered original aggregate"
+}

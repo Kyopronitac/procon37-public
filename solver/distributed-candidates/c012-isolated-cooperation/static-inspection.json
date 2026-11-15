@@ -1,0 +1,39 @@
+{
+  "status": "source comparison only; no compile, tests or execution",
+  "checks": {
+    "terminal_value": true,
+    "evaluate": true,
+    "initial": true,
+    "prefix_value": true,
+    "beam_car": true,
+    "fleet_pool": true,
+    "horizon": true,
+    "collector_plan": true,
+    "GraphImplementation": true,
+    "outerBudgetAndRolloutFormula": true,
+    "D0SourceStillUnchanged": true,
+    "C010SourceStillUnchanged": true,
+    "PlanBusDispatchNoLongerFiltersReserveGroup": true,
+    "c010-cross-eliteSourceManifestStillMatches": true,
+    "c011-terminal-reachabilitySourceManifestStillMatches": true
+  },
+  "sourceSha256": "10acfa3bde81f1dddf1d80ed4ff2fbe0288395fc4eb6dd0923a410607ed8a541",
+  "revisionHistory": [
+    {
+      "date": "2026-10-09",
+      "previousSourceSha256": "906869314d90e4aab5d5d42d9fba95396d25a509b4247759a24e5b87c400155b",
+      "newSourceSha256": "10acfa3bde81f1dddf1d80ed4ff2fbe0288395fc4eb6dd0923a410607ed8a541",
+      "changedFiles": [
+        "pool.rs",
+        "tests/network.rs"
+      ],
+      "reason": "read-only review found the inherited C010 group3 filter in SearchPool::begin_cross prevented six donor groups from receiving Job.cross",
+      "productionChange": "Plan jobs receive the optional bus in every group; Select remains excluded; receiver Elite/donor isolation unchanged",
+      "regressionsAdded": [
+        "pool::synchronization_tests::begin_cross_dispatches_all_groups_but_never_selection_or_off",
+        "network::non_reserve15_donors_reach_receiver_through_real_pool_and_tcp"
+      ],
+      "executionStatus": "prepared only; build/tests/remote not executed"
+    }
+  ]
+}

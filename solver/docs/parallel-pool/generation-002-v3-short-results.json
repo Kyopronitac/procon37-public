@@ -1,0 +1,70 @@
+{
+  "path": "/tmp/g002-p1/v3/runs/1791390259964043917-261152/run.json",
+  "status": "completed",
+  "completed": 6,
+  "total": 6,
+  "teams": [
+    {
+      "id": 0,
+      "rankSum": 18,
+      "AC": 6,
+      "score": {
+        "uniqueBrands": 111,
+        "dailyBrands": 640,
+        "udon": 1166
+      }
+    },
+    {
+      "id": 1,
+      "rankSum": 12,
+      "AC": 6,
+      "score": {
+        "uniqueBrands": 111,
+        "dailyBrands": 640,
+        "udon": 1175
+      }
+    },
+    {
+      "id": 2,
+      "rankSum": 18,
+      "AC": 6,
+      "score": {
+        "uniqueBrands": 111,
+        "dailyBrands": 640,
+        "udon": 1168
+      }
+    },
+    {
+      "id": 3,
+      "rankSum": 15,
+      "AC": 6,
+      "score": {
+        "uniqueBrands": 111,
+        "dailyBrands": 640,
+        "udon": 1177
+      }
+    },
+    {
+      "id": 4,
+      "rankSum": 23,
+      "AC": 6,
+      "score": {
+        "uniqueBrands": 111,
+        "dailyBrands": 638,
+        "udon": 1146
+      }
+    },
+    {
+      "id": 5,
+      "rankSum": 25,
+      "AC": 6,
+      "score": {
+        "uniqueBrands": 111,
+        "dailyBrands": 636,
+        "udon": 1159
+      }
+    }
+  ],
+  "allAC": true,
+  "candidateSoleFirst": true
+}

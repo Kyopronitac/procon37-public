@@ -1,0 +1,127 @@
+{
+  "mode": "game",
+  "opponents": [
+    {
+      "name": "pool-generation-002",
+      "solver": {
+        "program": "/home/bandai/Work/procon37/target/release/game-sample-1",
+        "args": [
+          "0"
+        ],
+        "cwd": "/home/bandai/Work/procon37",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": "/home/bandai/Work/procon37",
+        "env": {}
+      },
+      "solverParallel": false,
+      "version": "pool-generation-002-run-1790551749037999892-54402-v1"
+    },
+    {
+      "name": "pool-generation-001",
+      "solver": {
+        "program": "/home/bandai/Work/procon37/target/release/game-sample-2",
+        "args": [
+          "0"
+        ],
+        "cwd": "/home/bandai/Work/procon37",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": "/home/bandai/Work/procon37",
+        "env": {}
+      },
+      "solverParallel": false,
+      "version": "pool-generation-001-run-1790521499134996039-41850-v1"
+    },
+    {
+      "name": "generation-3",
+      "solver": {
+        "program": "/home/bandai/Work/procon37/target/release/game-sample-3",
+        "args": [
+          "0"
+        ],
+        "cwd": "/home/bandai/Work/procon37",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": "/home/bandai/Work/procon37",
+        "env": {}
+      },
+      "solverParallel": false,
+      "version": "generation-3-run-1790470439563416580-3-v1"
+    },
+    {
+      "name": "pool-generation-003",
+      "solver": {
+        "program": "/home/bandai/Work/procon37/target/release/game-sample-4",
+        "args": [
+          "0"
+        ],
+        "cwd": "/home/bandai/Work/procon37",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": "/home/bandai/Work/procon37",
+        "env": {}
+      },
+      "solverParallel": false,
+      "version": "pool-generation-003-run-1790563781811011480-62511-v1"
+    }
+  ],
+  "count": 30,
+  "seed": null,
+  "format": null,
+  "jobs": null,
+  "solverParallel": false,
+  "label": "pool第4世代・新規候補・フル30件",
+  "build": {
+    "program": "cargo",
+    "args": [
+      "build",
+      "--release",
+      "-p",
+      "solver"
+    ],
+    "cwd": "/home/bandai/Work/procon37",
+    "env": {}
+  },
+  "solver": {
+    "program": "/home/bandai/Work/procon37/target/release/solver",
+    "args": [
+      "0"
+    ],
+    "cwd": "/home/bandai/Work/procon37",
+    "env": {}
+  },
+  "timeLimitMs": null
+}

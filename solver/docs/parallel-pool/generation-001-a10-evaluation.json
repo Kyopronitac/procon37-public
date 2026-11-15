@@ -1,0 +1,56 @@
+{
+  "evaluation": {
+    "role": "generation_candidate",
+    "generation": 1,
+    "attempt": 10,
+    "target_id": "P0",
+    "label": "並列pool・第1世代P0候補a10・正式12件",
+    "wrapper_pid": 246105,
+    "log": "/home/jikky/Downloads/procon37/.server/parallel-pool/g001-a10-formal.log",
+    "process_record": "/home/jikky/Downloads/procon37/.server/parallel-pool/g001-a10-formal-process.json",
+    "status": "completed_all_ac_verified",
+    "roster": "solver/docs/parallel-pool/generation-001-a10-roster.json",
+    "preflight": "solver/docs/parallel-pool/generation-001-a10-formal-preflight.json",
+    "pid": 246106,
+    "run_id": "1791382687282330831-246106",
+    "run_json": "/home/jikky/Downloads/procon37/.server/runs/1791382687282330831-246106/run.json",
+    "postflight": "solver/docs/parallel-pool/generation-001-a10-formal-postflight.json"
+  },
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "並列pool・第1世代P0候補a10・正式12件",
+    "players": 6,
+    "teamNames": [],
+    "timeLimitMs": null,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "selection_run_id": "1791368679639311227-219585",
+  "source_identity": "solver/docs/parallel-pool/generation-001-P0-a10-identity.json",
+  "roster": "solver/docs/parallel-pool/generation-001-a10-roster.json",
+  "process": {
+    "command": [
+      "/home/jikky/.cargo/bin/cargo",
+      "run",
+      "--release",
+      "-p",
+      "server",
+      "--",
+      "run",
+      "12",
+      "--players",
+      "6",
+      "--label",
+      "並列pool・第1世代P0候補a10・正式12件"
+    ],
+    "cwd": "/home/jikky/Downloads/procon37",
+    "label": "並列pool・第1世代P0候補a10・正式12件",
+    "pid": 246106,
+    "wrapperPid": 246105,
+    "startedAt": 1791382687.2147741,
+    "exitCode": 0,
+    "finishedAt": 1791388147.1616583
+  }
+}

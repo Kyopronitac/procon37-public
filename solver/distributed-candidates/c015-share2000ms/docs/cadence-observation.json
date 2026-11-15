@@ -1,0 +1,40 @@
+{
+  "candidate": "C015-share2000ms",
+  "binarySha256": "13c261e0512a224172ab49b1db4f733960c96ce522b45d6aba829728769b1972",
+  "eliteIntervalMs": 2000,
+  "planBudgetMs": 5000,
+  "localSearchThreads": 2,
+  "remoteSearchThreads": 2,
+  "sourceTest": "tests/network.rs::cross_elite_enabled_cluster_returns_valid_results_and_stops",
+  "peers": {
+    "coordinator": {
+      "sourceLog": "/tmp/procon37-cross-test-77982-1791575831365069971/coordinator.log",
+      "sourceLogSha256": "f2a34610bc41d6cd2ab3b8b9bc1ca50d5259f4e12684483e312568bbe7715c09",
+      "trace": "cross_elite request=2 origin=6 receiver=Some(7) published=1 received=0 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=11 eligible=0 max_stall_ms=1252 group_published=[0, 0, 0, 1, 0, 0, 0] group_received=[0, 0, 0, 0, 0, 0, 0] group_sent=[0, 0, 0, 1, 0, 0, 0] max_receiver_mailbox_age_ms=0",
+      "counts": {
+        "published": 1,
+        "sent": 1,
+        "received": 0,
+        "imports": 0,
+        "improved": 0,
+        "rejected": 0,
+        "context_mismatch": 0
+      }
+    },
+    "worker": {
+      "sourceLog": "/tmp/procon37-cross-test-77982-1791575831365069971/worker.log",
+      "sourceLogSha256": "b5276c05cf82f0f22d40856cf4e77f86b30d1c10e5f819483ec4a616445af458",
+      "trace": "cross_elite request=2 origin=34 receiver=Some(35) published=1 received=1 rejected=0 context_mismatch=0 imports=0 improved=0 sent=0 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=10 eligible=0 max_stall_ms=1001 group_published=[0, 0, 0, 1, 0, 0, 0] group_received=[0, 0, 0, 1, 0, 0, 0] group_sent=[0, 0, 0, 0, 0, 0, 0] max_receiver_mailbox_age_ms=0",
+      "counts": {
+        "published": 1,
+        "sent": 0,
+        "received": 1,
+        "imports": 0,
+        "improved": 0,
+        "rejected": 0,
+        "context_mismatch": 0
+      }
+    }
+  },
+  "interpretation": "Actual optional elite frames were exchanged by this binary. Counts also depend on newly found donor solutions; they do not prove an exact periodic send interval or performance improvement."
+}

@@ -1,0 +1,42 @@
+{
+  "runId": "1791414715585964511-304414",
+  "pid": 304414,
+  "label": "分散ソルバ・CPU初期版・固定4チーム初回評価・正式12件",
+  "config": {
+    "count": 12,
+    "players": 4,
+    "format": null,
+    "arenaMaps": true,
+    "timeLimitMs": null,
+    "label": "分散ソルバ・CPU初期版・固定4チーム初回評価・正式12件",
+    "teamNames": [
+      "分散80スレッド",
+      "固定並列16スレッド",
+      "固定第6世代",
+      "固定第8世代"
+    ]
+  },
+  "command": [
+    "/home/jikky/Downloads/procon37/target/release/server",
+    "run",
+    "12",
+    "--players",
+    "4",
+    "--config",
+    "/home/jikky/Downloads/procon37/.server/distributed/initial-formal-config.json",
+    "--label",
+    "分散ソルバ・CPU初期版・固定4チーム初回評価・正式12件"
+  ],
+  "preflight": "/home/jikky/Downloads/procon37/solver/docs/distributed/initial-formal-preflight.json",
+  "binarySha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+  "status": "completed",
+  "adoptionStatus": "D0採用、正式評価済み実装commit・通常push成功",
+  "monitor": {
+    "automationId": "automation",
+    "intervalMinutes": 10,
+    "status": "ACTIVE",
+    "purpose": "短縮完了から初回正式評価、commit/push後の継続改善"
+  },
+  "all48AC": true,
+  "sourceCommit": "5d6c740962a1f3e20e77e13df243078df1d29ad2"
+}

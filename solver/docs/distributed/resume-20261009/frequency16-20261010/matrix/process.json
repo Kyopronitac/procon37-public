@@ -1,0 +1,27 @@
+{
+  "stage": "frequency16-matrix-20261010-01",
+  "status": "running",
+  "startedUnix": 1791575924.417206,
+  "directory": "/home/imak/work/procon37/.server/distributed/evaluations/frequency16-matrix-20261010-01",
+  "seeds": [
+    0,
+    3,
+    6,
+    9
+  ],
+  "shortMs": null,
+  "deadlineUnix": 1791580080.0,
+  "runs": [],
+  "isFormalFullTest": false,
+  "pid": 78470,
+  "startTicks": "2790268",
+  "state": "R",
+  "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422",
+  "command": [
+    "/usr/bin/python3",
+    "/home/imak/work/procon37/solver/distributed-lab/frequency_matrix.py",
+    "execute",
+    "--stage",
+    "frequency16-matrix-20261010-01"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "capturedAtUtc": "2026-10-09T01:55:51.393337+00:00",
+  "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0",
+  "logs": [
+    {
+      "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/stderr.log",
+      "capturedStartByte": 0,
+      "capturedEndByte": 162222,
+      "sha256OfCapturedByteRange": "888ae733d2623de0c9feb7be293427a7dd09948a5392eb09436d79b0e0e5fd9b",
+      "mtimeNsAtOpen": 1791510839919186733,
+      "totalLines": 794,
+      "diagnosticLines": [
+        "dist mode=coordinator total_threads=32 cluster_threads=80 search_threads=77 session=1791510777049865319",
+        "dist peer=192.168.0.22:39370 request=1 completed=15/15 elapsed_ms=7927 rx_bytes=14059 tx_bytes=3675",
+        "dist peer=192.168.0.33:39370 request=1 completed=31/31 elapsed_ms=7992 rx_bytes=14100 tx_bytes=3675",
+        "dist request=1 external_request=0 phase=select input_digest=f9ee3a0ac6b16910 selected_worker=24 value=76546.141 local_completed=31/31 remote_results=2/2 elapsed_ms=8072 state_digest=d1705f7465fe13e4",
+        "dist peer=192.168.0.22:39370 request=2 completed=15/15 elapsed_ms=8579 rx_bytes=47226 tx_bytes=28276",
+        "dist peer=192.168.0.33:39370 request=2 completed=31/31 elapsed_ms=8641 rx_bytes=47262 tx_bytes=28276",
+        "dist request=2 external_request=1 phase=plan input_digest=a4ab0b648cc995b6 selected_worker=9 value=76555.257 local_completed=31/31 remote_results=2/2 elapsed_ms=8720 state_digest=47a32514759bf9ec",
+        "dist peer=192.168.0.22:39370 request=3 completed=15/15 elapsed_ms=8643 rx_bytes=84902 tx_bytes=70914",
+        "dist peer=192.168.0.33:39370 request=3 completed=31/31 elapsed_ms=8703 rx_bytes=84944 tx_bytes=70914",
+        "dist request=3 external_request=2 phase=plan input_digest=e4d69c49afc78a13 selected_worker=17 value=75734.675 local_completed=31/31 remote_results=2/2 elapsed_ms=8784 state_digest=f1c83d74dc6f83c1",
+        "dist peer=192.168.0.22:39370 request=4 completed=15/15 elapsed_ms=8639 rx_bytes=125986 tx_bytes=118599",
+        "dist peer=192.168.0.33:39370 request=4 completed=31/31 elapsed_ms=8700 rx_bytes=126047 tx_bytes=118599",
+        "dist request=4 external_request=3 phase=plan input_digest=ed9a48b4775c0e6d selected_worker=6 value=75639.257 local_completed=31/31 remote_results=2/2 elapsed_ms=8782 state_digest=ac4b90b324a05f96",
+        "dist peer=192.168.0.22:39370 request=5 completed=15/15 elapsed_ms=8649 rx_bytes=166841 tx_bytes=169738",
+        "dist peer=192.168.0.33:39370 request=5 completed=31/31 elapsed_ms=8710 rx_bytes=166859 tx_bytes=169738",
+        "dist request=5 external_request=4 phase=plan input_digest=f0e03d1b52b8f28f selected_worker=10 value=76022.626 local_completed=31/31 remote_results=2/2 elapsed_ms=8785 state_digest=bd4ff4c6b3a977bc",
+        "dist peer=192.168.0.22:39370 request=6 completed=15/15 elapsed_ms=8671 rx_bytes=207025 tx_bytes=220449",
+        "dist peer=192.168.0.33:39370 request=6 completed=31/31 elapsed_ms=8746 rx_bytes=207195 tx_bytes=220449",
+        "dist request=6 external_request=5 phase=plan input_digest=652bbd2fdbf37e8a selected_worker=37 value=43499.325 local_completed=31/31 remote_results=2/2 elapsed_ms=8816 state_digest=12e09f9e754b9439"
+      ],
+      "sharedGraphLines": [],
+      "flags": {
+        "timeout": {
+          "count": 0,
+          "samples": []
+        },
+        "deadline": {
+          "count": 0,
+          "samples": []
+        },
+        "fallback": {
+          "count": 0,
+          "samples": []
+        },
+        "panic": {
+          "count": 0,
+          "samples": []
+        },
+        "rejected": {
+          "count": 0,
+          "samples": []
+        },
+        "unavailable": {
+          "count": 0,
+          "samples": []
+        },
+        "disconnected": {
+          "count": 0,
+          "samples": []
+        }
+      }
+    }
+  ]
+}

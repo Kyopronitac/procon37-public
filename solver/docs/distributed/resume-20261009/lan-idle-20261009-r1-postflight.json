@@ -1,0 +1,987 @@
+{
+  "capturedAtJst": "2026-10-09T11:50:28.126697+09:00",
+  "scope": "Independent read-only single postflight after lan-idle-20261009-r1. No remote controller/probe restarted, no configuration or process changed. Probe identities/listeners checked on VOID1/2/3; NOM fixed runtime/clock also read once. Root owns full harness snapshot.",
+  "probeRecord": ".server/distributed/lan-probes/lan-idle-20261009-r1/record.json",
+  "probeRecordSha256": "8710d3c50b943b8ce61e970f3d0c0961ad70b51d87e6a8c40b8b208118197a87",
+  "probeReportedSuccess": true,
+  "checks": {
+    "allRecordedProbesGone": true,
+    "noExactProbeScriptProcess": true,
+    "allPort49371ListenersAbsent": true,
+    "runtimeIdentityAndCpuUnchanged": true,
+    "deploymentFilesUnchanged": true,
+    "clockConfigurationUnchanged": true,
+    "allSelectedLocalClock": true,
+    "allPerformance": true,
+    "localFixedFilesUnchanged": true,
+    "localClockIdentityAndSourceUnchanged": true
+  },
+  "success": true,
+  "nodes": {
+    "v1": {
+      "hostname": "VOIDLINUX-1",
+      "capturedAtUtc": "2026-10-09T02:50:27.890050+00:00",
+      "bootId": "a8ef7e33-3ceb-49fd-8cc1-2fac10dd1d50",
+      "probes": [
+        {
+          "savedIdentity": {
+            "pid": 520,
+            "startTicks": "8600927",
+            "bootId": "a8ef7e33-3ceb-49fd-8cc1-2fac10dd1d50",
+            "uid": 1000
+          },
+          "currentIdentity": null,
+          "sameProbeStillPresent": false
+        }
+      ],
+      "processesMatchingExactProbeScript": [],
+      "tcp49371Listeners": [],
+      "runtimeProcesses": [
+        {
+          "role": "bridge",
+          "expected": {
+            "pid": 435,
+            "role": "bridge",
+            "executable": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+            "executableSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+            "startTicks": "8587535",
+            "status": {
+              "Name": "server-bridge",
+              "State": "S (sleeping)",
+              "Threads": "33",
+              "Cpus_allowed_list": "0-31",
+              "VmRSS": "5072 kB",
+              "VmHWM": "5072 kB",
+              "VmSize": "2169584 kB",
+              "VmPeak": "2169584 kB"
+            }
+          },
+          "observed": {
+            "pid": 435,
+            "startTicks": "8587535",
+            "bootId": "a8ef7e33-3ceb-49fd-8cc1-2fac10dd1d50",
+            "uid": 1000,
+            "state": "S",
+            "cpus": "0-31",
+            "threads": 33,
+            "executable": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+            "executableSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e"
+          },
+          "sameIdentityAndBinary": true,
+          "sameCpus": true
+        },
+        {
+          "role": "runner",
+          "expected": {
+            "pid": 32002,
+            "role": "runner",
+            "executable": "/usr/bin/python3.13",
+            "executableSha256": "ba898d6049ed77035dcc976cb099912c650ab670aed4105b850a97c63c7ce352",
+            "startTicks": "8496136",
+            "status": {
+              "Name": "python3",
+              "State": "S (sleeping)",
+              "Threads": "1",
+              "Cpus_allowed_list": "0-31",
+              "VmRSS": "12844 kB",
+              "VmHWM": "12844 kB",
+              "VmSize": "21576 kB",
+              "VmPeak": "21624 kB"
+            }
+          },
+          "observed": {
+            "pid": 32002,
+            "startTicks": "8496136",
+            "bootId": "a8ef7e33-3ceb-49fd-8cc1-2fac10dd1d50",
+            "uid": 1000,
+            "state": "S",
+            "cpus": "0-31",
+            "threads": 1,
+            "executable": "/usr/bin/python3.13",
+            "executableSha256": "ba898d6049ed77035dcc976cb099912c650ab670aed4105b850a97c63c7ce352"
+          },
+          "sameIdentityAndBinary": true,
+          "sameCpus": true
+        }
+      ],
+      "files": {
+        "distributed-solver": {
+          "sha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+          "expectedSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+          "matches": true
+        },
+        "server-bridge": {
+          "sha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+          "expectedSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+          "matches": true
+        },
+        "launcher": {
+          "sha256": "a7c37a7546fee4a62d2c0d5a9f82838e10793e2c3f9a08cd686d9c19c93c5b1a",
+          "expectedSha256": "a7c37a7546fee4a62d2c0d5a9f82838e10793e2c3f9a08cd686d9c19c93c5b1a",
+          "matches": true
+        },
+        "resume-team-runner.py": {
+          "sha256": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+          "expectedSha256": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+          "matches": true
+        }
+      },
+      "chronyConfig": {
+        "/etc/chrony.conf": {
+          "sha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "expectedSha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "matches": true
+        }
+      },
+      "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 02:50:26 2026\nSystem time     : 0.000020473 seconds slow of NTP time\nLast offset     : -0.000009446 seconds\nRMS offset      : 0.000042403 seconds\nFrequency       : 7.499 ppm fast\nResidual freq   : -0.025 ppm\nSkew            : 4.046 ppm\nRoot delay      : 0.000337580 seconds\nRoot dispersion : 0.001050934 seconds\nUpdate interval : 16.2 seconds\nLeap status     : Normal\n",
+      "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   4   377     1  -7304ns[  -17us] +/- 1177us\n",
+      "selectedLocalClock": true,
+      "cpus": [
+        {
+          "cpu": 0,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 1,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 2,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 3,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 4,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 5,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 6,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 7,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 8,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 9,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 10,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 11,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 12,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 13,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 14,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 15,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 16,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 17,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 18,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 19,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 20,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 21,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 22,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 23,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 24,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 25,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 26,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 27,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 28,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 29,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 30,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 31,
+          "governor": "performance",
+          "epp": "performance"
+        }
+      ]
+    },
+    "v2": {
+      "hostname": "VOIDLINUX-2",
+      "capturedAtUtc": "2026-10-09T02:50:27.890962+00:00",
+      "bootId": "3e1e45ee-b88b-4832-871b-ee0ddb8e4184",
+      "probes": [
+        {
+          "savedIdentity": {
+            "pid": 10206,
+            "startTicks": "9233930",
+            "bootId": "3e1e45ee-b88b-4832-871b-ee0ddb8e4184",
+            "uid": 1000
+          },
+          "currentIdentity": null,
+          "sameProbeStillPresent": false
+        }
+      ],
+      "processesMatchingExactProbeScript": [],
+      "tcp49371Listeners": [],
+      "runtimeProcesses": [
+        {
+          "role": "solver",
+          "expected": {
+            "pid": 10079,
+            "role": "solver",
+            "executable": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver",
+            "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+            "startTicks": "9129081",
+            "status": {
+              "Name": "distributed-sol",
+              "State": "S (sleeping)",
+              "Threads": "16",
+              "Cpus_allowed_list": "0-15",
+              "VmRSS": "5218924 kB",
+              "VmHWM": "5246992 kB",
+              "VmSize": "5945916 kB",
+              "VmPeak": "6011452 kB"
+            }
+          },
+          "observed": {
+            "pid": 10079,
+            "startTicks": "9129081",
+            "bootId": "3e1e45ee-b88b-4832-871b-ee0ddb8e4184",
+            "uid": 1000,
+            "state": "S",
+            "cpus": "0-15",
+            "threads": 16,
+            "executable": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver",
+            "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a"
+          },
+          "sameIdentityAndBinary": true,
+          "sameCpus": true
+        }
+      ],
+      "files": {
+        "distributed-solver": {
+          "sha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+          "expectedSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+          "matches": true
+        },
+        "server-bridge": {
+          "sha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+          "expectedSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+          "matches": true
+        },
+        "launcher": {
+          "sha256": "cf8cd970a097cc64548e4471e6d68806ec41ab3aa8fdb3544647b27e893474ce",
+          "expectedSha256": "cf8cd970a097cc64548e4471e6d68806ec41ab3aa8fdb3544647b27e893474ce",
+          "matches": true
+        }
+      },
+      "chronyConfig": {
+        "/etc/chrony.conf": {
+          "sha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "expectedSha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "matches": true
+        }
+      },
+      "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 02:50:21 2026\nSystem time     : 0.000007129 seconds fast of NTP time\nLast offset     : +0.000011043 seconds\nRMS offset      : 0.000022849 seconds\nFrequency       : 6.299 ppm fast\nResidual freq   : +0.021 ppm\nSkew            : 0.569 ppm\nRoot delay      : 0.000307868 seconds\nRoot dispersion : 0.001025682 seconds\nUpdate interval : 16.1 seconds\nLeap status     : Normal\n",
+      "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^? 129.250.35.251                2   6     0   18h    +11ms[  +11ms] +/-   64ms\n^? 109.61.109.140                2  10     0   18h    +59ms[  +55ms] +/-  153ms\n^? 133.18.147.168                2  10     0   18h    -59ms[  -61ms] +/-   83ms\n^? 162.159.200.123               3   8     0   18h    +16ms[  +13ms] +/-   73ms\n^* 192.168.0.81                 10   4   377     5    +14us[  +25us] +/- 1162us\n",
+      "selectedLocalClock": true,
+      "cpus": [
+        {
+          "cpu": 0,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 1,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 2,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 3,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 4,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 5,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 6,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 7,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 8,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 9,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 10,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 11,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 12,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 13,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 14,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 15,
+          "governor": "performance",
+          "epp": "performance"
+        }
+      ]
+    },
+    "v3": {
+      "hostname": "VOIDLINUX-3",
+      "capturedAtUtc": "2026-10-09T02:50:27.893865+00:00",
+      "bootId": "21b738ab-7c59-47e2-bc9f-07075a0e35af",
+      "probes": [
+        {
+          "savedIdentity": {
+            "pid": 2028,
+            "startTicks": "1145737",
+            "bootId": "21b738ab-7c59-47e2-bc9f-07075a0e35af",
+            "uid": 1000
+          },
+          "currentIdentity": null,
+          "sameProbeStillPresent": false
+        }
+      ],
+      "processesMatchingExactProbeScript": [],
+      "tcp49371Listeners": [],
+      "runtimeProcesses": [
+        {
+          "role": "solver",
+          "expected": {
+            "pid": 1943,
+            "role": "solver",
+            "executable": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+            "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+            "startTicks": "1040916",
+            "status": {
+              "Name": "distributed-sol",
+              "State": "S (sleeping)",
+              "Threads": "32",
+              "Cpus_allowed_list": "0-31",
+              "VmRSS": "10750628 kB",
+              "VmHWM": "10818716 kB",
+              "VmSize": "12129184 kB",
+              "VmPeak": "12325792 kB"
+            }
+          },
+          "observed": {
+            "pid": 1943,
+            "startTicks": "1040916",
+            "bootId": "21b738ab-7c59-47e2-bc9f-07075a0e35af",
+            "uid": 1000,
+            "state": "S",
+            "cpus": "0-31",
+            "threads": 32,
+            "executable": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+            "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a"
+          },
+          "sameIdentityAndBinary": true,
+          "sameCpus": true
+        }
+      ],
+      "files": {
+        "distributed-solver": {
+          "sha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+          "expectedSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+          "matches": true
+        },
+        "server-bridge": {
+          "sha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+          "expectedSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+          "matches": true
+        },
+        "launcher": {
+          "sha256": "e41fd115af140cd5260f36b0a8f88749f3c1ae7edf67c176a8a4ceef1cec21af",
+          "expectedSha256": "e41fd115af140cd5260f36b0a8f88749f3c1ae7edf67c176a8a4ceef1cec21af",
+          "matches": true
+        }
+      },
+      "chronyConfig": {
+        "/etc/chrony.conf": {
+          "sha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "expectedSha256": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "matches": true
+        }
+      },
+      "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 02:50:15 2026\nSystem time     : 0.000003903 seconds fast of NTP time\nLast offset     : +0.000001805 seconds\nRMS offset      : 0.000025074 seconds\nFrequency       : 5.248 ppm slow\nResidual freq   : +0.002 ppm\nSkew            : 0.361 ppm\nRoot delay      : 0.000199706 seconds\nRoot dispersion : 0.001045621 seconds\nUpdate interval : 16.0 seconds\nLeap status     : Normal\n",
+      "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^* 192.168.0.81                 10   4   377    12  +6438ns[+8243ns] +/- 1145us\n",
+      "selectedLocalClock": true,
+      "cpus": [
+        {
+          "cpu": 0,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 1,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 2,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 3,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 4,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 5,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 6,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 7,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 8,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 9,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 10,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 11,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 12,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 13,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 14,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 15,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 16,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 17,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 18,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 19,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 20,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 21,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 22,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 23,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 24,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 25,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 26,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 27,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 28,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 29,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 30,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 31,
+          "governor": "performance",
+          "epp": "performance"
+        }
+      ]
+    },
+    "nomlab": {
+      "hostname": "NOMLAB-UBUNTU",
+      "capturedAtUtc": "2026-10-09T02:50:27.945584+00:00",
+      "bootId": "5e7194e2-6254-4f3c-8119-15b50f6db0e2",
+      "probes": [],
+      "processesMatchingExactProbeScript": [],
+      "tcp49371Listeners": [],
+      "runtimeProcesses": [
+        {
+          "role": "runner",
+          "expected": {
+            "pid": 29952,
+            "role": "runner",
+            "executable": "/usr/bin/python3.14",
+            "executableSha256": "52e0a13e60a981d8c4b6478be2ba5176f69da07948a056bf49cf6f077e30cb41",
+            "startTicks": "13648591",
+            "status": {
+              "Name": "python3",
+              "State": "S (sleeping)",
+              "Threads": "1",
+              "Cpus_allowed_list": "0-15",
+              "VmRSS": "16256 kB",
+              "VmHWM": "16336 kB",
+              "VmSize": "27632 kB",
+              "VmPeak": "27668 kB"
+            }
+          },
+          "observed": {
+            "pid": 29952,
+            "startTicks": "13648591",
+            "bootId": "5e7194e2-6254-4f3c-8119-15b50f6db0e2",
+            "uid": 1000,
+            "state": "S",
+            "cpus": "0-15",
+            "threads": 1,
+            "executable": "/usr/bin/python3.14",
+            "executableSha256": "52e0a13e60a981d8c4b6478be2ba5176f69da07948a056bf49cf6f077e30cb41"
+          },
+          "sameIdentityAndBinary": true,
+          "sameCpus": true
+        },
+        {
+          "role": "bridge",
+          "expected": {
+            "pid": 37492,
+            "role": "bridge",
+            "executable": "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+            "executableSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+            "startTicks": "14738808",
+            "status": {
+              "Name": "server-bridge",
+              "State": "S (sleeping)",
+              "Threads": "17",
+              "Cpus_allowed_list": "0-15",
+              "VmRSS": "5028 kB",
+              "VmHWM": "5028 kB",
+              "VmSize": "1088328 kB",
+              "VmPeak": "1088328 kB"
+            }
+          },
+          "observed": {
+            "pid": 37492,
+            "startTicks": "14738808",
+            "bootId": "5e7194e2-6254-4f3c-8119-15b50f6db0e2",
+            "uid": 1000,
+            "state": "S",
+            "cpus": "0-15",
+            "threads": 17,
+            "executable": "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+            "executableSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e"
+          },
+          "sameIdentityAndBinary": true,
+          "sameCpus": true
+        }
+      ],
+      "files": {
+        "bin/distributed-solver": {
+          "sha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+          "expectedSha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+          "matches": true
+        },
+        "bin/server-bridge": {
+          "sha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+          "expectedSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+          "matches": true
+        },
+        "launcher": {
+          "sha256": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+          "expectedSha256": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+          "matches": true
+        },
+        "resume-team-runner.py": {
+          "sha256": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+          "expectedSha256": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+          "matches": true
+        },
+        "run.sh": {
+          "sha256": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27",
+          "expectedSha256": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27",
+          "matches": true
+        }
+      },
+      "chronyConfig": {
+        "/etc/chrony/chrony.conf": {
+          "sha256": "3d3bb53ddee1a78de319508913c08b34891b66e5e168356f2d9ca217ab85ba68",
+          "expectedSha256": "3d3bb53ddee1a78de319508913c08b34891b66e5e168356f2d9ca217ab85ba68",
+          "matches": true
+        },
+        "/etc/chrony/sources.d/ubuntu-ntp-pools.sources": {
+          "sha256": "e5eb19e7e5dd56164698bfd44b24a76d40f517de84245726b953c4a681c8f095",
+          "expectedSha256": "e5eb19e7e5dd56164698bfd44b24a76d40f517de84245726b953c4a681c8f095",
+          "matches": true
+        },
+        "/etc/chrony/conf.d/ubuntu-nts.conf": {
+          "sha256": "4355f44d20dc1bda2db04ea005910c7742cd244aa6f688a0da75aca3544c157a",
+          "expectedSha256": "4355f44d20dc1bda2db04ea005910c7742cd244aa6f688a0da75aca3544c157a",
+          "matches": true
+        }
+      },
+      "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 02:50:13 2026\nSystem time     : 0.000019920 seconds fast of NTP time\nLast offset     : +0.000018169 seconds\nRMS offset      : 0.000033214 seconds\nFrequency       : 17.898 ppm slow\nResidual freq   : +0.021 ppm\nSkew            : 1.215 ppm\nRoot delay      : 0.001660651 seconds\nRoot dispersion : 0.001108308 seconds\nUpdate interval : 16.1 seconds\nLeap status     : Normal\n",
+      "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^? 185.125.190.122               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 185.125.190.123               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 91.189.91.112                 0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 91.189.91.113                 0   6     0     -     +0ns[   +0ns] +/-    0ns\n^? 185.125.190.121               0   6     0     -     +0ns[   +0ns] +/-    0ns\n^* 192.168.0.81                 10   4   377    13   +153us[ +171us] +/- 1987us\n",
+      "selectedLocalClock": true,
+      "cpus": [
+        {
+          "cpu": 0,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 1,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 2,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 3,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 4,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 5,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 6,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 7,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 8,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 9,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 10,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 11,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 12,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 13,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 14,
+          "governor": "performance",
+          "epp": "performance"
+        },
+        {
+          "cpu": 15,
+          "governor": "performance",
+          "epp": "performance"
+        }
+      ]
+    }
+  },
+  "localClock": {
+    "expected": {
+      "pid": 90752,
+      "bind": "192.168.0.81",
+      "port": 32123,
+      "startedUnix": 1791503119.6936052,
+      "startTicks": "5312760",
+      "bootId": "0ed549c2-ebe5-4a00-a7fe-2a56c0403979",
+      "clock": "CLOCK_REALTIME / time.time_ns; same host as problem server",
+      "source": "/home/imak/work/procon37/solver/distributed-lab/clock_sync.py",
+      "allowedClients": [
+        "127.0.0.1",
+        "192.168.0.11",
+        "192.168.0.22",
+        "192.168.0.33",
+        "192.168.0.55",
+        "192.168.0.81"
+      ]
+    },
+    "currentStartTicks": "5312760",
+    "currentBootId": "0ed549c2-ebe5-4a00-a7fe-2a56c0403979",
+    "sourceSha256": "e4cb308a1bf11df4d3ab6e2fd1bd8e714c978b3754e0e8dc3e26900d73193469",
+    "sameIdentity": true,
+    "sameSource": true
+  },
+  "fixedLocalFiles": {
+    "target/release/server": {
+      "actualSha256": "368ac7cb6334469a0a5735fcfded1d52875ffdfb1cb47ffbea7b03471e4638b0",
+      "expectedSha256": "368ac7cb6334469a0a5735fcfded1d52875ffdfb1cb47ffbea7b03471e4638b0",
+      "matches": true
+    },
+    "tester/server/procon-server": {
+      "actualSha256": "769e101cbc6b80cce7732dae1e10d911ed1e9efefd3b1f94b6381652aa7741c1",
+      "expectedSha256": "769e101cbc6b80cce7732dae1e10d911ed1e9efefd3b1f94b6381652aa7741c1",
+      "matches": true
+    },
+    ".server/distributed/bin/server-bridge": {
+      "actualSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+      "expectedSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+      "matches": true
+    },
+    ".server/distributed/bin/pool-solver-06": {
+      "actualSha256": "055374eca5a4f89b4f6e01e77fb489bf9e0683720ad53b4895adf0704fb62a86",
+      "expectedSha256": "055374eca5a4f89b4f6e01e77fb489bf9e0683720ad53b4895adf0704fb62a86",
+      "matches": true
+    },
+    ".server/distributed/bin/pool-solver-08": {
+      "actualSha256": "a7588e406d40fb1aa76ed606ed2a910a0aee911468f040ef37453037f033c5a2",
+      "expectedSha256": "a7588e406d40fb1aa76ed606ed2a910a0aee911468f040ef37453037f033c5a2",
+      "matches": true
+    },
+    ".server/distributed/launchers/generation6.sh": {
+      "actualSha256": "34a9d5f3d7fa57b7977281d862f7559399b1338a59ec58324272f89b03d3d6f4",
+      "expectedSha256": "34a9d5f3d7fa57b7977281d862f7559399b1338a59ec58324272f89b03d3d6f4",
+      "matches": true
+    },
+    ".server/distributed/launchers/generation8.sh": {
+      "actualSha256": "0fbe822a7a8cce9cf8f893fd7c5c5b82a2a10d725ce7ab95d6f571ff6db049d7",
+      "expectedSha256": "0fbe822a7a8cce9cf8f893fd7c5c5b82a2a10d725ce7ab95d6f571ff6db049d7",
+      "matches": true
+    },
+    ".server/distributed/team2/resume-team-runner.py": {
+      "actualSha256": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+      "expectedSha256": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+      "matches": true
+    },
+    ".server/distributed/team3/resume-team-runner.py": {
+      "actualSha256": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+      "expectedSha256": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+      "matches": true
+    }
+  },
+  "observationalLimit": "This proves the observed PID/start/boot/UID identities and current listener absence at collection, not a historical absence of transient processes."
+}

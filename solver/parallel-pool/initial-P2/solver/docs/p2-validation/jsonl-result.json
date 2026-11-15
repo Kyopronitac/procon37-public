@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "maxSolverThreads": 15,
+  "requests": [
+    {
+      "requestId": 0,
+      "phase": "select",
+      "timeLimitMs": 1600,
+      "elapsedMs": 1251.648,
+      "maxThreads": 15
+    },
+    {
+      "requestId": 1,
+      "phase": "plan",
+      "timeLimitMs": 1600,
+      "elapsedMs": 1428.491,
+      "maxThreads": 15
+    },
+    {
+      "requestId": 2,
+      "phase": "plan",
+      "timeLimitMs": 1,
+      "elapsedMs": 0.057,
+      "maxThreads": 15
+    },
+    {
+      "requestId": 3,
+      "phase": "plan",
+      "timeLimitMs": 1600,
+      "elapsedMs": 1427.685,
+      "maxThreads": 15
+    },
+    {
+      "requestId": 4,
+      "phase": "select",
+      "timeLimitMs": 1600,
+      "elapsedMs": 1249.829,
+      "maxThreads": 15
+    }
+  ]
+}

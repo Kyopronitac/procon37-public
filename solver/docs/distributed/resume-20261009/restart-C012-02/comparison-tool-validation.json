@@ -1,0 +1,19 @@
+{
+  "tool": "solver/distributed-lab/compare_repeats.py",
+  "sha256": "e98b989c528717fd3464e2ad43fa766a2f3ab3ad20079bb667e9b6380e9f6c53",
+  "checks": [
+    {
+      "case": "verified H2 first pair",
+      "result": "D0 1.6666666666666667 / C012 1.25; 6W0T6L; 12 actual problem hashes match"
+    },
+    {
+      "case": "old baseline with new environment candidate",
+      "result": "ValueError: comparison conditions differ"
+    },
+    {
+      "case": "same run reused across pairs",
+      "result": "ValueError: a run must not be reused in more than one pair"
+    }
+  ],
+  "notes": "Read-only result processing on CPU3. No deployment, runtime configuration, or frozen solver source was changed."
+}

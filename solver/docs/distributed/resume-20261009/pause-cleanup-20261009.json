@@ -1,0 +1,326 @@
+{
+  "startedUnix": 1791516322.527636,
+  "stage": "C012-on-short-01",
+  "teamsStopped": {
+    "local3": {
+      "record": {
+        "pid": 90331,
+        "startTicks": "5306976",
+        "state": "R",
+        "bootId": "0ed549c2-ebe5-4a00-a7fe-2a56c0403979",
+        "session": 90331,
+        "uid": 1000,
+        "command": [
+          "python3",
+          "/home/imak/work/procon37/.server/distributed/team3/resume-team-runner.py",
+          "--bridge",
+          "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+          "--solver",
+          "/home/imak/work/procon37/.server/distributed/launchers/generation8.sh",
+          "--server",
+          "http://192.168.0.81:11451",
+          "--team",
+          "3",
+          "--cpus",
+          "2"
+        ],
+        "startedUnix": 1791503061.8136382,
+        "log": "/home/imak/work/procon37/.server/distributed/team3/resume-team.log"
+      },
+      "alive": false
+    },
+    "local2": {
+      "record": {
+        "pid": 90327,
+        "startTicks": "5306941",
+        "state": "R",
+        "bootId": "0ed549c2-ebe5-4a00-a7fe-2a56c0403979",
+        "session": 90327,
+        "uid": 1000,
+        "command": [
+          "python3",
+          "/home/imak/work/procon37/.server/distributed/team2/resume-team-runner.py",
+          "--bridge",
+          "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+          "--solver",
+          "/home/imak/work/procon37/.server/distributed/launchers/generation6.sh",
+          "--server",
+          "http://192.168.0.81:11451",
+          "--team",
+          "2",
+          "--cpus",
+          "0"
+        ],
+        "startedUnix": 1791503061.469494,
+        "log": "/home/imak/work/procon37/.server/distributed/team2/resume-team.log"
+      },
+      "alive": false
+    },
+    "nomlab": {
+      "record": {
+        "pid": 29952,
+        "startTicks": "13648591",
+        "state": "R",
+        "bootId": "5e7194e2-6254-4f3c-8119-15b50f6db0e2",
+        "session": 29952,
+        "uid": 1000,
+        "command": [
+          "python3",
+          "/home/nomlab-ubuntu/procon37-distributed/resume-team-runner.py",
+          "--bridge",
+          "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+          "--solver",
+          "/home/nomlab-ubuntu/procon37-distributed/launcher",
+          "--server",
+          "http://192.168.0.81:11451",
+          "--team",
+          "1",
+          "--cpus",
+          "0-15"
+        ],
+        "startedUnix": 1791503060.9844885,
+        "log": "/home/nomlab-ubuntu/procon37-distributed/resume-team.log"
+      },
+      "alive": false
+    },
+    "v1": {
+      "record": {
+        "pid": 643,
+        "startTicks": "8721578",
+        "state": "R",
+        "bootId": "a8ef7e33-3ceb-49fd-8cc1-2fac10dd1d50",
+        "session": 643,
+        "uid": 1000,
+        "command": [
+          "python3",
+          "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team-runner.py",
+          "--bridge",
+          "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+          "--solver",
+          "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+          "--server",
+          "http://192.168.0.81:11451",
+          "--team",
+          "0",
+          "--cpus",
+          "0-31"
+        ],
+        "startedUnix": 1791515303.4352887,
+        "log": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team.log"
+      },
+      "alive": false
+    },
+    "v3": {
+      "record": {
+        "pid": 2072,
+        "startTicks": "1266358",
+        "state": "R",
+        "bootId": "21b738ab-7c59-47e2-bc9f-07075a0e35af",
+        "session": 2072,
+        "uid": 1000,
+        "command": [
+          "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/launcher"
+        ],
+        "startedUnix": 1791515302.8143716,
+        "log": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/resume-team.log"
+      },
+      "alive": false
+    },
+    "v2": {
+      "record": {
+        "pid": 10308,
+        "startTicks": "9354522",
+        "state": "R",
+        "bootId": "3e1e45ee-b88b-4832-871b-ee0ddb8e4184",
+        "session": 10308,
+        "uid": 1000,
+        "command": [
+          "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/launcher"
+        ],
+        "startedUnix": 1791515302.1896853,
+        "log": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/resume-team.log"
+      },
+      "alive": false
+    }
+  },
+  "clockSources": {
+    "v1": {
+      "beforeNtpdata": "\rvoidlinux-1@192.168.0.11's  \r\nRemote address  : 192.168.0.81 (C0A80051)\r\nRemote port     : 32123\r\nLocal address   : 192.168.0.11 (C0A8000B)\r\nLeap status     : Normal\r\nVersion         : 4\r\nMode            : Server\r\nStratum         : 10\r\nPoll interval   : 4 (16 seconds)\r\nPrecision       : -20 (0.000000954 seconds)\r\nRoot delay      : 0.000000 seconds\r\nRoot dispersion : 0.001007 seconds\r\nReference ID    : 7F7F0101 ()\r\nReference time  : Fri Oct 09 03:25:43 2026\r\nOffset          : -0.000136291 seconds\r\nPeer delay      : 0.000412603 seconds\r\nPeer dispersion : 0.000000975 seconds\r\nResponse time   : 0.000083046 seconds\r\nJitter asymmetry: +0.00\r\nNTP tests       : 111 111 1111\r\nInterleaved     : No\r\nAuthenticated   : No\r\nTX timestamping : Kernel\r\nRX timestamping : Kernel\r\nTotal TX        : 964\r\nTotal RX        : 964\r\nTotal valid RX  : 964\r\nTotal good RX   : 838\r\n",
+      "deleteResult": "\rvoidlinux-1@192.168.0.11's  \r\n200 OK\r\n",
+      "afterSources": "\rvoidlinux-1@192.168.0.11's  \r\nMS Name/IP address         Stratum Poll Reach LastRx Last sample               \r\n===============================================================================\r\n",
+      "runtimeSourceRemoved": true
+    },
+    "v2": {
+      "beforeNtpdata": "\rvoidlinux-2@192.168.0.22's  \r\nRemote address  : 192.168.0.81 (C0A80051)\r\nRemote port     : 32123\r\nLocal address   : 192.168.0.22 (C0A80016)\r\nLeap status     : Normal\r\nVersion         : 4\r\nMode            : Server\r\nStratum         : 10\r\nPoll interval   : 4 (16 seconds)\r\nPrecision       : -20 (0.000000954 seconds)\r\nRoot delay      : 0.000000 seconds\r\nRoot dispersion : 0.001007 seconds\r\nReference ID    : 7F7F0101 ()\r\nReference time  : Fri Oct 09 03:25:38 2026\r\nOffset          : -0.000011536 seconds\r\nPeer delay      : 0.000387723 seconds\r\nPeer dispersion : 0.000000984 seconds\r\nResponse time   : 0.000064026 seconds\r\nJitter asymmetry: +0.00\r\nNTP tests       : 111 111 1111\r\nInterleaved     : No\r\nAuthenticated   : No\r\nTX timestamping : Kernel\r\nRX timestamping : Kernel\r\nTotal TX        : 885\r\nTotal RX        : 885\r\nTotal valid RX  : 885\r\nTotal good RX   : 740\r\n",
+      "deleteResult": "\rvoidlinux-2@192.168.0.22's  \r\n200 OK\r\n",
+      "afterSources": "\rvoidlinux-2@192.168.0.22's  \r\nMS Name/IP address         Stratum Poll Reach LastRx Last sample               \r\n===============================================================================\r\n^? 129.250.35.251                2   6     0   18h    -95ms[  +11ms] +/-   64ms\r\n^? 109.61.109.140                2  10     0   19h    -49ms[  +55ms] +/-  153ms\r\n^? 133.18.147.168                2  10     0   19h   -165ms[  -61ms] +/-   83ms\r\n^? 162.159.200.123               3   8     0   19h    -91ms[  +13ms] +/-   73ms\r\n",
+      "runtimeSourceRemoved": true
+    },
+    "v3": {
+      "beforeNtpdata": "\rvoidlinux-3@192.168.0.33's  \r\nRemote address  : 192.168.0.81 (C0A80051)\r\nRemote port     : 32123\r\nLocal address   : 192.168.0.33 (C0A80021)\r\nLeap status     : Normal\r\nVersion         : 4\r\nMode            : Server\r\nStratum         : 10\r\nPoll interval   : 4 (16 seconds)\r\nPrecision       : -20 (0.000000954 seconds)\r\nRoot delay      : 0.000000 seconds\r\nRoot dispersion : 0.001007 seconds\r\nReference ID    : 7F7F0101 ()\r\nReference time  : Fri Oct 09 03:25:42 2026\r\nOffset          : +0.000326017 seconds\r\nPeer delay      : 0.000719119 seconds\r\nPeer dispersion : 0.000000964 seconds\r\nResponse time   : 0.000064431 seconds\r\nJitter asymmetry: +0.00\r\nNTP tests       : 111 111 1111\r\nInterleaved     : No\r\nAuthenticated   : No\r\nTX timestamping : Kernel\r\nRX timestamping : Kernel\r\nTotal TX        : 1121\r\nTotal RX        : 1121\r\nTotal valid RX  : 1121\r\nTotal good RX   : 979\r\n",
+      "deleteResult": "\rvoidlinux-3@192.168.0.33's  \r\n200 OK\r\n",
+      "afterSources": "\rvoidlinux-3@192.168.0.33's  \r\nMS Name/IP address         Stratum Poll Reach LastRx Last sample               \r\n===============================================================================\r\n",
+      "runtimeSourceRemoved": true
+    },
+    "nomlab": {
+      "beforeNtpdata": "\rnomlab-ubuntu@192.168.0.55's  \r\n[sudo: ]  \r\nRemote address  : 192.168.0.81 (C0A80051)\r\nRemote port     : 32123\r\nLocal address   : 192.168.0.55 (C0A80037)\r\nLeap status     : Normal\r\nVersion         : 4\r\nMode            : Server\r\nStratum         : 10\r\nPoll interval   : 4 (16 seconds)\r\nPrecision       : -20 (0.000000954 seconds)\r\nRoot delay      : 0.000000 seconds\r\nRoot dispersion : 0.001007 seconds\r\nReference ID    : 7F7F0101 ()\r\nReference time  : Fri Oct 09 03:25:46 2026\r\nOffset          : -0.000111732 seconds\r\nPeer delay      : 0.001804392 seconds\r\nPeer dispersion : 0.000001862 seconds\r\nResponse time   : 0.000063826 seconds\r\nJitter asymmetry: +0.00\r\nNTP tests       : 111 111 1101\r\nInterleaved     : No\r\nAuthenticated   : No\r\nTX timestamping : Kernel\r\nRX timestamping : Kernel\r\nTotal TX        : 904\r\nTotal RX        : 904\r\nTotal valid RX  : 904\r\nTotal good RX   : 745\r\nTotal kernel TX : 904\r\nTotal kernel RX : 904\r\nTotal HW TX     : 0\r\nTotal HW RX     : 0\r\n",
+      "deleteResult": "\rnomlab-ubuntu@192.168.0.55's  \r\n[sudo: ]  \r\n200 OK\r\n",
+      "afterSources": "\rnomlab-ubuntu@192.168.0.55's  \r\n[sudo: ]  \r\nMS Name/IP address         Stratum Poll Reach LastRx Last sample               \r\n===============================================================================\r\n^? 185.125.190.122               0   6     0     -     +0ns[   +0ns] +/-    0ns\r\n^? 185.125.190.123               0   6     0     -     +0ns[   +0ns] +/-    0ns\r\n^? 91.189.91.112                 0   6     0     -     +0ns[   +0ns] +/-    0ns\r\n^? 91.189.91.113                 0   6     0     -     +0ns[   +0ns] +/-    0ns\r\n^? 185.125.190.121               0   6     0     -     +0ns[   +0ns] +/-    0ns\r\n",
+      "runtimeSourceRemoved": true
+    }
+  },
+  "localClock": {
+    "record": {
+      "pid": 90752,
+      "bind": "192.168.0.81",
+      "port": 32123,
+      "startedUnix": 1791503119.6936052,
+      "startTicks": "5312760",
+      "bootId": "0ed549c2-ebe5-4a00-a7fe-2a56c0403979",
+      "clock": "CLOCK_REALTIME / time.time_ns; same host as problem server",
+      "source": "/home/imak/work/procon37/solver/distributed-lab/clock_sync.py",
+      "allowedClients": [
+        "127.0.0.1",
+        "192.168.0.11",
+        "192.168.0.22",
+        "192.168.0.33",
+        "192.168.0.55",
+        "192.168.0.81"
+      ]
+    },
+    "identityVerified": true,
+    "signal": "SIGTERM",
+    "stopped": true,
+    "procExistsAfter": false
+  },
+  "remotePostflight": {
+    "v1": {
+      "processes": [],
+      "ports": [],
+      "filesMatch": true,
+      "persistentChrony": [
+        {
+          "path": "/etc/chrony.conf",
+          "expected": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "actual": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c"
+        }
+      ],
+      "persistentChronyUnchanged": true,
+      "procon37CgroupDirectories": []
+    },
+    "v2": {
+      "processes": [],
+      "ports": [],
+      "filesMatch": true,
+      "persistentChrony": [
+        {
+          "path": "/etc/chrony.conf",
+          "expected": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "actual": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c"
+        }
+      ],
+      "persistentChronyUnchanged": true,
+      "procon37CgroupDirectories": []
+    },
+    "v3": {
+      "processes": [],
+      "ports": [],
+      "filesMatch": true,
+      "persistentChrony": [
+        {
+          "path": "/etc/chrony.conf",
+          "expected": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c",
+          "actual": "d837d18c293b538ce86735aee7eb0bdcbfe4231f827b8aa78ee39b6f461bfe1c"
+        }
+      ],
+      "persistentChronyUnchanged": true,
+      "procon37CgroupDirectories": []
+    },
+    "nomlab": {
+      "processes": [],
+      "ports": [],
+      "filesMatch": true,
+      "persistentChrony": [
+        {
+          "path": "/etc/chrony/chrony.conf",
+          "expected": "3d3bb53ddee1a78de319508913c08b34891b66e5e168356f2d9ca217ab85ba68",
+          "actual": "3d3bb53ddee1a78de319508913c08b34891b66e5e168356f2d9ca217ab85ba68"
+        },
+        {
+          "path": "/etc/chrony/sources.d/ubuntu-ntp-pools.sources",
+          "expected": "e5eb19e7e5dd56164698bfd44b24a76d40f517de84245726b953c4a681c8f095",
+          "actual": "e5eb19e7e5dd56164698bfd44b24a76d40f517de84245726b953c4a681c8f095"
+        },
+        {
+          "path": "/etc/chrony/conf.d/ubuntu-nts.conf",
+          "expected": "4355f44d20dc1bda2db04ea005910c7742cd244aa6f688a0da75aca3544c157a",
+          "actual": "4355f44d20dc1bda2db04ea005910c7742cd244aa6f688a0da75aca3544c157a"
+        }
+      ],
+      "persistentChronyUnchanged": true,
+      "procon37CgroupDirectories": []
+    }
+  },
+  "readPermissionNote": "chronyc ntpdata requires sudo on these hosts; initial unprivileged read returned501 before any changes",
+  "finishedUnix": 1791516435.6364088,
+  "localPostflight": {
+    "capturedUnix": 1791516435.6363122,
+    "scope": "host /proc with exact known runner/solver/bridge/server/clock arguments or executable paths",
+    "processes": [],
+    "ports": [],
+    "registeredFileChecks": {
+      "target/release/server": true,
+      "tester/server/procon-server": true,
+      ".server/distributed/bin/server-bridge": true,
+      ".server/distributed/bin/pool-solver-06": true,
+      ".server/distributed/bin/pool-solver-08": true,
+      ".server/distributed/launchers/generation6.sh": true,
+      ".server/distributed/launchers/generation8.sh": true,
+      ".server/distributed/team2/resume-team-runner.py": true,
+      ".server/distributed/team3/resume-team-runner.py": true,
+      "solver/distributed-lab/manage.py": true,
+      "solver/distributed-lab/lifecycle.py": true,
+      "solver/distributed-lab/team_runner.py": true,
+      "solver/distributed-lab/clock_sync.py": true,
+      "solver/distributed-lab/switch.py": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/Cargo.lock": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/Cargo.toml": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/Cargo.toml": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/match-916.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/match-937.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/match-941.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/pasted-16-01.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/pasted-16-02.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/pasted-16-03.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/pasted-16-04.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/pasted-24-01.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/pasted-24-02.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/pasted-24-03.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/pasted-24-04.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/pasted-32-01.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/pasted-32-02.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/pasted-32-03.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/pasted-32-04.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/fixtures/arena/sources.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/src/engine.rs": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/src/generator.rs": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/src/lib.rs": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/common/src/model.rs": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/cross_elite.rs": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/isolated_tests.rs": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/main.rs": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/official/sample_maps/sample_16.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/official/sample_maps/sample_24.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/official/sample_maps/sample_32.json": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/pool.rs": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/runtime.rs": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/solver/planner.rs": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/tests/network.rs": true,
+      "solver/distributed-candidates/c012-isolated-cooperation/wire.rs": true
+    },
+    "allFilesMatch": true,
+    "serverPidExists": false,
+    "clockPidExists": false
+  },
+  "allOwnedEvaluationProcessesStopped": true
+}

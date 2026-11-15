@@ -1,0 +1,3336 @@
+{
+  "runId": "1791513062075302492-124172",
+  "stage": "C011-short-01",
+  "capturedAtJst": "2026-10-09T11:47:30.097284+09:00",
+  "expectedRequestsFromSavedProblems": 84,
+  "caseDays": [
+    {
+      "seed": 0,
+      "days": 5,
+      "problemSha256": "ff0ffb88986635de1a8e1267a1335572fd842d3ef79fe8712d65b2f557545507"
+    },
+    {
+      "seed": 1,
+      "days": 5,
+      "problemSha256": "2b3941dd6f59f829293b27dc68d2b2c34d3d605d3efade5281832e9c7d0e40b2"
+    },
+    {
+      "seed": 2,
+      "days": 5,
+      "problemSha256": "6ca533612877191615211e13aef7a58a41dde61b3dc5208757008dba1e4d8c57"
+    },
+    {
+      "seed": 3,
+      "days": 10,
+      "problemSha256": "2785f18eca3a8939bc7b950a05f32a9bd5fc2fb8e6b9a8a898b5958cc0bc8874"
+    },
+    {
+      "seed": 4,
+      "days": 5,
+      "problemSha256": "5899d1abc32dc8f2c43901f3ead580f7c9649d94cf64a07ca347c479622ab0a7"
+    },
+    {
+      "seed": 5,
+      "days": 6,
+      "problemSha256": "4a424c2e30e549d223ae6ddc83c5cbb2d697468443e79e3068aa20128c3cd7da"
+    },
+    {
+      "seed": 6,
+      "days": 8,
+      "problemSha256": "6ee5e88d4d9d8e1670fb2b336056f738fbc1c5152786155f6017386fce4d5840"
+    },
+    {
+      "seed": 7,
+      "days": 5,
+      "problemSha256": "42fe65185de532bff862f732c13129c0e81cd1e571cbcb6ab745af732fc18ce3"
+    },
+    {
+      "seed": 8,
+      "days": 5,
+      "problemSha256": "4f2d9885e83e6681cf7a3ec0e0461ebfb53f218f2cebe0494d6d08a207345476"
+    },
+    {
+      "seed": 9,
+      "days": 5,
+      "problemSha256": "fcee126ae6cc31aaaa78cb0f563a3f6f24014e337d75d548db89871ea8601d21"
+    },
+    {
+      "seed": 10,
+      "days": 8,
+      "problemSha256": "603b1dc739999b2e90bc28d7dc417b8d30e50cb00a500c0d700d886124d023e1"
+    },
+    {
+      "seed": 11,
+      "days": 5,
+      "problemSha256": "47ea2520b2e1e418ae308f5daea6e8e42101d3291dcbe01330b33120a0df8c2b"
+    }
+  ],
+  "coordinator": {
+    "sessions": 1,
+    "requests": 6,
+    "selectRequests": 1,
+    "planRequests": 5,
+    "all31LocalAnd2Remote": false,
+    "selectedHostCounts": {
+      "v1": 4,
+      "v2": 0,
+      "v3": 2,
+      "fallbackOrInvalid": 0
+    },
+    "maximumElapsedMs": 8678,
+    "elapsedOver10000ms": 0,
+    "requestsDetail": [
+      {
+        "session": "1791513898101461380",
+        "request": 1,
+        "externalRequest": 0,
+        "phase": "select",
+        "inputDigest": "f9ee3a0ac6b16910",
+        "selectedWorker": 56,
+        "value": "76531.101",
+        "localCompleted": 31,
+        "localStarted": 31,
+        "remoteResults": 2,
+        "remoteExpected": 2,
+        "elapsedMs": 7884,
+        "stateDigest": "0e528dd1a24d8687"
+      },
+      {
+        "session": "1791513898101461380",
+        "request": 2,
+        "externalRequest": 1,
+        "phase": "plan",
+        "inputDigest": "ddc0bef5c27bce70",
+        "selectedWorker": 9,
+        "value": "76535.409",
+        "localCompleted": 31,
+        "localStarted": 31,
+        "remoteResults": 2,
+        "remoteExpected": 2,
+        "elapsedMs": 8678,
+        "stateDigest": "b33d52f73ef4e883"
+      },
+      {
+        "session": "1791513898101461380",
+        "request": 3,
+        "externalRequest": 2,
+        "phase": "plan",
+        "inputDigest": "5f730faaaace6bfd",
+        "selectedWorker": 23,
+        "value": "75728.252",
+        "localCompleted": 31,
+        "localStarted": 31,
+        "remoteResults": 2,
+        "remoteExpected": 2,
+        "elapsedMs": 8596,
+        "stateDigest": "1b3c84ccaf7c3482"
+      },
+      {
+        "session": "1791513898101461380",
+        "request": 4,
+        "externalRequest": 3,
+        "phase": "plan",
+        "inputDigest": "19312efac81969e3",
+        "selectedWorker": 59,
+        "value": "75690.839",
+        "localCompleted": 31,
+        "localStarted": 31,
+        "remoteResults": 2,
+        "remoteExpected": 2,
+        "elapsedMs": 8579,
+        "stateDigest": "76b8eafdb2a4ae60"
+      },
+      {
+        "session": "1791513898101461380",
+        "request": 5,
+        "externalRequest": 4,
+        "phase": "plan",
+        "inputDigest": "e1bbca912a523dfb",
+        "selectedWorker": 4,
+        "value": "76027.365",
+        "localCompleted": 31,
+        "localStarted": 31,
+        "remoteResults": 2,
+        "remoteExpected": 2,
+        "elapsedMs": 8584,
+        "stateDigest": "7cb3e386c72b6816"
+      },
+      {
+        "session": "1791513898101461380",
+        "request": 6,
+        "externalRequest": 5,
+        "phase": "plan",
+        "inputDigest": "6a7316f9b99b9537",
+        "selectedWorker": 3,
+        "value": "43399.324",
+        "localCompleted": 31,
+        "localStarted": 31,
+        "remoteResults": 2,
+        "remoteExpected": 2,
+        "elapsedMs": 8261,
+        "stateDigest": "5afe6e99ad649b2b"
+      }
+    ],
+    "fullRunCoverage": false,
+    "coverage": "旧bridgeのstderr.logは各試合で切り詰められるため、coordinator診断は最終seed11の6要求のみ。全runのfallback数は断定しない。",
+    "allRunFallbackCount": null,
+    "observedAll31LocalAnd2Remote": true,
+    "observedFallbackOrInvalidCount": 0
+  },
+  "workers": {
+    "v2": {
+      "requests": 84,
+      "results": 84,
+      "expectedSearchesPerRequest": 15,
+      "allExpectedSearchesCompleted": true,
+      "minimumBudgetMs": 7872,
+      "maximumElapsedMs": 8557,
+      "starts": [
+        {
+          "request": 1,
+          "job": 1,
+          "phase": "select",
+          "inputDigest": "9b0f11c8123097b3",
+          "started": 15,
+          "budgetMs": 8813
+        },
+        {
+          "request": 2,
+          "job": 2,
+          "phase": "plan",
+          "inputDigest": "ad1d2da8b11d88ee",
+          "started": 15,
+          "budgetMs": 8772
+        },
+        {
+          "request": 3,
+          "job": 3,
+          "phase": "plan",
+          "inputDigest": "aa3a7c18dc052501",
+          "started": 15,
+          "budgetMs": 8739
+        },
+        {
+          "request": 4,
+          "job": 4,
+          "phase": "plan",
+          "inputDigest": "609ec1c43348a331",
+          "started": 15,
+          "budgetMs": 8733
+        },
+        {
+          "request": 5,
+          "job": 5,
+          "phase": "plan",
+          "inputDigest": "e62d15d4f3920025",
+          "started": 15,
+          "budgetMs": 8738
+        },
+        {
+          "request": 6,
+          "job": 6,
+          "phase": "plan",
+          "inputDigest": "aaa6c4af47c0b124",
+          "started": 15,
+          "budgetMs": 8736
+        },
+        {
+          "request": 1,
+          "job": 7,
+          "phase": "select",
+          "inputDigest": "4c51c769bcea8577",
+          "started": 15,
+          "budgetMs": 8108
+        },
+        {
+          "request": 2,
+          "job": 8,
+          "phase": "plan",
+          "inputDigest": "f36791df586c75af",
+          "started": 15,
+          "budgetMs": 8682
+        },
+        {
+          "request": 3,
+          "job": 9,
+          "phase": "plan",
+          "inputDigest": "bc589154676f4716",
+          "started": 15,
+          "budgetMs": 8839
+        },
+        {
+          "request": 4,
+          "job": 10,
+          "phase": "plan",
+          "inputDigest": "6a7f5d8db994d27c",
+          "started": 15,
+          "budgetMs": 8851
+        },
+        {
+          "request": 5,
+          "job": 11,
+          "phase": "plan",
+          "inputDigest": "d0d00e82b2b11511",
+          "started": 15,
+          "budgetMs": 8857
+        },
+        {
+          "request": 6,
+          "job": 12,
+          "phase": "plan",
+          "inputDigest": "b0712b82e87f63e1",
+          "started": 15,
+          "budgetMs": 8858
+        },
+        {
+          "request": 1,
+          "job": 13,
+          "phase": "select",
+          "inputDigest": "b2617693af20771a",
+          "started": 15,
+          "budgetMs": 7874
+        },
+        {
+          "request": 2,
+          "job": 14,
+          "phase": "plan",
+          "inputDigest": "1bdc69831a7a24a4",
+          "started": 15,
+          "budgetMs": 8815
+        },
+        {
+          "request": 3,
+          "job": 15,
+          "phase": "plan",
+          "inputDigest": "beba90bcab5fb1cd",
+          "started": 15,
+          "budgetMs": 8790
+        },
+        {
+          "request": 4,
+          "job": 16,
+          "phase": "plan",
+          "inputDigest": "a6ebf603f5d484a0",
+          "started": 15,
+          "budgetMs": 8786
+        },
+        {
+          "request": 5,
+          "job": 17,
+          "phase": "plan",
+          "inputDigest": "0f31770fe12d8eb2",
+          "started": 15,
+          "budgetMs": 8784
+        },
+        {
+          "request": 6,
+          "job": 18,
+          "phase": "plan",
+          "inputDigest": "dfbd629d78baa3cd",
+          "started": 15,
+          "budgetMs": 8791
+        },
+        {
+          "request": 1,
+          "job": 19,
+          "phase": "select",
+          "inputDigest": "68c3d7477ed14d28",
+          "started": 15,
+          "budgetMs": 8063
+        },
+        {
+          "request": 2,
+          "job": 20,
+          "phase": "plan",
+          "inputDigest": "5f73416ae4a58d72",
+          "started": 15,
+          "budgetMs": 8847
+        },
+        {
+          "request": 3,
+          "job": 21,
+          "phase": "plan",
+          "inputDigest": "e4a36706a77d0c54",
+          "started": 15,
+          "budgetMs": 8747
+        },
+        {
+          "request": 4,
+          "job": 22,
+          "phase": "plan",
+          "inputDigest": "4b8b4b21a4436b46",
+          "started": 15,
+          "budgetMs": 8745
+        },
+        {
+          "request": 5,
+          "job": 23,
+          "phase": "plan",
+          "inputDigest": "0e5f5def34857e92",
+          "started": 15,
+          "budgetMs": 8740
+        },
+        {
+          "request": 6,
+          "job": 24,
+          "phase": "plan",
+          "inputDigest": "d97b057c62c20ce5",
+          "started": 15,
+          "budgetMs": 8738
+        },
+        {
+          "request": 7,
+          "job": 25,
+          "phase": "plan",
+          "inputDigest": "bf4179cc0be172e0",
+          "started": 15,
+          "budgetMs": 8740
+        },
+        {
+          "request": 8,
+          "job": 26,
+          "phase": "plan",
+          "inputDigest": "2819992c8bad2292",
+          "started": 15,
+          "budgetMs": 8737
+        },
+        {
+          "request": 9,
+          "job": 27,
+          "phase": "plan",
+          "inputDigest": "49ec125af406aaa9",
+          "started": 15,
+          "budgetMs": 8740
+        },
+        {
+          "request": 10,
+          "job": 28,
+          "phase": "plan",
+          "inputDigest": "9b976d54ba02fdf6",
+          "started": 15,
+          "budgetMs": 8741
+        },
+        {
+          "request": 11,
+          "job": 29,
+          "phase": "plan",
+          "inputDigest": "2f8f472a7000fa85",
+          "started": 15,
+          "budgetMs": 8745
+        },
+        {
+          "request": 1,
+          "job": 30,
+          "phase": "select",
+          "inputDigest": "4d87aae2e63bf4fb",
+          "started": 15,
+          "budgetMs": 8023
+        },
+        {
+          "request": 2,
+          "job": 31,
+          "phase": "plan",
+          "inputDigest": "ef588634d6e0da71",
+          "started": 15,
+          "budgetMs": 8759
+        },
+        {
+          "request": 3,
+          "job": 32,
+          "phase": "plan",
+          "inputDigest": "3ca9799e9eeca22b",
+          "started": 15,
+          "budgetMs": 8850
+        },
+        {
+          "request": 4,
+          "job": 33,
+          "phase": "plan",
+          "inputDigest": "96a639da5b56cb3d",
+          "started": 15,
+          "budgetMs": 8856
+        },
+        {
+          "request": 5,
+          "job": 34,
+          "phase": "plan",
+          "inputDigest": "f36ec1db8c4c2554",
+          "started": 15,
+          "budgetMs": 8862
+        },
+        {
+          "request": 6,
+          "job": 35,
+          "phase": "plan",
+          "inputDigest": "7d6fc3f56862dbf0",
+          "started": 15,
+          "budgetMs": 8854
+        },
+        {
+          "request": 1,
+          "job": 36,
+          "phase": "select",
+          "inputDigest": "4519af74b157cb22",
+          "started": 15,
+          "budgetMs": 8261
+        },
+        {
+          "request": 2,
+          "job": 37,
+          "phase": "plan",
+          "inputDigest": "4ea01258dd1f5b14",
+          "started": 15,
+          "budgetMs": 8853
+        },
+        {
+          "request": 3,
+          "job": 38,
+          "phase": "plan",
+          "inputDigest": "40a0ed8415c50518",
+          "started": 15,
+          "budgetMs": 8796
+        },
+        {
+          "request": 4,
+          "job": 39,
+          "phase": "plan",
+          "inputDigest": "a2f247b8753b03e9",
+          "started": 15,
+          "budgetMs": 8784
+        },
+        {
+          "request": 5,
+          "job": 40,
+          "phase": "plan",
+          "inputDigest": "c63c9abf3be866f5",
+          "started": 15,
+          "budgetMs": 8796
+        },
+        {
+          "request": 6,
+          "job": 41,
+          "phase": "plan",
+          "inputDigest": "d97caf83d2aabaca",
+          "started": 15,
+          "budgetMs": 8793
+        },
+        {
+          "request": 7,
+          "job": 42,
+          "phase": "plan",
+          "inputDigest": "cf89479d4a253cc3",
+          "started": 15,
+          "budgetMs": 8784
+        },
+        {
+          "request": 1,
+          "job": 43,
+          "phase": "select",
+          "inputDigest": "3292fb1be23396a7",
+          "started": 15,
+          "budgetMs": 8004
+        },
+        {
+          "request": 2,
+          "job": 44,
+          "phase": "plan",
+          "inputDigest": "4967c862ce613881",
+          "started": 15,
+          "budgetMs": 8726
+        },
+        {
+          "request": 3,
+          "job": 45,
+          "phase": "plan",
+          "inputDigest": "2ad2f6848e80e510",
+          "started": 15,
+          "budgetMs": 8746
+        },
+        {
+          "request": 4,
+          "job": 46,
+          "phase": "plan",
+          "inputDigest": "0fc824efc4260a0d",
+          "started": 15,
+          "budgetMs": 8749
+        },
+        {
+          "request": 5,
+          "job": 47,
+          "phase": "plan",
+          "inputDigest": "00c5bcf1e47d79c5",
+          "started": 15,
+          "budgetMs": 8747
+        },
+        {
+          "request": 6,
+          "job": 48,
+          "phase": "plan",
+          "inputDigest": "b21991431abaa8d1",
+          "started": 15,
+          "budgetMs": 8749
+        },
+        {
+          "request": 7,
+          "job": 49,
+          "phase": "plan",
+          "inputDigest": "deeded8a1bdfe5b2",
+          "started": 15,
+          "budgetMs": 8744
+        },
+        {
+          "request": 8,
+          "job": 50,
+          "phase": "plan",
+          "inputDigest": "499176901b5b704d",
+          "started": 15,
+          "budgetMs": 8746
+        },
+        {
+          "request": 9,
+          "job": 51,
+          "phase": "plan",
+          "inputDigest": "e9005ab2f4c669a8",
+          "started": 15,
+          "budgetMs": 8751
+        },
+        {
+          "request": 1,
+          "job": 52,
+          "phase": "select",
+          "inputDigest": "58ff21aec032b4b3",
+          "started": 15,
+          "budgetMs": 7922
+        },
+        {
+          "request": 2,
+          "job": 53,
+          "phase": "plan",
+          "inputDigest": "14ba77ae3cd196ec",
+          "started": 15,
+          "budgetMs": 8852
+        },
+        {
+          "request": 3,
+          "job": 54,
+          "phase": "plan",
+          "inputDigest": "5a0c9e87f430d1a4",
+          "started": 15,
+          "budgetMs": 8854
+        },
+        {
+          "request": 4,
+          "job": 55,
+          "phase": "plan",
+          "inputDigest": "90d7b40106e8f575",
+          "started": 15,
+          "budgetMs": 8852
+        },
+        {
+          "request": 5,
+          "job": 56,
+          "phase": "plan",
+          "inputDigest": "37c49bc58090ec8c",
+          "started": 15,
+          "budgetMs": 8851
+        },
+        {
+          "request": 6,
+          "job": 57,
+          "phase": "plan",
+          "inputDigest": "aab5e67795592ebf",
+          "started": 15,
+          "budgetMs": 8850
+        },
+        {
+          "request": 1,
+          "job": 58,
+          "phase": "select",
+          "inputDigest": "c973e38bb18a4355",
+          "started": 15,
+          "budgetMs": 8139
+        },
+        {
+          "request": 2,
+          "job": 59,
+          "phase": "plan",
+          "inputDigest": "ab59f65aa5f9c6fb",
+          "started": 15,
+          "budgetMs": 8767
+        },
+        {
+          "request": 3,
+          "job": 60,
+          "phase": "plan",
+          "inputDigest": "0a94c09831c9ea64",
+          "started": 15,
+          "budgetMs": 8783
+        },
+        {
+          "request": 4,
+          "job": 61,
+          "phase": "plan",
+          "inputDigest": "1bb2b6fa31649f6c",
+          "started": 15,
+          "budgetMs": 8786
+        },
+        {
+          "request": 5,
+          "job": 62,
+          "phase": "plan",
+          "inputDigest": "66e17dfc826963d3",
+          "started": 15,
+          "budgetMs": 8791
+        },
+        {
+          "request": 6,
+          "job": 63,
+          "phase": "plan",
+          "inputDigest": "c46ca6e3abf1ff9a",
+          "started": 15,
+          "budgetMs": 8788
+        },
+        {
+          "request": 1,
+          "job": 64,
+          "phase": "select",
+          "inputDigest": "f2761b5a2f606ba6",
+          "started": 15,
+          "budgetMs": 7872
+        },
+        {
+          "request": 2,
+          "job": 65,
+          "phase": "plan",
+          "inputDigest": "9a5060f8258a511b",
+          "started": 15,
+          "budgetMs": 8850
+        },
+        {
+          "request": 3,
+          "job": 66,
+          "phase": "plan",
+          "inputDigest": "666c95e1f97c5ea0",
+          "started": 15,
+          "budgetMs": 8752
+        },
+        {
+          "request": 4,
+          "job": 67,
+          "phase": "plan",
+          "inputDigest": "ddb298b8b7ee705a",
+          "started": 15,
+          "budgetMs": 8742
+        },
+        {
+          "request": 5,
+          "job": 68,
+          "phase": "plan",
+          "inputDigest": "1307a481716e4a73",
+          "started": 15,
+          "budgetMs": 8748
+        },
+        {
+          "request": 6,
+          "job": 69,
+          "phase": "plan",
+          "inputDigest": "1ec5e982bcf7b9c6",
+          "started": 15,
+          "budgetMs": 8745
+        },
+        {
+          "request": 1,
+          "job": 70,
+          "phase": "select",
+          "inputDigest": "b1f533d13c4268f1",
+          "started": 15,
+          "budgetMs": 8135
+        },
+        {
+          "request": 2,
+          "job": 71,
+          "phase": "plan",
+          "inputDigest": "80231eaa3306e770",
+          "started": 15,
+          "budgetMs": 8847
+        },
+        {
+          "request": 3,
+          "job": 72,
+          "phase": "plan",
+          "inputDigest": "abcf7061d1cde9d9",
+          "started": 15,
+          "budgetMs": 8857
+        },
+        {
+          "request": 4,
+          "job": 73,
+          "phase": "plan",
+          "inputDigest": "4fc6c21146117d5e",
+          "started": 15,
+          "budgetMs": 8855
+        },
+        {
+          "request": 5,
+          "job": 74,
+          "phase": "plan",
+          "inputDigest": "7d3d849751971caf",
+          "started": 15,
+          "budgetMs": 8855
+        },
+        {
+          "request": 6,
+          "job": 75,
+          "phase": "plan",
+          "inputDigest": "3df6203859b9a303",
+          "started": 15,
+          "budgetMs": 8850
+        },
+        {
+          "request": 7,
+          "job": 76,
+          "phase": "plan",
+          "inputDigest": "443883330be0bad2",
+          "started": 15,
+          "budgetMs": 8855
+        },
+        {
+          "request": 8,
+          "job": 77,
+          "phase": "plan",
+          "inputDigest": "ad18d1cda59ffccd",
+          "started": 15,
+          "budgetMs": 8846
+        },
+        {
+          "request": 9,
+          "job": 78,
+          "phase": "plan",
+          "inputDigest": "eafd813f31ac5fd2",
+          "started": 15,
+          "budgetMs": 8853
+        },
+        {
+          "request": 1,
+          "job": 79,
+          "phase": "select",
+          "inputDigest": "f9ee3a0ac6b16910",
+          "started": 15,
+          "budgetMs": 8025
+        },
+        {
+          "request": 2,
+          "job": 80,
+          "phase": "plan",
+          "inputDigest": "ddc0bef5c27bce70",
+          "started": 15,
+          "budgetMs": 8842
+        },
+        {
+          "request": 3,
+          "job": 81,
+          "phase": "plan",
+          "inputDigest": "5f730faaaace6bfd",
+          "started": 15,
+          "budgetMs": 8755
+        },
+        {
+          "request": 4,
+          "job": 82,
+          "phase": "plan",
+          "inputDigest": "19312efac81969e3",
+          "started": 15,
+          "budgetMs": 8741
+        },
+        {
+          "request": 5,
+          "job": 83,
+          "phase": "plan",
+          "inputDigest": "e1bbca912a523dfb",
+          "started": 15,
+          "budgetMs": 8746
+        },
+        {
+          "request": 6,
+          "job": 84,
+          "phase": "plan",
+          "inputDigest": "6a7316f9b99b9537",
+          "started": 15,
+          "budgetMs": 8748
+        }
+      ],
+      "resultsDetail": [
+        {
+          "request": 1,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 34,
+          "elapsedMs": 8368,
+          "rxBytes": 1540,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 36,
+          "elapsedMs": 8472,
+          "rxBytes": 9743,
+          "txBytes": 4643
+        },
+        {
+          "request": 3,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 43,
+          "elapsedMs": 8444,
+          "rxBytes": 23297,
+          "txBytes": 14801
+        },
+        {
+          "request": 4,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 42,
+          "elapsedMs": 8435,
+          "rxBytes": 38407,
+          "txBytes": 26494
+        },
+        {
+          "request": 5,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 35,
+          "elapsedMs": 8439,
+          "rxBytes": 54303,
+          "txBytes": 38954
+        },
+        {
+          "request": 6,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 31,
+          "elapsedMs": 7984,
+          "rxBytes": 70294,
+          "txBytes": 51496
+        },
+        {
+          "request": 1,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 33,
+          "elapsedMs": 7714,
+          "rxBytes": 2477,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 41,
+          "elapsedMs": 8277,
+          "rxBytes": 18263,
+          "txBytes": 8922
+        },
+        {
+          "request": 3,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 44,
+          "elapsedMs": 8424,
+          "rxBytes": 45551,
+          "txBytes": 29556
+        },
+        {
+          "request": 4,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 45,
+          "elapsedMs": 8438,
+          "rxBytes": 75111,
+          "txBytes": 52542
+        },
+        {
+          "request": 5,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 38,
+          "elapsedMs": 8444,
+          "rxBytes": 106992,
+          "txBytes": 77773
+        },
+        {
+          "request": 6,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 42,
+          "elapsedMs": 8120,
+          "rxBytes": 139293,
+          "txBytes": 103487
+        },
+        {
+          "request": 1,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 33,
+          "elapsedMs": 7563,
+          "rxBytes": 3675,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 35,
+          "elapsedMs": 8472,
+          "rxBytes": 26814,
+          "txBytes": 13155
+        },
+        {
+          "request": 3,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 45,
+          "elapsedMs": 8448,
+          "rxBytes": 69054,
+          "txBytes": 46109
+        },
+        {
+          "request": 4,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 44,
+          "elapsedMs": 8443,
+          "rxBytes": 116632,
+          "txBytes": 84260
+        },
+        {
+          "request": 5,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 44,
+          "elapsedMs": 8443,
+          "rxBytes": 168360,
+          "txBytes": 126598
+        },
+        {
+          "request": 6,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 40,
+          "elapsedMs": 8125,
+          "rxBytes": 221011,
+          "txBytes": 169861
+        },
+        {
+          "request": 1,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 40,
+          "elapsedMs": 7646,
+          "rxBytes": 1580,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 36,
+          "elapsedMs": 8557,
+          "rxBytes": 9262,
+          "txBytes": 4426
+        },
+        {
+          "request": 3,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 31,
+          "elapsedMs": 8446,
+          "rxBytes": 21305,
+          "txBytes": 13598
+        },
+        {
+          "request": 4,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 31,
+          "elapsedMs": 8447,
+          "rxBytes": 34478,
+          "txBytes": 23765
+        },
+        {
+          "request": 5,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 42,
+          "elapsedMs": 8440,
+          "rxBytes": 48201,
+          "txBytes": 34526
+        },
+        {
+          "request": 6,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 35,
+          "elapsedMs": 8439,
+          "rxBytes": 61824,
+          "txBytes": 45159
+        },
+        {
+          "request": 7,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 31,
+          "elapsedMs": 8442,
+          "rxBytes": 75146,
+          "txBytes": 55363
+        },
+        {
+          "request": 8,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 35,
+          "elapsedMs": 8438,
+          "rxBytes": 88753,
+          "txBytes": 65928
+        },
+        {
+          "request": 9,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 39,
+          "elapsedMs": 8442,
+          "rxBytes": 102301,
+          "txBytes": 76551
+        },
+        {
+          "request": 10,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 39,
+          "elapsedMs": 8446,
+          "rxBytes": 115807,
+          "txBytes": 87133
+        },
+        {
+          "request": 11,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 31,
+          "elapsedMs": 8006,
+          "rxBytes": 129987,
+          "txBytes": 98308
+        },
+        {
+          "request": 1,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 34,
+          "elapsedMs": 7633,
+          "rxBytes": 2477,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 32,
+          "elapsedMs": 8351,
+          "rxBytes": 16360,
+          "txBytes": 7965
+        },
+        {
+          "request": 3,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 40,
+          "elapsedMs": 8437,
+          "rxBytes": 41428,
+          "txBytes": 27334
+        },
+        {
+          "request": 4,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 43,
+          "elapsedMs": 8443,
+          "rxBytes": 68173,
+          "txBytes": 48355
+        },
+        {
+          "request": 5,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 44,
+          "elapsedMs": 8448,
+          "rxBytes": 96908,
+          "txBytes": 71350
+        },
+        {
+          "request": 6,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 39,
+          "elapsedMs": 8115,
+          "rxBytes": 126059,
+          "txBytes": 94754
+        },
+        {
+          "request": 1,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 45,
+          "elapsedMs": 7927,
+          "rxBytes": 3681,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 45,
+          "elapsedMs": 8506,
+          "rxBytes": 29144,
+          "txBytes": 14406
+        },
+        {
+          "request": 3,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 37,
+          "elapsedMs": 8447,
+          "rxBytes": 75400,
+          "txBytes": 49866
+        },
+        {
+          "request": 4,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 32,
+          "elapsedMs": 8435,
+          "rxBytes": 124855,
+          "txBytes": 88583
+        },
+        {
+          "request": 5,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 44,
+          "elapsedMs": 8449,
+          "rxBytes": 176690,
+          "txBytes": 129745
+        },
+        {
+          "request": 6,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 40,
+          "elapsedMs": 8447,
+          "rxBytes": 228288,
+          "txBytes": 170604
+        },
+        {
+          "request": 7,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 41,
+          "elapsedMs": 8107,
+          "rxBytes": 280007,
+          "txBytes": 211685
+        },
+        {
+          "request": 1,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 37,
+          "elapsedMs": 7583,
+          "rxBytes": 1560,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 43,
+          "elapsedMs": 8420,
+          "rxBytes": 9307,
+          "txBytes": 4402
+        },
+        {
+          "request": 3,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 38,
+          "elapsedMs": 8439,
+          "rxBytes": 22437,
+          "txBytes": 14294
+        },
+        {
+          "request": 4,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 38,
+          "elapsedMs": 8441,
+          "rxBytes": 36217,
+          "txBytes": 24820
+        },
+        {
+          "request": 5,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 37,
+          "elapsedMs": 8442,
+          "rxBytes": 50914,
+          "txBytes": 36282
+        },
+        {
+          "request": 6,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 38,
+          "elapsedMs": 8443,
+          "rxBytes": 65678,
+          "txBytes": 47815
+        },
+        {
+          "request": 7,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 37,
+          "elapsedMs": 8438,
+          "rxBytes": 80414,
+          "txBytes": 59330
+        },
+        {
+          "request": 8,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 44,
+          "elapsedMs": 8440,
+          "rxBytes": 95077,
+          "txBytes": 70771
+        },
+        {
+          "request": 9,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 36,
+          "elapsedMs": 7992,
+          "rxBytes": 109871,
+          "txBytes": 82383
+        },
+        {
+          "request": 1,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 42,
+          "elapsedMs": 7540,
+          "rxBytes": 2481,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 42,
+          "elapsedMs": 8444,
+          "rxBytes": 16776,
+          "txBytes": 8168
+        },
+        {
+          "request": 3,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 39,
+          "elapsedMs": 8443,
+          "rxBytes": 40555,
+          "txBytes": 26530
+        },
+        {
+          "request": 4,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 38,
+          "elapsedMs": 8447,
+          "rxBytes": 66442,
+          "txBytes": 46989
+        },
+        {
+          "request": 5,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 44,
+          "elapsedMs": 8443,
+          "rxBytes": 93973,
+          "txBytes": 68903
+        },
+        {
+          "request": 6,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 36,
+          "elapsedMs": 8114,
+          "rxBytes": 121438,
+          "txBytes": 90503
+        },
+        {
+          "request": 1,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 44,
+          "elapsedMs": 7816,
+          "rxBytes": 3681,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 43,
+          "elapsedMs": 8429,
+          "rxBytes": 27221,
+          "txBytes": 13520
+        },
+        {
+          "request": 3,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 40,
+          "elapsedMs": 8443,
+          "rxBytes": 70052,
+          "txBytes": 47939
+        },
+        {
+          "request": 4,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 44,
+          "elapsedMs": 8443,
+          "rxBytes": 116469,
+          "txBytes": 85266
+        },
+        {
+          "request": 5,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 42,
+          "elapsedMs": 8448,
+          "rxBytes": 165060,
+          "txBytes": 124837
+        },
+        {
+          "request": 6,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 42,
+          "elapsedMs": 8121,
+          "rxBytes": 214387,
+          "txBytes": 165474
+        },
+        {
+          "request": 1,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 44,
+          "elapsedMs": 7463,
+          "rxBytes": 1545,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 32,
+          "elapsedMs": 8546,
+          "rxBytes": 8928,
+          "txBytes": 4225
+        },
+        {
+          "request": 3,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 34,
+          "elapsedMs": 8448,
+          "rxBytes": 21788,
+          "txBytes": 14034
+        },
+        {
+          "request": 4,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 38,
+          "elapsedMs": 8440,
+          "rxBytes": 35043,
+          "txBytes": 24225
+        },
+        {
+          "request": 5,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 37,
+          "elapsedMs": 8446,
+          "rxBytes": 48851,
+          "txBytes": 35011
+        },
+        {
+          "request": 6,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 31,
+          "elapsedMs": 7995,
+          "rxBytes": 62777,
+          "txBytes": 45872
+        },
+        {
+          "request": 1,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 38,
+          "elapsedMs": 7740,
+          "rxBytes": 2501,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 42,
+          "elapsedMs": 8432,
+          "rxBytes": 17439,
+          "txBytes": 8562
+        },
+        {
+          "request": 3,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 33,
+          "elapsedMs": 8443,
+          "rxBytes": 43914,
+          "txBytes": 29106
+        },
+        {
+          "request": 4,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 45,
+          "elapsedMs": 8442,
+          "rxBytes": 72255,
+          "txBytes": 51455
+        },
+        {
+          "request": 5,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 35,
+          "elapsedMs": 8441,
+          "rxBytes": 102021,
+          "txBytes": 75215
+        },
+        {
+          "request": 6,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 35,
+          "elapsedMs": 8437,
+          "rxBytes": 132312,
+          "txBytes": 99453
+        },
+        {
+          "request": 7,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 36,
+          "elapsedMs": 8442,
+          "rxBytes": 162444,
+          "txBytes": 123574
+        },
+        {
+          "request": 8,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 44,
+          "elapsedMs": 8432,
+          "rxBytes": 192215,
+          "txBytes": 147306
+        },
+        {
+          "request": 9,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 38,
+          "elapsedMs": 8116,
+          "rxBytes": 222499,
+          "txBytes": 171634
+        },
+        {
+          "request": 1,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 31,
+          "elapsedMs": 7750,
+          "rxBytes": 3675,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 42,
+          "elapsedMs": 8545,
+          "rxBytes": 28236,
+          "txBytes": 14068
+        },
+        {
+          "request": 3,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 42,
+          "elapsedMs": 8488,
+          "rxBytes": 70855,
+          "txBytes": 47122
+        },
+        {
+          "request": 4,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 38,
+          "elapsedMs": 8443,
+          "rxBytes": 117685,
+          "txBytes": 83932
+        },
+        {
+          "request": 5,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 45,
+          "elapsedMs": 8450,
+          "rxBytes": 169368,
+          "txBytes": 125646
+        },
+        {
+          "request": 6,
+          "completed": 15,
+          "started": 15,
+          "selectedWorker": 32,
+          "elapsedMs": 8122,
+          "rxBytes": 220402,
+          "txBytes": 166720
+        }
+      ],
+      "fullCoordinatorComparisonAvailable": false,
+      "matchingOtherWorkerInputs": true,
+      "matchingAvailableCoordinatorSuffix": true,
+      "fallbackOrInvalidSelectedWorkerCount": 0,
+      "processAtCompletion": {
+        "pid": 10079,
+        "startTicks": "9129081",
+        "startTicksMatchStartRecord": true,
+        "bootId": "3e1e45ee-b88b-4832-871b-ee0ddb8e4184",
+        "executable": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver",
+        "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+        "cwd": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0",
+        "status": {
+          "Name": "distributed-sol",
+          "State": "S (sleeping)",
+          "Threads": "16",
+          "Cpus_allowed_list": "0-15",
+          "VmRSS": "5218924 kB",
+          "VmHWM": "5246992 kB",
+          "VmSize": "5945916 kB",
+          "VmPeak": "6011452 kB"
+        },
+        "scope": "C011 short01 worker process lifetime; VmHWM includes all 12 cases"
+      }
+    },
+    "v3": {
+      "requests": 84,
+      "results": 84,
+      "expectedSearchesPerRequest": 31,
+      "allExpectedSearchesCompleted": true,
+      "minimumBudgetMs": 7872,
+      "maximumElapsedMs": 8613,
+      "starts": [
+        {
+          "request": 1,
+          "job": 1,
+          "phase": "select",
+          "inputDigest": "9b0f11c8123097b3",
+          "started": 31,
+          "budgetMs": 8813
+        },
+        {
+          "request": 2,
+          "job": 2,
+          "phase": "plan",
+          "inputDigest": "ad1d2da8b11d88ee",
+          "started": 31,
+          "budgetMs": 8772
+        },
+        {
+          "request": 3,
+          "job": 3,
+          "phase": "plan",
+          "inputDigest": "aa3a7c18dc052501",
+          "started": 31,
+          "budgetMs": 8739
+        },
+        {
+          "request": 4,
+          "job": 4,
+          "phase": "plan",
+          "inputDigest": "609ec1c43348a331",
+          "started": 31,
+          "budgetMs": 8733
+        },
+        {
+          "request": 5,
+          "job": 5,
+          "phase": "plan",
+          "inputDigest": "e62d15d4f3920025",
+          "started": 31,
+          "budgetMs": 8738
+        },
+        {
+          "request": 6,
+          "job": 6,
+          "phase": "plan",
+          "inputDigest": "aaa6c4af47c0b124",
+          "started": 31,
+          "budgetMs": 8736
+        },
+        {
+          "request": 1,
+          "job": 7,
+          "phase": "select",
+          "inputDigest": "4c51c769bcea8577",
+          "started": 31,
+          "budgetMs": 8090
+        },
+        {
+          "request": 2,
+          "job": 8,
+          "phase": "plan",
+          "inputDigest": "f36791df586c75af",
+          "started": 31,
+          "budgetMs": 8682
+        },
+        {
+          "request": 3,
+          "job": 9,
+          "phase": "plan",
+          "inputDigest": "bc589154676f4716",
+          "started": 31,
+          "budgetMs": 8839
+        },
+        {
+          "request": 4,
+          "job": 10,
+          "phase": "plan",
+          "inputDigest": "6a7f5d8db994d27c",
+          "started": 31,
+          "budgetMs": 8850
+        },
+        {
+          "request": 5,
+          "job": 11,
+          "phase": "plan",
+          "inputDigest": "d0d00e82b2b11511",
+          "started": 31,
+          "budgetMs": 8857
+        },
+        {
+          "request": 6,
+          "job": 12,
+          "phase": "plan",
+          "inputDigest": "b0712b82e87f63e1",
+          "started": 31,
+          "budgetMs": 8858
+        },
+        {
+          "request": 1,
+          "job": 13,
+          "phase": "select",
+          "inputDigest": "b2617693af20771a",
+          "started": 31,
+          "budgetMs": 7873
+        },
+        {
+          "request": 2,
+          "job": 14,
+          "phase": "plan",
+          "inputDigest": "1bdc69831a7a24a4",
+          "started": 31,
+          "budgetMs": 8815
+        },
+        {
+          "request": 3,
+          "job": 15,
+          "phase": "plan",
+          "inputDigest": "beba90bcab5fb1cd",
+          "started": 31,
+          "budgetMs": 8790
+        },
+        {
+          "request": 4,
+          "job": 16,
+          "phase": "plan",
+          "inputDigest": "a6ebf603f5d484a0",
+          "started": 31,
+          "budgetMs": 8785
+        },
+        {
+          "request": 5,
+          "job": 17,
+          "phase": "plan",
+          "inputDigest": "0f31770fe12d8eb2",
+          "started": 31,
+          "budgetMs": 8783
+        },
+        {
+          "request": 6,
+          "job": 18,
+          "phase": "plan",
+          "inputDigest": "dfbd629d78baa3cd",
+          "started": 31,
+          "budgetMs": 8790
+        },
+        {
+          "request": 1,
+          "job": 19,
+          "phase": "select",
+          "inputDigest": "68c3d7477ed14d28",
+          "started": 31,
+          "budgetMs": 8063
+        },
+        {
+          "request": 2,
+          "job": 20,
+          "phase": "plan",
+          "inputDigest": "5f73416ae4a58d72",
+          "started": 31,
+          "budgetMs": 8847
+        },
+        {
+          "request": 3,
+          "job": 21,
+          "phase": "plan",
+          "inputDigest": "e4a36706a77d0c54",
+          "started": 31,
+          "budgetMs": 8747
+        },
+        {
+          "request": 4,
+          "job": 22,
+          "phase": "plan",
+          "inputDigest": "4b8b4b21a4436b46",
+          "started": 31,
+          "budgetMs": 8745
+        },
+        {
+          "request": 5,
+          "job": 23,
+          "phase": "plan",
+          "inputDigest": "0e5f5def34857e92",
+          "started": 31,
+          "budgetMs": 8740
+        },
+        {
+          "request": 6,
+          "job": 24,
+          "phase": "plan",
+          "inputDigest": "d97b057c62c20ce5",
+          "started": 31,
+          "budgetMs": 8738
+        },
+        {
+          "request": 7,
+          "job": 25,
+          "phase": "plan",
+          "inputDigest": "bf4179cc0be172e0",
+          "started": 31,
+          "budgetMs": 8740
+        },
+        {
+          "request": 8,
+          "job": 26,
+          "phase": "plan",
+          "inputDigest": "2819992c8bad2292",
+          "started": 31,
+          "budgetMs": 8737
+        },
+        {
+          "request": 9,
+          "job": 27,
+          "phase": "plan",
+          "inputDigest": "49ec125af406aaa9",
+          "started": 31,
+          "budgetMs": 8740
+        },
+        {
+          "request": 10,
+          "job": 28,
+          "phase": "plan",
+          "inputDigest": "9b976d54ba02fdf6",
+          "started": 31,
+          "budgetMs": 8741
+        },
+        {
+          "request": 11,
+          "job": 29,
+          "phase": "plan",
+          "inputDigest": "2f8f472a7000fa85",
+          "started": 31,
+          "budgetMs": 8745
+        },
+        {
+          "request": 1,
+          "job": 30,
+          "phase": "select",
+          "inputDigest": "4d87aae2e63bf4fb",
+          "started": 31,
+          "budgetMs": 8020
+        },
+        {
+          "request": 2,
+          "job": 31,
+          "phase": "plan",
+          "inputDigest": "ef588634d6e0da71",
+          "started": 31,
+          "budgetMs": 8759
+        },
+        {
+          "request": 3,
+          "job": 32,
+          "phase": "plan",
+          "inputDigest": "3ca9799e9eeca22b",
+          "started": 31,
+          "budgetMs": 8850
+        },
+        {
+          "request": 4,
+          "job": 33,
+          "phase": "plan",
+          "inputDigest": "96a639da5b56cb3d",
+          "started": 31,
+          "budgetMs": 8856
+        },
+        {
+          "request": 5,
+          "job": 34,
+          "phase": "plan",
+          "inputDigest": "f36ec1db8c4c2554",
+          "started": 31,
+          "budgetMs": 8862
+        },
+        {
+          "request": 6,
+          "job": 35,
+          "phase": "plan",
+          "inputDigest": "7d6fc3f56862dbf0",
+          "started": 31,
+          "budgetMs": 8854
+        },
+        {
+          "request": 1,
+          "job": 36,
+          "phase": "select",
+          "inputDigest": "4519af74b157cb22",
+          "started": 31,
+          "budgetMs": 8261
+        },
+        {
+          "request": 2,
+          "job": 37,
+          "phase": "plan",
+          "inputDigest": "4ea01258dd1f5b14",
+          "started": 31,
+          "budgetMs": 8853
+        },
+        {
+          "request": 3,
+          "job": 38,
+          "phase": "plan",
+          "inputDigest": "40a0ed8415c50518",
+          "started": 31,
+          "budgetMs": 8796
+        },
+        {
+          "request": 4,
+          "job": 39,
+          "phase": "plan",
+          "inputDigest": "a2f247b8753b03e9",
+          "started": 31,
+          "budgetMs": 8784
+        },
+        {
+          "request": 5,
+          "job": 40,
+          "phase": "plan",
+          "inputDigest": "c63c9abf3be866f5",
+          "started": 31,
+          "budgetMs": 8795
+        },
+        {
+          "request": 6,
+          "job": 41,
+          "phase": "plan",
+          "inputDigest": "d97caf83d2aabaca",
+          "started": 31,
+          "budgetMs": 8792
+        },
+        {
+          "request": 7,
+          "job": 42,
+          "phase": "plan",
+          "inputDigest": "cf89479d4a253cc3",
+          "started": 31,
+          "budgetMs": 8783
+        },
+        {
+          "request": 1,
+          "job": 43,
+          "phase": "select",
+          "inputDigest": "3292fb1be23396a7",
+          "started": 31,
+          "budgetMs": 8003
+        },
+        {
+          "request": 2,
+          "job": 44,
+          "phase": "plan",
+          "inputDigest": "4967c862ce613881",
+          "started": 31,
+          "budgetMs": 8726
+        },
+        {
+          "request": 3,
+          "job": 45,
+          "phase": "plan",
+          "inputDigest": "2ad2f6848e80e510",
+          "started": 31,
+          "budgetMs": 8746
+        },
+        {
+          "request": 4,
+          "job": 46,
+          "phase": "plan",
+          "inputDigest": "0fc824efc4260a0d",
+          "started": 31,
+          "budgetMs": 8749
+        },
+        {
+          "request": 5,
+          "job": 47,
+          "phase": "plan",
+          "inputDigest": "00c5bcf1e47d79c5",
+          "started": 31,
+          "budgetMs": 8747
+        },
+        {
+          "request": 6,
+          "job": 48,
+          "phase": "plan",
+          "inputDigest": "b21991431abaa8d1",
+          "started": 31,
+          "budgetMs": 8749
+        },
+        {
+          "request": 7,
+          "job": 49,
+          "phase": "plan",
+          "inputDigest": "deeded8a1bdfe5b2",
+          "started": 31,
+          "budgetMs": 8744
+        },
+        {
+          "request": 8,
+          "job": 50,
+          "phase": "plan",
+          "inputDigest": "499176901b5b704d",
+          "started": 31,
+          "budgetMs": 8746
+        },
+        {
+          "request": 9,
+          "job": 51,
+          "phase": "plan",
+          "inputDigest": "e9005ab2f4c669a8",
+          "started": 31,
+          "budgetMs": 8751
+        },
+        {
+          "request": 1,
+          "job": 52,
+          "phase": "select",
+          "inputDigest": "58ff21aec032b4b3",
+          "started": 31,
+          "budgetMs": 7921
+        },
+        {
+          "request": 2,
+          "job": 53,
+          "phase": "plan",
+          "inputDigest": "14ba77ae3cd196ec",
+          "started": 31,
+          "budgetMs": 8852
+        },
+        {
+          "request": 3,
+          "job": 54,
+          "phase": "plan",
+          "inputDigest": "5a0c9e87f430d1a4",
+          "started": 31,
+          "budgetMs": 8854
+        },
+        {
+          "request": 4,
+          "job": 55,
+          "phase": "plan",
+          "inputDigest": "90d7b40106e8f575",
+          "started": 31,
+          "budgetMs": 8852
+        },
+        {
+          "request": 5,
+          "job": 56,
+          "phase": "plan",
+          "inputDigest": "37c49bc58090ec8c",
+          "started": 31,
+          "budgetMs": 8851
+        },
+        {
+          "request": 6,
+          "job": 57,
+          "phase": "plan",
+          "inputDigest": "aab5e67795592ebf",
+          "started": 31,
+          "budgetMs": 8850
+        },
+        {
+          "request": 1,
+          "job": 58,
+          "phase": "select",
+          "inputDigest": "c973e38bb18a4355",
+          "started": 31,
+          "budgetMs": 8139
+        },
+        {
+          "request": 2,
+          "job": 59,
+          "phase": "plan",
+          "inputDigest": "ab59f65aa5f9c6fb",
+          "started": 31,
+          "budgetMs": 8767
+        },
+        {
+          "request": 3,
+          "job": 60,
+          "phase": "plan",
+          "inputDigest": "0a94c09831c9ea64",
+          "started": 31,
+          "budgetMs": 8782
+        },
+        {
+          "request": 4,
+          "job": 61,
+          "phase": "plan",
+          "inputDigest": "1bb2b6fa31649f6c",
+          "started": 31,
+          "budgetMs": 8785
+        },
+        {
+          "request": 5,
+          "job": 62,
+          "phase": "plan",
+          "inputDigest": "66e17dfc826963d3",
+          "started": 31,
+          "budgetMs": 8791
+        },
+        {
+          "request": 6,
+          "job": 63,
+          "phase": "plan",
+          "inputDigest": "c46ca6e3abf1ff9a",
+          "started": 31,
+          "budgetMs": 8787
+        },
+        {
+          "request": 1,
+          "job": 64,
+          "phase": "select",
+          "inputDigest": "f2761b5a2f606ba6",
+          "started": 31,
+          "budgetMs": 7872
+        },
+        {
+          "request": 2,
+          "job": 65,
+          "phase": "plan",
+          "inputDigest": "9a5060f8258a511b",
+          "started": 31,
+          "budgetMs": 8850
+        },
+        {
+          "request": 3,
+          "job": 66,
+          "phase": "plan",
+          "inputDigest": "666c95e1f97c5ea0",
+          "started": 31,
+          "budgetMs": 8752
+        },
+        {
+          "request": 4,
+          "job": 67,
+          "phase": "plan",
+          "inputDigest": "ddb298b8b7ee705a",
+          "started": 31,
+          "budgetMs": 8742
+        },
+        {
+          "request": 5,
+          "job": 68,
+          "phase": "plan",
+          "inputDigest": "1307a481716e4a73",
+          "started": 31,
+          "budgetMs": 8748
+        },
+        {
+          "request": 6,
+          "job": 69,
+          "phase": "plan",
+          "inputDigest": "1ec5e982bcf7b9c6",
+          "started": 31,
+          "budgetMs": 8745
+        },
+        {
+          "request": 1,
+          "job": 70,
+          "phase": "select",
+          "inputDigest": "b1f533d13c4268f1",
+          "started": 31,
+          "budgetMs": 8135
+        },
+        {
+          "request": 2,
+          "job": 71,
+          "phase": "plan",
+          "inputDigest": "80231eaa3306e770",
+          "started": 31,
+          "budgetMs": 8847
+        },
+        {
+          "request": 3,
+          "job": 72,
+          "phase": "plan",
+          "inputDigest": "abcf7061d1cde9d9",
+          "started": 31,
+          "budgetMs": 8856
+        },
+        {
+          "request": 4,
+          "job": 73,
+          "phase": "plan",
+          "inputDigest": "4fc6c21146117d5e",
+          "started": 31,
+          "budgetMs": 8855
+        },
+        {
+          "request": 5,
+          "job": 74,
+          "phase": "plan",
+          "inputDigest": "7d3d849751971caf",
+          "started": 31,
+          "budgetMs": 8855
+        },
+        {
+          "request": 6,
+          "job": 75,
+          "phase": "plan",
+          "inputDigest": "3df6203859b9a303",
+          "started": 31,
+          "budgetMs": 8850
+        },
+        {
+          "request": 7,
+          "job": 76,
+          "phase": "plan",
+          "inputDigest": "443883330be0bad2",
+          "started": 31,
+          "budgetMs": 8855
+        },
+        {
+          "request": 8,
+          "job": 77,
+          "phase": "plan",
+          "inputDigest": "ad18d1cda59ffccd",
+          "started": 31,
+          "budgetMs": 8845
+        },
+        {
+          "request": 9,
+          "job": 78,
+          "phase": "plan",
+          "inputDigest": "eafd813f31ac5fd2",
+          "started": 31,
+          "budgetMs": 8853
+        },
+        {
+          "request": 1,
+          "job": 79,
+          "phase": "select",
+          "inputDigest": "f9ee3a0ac6b16910",
+          "started": 31,
+          "budgetMs": 8024
+        },
+        {
+          "request": 2,
+          "job": 80,
+          "phase": "plan",
+          "inputDigest": "ddc0bef5c27bce70",
+          "started": 31,
+          "budgetMs": 8842
+        },
+        {
+          "request": 3,
+          "job": 81,
+          "phase": "plan",
+          "inputDigest": "5f730faaaace6bfd",
+          "started": 31,
+          "budgetMs": 8754
+        },
+        {
+          "request": 4,
+          "job": 82,
+          "phase": "plan",
+          "inputDigest": "19312efac81969e3",
+          "started": 31,
+          "budgetMs": 8740
+        },
+        {
+          "request": 5,
+          "job": 83,
+          "phase": "plan",
+          "inputDigest": "e1bbca912a523dfb",
+          "started": 31,
+          "budgetMs": 8745
+        },
+        {
+          "request": 6,
+          "job": 84,
+          "phase": "plan",
+          "inputDigest": "6a7316f9b99b9537",
+          "started": 31,
+          "budgetMs": 8747
+        }
+      ],
+      "resultsDetail": [
+        {
+          "request": 1,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 59,
+          "elapsedMs": 8389,
+          "rxBytes": 1540,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 51,
+          "elapsedMs": 8493,
+          "rxBytes": 9743,
+          "txBytes": 4686
+        },
+        {
+          "request": 3,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 47,
+          "elapsedMs": 8460,
+          "rxBytes": 23297,
+          "txBytes": 14833
+        },
+        {
+          "request": 4,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 54,
+          "elapsedMs": 8456,
+          "rxBytes": 38407,
+          "txBytes": 26527
+        },
+        {
+          "request": 5,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 61,
+          "elapsedMs": 8460,
+          "rxBytes": 54303,
+          "txBytes": 38980
+        },
+        {
+          "request": 6,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 46,
+          "elapsedMs": 8004,
+          "rxBytes": 70294,
+          "txBytes": 51533
+        },
+        {
+          "request": 1,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 56,
+          "elapsedMs": 7726,
+          "rxBytes": 2477,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 51,
+          "elapsedMs": 8298,
+          "rxBytes": 18263,
+          "txBytes": 8944
+        },
+        {
+          "request": 3,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 46,
+          "elapsedMs": 8448,
+          "rxBytes": 45551,
+          "txBytes": 29643
+        },
+        {
+          "request": 4,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 70,
+          "elapsedMs": 8459,
+          "rxBytes": 75111,
+          "txBytes": 52615
+        },
+        {
+          "request": 5,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 53,
+          "elapsedMs": 8465,
+          "rxBytes": 106992,
+          "txBytes": 77884
+        },
+        {
+          "request": 6,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 48,
+          "elapsedMs": 8143,
+          "rxBytes": 139293,
+          "txBytes": 103583
+        },
+        {
+          "request": 1,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 52,
+          "elapsedMs": 7611,
+          "rxBytes": 3675,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 64,
+          "elapsedMs": 8526,
+          "rxBytes": 26814,
+          "txBytes": 13185
+        },
+        {
+          "request": 3,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 69,
+          "elapsedMs": 8497,
+          "rxBytes": 69054,
+          "txBytes": 46037
+        },
+        {
+          "request": 4,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 64,
+          "elapsedMs": 8494,
+          "rxBytes": 116632,
+          "txBytes": 84254
+        },
+        {
+          "request": 5,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 46,
+          "elapsedMs": 8492,
+          "rxBytes": 168360,
+          "txBytes": 126576
+        },
+        {
+          "request": 6,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 55,
+          "elapsedMs": 8168,
+          "rxBytes": 221011,
+          "txBytes": 169832
+        },
+        {
+          "request": 1,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 51,
+          "elapsedMs": 7665,
+          "rxBytes": 1580,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 57,
+          "elapsedMs": 8563,
+          "rxBytes": 9262,
+          "txBytes": 4422
+        },
+        {
+          "request": 3,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 52,
+          "elapsedMs": 8467,
+          "rxBytes": 21305,
+          "txBytes": 13612
+        },
+        {
+          "request": 4,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 49,
+          "elapsedMs": 8465,
+          "rxBytes": 34478,
+          "txBytes": 23805
+        },
+        {
+          "request": 5,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 49,
+          "elapsedMs": 8460,
+          "rxBytes": 48201,
+          "txBytes": 34520
+        },
+        {
+          "request": 6,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 55,
+          "elapsedMs": 8457,
+          "rxBytes": 61824,
+          "txBytes": 45244
+        },
+        {
+          "request": 7,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 56,
+          "elapsedMs": 8459,
+          "rxBytes": 75146,
+          "txBytes": 55441
+        },
+        {
+          "request": 8,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 53,
+          "elapsedMs": 8456,
+          "rxBytes": 88753,
+          "txBytes": 66008
+        },
+        {
+          "request": 9,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 64,
+          "elapsedMs": 8462,
+          "rxBytes": 102301,
+          "txBytes": 76698
+        },
+        {
+          "request": 10,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 51,
+          "elapsedMs": 8460,
+          "rxBytes": 115807,
+          "txBytes": 87256
+        },
+        {
+          "request": 11,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 68,
+          "elapsedMs": 8015,
+          "rxBytes": 129987,
+          "txBytes": 98450
+        },
+        {
+          "request": 1,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 50,
+          "elapsedMs": 7655,
+          "rxBytes": 2477,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 47,
+          "elapsedMs": 8376,
+          "rxBytes": 16360,
+          "txBytes": 7954
+        },
+        {
+          "request": 3,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 56,
+          "elapsedMs": 8463,
+          "rxBytes": 41428,
+          "txBytes": 27317
+        },
+        {
+          "request": 4,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 55,
+          "elapsedMs": 8469,
+          "rxBytes": 68173,
+          "txBytes": 48353
+        },
+        {
+          "request": 5,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 63,
+          "elapsedMs": 8475,
+          "rxBytes": 96908,
+          "txBytes": 71358
+        },
+        {
+          "request": 6,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 54,
+          "elapsedMs": 8144,
+          "rxBytes": 126059,
+          "txBytes": 94751
+        },
+        {
+          "request": 1,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 63,
+          "elapsedMs": 7976,
+          "rxBytes": 3681,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 47,
+          "elapsedMs": 8553,
+          "rxBytes": 29144,
+          "txBytes": 14312
+        },
+        {
+          "request": 3,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 71,
+          "elapsedMs": 8497,
+          "rxBytes": 75400,
+          "txBytes": 49872
+        },
+        {
+          "request": 4,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 76,
+          "elapsedMs": 8487,
+          "rxBytes": 124855,
+          "txBytes": 88574
+        },
+        {
+          "request": 5,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 73,
+          "elapsedMs": 8494,
+          "rxBytes": 176690,
+          "txBytes": 129717
+        },
+        {
+          "request": 6,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 69,
+          "elapsedMs": 8496,
+          "rxBytes": 228288,
+          "txBytes": 170574
+        },
+        {
+          "request": 7,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 47,
+          "elapsedMs": 8153,
+          "rxBytes": 280007,
+          "txBytes": 211633
+        },
+        {
+          "request": 1,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 65,
+          "elapsedMs": 7597,
+          "rxBytes": 1560,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 57,
+          "elapsedMs": 8434,
+          "rxBytes": 9307,
+          "txBytes": 4402
+        },
+        {
+          "request": 3,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 74,
+          "elapsedMs": 8454,
+          "rxBytes": 22437,
+          "txBytes": 14281
+        },
+        {
+          "request": 4,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 73,
+          "elapsedMs": 8457,
+          "rxBytes": 36217,
+          "txBytes": 24806
+        },
+        {
+          "request": 5,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 50,
+          "elapsedMs": 8456,
+          "rxBytes": 50914,
+          "txBytes": 36254
+        },
+        {
+          "request": 6,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 67,
+          "elapsedMs": 8458,
+          "rxBytes": 65678,
+          "txBytes": 47797
+        },
+        {
+          "request": 7,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 57,
+          "elapsedMs": 8453,
+          "rxBytes": 80414,
+          "txBytes": 59293
+        },
+        {
+          "request": 8,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 57,
+          "elapsedMs": 8455,
+          "rxBytes": 95077,
+          "txBytes": 70739
+        },
+        {
+          "request": 9,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 46,
+          "elapsedMs": 8007,
+          "rxBytes": 109871,
+          "txBytes": 82358
+        },
+        {
+          "request": 1,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 49,
+          "elapsedMs": 7566,
+          "rxBytes": 2481,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 71,
+          "elapsedMs": 8470,
+          "rxBytes": 16776,
+          "txBytes": 8192
+        },
+        {
+          "request": 3,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 49,
+          "elapsedMs": 8470,
+          "rxBytes": 40555,
+          "txBytes": 26546
+        },
+        {
+          "request": 4,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 58,
+          "elapsedMs": 8468,
+          "rxBytes": 66442,
+          "txBytes": 47070
+        },
+        {
+          "request": 5,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 71,
+          "elapsedMs": 8472,
+          "rxBytes": 93973,
+          "txBytes": 68896
+        },
+        {
+          "request": 6,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 46,
+          "elapsedMs": 8139,
+          "rxBytes": 121438,
+          "txBytes": 90516
+        },
+        {
+          "request": 1,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 50,
+          "elapsedMs": 7866,
+          "rxBytes": 3681,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 58,
+          "elapsedMs": 8480,
+          "rxBytes": 27221,
+          "txBytes": 13489
+        },
+        {
+          "request": 3,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 50,
+          "elapsedMs": 8492,
+          "rxBytes": 70052,
+          "txBytes": 47997
+        },
+        {
+          "request": 4,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 51,
+          "elapsedMs": 8495,
+          "rxBytes": 116469,
+          "txBytes": 85452
+        },
+        {
+          "request": 5,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 66,
+          "elapsedMs": 8500,
+          "rxBytes": 165060,
+          "txBytes": 125055
+        },
+        {
+          "request": 6,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 75,
+          "elapsedMs": 8172,
+          "rxBytes": 214387,
+          "txBytes": 165619
+        },
+        {
+          "request": 1,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 48,
+          "elapsedMs": 7478,
+          "rxBytes": 1545,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 58,
+          "elapsedMs": 8562,
+          "rxBytes": 8928,
+          "txBytes": 4237
+        },
+        {
+          "request": 3,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 73,
+          "elapsedMs": 8467,
+          "rxBytes": 21788,
+          "txBytes": 14051
+        },
+        {
+          "request": 4,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 52,
+          "elapsedMs": 8458,
+          "rxBytes": 35043,
+          "txBytes": 24232
+        },
+        {
+          "request": 5,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 63,
+          "elapsedMs": 8463,
+          "rxBytes": 48851,
+          "txBytes": 34983
+        },
+        {
+          "request": 6,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 46,
+          "elapsedMs": 8008,
+          "rxBytes": 62777,
+          "txBytes": 45837
+        },
+        {
+          "request": 1,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 53,
+          "elapsedMs": 7766,
+          "rxBytes": 2501,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 60,
+          "elapsedMs": 8459,
+          "rxBytes": 17439,
+          "txBytes": 8563
+        },
+        {
+          "request": 3,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 52,
+          "elapsedMs": 8468,
+          "rxBytes": 43914,
+          "txBytes": 29121
+        },
+        {
+          "request": 4,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 71,
+          "elapsedMs": 8469,
+          "rxBytes": 72255,
+          "txBytes": 51547
+        },
+        {
+          "request": 5,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 51,
+          "elapsedMs": 8467,
+          "rxBytes": 102021,
+          "txBytes": 75403
+        },
+        {
+          "request": 6,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 59,
+          "elapsedMs": 8462,
+          "rxBytes": 132312,
+          "txBytes": 99622
+        },
+        {
+          "request": 7,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 70,
+          "elapsedMs": 8469,
+          "rxBytes": 162444,
+          "txBytes": 123735
+        },
+        {
+          "request": 8,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 60,
+          "elapsedMs": 8457,
+          "rxBytes": 192215,
+          "txBytes": 147502
+        },
+        {
+          "request": 9,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 56,
+          "elapsedMs": 8136,
+          "rxBytes": 222499,
+          "txBytes": 171784
+        },
+        {
+          "request": 1,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 56,
+          "elapsedMs": 7818,
+          "rxBytes": 3675,
+          "txBytes": 58
+        },
+        {
+          "request": 2,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 64,
+          "elapsedMs": 8613,
+          "rxBytes": 28236,
+          "txBytes": 14068
+        },
+        {
+          "request": 3,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 73,
+          "elapsedMs": 8527,
+          "rxBytes": 70855,
+          "txBytes": 47043
+        },
+        {
+          "request": 4,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 59,
+          "elapsedMs": 8512,
+          "rxBytes": 117685,
+          "txBytes": 83876
+        },
+        {
+          "request": 5,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 71,
+          "elapsedMs": 8517,
+          "rxBytes": 169368,
+          "txBytes": 125528
+        },
+        {
+          "request": 6,
+          "completed": 31,
+          "started": 31,
+          "selectedWorker": 71,
+          "elapsedMs": 8188,
+          "rxBytes": 220402,
+          "txBytes": 166559
+        }
+      ],
+      "fullCoordinatorComparisonAvailable": false,
+      "matchingOtherWorkerInputs": true,
+      "matchingAvailableCoordinatorSuffix": true,
+      "fallbackOrInvalidSelectedWorkerCount": 0,
+      "processAtCompletion": {
+        "pid": 1943,
+        "startTicks": "1040916",
+        "startTicksMatchStartRecord": true,
+        "bootId": "21b738ab-7c59-47e2-bc9f-07075a0e35af",
+        "executable": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+        "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+        "cwd": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0",
+        "status": {
+          "Name": "distributed-sol",
+          "State": "S (sleeping)",
+          "Threads": "32",
+          "Cpus_allowed_list": "0-31",
+          "VmRSS": "10750628 kB",
+          "VmHWM": "10818716 kB",
+          "VmSize": "12129184 kB",
+          "VmPeak": "12325792 kB"
+        },
+        "scope": "C011 short01 worker process lifetime; VmHWM includes all 12 cases"
+      }
+    }
+  },
+  "clockAndGovernor": {
+    "v1": {
+      "offsetMs": -0.04374980926513672,
+      "minimumRttMs": 0.2567768096923828,
+      "selectedLocalClock": true,
+      "governors": [
+        "performance"
+      ],
+      "epp": [
+        "performance"
+      ]
+    },
+    "v2": {
+      "offsetMs": -0.041425228118896484,
+      "minimumRttMs": 0.2796649932861328,
+      "selectedLocalClock": true,
+      "governors": [
+        "performance"
+      ],
+      "epp": [
+        "performance"
+      ]
+    },
+    "v3": {
+      "offsetMs": 0.08302927017211914,
+      "minimumRttMs": 0.17261505126953125,
+      "selectedLocalClock": true,
+      "governors": [
+        "performance"
+      ],
+      "epp": [
+        "performance"
+      ]
+    },
+    "nomlab": {
+      "offsetMs": -0.10025501251220703,
+      "minimumRttMs": 1.5375614166259766,
+      "selectedLocalClock": true,
+      "governors": [
+        "performance"
+      ],
+      "epp": [
+        "performance"
+      ]
+    }
+  },
+  "logs": {
+    "v1": {
+      "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team.log",
+      "capturedStartByte": 52150,
+      "capturedEndByte": 58635,
+      "sha256OfCapturedByteRange": "cdd8384a5ab7f68072b7963ed9c3fbd641b7bdbcceea947b3b12d7ab238b330b"
+    },
+    "v2": {
+      "path": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/resume-team.log",
+      "capturedStartByte": 10240913,
+      "capturedEndByte": 11590961,
+      "sha256OfCapturedByteRange": "c2dc81a2cd1f68075a1286949c70a6ee51b3df49f3d7bcbc180a57de24362a97"
+    },
+    "v3": {
+      "path": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/resume-team.log",
+      "capturedStartByte": 20957570,
+      "capturedEndByte": 23724072,
+      "sha256OfCapturedByteRange": "b5b863dbff1076d7c7079afbdde55510556719197bfbf836df6035c8347ec9eb"
+    },
+    "nomlab": {
+      "path": "/home/nomlab-ubuntu/procon37-distributed/resume-team.log",
+      "capturedStartByte": 50416,
+      "capturedEndByte": 56935,
+      "sha256OfCapturedByteRange": "f6fdeb426ca03b1d7d87060a498df8f28dc6ea35f3fbfc52c9d39ae7fd38efe1"
+    }
+  },
+  "scopeNote": "C011短縮1 run の追記区間のみ。開始位置は C010短縮2 capturedEndByte、C010短縮2 直前区間 SHA も照合済み。clock/gov/RSS は終了時観測。elapsed は solver 内部経過時間で HTTP 全経路の締切保証ではない。",
+  "deadlineDiagnostics": {
+    "workerTimeoutOrPanicMessages": {
+      "v2": {
+        "timeout": 0,
+        "deadline": 0,
+        "panic": 0
+      },
+      "v3": {
+        "timeout": 0,
+        "deadline": 0,
+        "panic": 0
+      }
+    },
+    "coordinatorObservedScope": "seed11のみ",
+    "coordinatorObservedTimeoutOrPanicMessages": {
+      "timeout": 0,
+      "deadline": 0,
+      "panic": 0
+    },
+    "all48ACFromSavedRun": true,
+    "note": "全員ACとstderr診断の完全性は別。内部elapsedだけでHTTP経路全体の期限遵守を判定しない。"
+  },
+  "remainingRuntimeProcesses": {
+    "v1": [
+      {
+        "pid": 435,
+        "role": "bridge",
+        "executable": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+        "executableSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "startTicks": "8587535",
+        "status": {
+          "Name": "server-bridge",
+          "State": "S (sleeping)",
+          "Threads": "33",
+          "Cpus_allowed_list": "0-31",
+          "VmRSS": "5072 kB",
+          "VmHWM": "5072 kB",
+          "VmSize": "2169584 kB",
+          "VmPeak": "2169584 kB"
+        }
+      },
+      {
+        "pid": 32002,
+        "role": "runner",
+        "executable": "/usr/bin/python3.13",
+        "executableSha256": "ba898d6049ed77035dcc976cb099912c650ab670aed4105b850a97c63c7ce352",
+        "startTicks": "8496136",
+        "status": {
+          "Name": "python3",
+          "State": "S (sleeping)",
+          "Threads": "1",
+          "Cpus_allowed_list": "0-31",
+          "VmRSS": "12844 kB",
+          "VmHWM": "12844 kB",
+          "VmSize": "21576 kB",
+          "VmPeak": "21624 kB"
+        }
+      }
+    ],
+    "v2": [
+      {
+        "pid": 10079,
+        "role": "solver",
+        "executable": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver",
+        "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+        "startTicks": "9129081",
+        "status": {
+          "Name": "distributed-sol",
+          "State": "S (sleeping)",
+          "Threads": "16",
+          "Cpus_allowed_list": "0-15",
+          "VmRSS": "5218924 kB",
+          "VmHWM": "5246992 kB",
+          "VmSize": "5945916 kB",
+          "VmPeak": "6011452 kB"
+        }
+      }
+    ],
+    "v3": [
+      {
+        "pid": 1943,
+        "role": "solver",
+        "executable": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+        "executableSha256": "424cfb76596972a570ec0625ac0d247f2afb457087e02e4d2cb5a0e79c50d70a",
+        "startTicks": "1040916",
+        "status": {
+          "Name": "distributed-sol",
+          "State": "S (sleeping)",
+          "Threads": "32",
+          "Cpus_allowed_list": "0-31",
+          "VmRSS": "10750628 kB",
+          "VmHWM": "10818716 kB",
+          "VmSize": "12129184 kB",
+          "VmPeak": "12325792 kB"
+        }
+      }
+    ],
+    "nomlab": [
+      {
+        "pid": 29952,
+        "role": "runner",
+        "executable": "/usr/bin/python3.14",
+        "executableSha256": "52e0a13e60a981d8c4b6478be2ba5176f69da07948a056bf49cf6f077e30cb41",
+        "startTicks": "13648591",
+        "status": {
+          "Name": "python3",
+          "State": "S (sleeping)",
+          "Threads": "1",
+          "Cpus_allowed_list": "0-15",
+          "VmRSS": "16256 kB",
+          "VmHWM": "16336 kB",
+          "VmSize": "27632 kB",
+          "VmPeak": "27668 kB"
+        }
+      },
+      {
+        "pid": 37492,
+        "role": "bridge",
+        "executable": "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+        "executableSha256": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "startTicks": "14738808",
+        "status": {
+          "Name": "server-bridge",
+          "State": "S (sleeping)",
+          "Threads": "17",
+          "Cpus_allowed_list": "0-15",
+          "VmRSS": "5028 kB",
+          "VmHWM": "5028 kB",
+          "VmSize": "1088328 kB",
+          "VmPeak": "1088328 kB"
+        }
+      }
+    ]
+  },
+  "remainingProcessesScope": "End-of-run snapshot; v1/NOM per-match solver has exited while runner/bridge wait. Subsequent parent switch may change these PIDs.",
+  "artifactSha256": {
+    "nomlab-completion.json": "78c3766cf71f36c6fda1876ba684ac575e7ccd0f84a28cff5b0aa9c357b04776",
+    "v1-completion.json": "1a55ed73391dfe558af52b72f723717ea3b818ab4b42b09c6e74914f0ca40f72",
+    "v2-completion.json": "34658e1344d91fd39ecadeed03b924a284a658ad67995ff59f99b102f063498c",
+    "v3-completion.json": "84166e67986b656898266800648251b275bebf765c024d324c8e888c7ae3696d",
+    "nomlab-solver-stderr.json": "d565e5f924985ee8b1102097f0f5b5f1d243ab6b9245c934898b2c867b070d04",
+    "v1-solver-stderr.json": "72da53d9d740f6ccb3466891530909045ea166845fbb5929d4fa176b600fbb7a"
+  },
+  "actualLauncherMatchesManifest": {
+    "v1": true,
+    "v2": true,
+    "v3": true,
+    "nomlab": true
+  },
+  "collectionNotes": [
+    "End-of-run remote reads only; no source/config/process changes.",
+    "The first v1/NOM stderr fetch succeeded remotely but local save raced with creation of the new output directory. The output directory was then ensured and those two unchanged final-match stderr files were fetched again successfully before any switch. Four-host log/clock/process captures were not repeated."
+  ]
+}

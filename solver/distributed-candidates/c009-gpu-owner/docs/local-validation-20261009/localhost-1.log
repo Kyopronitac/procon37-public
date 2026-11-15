@@ -1,0 +1,17 @@
+warning: function `day_seconds` is never used
+   --> common/src/generator.rs:136:15
+    |
+136 | pub(crate) fn day_seconds(
+    |               ^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: `tester` (lib) generated 1 warning
+    Finished `release` profile [optimized] target(s) in 0.01s
+     Running unittests main.rs (solver/distributed-candidates/c009-gpu-owner/target/release/deps/distributed_solver-86a94ec15cf3df6e)
+
+running 1 test
+test wire::tests::fragmented_frames_and_oversized_frames ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 30 filtered out; finished in 0.00s
+

@@ -1,0 +1,124 @@
+<mxfile host="65bd71144e">
+    <diagram id="terrain-cost-comparison" name="地形による移動時間と燃料の比較">
+        <mxGraphModel dx="73" dy="40" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="0" page="0" pageScale="1" pageWidth="520" pageHeight="390" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="road-card" parent="1" style="rounded=1;arcSize=9;whiteSpace=wrap;html=1;fillColor=#F1F3F5;strokeColor=#6B7280;strokeWidth=2;" value="" vertex="1">
+                    <mxGeometry height="122" width="514" x="3" y="2" as="geometry"/>
+                </mxCell>
+                <mxCell id="road-title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=22;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="&lt;span style=&quot;color: #242424;&quot;&gt;平地&lt;/span&gt;" vertex="1">
+                    <mxGeometry height="30" width="160" x="18" y="12" as="geometry"/>
+                </mxCell>
+                <mxCell id="road-cell-0" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.86;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="45" width="52" x="151" y="51" as="geometry"/>
+                </mxCell>
+                <mxCell id="road-cell-1" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.86;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="45" width="52" x="196" y="51" as="geometry"/>
+                </mxCell>
+                <mxCell id="road-cell-2" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.86;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="45" width="52" x="241" y="51" as="geometry"/>
+                </mxCell>
+                <mxCell id="road-goal-cell" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.86;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="45" width="52" x="286" y="51" as="geometry"/>
+                </mxCell>
+                <mxCell id="road-step-3" edge="1" parent="1" source="road-car" style="endArrow=block;endFill=1;html=1;strokeColor=#97283C;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="road-goal-wave">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="267" y="73.5" as="sourcePoint"/>
+                        <mxPoint x="312" y="73.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="road-car" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#2563eb;strokeColor=#ffffff;strokeWidth=2.17;fontColor=#ffffff;fontSize=10.87;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;spacing=0;" value="1" vertex="1">
+                    <mxGeometry height="19.76" width="19.76" x="167.12" y="63.62" as="geometry"/>
+                </mxCell>
+                <mxCell id="road-goal" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#dc2626;strokeColor=#ffffff;strokeWidth=2;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="19.814661238587956" width="22.88" x="300.56" y="63.09266938070602" as="geometry"/>
+                </mxCell>
+                <mxCell id="road-goal-wave" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#ffffff;fontSize=11.9;fontStyle=1;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="A" vertex="1">
+                    <mxGeometry height="22.88" width="22.88" x="300.56" y="61.56" as="geometry"/>
+                </mxCell>
+                <mxCell id="road-result" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#97283C;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="6 ステップ&lt;br&gt;消費燃料 3" vertex="1">
+                    <mxGeometry height="57" width="156" x="352" y="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="plain-card" parent="1" style="rounded=1;arcSize=9;whiteSpace=wrap;html=1;fillColor=#F1F3F5;strokeColor=#6B7280;strokeWidth=2;" value="" vertex="1">
+                    <mxGeometry height="122" width="514" x="3" y="132" as="geometry"/>
+                </mxCell>
+                <mxCell id="plain-title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=22;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="&lt;span style=&quot;color: #242424;&quot;&gt;道路（順調）&lt;/span&gt;" vertex="1">
+                    <mxGeometry height="30" width="160" x="18" y="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="plain-cell-0" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.86;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="45" width="52" x="151" y="181" as="geometry"/>
+                </mxCell>
+                <mxCell id="plain-cell-1" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.86;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="45" width="52" x="196" y="181" as="geometry"/>
+                </mxCell>
+                <mxCell id="plain-cell-2" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#d3d8df;strokeColor=#ffffff;strokeWidth=2.86;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="45" width="52" x="241" y="181" as="geometry"/>
+                </mxCell>
+                <mxCell id="plain-goal-cell" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.86;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="45" width="52" x="286" y="181" as="geometry"/>
+                </mxCell>
+                <mxCell id="plain-step-3" edge="1" parent="1" source="plain-car" style="endArrow=block;endFill=1;html=1;strokeColor=#97283C;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="plain-goal-wave">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="267" y="203.5" as="sourcePoint"/>
+                        <mxPoint x="312" y="203.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="plain-car" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#2563eb;strokeColor=#ffffff;strokeWidth=2.17;fontColor=#ffffff;fontSize=10.87;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;spacing=0;" value="1" vertex="1">
+                    <mxGeometry height="19.76" width="19.76" x="167.12" y="193.62" as="geometry"/>
+                </mxCell>
+                <mxCell id="plain-goal" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#dc2626;strokeColor=#ffffff;strokeWidth=2;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="19.814661238587956" width="22.88" x="300.56" y="193.092669380706" as="geometry"/>
+                </mxCell>
+                <mxCell id="plain-goal-wave" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#ffffff;fontSize=11.9;fontStyle=1;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="A" vertex="1">
+                    <mxGeometry height="22.88" width="22.88" x="300.56" y="191.56" as="geometry"/>
+                </mxCell>
+                <mxCell id="plain-result" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#97283C;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="4 ステップ&lt;br&gt;消費燃料 5" vertex="1">
+                    <mxGeometry height="57" width="156" x="352" y="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="jam-card" parent="1" style="rounded=1;arcSize=9;whiteSpace=wrap;html=1;fillColor=#FFF2F5;strokeColor=#6B7280;strokeWidth=2;" value="" vertex="1">
+                    <mxGeometry height="122" width="514" x="3" y="262" as="geometry"/>
+                </mxCell>
+                <mxCell id="jam-title" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontSize=22;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="&lt;span style=&quot;color: #242424;&quot;&gt;山地&lt;/span&gt;" vertex="1">
+                    <mxGeometry height="30" width="160" x="18" y="272" as="geometry"/>
+                </mxCell>
+                <mxCell id="jam-cell-0" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.86;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="45" width="52" x="151" y="311" as="geometry"/>
+                </mxCell>
+                <mxCell id="jam-cell-1" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.86;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="45" width="52" x="196" y="311" as="geometry"/>
+                </mxCell>
+                <mxCell id="jam-cell-1-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="15.600000000000001" width="20.8" x="211.6" y="325.7" as="geometry"/>
+                </mxCell>
+                <mxCell id="jam-cell-2" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#bccb96;strokeColor=#ffffff;strokeWidth=2.86;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="45" width="52" x="241" y="311" as="geometry"/>
+                </mxCell>
+                <mxCell id="jam-cell-2-terrain-mark" parent="1" style="shape=image;html=1;imageAspect=0;aspect=fixed;image=data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2212%22%20viewBox%3D%22-8%20-6%2016%2012%22%3E%3Cpath%20d%3D%22M%20-6.5%204.5%20L%20-2%20-4.5%20L%20.5%20-.5%20L%202.5%20-3%20L%206.5%204.5%20Z%22%20fill%3D%22%23344818%22%20fill-opacity%3D%22.28%22%2F%3E%3C%2Fsvg%3E;strokeColor=none;fillColor=none;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="15.600000000000001" width="20.8" x="256.6" y="325.7" as="geometry"/>
+                </mxCell>
+                <mxCell id="jam-goal-cell" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.86;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="45" width="52" x="286" y="311" as="geometry"/>
+                </mxCell>
+                <mxCell id="jam-step-3" edge="1" parent="1" source="jam-car" style="endArrow=block;endFill=1;html=1;strokeColor=#97283C;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="jam-goal-wave">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="267" y="333.5" as="sourcePoint"/>
+                        <mxPoint x="312" y="333.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="jam-car" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#2563eb;strokeColor=#ffffff;strokeWidth=2.17;fontColor=#ffffff;fontSize=10.87;fontStyle=1;align=center;verticalAlign=middle;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;shadow=0;spacing=0;" value="1" vertex="1">
+                    <mxGeometry height="19.76" width="19.76" x="167.12" y="323.62" as="geometry"/>
+                </mxCell>
+                <mxCell id="jam-goal" parent="1" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#dc2626;strokeColor=#ffffff;strokeWidth=2;shadow=0;" value="" vertex="1">
+                    <mxGeometry height="19.814661238587956" width="22.88" x="300.56" y="323.092669380706" as="geometry"/>
+                </mxCell>
+                <mxCell id="jam-goal-wave" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#ffffff;fontSize=11.9;fontStyle=1;align=center;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="A" vertex="1">
+                    <mxGeometry height="22.88" width="22.88" x="300.56" y="321.56" as="geometry"/>
+                </mxCell>
+                <mxCell id="jam-result" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#97283C;fontSize=20;fontStyle=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="8 ステップ&lt;br&gt;消費燃料 5" vertex="1">
+                    <mxGeometry height="57" width="156" x="352" y="305" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

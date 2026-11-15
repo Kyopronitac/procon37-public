@@ -1,0 +1,65 @@
+{
+  "host": "VOIDLINUX-3",
+  "file": "/home/voidlinux-3/procon37-distributed/logs/initial-short-worker.log",
+  "size": 2612825,
+  "sha256": "611ce34369eaa6d2137dddf36bc3ba0d92902ac594527778539e554f7646be34",
+  "request_budgets_ms": {
+    "count": 84,
+    "min": 8664,
+    "median": 8751.0,
+    "p90": 8848,
+    "max": 8870
+  },
+  "completed_requests": 84,
+  "all_completed_31": true,
+  "graphs": {
+    "small": {
+      "graph_ms": {
+        "count": 2604,
+        "min": 69,
+        "median": 129.0,
+        "p90": 142,
+        "max": 338
+      },
+      "iterations": {
+        "count": 2604,
+        "min": 803824,
+        "median": 1508410.0,
+        "p90": 5718991,
+        "max": 11674502
+      }
+    },
+    "medium": {
+      "graph_ms": {
+        "count": 1550,
+        "min": 186,
+        "median": 263.0,
+        "p90": 306,
+        "max": 494
+      },
+      "iterations": {
+        "count": 1550,
+        "min": 924001,
+        "median": 2415217.0,
+        "p90": 4435522,
+        "max": 9329937
+      }
+    },
+    "large": {
+      "graph_ms": {
+        "count": 1426,
+        "min": 426,
+        "median": 638.0,
+        "p90": 902,
+        "max": 1448
+      },
+      "iterations": {
+        "count": 1426,
+        "min": 526516,
+        "median": 1386603.5,
+        "p90": 2877258,
+        "max": 5823689
+      }
+    }
+  }
+}

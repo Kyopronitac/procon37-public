@@ -1,0 +1,501 @@
+{
+  "purpose": "記録用単一ファイルの通信・合法性確認。本番性能比較ではない。",
+  "date": "2026-09-24",
+  "rustc": "rustc 1.94.1 (e408947bf 2026-03-25)",
+  "generator": "hex-udon-v19",
+  "problem_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "solver_seed": 0,
+  "time_limit_ms": 2000,
+  "jobs": 6,
+  "sequential_versions": true,
+  "output_dir": "/tmp/procon37-solver-records-vxvmkbdf",
+  "runs": [
+    {
+      "binary": "solver-01",
+      "binary_sha256": "1f58641bfba2fe236eb7cc7afc7db086deb604ed01ee6d0c511d04dbff9eb32b",
+      "run_id": "1790231824224778057-57",
+      "label": "第1版・記録用単一ファイル・通信と合法性確認6件",
+      "status": "completed",
+      "ac": 6,
+      "warnings": 0,
+      "selection_failures": 0,
+      "plan_failures": 0,
+      "score_totals": {
+        "uniqueBrands": 111,
+        "dailyBrands": 532,
+        "udon": 633
+      },
+      "cases": [
+        {
+          "seed": "0",
+          "format": "first",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 44,
+            "udon": 54
+          },
+          "answerTimeMs": 7500,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "1",
+          "format": "semifinal",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 79,
+            "udon": 89
+          },
+          "answerTimeMs": 7500,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "2",
+          "format": "final",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 115,
+            "udon": 145
+          },
+          "answerTimeMs": 7500,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "3",
+          "format": "first",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 13,
+            "dailyBrands": 57,
+            "udon": 62
+          },
+          "answerTimeMs": 7500,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "4",
+          "format": "semifinal",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 19,
+            "dailyBrands": 88,
+            "udon": 93
+          },
+          "answerTimeMs": 7500,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "5",
+          "format": "final",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 25,
+            "dailyBrands": 149,
+            "udon": 190
+          },
+          "answerTimeMs": 9000,
+          "warnings": 0,
+          "error": null
+        }
+      ]
+    },
+    {
+      "binary": "solver-02",
+      "binary_sha256": "be73422b566a305366b561c42e7b82d399b64f35ae8dfd34b920c0b189cca476",
+      "run_id": "1790231834745171106-102",
+      "label": "第2版・記録用単一ファイル・通信と合法性確認6件",
+      "status": "completed",
+      "ac": 6,
+      "warnings": 0,
+      "selection_failures": 0,
+      "plan_failures": 0,
+      "score_totals": {
+        "uniqueBrands": 111,
+        "dailyBrands": 550,
+        "udon": 643
+      },
+      "cases": [
+        {
+          "seed": "0",
+          "format": "first",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 53,
+            "udon": 63
+          },
+          "answerTimeMs": 2500,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "1",
+          "format": "semifinal",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 81,
+            "udon": 88
+          },
+          "answerTimeMs": 2500,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "2",
+          "format": "final",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 116,
+            "udon": 134
+          },
+          "answerTimeMs": 2500,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "3",
+          "format": "first",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 13,
+            "dailyBrands": 60,
+            "udon": 60
+          },
+          "answerTimeMs": 2500,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "4",
+          "format": "semifinal",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 19,
+            "dailyBrands": 90,
+            "udon": 97
+          },
+          "answerTimeMs": 2500,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "5",
+          "format": "final",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 25,
+            "dailyBrands": 150,
+            "udon": 201
+          },
+          "answerTimeMs": 3000,
+          "warnings": 0,
+          "error": null
+        }
+      ]
+    },
+    {
+      "binary": "solver-03",
+      "binary_sha256": "4db917b37c564cd71d513aca48db9bf135f1d1e984c93b676ee1bf682b498965",
+      "run_id": "1790231838257658254-147",
+      "label": "第3版・記録用単一ファイル・通信と合法性確認6件",
+      "status": "completed",
+      "ac": 6,
+      "warnings": 0,
+      "selection_failures": 0,
+      "plan_failures": 0,
+      "score_totals": {
+        "uniqueBrands": 111,
+        "dailyBrands": 572,
+        "udon": 813
+      },
+      "cases": [
+        {
+          "seed": "0",
+          "format": "first",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 54,
+            "udon": 64
+          },
+          "answerTimeMs": 9750,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "1",
+          "format": "semifinal",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 117
+          },
+          "answerTimeMs": 9752,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "2",
+          "format": "final",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 189
+          },
+          "answerTimeMs": 9750,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "3",
+          "format": "first",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 13,
+            "dailyBrands": 63,
+            "udon": 68
+          },
+          "answerTimeMs": 9751,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "4",
+          "format": "semifinal",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 19,
+            "dailyBrands": 95,
+            "udon": 122
+          },
+          "answerTimeMs": 9750,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "5",
+          "format": "final",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 25,
+            "dailyBrands": 150,
+            "udon": 253
+          },
+          "answerTimeMs": 11700,
+          "warnings": 0,
+          "error": null
+        }
+      ]
+    },
+    {
+      "binary": "solver-04",
+      "binary_sha256": "7fd4f7264cb873ce5568c0f87fb5620b7019c98960e13ce5cb62ac944811b1fe",
+      "run_id": "1790231851922286811-193",
+      "label": "第4版・記録用単一ファイル・通信と合法性確認6件",
+      "status": "completed",
+      "ac": 6,
+      "warnings": 0,
+      "selection_failures": 0,
+      "plan_failures": 0,
+      "score_totals": {
+        "uniqueBrands": 111,
+        "dailyBrands": 567,
+        "udon": 865
+      },
+      "cases": [
+        {
+          "seed": "0",
+          "format": "first",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 53,
+            "udon": 65
+          },
+          "answerTimeMs": 9866,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "1",
+          "format": "semifinal",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 115
+          },
+          "answerTimeMs": 9869,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "2",
+          "format": "final",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 194
+          },
+          "answerTimeMs": 9884,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "3",
+          "format": "first",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 13,
+            "dailyBrands": 62,
+            "udon": 66
+          },
+          "answerTimeMs": 9866,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "4",
+          "format": "semifinal",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 19,
+            "dailyBrands": 92,
+            "udon": 113
+          },
+          "answerTimeMs": 9868,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "5",
+          "format": "final",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 25,
+            "dailyBrands": 150,
+            "udon": 312
+          },
+          "answerTimeMs": 11859,
+          "warnings": 0,
+          "error": null
+        }
+      ]
+    },
+    {
+      "binary": "solver-05",
+      "binary_sha256": "a1fa2052bcac43bfe06e769793175516269dff5403bfb2db4fe20fb4ebcc0aa0",
+      "run_id": "1790231865765934917-238",
+      "label": "第5版・記録用単一ファイル・通信と合法性確認6件",
+      "status": "completed",
+      "ac": 6,
+      "warnings": 0,
+      "selection_failures": 0,
+      "plan_failures": 0,
+      "score_totals": {
+        "uniqueBrands": 111,
+        "dailyBrands": 574,
+        "udon": 853
+      },
+      "cases": [
+        {
+          "seed": "0",
+          "format": "first",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 55,
+            "udon": 66
+          },
+          "answerTimeMs": 9892,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "1",
+          "format": "semifinal",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 122
+          },
+          "answerTimeMs": 9895,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "2",
+          "format": "final",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 195
+          },
+          "answerTimeMs": 9899,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "3",
+          "format": "first",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 13,
+            "dailyBrands": 64,
+            "udon": 71
+          },
+          "answerTimeMs": 9894,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "4",
+          "format": "semifinal",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 19,
+            "dailyBrands": 95,
+            "udon": 126
+          },
+          "answerTimeMs": 9894,
+          "warnings": 0,
+          "error": null
+        },
+        {
+          "seed": "5",
+          "format": "final",
+          "status": "AC",
+          "score": {
+            "uniqueBrands": 25,
+            "dailyBrands": 150,
+            "udon": 273
+          },
+          "answerTimeMs": 11872,
+          "warnings": 0,
+          "error": null
+        }
+      ]
+    }
+  ]
+}

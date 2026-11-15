@@ -1,0 +1,15 @@
+{
+  "candidate": "C009b-gpu-owner",
+  "status": "unbuilt; tests prepared, not executed",
+  "sourceAggregateSha256": "18c63370e33d070da875afa630e66b2d2d529f653614586902fb679503b3985a",
+  "binary": null,
+  "adopted": false,
+  "testsPrepared": [
+    "delegated_tid_command_is_one_complete_write",
+    "delegated_tid_short_write_fails_without_sending_second_command",
+    "delegated_tid_write_error_has_context_and_is_not_retried"
+  ],
+  "gpuStarted": false,
+  "remoteOperations": false,
+  "parentValidationIsNotThisCandidateValidation": true
+}

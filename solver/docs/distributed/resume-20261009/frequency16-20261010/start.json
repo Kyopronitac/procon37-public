@@ -1,0 +1,65 @@
+{
+  "process": {
+    "stage": "frequency16-matrix-20261010-01",
+    "status": "running",
+    "startedUnix": 1791575924.417206,
+    "directory": "/home/imak/work/procon37/.server/distributed/evaluations/frequency16-matrix-20261010-01",
+    "seeds": [
+      0,
+      3,
+      6,
+      9
+    ],
+    "shortMs": null,
+    "deadlineUnix": 1791580080.0,
+    "runs": [],
+    "isFormalFullTest": false,
+    "pid": 78470,
+    "startTicks": "2790268",
+    "state": "R",
+    "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422",
+    "command": [
+      "/usr/bin/python3",
+      "/home/imak/work/procon37/solver/distributed-lab/frequency_matrix.py",
+      "execute",
+      "--stage",
+      "frequency16-matrix-20261010-01"
+    ]
+  },
+  "plan": {
+    "stage": "frequency16-matrix-20261010-01",
+    "seeds": [
+      0,
+      3,
+      6,
+      9
+    ],
+    "variants": [
+      [
+        "C014",
+        "c014-share100ms"
+      ],
+      [
+        "C015",
+        "c015-share2000ms"
+      ]
+    ],
+    "timeLimitMs": null,
+    "deadlineUnix": 1791580080.0,
+    "deadlineIso": "2026-10-10T06:08:00+09:00",
+    "nominalVariantSeconds": 1940,
+    "nominalTotalSeconds": 3880,
+    "isFormalFullTest": false,
+    "baselineReference": "solver/docs/distributed/resume-20261009/frequency16-20261010/baseline.json",
+    "baselineRerun": false,
+    "initialVersion": "C013-scheduled-submission-on-submit55-dedup",
+    "harnessSha256": "aa46f22ca4314411a7614d3a11e17f52f7c4ebdd6c5eb25d4fff7d0e5eed8d53",
+    "createdUnix": 1791575924.4162886,
+    "history": "/home/imak/work/procon37/.server/runs"
+  },
+  "expectedTestFinishJst": [
+    "2026-10-10T06:03:00+09:00",
+    "2026-10-10T06:05:00+09:00"
+  ],
+  "expectedDeploymentFinishJst": "2026-10-10T06:15:00+09:00"
+}

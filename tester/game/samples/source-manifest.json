@@ -1,0 +1,76 @@
+[
+  {
+    "slot": 1,
+    "name": "pool-generation-002",
+    "sourceRunId": "1790551749037999892-54402",
+    "origin": "pool第2世代昇格ソルバ",
+    "files": [
+      {
+        "path": "main.rs",
+        "sha256": "e917e867a4af29fda30533aac298ad30d2a4bac00b1f07f9762ea839b0313e5e"
+      },
+      {
+        "path": "solver/rendezvous.rs",
+        "sha256": "46786c32d744210cd594520e9be2731c7c6a9354f7ee699954d4667b02fca7da"
+      }
+    ],
+    "destination": "src/bin/game-sample-1.rs",
+    "adaptation": "専用モジュールをsrc/pool-generation-002へ独立コピー、入口の相対パスのみ変更"
+  },
+  {
+    "slot": 2,
+    "name": "pool-generation-001",
+    "sourceRunId": "1790521499134996039-41850",
+    "origin": "pool第1世代の昇格ソルバ",
+    "files": [
+      {
+        "path": "main.rs",
+        "sha256": "e1644c4f1bcc43a1d2b1ad29bdf820675f57b83dd538204c662859911a5944f9"
+      },
+      {
+        "path": "solver/horizon.rs",
+        "sha256": "4f2a8b9b3132706a750ac01a88de74a2f208ca022e2794f7fa0ae11ae883cad2"
+      }
+    ],
+    "destination": "src/bin/game-sample-2.rs",
+    "adaptation": "モジュールの相対パスのみ変更、専用モジュールはsrc/pool-generation-001へ独立コピー"
+  },
+  {
+    "slot": 3,
+    "name": "generation-3",
+    "source": "main.rs",
+    "sourceRunId": "1790470439563416580-3",
+    "origin": "第3世代の同一コミットに収録した対象ソルバ",
+    "files": [
+      {
+        "path": "main.rs",
+        "sha256": "1a0e03e2681b4bc10d0a9676adcda69649d451d0998fba702a62d72976d2971d"
+      },
+      {
+        "path": "solver/search.rs",
+        "sha256": "59f471df9f7c55ff7ddd8689c03a65de8e12435f14f622e6fae56b165dee6635"
+      }
+    ],
+    "adaptation": "inline search module without changing its implementation; preserve JSON Lines entry point and observed shared traffic handling",
+    "destination": "src/bin/game-sample-3.rs",
+    "destinationSha256": "76384e0b55e22d9bc92aaacfe823f18e1c434a4d8a1d60b9b4a81dfca759e24f"
+  },
+  {
+    "slot": 4,
+    "name": "pool-generation-003",
+    "sourceRunId": "1790563781811011480-62511",
+    "origin": "pool第3世代昇格ソルバ",
+    "files": [
+      {
+        "path": "main.rs",
+        "sha256": "45342080fca8a0627adec64a5a998561e71996bb7335937f07f077bf3f3af370"
+      },
+      {
+        "path": "solver/rendezvous.rs",
+        "sha256": "5234f63aab664e2994b0ef16d4d1e4de1eb1ca2b429dd02d8d33e541dfe357c2"
+      }
+    ],
+    "destination": "src/bin/game-sample-4.rs",
+    "adaptation": "専用モジュールをsrc/pool-generation-003へ独立コピー、入口の相対パスのみ変更"
+  }
+]

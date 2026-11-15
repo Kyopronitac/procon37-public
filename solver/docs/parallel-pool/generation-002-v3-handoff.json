@@ -1,0 +1,125 @@
+{
+  "candidate": "generation-002-P1 v3",
+  "frozen": true,
+  "sourceRoot": "/home/jikky/Downloads/procon37/solver/parallel-pool/generation-002-P1",
+  "sourceHash": "1f3465499fd5e6d0ea5ee1e193ada24272bae24811fb4f18e82ae1ef19d028d9",
+  "binaryHash": "ae3c60578f62cab9f8968f15681aa35e6d135b037b3cab5f777065a7d4a29af8",
+  "launcherHash": "6ff27df7ad965146b60044907c70778fdbf3674ba2314d92c6843877da9f803b",
+  "args": [
+    "206002"
+  ],
+  "environment": {
+    "PROCON37_G007_FUTURE_WEIGHT": "0",
+    "PROCON37_G007_RESERVE_WEIGHT": "15"
+  },
+  "team": 1,
+  "host": "voidlinux-1@192.168.0.11",
+  "cpu": "4-7,12-15,20-23,28-30",
+  "runShPid": 12745,
+  "rankSums": [
+    18,
+    12,
+    18,
+    15,
+    23,
+    25
+  ],
+  "allAC": 36,
+  "run": "/tmp/g002-p1/v3/runs/1791390259964043917-261152/run.json",
+  "process": "/tmp/g002-p1/v3/process.json",
+  "log": "/tmp/g002-p1/v3/evaluation.log",
+  "allDeploymentHashesUnchanged": true,
+  "sourceAndBinaryUnchanged": true,
+  "threads": {
+    "P1": {
+      "maxThreads": 15,
+      "maxRssKiB": 3765404,
+      "pids": [
+        2978,
+        3083,
+        3209,
+        3312,
+        3419,
+        3528
+      ],
+      "cpuSets": [
+        "4-7,12-15,20-23,28-30"
+      ]
+    },
+    "P0": {
+      "maxThreads": 15,
+      "maxRssKiB": 3660164,
+      "pids": [
+        2994,
+        3099,
+        3193,
+        3296,
+        3403,
+        3512
+      ],
+      "cpuSets": [
+        "0-3,8-11,16-19,24-26"
+      ]
+    },
+    "S0": {
+      "maxThreads": 1,
+      "maxRssKiB": 916076,
+      "pids": [
+        4886,
+        4929,
+        4968,
+        5009,
+        5050,
+        5096
+      ],
+      "cpuSets": [
+        "0"
+      ]
+    },
+    "S1": {
+      "maxThreads": 1,
+      "maxRssKiB": 272000,
+      "pids": [
+        4888,
+        4927,
+        4970,
+        5011,
+        5052,
+        5098
+      ],
+      "cpuSets": [
+        "2"
+      ]
+    },
+    "P3": {
+      "maxThreads": 15,
+      "maxRssKiB": 3766564,
+      "pids": [
+        24715,
+        24836,
+        24942,
+        25030,
+        25156,
+        25253
+      ],
+      "cpuSets": [
+        "4-7,12-15,20-23,28-30"
+      ]
+    },
+    "P2": {
+      "maxThreads": 15,
+      "maxRssKiB": 3766720,
+      "pids": [
+        24731,
+        24820,
+        24926,
+        25046,
+        25140,
+        25269
+      ],
+      "cpuSets": [
+        "0-3,8-11,16-19,24-26"
+      ]
+    }
+  }
+}

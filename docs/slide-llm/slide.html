@@ -1,0 +1,1007 @@
+<!DOCTYPE html><html lang="C"><head><title>「ヘキサうどん」LLM 戦略</title><meta property="og:title" content="「ヘキサうどん」LLM 戦略"><meta name="author" content="明石高専チーム「淵底」"><meta property="article:author" content="明石高専チーム「淵底」"><meta name="description" content="明石高専チーム「淵底」の、LLM によるソルバ開発・評価・並列分散処理の実践記録"><meta property="og:description" content="明石高専チーム「淵底」の、LLM によるソルバ開発・評価・並列分散処理の実践記録"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"><meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="X-UA-Compatible" content="ie=edge"><meta property="og:type" content="website"><meta name="twitter:card" content="summary"><style>@media screen{body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{appearance:none;background-color:initial;border:0;color:inherit;cursor:pointer;font-size:inherit;opacity:.8;outline:none;padding:0;transition:opacity .2s linear;-webkit-tap-highlight-color:transparent}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:disabled,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:disabled{cursor:not-allowed;opacity:.15!important}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover{opacity:1}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:active,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:active{opacity:.6}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button:hover:not(:disabled),body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button:hover:not(:disabled){transition:none}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-prev{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNNjggOTAgMjggNTBsNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button.bespoke-marp-presenter-info-page-next{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJtMzIgOTAgNDAtNDAtNDAtNDAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNNDAgNzBIMjBWNTBtMjAgMEwyMCA3MG00MC00MGgyMHYyMG0tMjAgMCAyMC0yMCIgY2xhc3M9ImEiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button.exit[data-bespoke-marp-osc=fullscreen]{background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDpub25lO3N0cm9rZTojZmZmO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6NXB4fTwvc3R5bGU+PC9kZWZzPjxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2MCIgeD0iMTAiIHk9IjIwIiBjbGFzcz0iYSIgcng9IjUuNjciLz48cGF0aCBkPSJNMjAgNTBoMjB2MjBtLTIwIDAgMjAtMjBtNDAgMEg2MFYzMG0yMCAwTDYwIDUwIiBjbGFzcz0iYSIvPjwvc3ZnPg==")}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter]{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNODcuOCA0Ny41Qzg5IDUwIDg3LjcgNTIgODUgNTJIMzVhOC43IDguNyAwIDAgMS03LjItNC41bC0xNS42LTMxQzExIDE0IDEyLjIgMTIgMTUgMTJoNTBhOC44IDguOCAwIDAgMSA3LjIgNC41ek02MCA1MnYzNm0tMTAgMGgyME00NSA0MmgyMCIvPjwvc3ZnPg==") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-bigger{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODBNNTIgOTBWMTAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button.bespoke-marp-presenter-note-smaller{background:#0000 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSI1IiBkPSJNMTIgNTBoODAiLz48L3N2Zz4=") no-repeat 50%;background-size:contain;overflow:hidden;text-indent:100%;white-space:nowrap}}@keyframes __bespoke_marp_transition_reduced_outgoing__{0%{opacity:1}to{opacity:0}}@keyframes __bespoke_marp_transition_reduced_incoming__{0%{mix-blend-mode:plus-lighter;opacity:0}to{mix-blend-mode:plus-lighter;opacity:1}}.bespoke-marp-note,.bespoke-marp-osc,.bespoke-progress-parent{display:none;transition:none}@media screen{::view-transition-group(*){animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-timing-function:ease}::view-transition-new(*),::view-transition-old(*){animation-delay:0s;animation-direction:var(--marp-bespoke-transition-animation-direction,normal);animation-duration:var(--marp-bespoke-transition-animation-duration,.5s);animation-fill-mode:both;animation-name:var(--marp-bespoke-transition-animation-name,var(--marp-bespoke-transition-animation-name-fallback,__bespoke_marp_transition_no_animation__));mix-blend-mode:normal}::view-transition-old(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_outgoing__;animation-timing-function:ease}::view-transition-new(*){--marp-bespoke-transition-animation-name-fallback:__bespoke_marp_transition_reduced_incoming__;animation-timing-function:ease}::view-transition-new(root),::view-transition-old(root){animation-timing-function:linear}::view-transition-new(__bespoke_marp_transition_osc__),::view-transition-old(__bespoke_marp_transition_osc__){animation-duration:0s!important;animation-name:__bespoke_marp_transition_osc__!important}::view-transition-new(__bespoke_marp_transition_osc__){opacity:0!important}.bespoke-marp-transition-warming-up::view-transition-group(*),.bespoke-marp-transition-warming-up::view-transition-new(*),.bespoke-marp-transition-warming-up::view-transition-old(*){animation-play-state:paused!important}body,html{height:100%;margin:0}body{background:#000;overflow:hidden}svg.bespoke-marp-slide{content-visibility:hidden;opacity:0;pointer-events:none;z-index:-1}svg.bespoke-marp-slide:not(.bespoke-marp-active) *{view-transition-name:none!important}svg.bespoke-marp-slide.bespoke-marp-active{content-visibility:visible;opacity:1;pointer-events:auto;z-index:0}svg.bespoke-marp-slide.bespoke-marp-active.bespoke-marp-active-ready *{animation-name:__bespoke_marp__!important}@supports not (content-visibility:hidden){svg.bespoke-marp-slide[data-bespoke-marp-load=hideable]{display:none}svg.bespoke-marp-slide[data-bespoke-marp-load=hideable].bespoke-marp-active{display:block}}}@media screen and (prefers-reduced-motion:reduce){svg.bespoke-marp-slide *{view-transition-name:none!important}}@media screen{[data-bespoke-marp-fragment=inactive]{visibility:hidden}body[data-bespoke-view=""] .bespoke-marp-parent,body[data-bespoke-view=next] .bespoke-marp-parent{inset:0;position:absolute}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc{background:#000000a6;border-radius:7px;bottom:50px;color:#fff;contain:paint;display:block;font-family:Helvetica,Arial,sans-serif;font-size:16px;left:50%;line-height:0;opacity:1;padding:12px;position:absolute;touch-action:manipulation;transform:translateX(-50%);transition:opacity .2s linear;-webkit-user-select:none;user-select:none;white-space:nowrap;will-change:transform;z-index:1;view-transition-name:__bespoke_marp_transition_osc__}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>*,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>*{margin-left:6px}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>:first-child,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>:first-child{margin-left:0}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span,body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span{opacity:.8}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>span[data-bespoke-marp-osc=page]{display:inline-block;min-width:140px;text-align:center}body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=""] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=fullscreen],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=next],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=presenter],body[data-bespoke-view=next] .bespoke-marp-parent>.bespoke-marp-osc>button[data-bespoke-marp-osc=prev]{height:32px;line-height:32px;width:32px}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive{cursor:none}body[data-bespoke-view=""] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc,body[data-bespoke-view=next] .bespoke-marp-parent.bespoke-marp-inactive>.bespoke-marp-osc{opacity:0;pointer-events:none}body[data-bespoke-view=""] svg.bespoke-marp-slide,body[data-bespoke-view=next] svg.bespoke-marp-slide{height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent{background:#222;display:flex;height:5px;width:100%}body[data-bespoke-view=""] .bespoke-progress-parent+.bespoke-marp-parent{top:5px}body[data-bespoke-view=""] .bespoke-progress-parent .bespoke-progress-bar{background:#0288d1;flex:0 0 0;transition:flex-basis .2s cubic-bezier(0,1,1,1)}body[data-bespoke-view=next]{background:#0000}body[data-bespoke-view=presenter]{background:#161616}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container{display:grid;font-family:Helvetica,Arial,sans-serif;grid-template:"current dragbar next" minmax(140px,1fr) "current dragbar note" 2fr "info    dragbar note" 3em;grid-template-columns:minmax(3px,var(--bespoke-marp-presenter-split-ratio,66%)) 0 minmax(3px,1fr);height:100%;left:0;position:absolute;top:0;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent{grid-area:current;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide{height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-parent svg.bespoke-marp-slide.bespoke-marp-active{filter:drop-shadow(0 3px 10px rgba(0,0,0,.5))}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container{background:#0288d1;cursor:col-resize;grid-area:dragbar;margin-left:-3px;opacity:0;position:relative;transition:opacity .4s linear .1s;width:6px;z-index:10}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container:hover{opacity:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-dragbar-container.active{opacity:1;transition-delay:0s}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container{background:#222;cursor:pointer;display:none;grid-area:next;overflow:hidden;position:relative}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-next-container iframe.bespoke-marp-presenter-next{background:#0000;border:0;display:block;filter:drop-shadow(0 3px 10px rgba(0,0,0,.5));height:calc(100% - 40px);left:20px;pointer-events:none;position:absolute;top:20px;-webkit-user-select:none;user-select:none;width:calc(100% - 40px)}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container{background:#222;color:#eee;grid-area:note;position:relative;z-index:1}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper{display:block;inset:0;position:absolute}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons{background:#000000a6;border-radius:4px;bottom:0;display:flex;gap:4px;margin:12px;opacity:0;padding:6px;pointer-events:none;position:absolute;right:0;transition:opacity .2s linear}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-buttons:focus-within,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-presenter-note-wrapper:focus-within+.bespoke-marp-presenter-note-buttons,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container:hover .bespoke-marp-presenter-note-buttons{opacity:1;pointer-events:auto}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note{box-sizing:border-box;font-size:calc(1.1em*var(--bespoke-marp-note-font-scale, 1));height:calc(100% - 40px);margin:20px;overflow:auto;padding-right:3px;white-space:pre-wrap;width:calc(100% - 40px);word-wrap:break-word;scrollbar-color:#eeeeee80 #0000;scrollbar-width:thin}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar{width:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-track{background:#0000}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note::-webkit-scrollbar-thumb{background:#eeeeee80;border-radius:6px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note:empty{pointer-events:none}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note.active{display:block}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:first-child{margin-top:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-note-container .bespoke-marp-note p:last-child{margin-bottom:0}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container{align-items:center;box-sizing:border-box;color:#eee;display:flex;flex-wrap:nowrap;grid-area:info;justify-content:center;overflow:hidden;padding:0 10px}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time,body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{box-sizing:border-box;display:block;padding:0 10px;white-space:nowrap;width:100%}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container button{height:1.5em;line-height:1.5em;width:1.5em}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page{order:2;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-page .bespoke-marp-presenter-info-page-text{display:inline-block;min-width:120px;text-align:center}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-time{color:#999;order:1;text-align:left}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer{color:#999;order:3;text-align:right}body[data-bespoke-view=presenter] .bespoke-marp-presenter-container .bespoke-marp-presenter-info-container .bespoke-marp-presenter-info-timer:hover{cursor:pointer}}@media print{.bespoke-marp-presenter-info-container,.bespoke-marp-presenter-next-container,.bespoke-marp-presenter-note-container{display:none}}</style><style>div#\:\$p > svg > foreignObject > section{width:1280px;height:720px;box-sizing:border-box;overflow:hidden;position:relative;scroll-snap-align:center center;-webkit-text-size-adjust:100%;text-size-adjust:100%}div#\:\$p > svg > foreignObject > section::after{bottom:0;content:attr(data-marpit-pagination);padding:inherit;pointer-events:none;position:absolute;right:0}div#\:\$p > svg > foreignObject > section:not([data-marpit-pagination])::after{display:none}div#\:\$p > svg > foreignObject > section :where(:is(h1, marp-h1)){font-size:2em;margin-block:0.67em}div#\:\$p > svg > foreignObject > section section:where(:is(h1, marp-h1)){--marpit-root-font-size: 2em}div#\:\$p > svg > foreignObject > section video::-webkit-media-controls{will-change:transform}@page {size:1280px 720px;margin:0}@media print{html, body{background-color:#fff;margin:0;page-break-inside:avoid;break-inside:avoid-page}div#\:\$p > svg > foreignObject > section{page-break-before:always;break-before:page}div#\:\$p > svg > foreignObject > section, div#\:\$p > svg > foreignObject > section *{-webkit-print-color-adjust:exact!important;animation-delay:0s!important;animation-duration:0s!important;color-adjust:exact!important;print-color-adjust:exact!important;transition:none!important}div#\:\$p > svg[data-marpit-svg]{display:block;height:100vh;width:100vw}}div#\:\$p > svg > foreignObject > section{--fgColor-danger:light-dark(#d1242f, #f85149);--bgColor-attention-muted:light-dark(#fff8c5, #bb800926);--bgColor-muted:light-dark(#f6f8fa, #151b23);--bgColor-neutral-muted:light-dark(#818b981f, #656c7633);--borderColor-accent-emphasis:light-dark(#0969da, #1f6feb);--borderColor-attention-emphasis:light-dark(#9a6700, #9e6a03);--borderColor-danger-emphasis:light-dark(#cf222e, #da3633);--borderColor-default:light-dark(#d1d9e0, #3d444d);--borderColor-done-emphasis:light-dark(#8250df, #8957e5);--borderColor-success-emphasis:light-dark(#1a7f37, #238636);--color-prettylights-syntax-brackethighlighter-angle:light-dark(#59636e, #9198a1);--color-prettylights-syntax-brackethighlighter-unmatched:light-dark(#82071e, #f85149);--color-prettylights-syntax-carriage-return-bg:light-dark(#cf222e, #b62324);--color-prettylights-syntax-carriage-return-text:light-dark(#f6f8fa, #f0f6fc);--color-prettylights-syntax-comment:light-dark(#59636e, #9198a1);--color-prettylights-syntax-constant:light-dark(#0550ae, #79c0ff);--color-prettylights-syntax-constant-other-reference-link:light-dark(#0a3069, #a5d6ff);--color-prettylights-syntax-entity:light-dark(#6639ba, #d2a8ff);--color-prettylights-syntax-entity-tag:light-dark(#0550ae, #7ee787);--color-prettylights-syntax-invalid-illegal-text:light-dark(var(--fgColor-danger), var(--fgColor-danger));--color-prettylights-syntax-keyword:light-dark(#cf222e, #ff7b72);--color-prettylights-syntax-markup-changed-bg:light-dark(#ffd8b5, #5a1e02);--color-prettylights-syntax-markup-changed-text:light-dark(#953800, #ffdfb6);--color-prettylights-syntax-markup-deleted-bg:light-dark(#ffebe9, #67060c);--color-prettylights-syntax-markup-deleted-text:light-dark(#82071e, #ffdcd7);--color-prettylights-syntax-markup-heading:light-dark(#0550ae, #1f6feb);--color-prettylights-syntax-markup-ignored-bg:light-dark(#0550ae, #1158c7);--color-prettylights-syntax-markup-ignored-text:light-dark(#d1d9e0, #f0f6fc);--color-prettylights-syntax-markup-inserted-bg:light-dark(#dafbe1, #033a16);--color-prettylights-syntax-markup-inserted-text:light-dark(#116329, #aff5b4);--color-prettylights-syntax-markup-list:light-dark(#3b2300, #f2cc60);--color-prettylights-syntax-meta-diff-range:light-dark(#8250df, #d2a8ff);--color-prettylights-syntax-string:light-dark(#0a3069, #a5d6ff);--color-prettylights-syntax-string-regexp:light-dark(#116329, #7ee787);--color-prettylights-syntax-sublimelinter-gutter-mark:light-dark(#818b98, #3d444d);--color-prettylights-syntax-variable:light-dark(#953800, #ffa657);--fgColor-accent:light-dark(#0969da, #4493f8);--fgColor-attention:light-dark(#9a6700, #d29922);--fgColor-done:light-dark(#8250df, #ab7df8);--fgColor-muted:light-dark(#59636e, #9198a1);--fgColor-success:light-dark(#1a7f37, #3fb950);--bgColor-default:light-dark(#fff, #0d1117);--borderColor-muted:light-dark(#d1d9e0b3, #3d444db3);--color-prettylights-syntax-invalid-illegal-bg:light-dark(var(--bgColor-danger-muted), var(--bgColor-danger-muted));--color-prettylights-syntax-markup-bold:light-dark(#1f2328, #f0f6fc);--color-prettylights-syntax-markup-italic:light-dark(#1f2328, #f0f6fc);--color-prettylights-syntax-storage-modifier-import:light-dark(#1f2328, #f0f6fc);--fgColor-default:light-dark(#1f2328, #f0f6fc);--focus-outlineColor:light-dark(var(--borderColor-accent-emphasis), var(--borderColor-accent-emphasis));--borderColor-neutral-muted:light-dark(var(--borderColor-muted), var(--borderColor-muted));--base-size-16:calc(var(--marpit-root-font-size, 1rem) * 1);--base-size-24:calc(var(--marpit-root-font-size, 1rem) * 1.5);--base-size-4:calc(var(--marpit-root-font-size, 1rem) * 0.25);--base-size-40:calc(var(--marpit-root-font-size, 1rem) * 2.5);--base-size-8:calc(var(--marpit-root-font-size, 1rem) * 0.5);--base-text-weight-medium:500;--base-text-weight-normal:400;--base-text-weight-semibold:600;--fontStack-monospace:ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;--fontStack-sansSerif:-apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";}/*!
+ * Marp default theme.
+ *
+ * @theme default
+ * @author Yuki Hattori
+ *
+ * @auto-scaling true
+ * @size 16:9 1280px 720px
+ * @size 4:3 960px 720px
+ */div#\:\$p > svg > foreignObject > section [data-theme=light],div#\:\$p > svg > foreignObject > section{color-scheme:light}div#\:\$p > svg > foreignObject > section [data-theme=dark],div#\:\$p > svg > foreignObject > section:where(.invert){color-scheme:dark}div#\:\$p > svg > foreignObject > section{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;margin:0;font-weight:var(--base-text-weight-normal, 400);color:var(--fgColor-default);background-color:var(--bgColor-default);font-family:var(--fontStack-sansSerif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");font-size:16px;line-height:1.5;word-wrap:break-word}div#\:\$p > svg > foreignObject > section{--marpit-root-font-size:16px}div#\:\$p > svg > foreignObject > section a{text-decoration:underline;text-underline-offset:calc(var(--marpit-root-font-size, 1rem) * .2)}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1):hover .anchor .octicon-link:before,div#\:\$p > svg > foreignObject > section :is(h2, marp-h2):hover .anchor .octicon-link:before,div#\:\$p > svg > foreignObject > section :is(h3, marp-h3):hover .anchor .octicon-link:before,div#\:\$p > svg > foreignObject > section :is(h4, marp-h4):hover .anchor .octicon-link:before,div#\:\$p > svg > foreignObject > section :is(h5, marp-h5):hover .anchor .octicon-link:before,div#\:\$p > svg > foreignObject > section :is(h6, marp-h6):hover .anchor .octicon-link:before{width:16px;height:16px;content:" ";display:inline-block;background-color:currentColor;-webkit-mask-image:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 0 0 1.06 1.06l1.25-1.25a2 2 0 1 1 2.83 2.83l-2.5 2.5a2 2 0 0 1-2.83 0 .75.75 0 0 0-1.06 1.06 3.5 3.5 0 0 0 4.95 0l2.5-2.5a3.5 3.5 0 0 0-4.95-4.95zm-4.69 9.64a2 2 0 0 1 0-2.83l2.5-2.5a2 2 0 0 1 2.83 0 .75.75 0 0 0 1.06-1.06 3.5 3.5 0 0 0-4.95 0l-2.5 2.5a3.5 3.5 0 0 0 4.95 4.95l1.25-1.25a.75.75 0 0 0-1.06-1.06l-1.25 1.25a2 2 0 0 1-2.83 0"/></svg>');mask-image:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 0 0 1.06 1.06l1.25-1.25a2 2 0 1 1 2.83 2.83l-2.5 2.5a2 2 0 0 1-2.83 0 .75.75 0 0 0-1.06 1.06 3.5 3.5 0 0 0 4.95 0l2.5-2.5a3.5 3.5 0 0 0-4.95-4.95zm-4.69 9.64a2 2 0 0 1 0-2.83l2.5-2.5a2 2 0 0 1 2.83 0 .75.75 0 0 0 1.06-1.06 3.5 3.5 0 0 0-4.95 0l-2.5 2.5a3.5 3.5 0 0 0 4.95 4.95l1.25-1.25a.75.75 0 0 0-1.06-1.06l-1.25 1.25a2 2 0 0 1-2.83 0"/></svg>')}div#\:\$p > svg > foreignObject > section details,div#\:\$p > svg > foreignObject > section figcaption,div#\:\$p > svg > foreignObject > section figure{display:block}div#\:\$p > svg > foreignObject > section summary{display:list-item}div#\:\$p > svg > foreignObject > section [hidden]{display:none!important}div#\:\$p > svg > foreignObject > section a{background-color:transparent;color:var(--fgColor-accent);text-decoration:none}div#\:\$p > svg > foreignObject > section abbr[title]{border-bottom:none;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}div#\:\$p > svg > foreignObject > section b,div#\:\$p > svg > foreignObject > section strong{font-weight:var(--base-text-weight-semibold, 600)}div#\:\$p > svg > foreignObject > section dfn{font-style:italic}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){margin:.67em 0;font-weight:var(--base-text-weight-semibold, 600);padding-bottom:.3em;font-size:2em;border-bottom:1px solid var(--borderColor-muted)}div#\:\$p > svg > foreignObject > section mark{background-color:var(--bgColor-attention-muted);color:var(--fgColor-default)}div#\:\$p > svg > foreignObject > section small{font-size:90%}div#\:\$p > svg > foreignObject > section sub,div#\:\$p > svg > foreignObject > section sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}div#\:\$p > svg > foreignObject > section sub{bottom:-.25em}div#\:\$p > svg > foreignObject > section sup{top:-.5em}div#\:\$p > svg > foreignObject > section img{border-style:none;max-width:100%;box-sizing:content-box}div#\:\$p > svg > foreignObject > section code,div#\:\$p > svg > foreignObject > section kbd,div#\:\$p > svg > foreignObject > section :is(pre, marp-pre),div#\:\$p > svg > foreignObject > section samp{font-family:monospace;font-size:1em}div#\:\$p > svg > foreignObject > section figure{margin:1em var(--base-size-40)}div#\:\$p > svg > foreignObject > section hr{box-sizing:content-box;overflow:hidden;background:transparent;height:.25em;padding:0;margin:var(--base-size-24) 0;background-color:var(--borderColor-default);border:0}div#\:\$p > svg > foreignObject > section input{font:inherit;margin:0;overflow:visible;font-family:inherit;font-size:inherit;line-height:inherit}div#\:\$p > svg > foreignObject > section [type=button],div#\:\$p > svg > foreignObject > section [type=reset],div#\:\$p > svg > foreignObject > section [type=submit]{-webkit-appearance:button;-moz-appearance:button;appearance:button}div#\:\$p > svg > foreignObject > section [type=checkbox],div#\:\$p > svg > foreignObject > section [type=radio]{box-sizing:border-box;padding:0}div#\:\$p > svg > foreignObject > section [type=number]::-webkit-inner-spin-button,div#\:\$p > svg > foreignObject > section [type=number]::-webkit-outer-spin-button{height:auto}div#\:\$p > svg > foreignObject > section [type=search]::-webkit-search-cancel-button,div#\:\$p > svg > foreignObject > section [type=search]::-webkit-search-decoration{-webkit-appearance:none;appearance:none}div#\:\$p > svg > foreignObject > section ::-webkit-input-placeholder{color:inherit;opacity:.54}div#\:\$p > svg > foreignObject > section ::-webkit-file-upload-button{-webkit-appearance:button;appearance:button;font:inherit}div#\:\$p > svg > foreignObject > section a:hover{text-decoration:underline}div#\:\$p > svg > foreignObject > section ::-moz-placeholder{color:var(--fgColor-muted);opacity:1}div#\:\$p > svg > foreignObject > section ::placeholder{color:var(--fgColor-muted);opacity:1}div#\:\$p > svg > foreignObject > section hr:after,div#\:\$p > svg > foreignObject > section hr:before{display:table;content:""}div#\:\$p > svg > foreignObject > section hr:after{clear:both}div#\:\$p > svg > foreignObject > section table{border-spacing:0;border-collapse:collapse;display:block;width:-moz-max-content;width:max-content;max-width:100%;overflow:auto;font-variant:tabular-nums}div#\:\$p > svg > foreignObject > section td,div#\:\$p > svg > foreignObject > section th{padding:0}div#\:\$p > svg > foreignObject > section details summary{cursor:pointer}div#\:\$p > svg > foreignObject > section [role=button]:focus,div#\:\$p > svg > foreignObject > section a:focus,div#\:\$p > svg > foreignObject > section input[type=checkbox]:focus,div#\:\$p > svg > foreignObject > section input[type=radio]:focus{outline:2px solid var(--focus-outlineColor);outline-offset:-2px;box-shadow:none}div#\:\$p > svg > foreignObject > section [role=button]:focus:not(:focus-visible),div#\:\$p > svg > foreignObject > section a:focus:not(:focus-visible),div#\:\$p > svg > foreignObject > section input[type=checkbox]:focus:not(:focus-visible),div#\:\$p > svg > foreignObject > section input[type=radio]:focus:not(:focus-visible){outline:1px solid transparent}div#\:\$p > svg > foreignObject > section [role=button]:focus-visible,div#\:\$p > svg > foreignObject > section a:focus-visible,div#\:\$p > svg > foreignObject > section input[type=checkbox]:focus-visible,div#\:\$p > svg > foreignObject > section input[type=radio]:focus-visible{outline:2px solid var(--focus-outlineColor);outline-offset:-2px;box-shadow:none}div#\:\$p > svg > foreignObject > section a:not([class]):focus,div#\:\$p > svg > foreignObject > section a:not([class]):focus-visible,div#\:\$p > svg > foreignObject > section input[type=checkbox]:focus,div#\:\$p > svg > foreignObject > section input[type=checkbox]:focus-visible,div#\:\$p > svg > foreignObject > section input[type=radio]:focus,div#\:\$p > svg > foreignObject > section input[type=radio]:focus-visible{outline-offset:0}div#\:\$p > svg > foreignObject > section kbd{display:inline-block;padding:var(--base-size-4);font:11px var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace);line-height:10px;color:var(--fgColor-default);vertical-align:middle;background-color:var(--bgColor-muted);border-bottom-color:var(--borderColor-neutral-muted);border:1px solid var(--borderColor-neutral-muted);border-radius:6px;box-shadow:inset 0 -1px 0 var(--borderColor-neutral-muted)}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1),div#\:\$p > svg > foreignObject > section :is(h2, marp-h2),div#\:\$p > svg > foreignObject > section :is(h3, marp-h3),div#\:\$p > svg > foreignObject > section :is(h4, marp-h4),div#\:\$p > svg > foreignObject > section :is(h5, marp-h5),div#\:\$p > svg > foreignObject > section :is(h6, marp-h6){margin-top:var(--base-size-24);margin-bottom:var(--base-size-16);font-weight:var(--base-text-weight-semibold, 600);line-height:1.25}div#\:\$p > svg > foreignObject > section :is(h2, marp-h2){padding-bottom:.3em;font-size:1.5em;border-bottom:1px solid var(--borderColor-muted)}div#\:\$p > svg > foreignObject > section :is(h2, marp-h2),div#\:\$p > svg > foreignObject > section :is(h3, marp-h3){font-weight:var(--base-text-weight-semibold, 600)}div#\:\$p > svg > foreignObject > section :is(h3, marp-h3){font-size:1.25em}div#\:\$p > svg > foreignObject > section :is(h4, marp-h4){font-size:1em}div#\:\$p > svg > foreignObject > section :is(h4, marp-h4),div#\:\$p > svg > foreignObject > section :is(h5, marp-h5){font-weight:var(--base-text-weight-semibold, 600)}div#\:\$p > svg > foreignObject > section :is(h5, marp-h5){font-size:.875em}div#\:\$p > svg > foreignObject > section :is(h6, marp-h6){font-weight:var(--base-text-weight-semibold, 600);font-size:.85em;color:var(--fgColor-muted)}div#\:\$p > svg > foreignObject > section p{margin-top:0;margin-bottom:10px}div#\:\$p > svg > foreignObject > section blockquote{margin:0;padding:0 1em;color:var(--fgColor-muted);border-left:.25em solid var(--borderColor-default)}div#\:\$p > svg > foreignObject > section ol,div#\:\$p > svg > foreignObject > section ul{margin-top:0;margin-bottom:0;padding-left:2em}div#\:\$p > svg > foreignObject > section ol ol,div#\:\$p > svg > foreignObject > section ul ol{list-style-type:lower-roman}div#\:\$p > svg > foreignObject > section ol ol ol,div#\:\$p > svg > foreignObject > section ol ul ol,div#\:\$p > svg > foreignObject > section ul ol ol,div#\:\$p > svg > foreignObject > section ul ul ol{list-style-type:lower-alpha}div#\:\$p > svg > foreignObject > section dd{margin-left:0}div#\:\$p > svg > foreignObject > section code,div#\:\$p > svg > foreignObject > section :is(pre, marp-pre),div#\:\$p > svg > foreignObject > section samp,div#\:\$p > svg > foreignObject > section tt{font-family:var(--fontStack-monospace, ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace);font-size:12px}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre){margin-top:0;margin-bottom:0;word-wrap:normal}div#\:\$p > svg > foreignObject > section .octicon{display:inline-block;overflow:visible!important;vertical-align:text-bottom;fill:currentColor}div#\:\$p > svg > foreignObject > section input::-webkit-inner-spin-button,div#\:\$p > svg > foreignObject > section input::-webkit-outer-spin-button{margin:0;-webkit-appearance:none;appearance:none}div#\:\$p > svg > foreignObject > section .mr-2{margin-right:var(--base-size-8, 8px)!important}div#\:\$p > svg > foreignObject > section:after,div#\:\$p > svg > foreignObject > section:before{display:table}div#\:\$p > svg > foreignObject > section:after{clear:both}div#\:\$p > svg > foreignObject > section>:first-child{margin-top:0!important}div#\:\$p > svg > foreignObject > section>:last-child{margin-bottom:0!important}div#\:\$p > svg > foreignObject > section a:not([href]){color:inherit;text-decoration:none}div#\:\$p > svg > foreignObject > section .absent{color:var(--fgColor-danger)}div#\:\$p > svg > foreignObject > section .anchor{float:left;padding-right:var(--base-size-4);margin-left:-20px;line-height:1}div#\:\$p > svg > foreignObject > section .anchor:focus{outline:none}div#\:\$p > svg > foreignObject > section blockquote,div#\:\$p > svg > foreignObject > section details,div#\:\$p > svg > foreignObject > section dl,div#\:\$p > svg > foreignObject > section ol,div#\:\$p > svg > foreignObject > section p,div#\:\$p > svg > foreignObject > section :is(pre, marp-pre),div#\:\$p > svg > foreignObject > section table,div#\:\$p > svg > foreignObject > section ul{margin-top:0;margin-bottom:var(--base-size-16)}div#\:\$p > svg > foreignObject > section blockquote>:first-child{margin-top:0}div#\:\$p > svg > foreignObject > section blockquote>:last-child{margin-bottom:0}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1) .octicon-link,div#\:\$p > svg > foreignObject > section :is(h2, marp-h2) .octicon-link,div#\:\$p > svg > foreignObject > section :is(h3, marp-h3) .octicon-link,div#\:\$p > svg > foreignObject > section :is(h4, marp-h4) .octicon-link,div#\:\$p > svg > foreignObject > section :is(h5, marp-h5) .octicon-link,div#\:\$p > svg > foreignObject > section :is(h6, marp-h6) .octicon-link{color:var(--fgColor-default);vertical-align:middle;visibility:hidden}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1):hover .anchor,div#\:\$p > svg > foreignObject > section :is(h2, marp-h2):hover .anchor,div#\:\$p > svg > foreignObject > section :is(h3, marp-h3):hover .anchor,div#\:\$p > svg > foreignObject > section :is(h4, marp-h4):hover .anchor,div#\:\$p > svg > foreignObject > section :is(h5, marp-h5):hover .anchor,div#\:\$p > svg > foreignObject > section :is(h6, marp-h6):hover .anchor{text-decoration:none}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1):hover .anchor .octicon-link,div#\:\$p > svg > foreignObject > section :is(h2, marp-h2):hover .anchor .octicon-link,div#\:\$p > svg > foreignObject > section :is(h3, marp-h3):hover .anchor .octicon-link,div#\:\$p > svg > foreignObject > section :is(h4, marp-h4):hover .anchor .octicon-link,div#\:\$p > svg > foreignObject > section :is(h5, marp-h5):hover .anchor .octicon-link,div#\:\$p > svg > foreignObject > section :is(h6, marp-h6):hover .anchor .octicon-link{visibility:visible}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1) code,div#\:\$p > svg > foreignObject > section :is(h1, marp-h1) tt,div#\:\$p > svg > foreignObject > section :is(h2, marp-h2) code,div#\:\$p > svg > foreignObject > section :is(h2, marp-h2) tt,div#\:\$p > svg > foreignObject > section :is(h3, marp-h3) code,div#\:\$p > svg > foreignObject > section :is(h3, marp-h3) tt,div#\:\$p > svg > foreignObject > section :is(h4, marp-h4) code,div#\:\$p > svg > foreignObject > section :is(h4, marp-h4) tt,div#\:\$p > svg > foreignObject > section :is(h5, marp-h5) code,div#\:\$p > svg > foreignObject > section :is(h5, marp-h5) tt,div#\:\$p > svg > foreignObject > section :is(h6, marp-h6) code,div#\:\$p > svg > foreignObject > section :is(h6, marp-h6) tt{padding:0 .2em;font-size:inherit}div#\:\$p > svg > foreignObject > section summary :is(h1, marp-h1),div#\:\$p > svg > foreignObject > section summary :is(h2, marp-h2),div#\:\$p > svg > foreignObject > section summary :is(h3, marp-h3),div#\:\$p > svg > foreignObject > section summary :is(h4, marp-h4),div#\:\$p > svg > foreignObject > section summary :is(h5, marp-h5),div#\:\$p > svg > foreignObject > section summary :is(h6, marp-h6){display:inline-block}div#\:\$p > svg > foreignObject > section summary :is(h1, marp-h1) .anchor,div#\:\$p > svg > foreignObject > section summary :is(h2, marp-h2) .anchor,div#\:\$p > svg > foreignObject > section summary :is(h3, marp-h3) .anchor,div#\:\$p > svg > foreignObject > section summary :is(h4, marp-h4) .anchor,div#\:\$p > svg > foreignObject > section summary :is(h5, marp-h5) .anchor,div#\:\$p > svg > foreignObject > section summary :is(h6, marp-h6) .anchor{margin-left:-40px}div#\:\$p > svg > foreignObject > section summary :is(h1, marp-h1),div#\:\$p > svg > foreignObject > section summary :is(h2, marp-h2){padding-bottom:0;border-bottom:0}div#\:\$p > svg > foreignObject > section ol.no-list,div#\:\$p > svg > foreignObject > section ul.no-list{padding:0;list-style-type:none}div#\:\$p > svg > foreignObject > section ol[type="a s"]{list-style-type:lower-alpha}div#\:\$p > svg > foreignObject > section ol[type="A s"]{list-style-type:upper-alpha}div#\:\$p > svg > foreignObject > section ol[type="i s"]{list-style-type:lower-roman}div#\:\$p > svg > foreignObject > section ol[type="I s"]{list-style-type:upper-roman}div#\:\$p > svg > foreignObject > section div>ol:not([type]),div#\:\$p > svg > foreignObject > section ol[type="1"]{list-style-type:decimal}div#\:\$p > svg > foreignObject > section ol ol,div#\:\$p > svg > foreignObject > section ol ul,div#\:\$p > svg > foreignObject > section ul ol,div#\:\$p > svg > foreignObject > section ul ul{margin-top:0;margin-bottom:0}div#\:\$p > svg > foreignObject > section li>p{margin-top:var(--base-size-16)}div#\:\$p > svg > foreignObject > section li+li{margin-top:.25em}div#\:\$p > svg > foreignObject > section dl{padding:0}div#\:\$p > svg > foreignObject > section dl dt{padding:0;margin-top:var(--base-size-16);font-size:1em;font-style:italic;font-weight:var(--base-text-weight-semibold, 600)}div#\:\$p > svg > foreignObject > section dl dd{padding:0 var(--base-size-16);margin-bottom:var(--base-size-16)}div#\:\$p > svg > foreignObject > section table th{font-weight:var(--base-text-weight-semibold, 600)}div#\:\$p > svg > foreignObject > section table td,div#\:\$p > svg > foreignObject > section table th{padding:6px 13px;border:1px solid var(--borderColor-default)}div#\:\$p > svg > foreignObject > section table td>:last-child{margin-bottom:0}div#\:\$p > svg > foreignObject > section table tr{background-color:var(--bgColor-default);border-top:1px solid var(--borderColor-muted)}div#\:\$p > svg > foreignObject > section table tr:nth-child(2n){background-color:var(--bgColor-muted)}div#\:\$p > svg > foreignObject > section table img{background-color:transparent}div#\:\$p > svg > foreignObject > section img[align=right]{padding-left:20px}div#\:\$p > svg > foreignObject > section img[align=left]{padding-right:20px}div#\:\$p > svg > foreignObject > section .emoji{max-width:none;vertical-align:text-top;background-color:transparent}div#\:\$p > svg > foreignObject > section :is(span, marp-span).frame,div#\:\$p > svg > foreignObject > section :is(span, marp-span).frame>:is(span, marp-span){display:block;overflow:hidden}div#\:\$p > svg > foreignObject > section :is(span, marp-span).frame>:is(span, marp-span){float:left;width:auto;padding:7px;margin:13px 0 0;border:1px solid var(--borderColor-default)}div#\:\$p > svg > foreignObject > section :is(span, marp-span).frame :is(span, marp-span) img{display:block;float:left}div#\:\$p > svg > foreignObject > section :is(span, marp-span).frame :is(span, marp-span) :is(span, marp-span){display:block;padding:5px 0 0;clear:both;color:var(--fgColor-default)}div#\:\$p > svg > foreignObject > section :is(span, marp-span).align-center{display:block;overflow:hidden;clear:both}div#\:\$p > svg > foreignObject > section :is(span, marp-span).align-center>:is(span, marp-span){display:block;margin:13px auto 0;overflow:hidden;text-align:center}div#\:\$p > svg > foreignObject > section :is(span, marp-span).align-center :is(span, marp-span) img{margin:0 auto;text-align:center}div#\:\$p > svg > foreignObject > section :is(span, marp-span).align-right{display:block;overflow:hidden;clear:both}div#\:\$p > svg > foreignObject > section :is(span, marp-span).align-right>:is(span, marp-span){display:block;margin:13px 0 0;overflow:hidden;text-align:right}div#\:\$p > svg > foreignObject > section :is(span, marp-span).align-right :is(span, marp-span) img{margin:0;text-align:right}div#\:\$p > svg > foreignObject > section :is(span, marp-span).float-left{display:block;float:left;margin-right:13px;overflow:hidden}div#\:\$p > svg > foreignObject > section :is(span, marp-span).float-left :is(span, marp-span){margin:13px 0 0}div#\:\$p > svg > foreignObject > section :is(span, marp-span).float-right{display:block;float:right;margin-left:13px;overflow:hidden}div#\:\$p > svg > foreignObject > section :is(span, marp-span).float-right>:is(span, marp-span){display:block;margin:13px auto 0;overflow:hidden;text-align:right}div#\:\$p > svg > foreignObject > section code,div#\:\$p > svg > foreignObject > section tt{padding:.2em .4em;margin:0;font-size:85%;white-space:break-spaces;background-color:var(--bgColor-neutral-muted);border-radius:6px}div#\:\$p > svg > foreignObject > section code br,div#\:\$p > svg > foreignObject > section tt br{display:none}div#\:\$p > svg > foreignObject > section del code{text-decoration:inherit}div#\:\$p > svg > foreignObject > section samp{font-size:85%}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) code{font-size:100%}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre)>code{padding:0;margin:0;word-break:normal;white-space:pre;background:transparent;border:0}div#\:\$p > svg > foreignObject > section .highlight{margin-bottom:var(--base-size-16)}div#\:\$p > svg > foreignObject > section .highlight :is(pre, marp-pre){margin-bottom:0;word-break:normal}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre){padding:var(--base-size-16);overflow:auto;font-size:85%;line-height:1.45;color:var(--fgColor-default);background-color:var(--bgColor-muted);border-radius:6px}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) code,div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) tt{display:inline;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}div#\:\$p > svg > foreignObject > section .csv-data td,div#\:\$p > svg > foreignObject > section .csv-data th{padding:5px;overflow:hidden;font-size:12px;line-height:1;text-align:left;white-space:nowrap}div#\:\$p > svg > foreignObject > section .csv-data .blob-num{padding:10px var(--base-size-8) 9px;text-align:right;background:var(--bgColor-default);border:0}div#\:\$p > svg > foreignObject > section .csv-data tr{border-top:0}div#\:\$p > svg > foreignObject > section .csv-data th{font-weight:var(--base-text-weight-semibold, 600);background:var(--bgColor-muted);border-top:0}div#\:\$p > svg > foreignObject > section [data-footnote-ref]:before{content:"["}div#\:\$p > svg > foreignObject > section [data-footnote-ref]:after{content:"]"}div#\:\$p > svg > foreignObject > section .footnotes{font-size:12px;color:var(--fgColor-muted);border-top:1px solid var(--borderColor-default)}div#\:\$p > svg > foreignObject > section div#\:\$p > svg > foreignObject > section section.footnotes{--marpit-root-font-size:12px}div#\:\$p > svg > foreignObject > section .footnotes ol,div#\:\$p > svg > foreignObject > section .footnotes ol ul{padding-left:var(--base-size-16)}div#\:\$p > svg > foreignObject > section .footnotes ol ul{display:inline-block;margin-top:var(--base-size-16)}div#\:\$p > svg > foreignObject > section .footnotes li{position:relative}div#\:\$p > svg > foreignObject > section .footnotes li:target:before{position:absolute;top:calc(var(--base-size-8)*-1);right:calc(var(--base-size-8)*-1);bottom:calc(var(--base-size-8)*-1);left:calc(var(--base-size-24)*-1);pointer-events:none;content:"";border:2px solid var(--borderColor-accent-emphasis);border-radius:6px}div#\:\$p > svg > foreignObject > section .footnotes li:target{color:var(--fgColor-default)}div#\:\$p > svg > foreignObject > section .footnotes .data-footnote-backref g-emoji{font-family:monospace}div#\:\$p > svg > foreignObject > section .pl-c{color:var(--color-prettylights-syntax-comment)}div#\:\$p > svg > foreignObject > section .pl-c1,div#\:\$p > svg > foreignObject > section .pl-s .pl-v{color:var(--color-prettylights-syntax-constant)}div#\:\$p > svg > foreignObject > section .pl-e,div#\:\$p > svg > foreignObject > section .pl-en{color:var(--color-prettylights-syntax-entity)}div#\:\$p > svg > foreignObject > section .pl-s .pl-s1,div#\:\$p > svg > foreignObject > section .pl-smi{color:var(--color-prettylights-syntax-storage-modifier-import)}div#\:\$p > svg > foreignObject > section .pl-ent{color:var(--color-prettylights-syntax-entity-tag)}div#\:\$p > svg > foreignObject > section .pl-k{color:var(--color-prettylights-syntax-keyword)}div#\:\$p > svg > foreignObject > section .pl-pds,div#\:\$p > svg > foreignObject > section .pl-s,div#\:\$p > svg > foreignObject > section .pl-s .pl-pse .pl-s1,div#\:\$p > svg > foreignObject > section .pl-sr,div#\:\$p > svg > foreignObject > section .pl-sr .pl-cce,div#\:\$p > svg > foreignObject > section .pl-sr .pl-sra,div#\:\$p > svg > foreignObject > section .pl-sr .pl-sre{color:var(--color-prettylights-syntax-string)}div#\:\$p > svg > foreignObject > section .pl-smw,div#\:\$p > svg > foreignObject > section .pl-v{color:var(--color-prettylights-syntax-variable)}div#\:\$p > svg > foreignObject > section .pl-bu{color:var(--color-prettylights-syntax-brackethighlighter-unmatched)}div#\:\$p > svg > foreignObject > section .pl-ii{color:var(--color-prettylights-syntax-invalid-illegal-text);background-color:var(--color-prettylights-syntax-invalid-illegal-bg)}div#\:\$p > svg > foreignObject > section .pl-c2{color:var(--color-prettylights-syntax-carriage-return-text);background-color:var(--color-prettylights-syntax-carriage-return-bg)}div#\:\$p > svg > foreignObject > section .pl-sr .pl-cce{font-weight:700;color:var(--color-prettylights-syntax-string-regexp)}div#\:\$p > svg > foreignObject > section .pl-ml{color:var(--color-prettylights-syntax-markup-list)}div#\:\$p > svg > foreignObject > section .pl-mh,div#\:\$p > svg > foreignObject > section .pl-mh .pl-en,div#\:\$p > svg > foreignObject > section .pl-ms{font-weight:700;color:var(--color-prettylights-syntax-markup-heading)}div#\:\$p > svg > foreignObject > section .pl-mi{font-style:italic;color:var(--color-prettylights-syntax-markup-italic)}div#\:\$p > svg > foreignObject > section .pl-mb{font-weight:700;color:var(--color-prettylights-syntax-markup-bold)}div#\:\$p > svg > foreignObject > section .pl-md{color:var(--color-prettylights-syntax-markup-deleted-text);background-color:var(--color-prettylights-syntax-markup-deleted-bg)}div#\:\$p > svg > foreignObject > section .pl-mi1{color:var(--color-prettylights-syntax-markup-inserted-text);background-color:var(--color-prettylights-syntax-markup-inserted-bg)}div#\:\$p > svg > foreignObject > section .pl-mc{color:var(--color-prettylights-syntax-markup-changed-text);background-color:var(--color-prettylights-syntax-markup-changed-bg)}div#\:\$p > svg > foreignObject > section .pl-mi2{color:var(--color-prettylights-syntax-markup-ignored-text);background-color:var(--color-prettylights-syntax-markup-ignored-bg)}div#\:\$p > svg > foreignObject > section .pl-mdr{font-weight:700;color:var(--color-prettylights-syntax-meta-diff-range)}div#\:\$p > svg > foreignObject > section .pl-ba{color:var(--color-prettylights-syntax-brackethighlighter-angle)}div#\:\$p > svg > foreignObject > section .pl-sg{color:var(--color-prettylights-syntax-sublimelinter-gutter-mark)}div#\:\$p > svg > foreignObject > section .pl-corl{text-decoration:underline;color:var(--color-prettylights-syntax-constant-other-reference-link)}div#\:\$p > svg > foreignObject > section [role=button]:focus:not(:focus-visible),div#\:\$p > svg > foreignObject > section [role=tabpanel][tabindex="0"]:focus:not(:focus-visible),div#\:\$p > svg > foreignObject > section a:focus:not(:focus-visible),div#\:\$p > svg > foreignObject > section button:focus:not(:focus-visible),div#\:\$p > svg > foreignObject > section summary:focus:not(:focus-visible){outline:none;box-shadow:none}div#\:\$p > svg > foreignObject > section [tabindex="0"]:focus:not(:focus-visible),div#\:\$p > svg > foreignObject > section details-dialog:focus:not(:focus-visible){outline:none}div#\:\$p > svg > foreignObject > section g-emoji{display:inline-block;min-width:1ch;font-family:Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;font-size:1em;font-style:normal!important;font-weight:var(--base-text-weight-normal, 400);line-height:1;vertical-align:-.075em}div#\:\$p > svg > foreignObject > section g-emoji img{width:1em;height:1em}div#\:\$p > svg > foreignObject > section a:has(>p,>div,>:is(pre, marp-pre),>blockquote){display:block}div#\:\$p > svg > foreignObject > section a:has(>p,>div,>:is(pre, marp-pre),>blockquote):not(:has(.snippet-clipboard-content,>:is(pre, marp-pre))){width:-moz-fit-content;width:fit-content}div#\:\$p > svg > foreignObject > section a:has(>p,>div,>:is(pre, marp-pre),>blockquote):has(.snippet-clipboard-content,>:is(pre, marp-pre)):focus-visible{outline:2px solid var(--focus-outlineColor);outline-offset:2px}div#\:\$p > svg > foreignObject > section .task-list-item{list-style-type:none}div#\:\$p > svg > foreignObject > section .task-list-item label{font-weight:var(--base-text-weight-normal, 400)}div#\:\$p > svg > foreignObject > section .task-list-item.enabled label{cursor:pointer}div#\:\$p > svg > foreignObject > section .task-list-item+.task-list-item{margin-top:var(--base-size-4)}div#\:\$p > svg > foreignObject > section .task-list-item .handle{display:none}div#\:\$p > svg > foreignObject > section .task-list-item-checkbox{margin:0 .2em .25em -1.4em;vertical-align:middle}div#\:\$p > svg > foreignObject > section ul:dir(rtl) .task-list-item-checkbox{margin:0 -1.6em .25em .2em}div#\:\$p > svg > foreignObject > section ol:dir(rtl) .task-list-item-checkbox{margin:0 -1.6em .25em .2em}div#\:\$p > svg > foreignObject > section .contains-task-list:focus-within .task-list-item-convert-container,div#\:\$p > svg > foreignObject > section .contains-task-list:hover .task-list-item-convert-container{display:block;width:auto;height:24px;overflow:visible;clip-path:none}div#\:\$p > svg > foreignObject > section ::-webkit-calendar-picker-indicator{filter:invert(50%)}div#\:\$p > svg > foreignObject > section .markdown-alert{padding:var(--base-size-8) var(--base-size-16);margin-bottom:var(--base-size-16);color:inherit;border-left:.25em solid var(--borderColor-default)}div#\:\$p > svg > foreignObject > section .markdown-alert>:first-child{margin-top:0}div#\:\$p > svg > foreignObject > section .markdown-alert>:last-child{margin-bottom:0}div#\:\$p > svg > foreignObject > section .markdown-alert .markdown-alert-title{display:flex;font-weight:var(--base-text-weight-medium, 500);align-items:center;line-height:1}div#\:\$p > svg > foreignObject > section .markdown-alert.markdown-alert-note{border-left-color:var(--borderColor-accent-emphasis)}div#\:\$p > svg > foreignObject > section .markdown-alert.markdown-alert-note .markdown-alert-title{color:var(--fgColor-accent)}div#\:\$p > svg > foreignObject > section .markdown-alert.markdown-alert-important{border-left-color:var(--borderColor-done-emphasis)}div#\:\$p > svg > foreignObject > section .markdown-alert.markdown-alert-important .markdown-alert-title{color:var(--fgColor-done)}div#\:\$p > svg > foreignObject > section .markdown-alert.markdown-alert-warning{border-left-color:var(--borderColor-attention-emphasis)}div#\:\$p > svg > foreignObject > section .markdown-alert.markdown-alert-warning .markdown-alert-title{color:var(--fgColor-attention)}div#\:\$p > svg > foreignObject > section .markdown-alert.markdown-alert-tip{border-left-color:var(--borderColor-success-emphasis)}div#\:\$p > svg > foreignObject > section .markdown-alert.markdown-alert-tip .markdown-alert-title{color:var(--fgColor-success)}div#\:\$p > svg > foreignObject > section .markdown-alert.markdown-alert-caution{border-left-color:var(--borderColor-danger-emphasis)}div#\:\$p > svg > foreignObject > section .markdown-alert.markdown-alert-caution .markdown-alert-title{color:var(--fgColor-danger)}div#\:\$p > svg > foreignObject > section>:first-child>.heading-element:first-child{margin-top:0!important}div#\:\$p > svg > foreignObject > section .highlight :is(pre, marp-pre):has(+.zeroclipboard-container){min-height:52px}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){color:var(--h1-color);font-size:1.6em}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1),div#\:\$p > svg > foreignObject > section :is(h2, marp-h2){border-bottom:none}div#\:\$p > svg > foreignObject > section :is(h2, marp-h2){font-size:1.3em}div#\:\$p > svg > foreignObject > section :is(h3, marp-h3){font-size:1.1em}div#\:\$p > svg > foreignObject > section :is(h4, marp-h4){font-size:1.05em}div#\:\$p > svg > foreignObject > section :is(h5, marp-h5){font-size:1em}div#\:\$p > svg > foreignObject > section :is(h6, marp-h6){font-size:.9em}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1) strong,div#\:\$p > svg > foreignObject > section :is(h2, marp-h2) strong,div#\:\$p > svg > foreignObject > section :is(h3, marp-h3) strong,div#\:\$p > svg > foreignObject > section :is(h4, marp-h4) strong,div#\:\$p > svg > foreignObject > section :is(h5, marp-h5) strong,div#\:\$p > svg > foreignObject > section :is(h6, marp-h6) strong{font-weight:inherit;color:var(--heading-strong-color)}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h2, marp-h2)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h3, marp-h3)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h4, marp-h4)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h5, marp-h5)::part(auto-scaling),div#\:\$p > svg > foreignObject > section :is(h6, marp-h6)::part(auto-scaling){max-height:563px}div#\:\$p > svg > foreignObject > section hr{height:0;padding-top:.25em}div#\:\$p > svg > foreignObject > section img{background-color:transparent}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre){border:1px solid var(--borderColor-default);line-height:1.15;overflow:visible}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre)::part(auto-scaling){max-height:529px}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs){color:var(--color-prettylights-syntax-storage-modifier-import)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-doctag),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-keyword),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-meta .hljs-keyword),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-template-tag),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-template-variable),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-type),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-variable.language_){color:var(--color-prettylights-syntax-keyword)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-title),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-title.class_),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-title.class_.inherited__),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-title.function_){color:var(--color-prettylights-syntax-entity)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-attr),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-attribute),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-literal),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-meta),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-number),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-operator),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-selector-attr),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-selector-class),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-selector-id),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-variable){color:var(--color-prettylights-syntax-constant)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-meta .hljs-string),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-regexp),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-string){color:var(--color-prettylights-syntax-string)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-built_in),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-symbol){color:var(--color-prettylights-syntax-variable)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-code),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-comment),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-formula){color:var(--color-prettylights-syntax-comment)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-name),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-quote),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-selector-pseudo),div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-selector-tag){color:var(--color-prettylights-syntax-entity-tag)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-subst){color:var(--color-prettylights-syntax-storage-modifier-import)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-section){font-weight:700;color:var(--color-prettylights-syntax-markup-heading)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-bullet){color:var(--color-prettylights-syntax-markup-list)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-emphasis){font-style:italic;color:var(--color-prettylights-syntax-markup-italic)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-strong){font-weight:700;color:var(--color-prettylights-syntax-markup-bold)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-addition){color:var(--color-prettylights-syntax-markup-inserted-text);background-color:var(--color-prettylights-syntax-markup-inserted-bg)}div#\:\$p > svg > foreignObject > section :is(pre, marp-pre) :where(.hljs-deletion){color:var(--color-prettylights-syntax-markup-deleted-text);background-color:var(--color-prettylights-syntax-markup-deleted-bg)}div#\:\$p > svg > foreignObject > section footer,div#\:\$p > svg > foreignObject > section header{margin:0;position:absolute;left:30px;color:var(--header-footer-color);font-size:18px}div#\:\$p > svg > foreignObject > section header{top:21px}div#\:\$p > svg > foreignObject > section footer{bottom:21px}div#\:\$p > svg > foreignObject > section{--h1-color:light-dark(#246, #cee7ff);--header-footer-color:light-dark(hsla(0,0%,40%,.75), hsla(0,0%,60%,.75));--heading-strong-color:light-dark(#48c, #7bf);--paginate-color:light-dark(#777, #999);--base-size-4:4px;--base-size-8:8px;--base-size-16:16px;--base-size-24:24px;--base-size-40:40px;display:block;font-size:29px;height:720px;padding:78.5px;place-content:safe center center;width:1280px;flex-flow:column nowrap;align-items:stretch}div#\:\$p > svg > foreignObject > section{--marpit-root-font-size:29px}div#\:\$p > svg > foreignObject > section>:last-child,div#\:\$p > svg > foreignObject > section[data-footer]>:nth-last-child(2){margin-bottom:0}div#\:\$p > svg > foreignObject > section>:first-child,div#\:\$p > svg > foreignObject > section>header:first-child+*{margin-top:0}div#\:\$p > svg > foreignObject > section:after{position:absolute;padding:0;right:30px;bottom:21px;font-size:24px;color:var(--paginate-color)}div#\:\$p > svg > foreignObject > section:after{--marpit-root-font-size:24px}div#\:\$p > svg > foreignObject > section[data-color] :is(h1, marp-h1),div#\:\$p > svg > foreignObject > section[data-color] :is(h2, marp-h2),div#\:\$p > svg > foreignObject > section[data-color] :is(h3, marp-h3),div#\:\$p > svg > foreignObject > section[data-color] :is(h4, marp-h4),div#\:\$p > svg > foreignObject > section[data-color] :is(h5, marp-h5),div#\:\$p > svg > foreignObject > section[data-color] :is(h6, marp-h6){color:currentcolor}div#\:\$p > svg > foreignObject > :where(section){container-type:size}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"]{direction:ltr}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"] > svg{overflow:visible;min-height:1px;min-width:1px}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"] > svg a{fill:blue;stroke:blue}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"][display="true"]{display:block;text-align:center;margin:1em 0}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"][display="true"][width="full"]{display:flex}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"][justify="left"]{text-align:left}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"][justify="right"]{text-align:right}div#\:\$p > svg > foreignObject > section g[data-mml-node="merror"] > g{fill:red;stroke:red}div#\:\$p > svg > foreignObject > section g[data-mml-node="merror"] > rect[data-background]{fill:yellow;stroke:none}div#\:\$p > svg > foreignObject > section g[data-mml-node="mtable"] > line[data-line], div#\:\$p > svg > foreignObject > section svg[data-table] > g > line[data-line]{stroke-width:70px;fill:none}div#\:\$p > svg > foreignObject > section g[data-mml-node="mtable"] > rect[data-frame], div#\:\$p > svg > foreignObject > section svg[data-table] > g > rect[data-frame]{stroke-width:70px;fill:none}div#\:\$p > svg > foreignObject > section g[data-mml-node="mtable"] > .mjx-dashed, div#\:\$p > svg > foreignObject > section svg[data-table] > g > .mjx-dashed{stroke-dasharray:140}div#\:\$p > svg > foreignObject > section g[data-mml-node="mtable"] > .mjx-dotted, div#\:\$p > svg > foreignObject > section svg[data-table] > g > .mjx-dotted{stroke-linecap:round;stroke-dasharray:0,140}div#\:\$p > svg > foreignObject > section g[data-mml-node="mtable"] > g > svg{overflow:visible}div#\:\$p > svg > foreignObject > section [jax="SVG"] mjx-tool{display:inline-block;position:relative;width:0;height:0}div#\:\$p > svg > foreignObject > section [jax="SVG"] mjx-tool > mjx-tip{position:absolute;top:0;left:0}div#\:\$p > svg > foreignObject > section mjx-tool > mjx-tip{display:inline-block;padding:.2em;border:1px solid #888;font-size:70%;background-color:#F8F8F8;color:black;box-shadow:2px 2px 5px #AAAAAA}div#\:\$p > svg > foreignObject > section g[data-mml-node="maction"][data-toggle]{cursor:pointer}div#\:\$p > svg > foreignObject > section mjx-status{display:block;position:fixed;left:1em;bottom:1em;min-width:25%;padding:.2em .4em;border:1px solid #888;font-size:90%;background-color:#F8F8F8;color:black}div#\:\$p > svg > foreignObject > section foreignObject[data-mjx-xml]{font-family:initial;line-height:normal;overflow:visible}div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"] path[data-c], div#\:\$p > svg > foreignObject > section mjx-container[jax="SVG"] use[data-c]{stroke-width:3}@media print{div#\:\$p > svg > foreignObject > section mjx-container[jax=SVG] path[data-c],div#\:\$p > svg > foreignObject > section mjx-container[jax=SVG] use[data-c]{stroke-width:0}}div#\:\$p > svg > foreignObject > section img[data-marp-twemoji]{background:transparent;height:1em;margin:0 .05em 0 .1em;vertical-align:-.1em;width:1em}@font-face {font-family:"Murecho";src:url("./fonts/Murecho-wght.ttf") format("truetype");font-style:normal;font-weight:100 900;font-display:swap}div#\:\$p > svg > foreignObject > :where(section):not([\20 root]){--ink-color: #242424;--main-color: #97283C;--box-color: 206, 56, 82;--rule-color: rgba(36, 36, 36, 0.13);}div#\:\$p > svg > foreignObject > section{font-family:"Murecho", sans-serif;color:var(--ink-color);font-size:24px;line-height:1.52;padding:42px 54px 48px;background:#ffffff}div#\:\$p > svg > foreignObject > section{--marpit-root-font-size: 24px}div#\:\$p > svg > foreignObject > section:not(.title){display:flex;justify-content:flex-start}div#\:\$p > svg > foreignObject > section :is(h1, marp-h1){color:var(--main-color);font-size:42px;line-height:1.18;letter-spacing:0.01em;margin:0 0 18px;padding-bottom:0}div#\:\$p > svg > foreignObject > section :is(h2, marp-h2){font-size:31px;line-height:1.25;margin:0 0 14px}div#\:\$p > svg > foreignObject > section p, div#\:\$p > svg > foreignObject > section li{line-height:1.55}div#\:\$p > svg > foreignObject > section li{margin:0.18em 0}div#\:\$p > svg > foreignObject > section strong{font-weight:700}div#\:\$p > svg > foreignObject > section code{font-family:"Hack Nerd Font"}div#\:\$p > svg > foreignObject > section .columns2{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:0.08in 0}div#\:\$p > svg > foreignObject > section table th, div#\:\$p > svg > foreignObject > section table td{padding:6px 13px;border:1px solid var(--rule-color);vertical-align:top}div#\:\$p > svg > foreignObject > section th{background:rgba(var(--box-color), 0.11);font-weight:700}div#\:\$p > svg > foreignObject > section img[alt~="center"]{display:block;margin:2px auto 0}div#\:\$p > svg > foreignObject > section::before{content:"";position:absolute;width:180px;height:74px;background:url("./fig/kyopro_w1.png") center / contain no-repeat;z-index:4;pointer-events:none}div#\:\$p > svg > foreignObject > section:not(.title)::before{right:18px;bottom:31px;opacity:0.95}div#\:\$p > svg > foreignObject > section.title::before{right:24px;bottom:22px;opacity:0.97}div#\:\$p > svg > foreignObject > section header{position:absolute;left:0;right:0;top:unset;bottom:0;width:100%;height:22px;padding:2px 0 0;text-align:center;color:#ffffff;background-color:var(--main-color);font-size:15px;line-height:20px;letter-spacing:0.015em}div#\:\$p > svg > foreignObject > section footer{bottom:2px;text-align:center;color:#ffffff;font-size:14px;line-height:18px}div#\:\$p > svg > foreignObject > section::after{content:attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);right:18px;bottom:3px;color:#ffffff;font-size:14px;line-height:18px}div#\:\$p > svg > foreignObject > section::after{--marpit-root-font-size: 14px}div#\:\$p > svg > foreignObject > section.title{justify-content:center;background:radial-gradient(circle at 10% 8%, rgba(var(--box-color), 0.10), transparent 32%), radial-gradient(circle at 92% 82%, rgba(151, 40, 60, 0.07), transparent 30%), #ffffff}div#\:\$p > svg > foreignObject > section.title > :is(h1, marp-h1){font-size:48px;line-height:1.14;text-align:center;margin:0 auto 14px}div#\:\$p > svg > foreignObject > section.title > :is(h2, marp-h2){color:#454545;font-size:29px;font-weight:600;text-align:center;margin-left:auto;margin-right:auto}div#\:\$p > svg > foreignObject > section.title > p{position:relative;top:20px;text-align:center}div#\:\$p > svg > foreignObject > section.title .team-name{display:inline-block;background:linear-gradient(90deg, #43D5F5 0%, #2FA8F7 10%, #2878F5 40%, #3556E8 62%, #7655E9 82%, #C85AEF 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}div#\:\$p > svg > foreignObject > section.title::after, div#\:\$p > svg > foreignObject > section.title header, div#\:\$p > svg > foreignObject > section.title footer{visibility:hidden}div#\:\$p > svg > foreignObject > section.chapter{justify-content:center;background:linear-gradient(135deg, rgba(var(--box-color), 0.10), transparent 42%), radial-gradient(circle at 88% 18%, rgba(151, 40, 60, 0.09), transparent 28%), #ffffff}div#\:\$p > svg > foreignObject > section.chapter :is(h1, marp-h1){font-size:48px;line-height:1.15;padding:0}div#\:\$p > svg > foreignObject > section.chapter :is(h2, marp-h2){color:#444444;font-size:28px;line-height:1.42;font-weight:600;max-width:940px;margin-top:10px}div#\:\$p > svg > foreignObject > section mjx-container[display="true"]{display:block;box-sizing:border-box;margin:12px auto!important;padding:10px 24px 12px;width:fit-content;max-width:94%;border:1px solid rgba(var(--box-color), 0.38);border-radius:11px;background:#fff7f9;color:var(--main-color);overflow:visible;font-size:1.12em}div#\:\$p > svg > foreignObject > section mjx-container:not([display="true"]){line-height:1.2}div#\:\$p > svg > foreignObject > section.neighborhood-detail{font-size:22px}div#\:\$p > svg > foreignObject > section.neighborhood-detail{--marpit-root-font-size: 22px}div#\:\$p > svg > foreignObject > section.neighborhood-detail p{margin:0 0 12px;line-height:1.4}div#\:\$p > svg > foreignObject > section.neighborhood-detail ul{margin:0 0 12px}div#\:\$p > svg > foreignObject > section.neighborhood-detail li{line-height:1.4;margin:0.22em 0}div#\:\$p > svg > foreignObject > section.neighborhood-detail img{object-fit:contain}div#\:\$p > svg > foreignObject > section.neighborhood-detail table{flex-shrink:0;margin-bottom:12px}div#\:\$p > svg > foreignObject > section.neighborhood-summary{font-size:21px}div#\:\$p > svg > foreignObject > section.neighborhood-summary{--marpit-root-font-size: 21px}div#\:\$p > svg > foreignObject > section.neighborhood-summary p{margin:0 0 10px;line-height:1.4}div#\:\$p > svg > foreignObject > section.neighborhood-summary table{flex-shrink:0;font-size:20px;margin:0 0 12px}div#\:\$p > svg > foreignObject > section.neighborhood-summary th, div#\:\$p > svg > foreignObject > section.neighborhood-summary td{padding:5px 9px;line-height:1.3}div#\:\$p > svg > foreignObject > section .refs{color:#555555;font-size:20px;line-height:1.38}div#\:\$p > svg > foreignObject > section section.refs{--marpit-root-font-size: 20px}div#\:\$p > svg > foreignObject > section .refs li{margin:0.32em 0;line-height:inherit}div#\:\$p > svg > foreignObject > section .refs ol, div#\:\$p > svg > foreignObject > section .refs p{margin:0}div#\:\$p > svg > foreignObject > section .refs p{line-height:inherit}div#\:\$p > svg > foreignObject > section{width:1280px;height:720px}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"]{columns:initial!important;display:block!important;padding:0!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"]::before, div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"]::after, div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="content"]::before, div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="content"]::after{display:none!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container]{all:initial;display:flex;flex-direction:row;height:100%;overflow:hidden;width:100%}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container][data-marpit-advanced-background-direction="vertical"]{flex-direction:column}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"][data-marpit-advanced-background-split] > div[data-marpit-advanced-background-container]{width:var(--marpit-advanced-background-split, 50%)}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"][data-marpit-advanced-background-split="right"] > div[data-marpit-advanced-background-container]{margin-left:calc(100% - var(--marpit-advanced-background-split, 50%))}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container] > figure{all:initial;background-position:center;background-repeat:no-repeat;background-size:cover;flex:auto;margin:0}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="background"] > div[data-marpit-advanced-background-container] > figure > figcaption{position:absolute;border:0;clip:rect(0, 0, 0, 0);height:1px;margin:-1px;overflow:hidden;padding:0;white-space:nowrap;width:1px}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="content"], div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="pseudo"]{background:transparent!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background="pseudo"], div#\:\$p > svg[data-marpit-svg] > foreignObject[data-marpit-advanced-background="pseudo"]{pointer-events:none!important}div#\:\$p > svg > foreignObject > section[data-marpit-advanced-background-split]{width:100%;height:100%}
+</style></head><body><div class="bespoke-marp-osc"><button data-bespoke-marp-osc="prev" tabindex="-1" title="Previous slide">Previous slide</button><span data-bespoke-marp-osc="page"></span><button data-bespoke-marp-osc="next" tabindex="-1" title="Next slide">Next slide</button><button data-bespoke-marp-osc="fullscreen" tabindex="-1" title="Toggle fullscreen (f)">Toggle fullscreen</button><button data-bespoke-marp-osc="presenter" tabindex="-1" title="Open presenter view (p)">Open presenter view</button></div><div id=":$p"><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="1" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-class="title" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" class="title" data-marpit-pagination="1" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--class:title;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+
+<h2 id="%E7%AC%AC-37-%E5%9B%9E%E9%AB%98%E5%B0%82%E3%83%97%E3%83%AD%E3%82%B3%E3%83%B3%E7%AB%B6%E6%8A%80%E9%83%A8%E9%96%80">第 37 回高専プロコン競技部門</h2>
+<h1 id="%E3%83%98%E3%82%AD%E3%82%B5%E3%81%86%E3%81%A9%E3%82%93llm-%E6%88%A6%E7%95%A5">「ヘキサうどん」LLM 戦略</h1>
+<p><strong>30009 明石高専チーム「<span class="team-name">淵底</span>」</strong><br />
+<strong>笠井 瑛司 / 上 天将 / 布谷 太一</strong></p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="2" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E7%9B%AE%E6%AC%A1">目次</h1>
+<h2 id="1-llm-%E3%81%A8%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%9C%80%E9%81%A9%E5%8C%96">1. LLM とヒューリスティック最適化</h2>
+<h2 id="2-%E6%9C%AC%E5%95%8F%E9%A1%8C%E3%81%B8%E3%81%AE%E5%BF%9C%E7%94%A8">2. 本問題への応用</h2>
+<h2 id="3-%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83">3. 試行錯誤を支えるテスト環境</h2>
+<h2 id="4-%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A8%E3%83%9E%E3%82%B7%E3%83%B3%E6%B4%BB%E7%94%A8">4. アルゴリズムとマシン活用</h2>
+<h2 id="5-%E5%8F%8D%E7%9C%81%E3%81%A8%E3%81%BE%E3%81%A8%E3%82%81">5. 反省とまとめ</h2>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-class="chapter" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" class="chapter" data-marpit-pagination="3" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--class:chapter;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+
+<h1 id="1-llm-%E3%81%A8%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%9C%80%E9%81%A9%E5%8C%96-1">1. LLM とヒューリスティック最適化</h1>
+<h2 id="%E5%85%88%E8%A1%8C%E7%A0%94%E7%A9%B6%E3%81%8B%E3%82%89%E8%80%83%E3%81%88%E3%82%8B-llm-%E3%81%AB%E3%82%88%E3%82%8B%E3%82%BD%E3%83%AB%E3%83%90%E9%96%8B%E7%99%BA">先行研究から考える LLM によるソルバ開発</h2>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="4" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="llm-%E3%81%A8%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%9C%80%E9%81%A9%E5%8C%96">LLM とヒューリスティック最適化</h1>
+<h2 id="%E5%85%88%E8%A1%8C%E7%A0%94%E7%A9%B6%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AE%E7%94%9F%E6%88%90%E3%83%BB%E8%A9%95%E4%BE%A1%E3%83%BB%E6%94%B9%E5%96%84">先行研究：プログラムの生成・評価・改善</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">名前</th>
+<th style="text-align:left">注目した考え方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ALE-Bench / ALE-Agent</td>
+<td style="text-align:left">AHC の問題を使った評価基盤と、複数候補を生成・改善する開発手法</td>
+</tr>
+<tr>
+<td style="text-align:left">ShinkaEvolve</td>
+<td style="text-align:left">プログラムの生成・改善をグラフ形式で進める</td>
+</tr>
+<tr>
+<td style="text-align:left">OpenEvolve</td>
+<td style="text-align:left">多様なプログラムを保持し、候補の生成・改善・評価を進める</td>
+</tr>
+</tbody>
+</table>
+<p>これらの研究は、<strong>プログラムの生成・評価・改善を繰り返す仕組み</strong>を扱う。<br />
+個々の案の性能に加え、どのように試行錯誤を続けるかに注目する。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="5" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="5" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="llm-%E3%81%A8%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%9C%80%E9%81%A9%E5%8C%96-1">LLM とヒューリスティック最適化</h1>
+<h2 id="ale-benchahc-%E3%81%AE%E5%95%8F%E9%A1%8C%E3%81%A7-llm-%E3%82%92%E8%A9%95%E4%BE%A1%E3%81%99%E3%82%8B">ALE-Bench：AHC の問題で LLM を評価する</h2>
+<p><strong>AHC（AtCoder Heuristic Contest）の過去問</strong>で、LLM が作るプログラムを評価する。<br />
+問題文・採点・可視化・実行環境を揃え、生成したプログラムを試せるようにする。</p>
+<p><img src="fig/ale-overview.png" alt="center" style="width:720px;" /></p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="6" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="llm-%E3%81%A8%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%9C%80%E9%81%A9%E5%8C%96-2">LLM とヒューリスティック最適化</h1>
+<h2 id="ale-benchllm-%E3%81%8C%E4%BD%9C%E3%82%8B%E3%82%BD%E3%83%AB%E3%83%90%E3%81%AE%E5%BC%B7%E3%81%95">ALE-Bench：LLM が作るソルバの強さ</h2>
+<p>4 月時点で既に暖色レベルのモデルが存在し、<strong>gpt-6-astra の登場で開発の進め方が大きく変わった</strong>。</p>
+<p><img src="fig/ale-leaderboard.png" alt="center" style="width:720px;" /></p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="7" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="7" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="llm-%E3%81%A8%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%9C%80%E9%81%A9%E5%8C%96-3">LLM とヒューリスティック最適化</h1>
+<h2 id="shinkaevolve%E3%82%B0%E3%83%A9%E3%83%95%E5%BD%A2%E5%BC%8F%E3%81%A7%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%82%92%E6%94%B9%E5%96%84%E3%81%99%E3%82%8B">ShinkaEvolve：グラフ形式でプログラムを改善する</h2>
+<p><strong>複数の候補へと分岐</strong>させながら、LLM がプログラムを生成・改善する。</p>
+<p><img src="fig/shinka-evolution.png" alt="center" style="width:550px;" /></p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="8" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="llm-%E3%81%A8%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%9C%80%E9%81%A9%E5%8C%96-4">LLM とヒューリスティック最適化</h1>
+<h2 id="shinkaevolve%E7%94%9F%E6%88%90%E3%81%97%E3%81%9F%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AB%E3%82%88%E3%82%8B%E5%86%86%E5%85%85%E5%A1%AB">ShinkaEvolve：生成したプログラムによる円充填</h2>
+<div class="columns2">
+<div>
+<p><img src="fig/shinka-circle-packing.png" alt="center" style="width:430px;" /></p>
+</div>
+<div>
+<p><strong>26 個の円を正方形に詰める問題</strong></p>
+<ul>
+<li>円が重ならないように配置し、<strong>半径の合計を最大化</strong>する。</li>
+<li>LLM が配置を求めるプログラムを生成し、実行結果を評価して改良する。</li>
+<li>図は、プログラムが求めた配置を示す。</li>
+</ul>
+<p>LLM が開発したプログラムから、具体的な最適化問題の解が得られる。</p>
+<p>図：Sakana AI（2025 年 9 月公開）</p>
+</div>
+</div>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="9" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="llm-%E3%81%A8%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%9C%80%E9%81%A9%E5%8C%96-5">LLM とヒューリスティック最適化</h1>
+<h2 id="openevolve%E5%A4%9A%E6%A7%98%E3%81%AA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%82%92%E4%BF%9D%E6%8C%81%E3%81%97%E3%81%A6%E6%94%B9%E5%96%84%E3%81%99%E3%82%8B">OpenEvolve：多様なプログラムを保持して改善する</h2>
+<div class="columns2">
+<div>
+<p><img src="fig/openevolve-architecture.png" alt="center" style="width:500px;" /></p>
+</div>
+<div>
+<p>初期プログラムと評価方法を与えると、LLM が改善を進めるオープンソースの仕組み。</p>
+<ol>
+<li>保存した候補から、改善のもとになるプログラムを選ぶ。</li>
+<li>LLM が変更案を作り、実行して採点する。</li>
+<li>結果を保存し、次の候補の生成に使う。</li>
+</ol>
+<p><strong>特徴の異なる候補</strong>を残し、複数のグループで探索することで多様性を保つ。</p>
+</div>
+</div>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="10" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="llm-%E3%81%A8%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%9C%80%E9%81%A9%E5%8C%96-6">LLM とヒューリスティック最適化</h1>
+<h2 id="%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%AE%E7%94%9F%E6%88%90%E3%83%BB%E6%94%B9%E5%96%84%E3%81%A7%E6%84%8F%E8%AD%98%E3%81%99%E3%82%8B-3-%E3%81%A4%E3%81%AE%E8%A6%81%E7%82%B9">プログラムの生成・改善で意識する 3 つの要点</h2>
+<p>先行研究を参考に、本チームでは開発方針を次の 3 点に整理した。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">要点</th>
+<th style="text-align:left">開発で意識すること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Sampling</strong></td>
+<td style="text-align:left">プログラムを新しく生成し、異なる出発点を試す</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Self-refine</strong></td>
+<td style="text-align:left">実行・評価の結果を返し、有望なプログラムを繰り返し改善する</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>多様性</strong></td>
+<td style="text-align:left">似た方針ばかりに偏らないよう、異なる候補を作り、残す</td>
+</tr>
+</tbody>
+</table>
+<p>異なる方針のプログラムを生成し、有望な候補を複数残して改善する。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="11" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="llm-%E3%81%A8%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%9C%80%E9%81%A9%E5%8C%96-7">LLM とヒューリスティック最適化</h1>
+<h2 id="sampling-%E3%81%A8-self-refine">Sampling と Self-refine</h2>
+<ul>
+<li>プログラムを新しく生成することを <strong>Sampling</strong> と呼ぶ。</li>
+<li>評価結果を使ってプログラムを改善することを <strong>Self-refine</strong> と呼ぶ。</li>
+</ul>
+<p><img src="fig/ai-sampling.svg" alt="center" style="width:950px;" /></p>
+<p>初期の方針が偏ると、改善を重ねても別の有力な方針に届きにくい。<br />
+<mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <strong>複数の出発点</strong>を試し、有望な案を継続して改善する。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="12" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="12" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="llm-%E3%81%A8%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%9C%80%E9%81%A9%E5%8C%96-8">LLM とヒューリスティック最適化</h1>
+<h2 id="%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%83%BB%E3%83%86%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83%E3%83%BB%E3%83%9E%E3%82%B7%E3%83%B3%E6%B4%BB%E7%94%A8">開発環境：アルゴリズム・テスト環境・マシン活用</h2>
+<p>競技部門で重要な<strong>アルゴリズム・テスト環境・マシン活用</strong>の 3 つを、LLM が使える形にする。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">要素</th>
+<th style="text-align:left">整えること</th>
+<th style="text-align:left">LLM が進められること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">アルゴリズム</td>
+<td style="text-align:left">問題の制約・解法の知見を整理する</td>
+<td style="text-align:left">方針を具体的なコードにし、試す</td>
+</tr>
+<tr>
+<td style="text-align:left">テスト環境</td>
+<td style="text-align:left">実行・採点・比較を一連の操作にする</td>
+<td style="text-align:left">結果を確かめながら改善を繰り返す</td>
+</tr>
+<tr>
+<td style="text-align:left">マシン活用</td>
+<td style="text-align:left">使える計算資源と操作方法を用意する</td>
+<td style="text-align:left">並列化・分散化と、その検証を進める</td>
+</tr>
+</tbody>
+</table>
+<p>人間は結果を考察し、解法を理解・共有して、<strong>評価方法や運用を見直す</strong>。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="13" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="llm-%E3%81%A8%E3%83%92%E3%83%A5%E3%83%BC%E3%83%AA%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF%E6%9C%80%E9%81%A9%E5%8C%96-9">LLM とヒューリスティック最適化</h1>
+<h2 id="%E9%96%8B%E7%99%BA%E6%96%B9%E9%87%9D%E4%BA%BA%E9%96%93%E3%81%A8-llm-%E3%81%8C%E4%B8%A6%E8%A1%8C%E3%81%97%E3%81%A6%E9%96%8B%E7%99%BA%E3%81%99%E3%82%8B">開発方針：人間と LLM が並行して開発する</h2>
+<p><img src="fig/ai-harness.svg" alt="center" style="width:1040px;" /></p>
+<p><strong>人間が毎回介在しない試行</strong>も走らせ、固定観念や最初の解法選びに縛られないようにする。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="14" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-class="chapter" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" class="chapter" data-marpit-pagination="14" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--class:chapter;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+
+<h1 id="2-%E6%9C%AC%E5%95%8F%E9%A1%8C%E3%81%B8%E3%81%AE%E5%BF%9C%E7%94%A8-1">2. 本問題への応用</h1>
+<h2 id="%E5%AF%BE%E6%88%A6%E3%82%B2%E3%83%BC%E3%83%A0%E3%81%AB%E5%BC%B7%E3%81%8F%E5%A4%9A%E6%A7%98%E3%81%AA%E3%82%BD%E3%83%AB%E3%83%90%E7%BE%A4%E3%81%AE%E4%BD%9C%E3%82%8A%E6%96%B9">対戦ゲームに強く多様なソルバ群の作り方</h2>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="15" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="15" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E6%9C%AC%E5%95%8F%E9%A1%8C%E3%81%B8%E3%81%AE%E5%BF%9C%E7%94%A8">本問題への応用</h1>
+<h2 id="%E5%AF%BE%E6%88%A6%E3%82%B2%E3%83%BC%E3%83%A0%E7%9B%B8%E6%89%8B%E3%81%AE%E8%A1%8C%E5%8B%95%E3%81%8C%E9%81%93%E8%B7%AF%E7%8A%B6%E6%85%8B%E3%82%92%E5%A4%89%E3%81%88%E3%82%8B">対戦ゲーム：相手の行動が道路状態を変える</h2>
+<ul>
+<li>全チームの車両の動きが、翌日以降の<strong>道路状態</strong>に影響する。</li>
+<li>相手の経路が変わると、移動時間や有利な経路も変わる。</li>
+<li>1 個の強いソルバだけでは、対戦での強さを評価しにくい。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">評価に使う相手</th>
+<th style="text-align:left">残る課題</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">弱い相手だけ</td>
+<td style="text-align:left">勝てていても、強い相手に通用するかは分からない</td>
+</tr>
+<tr>
+<td style="text-align:left">強くても、似た設計の相手だけ</td>
+<td style="text-align:left">行動の傾向が偏り、異なる戦略との相性を試せない</td>
+</tr>
+<tr>
+<td style="text-align:left">固定した相手だけ</td>
+<td style="text-align:left">改善が、その相手に勝つための調整に偏りうる</td>
+</tr>
+</tbody>
+</table>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> 評価には、<strong>独立に作られた、多様で強いソルバ群</strong>が必要になる。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="16" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="16" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E6%9C%AC%E5%95%8F%E9%A1%8C%E3%81%B8%E3%81%AE%E5%BF%9C%E7%94%A8-1">本問題への応用</h1>
+<h2 id="%E5%90%8C%E3%81%98%E3%82%BD%E3%83%AB%E3%83%90%E3%81%AE%E6%94%B9%E5%96%84%E3%82%92%E7%B6%9A%E3%81%91%E3%81%9F%E3%81%A8%E3%81%8D%E3%81%AE%E8%AA%B2%E9%A1%8C">同じソルバの改善を続けたときの課題</h2>
+<ul>
+<li>同じソルバの改善を続けるだけでは、多様なソルバは生まれにくい。</li>
+<li>解法が定まってくると、細かな変更に偏り、方針を見直しにくい。</li>
+<li>コードが肥大化し、以前のモデルの設計や会話履歴を引きずる。</li>
+<li>次の指示を人間が出す運用では、24 時間の継続が難しい。</li>
+</ul>
+<p>人間との共同改善や Self-refine に偏り、<strong>Sampling と多様性が不足</strong>しがちだった。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-class="neighborhood-detail" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" class="neighborhood-detail" data-marpit-pagination="17" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--class:neighborhood-detail;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+
+<h1 id="%E6%9C%AC%E5%95%8F%E9%A1%8C%E3%81%B8%E3%81%AE%E5%BF%9C%E7%94%A8-2">本問題への応用</h1>
+<h2 id="%E3%82%BD%E3%83%AB%E3%83%90%E5%86%8D%E6%A7%8B%E7%AF%89%E3%82%BC%E3%83%AD%E3%81%8B%E3%82%89%E4%BD%9C%E3%82%8A%E6%97%A7%E3%82%B9%E3%82%B3%E3%82%A2%E3%82%92%E8%B6%85%E3%81%88%E3%82%8B">ソルバ再構築：ゼロから作り、旧スコアを超える</h2>
+<p>9 月中旬ごろ、LLM に次の手順でソルバの再構築を依頼した。</p>
+<ol>
+<li>ソルバを削除する。</li>
+<li>旧実装を引き継がず、ゼロから構築する。<strong>旧スコアを超えるまで継続</strong>する。</li>
+</ol>
+<p>Sampling に<strong>「超えるまで継続」</strong>という条件を組み合わせた。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">既存ソルバ</th>
+<th style="text-align:center">ゼロからの再構築</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><strong>約 4 か月</strong>かけて開発</td>
+<td style="text-align:center"><strong>約 1 時間</strong>で作成</td>
+</tr>
+<tr>
+<td style="text-align:center">約 4,000 行</td>
+<td style="text-align:center">約 800 行</td>
+</tr>
+<tr>
+<td style="text-align:center">比較基準</td>
+<td style="text-align:center"><strong>旧ソルバのスコアを上回った</strong></td>
+</tr>
+</tbody>
+</table>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> この再構築を、<strong>ソルバ群を繰り返し更新する仕組み</strong>へ発展させる。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-class="neighborhood-detail" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" class="neighborhood-detail" data-marpit-pagination="18" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--class:neighborhood-detail;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+
+<h1 id="%E6%9C%AC%E5%95%8F%E9%A1%8C%E3%81%B8%E3%81%AE%E5%BF%9C%E7%94%A8-3">本問題への応用</h1>
+<h2 id="%E9%80%B2%E5%8C%96%E7%9A%84%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E6%9C%80%E4%B8%8B%E4%BD%8D%E3%81%AE%E5%86%8D%E6%A7%8B%E7%AF%89%E3%82%92%E7%B9%B0%E3%82%8A%E8%BF%94%E3%81%99">進化的フレームワーク：最下位の再構築を繰り返す</h2>
+<p>5 個のソルバを競わせ、<strong>最下位の再構築と入れ替え</strong>を繰り返して、ソルバ群を強化する。</p>
+<p><img src="fig/ai-pool.svg" alt="center" style="width:1000px;" /></p>
+<p>採用するのは、<strong>他の 4 個すべてより平均順位が良いソルバ</strong>のみ！<br />
+条件を満たすまで候補を改善し、採用後は更新したソルバ群で次の再構築へ進む。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-class="neighborhood-summary" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" class="neighborhood-summary" data-marpit-pagination="19" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--class:neighborhood-summary;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+
+<h1 id="%E6%9C%AC%E5%95%8F%E9%A1%8C%E3%81%B8%E3%81%AE%E5%BF%9C%E7%94%A8-4">本問題への応用</h1>
+<h2 id="%E7%AE%A1%E7%90%86%E3%83%BB%E9%96%8B%E7%99%BA%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E3%81%AE%E5%BD%B9%E5%89%B2%E5%88%86%E6%8B%85">管理・開発エージェントの役割分担</h2>
+<p>開発エージェントは、別の会話で動く<strong>サブエージェント</strong>。<br />
+管理エージェントが、<strong>会話履歴を引き継がずに起動</strong>する。</p>
+<p><img src="fig/ai-subagent.svg" alt="center" style="width:1000px;" /></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">情報を絞る場所</th>
+<th style="text-align:left">具体的な方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">会話履歴</td>
+<td style="text-align:left">管理側・以前の開発エージェントの会話履歴を引き継がない</td>
+</tr>
+<tr>
+<td style="text-align:left">依頼文</td>
+<td style="text-align:left">問題・公開仕様・テスト操作・編集範囲・採用条件を渡す</td>
+</tr>
+<tr>
+<td style="text-align:left">共有ファイル</td>
+<td style="text-align:left">旧実装を削除し、相手の実装や旧設計資料の閲覧を禁止する</td>
+</tr>
+</tbody>
+</table>
+<p>1 個の改善は同じ開発エージェントが続け、<strong>次の再構築では新しく起動する</strong>。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="20" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E6%9C%AC%E5%95%8F%E9%A1%8C%E3%81%B8%E3%81%AE%E5%BF%9C%E7%94%A8-5">本問題への応用</h1>
+<h2 id="%E7%94%9F%E6%88%90%E3%83%BB%E8%A9%95%E4%BE%A1%E3%83%BB%E9%81%B8%E6%8A%9E%E3%81%A7%E3%82%BD%E3%83%AB%E3%83%90%E7%BE%A4%E3%82%92%E5%BC%B7%E5%8C%96%E3%81%99%E3%82%8B">生成・評価・選択でソルバ群を強化する</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">仕組みの要素</th>
+<th style="text-align:left">この設計で狙うこと</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">新規生成（Sampling）</td>
+<td style="text-align:left">出発点を変えて、異なる方針のソルバを探す</td>
+</tr>
+<tr>
+<td style="text-align:left">反復改善（Self-refine）</td>
+<td style="text-align:left">評価結果を使い、新しい方針を採用に足る強さまで磨く</td>
+</tr>
+<tr>
+<td style="text-align:left">選択・更新</td>
+<td style="text-align:left">強いソルバを残し、以後の対戦評価にも使う</td>
+</tr>
+</tbody>
+</table>
+<p>ソルバ群は開発の成果であると同時に、<strong>次のソルバを鍛える評価環境</strong>になる。</p>
+<p>大会直前の数日間は、採用したソルバの Self-refine に集中した。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="21" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E6%9C%AC%E5%95%8F%E9%A1%8C%E3%81%B8%E3%81%AE%E5%BF%9C%E7%94%A8-6">本問題への応用</h1>
+<h2 id="%E9%80%B2%E5%8C%96%E7%9A%84%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%92-skills-%E3%81%A7%E5%AE%9F%E7%8F%BE%E3%81%99%E3%82%8B">進化的フレームワークを Skills で実現する</h2>
+<p>再構築・評価・採用の手順と判断条件を、<strong>Skills に自然言語で記述</strong>した。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">用意したもの</th>
+<th style="text-align:left">記述したこと</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ソルバ群の強化スキル（SKILL.md）</td>
+<td style="text-align:left">実行順序、役割分担、採用・継続条件</td>
+</tr>
+<tr>
+<td style="text-align:left">開発依頼のテンプレート</td>
+<td style="text-align:left">開発エージェントへ渡す目標・仕様・作業範囲・閲覧規則</td>
+</tr>
+<tr>
+<td style="text-align:left">記録のルール</td>
+<td style="text-align:left">対象ソルバ、進行段階、評価結果の保存方法</td>
+</tr>
+</tbody>
+</table>
+<p>管理エージェントが記述された手順に従い、<strong>ツール操作と開発エージェントへの依頼</strong>を進める。</p>
+<p>人間が毎回指示を出さなくても、ソルバ群の強化を<strong>24 時間継続</strong>できる！</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="22" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-class="chapter" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" class="chapter" data-marpit-pagination="22" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--class:chapter;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+
+<h1 id="3-%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83-1">3. 試行錯誤を支えるテスト環境</h1>
+<h2 id="%E5%A4%9A%E3%81%8F%E3%81%AE%E6%94%B9%E5%96%84%E6%A1%88%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E5%BC%B7%E3%81%95%E3%82%92%E6%AF%94%E8%BC%83%E3%81%99%E3%82%8B%E7%92%B0%E5%A2%83">多くの改善案を試して強さを比較する環境</h2>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="23" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83">試行錯誤を支えるテスト環境</h1>
+<h2 id="%E8%A9%95%E4%BE%A1%E3%81%AE%E8%AA%B2%E9%A1%8C%E3%83%9E%E3%83%83%E3%83%97%E3%81%A8%E8%A9%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E3%81%AE%E5%A4%9A%E6%A7%98%E6%80%A7">評価の課題：マップと試合条件の多様性</h2>
+<p>同じ解法でも、配置や制約によって得意・不得意が変わる。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">変わる条件</th>
+<th style="text-align:left">解法への影響</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">盤面サイズ（16×16・24×24・32×32）</td>
+<td style="text-align:left">移動距離や、探索すべき経路の数が変わる</td>
+</tr>
+<tr>
+<td style="text-align:left">地形・道路網</td>
+<td style="text-align:left">迂回の必要性、移動時間、燃料消費が変わる</td>
+</tr>
+<tr>
+<td style="text-align:left">スポットの配置・系列</td>
+<td style="text-align:left">訪問順序や、複数の車への担当分けが変わる</td>
+</tr>
+<tr>
+<td style="text-align:left">燃料・ステップ数</td>
+<td style="text-align:left">補給の必要性や、1 日に巡れる範囲が変わる</td>
+</tr>
+<tr>
+<td style="text-align:left">日数・混雑の基準</td>
+<td style="text-align:left">翌日以降を見越した計画の重要性が変わる</td>
+</tr>
+</tbody>
+</table>
+<p><strong>特定の条件だけに強くなっていないか</strong>、多くのテストケースで確かめたい。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="24" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83-1">試行錯誤を支えるテスト環境</h1>
+<h2 id="%E3%83%86%E3%82%B9%E3%83%88%E3%82%B1%E3%83%BC%E3%82%B9%E6%95%B0%E3%81%A8%E9%96%8B%E7%99%BA%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%81%AE%E3%83%88%E3%83%AC%E3%83%BC%E3%83%89%E3%82%AA%E3%83%95">テストケース数と開発サイクルのトレードオフ</h2>
+<p>同じ計算資源・開発時間では、テストケース数によって次の違いが生じる。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">テストケース数</th>
+<th style="text-align:left">評価できる範囲</th>
+<th style="text-align:left">開発への影響</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">少ない</td>
+<td style="text-align:left">特定の配置・条件に偏りやすい</td>
+<td style="text-align:left">早く結果が返り、改善を何度も試せる</td>
+</tr>
+<tr>
+<td style="text-align:left">多い</td>
+<td style="text-align:left">幅広い配置・条件で弱点を探せる</td>
+<td style="text-align:left">評価に時間がかかり、改善を試せる回数が減る</td>
+</tr>
+</tbody>
+</table>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> <strong>評価範囲の広さ</strong>と<strong>改善を試せる回数</strong>の両方を考慮する。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="25" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83-2">試行錯誤を支えるテスト環境</h1>
+<h2 id="%E7%9F%AD%E7%B8%AE%E3%83%86%E3%82%B9%E3%83%88%E3%81%A8%E3%83%95%E3%83%AB%E3%83%86%E3%82%B9%E3%83%88%E3%81%AE%E4%BD%BF%E3%81%84%E5%88%86%E3%81%91">短縮テストとフルテストの使い分け</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">観点</th>
+<th style="text-align:left">短縮テスト</th>
+<th style="text-align:left">フルテスト</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><span style="white-space: nowrap">目的</span></td>
+<td style="text-align:left">実装ミスの発見・有望な改善案の絞り込み</td>
+<td style="text-align:left">採用してよいかを、本番の条件で判断</td>
+</tr>
+<tr>
+<td style="text-align:left"><span style="white-space: nowrap">条件</span></td>
+<td style="text-align:left">ソルバの制限時間を短くし、評価にかかる時間を減らす</td>
+<td style="text-align:left"><strong>本番の制限時間</strong>で実行</td>
+</tr>
+<tr>
+<td style="text-align:left"><span style="white-space: nowrap">判断</span></td>
+<td style="text-align:left">改善の方向を判断するための暫定結果</td>
+<td style="text-align:left">結果で採用を判定する</td>
+</tr>
+</tbody>
+</table>
+<p><strong>変更 → 短縮テスト → 有望ならフルテスト → 基準を満たせば採用</strong></p>
+<p>不具合や悪化が見つかったら修正へ戻る。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="26" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="26" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83-3">試行錯誤を支えるテスト環境</h1>
+<h2 id="%E3%83%86%E3%82%B9%E3%83%88%E3%81%AE%E4%B8%A6%E5%88%97%E5%8C%96%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%B1%E3%83%BC%E3%82%B9%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E8%A9%95%E4%BE%A1%E3%81%99%E3%82%8B">テストの並列化：複数のケースを同時に評価する</h2>
+<p>評価の待ち時間を短くすることで、<strong>改善を試せる回数を増やす</strong>。</p>
+<ul>
+<li><strong>別々のテストケース</strong>を同時に実行し、結果をまとめて集計する。</li>
+<li>ソルバが 1 スレッドでも、テスト全体では複数の CPU コアを使える。</li>
+<li>同時実行数は、対象ソルバと対戦相手が使う計算資源に合わせる。</li>
+<li>CPU を取り合って各ソルバの探索時間が不足しないようにする。</li>
+</ul>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="27" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83-4">試行錯誤を支えるテスト環境</h1>
+<h2 id="%E9%96%8B%E7%99%BA%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%E3%81%AB%E5%BF%9C%E3%81%98%E3%81%A6%E3%83%86%E3%82%B9%E3%82%BF%E3%82%92%E4%BD%BF%E3%81%84%E5%88%86%E3%81%91%E3%82%8B">開発レイヤーに応じてテスタを使い分ける</h2>
+<p>多くの解法を試せることと、本番に近い条件で評価できることの両方を重視する。</p>
+<p><img src="fig/ai-test-layers.svg" alt="center" style="width:1040px;" /></p>
+<p><strong>各レイヤーに対応するテスタ</strong>を使い、短縮テストとフルテストを行う。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="28" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83-5">試行錯誤を支えるテスト環境</h1>
+<h2 id="%E3%83%87%E3%83%97%E3%83%AD%E3%82%A4%E6%94%B9%E5%96%84%E3%81%97%E3%81%9F%E3%82%BD%E3%83%AB%E3%83%90%E3%82%92%E6%AC%A1%E3%81%AE%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%E3%81%B8%E5%B1%95%E9%96%8B%E3%81%99%E3%82%8B">デプロイ：改善したソルバを次のレイヤーへ展開する</h2>
+<p><img src="fig/ai-layer-deploy.svg" alt="center" style="width:1080px;" /></p>
+<ul>
+<li>様々な解法や改善案を試し、ソルバを強化する。</li>
+<li>有望なソルバを並列・分散構成へ展開し、試験用 PC に配置する。</li>
+<li><strong>移行先のテスタで動作と強さを確認</strong>し、そのレイヤーで再び改善する。</li>
+</ul>
+<p>解法を磨く時間と、本番に近い環境で確かめる時間の両方を確保する。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-class="neighborhood-detail" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" class="neighborhood-detail" data-marpit-pagination="29" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--class:neighborhood-detail;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+
+<h1 id="%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83-6">試行錯誤を支えるテスト環境</h1>
+<h2 id="%E5%90%84%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%E3%81%AE%E3%82%BD%E3%83%AB%E3%83%90%E6%A7%8B%E6%88%90%E3%81%A8%E8%A8%88%E7%AE%97%E8%B3%87%E6%BA%90">各レイヤーのソルバ構成と計算資源</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">レイヤー</th>
+<th style="text-align:left">テスタ</th>
+<th style="text-align:left">ソルバの構成</th>
+<th style="text-align:left">試験環境全体</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">単独</td>
+<td style="text-align:left">単独テスタ</td>
+<td style="text-align:left">1 T</td>
+<td style="text-align:left">32 T</td>
+</tr>
+<tr>
+<td style="text-align:left">対戦</td>
+<td style="text-align:left">対戦テスタ<br />（5 チーム）</td>
+<td style="text-align:left">1 T × 5 個</td>
+<td style="text-align:left">32 T</td>
+</tr>
+<tr>
+<td style="text-align:left">並列</td>
+<td style="text-align:left">サーバーテスタ<br />（6 チーム）</td>
+<td style="text-align:left">15 T × 4 個<br />＋ 1 T × 2 個</td>
+<td style="text-align:left">32 T × 2 台<br />＋ 16 T × 1 台</td>
+</tr>
+<tr>
+<td style="text-align:left">分散</td>
+<td style="text-align:left">サーバーテスタ<br />（4 チーム）</td>
+<td style="text-align:left">80 T の分散 1 個<br />＋ 16 T の並列 1 個<br />＋ 1 T × 2 個</td>
+<td style="text-align:left">32 T × 3 台<br />＋ 16 T × 2 台</td>
+</tr>
+</tbody>
+</table>
+<p>T は論理スレッド数を表す。<br />
+並列・分散では、16 T の PC に 1 T ソルバとサーバーテスタを配置する。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="30" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="30" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E8%A9%A6%E8%A1%8C%E9%8C%AF%E8%AA%A4%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E3%83%86%E3%82%B9%E3%83%88%E7%92%B0%E5%A2%83-7">試行錯誤を支えるテスト環境</h1>
+<h2 id="llm-%E5%90%91%E3%81%91%E3%81%AE%E8%A8%AD%E8%A8%88cui%E3%83%BBgui%E3%83%BBskills-%E3%82%92%E6%8F%83%E3%81%88%E3%82%8B">LLM 向けの設計：CUI・GUI・Skills を揃える</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">設計上の工夫</th>
+<th style="text-align:left">LLM から使うときの利点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">CUI を操作の基本にする</td>
+<td style="text-align:left">実行条件をコマンドで指定し、テストの実行・集計・比較を繰り返せる</td>
+</tr>
+<tr>
+<td style="text-align:left">CUI と GUI の基盤を共通化</td>
+<td style="text-align:left">履歴を共有し、CUI で評価した結果をそのまま GUI で確認できる</td>
+</tr>
+<tr>
+<td style="text-align:left">ブラウザで動く GUI</td>
+<td style="text-align:left">LLM の内部ブラウザで盤面やリプレイを見て、LLM が分析を行える</td>
+</tr>
+<tr>
+<td style="text-align:left">操作手順を Skills に集約</td>
+<td style="text-align:left">起動方法に加え、実行・比較・可視化の使い分けまで手順として渡せる</td>
+</tr>
+</tbody>
+</table>
+<p><strong>実行・結果確認・操作手順</strong>を、まとめて LLM へ渡す。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="31" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-class="chapter" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" class="chapter" data-marpit-pagination="31" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--class:chapter;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+
+<h1 id="4-%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A8%E3%83%9E%E3%82%B7%E3%83%B3%E6%B4%BB%E7%94%A8-1">4. アルゴリズムとマシン活用</h1>
+<h2 id="%E8%A7%A3%E6%B3%95%E3%81%AE%E7%90%86%E8%A7%A3%E3%81%A8%E4%B8%A6%E5%88%97%E3%83%BB%E5%88%86%E6%95%A3%E5%87%A6%E7%90%86%E3%81%B8%E3%81%AE%E5%B1%95%E9%96%8B">解法の理解と並列・分散処理への展開</h2>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="32" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="32" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A8%E3%83%9E%E3%82%B7%E3%83%B3%E6%B4%BB%E7%94%A8">アルゴリズムとマシン活用</h1>
+<h2 id="%E5%AD%A6%E5%86%85%E3%81%AE%E7%9F%A5%E8%A6%8B%E3%82%92%E7%B5%84%E3%81%BF%E5%90%88%E3%82%8F%E3%81%9B%E3%82%8B">学内の知見を組み合わせる</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">知見</th>
+<th style="text-align:left">開発への活かし方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">2022 年の明石高専・競技部門の経験</td>
+<td style="text-align:left">並列分散処理を活かし、5 位に入った経験を聞く</td>
+</tr>
+<tr>
+<td style="text-align:left">自由部門のメンバー</td>
+<td style="text-align:left">LLM 戦略について議論する</td>
+</tr>
+<tr>
+<td style="text-align:left">競プロや研究に詳しいチームメイト</td>
+<td style="text-align:left">アルゴリズムとテスト環境への助言を得る</td>
+</tr>
+</tbody>
+</table>
+<p>分野ごとの知見を、LLM の力も借りながら<strong>アルゴリズム・テスト環境・マシン活用へ統合</strong>した。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="33" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="33" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A8%E3%83%9E%E3%82%B7%E3%83%B3%E6%B4%BB%E7%94%A8-1">アルゴリズムとマシン活用</h1>
+<h2 id="%E8%A7%A3%E6%B3%95%E3%81%AE%E7%90%86%E8%A7%A3%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%AE%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%E5%8C%96">解法の理解：アルゴリズムのホワイトボックス化</h2>
+<p>LLM が出力したプログラムを、<strong>人間が考察・議論できる</strong>アルゴリズムとして捉え直す。</p>
+<ol>
+<li>何を解として持ち、どう評価し、どう変更しているかを整理する。</li>
+<li>多様なソルバの共通点・違いと、得意・不得意な条件を洗い出す。</li>
+<li>活動で共有・議論し、図と数式を使った詳細な解説スライドを作成する。</li>
+<li>得た知見から、フレームワーク設計・テスト環境を見直す。</li>
+<li>論文調査や、ソルバの並列・分散化の議論にも活かす。</li>
+</ol>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> 整理した知見を<strong>フレームワーク・テスト環境へ反映</strong>し、さらにソルバを改善する。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="34" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="34" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A8%E3%83%9E%E3%82%B7%E3%83%B3%E6%B4%BB%E7%94%A8-2">アルゴリズムとマシン活用</h1>
+<h2 id="%E8%A7%A3%E6%B3%95%E3%81%AE%E5%85%B1%E6%9C%89%E5%9B%B3%E3%83%BB%E6%95%B0%E5%BC%8F%E3%83%BB%E5%85%B7%E4%BD%93%E4%BE%8B%E3%81%A7%E6%95%B4%E7%90%86%E3%81%99%E3%82%8B">解法の共有：図・数式・具体例で整理する</h2>
+<p>全 40 枚の解説スライドで、評価関数・経路・近傍操作・並列分散処理を整理した。<br />
+説明する過程で知見を整理し、チーム内や LLM との議論、実験結果の考察に活かした。</p>
+<div class="columns2">
+<div>
+<p><img src="fig/ai-algorithm-evaluation.png" alt="center" style="width:520px;" /></p>
+<p>評価関数を数式と表で説明</p>
+</div>
+<div>
+<p><img src="fig/ai-algorithm-distribution.png" alt="center" style="width:520px;" /></p>
+<p>分散処理の考え方を図で共有</p>
+</div>
+</div>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="35" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="35" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A8%E3%83%9E%E3%82%B7%E3%83%B3%E6%B4%BB%E7%94%A8-3">アルゴリズムとマシン活用</h1>
+<h2 id="%E4%B8%A6%E5%88%97%E5%87%A6%E7%90%86%E7%95%B0%E3%81%AA%E3%82%8B%E6%8E%A2%E7%B4%A2%E3%82%92%E5%90%8C%E6%99%82%E3%81%AB%E8%B5%B0%E3%82%89%E3%81%9B%E3%82%8B">並列処理：異なる探索を同時に走らせる</h2>
+<p>同じ問題から、乱数・温度・評価の重みが<strong>異なる探索</strong>を同時に走らせる。</p>
+<ul>
+<li>独立した探索を、複数の CPU スレッドで同時に動かす。</li>
+<li>各探索は<strong>全車の行動計画</strong>を持ち、有望な計画を共有する。</li>
+<li>制限時間内に得た計画を評価し、提出する回答を選ぶ。</li>
+</ul>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="36" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="36" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A8%E3%83%9E%E3%82%B7%E3%83%B3%E6%B4%BB%E7%94%A8-4">アルゴリズムとマシン活用</h1>
+<h2 id="rust-%E3%81%AE%E6%8E%A1%E7%94%A8cpu-%E4%B8%A6%E5%88%97%E5%8C%96%E3%82%92%E6%94%AF%E3%81%88%E3%82%8B%E8%A8%80%E8%AA%9E%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF">Rust の採用：CPU 並列化を支える言語の仕組み</h2>
+<ul>
+<li>高速な CPU 探索と、複数スレッドでの実行を見据えて Rust を選択した。</li>
+<li>所有権・借用・型検査で、不正なデータ共有などを<strong>コンパイル時に検出</strong>する。</li>
+<li><code>Send</code> / <code>Sync</code> が、スレッド間で移動・共有できる型を制約する。</li>
+<li>チームメンバーに Rust 経験者はいなかった。</li>
+<li><strong>コードは LLM に任せ</strong>、自分たちでは書かず・読まずに開発を進めた。</li>
+<li>人間は、解法のホワイトボックス化・議論・フレームワーク設計などに集中した。</li>
+</ul>
+<p>コンパイラの指摘から LLM が修正できることが、並列化を任せる上で利点になる。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="37" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="37" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A8%E3%83%9E%E3%82%B7%E3%83%B3%E6%B4%BB%E7%94%A8-5">アルゴリズムとマシン活用</h1>
+<h2 id="%E5%88%86%E6%95%A3%E5%87%A6%E7%90%86%E8%A4%87%E6%95%B0%E3%81%AE-pc-%E3%81%AE%E6%8E%A2%E7%B4%A2%E3%82%92%E5%8D%94%E8%AA%BF%E3%81%95%E3%81%9B%E3%82%8B">分散処理：複数の PC の探索を協調させる</h2>
+<p>複数の PC の探索を協調させ、1 チームの計算資源を増やす。</p>
+<p><img src="fig/ai-distributed.svg" alt="center" style="width:1080px;" /></p>
+<p>合計<strong>80 スレッド</strong>（探索 77・制御 3）を使い、提出プログラムは別プロセスで動かす。<br />
+各 PC で並列に探索し、良い計画を共有する。回答は PC 1 で集約して提出する。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="38" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="38" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A8%E3%83%9E%E3%82%B7%E3%83%B3%E6%B4%BB%E7%94%A8-6">アルゴリズムとマシン活用</h1>
+<h2 id="%E5%88%86%E6%95%A3%E5%87%A6%E7%90%86%E6%8E%A2%E7%B4%A2%E3%83%BB%E8%A8%88%E7%94%BB%E3%81%AE%E5%85%B1%E6%9C%89%E3%83%BB%E5%9B%9E%E7%AD%94%E3%81%AE%E6%8F%90%E5%87%BA">分散処理：探索・計画の共有・回答の提出</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">処理</th>
+<th style="text-align:left">仕組み</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">探索開始</td>
+<td style="text-align:left">同じ問題・観測・採用済みの履歴を 3 台に渡し、探索の前提を揃える</td>
+</tr>
+<tr>
+<td style="text-align:left">各 PC で探索</td>
+<td style="text-align:left">各探索は全車の行動計画を持ち、乱数・温度・評価の重みを変えて探索する</td>
+</tr>
+<tr>
+<td style="text-align:left">計画の共有</td>
+<td style="text-align:left">PC 間で良い計画を共有し、<strong>受信側で再評価</strong>して探索に取り込む</td>
+</tr>
+<tr>
+<td style="text-align:left">回答の提出</td>
+<td style="text-align:left">PC 1 で回答を集約して途中回答も提出し、通信を待ち続けず制限時間を守る</td>
+</tr>
+<tr>
+<td style="text-align:left">翌日の状態同期</td>
+<td style="text-align:left">実際に<strong>採用された回答に状態を合わせ</strong>、3 台で次の探索を始める</td>
+</tr>
+</tbody>
+</table>
+<p>共有した計画を別の探索でさらに改善し、制限時間中に得られた有効な回答を使う。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="39" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="39" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0%E3%81%A8%E3%83%9E%E3%82%B7%E3%83%B3%E6%B4%BB%E7%94%A8-7">アルゴリズムとマシン活用</h1>
+<h2 id="%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83llm-%E3%81%8C%E5%AE%9F%E8%A1%8C%E7%94%A8-pc-%E3%82%92%E6%93%8D%E4%BD%9C%E3%81%99%E3%82%8B">開発環境：LLM が実行用 PC を操作する</h2>
+<p>全 PC を有線 LAN でつなぎ、<strong>操作権限と手順</strong>を渡す。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">用意したもの</th>
+<th style="text-align:left">LLM による開発</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">全実行用 PC の操作権限</td>
+<td style="text-align:left">SSH で各 PC を操作し、環境構築・ネットワーク設定・ファイル操作まで行う</td>
+</tr>
+<tr>
+<td style="text-align:left">接続・運用の Skills</td>
+<td style="text-align:left">接続方法と計算資源を把握し、複数 PC での配置・実行・ログ確認を進める</td>
+</tr>
+<tr>
+<td style="text-align:left">軽量な Void Linux</td>
+<td style="text-align:left">OS の負荷を抑え、計算資源をソルバの探索に回せる</td>
+</tr>
+<tr>
+<td style="text-align:left">USB 起動の試験環境</td>
+<td style="text-align:left">普段の環境と分け、LLM が設定やツールを自由に変更しながら試せる</td>
+</tr>
+</tbody>
+</table>
+<p>実装 → ビルド・配置 → 複数 PC で実行 → ログ確認・修正</p>
+<p>複数 PC を使う開発サイクルを、LLM 自身が操作して回せるようにした。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="40" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-class="chapter" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" class="chapter" data-marpit-pagination="40" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--class:chapter;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+
+<h1 id="5-%E5%8F%8D%E7%9C%81%E3%81%A8%E3%81%BE%E3%81%A8%E3%82%81-1">5. 反省とまとめ</h1>
+<h2 id="%E9%96%8B%E7%99%BA%E3%81%A7%E5%BE%97%E3%81%9F%E6%88%90%E6%9E%9C%E3%81%A8%E6%AC%A1%E5%9B%9E%E3%81%AB%E5%90%91%E3%81%91%E3%81%9F%E6%94%B9%E5%96%84%E7%82%B9">開発で得た成果と次回に向けた改善点</h2>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="41" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="41" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E5%8F%8D%E7%9C%81%E3%81%A8%E3%81%BE%E3%81%A8%E3%82%81">反省とまとめ</h1>
+<h2 id="%E4%B8%A6%E5%88%97%E3%83%BB%E5%88%86%E6%95%A3%E3%81%B8%E3%81%AE%E7%A7%BB%E8%A1%8C%E3%81%8C%E9%81%85%E3%82%8C%E3%81%9F">並列・分散への移行が遅れた</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">段階</th>
+<th style="text-align:left">開発の経緯</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">当初の方針</td>
+<td style="text-align:left">単一スレッド版の改善が頭打ちになったら、並列・分散構成へ移行する</td>
+</tr>
+<tr>
+<td style="text-align:left">実際の経過</td>
+<td style="text-align:left">単一スレッド版の改善が続き、次のレイヤーへ進む判断が遅れた</td>
+</tr>
+<tr>
+<td style="text-align:left">結果</td>
+<td style="text-align:left">デプロイは<strong>大会 3 日前</strong>からとなり、分散処理を十分に改善できなかった</td>
+</tr>
+</tbody>
+</table>
+<p>並列・分散は、配置・通信確認・評価に時間がかかり、<strong>1 回の開発サイクルも長い</strong>。<br />
+移行が遅れたことで、残された期間に試せる改善の回数が限られた。</p>
+<p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.181ex" role="img" focusable="false" viewBox="0 -511 1000 522"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2192" d="M56 237T56 250T70 270H835Q719 357 692 493Q692 494 692 496T691 499Q691 511 708 511H711Q720 511 723 510T729 506T732 497T735 481T743 456Q765 389 816 336T935 261Q944 258 944 250Q944 244 939 241T915 231T877 212Q836 186 806 152T761 85T740 35T732 4Q730 -6 727 -8T711 -11Q691 -11 691 0Q691 7 696 25Q728 151 835 230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container> 性能の停滞だけを待たず、<strong>移行後に試行錯誤する時間</strong>も確保したい！</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="42" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="42" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E5%8F%8D%E7%9C%81%E3%81%A8%E3%81%BE%E3%81%A8%E3%82%81-1">反省とまとめ</h1>
+<h2 id="%E5%88%86%E6%95%A3%E5%87%A6%E7%90%86%E3%81%AE%E3%83%95%E3%83%AB%E3%83%86%E3%82%B9%E3%83%88%E3%81%8C%E9%81%85%E3%82%8C%E3%81%9F">分散処理のフルテストが遅れた</h2>
+<ul>
+<li>実行時間を短縮すると、通信による解の共有と、その後の探索に使える時間が変わる。</li>
+<li>短縮テストの結果だけでは、<strong>本番時間での改善を判断できなかった</strong>。</li>
+<li>気づいたのは<strong>大会前日</strong>で、本番時間での検証が直前に集中した。</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">評価する対象</th>
+<th style="text-align:left">テストの使い分け</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">通常の候補の比較</td>
+<td style="text-align:left">短縮テストで多くの候補を試し、有望ならフルテストへ進む</td>
+</tr>
+<tr>
+<td style="text-align:left">分散処理の性能・通信タイミング</td>
+<td style="text-align:left">短縮テストだけで絞り込まず、早い段階からフルテストで比較する</td>
+</tr>
+</tbody>
+</table>
+<p>この使い分けを、早めに導入すべきだった。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="43" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="43" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E5%8F%8D%E7%9C%81%E3%81%A8%E3%81%BE%E3%81%A8%E3%82%81-2">反省とまとめ</h1>
+<h2 id="%E3%83%95%E3%83%AC%E3%83%BC%E3%83%A0%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E8%AA%BF%E6%9F%BB%E3%83%BB%E6%AF%94%E8%BC%83%E3%81%8C%E4%B8%8D%E8%B6%B3%E3%81%97%E3%81%9F">フレームワークの調査・比較が不足した</h2>
+<p><strong>既存手法の調査不足</strong></p>
+<ul>
+<li>対戦ゲーム向けの LLM 開発フレームワークを十分に調査できなかった。</li>
+<li>過去のモデルを前提にした手法が、現在のモデルでも有効なのか検討したかった。</li>
+</ul>
+<p><strong>Skills とスクリプトの比較</strong></p>
+<ul>
+<li>スクリプト化が難しいと感じ、Skills でフレームワークを作った。</li>
+<li>Skills は自然言語で規則を変更し、別の条件にも流用しやすかった。</li>
+<li>実装の手間も含め、スクリプトで実装する方がよかったか検討したかった。</li>
+</ul>
+<p>既存手法の調査と、Skills・スクリプトの比較を進め、フレームワーク設計を見直したい。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="44" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="44" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E5%8F%8D%E7%9C%81%E3%81%A8%E3%81%BE%E3%81%A8%E3%82%81-3">反省とまとめ</h1>
+<h2 id="%E5%86%8D%E6%A7%8B%E7%AF%89%E3%82%92%E3%81%BE%E3%81%9F%E3%81%90%E7%9F%A5%E8%A6%8B%E3%81%AE%E7%B6%99%E6%89%BF%E3%81%8C%E4%B8%8D%E8%B6%B3%E3%81%97%E3%81%9F">再構築をまたぐ知見の継承が不足した</h2>
+<p>ゼロから作り直すたびに、知見の継承が途切れた。</p>
+<div class="columns2">
+<div>
+<p><strong>多様な解法を得るための工夫</strong></p>
+<ul>
+<li>新しい開発エージェントを起動する。</li>
+<li>旧実装・開発履歴を渡さず、既存の解法に縛られない設計を促す。</li>
+</ul>
+</div>
+<div>
+<p><strong>残った課題</strong></p>
+<ul>
+<li>管理側には評価結果・実行記録を残した。</li>
+<li>そこから得た知見を、次の新規開発に引き継ぐ仕組みがなかった。</li>
+</ul>
+</div>
+</div>
+<p>過去の解法に過度に誘導せず、<strong>何を・どこまで引き継ぐか</strong>を設計する。<br />
+新しい方針を探す自由と、試行錯誤から学ぶ仕組みを両立させたい。</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="45" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="45" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E5%8F%8D%E7%9C%81%E3%81%A8%E3%81%BE%E3%81%A8%E3%82%81-4">反省とまとめ</h1>
+<h2 id="%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AE%E5%A4%A7%E3%81%8D%E3%81%95%E3%81%AB%E5%BF%9C%E3%81%98%E3%81%9F%E5%BD%B9%E5%89%B2%E5%88%86%E6%8B%85%E3%82%92%E8%A9%A6%E3%81%97%E3%81%9F%E3%81%8B%E3%81%A3%E3%81%9F">モデルの大きさに応じた役割分担を試したかった</h2>
+<p>今回は、大きなモデルによる設計・再構築を重視した。<br />
+小さなモデルで細かな改善を大量に試す方法も、組み合わせて検討したかった。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">次に試したい役割分担</th>
+<th style="text-align:left">変更の範囲</th>
+<th style="text-align:left">作業の例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">大きなモデル</td>
+<td style="text-align:left">解法全体を見直す</td>
+<td style="text-align:left">新規設計・再構築、探索方針の変更</td>
+</tr>
+<tr>
+<td style="text-align:left">小さなモデル</td>
+<td style="text-align:left">対象を絞って改善する</td>
+<td style="text-align:left">高速化、パラメータや近傍操作の調整</td>
+</tr>
+</tbody>
+</table>
+<p>ソルバの強化と、AI の利用料金の削減を両立したい。</p>
+<ul>
+<li>細かな改善を小さなモデルに任せ、大きなモデルを使う費用を抑える。</li>
+<li><strong>同じ予算で、より多くの改善案</strong>を試すことを目指す。</li>
+</ul>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="46" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="46" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E5%8F%8D%E7%9C%81%E3%81%A8%E3%81%BE%E3%81%A8%E3%82%81-5">反省とまとめ</h1>
+<h2 id="%E3%81%BE%E3%81%A8%E3%82%81">まとめ</h2>
+<p><strong>人間の開発と並行して、「実用的なアルゴリズムエンジニアリングの自動化」を進めた。</strong><br />
+様々なマップパターンと対戦ゲームに合わせて、開発・評価の仕組みを整えた。</p>
+<ul>
+<li>人間は問題を考察し、<strong>テスト環境とマシン活用を設計</strong>する。</li>
+<li>LLM は自律的に<strong>実装・実験・改善</strong>を進め、多様な方針を試す。</li>
+<li>得られた解法をチームで整理・議論し、次の開発へ活かす。</li>
+</ul>
+<p>この戦略が準優勝に大きく寄与した！</p>
+<footer>2026/11/16</footer>
+</section>
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="47" data-paginate="true" data-header="第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略" data-footer="2026/11/16" data-theme="57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d" lang="C" data-marpit-pagination="47" style="--paginate:true;--header:第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略;--footer:2026/11/16;--theme:57odxg4pl2kis4q8cnzedlnil689s223my7yxjhnfo1d;" data-marpit-pagination-total="47" data-size="16:9">
+<header>第 37 回全国高専プロコン競技部門「ヘキサうどん」LLM 戦略</header>
+<h1 id="%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE">参考文献</h1>
+<div class="refs">
+<ol>
+<li>
+<p><strong>Yuki Imajuku, Kohki Horie, Yoichi Iwata, Kensho Aoki, Naohiro Takahashi, Takuya Akiba.</strong><br />
+<a href="https://arxiv.org/abs/2506.09050"><em>ALE-Bench: A Benchmark for Long-Horizon Objective-Driven Algorithm Engineering.</em></a><br />
+arXiv preprint, arXiv:2506.09050, 2025.</p>
+</li>
+<li>
+<p><strong>Robert Tjarko Lange, Yuki Imajuku, Edoardo Cetin.</strong><br />
+<a href="https://arxiv.org/abs/2509.19349"><em>ShinkaEvolve: Towards Open-Ended And Sample-Efficient Program Evolution.</em></a><br />
+arXiv preprint, arXiv:2509.19349, 2025.</p>
+</li>
+<li>
+<p><strong>Asankhaya Sharma.</strong><br />
+<a href="https://github.com/algorithmicsuperintelligence/openevolve"><em>OpenEvolve: an open-source evolutionary coding agent.</em></a><br />
+GitHub, 2025.</p>
+</li>
+</ol>
+</div>
+<footer>2026/11/16</footer>
+</section>
+<script>!function(){"use strict";const t={h1:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"1"},style:"display: block; font-size: 2em; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h2:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"2"},style:"display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h3:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"3"},style:"display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h4:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"4"},style:"display: block; margin-block-start: 1.33em; margin-block-end: 1.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h5:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"5"},style:"display: block; font-size: 0.83em; margin-block-start: 1.67em; margin-block-end: 1.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},h6:{proto:()=>HTMLHeadingElement,attrs:{role:"heading","aria-level":"6"},style:"display: block; font-size: 0.67em; margin-block-start: 2.33em; margin-block-end: 2.33em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;"},span:{proto:()=>HTMLSpanElement},pre:{proto:()=>HTMLElement,style:"display: block; font-family: monospace; white-space: pre; margin: 1em 0; --marp-auto-scaling-white-space: pre;"}},e="data-marp-auto-scaling-wrapper",i="data-marp-auto-scaling-svg",n="data-marp-auto-scaling-container";class s extends HTMLElement{container;containerSize;containerObserver;svg;svgComputedStyle;svgPreserveAspectRatio="xMinYMid meet";wrapper;wrapperSize;wrapperObserver;constructor(){super();const t=t=>([e])=>{const{width:i,height:n}=e.contentRect;this[t]={width:i,height:n},this.updateSVGRect()};this.attachShadow({mode:"open"}),this.containerObserver=new ResizeObserver(t("containerSize")),this.wrapperObserver=new ResizeObserver((...e)=>{t("wrapperSize")(...e),this.flushSvgDisplay()})}static get observedAttributes(){return["data-downscale-only"]}connectedCallback(){this.shadowRoot.innerHTML=`\n<style>\n  svg[${i}] { display: block; width: 100%; height: auto; vertical-align: top; }\n  span[${n}] { display: table; white-space: var(--marp-auto-scaling-white-space, nowrap); width: max-content; }\n</style>\n<div ${e}>\n  <svg part="svg" ${i}>\n    <foreignObject><span ${n}><slot></slot></span></foreignObject>\n  </svg>\n</div>\n    `.split(/\n\s*/).join(""),this.wrapper=this.shadowRoot.querySelector(`div[${e}]`)??void 0;const t=this.svg;this.svg=this.wrapper?.querySelector(`svg[${i}]`)??void 0,this.svg!==t&&(this.svgComputedStyle=this.svg?window.getComputedStyle(this.svg):void 0),this.container=this.svg?.querySelector(`span[${n}]`)??void 0,this.observe()}disconnectedCallback(){this.svg=void 0,this.svgComputedStyle=void 0,this.wrapper=void 0,this.container=void 0,this.observe()}attributeChangedCallback(){this.observe()}flushSvgDisplay(){const{svg:t}=this;t&&(t.style.display="inline",requestAnimationFrame(()=>{t.style.display=""}))}observe(){this.containerObserver.disconnect(),this.wrapperObserver.disconnect(),this.wrapper&&this.wrapperObserver.observe(this.wrapper),this.container&&this.containerObserver.observe(this.container),this.svgComputedStyle&&this.observeSVGStyle(this.svgComputedStyle)}observeSVGStyle(t){const e=()=>{const i=(()=>{const e=t.getPropertyValue("--preserve-aspect-ratio");if(e)return e.trim();return`x${(({textAlign:t,direction:e})=>{if(t.endsWith("left"))return"Min";if(t.endsWith("right"))return"Max";if("start"===t||"end"===t){let i="rtl"===e;return"end"===t&&(i=!i),i?"Max":"Min"}return"Mid"})(t)}YMid meet`})();i!==this.svgPreserveAspectRatio&&(this.svgPreserveAspectRatio=i,this.updateSVGRect()),t===this.svgComputedStyle&&requestAnimationFrame(e)};e()}updateSVGRect(){let t=Math.ceil(this.containerSize?.width??0);const e=Math.ceil(this.containerSize?.height??0);void 0!==this.dataset.downscaleOnly&&(t=Math.max(t,this.wrapperSize?.width??0));const i=this.svg?.querySelector(":scope > foreignObject");if(i?.setAttribute("width",`${t}`),i?.setAttribute("height",`${e}`),this.svg&&(this.svg.setAttribute("viewBox",`0 0 ${t} ${e}`),this.svg.setAttribute("preserveAspectRatio",this.svgPreserveAspectRatio),this.svg.style.height=t<=0||e<=0?"0":""),this.container){const t=this.svgPreserveAspectRatio.toLowerCase();this.container.style.marginLeft=t.startsWith("xmid")||t.startsWith("xmax")?"auto":"0",this.container.style.marginRight=t.startsWith("xmi")?"auto":"0"}}}const r=(t,{attrs:e={},style:i})=>class extends t{constructor(...t){super(...t);for(const[t,i]of Object.entries(e))this.hasAttribute(t)||this.setAttribute(t,i);this._shadow()}static get observedAttributes(){return["data-auto-scaling"]}connectedCallback(){this._update()}attributeChangedCallback(){this._update()}_shadow(){if(!this.shadowRoot)try{this.attachShadow({mode:"open"})}catch(t){if(!(t instanceof Error&&"NotSupportedError"===t.name))throw t}return this.shadowRoot}_update(){const t=this._shadow();if(t){const e=i?`<style>:host { ${i} }</style>`:"";let n="<slot></slot>";const{autoScaling:s}=this.dataset;if(void 0!==s){n=`<marp-auto-scaling exportparts="svg:auto-scaling" ${"downscale-only"===s?"data-downscale-only":""}>${n}</marp-auto-scaling>`}t.innerHTML=e+n}}};let o;const a=()=>o??(o=!!document.createElement("div",{is:"marp-auto-scaling"}).outerHTML.startsWith("<div is"),o),l=Symbol();let c;const d="marpitSVGPolyfill:setZoomFactor,",h=Symbol(),g=Symbol();const p=()=>{const t="Apple Computer, Inc."===navigator.vendor,e=t?[v]:[],i={then:e=>(t?(async()=>{if(void 0===c){const t=document.createElement("canvas");t.width=10,t.height=10;const e=t.getContext("2d"),i=new Image(10,10),n=new Promise(t=>{i.addEventListener("load",()=>t())});i.crossOrigin="anonymous",i.src="data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%20viewBox%3D%220%200%201%201%22%3E%3CforeignObject%20width%3D%221%22%20height%3D%221%22%20requiredExtensions%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%3E%3Cdiv%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxhtml%22%20style%3D%22width%3A%201px%3B%20height%3A%201px%3B%20background%3A%20red%3B%20position%3A%20relative%22%3E%3C%2Fdiv%3E%3C%2FforeignObject%3E%3C%2Fsvg%3E",await n,e.drawImage(i,0,0),c=e.getImageData(5,5,1,1).data[3]<128}return c})().then(t=>{null==e||e(t?[v]:[])}):null==e||e([]),i)};return Object.assign(e,i)};let m,u;function v(t){const e="object"==typeof t&&t.target||document,i="object"==typeof t?t.zoom:t;window[g]||(Object.defineProperty(window,g,{configurable:!0,value:!0}),document.body.style.zoom=1.0001,document.body.offsetHeight,document.body.style.zoom=1,window.addEventListener("message",({data:t,origin:e})=>{if(e===window.origin)try{if(t&&"string"==typeof t&&t.startsWith(d)){const[,e]=t.split(","),i=Number.parseFloat(e);Number.isNaN(i)||(u=i)}}catch(t){console.error(t)}}));let n=!1;Array.from(e.querySelectorAll("svg[data-marpit-svg]"),t=>{var e,s,r,o;t.style.transform||(t.style.transform="translateZ(0)");const a=i||u||t.currentScale||1;m!==a&&(m=a,n=a);const l=t.getBoundingClientRect(),{length:c}=t.children;for(let i=0;i<c;i+=1){const n=t.children[i];if(n.getScreenCTM){const t=n.getScreenCTM();if(t){const i=null!==(s=null===(e=n.x)||void 0===e?void 0:e.baseVal.value)&&void 0!==s?s:0,c=null!==(o=null===(r=n.y)||void 0===r?void 0:r.baseVal.value)&&void 0!==o?o:0,d=n.children.length;for(let e=0;e<d;e+=1){const s=n.children[e];if("SECTION"===s.tagName){const{style:e}=s;e.transformOrigin||(e.transformOrigin=`${-i}px ${-c}px`),e.transform=`scale(${a}) matrix(${t.a}, ${t.b}, ${t.c}, ${t.d}, ${t.e-l.left}, ${t.f-l.top}) translateZ(0.0001px)`;break}}}}}}),!1!==n&&Array.from(e.querySelectorAll("iframe"),({contentWindow:t})=>{null==t||t.postMessage(`${d}${n}`,"null"===window.origin?"*":window.origin)})}function w({once:t=!1,target:e=document}={}){const i=function(t=document){if(t[h])return t[h];let e=!0;const i=()=>{e=!1,delete t[h]};Object.defineProperty(t,h,{configurable:!0,value:i});let n=[],s=!1;(async()=>{try{n=await p()}finally{s=!0}})();const r=()=>{for(const e of n)e({target:t});s&&0===n.length||e&&window.requestAnimationFrame(r)};return r(),i}(e);return t?(i(),()=>{}):i}m=1,u=void 0;const b=Symbol(),y=(e=document)=>{if("undefined"==typeof window)throw new Error("Marp Core's browser script is valid only in browser context.");if(((e=document)=>{const i=window[l];i||customElements.define("marp-auto-scaling",s);for(const n of Object.keys(t)){const s=`marp-${n}`,o=t[n].proto();a()&&o!==HTMLElement?i||customElements.define(s,r(o,{style:t[n].style}),{extends:n}):(i||customElements.define(s,r(HTMLElement,t[n])),e.querySelectorAll(`${n}[is="${s}"]`).forEach(t=>{t.outerHTML=t.outerHTML.replace(new RegExp(`^<${n}`,"i"),`<${s}`).replace(new RegExp(`</${n}>$`,"i"),`</${s}>`)}))}window[l]=!0})(e),e[b])return e[b];const i=w({target:e}),n=()=>{i(),delete e[b]},o=Object.assign(n,{cleanup:n,update:()=>y(e)});return Object.defineProperty(e,b,{configurable:!0,value:o}),o},f=document.currentScript;y(f?f.getRootNode():document)}();
+</script></foreignObject></svg></div><div class="bespoke-marp-note" data-index="2" tabindex="0"><p>CHAPTER_LLM</p></div><div class="bespoke-marp-note" data-index="3" tabindex="0"><p>出典・補足：背景研究は2025年公開。ALE-Agentはbest-first searchにビームサーチ的な複数候補の展開を組み合わせる（&lt;a href=&quot;https://arxiv.org/html/2506.09050v1&quot;&gt;論文 §4・付録B&lt;/a&gt;）。出典：&lt;a href=&quot;https://sakana.ai/ale-bench-jp/&quot;&gt;Sakana AI：ALE-Bench&lt;/a&gt;、&lt;a href=&quot;https://sakana.ai/shinka-evolve/&quot;&gt;ShinkaEvolve&lt;/a&gt;、&lt;a href=&quot;https://github.com/algorithmicsuperintelligence/openevolve&quot;&gt;OpenEvolve&lt;/a&gt;</p></div><div class="bespoke-marp-note" data-index="4" tabindex="0"><p>出典・補足：Sakana AI（2025年6月公開）https://sakana.ai/ale-bench-jp/ 、https://arxiv.org/html/2506.09050v1 Figure 1。図：https://sakana.ai/assets/ale-bench/ale-overview-border.png を加工せず掲載。AHCの過去問40問を収録したベンチマークの構成図。原図中のAIという表記は原著者によるもの。</p></div><div class="bespoke-marp-note" data-index="5" tabindex="0"><p>出典・補足：ALE-Bench公式リーダーボード https://sakanaai.github.io/ALE-Bench-Leaderboard/ （更新日：2026年10月18日、取得日：2026年10月21日）。公式ページのOverall Leaderboardを画面から取得。Problem Set=All、Vertical Metric=Performance、Horizontal Metric=Cost (USD)、縦軸Linear・横軸Log。表示機能でgpt-6.1-sol-max、gpt-6-astra-max、gemini-4-argon-high、claude-fable-5.1-high、deepseek-v4-pro-0813-max、kimi-k3-maxを選択した。図は再描画せず、公式のグラフと凡例を掲載。各点はSelf-refine回数の異なる設定を表す。平均パフォーマンスは全40問の平均で、人間のAtCoderレーティングそのものではない。2800超は本図の評価設定での結果を指す。</p></div><div class="bespoke-marp-note" data-index="6" tabindex="0"><p>出典・補足：Sakana AI https://sakana.ai/shinka-evolve/ の円充填実験。公式図 https://sakana.ai/assets/shinka-evolve/circle_packing_evo_tree.png を加工せず掲載。参照日：2026年10月21日。番号は候補プログラムの識別子で、図の上下位置や番号を単純な時刻とはみなさない。図中のDiff Edit、Full Edit、Cross-Over、Initialは候補の生成方法を表す。グラフは円配置画像そのものの生成ではなく、円配置を求めるプログラムの探索を表す。本チームの進化的フレームワークの説明は第2章に置く。</p></div><div class="bespoke-marp-note" data-index="7" tabindex="0"><p>出典・補足：https://sakana.ai/shinka-evolve/ のMathematical Optimization (Circle Packing)、https://arxiv.org/html/2509.19349v1 の円充填実験とListing 2。図：https://sakana.ai/assets/shinka-evolve/circle_packing_soln.png を加工せず掲載。1辺1の正方形に26個の円を配置し、半径の和を最大化する。LLMが直接この画像を描くことを意味しない。前のスライドの探索グラフに対応する成果例。本チームでの応用は第2章で説明する。</p></div><div class="bespoke-marp-note" data-index="8" tabindex="0"><p>出典・補足：OpenEvolve公式リポジトリ https://github.com/algorithmicsuperintelligence/openevolve のQuick Start、How OpenEvolve Works、Core Innovation: MAP-Elites + LLMs。構成図：https://raw.githubusercontent.com/algorithmicsuperintelligence/openevolve/main/openevolve-architecture.png を加工せず掲載。参照日：2026年10月21日。MAP-Elitesによる特徴空間内の候補保持と、island-based architectureによる複数集団での探索を平易に要約した。候補生成では親プログラムのほか、参考候補や評価結果も利用する。OpenEvolveそのものを本チームが採用したという意味ではなく、関連する公開の取り組みとして紹介する。</p></div><div class="bespoke-marp-note" data-index="9" tabindex="0"><p>出典・補足：先行研究の紹介を踏まえ、本チームの開発方針をSampling・Self-refine・多様性の3点に整理したもの。各研究の全要素をこの3点だけで説明するという主張ではない。候補の新規構築と独立性の確保については、ユーザー提供の活動メモとソルバ強化の運用に基づく。具体的なソルバ群の評価・入れ替え手順は第2章で説明する。</p></div><div class="bespoke-marp-note" data-index="10" tabindex="0"><p>出典・補足：概念図。本資料のSelf-refineは実行評価を返す反復改善を指す。関連：&lt;a href=&quot;https://arxiv.org/html/2506.09050v1&quot;&gt;ALE-Bench §4・§5.2&lt;/a&gt;。</p></div><div class="bespoke-marp-note" data-index="11" tabindex="0"><p>出典・補足：ユーザー提供の活動メモに基づく開発方針。LLMにとって扱いやすいプロジェクトはテスタに限らず、問題・解法の知見、評価操作、計算資源へのアクセスを含む。具体的なテスト環境は第3章、解法の分析とマシン活用は第4章で説明する。</p></div><div class="bespoke-marp-note" data-index="12" tabindex="0"><p>出典・補足：ユーザー提供の活動メモと、本資料の第2章（独立した候補の再構築・評価・採用条件・Skills）、第4章（解法のホワイトボックス化と並列・分散設計）に基づく開発方針。人間による考察・開発と、LLMによる新規生成を含む自律開発を、並行して進める別々の活動として整理した。図では両者を接続せず、それぞれの活動を示している。候補開発へ旧実装や他ソルバの設計履歴を引き継がせたという意味ではない。フレームワークの具体的な実現方法や、運用上の課題は後続章で扱う。</p></div><div class="bespoke-marp-note" data-index="13" tabindex="0"><p>CHAPTER_APPLICATION</p></div><div class="bespoke-marp-note" data-index="14" tabindex="0"><p>出典・補足：道路状態の共有と更新：&lt;a href=&quot;../../tester/game/docs/protocol.md&quot;&gt;対戦ルール&lt;/a&gt;、既存の&lt;a href=&quot;../slide/slide.md&quot;&gt;解法方針資料&lt;/a&gt;。在庫や得点はチームごとに独立している。評価相手の強さ・多様性・更新の必要性は、ルールとチームの活動メモに基づく方針。特定のソルバ間の相性や過適合を実証した結果ではない。出題パターンの多さと評価時間の課題は第3章で扱う。</p></div><div class="bespoke-marp-note" data-index="15" tabindex="0"><p>出典・補足：チームの経験に基づく課題整理。すべてのモデル・課題で起きると主張するものではない。</p></div><div class="bespoke-marp-note" data-index="16" tabindex="0"><p>出典・補足：時間・行数・結果はチームの概数による振り返り。評価条件を揃えた一般的な生産性比較ではない。</p></div><div class="bespoke-marp-note" data-index="17" tabindex="0"><p>出典・補足：出典：&lt;a href=&quot;../../.agents/skills/procon37-solver-pool/SKILL.md&quot;&gt;単一スレッドのソルバ強化スキル&lt;/a&gt;。5個で対戦して平均順位最下位を再構築対象とし、残す4個は候補開発中に固定する。管理エージェントは評価・採用を担当し、開発エージェントは設計・実装・実験・改善を担当する。評価では全試合で5個すべてが正常終了し、新ソルバの平均順位が他4個すべてより厳密に小さいことが必要。個々の試合で必ず勝つという意味ではない。短縮テストとフルテストの使い分けは第3章で説明する。</p></div><div class="bespoke-marp-note" data-index="18" tabindex="0"><p>出典・補足：出典：&lt;a href=&quot;../../.agents/skills/procon37-solver-pool/SKILL.md&quot;&gt;ソルバ強化スキル&lt;/a&gt;、&lt;a href=&quot;../../.agents/skills/procon37-solver-pool/docs/developer-task.md&quot;&gt;開発者への依頼文&lt;/a&gt;、&lt;a href=&quot;../../AGENTS.md&quot;&gt;閲覧規則&lt;/a&gt;。開発エージェントは管理エージェントから依頼を受けて別の会話コンテキストで作業するsubagent。起動時にfork_turns=&quot;none&quot;を指定し、親の会話履歴を継承しない。依頼の目標は「残した4個を上回るソルバを、ゼロから作成せよ」。ファイルは共有されており、閲覧禁止は依頼文・AGENTS.mdによるルールであって、アクセス権限による強制隔離ではない。独立性は多様性を狙う工夫であり、アルゴリズムの多様性を保証しない。</p></div><div class="bespoke-marp-note" data-index="19" tabindex="0"><p>出典・補足：本チームの運用を進化的フレームワークとして整理したもの。新しい案の生成には既存案の変更や新規設計があり、保持・選択の規則は手法ごとに異なる。今回は独立した新規設計で多様性を狙い、評価・反復改善・採用を組み合わせる。大会直前のSelf-refineへの集中は、最初のチームメモに基づく。候補開発中の反復改善を否定する意味ではなく、採用済みソルバの最終調整に集中した時期を指す。独立した生成はアルゴリズムの多様性を保証せず、対戦相手の更新も未知の相手への強さの向上を保証しない。出典：&lt;a href=&quot;../../.agents/skills/procon37-solver-pool/SKILL.md&quot;&gt;ソルバ強化スキル&lt;/a&gt;。関連：&lt;a href=&quot;https://sakana.ai/shinka-evolve/&quot;&gt;ShinkaEvolve&lt;/a&gt;、&lt;a href=&quot;https://github.com/algorithmicsuperintelligence/openevolve&quot;&gt;OpenEvolve&lt;/a&gt;。</p></div><div class="bespoke-marp-note" data-index="20" tabindex="0"><p>出典・補足：出典：&lt;a href=&quot;../../.agents/skills/procon37-solver-pool/SKILL.md&quot;&gt;ソルバ強化スキル&lt;/a&gt;、&lt;a href=&quot;../../.agents/skills/procon37-solver-pool/docs/developer-task.md&quot;&gt;開発依頼のテンプレート&lt;/a&gt;。記録のルールは強化スキル内に定義され、実行状態・評価結果は別ファイルに保存する。Skills自体がプログラムとして処理を実行するのではなく、管理エージェントが参照して操作を進める。指定した更新回数などの終了条件まで継続する運用であり、無期限・無停止の実行を保証するものではない。テスト操作は第3章、マシンの操作は第4章、スクリプト化との比較は第5章で扱う。</p><p>---
+
+# 開発中に変わった実感
+
+| 時期 | チームの認識・取り組み（2026年） |
+| :--- | :--- |
+| 4月ごろ | LLMが「暖色レベル」のプログラムも書けるという実感。人間は環境構築・修正方針・考察・分析に比重を移す |
+| 9月ごろ | Astraの利用と、LLMを継続的に動かすフレームワークの活用が進む |
+| 9月中旬ごろ | 既存ソルバを引き継がず、ゼロから再構築する実験 |
+| 大会直前 | 並列・分散構成へ展開し、採用したソルバを集中的に改善 |</p><p>出典・補足：時期・「暖色レベル」はチームの体験・表現。モデルの公式公開日や、特定ベンチマークの成績を示す年表ではない。</p></div><div class="bespoke-marp-note" data-index="21" tabindex="0"><p>CHAPTER_TESTING</p></div><div class="bespoke-marp-note" data-index="22" tabindex="0"><p>出典・補足：問題の要素と生成条件は&lt;a href=&quot;../../tester/solo/docs/generator.md&quot;&gt;入力生成&lt;/a&gt;および&lt;a href=&quot;../slide/slide.md&quot;&gt;解法方針資料&lt;/a&gt;に基づく。右列は各条件が探索に与える影響の整理であり、条件別の改善量を測定した表ではない。生成器の抽選分布を本番の出題分布と同一とはみなさない。</p></div><div class="bespoke-marp-note" data-index="23" tabindex="0"><p>出典・補足：&lt;a href=&quot;../../tester/solo/README.md&quot;&gt;生成テストケースの構成&lt;/a&gt;、&lt;a href=&quot;../../tester/solo/docs/generator.md&quot;&gt;入力生成&lt;/a&gt;、&lt;a href=&quot;../../tester/game/README.md&quot;&gt;対戦テスタ&lt;/a&gt;。同じ計算資源・開発期間で、同程度の実行時間を要するテストケースを増やす場合のトレードオフを定性的に整理した。テストケース数だけで評価の質が保証されるわけではなく、形式・配置・制約の偏りにも注意する。実際には公式サンプル・自動生成・非公式練習場の取り込みを組み合わせている。短縮テストは候補の絞り込みに使い、採用はフルテストで判断する。段階分けと並列実行の具体策はこの章の後続スライドで説明する。</p></div><div class="bespoke-marp-note" data-index="24" tabindex="0"><p>出典・補足：&lt;a href=&quot;../../.agents/skills/procon37-solver-pool/SKILL.md&quot;&gt;強化スキル&lt;/a&gt;、&lt;a href=&quot;../../README.md#テスト&quot;&gt;フルテストの定義&lt;/a&gt;、&lt;a href=&quot;../../solver/docs/distributed/README.md&quot;&gt;分散開発の評価条件&lt;/a&gt;、&lt;a href=&quot;../../solver/docs/distributed/resume-20261009/formal-time-audit-20261009.md&quot;&gt;正式時間の監査&lt;/a&gt;。今回の短縮テストは、ソルバの実行時間を短くすることで評価を軽くし、多くの候補を試すために用いた（チームの運用に関する補足）。フルテストはすべての可能なマップを網羅する意味ではなく、規定の評価セットを省略せず実行すること。単一スレッドの対戦では30試合であり、具体的な採用条件は後続スライドで説明する。制限時間を縮めると探索や通信の振る舞いも変わり得るため、短縮テストの成績から本来の条件での強さを保証することはできない。</p></div><div class="bespoke-marp-note" data-index="25" tabindex="0"><p>出典・補足：&lt;a href=&quot;../../tester/solo/README.md&quot;&gt;単独テスタの並列実行&lt;/a&gt;、&lt;a href=&quot;../../tester/game/README.md&quot;&gt;対戦テスタの同時試合数&lt;/a&gt;。ここでの並列化は複数テストケースの同時評価。1試合内で複数の探索を動かすソルバの並列化は第4章で説明する。</p></div><div class="bespoke-marp-note" data-index="26" tabindex="0"><p>出典・補足：&lt;a href=&quot;../../tester/README.md&quot;&gt;テスタ一覧&lt;/a&gt;、&lt;a href=&quot;../../tester/server/README.md&quot;&gt;サーバーテスタ&lt;/a&gt;、&lt;a href=&quot;../../common/README.md&quot;&gt;共通基盤&lt;/a&gt;。図は開発レイヤーと使用するテスタの対応を示し、毎回すべてを順番に通すテスト手順を示すものではない。レイヤーに応じた運用とトレードオフ：チームメモ。図中の軸は同じ開発時間・計算資源を前提とした定性的な整理であり、試行回数の実測比較ではない。</p></div><div class="bespoke-marp-note" data-index="27" tabindex="0"><p>出典・補足：開発方針：チームメモ。図は各変更の必須テスト順序ではなく、開発レイヤー間でソルバを展開する流れを示す。デプロイには、改善した実装を次の構成へ組み込み、対象PCに配置して動かすことを含む。並列・分散の実装内容は第4章、移行が遅れた反省は第5章で説明する。構成・配置：&lt;a href=&quot;../../solver/docs/distributed/README.md&quot;&gt;分散開発記録&lt;/a&gt;。</p></div><div class="bespoke-marp-note" data-index="28" tabindex="0"><p>出典・補足：環境全体の台数・サーバー配置：チームメモ。ソルバ配分：&lt;a href=&quot;../../.agents/skills/procon37-parallel-solver-pool/SKILL.md&quot;&gt;並列強化スキル&lt;/a&gt;、&lt;a href=&quot;../../solver/docs/distributed/README.md&quot;&gt;分散構成&lt;/a&gt;。</p></div><div class="bespoke-marp-note" data-index="29" tabindex="0"><p>出典・補足：設計方針は最初のチームメモ「CUIを作成、GUIはCUIのwrapperとして開発」「AIの内部ブラウザが見ることができるように」「使い方をまとめたskillsを作成」に基づく。実装上はGUIがCUIコマンドを呼ぶ構造ではなく、CUIとGUIが問題生成・判定・実行・履歴などの共通基盤を使う。このため本文では、CUIを基本に同じテスト機能をGUIからも使う方針として表現した。参照：&lt;a href=&quot;../../tester/README.md&quot;&gt;テスタ一覧&lt;/a&gt;、&lt;a href=&quot;../../common/docs/design.md&quot;&gt;共通基盤の構成&lt;/a&gt;、&lt;a href=&quot;../../.agents/skills/procon37-tester/SKILL.md&quot;&gt;テスタ操作スキル&lt;/a&gt;。フレームワークの進行管理は第2章、試験用PCへの接続・操作は第4章で扱う。</p></div><div class="bespoke-marp-note" data-index="30" tabindex="0"><p>CHAPTER_RESOURCES</p></div><div class="bespoke-marp-note" data-index="31" tabindex="0"><p>出典・補足：学内の経験・交流・2022年の順位に関する記述：チームの振り返り。</p></div><div class="bespoke-marp-note" data-index="32" tabindex="0"><p>出典・補足：チームの振り返りと、解法のホワイトボックス化をフレームワークの改善へ還元するという開発方針。候補生成・評価・資源配分は、得た知見をもとに見直す対象を示しており、個々の変更による効果を検証済みという意味ではない。旧実装や対戦相手の設計履歴を開発エージェントへ渡すこととは区別する。整理した解法は&lt;a href=&quot;../slide/slide.md&quot;&gt;既存スライド&lt;/a&gt;と&lt;a href=&quot;../../solver/docs/algorithm.md&quot;&gt;分散ソルバの説明&lt;/a&gt;を参照。</p></div><div class="bespoke-marp-note" data-index="33" tabindex="0"><p>出典・補足：&lt;a href=&quot;../slide/slide.pdf&quot;&gt;「ヘキサうどん」解法方針（全40枚）&lt;/a&gt;の26・37ページを抜粋。右図は考え方の説明図で、最終的な3台構成とは異なる。</p></div><div class="bespoke-marp-note" data-index="34" tabindex="0"><p>出典・補足：&lt;a href=&quot;../../solver/docs/algorithm.md&quot;&gt;分散ソルバのアルゴリズム&lt;/a&gt;と既存の&lt;a href=&quot;../slide/slide.md&quot;&gt;解法方針資料&lt;/a&gt;。第3章のテスト並列化は複数テストケースの待ち時間短縮、このスライドのソルバ並列化は1試合に使う探索資源の増加を目的とする。</p></div><div class="bespoke-marp-note" data-index="35" tabindex="0"><p>出典・補足：言語選択の意図・チームの経験：チームメモ。技術的な利点はRust公式の&lt;a href=&quot;https://doc.rust-lang.org/book/ch16-00-concurrency.html&quot;&gt;Fearless Concurrency&lt;/a&gt;、&lt;a href=&quot;https://doc.rust-lang.org/book/ch16-04-extensible-concurrency-sync-and-send.html&quot;&gt;SendとSync&lt;/a&gt;、&lt;a href=&quot;https://doc.rust-lang.org/book/ch16-03-shared-state.html&quot;&gt;Shared-State Concurrency&lt;/a&gt;に基づく。所有権・型検査は多くの並行処理の誤りをコンパイル時に検出する。Sendは所有権を別スレッドへ移動できること、Syncは共有参照を複数スレッドから安全に使えることを表す。safe Rustのデータ競合防止は、利用するライブラリ内のunsafe実装やFFIが安全性の契約を守ることを前提とする。デッドロック、一般的な競合状態、ロジックの誤り、並列性能はコンパイル成功だけでは保証されない。コンパイラの診断をLLMの修正に活かせるという記述は、これらの性質に基づく開発上の考察であり、他言語との比較実験の結果ではない。参照日：2026年10月21日。</p></div><div class="bespoke-marp-note" data-index="36" tabindex="0"><p>出典・補足：&lt;a href=&quot;../../solver/docs/algorithm.md&quot;&gt;分散ソルバの並列・分散構成&lt;/a&gt;。80スレッドは計算資源の合計であり、80倍の高速化を意味しない。集約・配信はcoordinator、HTTP提出は別プロセスの提出プログラム（実装名：bridge）が担う。探索・解共有・状態同期の詳細は次のスライドで説明する。</p></div><div class="bespoke-marp-note" data-index="37" tabindex="0"><p>出典・補足：&lt;a href=&quot;../../solver/docs/algorithm.md&quot;&gt;分散ソルバの解共有・中間回答・状態同期&lt;/a&gt;。各探索は全車分の計画を持ち、PCごとに車両や地図の一部を分担する構成ではない。PC間で共有した当日計画は入力・状態の一致を検査し、受信側で再評価して取り込む。機間共有は500ms周期を目安とし、更新がない場合は送信しない。集約・配信はcoordinator、HTTP提出はbridgeが担う。bridgeが確認した回答の採否と実際の観測を次の要求に反映し、採用されなかった計画を実行済みとして引き継がない。</p></div><div class="bespoke-marp-note" data-index="38" tabindex="0"><p>出典・補足：全PCを有線LANで接続し、試験用PCの操作権限をLLMに与え、専用のSkillsを用意したというチームメモに基づく。権限の範囲は試験用PCでのSSH操作、環境構築、ネットワーク設定、ファイル操作など。参照：&lt;a href=&quot;../../.agents/skills/procon37-ssh/SKILL.md&quot;&gt;試験用PCの接続・操作スキル&lt;/a&gt;、&lt;a href=&quot;../../solver/docs/distributed/README.md&quot;&gt;分散開発記録&lt;/a&gt;。USB起動で普段の環境と分け、LLMが変更しやすい試験環境とした。Void Linuxは探索に計算資源を回すため軽量さを重視して選択し、本番の操作ミスを避けるためGUIは残した。WindowsやGNOME構成のUbuntuとの性能比較を測定したという意味ではない。</p></div><div class="bespoke-marp-note" data-index="39" tabindex="0"><p>CHAPTER_REFLECTION</p></div><div class="bespoke-marp-note" data-index="40" tabindex="0"><p>出典・補足：最初のチームメモの「並列分散処理へのデプロイがギリギリ：大会3日前から」「単一スレッドの改善が頭打ちにならなかったため」「分散処理の十分な改善ができなかった」に基づく。当初の移行方針は同メモの「改善が止まったら、すぐにデプロイを行う」に対応する。並列・分散処理では開発サイクルを回すのに時間がかかるというチームの補足を反映し、配置・通信確認・評価を含むサイクルの長さと、大会までに残る期間の両方を考慮するという次回方針を併記した。ALE-Benchの改善曲線はモデル・課題・設定に依存し、改善速度の普遍的な「対数則」とは扱わない。</p></div><div class="bespoke-marp-note" data-index="41" tabindex="0"><p>出典・補足：今回の分散処理の性能評価では短縮テストが有効でなかったこと、気づいたのが大会前日で検証が夜遅くまで及んだこと、「短縮テスト→フルテスト」を早めにSkillsへ指定すべきだったことはチームの振り返り。全てを本番時間で評価すると開発に時間がかかる一方、分散処理の通信タイミングは短縮テストでは測りにくかった。基本動作や大きな退行の確認まで短縮テストが無効という意味ではなく、今回の性能比較に関する反省として記載した。技術的背景：&lt;a href=&quot;../../solver/docs/distributed/resume-20261009/frequency16-20261010/communication-considerations.md&quot;&gt;共有周期と評価時間の考察&lt;/a&gt;。記録の比較条件は10秒の短縮試験と16×16・公式60秒。</p></div><div class="bespoke-marp-note" data-index="42" tabindex="0"><p>出典・補足：最初のチームメモの、対戦ゲーム向けフレームワークを調査する時間がなかったこと、過去のモデル向け手法がastraでも有効かという疑問、スクリプト化へのハードル、Skillsを自然言語で変更・流用できる利点と実装の手間のトレードオフに基づく。「もっと詳細に検討し、より良いものを作れたのではないか」というチームの反省として整理した。既存手法やSkillsとスクリプトの優劣を比較実験で確認したという意味ではない。</p></div><div class="bespoke-marp-note" data-index="43" tabindex="0"><p>出典・補足：最初のドラフトの「破壊について、知見を全て壊しているので、非効率ではある」に基づく。&lt;a href=&quot;../../.agents/skills/procon37-solver-pool/SKILL.md&quot;&gt;実際の運用&lt;/a&gt;では、管理側には評価結果・実行記録・状態を保存する一方、新しい開発エージェントには親の会話、旧実装、他の候補の設計履歴を引き継がせない。チームの記録そのものを全て削除したという意味ではなく、再構築をまたぐ知見の継承について述べている。同じ候補を開発する間に評価結果を返して改善する手順とは区別する。「発想の独立性」は既存の解法や開発履歴に縛られずに新規設計することを指し、その目的がソルバ群の多様性を得ることにある。アルゴリズムの多様性や統計的な独立性を保証する意味ではない。具体的な継承方法は未確定のため、現状の課題と両立させたい方向性のみを記載する。</p></div><div class="bespoke-marp-note" data-index="44" tabindex="0"><p>出典・補足：最初のチームメモの「大きなモデルで粗い動作を行うことに重きを置いた」「小さなモデルに細かな改善を大量に行わせることも考えたり、組み合わせたりしたかった」に基づく。モデルの役割分担には、ソルバの改善だけでなくAIの利用料金を抑える狙いもあるというユーザーの補足を反映した。表と費用削減・試行数拡大の狙いは、今後の実験案であり、実測した成果ではない。今回、全てのエージェントに同じ大きなモデルを使ったという意味ではなく、ソルバを開発する役割についての反省。&lt;a href=&quot;../../.agents/skills/procon37-solver-pool/SKILL.md&quot;&gt;運用スキル&lt;/a&gt;には管理と開発で別のモデル指定がある。モデルが小さければ必ず高速・低費用になる、細かな改善に優れる、または多数の試行により強くなると実証したわけではない。実際の費用はモデルの料金と利用量に依存する。候補評価自体にも計算時間がかかるため、生成だけでなく評価を含めて比較する。</p></div><div class="bespoke-marp-note" data-index="45" tabindex="0"><p>出典・補足：表現の出典：&lt;a href=&quot;https://sakana.ai/ale-bench-jp/&quot;&gt;Sakana AI：ALE-Bench&lt;/a&gt;。開発方針・準優勝への寄与：チームの振り返り。</p></div><div class="bespoke-marp-note" data-index="46" tabindex="0"><p>出典・補足：著者・題名・年はarXivの書誌情報およびOpenEvolve公式リポジトリのCitationに基づく。確認日：2026年10月21日。研究内容の紹介と、本チームが実装した強化手順は区別して記載した。
+関連する解説・図版・実装：ALE-Bench日本語解説 https://sakana.ai/ale-bench-jp/ 、構成図 https://sakana.ai/assets/ale-bench/ale-overview-border.png 、公式リーダーボード https://sakanaai.github.io/ALE-Bench-Leaderboard/ 。ShinkaEvolve紹介 https://sakana.ai/shinka-evolve/ 、公式実装 https://github.com/SakanaAI/ShinkaEvolve 、円配置図 https://sakana.ai/assets/shinka-evolve/circle_packing_soln.png 、探索グラフ https://sakana.ai/assets/shinka-evolve/circle_packing_evo_tree.png 。OpenEvolve構成図 https://github.com/algorithmicsuperintelligence/openevolve/blob/main/openevolve-architecture.png 。各図の出典・取得条件は掲載スライドのノートに記載。</p></div><script>/*!! License: https://unpkg.com/@marp-team/marp-cli@4.1.2/lib/bespoke.js.LICENSE.txt */
+!function(){"use strict";function e(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}var t,n,r=(n||(n=1,t={from:function(e,t){var n,r=1===(e.parent||e).nodeType?e.parent||e:document.querySelector(e.parent||e),o=[].filter.call("string"==typeof e.slides?r.querySelectorAll(e.slides):e.slides||r.children,(function(e){return"SCRIPT"!==e.nodeName})),a={},i=function(e,t){return(t=t||{}).index=o.indexOf(e),t.slide=e,t},s=function(e,t){a[e]=(a[e]||[]).filter((function(e){return e!==t}))},c=function(e,t){return(a[e]||[]).reduce((function(e,n){return e&&!1!==n(t)}),!0)},l=function(e,t){o[e]&&(n&&c("deactivate",i(n,t)),n=o[e],c("activate",i(n,t)))},d=function(e,t){var r=o.indexOf(n)+e;c(e>0?"next":"prev",i(n,t))&&l(r,t)},u={off:s,on:function(e,t){return(a[e]||(a[e]=[])).push(t),s.bind(null,e,t)},fire:c,slide:function(e,t){if(!arguments.length)return o.indexOf(n);c("slide",i(o[e],t))&&l(e,t)},next:d.bind(null,1),prev:d.bind(null,-1),parent:r,slides:o,destroy:function(e){c("destroy",i(n,e)),a={}}};return(t||[]).forEach((function(e){e(u)})),n||l(0),u}}),t),o=e(r);const a=document.body,i=(...e)=>history.replaceState(...e),s="",c="presenter",l="next",d=["",c,l],u="bespoke-marp-",f=`data-${u}`,m=(e,{protocol:t,host:n,pathname:r,hash:o}=location)=>{const a=e.toString();return`${t}//${n}${r}${a?"?":""}${a}${o}`},g=()=>a.dataset.bespokeView,p=e=>new URLSearchParams(location.search).get(e),v=(e,t={})=>{const n={location,setter:i,...t},r=new URLSearchParams(n.location.search);for(const t of Object.keys(e)){const n=e[t];"string"==typeof n?r.set(t,n):r.delete(t)}try{n.setter({...window.history.state??{}},"",m(r,n.location))}catch(e){console.error(e)}},h=(()=>{const e="bespoke-marp";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch{return!1}})(),y=e=>{try{return localStorage.getItem(e)}catch{return null}},b=(e,t)=>{try{return localStorage.setItem(e,t),!0}catch{return!1}},w=e=>{try{return localStorage.removeItem(e),!0}catch{return!1}},x=(e,t)=>{const n="aria-hidden";t?e.setAttribute(n,"true"):e.removeAttribute(n)},k=e=>{e.parent.classList.add(`${u}parent`),e.slides.forEach((e=>e.classList.add(`${u}slide`))),e.on("activate",(t=>{const n=`${u}active`,r=t.slide,o=r.classList,a=!o.contains(n);if(e.slides.forEach((e=>{e.classList.remove(n),x(e,!0)})),o.add(n),x(r,!1),a){const e=`${n}-ready`;o.add(e),document.body.clientHeight,o.remove(e)}}))},$=e=>{let t=0,n=0;Object.defineProperty(e,"fragments",{enumerable:!0,value:e.slides.map((e=>[null,...e.querySelectorAll("[data-marpit-fragment]")]))});const r=r=>void 0!==e.fragments[t][n+r],o=(r,o)=>{t=r,n=o,e.fragments.forEach(((e,t)=>{e.forEach(((e,n)=>{if(null==e)return;const a=t<r||t===r&&n<=o;e.setAttribute(`${f}fragment`,(a?"":"in")+"active");const i=`${f}current-fragment`;t===r&&n===o?e.setAttribute(i,"current"):e.removeAttribute(i)}))})),e.fragmentIndex=o;const a={slide:e.slides[r],index:r,fragments:e.fragments[r],fragmentIndex:o};e.fire("fragment",a)};e.on("next",(({fragment:a=!0})=>{if(a){if(r(1))return o(t,n+1),!1;const a=t+1;e.fragments[a]&&o(a,0)}else{const r=e.fragments[t].length;if(n+1<r)return o(t,r-1),!1;const a=e.fragments[t+1];a&&o(t+1,a.length-1)}})),e.on("prev",(({fragment:a=!0})=>{if(r(-1)&&a)return o(t,n-1),!1;const i=t-1;e.fragments[i]&&o(i,e.fragments[i].length-1)})),e.on("slide",(({index:t,fragment:n})=>{let r=0;if(void 0!==n){const o=e.fragments[t];if(o){const{length:e}=o;r=-1===n?e-1:Math.min(Math.max(n,0),e-1)}}o(t,r)})),o(0,0)},E=document,L=()=>!(!E.fullscreenEnabled&&!E.webkitFullscreenEnabled),S=()=>!(!E.fullscreenElement&&!E.webkitFullscreenElement),P=e=>{e.fullscreen=()=>{L()&&(async()=>{S()?(E.exitFullscreen||E.webkitExitFullscreen)?.call(E):((e=E.body)=>{(e.requestFullscreen||e.webkitRequestFullscreen)?.call(e)})()})()},document.addEventListener("keydown",(t=>{"f"!==t.key&&"F11"!==t.key||t.altKey||t.ctrlKey||t.metaKey||!L()||(e.fullscreen(),t.preventDefault())}))},_=`${u}inactive`,T=(e=2e3)=>({parent:t,fire:n})=>{const r=t.classList,o=e=>n(`marp-${e?"":"in"}active`);let a;const i=()=>{a&&clearTimeout(a),a=setTimeout((()=>{r.add(_),o()}),e),r.contains(_)&&(r.remove(_),o(!0))};for(const e of["mousedown","mousemove","touchend"])document.addEventListener(e,i);setTimeout(i,0)},I=["AUDIO","BUTTON","INPUT","SELECT","TEXTAREA","VIDEO"],M=e=>{e.parent.addEventListener("keydown",(e=>{if(!e.target)return;const t=e.target;(I.includes(t.nodeName)||"true"===t.contentEditable)&&e.stopPropagation()}))},O=e=>{window.addEventListener("load",(()=>{for(const t of e.slides){const e=t.querySelector("marp-auto-scaling, [data-auto-scaling], [data-marp-fitting]");t.setAttribute(`${f}load`,e?"":"hideable")}}))},A=({interval:e=250}={})=>t=>{document.addEventListener("keydown",(e=>{if(" "===e.key&&e.shiftKey)t.prev();else if("ArrowLeft"===e.key||"ArrowUp"===e.key||"PageUp"===e.key)t.prev({fragment:!e.shiftKey});else if(" "!==e.key||e.shiftKey)if("ArrowRight"===e.key||"ArrowDown"===e.key||"PageDown"===e.key)t.next({fragment:!e.shiftKey});else if("End"===e.key)t.slide(t.slides.length-1,{fragment:-1});else{if("Home"!==e.key)return;t.slide(0)}else t.next();e.preventDefault()}));let n,r,o=0;t.parent.addEventListener("wheel",(a=>{let i=!1;const s=(e,t)=>{e&&(i=i||((e,t)=>((e,t)=>{const n="X"===t?"Width":"Height";return e[`client${n}`]<e[`scroll${n}`]})(e,t)&&((e,t)=>{const{overflow:n}=e,r=e[`overflow${t}`];return"auto"===n||"scroll"===n||"auto"===r||"scroll"===r})(getComputedStyle(e),t))(e,t)),e?.parentElement&&s(e.parentElement,t)};if(0!==a.deltaX&&s(a.target,"X"),0!==a.deltaY&&s(a.target,"Y"),i)return;a.preventDefault();const c=Math.sqrt(a.deltaX**2+a.deltaY**2);if(void 0!==a.wheelDelta){if(void 0===a.webkitForce&&Math.abs(a.wheelDelta)<40)return;if(a.deltaMode===a.DOM_DELTA_PIXEL&&c<4)return}else if(a.deltaMode===a.DOM_DELTA_PIXEL&&c<12)return;r&&clearTimeout(r),r=setTimeout((()=>{n=0}),e);const l=Date.now()-o<e,d=c<=n;if(n=c,l||d)return;let u;(a.deltaX>0||a.deltaY>0)&&(u="next"),(a.deltaX<0||a.deltaY<0)&&(u="prev"),u&&(t[u](),o=Date.now())}))},C=(e=`.${u}osc`)=>{const t=document.querySelector(e);if(!t)return()=>{};const n=(e,n)=>{t.querySelectorAll(`[${f}osc=${JSON.stringify(e)}]`).forEach(n)};return L()||n("fullscreen",(e=>e.style.display="none")),h||n("presenter",(e=>{e.disabled=!0,e.title="Presenter view is disabled due to restricted localStorage."})),e=>{t.addEventListener("click",(t=>{if(t.target instanceof HTMLElement){const{bespokeMarpOsc:n}=t.target.dataset;n&&t.target.blur();const r={fragment:!t.shiftKey};"next"===n?e.next(r):"prev"===n?e.prev(r):"fullscreen"===n?e?.fullscreen():"presenter"===n&&e.openPresenterView()}})),e.parent.appendChild(t),e.on("activate",(({index:t})=>{n("page",(n=>n.textContent=`Page ${t+1} of ${e.slides.length}`))})),e.on("fragment",(({index:t,fragments:r,fragmentIndex:o})=>{n("prev",(e=>e.disabled=0===t&&0===o)),n("next",(n=>n.disabled=t===e.slides.length-1&&o===r.length-1))})),e.on("marp-active",(()=>x(t,!1))),e.on("marp-inactive",(()=>x(t,!0))),L()&&(e=>{for(const t of["","webkit"])E.addEventListener(t+"fullscreenchange",e)})((()=>n("fullscreen",(e=>e.classList.toggle("exit",L()&&S())))))}},D=e=>{window.addEventListener("message",(t=>{if(t.origin!==window.origin)return;const[n,r]=t.data.split(":");if("navigate"===n){const[t,n]=r.split(",");let o=Number.parseInt(t,10),a=Number.parseInt(n,10)+1;a>=e.fragments[o].length&&(o+=1,a=0),e.slide(o,{fragment:a})}}))};var N,B,q,K,j,F,V,U={exports:{}},X=(N||(N=1,U.exports=(B=["area","base","br","col","command","embed","hr","img","input","keygen","link","meta","param","source","track","wbr"],q=function(e){return String(e).replace(/[&<>"']/g,(function(e){return"&"+K[e]+";"}))},K={"&":"amp","<":"lt",">":"gt",'"':"quot","'":"apos"},j="dangerouslySetInnerHTML",F={className:"class",htmlFor:"for"},V={},function(e,t){var n=[],r="";t=t||{};for(var o=arguments.length;o-- >2;)n.push(arguments[o]);if("function"==typeof e)return t.children=n.reverse(),e(t);if(e){if(r+="<"+e,t)for(var a in t)!1!==t[a]&&null!=t[a]&&a!==j&&(r+=" "+(F[a]?F[a]:q(a))+'="'+q(t[a])+'"');r+=">"}if(-1===B.indexOf(e)){if(t[j])r+=t[j].__html;else for(;n.length;){var i=n.pop();if(i)if(i.pop)for(var s=i.length;s--;)n.push(i[s]);else r+=!0===V[i]?i:q(i)}r+=e?"</"+e+">":""}return V[r]=!0,r})),U.exports),H=e(X);const R=({children:e})=>H(null,null,...e),W=`${u}presenter-`,J={container:`${W}container`,dragbar:`${W}dragbar-container`,next:`${W}next`,nextContainer:`${W}next-container`,noteContainer:`${W}note-container`,noteWrapper:`${W}note-wrapper`,noteButtons:`${W}note-buttons`,infoContainer:`${W}info-container`,infoPage:`${W}info-page`,infoPageText:`${W}info-page-text`,infoPagePrev:`${W}info-page-prev`,infoPageNext:`${W}info-page-next`,noteButtonsBigger:`${W}note-bigger`,noteButtonsSmaller:`${W}note-smaller`,infoTime:`${W}info-time`,infoTimer:`${W}info-timer`},Y=e=>{const{title:t}=document;document.title="[Presenter view]"+(t?` - ${t}`:"");const n={},r=e=>(n[e]=n[e]||document.querySelector(`.${e}`),n[e]);document.body.appendChild((e=>{const t=document.createElement("div");return t.className=J.container,t.appendChild(e),t.insertAdjacentHTML("beforeend",H(R,null,H("div",{class:J.nextContainer},H("iframe",{class:J.next,src:"?view=next"})),H("div",{class:J.dragbar}),H("div",{class:J.noteContainer},H("div",{class:J.noteWrapper}),H("div",{class:J.noteButtons},H("button",{class:J.noteButtonsSmaller,tabindex:"-1",title:"Smaller notes font size"},"Smaller notes font size"),H("button",{class:J.noteButtonsBigger,tabindex:"-1",title:"Bigger notes font size"},"Bigger notes font size"))),H("div",{class:J.infoContainer},H("div",{class:J.infoPage},H("button",{class:J.infoPagePrev,tabindex:"-1",title:"Previous"},"Previous"),H("span",{class:J.infoPageText}),H("button",{class:J.infoPageNext,tabindex:"-1",title:"Next"},"Next")),H("time",{class:J.infoTime,title:"Current time"}),H("time",{class:J.infoTimer,title:"Timer"})))),t})(e.parent)),(e=>{let t=!1;r(J.dragbar).addEventListener("mousedown",(()=>{t=!0,r(J.dragbar).classList.add("active")})),window.addEventListener("mouseup",(()=>{t=!1,r(J.dragbar).classList.remove("active")})),window.addEventListener("mousemove",(e=>{if(!t)return;const n=e.clientX/document.documentElement.clientWidth*100;r(J.container).style.setProperty("--bespoke-marp-presenter-split-ratio",`${Math.max(0,Math.min(100,n))}%`)})),r(J.nextContainer).addEventListener("click",(()=>e.next()));const n=r(J.next),o=(a=n,(e,t)=>a.contentWindow?.postMessage(`navigate:${e},${t}`,"null"===window.origin?"*":window.origin));var a;n.addEventListener("load",(()=>{r(J.nextContainer).classList.add("active"),o(e.slide(),e.fragmentIndex),e.on("fragment",(({index:e,fragmentIndex:t})=>o(e,t)))}));const i=document.querySelectorAll(".bespoke-marp-note");i.forEach((e=>{e.addEventListener("keydown",(e=>e.stopPropagation())),r(J.noteWrapper).appendChild(e)})),e.on("activate",(()=>i.forEach((t=>t.classList.toggle("active",t.dataset.index==e.slide())))));let s=0;const c=e=>{s=Math.max(-5,s+e),r(J.noteContainer).style.setProperty("--bespoke-marp-note-font-scale",(1.2**s).toFixed(4))},l=()=>c(1),d=()=>c(-1),u=r(J.noteButtonsBigger),f=r(J.noteButtonsSmaller);u.addEventListener("click",(()=>{u.blur(),l()})),f.addEventListener("click",(()=>{f.blur(),d()})),document.addEventListener("keydown",(e=>{"+"===e.key&&l(),"-"===e.key&&d()}),!0),e.on("activate",(({index:t})=>{r(J.infoPageText).textContent=`${t+1} / ${e.slides.length}`}));const m=r(J.infoPagePrev),g=r(J.infoPageNext);m.addEventListener("click",(t=>{m.blur(),e.prev({fragment:!t.shiftKey})})),g.addEventListener("click",(t=>{g.blur(),e.next({fragment:!t.shiftKey})})),e.on("fragment",(({index:t,fragments:n,fragmentIndex:r})=>{m.disabled=0===t&&0===r,g.disabled=t===e.slides.length-1&&r===n.length-1}));let p=new Date;const v=()=>{const e=new Date,t=e=>`${Math.floor(e)}`.padStart(2,"0"),n=e.getTime()-p.getTime(),o=t(n/1e3%60),a=t(n/1e3/60%60),i=t(n/36e5%24);r(J.infoTime).textContent=e.toLocaleTimeString(),r(J.infoTimer).textContent=`${i}:${a}:${o}`};v(),setInterval(v,250),r(J.infoTimer).addEventListener("click",(()=>{p=new Date}))})(e)},z=e=>{if(!(e=>e.syncKey&&"string"==typeof e.syncKey)(e))throw new Error("The current instance of Bespoke.js is invalid for Marp bespoke presenter plugin.");Object.defineProperties(e,{openPresenterView:{enumerable:!0,value:G},presenterUrl:{enumerable:!0,get:Q}}),h&&document.addEventListener("keydown",(t=>{"p"!==t.key||t.altKey||t.ctrlKey||t.metaKey||(t.preventDefault(),e.openPresenterView())}))};function G(){const{max:e,floor:t}=Math,n=e(t(.85*window.innerWidth),640),r=e(t(.85*window.innerHeight),360);return window.open(this.presenterUrl,W+this.syncKey,`width=${n},height=${r},menubar=no,toolbar=no`)}function Q(){const e=new URLSearchParams(location.search);return e.set("view","presenter"),e.set("sync",this.syncKey),m(e)}const Z=e=>{const t=g();return t===l&&e.appendChild(document.createElement("span")),{[s]:z,[c]:Y,[l]:D}[t]},ee=e=>{e.on("activate",(t=>{document.querySelectorAll(".bespoke-progress-parent > .bespoke-progress-bar").forEach((n=>{n.style.flexBasis=100*t.index/(e.slides.length-1)+"%"}))}))},te=e=>{const t=Number.parseInt(e,10);return Number.isNaN(t)?null:t},ne=(e={})=>{const t={history:!0,...e};return e=>{let n=!0;const r=e=>{const t=n;try{return n=!0,e()}finally{n=t}},o=(t={fragment:!0})=>{let n=t.fragment?te(p("f")||""):null;((t,n)=>{const{min:r,max:o}=Math,{fragments:a,slides:i}=e,s=o(0,r(t,i.length-1)),c=o(0,r(n||0,a[s].length-1));s===e.slide()&&c===e.fragmentIndex||e.slide(s,{fragment:c})})((()=>{if(location.hash){const[t]=location.hash.slice(1).split(":~:");if(/^\d+$/.test(t))return(te(t)??1)-1;const r=document.getElementById(t)||document.querySelector(`a[name="${CSS.escape(t)}"]`);if(r){const{length:t}=e.slides;for(let o=0;o<t;o+=1)if(e.slides[o].contains(r)){const t=e.fragments?.[o],a=r.closest("[data-marpit-fragment]");if(t&&a){const e=t.indexOf(a);e>=0&&(n=e)}return o}}}return 0})(),n)};e.on("fragment",(({index:e,fragmentIndex:r})=>{n||v({f:0===r||r.toString()},{location:{...location,hash:`#${e+1}`},setter:(...e)=>t.history?history.pushState(...e):history.replaceState(...e)})})),setTimeout((()=>{o(),window.addEventListener("hashchange",(()=>r((()=>{o({fragment:!1}),v({f:void 0})})))),window.addEventListener("popstate",(()=>{n||r((()=>o()))})),n=!1}),0)}},re=(e={})=>{const t=e.key||window.history.state?.marpBespokeSyncKey||Math.random().toString(36).slice(2),n=`bespoke-marp-sync-${t}`;var r;r={marpBespokeSyncKey:t},v({},{setter:(e,...t)=>i({...e,...r},...t)});const o=()=>{const e=y(n);return e?JSON.parse(e):Object.create(null)},a=e=>{const t=o(),r={...t,...e(t)};return b(n,JSON.stringify(r)),r},s=()=>{window.removeEventListener("pageshow",s),a((e=>({reference:(e.reference||0)+1})))};return e=>{s(),Object.defineProperty(e,"syncKey",{value:t,enumerable:!0});let r=!0;setTimeout((()=>{e.on("fragment",(e=>{r&&a((()=>({index:e.index,fragmentIndex:e.fragmentIndex})))}))}),0),window.addEventListener("storage",(t=>{if(t.key===n&&t.oldValue&&t.newValue){const n=JSON.parse(t.oldValue),o=JSON.parse(t.newValue);if(n.index!==o.index||n.fragmentIndex!==o.fragmentIndex)try{r=!1,e.slide(o.index,{fragment:o.fragmentIndex,forSync:!0})}finally{r=!0}}}));const i=()=>{const{reference:e}=o();void 0===e||e<=1?w(n):a((()=>({reference:e-1})))};window.addEventListener("pagehide",(e=>{e.persisted&&window.addEventListener("pageshow",s),i()})),e.on("destroy",i)}},{PI:oe,abs:ae,sqrt:ie,atan2:se}=Math,ce={passive:!0},le=({slope:e=-.7,swipeThreshold:t=30}={})=>n=>{let r;const o=n.parent,a=e=>{const t=o.getBoundingClientRect();return{x:e.pageX-(t.left+t.right)/2,y:e.pageY-(t.top+t.bottom)/2}};o.addEventListener("touchstart",(({touches:e})=>{r=1===e.length?a(e[0]):void 0}),ce),o.addEventListener("touchmove",(e=>{if(r)if(1===e.touches.length){e.preventDefault();const t=a(e.touches[0]),n=t.x-r.x,o=t.y-r.y;r.delta=ie(ae(n)**2+ae(o)**2),r.radian=se(n,o)}else r=void 0})),o.addEventListener("touchend",(o=>{if(r){if(r.delta&&r.delta>=t&&r.radian){const t=(r.radian-e+oe)%(2*oe)-oe;n[t<0?"next":"prev"](),o.stopPropagation()}r=void 0}}),ce)},de=new Map;de.clear(),de.set("none",{backward:{both:void 0,incoming:void 0,outgoing:void 0},forward:{both:void 0,incoming:void 0,outgoing:void 0}});const ue={both:"",outgoing:"outgoing-",incoming:"incoming-"},fe={forward:"",backward:"-backward"},me=e=>`--marp-bespoke-transition-animation-${e}`,ge=e=>`--marp-transition-${e}`,pe=me("name"),ve=me("duration"),he=e=>new Promise((t=>{const n={},r=document.createElement("div"),o=e=>{r.remove(),t(e)};r.addEventListener("animationstart",(()=>o(n))),Object.assign(r.style,{animationName:e,animationDuration:"1s",animationFillMode:"both",animationPlayState:"paused",position:"absolute",pointerEvents:"none"}),document.body.appendChild(r);const a=getComputedStyle(r).getPropertyValue(ge("duration"));a&&(n.defaultDuration=a),((e,t)=>{requestAnimationFrame((()=>{e.style.animationPlayState="running",requestAnimationFrame((()=>t(void 0)))}))})(r,o)})),ye=async e=>de.has(e)?de.get(e):(e=>{const t={},n=[];for(const[r,o]of Object.entries(ue))for(const[a,i]of Object.entries(fe)){const s=`marp-${o}transition${i}-${e}`;n.push(he(s).then((e=>{t[a]=t[a]||{},t[a][r]=e?{...e,name:s}:void 0})))}return Promise.all(n).then((()=>t))})(e).then((t=>(de.set(e,t),t))),be=e=>Object.values(e).flatMap(Object.values).every((e=>!e)),we=(e,{type:t,backward:n})=>{const r=e[n?"backward":"forward"],o=(()=>{const e=r[t],n=e=>({[pe]:e.name});if(e)return n(e);if(r.both){const e=n(r.both);return"incoming"===t&&(e[me("direction")]="reverse"),e}})();return!o&&n?we(e,{type:t,backward:!1}):o||{[pe]:"__bespoke_marp_transition_no_animation__"}},xe=e=>{if(e)try{const t=JSON.parse(e);if((e=>{if("object"!=typeof e)return!1;const t=e;return"string"==typeof t.name&&(void 0===t.duration||"string"==typeof t.duration)})(t))return t}catch{}},ke="_tSId",$e="_tA",Ee="bespoke-marp-transition-warming-up",Le=window.matchMedia("(prefers-reduced-motion: reduce)"),Se="__bespoke_marp_transition_reduced_outgoing__",Pe="__bespoke_marp_transition_reduced_incoming__",_e={forward:{both:void 0,incoming:{name:Pe},outgoing:{name:Se}},backward:{both:void 0,incoming:{name:Pe},outgoing:{name:Se}}},Te=e=>{if(!document.startViewTransition)return;const t=t=>(void 0!==t&&(e._tD=t),e._tD);let n;t(!1),((...e)=>{const t=[...new Set(e).values()];return Promise.all(t.map((e=>ye(e)))).then()})(...Array.from(document.querySelectorAll("section[data-transition], section[data-transition-back]")).flatMap((e=>[e.dataset.transition,e.dataset.transitionBack].flatMap((e=>{const t=xe(e);return[t?.name,t?.builtinFallback?`__builtin__${t.name}`:void 0]})).filter((e=>!!e))))).then((()=>{document.querySelectorAll("style").forEach((e=>{e.innerHTML=e.innerHTML.replace(/--marp-transition-duration:[^;}]*[;}]/g,(e=>e.slice(0,-1)+"!important"+e.slice(-1)))}))}));const r=(n,{back:r,cond:o})=>a=>{const i=t();if(i)return!!a[$e]||!("object"!=typeof i||(i.skipTransition(),!a.forSync));if(!o(a))return!0;const s=e.slides[e.slide()],c=()=>a.back??r,l="data-transition"+(c()?"-back":""),d=s.querySelector(`section[${l}]`);if(!d)return!0;const u=xe(d.getAttribute(l)??void 0);return!u||((async(e,{builtinFallback:t=!0}={})=>{let n=await ye(e);if(be(n)){if(!t)return;return n=await ye(`__builtin__${e}`),be(n)?void 0:n}return n})(u.name,{builtinFallback:u.builtinFallback}).then((e=>{if(!e){t(!0);try{n(a)}finally{t(!1)}return}let r=e;Le.matches&&(console.warn("Use a constant animation to transition because preferring reduced motion by viewer has detected."),r=_e);const o=document.getElementById(ke);o&&o.remove();const i=document.createElement("style");i.id=ke,document.head.appendChild(i),((e,t)=>{const n=[`:root{${ge("direction")}:${t.backward?-1:1};}`,":root:has(.bespoke-marp-inactive){cursor:none;}"],r=t=>{const n=e[t].both?.defaultDuration||e[t].outgoing?.defaultDuration||e[t].incoming?.defaultDuration;return"forward"===t?n:n||r("forward")},o=t.duration||r(t.backward?"backward":"forward");void 0!==o&&n.push(`::view-transition-group(*){${ve}:${o};}`);const a=e=>Object.entries(e).map((([e,t])=>`${e}:${t};`)).join("");return n.push(`::view-transition-old(root){${a(we(e,{...t,type:"outgoing"}))}}`,`::view-transition-new(root){${a(we(e,{...t,type:"incoming"}))}}`),n})(r,{backward:c(),duration:u.duration}).forEach((e=>i.sheet?.insertRule(e)));const s=document.documentElement.classList;s.add(Ee);let l=!1;const d=()=>{l||(n(a),l=!0,s.remove(Ee))},f=()=>{t(!1),i.remove(),s.remove(Ee)};try{t(!0);const e=document.startViewTransition(d);t(e),e.finished.finally(f)}catch(e){console.error(e),d(),f()}})),!1)};e.on("prev",r((t=>e.prev({...t,[$e]:!0})),{back:!0,cond:e=>e.index>0&&!((e.fragment??1)&&n.fragmentIndex>0)})),e.on("next",r((t=>e.next({...t,[$e]:!0})),{cond:t=>t.index+1<e.slides.length&&!(n.fragmentIndex+1<n.fragments.length)})),setTimeout((()=>{e.on("slide",r((t=>e.slide(t.index,{...t,[$e]:!0})),{cond:t=>{const n=e.slide();return t.index!==n&&(t.back=t.index<n,!0)}}))}),0),e.on("fragment",(e=>{n=e}))};let Ie;const Me=()=>(void 0===Ie&&(Ie="wakeLock"in navigator&&navigator.wakeLock),Ie),Oe=async()=>{const e=Me();if(e)try{return await e.request("screen")}catch(e){console.warn(e)}return null},Ae=async()=>{if(!Me())return;let e;const t=()=>{e&&"visible"===document.visibilityState&&Oe()};for(const e of["visibilitychange","fullscreenchange"])document.addEventListener(e,t);return e=await Oe(),e};((e=document.getElementById(":$p"))=>{(()=>{const e=p("view");a.dataset.bespokeView=e===l||e===c?e:""})();const t=(e=>{const t=p(e);return v({[e]:void 0}),t})("sync")||void 0;o.from(e,((...e)=>{const t=d.findIndex((e=>g()===e));return e.map((([e,n])=>e[t]&&n)).filter((e=>e))})([[1,1,0],re({key:t})],[[1,1,1],Z(e)],[[1,1,0],M],[[1,1,1],k],[[1,0,0],T()],[[1,1,1],O],[[1,1,1],ne({history:!1})],[[1,1,0],A()],[[1,1,0],P],[[1,0,0],ee],[[1,1,0],le()],[[1,0,0],C()],[[1,0,0],Te],[[1,1,1],$],[[1,1,0],Ae]))})()}();</script></body></html>

@@ -1,0 +1,5 @@
+{"event":"probe_start","pid":488,"cpu_only":true,"synthetic_fixture_only":true}
+{"event":"cpu_reference","fixture":"synthetic-16x16","targets":8,"route_checks":11328,"distance_entries":14336,"next_entries":12288,"heap_ms":0.893,"jacobi_ms":5.008,"table_fnv1a64":"84de8c5123f9ccdf"}
+{"event":"cpu_reference","fixture":"synthetic-24x24","targets":8,"route_checks":25344,"distance_entries":32256,"next_entries":27648,"heap_ms":1.909,"jacobi_ms":15.592,"table_fnv1a64":"29394e48445bf137"}
+{"event":"cpu_reference","fixture":"synthetic-32x32","targets":8,"route_checks":44208,"distance_entries":57344,"next_entries":49152,"heap_ms":3.540,"jacobi_ms":35.987,"table_fnv1a64":"9719e83dcb16e25d"}
+{"event":"probe_complete","wall_ms":85.908,"success":true}

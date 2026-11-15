@@ -1,0 +1,6 @@
+{
+  "markdown.marp.themes": [
+    "./docs/slide-llm/style/base.css"
+  ],
+  "markdown.marp.html": "all"
+}

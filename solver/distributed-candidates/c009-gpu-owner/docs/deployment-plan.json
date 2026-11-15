@@ -1,0 +1,24 @@
+{
+  "status": "proposal only; not deployed or tested",
+  "candidate": "C009-gpu-owner",
+  "gpu_owner_only": true,
+  "gpu_cap_ms": 250,
+  "gpu_temporary_limit_mib": 64,
+  "gpu_cpu_mask_changes_search_mask": false,
+  "hosts": {
+    "v1": { "gpu": "off", "search_threads": 31, "allowed_cpus": "0-31", "lifetime": "coordinator restarted every match" },
+    "v2": {
+      "gpu": "opencl",
+      "search_threads": 15,
+      "allowed_cpus": "0-15",
+      "gpu_cpu": 15,
+      "device_selector": "RTX 5060 Laptop GPU",
+      "cpuset_template": "/sys/fs/cgroup/cpuset/procon37-c009-v2-<run-id>",
+      "delegation": "root owns controls; tasks only is voidlinux-2 owned 0600",
+      "lifetime": "one persistent worker for all twelve matches"
+    },
+    "v3": { "gpu": "off", "search_threads": 31, "allowed_cpus": "0-31", "lifetime": "one persistent worker for all twelve matches" }
+  },
+  "fixed_opponents": "unchanged; no C009 GPU environment variables passed",
+  "preflight_required": ["CPU tests", "localhost network", "v2 delegated thread join", "real-shape GPU exact tables", "all driver/compiler descendants confined", "finite shutdown and cgroup removal"]
+}

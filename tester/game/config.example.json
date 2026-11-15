@@ -1,0 +1,129 @@
+{
+  "mode": "game",
+  "targetName": "対象ソルバ",
+  "count": 60,
+  "seed": null,
+  "format": null,
+  "arenaMaps": true,
+  "jobs": null,
+  "solverParallel": false,
+  "label": "対戦・標準構成・60件",
+  "timeLimitMs": null,
+  "solver": {
+    "program": "target/release/solver",
+    "args": [
+      "0"
+    ],
+    "cwd": ".",
+    "env": {}
+  },
+  "build": {
+    "program": "cargo",
+    "args": [
+      "build",
+      "--release",
+      "-p",
+      "solver"
+    ],
+    "cwd": ".",
+    "env": {}
+  },
+  "opponents": [
+    {
+      "name": "pool-generation-002",
+      "version": "pool-generation-002-run-1790551749037999892-54402-v1",
+      "solverParallel": false,
+      "solver": {
+        "program": "target/release/game-sample-1",
+        "args": [
+          "0"
+        ],
+        "cwd": ".",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": ".",
+        "env": {}
+      }
+    },
+    {
+      "name": "pool-generation-001",
+      "version": "pool-generation-001-run-1790521499134996039-41850-v1",
+      "solverParallel": false,
+      "solver": {
+        "program": "target/release/game-sample-2",
+        "args": [
+          "0"
+        ],
+        "cwd": ".",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": ".",
+        "env": {}
+      }
+    },
+    {
+      "name": "pool-generation-004",
+      "version": "pool-generation-004-run-1790600156388062978-4-v1",
+      "solverParallel": false,
+      "solver": {
+        "program": "target/release/game-sample-3",
+        "args": [
+          "0"
+        ],
+        "cwd": ".",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": ".",
+        "env": {}
+      }
+    },
+    {
+      "name": "pool-generation-003",
+      "version": "pool-generation-003-run-1790563781811011480-62511-v1",
+      "solverParallel": false,
+      "solver": {
+        "program": "target/release/game-sample-4",
+        "args": [
+          "0"
+        ],
+        "cwd": ".",
+        "env": {}
+      },
+      "build": {
+        "program": "cargo",
+        "args": [
+          "build",
+          "--release",
+          "-p",
+          "game-samples"
+        ],
+        "cwd": ".",
+        "env": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+<mxfile host="app.diagrams.net" agent="Codex" version="31.4.5">
+  <diagram id="terrain-plain" name="平地の六角形">
+    <mxGraphModel dx="48" dy="48" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="48" pageHeight="48" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="terrain-plain" value="" style="shape=hexagon;rotation=90;whiteSpace=wrap;html=1;fillColor=#eadcc2;strokeColor=#ffffff;strokeWidth=2.42;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="2.0" y="4.94744111674235" width="44" height="38.1051177665153" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

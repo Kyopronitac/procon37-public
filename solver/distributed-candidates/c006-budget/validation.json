@@ -1,0 +1,71 @@
+{
+  "candidate": "C006-budget97",
+  "recordedAt": "2026-10-08T22:40:42.014465+00:00",
+  "status": "unadopted; no server evaluation; isolated VOIDLINUX-2 timing microbench completed",
+  "sourceAggregateSha256": "4e8b4df8116889211bf4f47d1933759fff0c011053296460bd16375d0bf08a6b",
+  "toolchain": {
+    "rustc": "1.94.0 (4a4ef493e 2026-03-02)",
+    "cargo": "1.94.0 (85eff7c80 2026-01-15)",
+    "buildJobs": 2,
+    "profile": "release"
+  },
+  "binary": {
+    "path": "target/release/distributed-solver",
+    "sha256": "23c0d0abb72e3d3aeff217c8a5aabfa8084a2655345d03ee7e291848fe7490d2"
+  },
+  "unitTests": {
+    "passed": 11,
+    "failed": 0,
+    "note": "First sandbox run passed 10 and failed localhost bind with EPERM. Rerun with localhost permission passed all 11."
+  },
+  "networkTests": {
+    "passed": 2,
+    "failed": 0,
+    "names": [
+      "comparison_mode_uses_sixteen_total_threads",
+      "real_cluster_reconnects_and_keeps_adopted_state"
+    ],
+    "scope": "localhost processes only; not server 12-case scoring"
+  },
+  "processes": [
+    {
+      "pid": 74871,
+      "stopped": true,
+      "record": "/tmp/procon37-parallel16-test-74868/parallel16.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 74893,
+      "stopped": true,
+      "record": "/tmp/procon37-dist-test-74868-1791499206437/coordinator.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 74930,
+      "stopped": true,
+      "record": "/tmp/procon37-dist-test-74868-1791499206437/worker-a-restarted.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 74872,
+      "stopped": true,
+      "record": "/tmp/procon37-dist-test-74868-1791499206437/worker-a.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 74890,
+      "stopped": true,
+      "record": "/tmp/procon37-dist-test-74868-1791499206437/worker-b.process.json",
+      "pidPresent": false
+    }
+  ],
+  "warning": "existing dead_code warning common/src/generator.rs:day_seconds",
+  "remoteMicrobench": {
+    "record": "../../docs/distributed/resume-20261009/c006-microbench-20261009.json",
+    "runs": 6,
+    "allPlansValid": true,
+    "allWithin10000Ms": true,
+    "allProcessesStopped": true,
+    "adoptionEvidence": false
+  }
+}

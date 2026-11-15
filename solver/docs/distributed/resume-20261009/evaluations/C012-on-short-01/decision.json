@@ -1,0 +1,407 @@
+{
+  "adopted": false,
+  "stage": "C012-on-short-01",
+  "result": {
+    "team": 0,
+    "rankSum": 14,
+    "scores": {
+      "uniqueBrands": 222,
+      "dailyBrands": 1277,
+      "udon": 2968
+    },
+    "meanRank": 1.1666666666666667
+  },
+  "all48AC": true,
+  "verifiedUnchanged": true,
+  "comparisons": {
+    "resume-D0-short-01": {
+      "comparison": {
+        "win": 6,
+        "tie": 2,
+        "loss": 4
+      },
+      "seedScores": [
+        {
+          "seed": "0",
+          "scores": [
+            12,
+            56,
+            69
+          ],
+          "baselineScores": [
+            12,
+            56,
+            69
+          ],
+          "outcome": "tie"
+        },
+        {
+          "seed": "1",
+          "scores": [
+            18,
+            90,
+            125
+          ],
+          "baselineScores": [
+            18,
+            90,
+            124
+          ],
+          "outcome": "win"
+        },
+        {
+          "seed": "2",
+          "scores": [
+            24,
+            120,
+            206
+          ],
+          "baselineScores": [
+            24,
+            120,
+            207
+          ],
+          "outcome": "loss"
+        },
+        {
+          "seed": "3",
+          "scores": [
+            13,
+            130,
+            324
+          ],
+          "baselineScores": [
+            13,
+            130,
+            329
+          ],
+          "outcome": "loss"
+        },
+        {
+          "seed": "4",
+          "scores": [
+            19,
+            95,
+            128
+          ],
+          "baselineScores": [
+            19,
+            95,
+            130
+          ],
+          "outcome": "loss"
+        },
+        {
+          "seed": "5",
+          "scores": [
+            25,
+            150,
+            330
+          ],
+          "baselineScores": [
+            25,
+            150,
+            334
+          ],
+          "outcome": "loss"
+        },
+        {
+          "seed": "6",
+          "scores": [
+            11,
+            88,
+            140
+          ],
+          "baselineScores": [
+            11,
+            88,
+            136
+          ],
+          "outcome": "win"
+        },
+        {
+          "seed": "7",
+          "scores": [
+            16,
+            80,
+            267
+          ],
+          "baselineScores": [
+            16,
+            80,
+            266
+          ],
+          "outcome": "win"
+        },
+        {
+          "seed": "8",
+          "scores": [
+            28,
+            140,
+            552
+          ],
+          "baselineScores": [
+            28,
+            140,
+            552
+          ],
+          "outcome": "tie"
+        },
+        {
+          "seed": "9",
+          "scores": [
+            12,
+            60,
+            102
+          ],
+          "baselineScores": [
+            12,
+            60,
+            97
+          ],
+          "outcome": "win"
+        },
+        {
+          "seed": "10",
+          "scores": [
+            16,
+            128,
+            361
+          ],
+          "baselineScores": [
+            16,
+            128,
+            360
+          ],
+          "outcome": "win"
+        },
+        {
+          "seed": "11",
+          "scores": [
+            28,
+            140,
+            364
+          ],
+          "baselineScores": [
+            28,
+            140,
+            360
+          ],
+          "outcome": "win"
+        }
+      ]
+    },
+    "resume-D0-short-02": {
+      "comparison": {
+        "win": 5,
+        "tie": 2,
+        "loss": 5
+      },
+      "seedScores": [
+        {
+          "seed": "0",
+          "scores": [
+            12,
+            56,
+            69
+          ],
+          "baselineScores": [
+            12,
+            56,
+            68
+          ],
+          "outcome": "win"
+        },
+        {
+          "seed": "1",
+          "scores": [
+            18,
+            90,
+            125
+          ],
+          "baselineScores": [
+            18,
+            90,
+            122
+          ],
+          "outcome": "win"
+        },
+        {
+          "seed": "2",
+          "scores": [
+            24,
+            120,
+            206
+          ],
+          "baselineScores": [
+            24,
+            120,
+            209
+          ],
+          "outcome": "loss"
+        },
+        {
+          "seed": "3",
+          "scores": [
+            13,
+            130,
+            324
+          ],
+          "baselineScores": [
+            13,
+            130,
+            324
+          ],
+          "outcome": "tie"
+        },
+        {
+          "seed": "4",
+          "scores": [
+            19,
+            95,
+            128
+          ],
+          "baselineScores": [
+            19,
+            95,
+            130
+          ],
+          "outcome": "loss"
+        },
+        {
+          "seed": "5",
+          "scores": [
+            25,
+            150,
+            330
+          ],
+          "baselineScores": [
+            25,
+            150,
+            333
+          ],
+          "outcome": "loss"
+        },
+        {
+          "seed": "6",
+          "scores": [
+            11,
+            88,
+            140
+          ],
+          "baselineScores": [
+            11,
+            88,
+            140
+          ],
+          "outcome": "tie"
+        },
+        {
+          "seed": "7",
+          "scores": [
+            16,
+            80,
+            267
+          ],
+          "baselineScores": [
+            16,
+            80,
+            268
+          ],
+          "outcome": "loss"
+        },
+        {
+          "seed": "8",
+          "scores": [
+            28,
+            140,
+            552
+          ],
+          "baselineScores": [
+            28,
+            140,
+            555
+          ],
+          "outcome": "loss"
+        },
+        {
+          "seed": "9",
+          "scores": [
+            12,
+            60,
+            102
+          ],
+          "baselineScores": [
+            12,
+            60,
+            100
+          ],
+          "outcome": "win"
+        },
+        {
+          "seed": "10",
+          "scores": [
+            16,
+            128,
+            361
+          ],
+          "baselineScores": [
+            16,
+            128,
+            359
+          ],
+          "outcome": "win"
+        },
+        {
+          "seed": "11",
+          "scores": [
+            28,
+            140,
+            364
+          ],
+          "baselineScores": [
+            28,
+            140,
+            348
+          ],
+          "outcome": "win"
+        }
+      ]
+    }
+  },
+  "byFormat": {
+    "first": {
+      "cases": 4,
+      "rankSum": 4,
+      "scores": {
+        "uniqueBrands": 48,
+        "dailyBrands": 334,
+        "udon": 635
+      },
+      "meanRank": 1.0
+    },
+    "semifinal": {
+      "cases": 4,
+      "rankSum": 6,
+      "scores": {
+        "uniqueBrands": 69,
+        "dailyBrands": 393,
+        "udon": 881
+      },
+      "meanRank": 1.5
+    },
+    "final": {
+      "cases": 4,
+      "rankSum": 4,
+      "scores": {
+        "uniqueBrands": 105,
+        "dailyBrands": 550,
+        "udon": 1452
+      },
+      "meanRank": 1.0
+    }
+  },
+  "userRequestedPause": true,
+  "decision": "初回短縮は平均順位1.1667、種類/日別を維持し有望。ただし1回のみ・得点勝敗は混在。停止指示に従い反復/正式/追加実装へ進まず未採用で保存。",
+  "newCommitPush": false
+}

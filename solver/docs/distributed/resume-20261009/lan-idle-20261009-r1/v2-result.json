@@ -1,0 +1,99 @@
+{
+  "action": "cleanup",
+  "host": "v2",
+  "records": [
+    {
+      "pid": 10206,
+      "startTicks": "9233930",
+      "state": "R",
+      "bootId": "3e1e45ee-b88b-4832-871b-ee0ddb8e4184",
+      "uid": 1000,
+      "cpuAllowed": "15",
+      "argv": [
+        "/usr/bin/python3",
+        "/home/voidlinux-2/procon37-distributed-lan-probes/lan-idle-20261009-r1/lan_probe.py",
+        "remote-worker",
+        "/home/voidlinux-2/procon37-distributed-lan-probes/lan-idle-20261009-r1/job.json"
+      ],
+      "role": "server",
+      "startedUnix": 1791514096.287914,
+      "scriptSha256": "1ebad3b6d9c27eca773aa7690c2a832d55989841d6b3539bebfab33d55a6cd80"
+    },
+    {
+      "pid": 10206,
+      "startTicks": "9233930",
+      "state": "R",
+      "bootId": "3e1e45ee-b88b-4832-871b-ee0ddb8e4184",
+      "uid": 1000,
+      "cpuAllowed": "0-15",
+      "argv": [
+        "/usr/bin/python3",
+        "/home/voidlinux-2/procon37-distributed-lan-probes/lan-idle-20261009-r1/lan_probe.py",
+        "remote-worker",
+        "/home/voidlinux-2/procon37-distributed-lan-probes/lan-idle-20261009-r1/job.json"
+      ]
+    }
+  ],
+  "remainingOwnedProcesses": [],
+  "ready": true,
+  "cleanup": [],
+  "result": {
+    "role": "server",
+    "scope": "idle TCP echo only",
+    "startedUnix": 1791514096.2881162,
+    "hostname": "VOIDLINUX-2",
+    "identity": {
+      "pid": 10206,
+      "startTicks": "9233930",
+      "state": "R",
+      "bootId": "3e1e45ee-b88b-4832-871b-ee0ddb8e4184",
+      "uid": 1000,
+      "cpuAllowed": "15",
+      "argv": [
+        "/usr/bin/python3",
+        "/home/voidlinux-2/procon37-distributed-lan-probes/lan-idle-20261009-r1/lan_probe.py",
+        "remote-worker",
+        "/home/voidlinux-2/procon37-distributed-lan-probes/lan-idle-20261009-r1/job.json"
+      ],
+      "role": "server",
+      "startedUnix": 1791514096.287914,
+      "scriptSha256": "1ebad3b6d9c27eca773aa7690c2a832d55989841d6b3539bebfab33d55a6cd80"
+    },
+    "sizes": [
+      64,
+      3517,
+      6826,
+      11185,
+      32768
+    ],
+    "repeats": 50,
+    "tcpNoDelay": true,
+    "roundTripDeadlineSeconds": 1,
+    "lifetimeSeconds": 30,
+    "peerIp": "192.168.0.11",
+    "rejectedConnections": 0,
+    "frames": 250,
+    "payloadBytesPerDirection": 2718000,
+    "success": true,
+    "endedUnix": 1791514097.0366952,
+    "wallSeconds": 0.7485799759888323,
+    "identityAtEnd": {
+      "pid": 10206,
+      "startTicks": "9233930",
+      "state": "R",
+      "bootId": "3e1e45ee-b88b-4832-871b-ee0ddb8e4184",
+      "uid": 1000,
+      "cpuAllowed": "15",
+      "argv": [
+        "/usr/bin/python3",
+        "/home/voidlinux-2/procon37-distributed-lan-probes/lan-idle-20261009-r1/lan_probe.py",
+        "remote-worker",
+        "/home/voidlinux-2/procon37-distributed-lan-probes/lan-idle-20261009-r1/job.json"
+      ]
+    }
+  },
+  "logTails": {
+    "stdout.log": "__LAN_PROBE__{\"role\": \"server\", \"scope\": \"idle TCP echo only\", \"startedUnix\": 1791514096.2881162, \"hostname\": \"VOIDLINUX-2\", \"identity\": {\"pid\": 10206, \"startTicks\": \"9233930\", \"state\": \"R\", \"bootId\": \"3e1e45ee-b88b-4832-871b-ee0ddb8e4184\", \"uid\": 1000, \"cpuAllowed\": \"15\", \"argv\": [\"/usr/bin/python3\", \"/home/voidlinux-2/procon37-distributed-lan-probes/lan-idle-20261009-r1/lan_probe.py\", \"remote-worker\", \"/home/voidlinux-2/procon37-distributed-lan-probes/lan-idle-20261009-r1/job.json\"], \"role\": \"server\", \"startedUnix\": 1791514096.287914, \"scriptSha256\": \"1ebad3b6d9c27eca773aa7690c2a832d55989841d6b3539bebfab33d55a6cd80\"}, \"sizes\": [64, 3517, 6826, 11185, 32768], \"repeats\": 50, \"tcpNoDelay\": true, \"roundTripDeadlineSeconds\": 1, \"lifetimeSeconds\": 30, \"peerIp\": \"192.168.0.11\", \"rejectedConnections\": 0, \"frames\": 250, \"payloadBytesPerDirection\": 2718000, \"success\": true, \"endedUnix\": 1791514097.0366952, \"wallSeconds\": 0.7485799759888323, \"identityAtEnd\": {\"pid\": 10206, \"startTicks\": \"9233930\", \"state\": \"R\", \"bootId\": \"3e1e45ee-b88b-4832-871b-ee0ddb8e4184\", \"uid\": 1000, \"cpuAllowed\": \"15\", \"argv\": [\"/usr/bin/python3\", \"/home/voidlinux-2/procon37-distributed-lan-probes/lan-idle-20261009-r1/lan_probe.py\", \"remote-worker\", \"/home/voidlinux-2/procon37-distributed-lan-probes/lan-idle-20261009-r1/job.json\"]}}\n",
+    "stderr.log": ""
+  }
+}

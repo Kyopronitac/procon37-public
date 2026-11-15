@@ -1,0 +1,44 @@
+{
+  "run_id": "1791376010683995487-231736",
+  "run_json": "/tmp/parallel-pool-g001-a01-smoke-1190hdhg/1791376010683995487-231736/run.json",
+  "config": {
+    "count": 3,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "並列pool・第1世代P0候補a01・通信とスレッド・短縮3件7秒",
+    "players": 6,
+    "teamNames": [],
+    "timeLimitMs": 7000,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "all_18_ac": true,
+  "thread_caps_and_cpu_verified": true,
+  "process": {
+    "command": [
+      "/home/jikky/.cargo/bin/cargo",
+      "run",
+      "--release",
+      "-p",
+      "server",
+      "--",
+      "run",
+      "3",
+      "--players",
+      "6",
+      "--label",
+      "並列pool・第1世代P0候補a01・通信とスレッド・短縮3件7秒",
+      "--time-limit-ms",
+      "7000",
+      "--output-dir",
+      "/tmp/parallel-pool-g001-a01-smoke-1190hdhg"
+    ],
+    "cwd": "/home/jikky/Downloads/procon37",
+    "label": "並列pool・第1世代P0候補a01・通信とスレッド・短縮3件7秒",
+    "pid": 231736,
+    "wrapperPid": 231735,
+    "startedAt": 1791376010.614218,
+    "exitCode": 0,
+    "finishedAt": 1791376151.110287
+  }
+}

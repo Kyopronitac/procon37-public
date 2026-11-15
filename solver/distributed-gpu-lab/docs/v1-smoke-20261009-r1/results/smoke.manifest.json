@@ -1,0 +1,50 @@
+{
+  "command": [
+    "/home/voidlinux-1/procon37-distributed/procon37-gpu-producer-smoke-20261009-r1/gpu-smoke",
+    "--allow-gpu",
+    "--device",
+    "NVIDIA",
+    "--cpu",
+    "31",
+    "--cpuset",
+    "/sys/fs/cgroup/cpuset/procon37-gpu-producer-smoke-20261009-r1"
+  ],
+  "host": "VOIDLINUX-1",
+  "platform": "Linux-6.18.55_1-x86_64-with-glibc2.41",
+  "binary_sha256": "91f2484496bb8577a6509fbec86b4421d9cf6168f08226b7a67488251dc5a94c",
+  "source_sha256": {
+    "/home/voidlinux-1/procon37-distributed/procon37-gpu-producer-smoke-20261009-r1/Cargo.toml": "0bffcc7bc7972a5653070a137d3c510821197e9577ebd27f35e9f9795eb8c230",
+    "/home/voidlinux-1/procon37-distributed/procon37-gpu-producer-smoke-20261009-r1/Cargo.lock": "561a31056345ca19c5e0ae0e3e52d1b967052ae8bd3208cd7f4350462be6d98a",
+    "/home/voidlinux-1/procon37-distributed/procon37-gpu-producer-smoke-20261009-r1/monitor.py": "eec376c9e100c759fe40b3868865ce8f72a051c322a82024bbe10de743b05a90"
+  },
+  "cpu_model": "AMD Ryzen 9 9955HX3D 16-Core Processor",
+  "runtime_environment": {},
+  "sample_interval_ms": 10,
+  "start_unix_ns": 1791505603466780359,
+  "peak_root_threads": 10,
+  "peak_tree_threads": 10,
+  "peak_root_rss_kib": 262160,
+  "peak_tree_rss_kib": 262160,
+  "thread_names": [
+    "cuda-EvtHandlr",
+    "gpu-producer",
+    "gpu-smoke",
+    "python3"
+  ],
+  "sample_count": 97,
+  "expected_cpu": 31,
+  "affinity_violations": [],
+  "observed_affinity_threads": 282,
+  "monitor_error": null,
+  "pid": 26022,
+  "cpu_allowed": "31",
+  "cgroup": "15:name=elogind:/\n14:misc:/\n13:rdma:/\n12:pids:/\n11:hugetlb:/\n10:net_prio:/\n9:perf_event:/\n8:net_cls:/\n7:freezer:/\n6:devices:/\n5:memory:/\n4:blkio:/\n3:cpuacct:/\n2:cpu:/\n1:cpuset:/\n0::/\n",
+  "benchmark_exit_code": 0,
+  "exit_code": 0,
+  "adopted_descendant_cleanup": {
+    "killed_pids": [],
+    "reaped_pids": []
+  },
+  "wall_seconds": 2.867904269005521,
+  "end_unix_ns": 1791505606334725675
+}

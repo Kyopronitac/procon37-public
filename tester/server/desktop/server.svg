@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <!-- procon37-server-managed-launcher-v1 -->
+  <title id="title">server</title>
+  <desc id="desc">深い琥珀色の角丸タイル。橙色の六角形の盤面の中央に白いラックサーバー、周りの6チームと線でつながる対戦サーバー。</desc>
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#5C3413"/><stop offset="1" stop-color="#1F1108"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="0.8" y2="1">
+      <stop stop-color="#FFBE5C"/><stop offset="1" stop-color="#D96F16"/>
+    </linearGradient>
+    <linearGradient id="unit" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFEFD9"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#base)"/>
+  <rect x="9" y="9" width="238" height="238" rx="55" fill="none" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="2"/>
+  <path d="M128 43 202 86v86l-74 43-74-43V86Z" fill="#120903" opacity="0.4" transform="translate(0 7)"/>
+  <path d="M128 43 202 86v86l-74 43-74-43V86Z" fill="url(#board)" stroke="#FFE2B0" stroke-opacity="0.4" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M128 129 128 64M128 129 184 97M128 129 184 161M128 129 128 194M128 129 72 161M128 129 72 97" stroke="#7A3A08" stroke-opacity="0.6" stroke-width="7" stroke-linecap="round"/>
+  <g stroke="#FFF4E2" stroke-width="4">
+    <circle cx="128" cy="64" r="12.5" fill="#3B82F6"/>
+    <circle cx="184" cy="97" r="12.5" fill="#10B981"/>
+    <circle cx="184" cy="161" r="12.5" fill="#8B5CF6"/>
+    <circle cx="128" cy="194" r="12.5" fill="#F43F5E"/>
+    <circle cx="72" cy="161" r="12.5" fill="#06B6D4"/>
+    <circle cx="72" cy="97" r="12.5" fill="#FACC15"/>
+  </g>
+  <rect x="95" y="103" width="66" height="66" rx="12" fill="#5A2A05" opacity="0.35"/>
+  <g fill="url(#unit)">
+    <rect x="95" y="95" width="66" height="20" rx="6"/>
+    <rect x="95" y="119" width="66" height="20" rx="6"/>
+    <rect x="95" y="143" width="66" height="20" rx="6"/>
+  </g>
+  <g fill="#9C5A22"><rect x="104" y="102.5" width="24" height="5" rx="2.5"/><rect x="104" y="126.5" width="24" height="5" rx="2.5"/><rect x="104" y="150.5" width="24" height="5" rx="2.5"/></g>
+  <g fill="#16A34A"><circle cx="150" cy="105" r="4.5"/><circle cx="150" cy="129" r="4.5"/><circle cx="150" cy="153" r="4.5"/></g>
+  <g fill="#EA8A1A"><circle cx="138" cy="105" r="4.5"/><circle cx="138" cy="129" r="4.5"/><circle cx="138" cy="153" r="4.5"/></g>
+</svg>

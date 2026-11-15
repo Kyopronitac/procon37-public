@@ -1,0 +1,734 @@
+{
+  "label": "C006・91%から97%のCPU探索余裕・VOID2 16スレッド・初日10秒3ペアmicrobench",
+  "status": "unadopted; timing microbench only, no server short12/formal evaluation",
+  "metadata": {
+    "purpose": "finite CPU timing microbench; not server short12, not formal, not adoption",
+    "host": "VOIDLINUX-2",
+    "cpus": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "environment": {
+      "PROCON37_G007_FUTURE_WEIGHT": "0",
+      "PROCON37_G007_RESERVE_WEIGHT": "15"
+    },
+    "startedAt": "2026-10-08T22:45:44.047176+00:00",
+    "cpuSettingsBefore": {
+      "policy11": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy8": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy6": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy4": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy2": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy14": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy0": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy12": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy9": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy10": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy7": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy5": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy3": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy15": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy1": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy13": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      }
+    },
+    "preflightProcesses": [
+      "  PID COMMAND         %CPU NLWP",
+      " 8328 python3         50.0    1",
+      " 6240 kworker/0:3-mm_  4.3    1",
+      " 6233 kworker/0:2-pm   4.2    1",
+      " 8289 kworker/7:1-eve  2.0    1",
+      " 1739 xfce4-taskmanag  1.5    5",
+      " 8027 kworker/7:0-mm_  1.1    1",
+      " 7632 kworker/7:2-mm_  0.6    1",
+      " 8228 kworker/6:1-mm_  0.6    1",
+      " 7839 kworker/13:2-ev  0.6    1",
+      " 7727 kworker/6:2-mm_  0.3    1",
+      " 1010 Xorg             0.3   17",
+      " 8285 kworker/12:1-ev  0.2    1",
+      " 7917 kworker/12:2-mm  0.2    1",
+      " 7858 kworker/13:3-ev  0.2    1",
+      " 1022 wpa_supplicant   0.2    1",
+      "  796 nv_mem_pool_scr  0.1    1",
+      " 7883 kworker/2:2-mm_  0.1    1",
+      " 1467 xfwm4            0.0   16",
+      " 7735 kworker/12:0-ev  0.0    1"
+    ],
+    "binaries": {
+      "d0": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "c006": "23c0d0abb72e3d3aeff217c8a5aabfa8084a2655345d03ee7e291848fe7490d2"
+    },
+    "finishedAt": "2026-10-08T22:46:42.916246+00:00",
+    "cpuSettingsAfter": {
+      "policy11": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy8": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy6": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy4": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy2": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy14": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy0": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy12": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy9": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy10": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy7": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy5": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy3": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy15": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy1": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      },
+      "policy13": {
+        "scaling_governor": "performance",
+        "energy_performance_preference": "performance"
+      }
+    },
+    "allStopped": true
+  },
+  "caseGeneration": {
+    "publicGenerator": "solver/distributed/common/src/generator.rs::generate_for_players",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "players": 4,
+    "arenaMaps": true,
+    "selectionBootstrapMs": 100,
+    "selectionBootstrapExplanation": "Shared deterministic supplier index 0, existing tiny-select fallback; selection quality excluded.",
+    "planMs": 10000,
+    "plansPerProcess": 1,
+    "solverSeed": 0
+  },
+  "runs": [
+    {
+      "label": "pair1-seed0-d0",
+      "seed": 0,
+      "version": "d0",
+      "command": [
+        "taskset",
+        "-c",
+        "0-15",
+        "/home/voidlinux-2/procon37-distributed-resume/c006-micro-20261009/bin/d0",
+        "--mode",
+        "parallel",
+        "--threads",
+        "16",
+        "--seed",
+        "0"
+      ],
+      "inputSha256": "8ec95257ddcf413e230d7c0c3589d5dd3f632d2f0f39f88fdb91ca30eecf8c28",
+      "binarySha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "requests": [
+        {
+          "phase": "select",
+          "limitMs": 100,
+          "elapsedMs": 1.902134987176396,
+          "processStatus": {
+            "Threads": "16",
+            "Cpus_allowed_list": "0-15",
+            "VmRSS": "4336 kB",
+            "VmHWM": "4336 kB"
+          }
+        },
+        {
+          "phase": "plan",
+          "limitMs": 10000,
+          "elapsedMs": 9618.532332999166,
+          "processStatus": {
+            "Threads": "16",
+            "Cpus_allowed_list": "0-15",
+            "VmRSS": "832384 kB",
+            "VmHWM": "832384 kB"
+          }
+        }
+      ],
+      "timedOut": false,
+      "pid": 8330,
+      "exitCode": 0,
+      "stopped": true,
+      "wallMs": 9685.44337998901,
+      "userCpuSeconds": 139.884354,
+      "systemCpuSeconds": 1.9932169999999998,
+      "score": {
+        "dailyBrands": 11,
+        "udon": 15,
+        "uniqueBrands": 11
+      },
+      "verdict": "AC",
+      "searchByDay": {
+        "0": {
+          "calls": 15,
+          "iterationsSum": 82396292,
+          "iterationsMedian": 5468714,
+          "graphMsMedian": 187,
+          "graphMsSum": 2777,
+          "scoreMedian": 16800.0
+        },
+        "1": {
+          "calls": 30,
+          "iterationsSum": 46751378,
+          "iterationsMedian": 1537483.0,
+          "graphMsMedian": 100.0,
+          "graphMsSum": 2929,
+          "scoreMedian": 116819.04999999999
+        }
+      },
+      "chosenPlan": {
+        "worker": 5,
+        "value": 105509.152
+      },
+      "planElapsedMs": 9618.532332999166,
+      "within10Seconds": true,
+      "observed16Threads": true,
+      "observedCpuAffinity": true,
+      "logSha256": "48b316775d6a6cb5b87f0765511c78a200dead61eb1710891d43b1016a3713ae"
+    },
+    {
+      "label": "pair1-seed0-c006",
+      "seed": 0,
+      "version": "c006",
+      "command": [
+        "taskset",
+        "-c",
+        "0-15",
+        "/home/voidlinux-2/procon37-distributed-resume/c006-micro-20261009/bin/c006",
+        "--mode",
+        "parallel",
+        "--threads",
+        "16",
+        "--seed",
+        "0"
+      ],
+      "inputSha256": "8ec95257ddcf413e230d7c0c3589d5dd3f632d2f0f39f88fdb91ca30eecf8c28",
+      "binarySha256": "23c0d0abb72e3d3aeff217c8a5aabfa8084a2655345d03ee7e291848fe7490d2",
+      "requests": [
+        {
+          "phase": "select",
+          "limitMs": 100,
+          "elapsedMs": 2.0550719927996397,
+          "processStatus": {
+            "Threads": "16",
+            "Cpus_allowed_list": "0-15",
+            "VmRSS": "4292 kB",
+            "VmHWM": "4292 kB"
+          }
+        },
+        {
+          "phase": "plan",
+          "limitMs": 10000,
+          "elapsedMs": 9686.018180000247,
+          "processStatus": {
+            "Threads": "16",
+            "Cpus_allowed_list": "0-15",
+            "VmRSS": "832956 kB",
+            "VmHWM": "832956 kB"
+          }
+        }
+      ],
+      "timedOut": false,
+      "pid": 8348,
+      "exitCode": 0,
+      "stopped": true,
+      "wallMs": 9752.917143996456,
+      "userCpuSeconds": 141.95184799999998,
+      "systemCpuSeconds": 1.8166830000000003,
+      "score": {
+        "dailyBrands": 11,
+        "udon": 15,
+        "uniqueBrands": 11
+      },
+      "verdict": "AC",
+      "searchByDay": {
+        "0": {
+          "calls": 15,
+          "iterationsSum": 90004771,
+          "iterationsMedian": 5867034,
+          "graphMsMedian": 172,
+          "graphMsSum": 2568,
+          "scoreMedian": 16800.0
+        },
+        "1": {
+          "calls": 30,
+          "iterationsSum": 41782714,
+          "iterationsMedian": 1354533.5,
+          "graphMsMedian": 101.0,
+          "graphMsSum": 2939,
+          "scoreMedian": 116800.1
+        }
+      },
+      "chosenPlan": {
+        "worker": 5,
+        "value": 105510.358
+      },
+      "planElapsedMs": 9686.018180000247,
+      "within10Seconds": true,
+      "observed16Threads": true,
+      "observedCpuAffinity": true,
+      "logSha256": "f0c994f2e0db15cd1613ad4017a66f62e3c11f37abafbc61d8451098963adfa4"
+    },
+    {
+      "label": "pair2-seed1-c006",
+      "seed": 1,
+      "version": "c006",
+      "command": [
+        "taskset",
+        "-c",
+        "0-15",
+        "/home/voidlinux-2/procon37-distributed-resume/c006-micro-20261009/bin/c006",
+        "--mode",
+        "parallel",
+        "--threads",
+        "16",
+        "--seed",
+        "0"
+      ],
+      "inputSha256": "f5eee68218f5af60624eb904344f952c197bd09980def6bae5b194f63c96ada9",
+      "binarySha256": "23c0d0abb72e3d3aeff217c8a5aabfa8084a2655345d03ee7e291848fe7490d2",
+      "requests": [
+        {
+          "phase": "select",
+          "limitMs": 100,
+          "elapsedMs": 1.5970120002748445,
+          "processStatus": {
+            "Threads": "16",
+            "Cpus_allowed_list": "0-15",
+            "VmRSS": "4372 kB",
+            "VmHWM": "4372 kB"
+          }
+        },
+        {
+          "phase": "plan",
+          "limitMs": 10000,
+          "elapsedMs": 9705.185968996375,
+          "processStatus": {
+            "Threads": "16",
+            "Cpus_allowed_list": "0-15",
+            "VmRSS": "1573348 kB",
+            "VmHWM": "1647988 kB"
+          }
+        }
+      ],
+      "timedOut": false,
+      "pid": 8364,
+      "exitCode": 0,
+      "stopped": true,
+      "wallMs": 9821.490435002488,
+      "userCpuSeconds": 138.87003500000003,
+      "systemCpuSeconds": 4.948675,
+      "score": {
+        "dailyBrands": 18,
+        "udon": 25,
+        "uniqueBrands": 18
+      },
+      "verdict": "AC",
+      "searchByDay": {
+        "0": {
+          "calls": 15,
+          "iterationsSum": 61600477,
+          "iterationsMedian": 4050497,
+          "graphMsMedian": 465,
+          "graphMsSum": 6931,
+          "scoreMedian": 27482.3
+        },
+        "1": {
+          "calls": 15,
+          "iterationsSum": 30449340,
+          "iterationsMedian": 1981721,
+          "graphMsMedian": 178,
+          "graphMsSum": 2597,
+          "scoreMedian": 27544.0
+        }
+      },
+      "chosenPlan": {
+        "worker": 7,
+        "value": 48160.297
+      },
+      "planElapsedMs": 9705.185968996375,
+      "within10Seconds": true,
+      "observed16Threads": true,
+      "observedCpuAffinity": true,
+      "logSha256": "1a594dc65b2bdb217281042b675661d3e71a0c5b405b916fbd960df7fa554388"
+    },
+    {
+      "label": "pair2-seed1-d0",
+      "seed": 1,
+      "version": "d0",
+      "command": [
+        "taskset",
+        "-c",
+        "0-15",
+        "/home/voidlinux-2/procon37-distributed-resume/c006-micro-20261009/bin/d0",
+        "--mode",
+        "parallel",
+        "--threads",
+        "16",
+        "--seed",
+        "0"
+      ],
+      "inputSha256": "f5eee68218f5af60624eb904344f952c197bd09980def6bae5b194f63c96ada9",
+      "binarySha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "requests": [
+        {
+          "phase": "select",
+          "limitMs": 100,
+          "elapsedMs": 1.791516988305375,
+          "processStatus": {
+            "Threads": "16",
+            "Cpus_allowed_list": "0-15",
+            "VmRSS": "4196 kB",
+            "VmHWM": "4196 kB"
+          }
+        },
+        {
+          "phase": "plan",
+          "limitMs": 10000,
+          "elapsedMs": 9505.483344997629,
+          "processStatus": {
+            "Threads": "16",
+            "Cpus_allowed_list": "0-15",
+            "VmRSS": "1572904 kB",
+            "VmHWM": "1649444 kB"
+          }
+        }
+      ],
+      "timedOut": false,
+      "pid": 8380,
+      "exitCode": 0,
+      "stopped": true,
+      "wallMs": 9621.99646299996,
+      "userCpuSeconds": 136.88688899999994,
+      "systemCpuSeconds": 4.448168000000001,
+      "score": {
+        "dailyBrands": 18,
+        "udon": 25,
+        "uniqueBrands": 18
+      },
+      "verdict": "AC",
+      "searchByDay": {
+        "0": {
+          "calls": 15,
+          "iterationsSum": 58035521,
+          "iterationsMedian": 3777634,
+          "graphMsMedian": 433,
+          "graphMsSum": 6437,
+          "scoreMedian": 27482.9
+        },
+        "1": {
+          "calls": 15,
+          "iterationsSum": 32538832,
+          "iterationsMedian": 2106126,
+          "graphMsMedian": 185,
+          "graphMsSum": 2692,
+          "scoreMedian": 27526.8
+        }
+      },
+      "chosenPlan": {
+        "worker": 13,
+        "value": 48159.392
+      },
+      "planElapsedMs": 9505.483344997629,
+      "within10Seconds": true,
+      "observed16Threads": true,
+      "observedCpuAffinity": true,
+      "logSha256": "4d57400c342127c3a260470bdfad5eb9a23b84cc36206d7af53236b270715e8f"
+    },
+    {
+      "label": "pair3-seed2-d0",
+      "seed": 2,
+      "version": "d0",
+      "command": [
+        "taskset",
+        "-c",
+        "0-15",
+        "/home/voidlinux-2/procon37-distributed-resume/c006-micro-20261009/bin/d0",
+        "--mode",
+        "parallel",
+        "--threads",
+        "16",
+        "--seed",
+        "0"
+      ],
+      "inputSha256": "dfe25baedf9161079c0dc1e22aae94bcf0dcb2e09a0dbe7c14ebf5e62e6ebc90",
+      "binarySha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "requests": [
+        {
+          "phase": "select",
+          "limitMs": 100,
+          "elapsedMs": 1.823847007472068,
+          "processStatus": {
+            "Threads": "16",
+            "Cpus_allowed_list": "0-15",
+            "VmRSS": "4272 kB",
+            "VmHWM": "4272 kB"
+          }
+        },
+        {
+          "phase": "plan",
+          "limitMs": 10000,
+          "elapsedMs": 9560.05236999772,
+          "processStatus": {
+            "Threads": "16",
+            "Cpus_allowed_list": "0-15",
+            "VmRSS": "3911724 kB",
+            "VmHWM": "4019192 kB"
+          }
+        }
+      ],
+      "timedOut": false,
+      "pid": 8396,
+      "exitCode": 0,
+      "stopped": true,
+      "wallMs": 9878.081937000388,
+      "userCpuSeconds": 128.98953900000004,
+      "systemCpuSeconds": 12.310723,
+      "score": {
+        "dailyBrands": 24,
+        "udon": 36,
+        "uniqueBrands": 24
+      },
+      "verdict": "AC",
+      "searchByDay": {
+        "0": {
+          "calls": 15,
+          "iterationsSum": 37002411,
+          "iterationsMedian": 2421002,
+          "graphMsMedian": 1203,
+          "graphMsSum": 17993,
+          "scoreMedian": 36745.4
+        },
+        "1": {
+          "calls": 15,
+          "iterationsSum": 20968340,
+          "iterationsMedian": 1368064,
+          "graphMsMedian": 462,
+          "graphMsSum": 6729,
+          "scoreMedian": 36868.7
+        }
+      },
+      "chosenPlan": {
+        "worker": 8,
+        "value": 64405.169
+      },
+      "planElapsedMs": 9560.05236999772,
+      "within10Seconds": true,
+      "observed16Threads": true,
+      "observedCpuAffinity": true,
+      "logSha256": "289120ad634e1b1f6f4a308465a252c67284eb188eade07a3248d72b94b76231"
+    },
+    {
+      "label": "pair3-seed2-c006",
+      "seed": 2,
+      "version": "c006",
+      "command": [
+        "taskset",
+        "-c",
+        "0-15",
+        "/home/voidlinux-2/procon37-distributed-resume/c006-micro-20261009/bin/c006",
+        "--mode",
+        "parallel",
+        "--threads",
+        "16",
+        "--seed",
+        "0"
+      ],
+      "inputSha256": "dfe25baedf9161079c0dc1e22aae94bcf0dcb2e09a0dbe7c14ebf5e62e6ebc90",
+      "binarySha256": "23c0d0abb72e3d3aeff217c8a5aabfa8084a2655345d03ee7e291848fe7490d2",
+      "requests": [
+        {
+          "phase": "select",
+          "limitMs": 100,
+          "elapsedMs": 2.2278559918049723,
+          "processStatus": {
+            "Threads": "16",
+            "Cpus_allowed_list": "0-15",
+            "VmRSS": "4420 kB",
+            "VmHWM": "4420 kB"
+          }
+        },
+        {
+          "phase": "plan",
+          "limitMs": 10000,
+          "elapsedMs": 9773.251788996276,
+          "processStatus": {
+            "Threads": "16",
+            "Cpus_allowed_list": "0-15",
+            "VmRSS": "3914312 kB",
+            "VmHWM": "4022148 kB"
+          }
+        }
+      ],
+      "timedOut": false,
+      "pid": 8412,
+      "exitCode": 0,
+      "stopped": true,
+      "wallMs": 10091.504058000282,
+      "userCpuSeconds": 133.118651,
+      "systemCpuSeconds": 11.888057999999997,
+      "score": {
+        "dailyBrands": 24,
+        "udon": 37,
+        "uniqueBrands": 24
+      },
+      "verdict": "AC",
+      "searchByDay": {
+        "0": {
+          "calls": 15,
+          "iterationsSum": 39409946,
+          "iterationsMedian": 2572288,
+          "graphMsMedian": 1145,
+          "graphMsSum": 17057,
+          "scoreMedian": 36757.9
+        },
+        "1": {
+          "calls": 15,
+          "iterationsSum": 18395439,
+          "iterationsMedian": 1203046,
+          "graphMsMedian": 472,
+          "graphMsSum": 6838,
+          "scoreMedian": 36818.7
+        }
+      },
+      "chosenPlan": {
+        "worker": 9,
+        "value": 64411.635
+      },
+      "planElapsedMs": 9773.251788996276,
+      "within10Seconds": true,
+      "observed16Threads": true,
+      "observedCpuAffinity": true,
+      "logSha256": "061e3ff2242bc60adf7cb5700a3dbc8a6e8f2665e1db20e9b318ce8c319ffd0f"
+    }
+  ],
+  "pairs": [
+    {
+      "seed": 0,
+      "planElapsedDeltaMs": 67.4858470010804,
+      "day0IterationsRatio": 1.092340065497122,
+      "allDaysIterationsRatio": 1.0204402835916435,
+      "scoreComparison": "tie"
+    },
+    {
+      "seed": 1,
+      "planElapsedDeltaMs": 199.70262399874628,
+      "day0IterationsRatio": 1.061427138734569,
+      "allDaysIterationsRatio": 1.0162900860026016,
+      "scoreComparison": "tie"
+    },
+    {
+      "seed": 2,
+      "planElapsedDeltaMs": 213.1994189985562,
+      "day0IterationsRatio": 1.0650642737847542,
+      "allDaysIterationsRatio": 0.9971474235343268,
+      "scoreComparison": "win"
+    }
+  ],
+  "allSixPlansValid": true,
+  "allWithin10Seconds": true,
+  "allProcessesStopped": true,
+  "remainingMicrobenchPids": [],
+  "limitation": "Three single-day pairs, different saved/rebuilt executable artifacts, no live opponents, no 3-machine communication; not evidence of match improvement."
+}

@@ -1,0 +1,43 @@
+<mxfile host="65bd71144e">
+    <diagram id="pool-overview" name="現行解法の全体像">
+        <mxGraphModel dx="637" dy="426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1060" pageHeight="260" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="b0" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF7FF;strokeColor=#185B80;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=25;fontStyle=1;spacing=8;align=center;verticalAlign=middle;" value="車種の割当" vertex="1">
+                    <mxGeometry height="130" width="221.25" x="20" y="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="n0" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=2;" value="割当ごとに全日程を試走" vertex="1">
+                    <mxGeometry height="65" width="240" x="10.62" y="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2E8;strokeColor=#E96B28;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=25;fontStyle=1;spacing=8;align=center;verticalAlign=middle;" value="初期計画&lt;br&gt;（初期解）&lt;br&gt;を作る" vertex="1">
+                    <mxGeometry height="130" width="221.25" x="286.25" y="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="a1" edge="1" parent="1" source="b0" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#97283C;strokeWidth=2;" target="b1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=2;" value="補給車の位置・時刻&lt;br&gt;巡回車のビームサーチ" vertex="1">
+                    <mxGeometry height="65" width="221.25" x="286.25" y="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2F5;strokeColor=#97283C;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=25;fontStyle=1;spacing=8;align=center;verticalAlign=middle;" value="計画の改善" vertex="1">
+                    <mxGeometry height="130" width="221.25" x="552.5" y="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="a2" edge="1" parent="1" source="b1" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#97283C;strokeWidth=2;" target="b2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=2;" value="焼きなまし法 + LNS&lt;br&gt;条件に応じて翌日評価" vertex="1">
+                    <mxGeometry height="65" width="233.75" x="546" y="175" as="geometry"/>
+                </mxCell>
+                <mxCell id="b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2FBE4;strokeColor=#668E38;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=25;fontStyle=1;spacing=8;align=center;verticalAlign=middle;" value="最良解の提出" vertex="1">
+                    <mxGeometry height="130" width="221.25" x="818.75" y="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="a3" edge="1" parent="1" source="b2" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#97283C;strokeWidth=2;" target="b3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="n3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;fontColor=#242424;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;fontSize=21;fontStyle=0;align=center;verticalAlign=middle;spacing=2;" value="探索で得た最良の計画を提出" vertex="1">
+                    <mxGeometry height="65" width="221.25" x="818.75" y="175" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -1,0 +1,79 @@
+{
+  "capturedAtUtc": "2026-10-09T03:23:51.159034+00:00",
+  "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0",
+  "logs": [
+    {
+      "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/stderr.log",
+      "capturedStartByte": 0,
+      "capturedEndByte": 164158,
+      "sha256OfCapturedByteRange": "56c0a8f516328599f324ca2353812dca982cba3c36db2eab84244110db78d617",
+      "mtimeNsAtOpen": 1791516210402786321,
+      "totalLines": 799,
+      "diagnosticLines": [
+        "dist mode=coordinator total_threads=32 cluster_threads=80 search_threads=77 session=1791516148100883323 cross_elite=true",
+        "dist peer=192.168.0.22:39370 request=1 completed=15/15 elapsed_ms=7978 rx_bytes=14116 tx_bytes=3694",
+        "dist peer=192.168.0.33:39370 request=1 completed=31/31 elapsed_ms=8030 rx_bytes=14043 tx_bytes=3694",
+        "dist request=1 external_request=0 phase=select input_digest=f9ee3a0ac6b16910 selected_worker=27 value=76539.515 local_completed=31/31 remote_results=2/2 elapsed_ms=8108 state_digest=1b1f17e7fab7558b",
+        "dist peer=192.168.0.22:39370 request=2 completed=15/15 elapsed_ms=8520 rx_bytes=106518 tx_bytes=162870",
+        "dist peer=192.168.0.33:39370 request=2 completed=31/31 elapsed_ms=8590 rx_bytes=131013 tx_bytes=149528",
+        "dist request=2 external_request=1 phase=plan input_digest=430c94a9ec381718 selected_worker=50 value=76560.899 local_completed=31/31 remote_results=2/2 elapsed_ms=8657 state_digest=52dbe9fc44881e6c",
+        "dist peer=192.168.0.22:39370 request=3 completed=15/15 elapsed_ms=8456 rx_bytes=257821 tx_bytes=362238",
+        "dist peer=192.168.0.33:39370 request=3 completed=31/31 elapsed_ms=8524 rx_bytes=280829 tx_bytes=347707",
+        "dist request=3 external_request=2 phase=plan input_digest=e3d57dc97a0ef507 selected_worker=7 value=75743.198 local_completed=31/31 remote_results=2/2 elapsed_ms=8590 state_digest=d11164e5c44b6147",
+        "dist peer=192.168.0.22:39370 request=4 completed=15/15 elapsed_ms=8453 rx_bytes=409007 tx_bytes=561633",
+        "dist peer=192.168.0.33:39370 request=4 completed=31/31 elapsed_ms=8521 rx_bytes=434893 tx_bytes=533597",
+        "dist request=4 external_request=3 phase=plan input_digest=fa8194bf33c65a87 selected_worker=62 value=75709.927 local_completed=31/31 remote_results=2/2 elapsed_ms=8587 state_digest=7165dd7f1e16dda7",
+        "dist peer=192.168.0.22:39370 request=5 completed=15/15 elapsed_ms=8454 rx_bytes=560797 tx_bytes=753930",
+        "dist peer=192.168.0.33:39370 request=5 completed=31/31 elapsed_ms=8517 rx_bytes=575679 tx_bytes=726942",
+        "dist request=5 external_request=4 phase=plan input_digest=ab6571f5f68dda1b selected_worker=52 value=76042.421 local_completed=31/31 remote_results=2/2 elapsed_ms=8585 state_digest=b833f878affdc46c",
+        "dist peer=192.168.0.22:39370 request=6 completed=15/15 elapsed_ms=8131 rx_bytes=784562 tx_bytes=1009431",
+        "dist peer=192.168.0.33:39370 request=6 completed=31/31 elapsed_ms=8186 rx_bytes=740088 tx_bytes=983685",
+        "dist request=6 external_request=5 phase=plan input_digest=c38b39dcf44a7603 selected_worker=3 value=43459.342 local_completed=31/31 remote_results=2/2 elapsed_ms=8270 state_digest=1d0ee9f9ad7f58fd"
+      ],
+      "crossEliteLines": [
+        "cross_elite request=2 origin=0 receiver=Some(7) published=17 received=26 rejected=0 context_mismatch=0 imports=3 improved=0 sent=21 oversized=0 probes=3 probe_ns=19367 repair_ns=12137960 duplicates=0 checks=19 eligible=4 max_stall_ms=3781 group_published=[4, 3, 1, 1, 3, 2, 3] group_received=[3, 4, 4, 3, 3, 5, 4] group_sent=[11, 10, 6, 5, 9, 9, 8] max_receiver_mailbox_age_ms=3563",
+        "cross_elite request=3 origin=0 receiver=Some(7) published=71 received=77 rejected=0 context_mismatch=0 imports=2 improved=1 sent=24 oversized=0 probes=6 probe_ns=46628 repair_ns=4829800 duplicates=0 checks=19 eligible=2 max_stall_ms=1507 group_published=[19, 16, 7, 10, 5, 6, 8] group_received=[10, 9, 13, 9, 13, 13, 10] group_sent=[24, 21, 18, 20, 18, 20, 20] max_receiver_mailbox_age_ms=1019",
+        "cross_elite request=4 origin=0 receiver=Some(7) published=56 received=70 rejected=0 context_mismatch=0 imports=2 improved=2 sent=23 oversized=0 probes=6 probe_ns=40466 repair_ns=7107803 duplicates=0 checks=19 eligible=2 max_stall_ms=1006 group_published=[7, 11, 6, 7, 8, 8, 9] group_received=[10, 11, 9, 10, 10, 12, 8] group_sent=[18, 18, 16, 14, 15, 19, 16] max_receiver_mailbox_age_ms=1279",
+        "cross_elite request=5 origin=0 receiver=Some(7) published=60 received=68 rejected=0 context_mismatch=0 imports=3 improved=1 sent=22 oversized=0 probes=9 probe_ns=68456 repair_ns=7447047 duplicates=0 checks=19 eligible=3 max_stall_ms=3261 group_published=[10, 9, 7, 7, 12, 9, 6] group_received=[9, 11, 8, 8, 8, 14, 10] group_sent=[18, 15, 13, 12, 21, 19, 18] max_receiver_mailbox_age_ms=2271",
+        "cross_elite request=6 origin=0 receiver=Some(7) published=84 received=88 rejected=0 context_mismatch=0 imports=4 improved=2 sent=32 oversized=0 probes=12 probe_ns=106901 repair_ns=8889124 duplicates=0 checks=30 eligible=4 max_stall_ms=2015 group_published=[13, 13, 15, 10, 13, 11, 9] group_received=[13, 15, 12, 12, 14, 11, 11] group_sent=[24, 24, 22, 22, 26, 25, 19] max_receiver_mailbox_age_ms=3281"
+      ],
+      "sharedGraphLines": [],
+      "flags": {
+        "timeout": {
+          "count": 0,
+          "samples": []
+        },
+        "deadline": {
+          "count": 0,
+          "samples": []
+        },
+        "fallback": {
+          "count": 0,
+          "samples": []
+        },
+        "panic": {
+          "count": 0,
+          "samples": []
+        },
+        "rejected": {
+          "count": 5,
+          "samples": [
+            "cross_elite request=2 origin=0 receiver=Some(7) published=17 received=26 rejected=0 context_mismatch=0 imports=3 improved=0 sent=21 oversized=0 probes=3 probe_ns=19367 repair_ns=12137960 duplicates=0 checks=19 eligible=4 max_stall_ms=3781 group_published=[4, 3, 1, 1, 3, 2, 3] group_received=[3, 4, 4, 3, 3, 5, 4] group_sent=[11, 10, 6, 5, 9, 9, 8] max_receiver_mailbox_age_ms=3563",
+            "cross_elite request=3 origin=0 receiver=Some(7) published=71 received=77 rejected=0 context_mismatch=0 imports=2 improved=1 sent=24 oversized=0 probes=6 probe_ns=46628 repair_ns=4829800 duplicates=0 checks=19 eligible=2 max_stall_ms=1507 group_published=[19, 16, 7, 10, 5, 6, 8] group_received=[10, 9, 13, 9, 13, 13, 10] group_sent=[24, 21, 18, 20, 18, 20, 20] max_receiver_mailbox_age_ms=1019",
+            "cross_elite request=4 origin=0 receiver=Some(7) published=56 received=70 rejected=0 context_mismatch=0 imports=2 improved=2 sent=23 oversized=0 probes=6 probe_ns=40466 repair_ns=7107803 duplicates=0 checks=19 eligible=2 max_stall_ms=1006 group_published=[7, 11, 6, 7, 8, 8, 9] group_received=[10, 11, 9, 10, 10, 12, 8] group_sent=[18, 18, 16, 14, 15, 19, 16] max_receiver_mailbox_age_ms=1279",
+            "cross_elite request=5 origin=0 receiver=Some(7) published=60 received=68 rejected=0 context_mismatch=0 imports=3 improved=1 sent=22 oversized=0 probes=9 probe_ns=68456 repair_ns=7447047 duplicates=0 checks=19 eligible=3 max_stall_ms=3261 group_published=[10, 9, 7, 7, 12, 9, 6] group_received=[9, 11, 8, 8, 8, 14, 10] group_sent=[18, 15, 13, 12, 21, 19, 18] max_receiver_mailbox_age_ms=2271",
+            "cross_elite request=6 origin=0 receiver=Some(7) published=84 received=88 rejected=0 context_mismatch=0 imports=4 improved=2 sent=32 oversized=0 probes=12 probe_ns=106901 repair_ns=8889124 duplicates=0 checks=30 eligible=4 max_stall_ms=2015 group_published=[13, 13, 15, 10, 13, 11, 9] group_received=[13, 15, 12, 12, 14, 11, 11] group_sent=[24, 24, 22, 22, 26, 25, 19] max_receiver_mailbox_age_ms=3281"
+          ]
+        },
+        "unavailable": {
+          "count": 0,
+          "samples": []
+        },
+        "disconnected": {
+          "count": 0,
+          "samples": []
+        }
+      }
+    }
+  ]
+}

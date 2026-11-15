@@ -1,0 +1,7841 @@
+{
+  "generation": 7,
+  "stage": "reference_record",
+  "baseline_run_id": "1791150449580370511-14915",
+  "baseline_rank_sums": [
+    64,
+    93,
+    95,
+    81,
+    94
+  ],
+  "baseline_average_ranks": [
+    2.1333333333333333,
+    3.1,
+    3.1666666666666665,
+    2.7,
+    3.1333333333333333
+  ],
+  "baseline_score_totals": [
+    [
+      543,
+      3680,
+      8392
+    ],
+    [
+      543,
+      3676,
+      8240
+    ],
+    [
+      543,
+      3681,
+      8337
+    ],
+    [
+      543,
+      3684,
+      8350
+    ],
+    [
+      543,
+      3681,
+      8291
+    ]
+  ],
+  "baseline_all_players_ac": true,
+  "baseline_reused": true,
+  "baseline_source_sha256": {
+    "main.rs": "e9e3d0a0523d47922fd349b62e070f2b0c17509f776d2b6cc372bd8ecbd20a56",
+    "Cargo.toml": "9878c0f79463d2f3617e6b5b99293c58a7c69d1898c9bbb369d17ed71d7a4a10",
+    "Cargo.lock": "a788fbbba8d76a6a01e1c1d3b637a3084f6bb44177ff171af4fced06dc68b344",
+    "solver/planner.rs": "1003c94dcc9f1a42b96f55aa568803e0aa800a4a02837d53f8a349d953595a34",
+    "tester/game/samples/src/bin/game-sample-1.rs": "5fd03403a449c3d0a407ce0fe9449e0d510b7be5235803fc869688743eebebdb",
+    "tester/game/samples/src/bin/game-sample-2.rs": "d2392276b502d6c77db9e12924450c2d9562b5b739dba0c466e7105a56699381",
+    "tester/game/samples/src/bin/game-sample-3.rs": "7ffe3910d024e505ce6a3911683e05df92398c964ce48ce50ea13576947788f2",
+    "tester/game/samples/src/bin/game-sample-4.rs": "9c17a019ea6a99aef2e162a28180a5731ab1ada06ec11285f80aa1eba14972a5",
+    "tester/game/samples/src/pool-generation-005/network.rs": "dbe0ca0ddd5dafa2729a5576b0ba784d5925b425bf3710436bf47b20e56f035d",
+    "tester/game/samples/src/pool-generation-005/search.rs": "149bcf8edeea344074bb2e8ed5eedfc5a9bf2c34f5534f8784625c241b7df013"
+  },
+  "mapping_before": {
+    "0": "generation-006",
+    "1": "generation-002",
+    "2": "generation-005",
+    "3": "generation-004",
+    "4": "generation-003"
+  },
+  "mapping_after": {
+    "0": "generation-007",
+    "1": "generation-002",
+    "2": "generation-006",
+    "3": "generation-004",
+    "4": "generation-003"
+  },
+  "replaced_fixed_id": 2,
+  "removed_generation": 5,
+  "opponent_source_sha256": {
+    "tester/game/samples/src/bin/game-sample-4.rs": "9c17a019ea6a99aef2e162a28180a5731ab1ada06ec11285f80aa1eba14972a5",
+    "tester/game/samples/src/bin/game-sample-1.rs": "5fd03403a449c3d0a407ce0fe9449e0d510b7be5235803fc869688743eebebdb",
+    "tester/game/samples/src/bin/game-sample-3.rs": "7ffe3910d024e505ce6a3911683e05df92398c964ce48ce50ea13576947788f2",
+    "tester/game/samples/src/bin/game-sample-2.rs": "0db2be414d56cb6c1875efb25071a34e16bf12d74b3e7d8ad7defa6a08cbdc97",
+    "tester/game/samples/src/pool-generation-006/planner.rs": "1003c94dcc9f1a42b96f55aa568803e0aa800a4a02837d53f8a349d953595a34"
+  },
+  "preserved_generation_006_dir": "/home/jikky/Downloads/procon37/tester/game/samples/src/pool-generation-006",
+  "reference_evaluation_after_promotion_required": true,
+  "development_results": [
+    {
+      "run_id": "1791156492740732611-19637",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791156492740732611-19637/run.json",
+      "local_run_json": ".game/pool-g007-development/1791156492740732611-19637.json",
+      "manifest_sha256": "a22bea09ec4e4bc772d9e54c5fad58bd74470fbf9f378da381f2be27f483fdfd",
+      "count": 12,
+      "time_limit_ms": 1000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 7,
+          "TLE": 5
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1249,
+          2614
+        ],
+        [
+          197,
+          1120,
+          2531
+        ],
+        [
+          117,
+          711,
+          1405
+        ],
+        [
+          222,
+          1277,
+          2902
+        ],
+        [
+          222,
+          1273,
+          2859
+        ]
+      ],
+      "all_players_ac_cases": 7,
+      "ac_subset_rank_sums": [
+        31,
+        19,
+        18,
+        11,
+        22
+      ],
+      "ac_subset_scope": "全5体ACの7件の参考集計。非ACを除いた結果を達成扱いしない。",
+      "candidate_change": "初期の2地点待ち合わせ・巡回同時探索",
+      "candidate_source_sha256": {
+        "main.rs": "a51f6ab8f3587e136844fbfd5e5e52e226bfa2372d93e8dae98c8d821b9e03cb",
+        "solver/planner.rs": "4fefbf058f06191d543fbf2846a0b2b4aea8dd6749ab5c2a4cba4ec8e731de41"
+      }
+    },
+    {
+      "run_id": "1791157039924138784-19772",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791157039924138784-19772/run.json",
+      "local_run_json": ".game/pool-g007-development/1791157039924138784-19772.json",
+      "manifest_sha256": "e7dcc8c9ae76c0b29fab20320cc7bdc7297b49c74a287d679574169a2e3fb453",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1259,
+          2707
+        ],
+        [
+          222,
+          1269,
+          2788
+        ],
+        [
+          222,
+          1213,
+          2607
+        ],
+        [
+          222,
+          1275,
+          2831
+        ],
+        [
+          222,
+          1275,
+          2837
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "11",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 11,
+      "ac_subset_rank_sums": [
+        45,
+        36,
+        25,
+        29,
+        26
+      ],
+      "ac_subset_scope": "全5体ACの11件のみの参考集計。非AC除外を達成扱いしない。",
+      "candidate_change": "3地点補給と翌日燃料余裕の強化v2",
+      "candidate_source_sha256": {
+        "main.rs": "a51f6ab8f3587e136844fbfd5e5e52e226bfa2372d93e8dae98c8d821b9e03cb",
+        "solver/planner.rs": "b473d14ea63beb2692072d45aa6db77e682f863a33f4c307c5945b9d766dad40"
+      },
+      "comparison_to_v1": "制限時間が1秒から3秒へ異なるため、同条件の改善比較とは扱わない。"
+    },
+    {
+      "run_id": "1791157268540782886-19936",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791157268540782886-19936/run.json",
+      "local_run_json": ".game/pool-g007-development/1791157268540782886-19936.json",
+      "manifest_sha256": "a1610f5ea920de57f09d97dc366ff710b20e261fea9b3b22ce9c117e364c80bc",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1254,
+          2594
+        ],
+        [
+          222,
+          1267,
+          2798
+        ],
+        [
+          222,
+          1199,
+          2624
+        ],
+        [
+          222,
+          1220,
+          2635
+        ],
+        [
+          222,
+          1275,
+          2868
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "2",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 3,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 10,
+      "ac_subset_rank_sums": [
+        45,
+        33,
+        22,
+        20,
+        25
+      ],
+      "ac_subset_scope": "全員ACの10件の参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v3 二日共同探索",
+      "comparison_to_v2": {
+        "common_all_ac_cases": 9,
+        "excluded_cases": 3,
+        "wins_draws_losses": [
+          3,
+          0,
+          6
+        ],
+        "before_scores": [
+          142,
+          860,
+          1656
+        ],
+        "after_scores": [
+          142,
+          859,
+          1593
+        ]
+      },
+      "candidate_source_sha256": {
+        "main.rs": "a51f6ab8f3587e136844fbfd5e5e52e226bfa2372d93e8dae98c8d821b9e03cb",
+        "solver/planner.rs": "029ae8b02bd7670258513b644789e58903d9d021b29dbff83ccdcb5f6f8239ce"
+      }
+    },
+    {
+      "run_id": "1791157638243456415-20134",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791157638243456415-20134/run.json",
+      "local_run_json": ".game/pool-g007-development/1791157638243456415-20134.json",
+      "manifest_sha256": "b71082a94866e804b68368cc6f16da60bffd6fe4745ccd81a4986a1b26c4276f",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 10,
+          "TLE": 2
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1264,
+          2601
+        ],
+        [
+          222,
+          1271,
+          2786
+        ],
+        [
+          222,
+          1189,
+          2597
+        ],
+        [
+          222,
+          1222,
+          2624
+        ],
+        [
+          222,
+          1273,
+          2857
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "2",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "5",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 3,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 9,
+      "ac_subset_rank_sums": [
+        42,
+        34,
+        18,
+        12,
+        24
+      ],
+      "ac_subset_scope": "全員ACの9件の参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v4 三経路候補・日を跨ぐ訪問移動・両日担当交換・挿入位置列挙",
+      "comparison_to_v3": {
+        "common_all_ac_cases": 9,
+        "excluded_cases": 3,
+        "wins_draws_losses": [
+          7,
+          0,
+          2
+        ],
+        "before_scores": [
+          145,
+          849,
+          1672
+        ],
+        "after_scores": [
+          145,
+          856,
+          1675
+        ]
+      },
+      "candidate_source_sha256": {
+        "main.rs": "a51f6ab8f3587e136844fbfd5e5e52e226bfa2372d93e8dae98c8d821b9e03cb",
+        "solver/planner.rs": "b14cf57fcb0dc0cd6f36c159768720b86a46686bbaff4e3ede8c3ca9a440af26"
+      }
+    },
+    {
+      "run_id": "1791158319050018368-20459",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791158319050018368-20459/run.json",
+      "local_run_json": ".game/pool-g007-development/1791158319050018368-20459.json",
+      "manifest_sha256": "3b3b894572e11370815144c881ddd1091cd5098f2a2844a4195f84eb4b2cefc9",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        55,
+        36,
+        28,
+        26,
+        30
+      ],
+      "score_totals": [
+        [
+          222,
+          1270,
+          2641
+        ],
+        [
+          222,
+          1272,
+          2843
+        ],
+        [
+          222,
+          1277,
+          2860
+        ],
+        [
+          222,
+          1277,
+          2879
+        ],
+        [
+          222,
+          1275,
+          2875
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 4,
+          "rank_sums": [
+            16,
+            15,
+            8,
+            8,
+            10
+          ],
+          "target_scores": [
+            48,
+            330,
+            593
+          ]
+        },
+        "semifinal": {
+          "count": 4,
+          "rank_sums": [
+            19,
+            13,
+            9,
+            8,
+            11
+          ],
+          "target_scores": [
+            69,
+            393,
+            806
+          ]
+        },
+        "final": {
+          "count": 4,
+          "rank_sums": [
+            20,
+            8,
+            11,
+            10,
+            9
+          ],
+          "target_scores": [
+            105,
+            547,
+            1242
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v5 保守的翌日交通と補給待ち合わせ共同変更を10秒で確認",
+      "comparisons": {},
+      "candidate_source_sha256": {
+        "main.rs": "a51f6ab8f3587e136844fbfd5e5e52e226bfa2372d93e8dae98c8d821b9e03cb",
+        "solver/planner.rs": "f1d4e16e4d649ba93f4308e8c2b865d025005711eecacebcf79449a1b9664e7d"
+      }
+    },
+    {
+      "run_id": "1791158251939465763-20311",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791158251939465763-20311/run.json",
+      "local_run_json": ".game/pool-g007-development/1791158251939465763-20311.json",
+      "manifest_sha256": "df90135743c211fe13fbd968fc30917d15142d37099c048510dabdcab3ddf960",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1270,
+          2636
+        ],
+        [
+          222,
+          1272,
+          2857
+        ],
+        [
+          222,
+          1201,
+          2628
+        ],
+        [
+          222,
+          1277,
+          2848
+        ],
+        [
+          222,
+          1275,
+          2884
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "2",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 11,
+      "ac_subset_rank_sums": [
+        50,
+        30,
+        27,
+        29,
+        23
+      ],
+      "ac_subset_scope": "全員ACの11件の参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v5 保守的翌日交通・補給待ち合わせ共同変更",
+      "comparison_to_v4_official_cui": {
+        "baseline": "1791157638243456415-20134",
+        "candidate": "1791158251939465763-20311",
+        "accepted": 9,
+        "different": 0,
+        "nonAc": 3,
+        "before_scores": {
+          "uniqueBrands": 145,
+          "dailyBrands": 856,
+          "udon": 1675
+        },
+        "after_scores": {
+          "uniqueBrands": 145,
+          "dailyBrands": 860,
+          "udon": 1713
+        },
+        "outcomes": {
+          "wins": 4,
+          "draws": 1,
+          "losses": 4
+        }
+      },
+      "candidate_source_sha256": {
+        "main.rs": "a51f6ab8f3587e136844fbfd5e5e52e226bfa2372d93e8dae98c8d821b9e03cb",
+        "solver/planner.rs": "f1d4e16e4d649ba93f4308e8c2b865d025005711eecacebcf79449a1b9664e7d"
+      }
+    },
+    {
+      "run_id": "1791158844403488622-20584",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791158844403488622-20584/run.json",
+      "local_run_json": ".game/pool-g007-development/1791158844403488622-20584.json",
+      "manifest_sha256": "34ab0d29a584060f846d1c01939a10d7af2785d6b686163c22d1fe72c176d462",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 10,
+          "TLE": 2
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1262,
+          2652
+        ],
+        [
+          222,
+          1272,
+          2838
+        ],
+        [
+          222,
+          1189,
+          2499
+        ],
+        [
+          222,
+          1275,
+          2867
+        ],
+        [
+          222,
+          1274,
+          2850
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "2",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 10,
+      "ac_subset_rank_sums": [
+        45,
+        27,
+        23,
+        18,
+        32
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v6 移動待機途中の正確な補給とエンジン照合",
+      "planner_sha256": "7fbd9eb1340d63fc729518c8acffccd27a87cb476948746ac0d4c7898942fec8",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791158844403488622-20584",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_failure_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderr12件の診断件数"
+        },
+        "compare": {
+          "baseline": "1791158251939465763-20311",
+          "candidate": "1791158844403488622-20584",
+          "accepted": 10,
+          "different": 0,
+          "nonAc": 2,
+          "before_scores": {
+            "uniqueBrands": 170,
+            "dailyBrands": 1010,
+            "udon": 1945
+          },
+          "after_scores": {
+            "uniqueBrands": 170,
+            "dailyBrands": 1003,
+            "udon": 1969
+          },
+          "outcomes": {
+            "wins": 3,
+            "draws": 2,
+            "losses": 5
+          }
+        }
+      }
+    },
+    {
+      "run_id": "1791159448577681377-20799",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791159448577681377-20799/run.json",
+      "local_run_json": ".game/pool-g007-development/1791159448577681377-20799.json",
+      "manifest_sha256": "6c523bcd706bc3e7e41e00bd5cde0ab3224563b6ed2abc17806e58d93f9e1dbf",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 10,
+          "TLE": 2
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1264,
+          2626
+        ],
+        [
+          222,
+          1271,
+          2832
+        ],
+        [
+          221,
+          1132,
+          2463
+        ],
+        [
+          222,
+          1277,
+          2879
+        ],
+        [
+          222,
+          1273,
+          2853
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "2",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "11",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 10,
+      "ac_subset_rank_sums": [
+        41,
+        30,
+        25,
+        17,
+        32
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v7 短経路優先・初期訪問先挿入列挙・補給車候補比較",
+      "planner_sha256": "d3b2baff2856474d6a039f2f527603144992e844dd25c964037389367664795b",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791159448577681377-20799",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_failure_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderr12件の診断件数"
+        },
+        "compare": {
+          "baseline": "1791158844403488622-20584",
+          "candidate": "1791159448577681377-20799",
+          "accepted": 9,
+          "different": 0,
+          "nonAc": 3,
+          "before_scores": {
+            "uniqueBrands": 142,
+            "dailyBrands": 863,
+            "udon": 1656
+          },
+          "after_scores": {
+            "uniqueBrands": 142,
+            "dailyBrands": 867,
+            "udon": 1642
+          },
+          "outcomes": {
+            "wins": 6,
+            "draws": 1,
+            "losses": 2
+          }
+        }
+      }
+    },
+    {
+      "run_id": "1791160038326810182-21008",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791160038326810182-21008/run.json",
+      "local_run_json": ".game/pool-g007-development/1791160038326810182-21008.json",
+      "manifest_sha256": "72585ce8ffd06c29e1705199da188f2ecf6baa1e2e7d0c5e0efc880e53cf9b8f",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "all_players_ac": true,
+      "rank_sums": [
+        56,
+        32,
+        29,
+        27,
+        32
+      ],
+      "score_totals": [
+        [
+          222,
+          1256,
+          2546
+        ],
+        [
+          222,
+          1274,
+          2843
+        ],
+        [
+          222,
+          1275,
+          2766
+        ],
+        [
+          222,
+          1277,
+          2855
+        ],
+        [
+          222,
+          1274,
+          2858
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 4,
+          "rank_sums": [
+            16,
+            13,
+            6,
+            8,
+            15
+          ],
+          "target_scores": [
+            48,
+            331,
+            582
+          ]
+        },
+        "semifinal": {
+          "count": 4,
+          "rank_sums": [
+            20,
+            11,
+            7,
+            10,
+            11
+          ],
+          "target_scores": [
+            69,
+            380,
+            792
+          ]
+        },
+        "final": {
+          "count": 4,
+          "rank_sums": [
+            20,
+            8,
+            16,
+            9,
+            6
+          ],
+          "target_scores": [
+            105,
+            545,
+            1172
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v8: 補給地点を3箇所から6箇所へ増加。短縮評価では成績低下のため採用せず。",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791160038326810182-21008",
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderr12件の診断件数"
+      },
+      "planner_sha256": "9fe9f39feac3e5040b9f34572810a758f9b04d749e36ab470fd0ea4e4ba3d06f",
+      "verified_cui_comparison": {
+        "baseline": "1791159448577681377-20799",
+        "candidate": "1791160038326810182-21008",
+        "accepted": 10,
+        "different": 0,
+        "nonAc": 2,
+        "before_scores": {
+          "uniqueBrands": 170,
+          "dailyBrands": 1007,
+          "udon": 2136
+        },
+        "after_scores": {
+          "uniqueBrands": 170,
+          "dailyBrands": 1000,
+          "udon": 2068
+        },
+        "outcomes": {
+          "wins": 2,
+          "draws": 0,
+          "losses": 8
+        }
+      }
+    },
+    {
+      "run_id": "1791160853341857420-21226",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791160853341857420-21226/run.json",
+      "local_run_json": ".game/pool-g007-development/1791160853341857420-21226.json",
+      "manifest_sha256": "6197b74480106e9958f33b9d3dbe1e057c96558087d40f456e44f4ac1f16fcdd",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 10,
+          "TLE": 2
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1264,
+          2546
+        ],
+        [
+          222,
+          1270,
+          2833
+        ],
+        [
+          222,
+          1187,
+          2434
+        ],
+        [
+          222,
+          1274,
+          2881
+        ],
+        [
+          222,
+          1274,
+          2859
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "5",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 10,
+      "ac_subset_rank_sums": [
+        45,
+        24,
+        26,
+        19,
+        32
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v9: 補給3箇所へ戻し、日末の途中移動と任意位置からの翌日経路を追加",
+      "planner_sha256": "46eb569b5deb857d655834f7d0f199219fd29bc02165178765bfb2fd3040f0d2",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791160853341857420-21226",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderr12件の診断件数"
+        },
+        "compare": {
+          "baseline": "1791160038326810182-21008",
+          "candidate": "1791160853341857420-21226",
+          "accepted": 10,
+          "different": 0,
+          "nonAc": 2,
+          "before_scores": {
+            "uniqueBrands": 169,
+            "dailyBrands": 967,
+            "udon": 1852
+          },
+          "after_scores": {
+            "uniqueBrands": 169,
+            "dailyBrands": 975,
+            "udon": 1842
+          },
+          "outcomes": {
+            "wins": 5,
+            "draws": 1,
+            "losses": 4
+          }
+        }
+      }
+    },
+    {
+      "run_id": "1791161229587538329-21426",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791161229587538329-21426/run.json",
+      "local_run_json": ".game/pool-g007-development/1791161229587538329-21426.json",
+      "manifest_sha256": "f41ad3e29ab077839d68bef4bdf4704876d8a8a6d54e67ba44ca6a0656709219",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1262,
+          2603
+        ],
+        [
+          222,
+          1268,
+          2822
+        ],
+        [
+          222,
+          1275,
+          2751
+        ],
+        [
+          222,
+          1246,
+          2754
+        ],
+        [
+          222,
+          1275,
+          2843
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 3,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 11,
+      "ac_subset_rank_sums": [
+        51,
+        37,
+        25,
+        21,
+        27
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v10: 2台の訪問をまとめて再配置し、変更のない車両の評価を再利用",
+      "planner_sha256": "89c044f5b4a62d33ad226d23766e28c4c35983838f3a48d3fc428971ecfa175e",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791161229587538329-21426",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderr12件の診断件数"
+        },
+        "compare": {
+          "baseline": "1791160853341857420-21226",
+          "candidate": "1791161229587538329-21426",
+          "accepted": 10,
+          "different": 0,
+          "nonAc": 2,
+          "before_scores": {
+            "uniqueBrands": 169,
+            "dailyBrands": 975,
+            "udon": 1842
+          },
+          "after_scores": {
+            "uniqueBrands": 169,
+            "dailyBrands": 974,
+            "udon": 1856
+          },
+          "outcomes": {
+            "wins": 6,
+            "draws": 0,
+            "losses": 4
+          }
+        }
+      }
+    },
+    {
+      "run_id": "1791161831523847201-21639",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791161831523847201-21639/run.json",
+      "local_run_json": ".game/pool-g007-development/1791161831523847201-21639.json",
+      "manifest_sha256": "b234cd8a3bc0d2389c2ef6c91b36bd77b9bc16ab9b762490194f1f346bcd85db",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1263,
+          2590
+        ],
+        [
+          222,
+          1267,
+          2814
+        ],
+        [
+          221,
+          1182,
+          2589
+        ],
+        [
+          222,
+          1273,
+          2859
+        ],
+        [
+          222,
+          1273,
+          2851
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "5",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 11,
+      "ac_subset_rank_sums": [
+        49,
+        34,
+        21,
+        29,
+        28
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v11: 翌日補給地点を実座標で保持し、車種選択時間に初日計画を先行探索",
+      "planner_sha256": "9d789c950be002728068ed0bfe3d2fd0bddb88cbe33015a961dcf65d27947dee",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791161831523847201-21639",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderr12件の診断件数"
+        },
+        "compare": {
+          "baseline": "1791161229587538329-21426",
+          "candidate": "1791161831523847201-21639",
+          "accepted": 10,
+          "different": 0,
+          "nonAc": 2,
+          "before_scores": {
+            "uniqueBrands": 169,
+            "dailyBrands": 974,
+            "udon": 1856
+          },
+          "after_scores": {
+            "uniqueBrands": 169,
+            "dailyBrands": 976,
+            "udon": 1858
+          },
+          "outcomes": {
+            "wins": 4,
+            "draws": 1,
+            "losses": 5
+          }
+        }
+      }
+    },
+    {
+      "run_id": "1791161909000394588-21828",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791161909000394588-21828/run.json",
+      "local_run_json": ".game/pool-g007-development/1791161909000394588-21828.json",
+      "manifest_sha256": "f8a05a326283072e696b6e60570a64fb564876d1828f937be57f421352489ffd",
+      "count": 3,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        15,
+        4,
+        7,
+        7,
+        11
+      ],
+      "score_totals": [
+        [
+          54,
+          261,
+          365
+        ],
+        [
+          54,
+          267,
+          393
+        ],
+        [
+          54,
+          265,
+          391
+        ],
+        [
+          54,
+          263,
+          402
+        ],
+        [
+          54,
+          264,
+          384
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 1,
+          "rank_sums": [
+            5,
+            1,
+            2,
+            4,
+            3
+          ],
+          "target_scores": [
+            12,
+            52,
+            63
+          ]
+        },
+        "semifinal": {
+          "count": 1,
+          "rank_sums": [
+            5,
+            2,
+            2,
+            1,
+            4
+          ],
+          "target_scores": [
+            18,
+            89,
+            111
+          ]
+        },
+        "final": {
+          "count": 1,
+          "rank_sums": [
+            5,
+            1,
+            3,
+            2,
+            4
+          ],
+          "target_scores": [
+            24,
+            120,
+            191
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v11: 車種選択時間を利用した既定時間3件の探索到達点確認",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791161909000394588-21828",
+        "log_files": 3,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderr3件の診断件数"
+      },
+      "planner_sha256": "9d789c950be002728068ed0bfe3d2fd0bddb88cbe33015a961dcf65d27947dee"
+    },
+    {
+      "run_id": "1791163045637217597-21967",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791163045637217597-21967/run.json",
+      "local_run_json": ".game/pool-g007-development/1791163045637217597-21967.json",
+      "manifest_sha256": "f74bb611099e7ca2ae48037632eda9f4f0716e02586fdff74c6bc36238c185fc",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          221,
+          1259,
+          2545
+        ],
+        [
+          222,
+          1269,
+          2851
+        ],
+        [
+          222,
+          1259,
+          2731
+        ],
+        [
+          222,
+          1248,
+          2747
+        ],
+        [
+          222,
+          1276,
+          2875
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "2",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 3,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 10,
+      "ac_subset_rank_sums": [
+        46,
+        28,
+        22,
+        21,
+        27
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v12: 補給車出発待機と選択時共同探索、環境上書き無し",
+      "planner_sha256": "3d450f6324f95de27b7fedb133bcf55d45a08c451d3b9ad25ffd6151834f3b38",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791163045637217597-21967",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderr12件の診断件数"
+        },
+        "compare": {
+          "baseline": "1791161831523847201-21639",
+          "candidate": "1791163045637217597-21967",
+          "accepted": 9,
+          "different": 0,
+          "nonAc": 3,
+          "before_scores": {
+            "uniqueBrands": 145,
+            "dailyBrands": 858,
+            "udon": 1686
+          },
+          "after_scores": {
+            "uniqueBrands": 144,
+            "dailyBrands": 854,
+            "udon": 1688
+          },
+          "outcomes": {
+            "wins": 2,
+            "draws": 0,
+            "losses": 7
+          }
+        }
+      },
+      "solver_identity_condition_changed": false,
+      "reported_process_environment_overrides": {},
+      "environment_evidence_scope": "開発者の実行報告。game設定JSONのenvには保存されない継承環境。公式CUIの相手識別差は独立確認済み。"
+    },
+    {
+      "run_id": "1791163125413202786-22122",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791163125413202786-22122/run.json",
+      "local_run_json": ".game/pool-g007-development/1791163125413202786-22122.json",
+      "manifest_sha256": "a835dd48d3aca2c1e53b98e98257d3954eceee3437d05e0b763276061c2c2122",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1274,
+          2787
+        ],
+        [
+          222,
+          1275,
+          2821
+        ],
+        [
+          222,
+          1208,
+          2488
+        ],
+        [
+          222,
+          1277,
+          2893
+        ],
+        [
+          222,
+          1275,
+          2837
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 11,
+      "ac_subset_rank_sums": [
+        39,
+        34,
+        26,
+        17,
+        42
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v12切り分け: future=0/reserve=15、環境条件変更のため公式同条件比較不成立",
+      "planner_sha256": "3d450f6324f95de27b7fedb133bcf55d45a08c451d3b9ad25ffd6151834f3b38",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791163125413202786-22122",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderr12件の診断件数"
+        },
+        "compare": {
+          "baseline": "1791163045637217597-21967",
+          "candidate": "1791163125413202786-22122",
+          "accepted": 0,
+          "different": 12,
+          "nonAc": 0,
+          "before_scores": null,
+          "after_scores": null,
+          "outcomes": null
+        }
+      },
+      "solver_identity_condition_changed": true,
+      "reported_process_environment_overrides": {
+        "PROCON37_G007_FUTURE_WEIGHT": "0",
+        "PROCON37_G007_RESERVE_WEIGHT": "15"
+      },
+      "environment_evidence_scope": "開発者の実行報告。game設定JSONのenvには保存されない継承環境。公式CUIの相手識別差は独立確認済み。"
+    },
+    {
+      "run_id": "1791163202728615167-22259",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791163202728615167-22259/run.json",
+      "local_run_json": ".game/pool-g007-development/1791163202728615167-22259.json",
+      "manifest_sha256": "04cf8a23bf7ab5c6cafdf06c870374cb41b6976ef240710997595e718ae8ccde",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1271,
+          2773
+        ],
+        [
+          222,
+          1274,
+          2844
+        ],
+        [
+          222,
+          1197,
+          2647
+        ],
+        [
+          222,
+          1248,
+          2737
+        ],
+        [
+          222,
+          1274,
+          2863
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "2",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 3,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 10,
+      "ac_subset_rank_sums": [
+        42,
+        31,
+        25,
+        23,
+        24
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v12切り分け: future=0/reserve=5、環境条件変更のため公式同条件比較不成立",
+      "planner_sha256": "3d450f6324f95de27b7fedb133bcf55d45a08c451d3b9ad25ffd6151834f3b38",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791163202728615167-22259",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderr12件の診断件数"
+        },
+        "compare": {
+          "baseline": "1791163045637217597-21967",
+          "candidate": "1791163202728615167-22259",
+          "accepted": 0,
+          "different": 12,
+          "nonAc": 0,
+          "before_scores": null,
+          "after_scores": null,
+          "outcomes": null
+        }
+      },
+      "solver_identity_condition_changed": true,
+      "reported_process_environment_overrides": {
+        "PROCON37_G007_FUTURE_WEIGHT": "0",
+        "PROCON37_G007_RESERVE_WEIGHT": "5"
+      },
+      "environment_evidence_scope": "開発者の実行報告。game設定JSONのenvには保存されない継承環境。公式CUIの相手識別差は独立確認済み。"
+    },
+    {
+      "run_id": "1791163397815586618-22412",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791163397815586618-22412/run.json",
+      "local_run_json": ".game/pool-g007-development/1791163397815586618-22412.json",
+      "manifest_sha256": "21b90cfdc7f17016d06de3b1ed24de22e1cc5a8eb2698ad8a2b0350f09b5ad40",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 9,
+          "TLE": 3
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1271,
+          2782
+        ],
+        [
+          222,
+          1274,
+          2859
+        ],
+        [
+          222,
+          1095,
+          2341
+        ],
+        [
+          222,
+          1275,
+          2865
+        ],
+        [
+          222,
+          1273,
+          2858
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "2",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "5",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 9,
+      "ac_subset_rank_sums": [
+        35,
+        27,
+        17,
+        22,
+        29
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v12切り分け: future=0/reserve=30、環境条件変更のため公式同条件比較不成立",
+      "planner_sha256": "3d450f6324f95de27b7fedb133bcf55d45a08c451d3b9ad25ffd6151834f3b38",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791163397815586618-22412",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderr12件の診断件数"
+        },
+        "compare": {
+          "baseline": "1791163045637217597-21967",
+          "candidate": "1791163397815586618-22412",
+          "accepted": 0,
+          "different": 12,
+          "nonAc": 0,
+          "before_scores": null,
+          "after_scores": null,
+          "outcomes": null
+        }
+      },
+      "solver_identity_condition_changed": true,
+      "reported_process_environment_overrides": {
+        "PROCON37_G007_FUTURE_WEIGHT": "0",
+        "PROCON37_G007_RESERVE_WEIGHT": "30"
+      },
+      "environment_evidence_scope": "開発者の実行報告。game設定JSONのenvには保存されない継承環境。公式CUIの相手識別差は独立確認済み。"
+    },
+    {
+      "run_id": "1791163642819693870-22525",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791163642819693870-22525/run.json",
+      "local_run_json": ".game/pool-g007-development/1791163642819693870-22525.json",
+      "manifest_sha256": "3b7672fdc027856ce86bcc99bb31bc867c4522f95986ac37064d0e066a02fe64",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "all_players_ac": true,
+      "rank_sums": [
+        45,
+        43,
+        32,
+        26,
+        32
+      ],
+      "score_totals": [
+        [
+          222,
+          1272,
+          2757
+        ],
+        [
+          222,
+          1274,
+          2795
+        ],
+        [
+          222,
+          1275,
+          2768
+        ],
+        [
+          222,
+          1276,
+          2866
+        ],
+        [
+          222,
+          1274,
+          2859
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 4,
+          "rank_sums": [
+            12,
+            19,
+            5,
+            9,
+            14
+          ],
+          "target_scores": [
+            48,
+            332,
+            614
+          ]
+        },
+        "semifinal": {
+          "count": 4,
+          "rank_sums": [
+            16,
+            14,
+            8,
+            9,
+            13
+          ],
+          "target_scores": [
+            69,
+            390,
+            831
+          ]
+        },
+        "final": {
+          "count": 4,
+          "rank_sums": [
+            17,
+            10,
+            19,
+            8,
+            5
+          ],
+          "target_scores": [
+            105,
+            550,
+            1312
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v13: 当日探索既定化・未取得種類優先・訪問列ビーム探索",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791163642819693870-22525",
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "planner_sha256": "dc5ce8755f58738b46887c501f0f481d6d424f14e4490a670d8e3f5878dc63e1",
+      "verified_cui_comparison": {
+        "baseline": "1791161831523847201-21639",
+        "candidate": "1791163642819693870-22525",
+        "accepted": 11,
+        "different": 0,
+        "nonAc": 1,
+        "before_scores": {
+          "uniqueBrands": 197,
+          "dailyBrands": 1116,
+          "udon": 2354
+        },
+        "after_scores": {
+          "uniqueBrands": 197,
+          "dailyBrands": 1122,
+          "udon": 2483
+        },
+        "outcomes": {
+          "wins": 9,
+          "draws": 0,
+          "losses": 2
+        }
+      }
+    },
+    {
+      "run_id": "1791163733990908426-22952",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791163733990908426-22952/run.json",
+      "local_run_json": ".game/pool-g007-development/1791163733990908426-22952.json",
+      "manifest_sha256": "3609519a7d4dc2b0174243c84dec7cdbe274c619fcc4e8a61d481cfde93d180d",
+      "count": 6,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        26,
+        20,
+        12,
+        15,
+        14
+      ],
+      "score_totals": [
+        [
+          111,
+          636,
+          1094
+        ],
+        [
+          111,
+          637,
+          1124
+        ],
+        [
+          111,
+          639,
+          1145
+        ],
+        [
+          111,
+          639,
+          1147
+        ],
+        [
+          111,
+          638,
+          1147
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 2,
+          "rank_sums": [
+            8,
+            9,
+            3,
+            5,
+            4
+          ],
+          "target_scores": [
+            25,
+            182,
+            386
+          ]
+        },
+        "semifinal": {
+          "count": 2,
+          "rank_sums": [
+            9,
+            6,
+            4,
+            4,
+            7
+          ],
+          "target_scores": [
+            37,
+            184,
+            232
+          ]
+        },
+        "final": {
+          "count": 2,
+          "rank_sums": [
+            9,
+            5,
+            5,
+            6,
+            3
+          ],
+          "target_scores": [
+            49,
+            270,
+            476
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v13: 当日探索既定化・未取得種類優先・訪問列ビーム探索",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791163733990908426-22952",
+        "log_files": 6,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "planner_sha256": "dc5ce8755f58738b46887c501f0f481d6d424f14e4490a670d8e3f5878dc63e1"
+    },
+    {
+      "run_id": "1791164242676761242-23090",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791164242676761242-23090/run.json",
+      "local_run_json": ".game/pool-g007-development/1791164242676761242-23090.json",
+      "manifest_sha256": "121481945e4b62dbfb531982bb2a6f75dd8727b1e75f84e9be9eab93cd050d75",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1273,
+          2824
+        ],
+        [
+          222,
+          1272,
+          2829
+        ],
+        [
+          222,
+          1238,
+          2746
+        ],
+        [
+          222,
+          1218,
+          2631
+        ],
+        [
+          222,
+          1275,
+          2842
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "2",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 3,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 10,
+      "ac_subset_rank_sums": [
+        31,
+        33,
+        25,
+        26,
+        33
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v14: 店舗外補給候補と2台分のビーム再構築",
+      "planner_sha256": "de3d8f5d44a12f0b63d49d425e8c448bddb00b6e8224523bf7389e3571fb74ae",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791164242676761242-23090",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderrの診断件数"
+        },
+        "compare": {
+          "baseline": "1791163642819693870-22525",
+          "candidate": "1791164242676761242-23090",
+          "accepted": 10,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 2,
+          "before_scores": {
+            "uniqueBrands": 170,
+            "dailyBrands": 1012,
+            "udon": 2049
+          },
+          "after_scores": {
+            "uniqueBrands": 170,
+            "dailyBrands": 1013,
+            "udon": 2097
+          },
+          "outcomes": {
+            "wins": 7,
+            "draws": 0,
+            "losses": 3
+          }
+        }
+      },
+      "verified_cui_comparison": {
+        "baseline": "1791163642819693870-22525",
+        "candidate": "1791164242676761242-23090",
+        "accepted": 10,
+        "different": 0,
+        "missing": 0,
+        "nonAc": 2,
+        "before_scores": {
+          "uniqueBrands": 170,
+          "dailyBrands": 1012,
+          "udon": 2049
+        },
+        "after_scores": {
+          "uniqueBrands": 170,
+          "dailyBrands": 1013,
+          "udon": 2097
+        },
+        "outcomes": {
+          "wins": 7,
+          "draws": 0,
+          "losses": 3
+        }
+      }
+    },
+    {
+      "run_id": "1791164338138633229-23277",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791164338138633229-23277/run.json",
+      "local_run_json": ".game/pool-g007-development/1791164338138633229-23277.json",
+      "manifest_sha256": "d0617f6e24dc8f82b0ecbe9f38cc5d512d2b7ca65608297b70b65c2a3886aab3",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        39,
+        41,
+        28,
+        36,
+        32
+      ],
+      "score_totals": [
+        [
+          222,
+          1275,
+          2851
+        ],
+        [
+          222,
+          1273,
+          2857
+        ],
+        [
+          222,
+          1278,
+          2869
+        ],
+        [
+          222,
+          1276,
+          2881
+        ],
+        [
+          222,
+          1277,
+          2866
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 4,
+          "rank_sums": [
+            11,
+            15,
+            6,
+            13,
+            13
+          ],
+          "target_scores": [
+            48,
+            333,
+            619
+          ]
+        },
+        "semifinal": {
+          "count": 4,
+          "rank_sums": [
+            13,
+            14,
+            10,
+            13,
+            8
+          ],
+          "target_scores": [
+            69,
+            392,
+            852
+          ]
+        },
+        "final": {
+          "count": 4,
+          "rank_sums": [
+            15,
+            12,
+            12,
+            10,
+            11
+          ],
+          "target_scores": [
+            105,
+            550,
+            1380
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v14: 店舗外補給候補と2台分のビーム再構築・10秒確認",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791164338138633229-23277",
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "planner_sha256": "de3d8f5d44a12f0b63d49d425e8c448bddb00b6e8224523bf7389e3571fb74ae",
+      "verified_cui_comparison": {
+        "baseline": "1791163733990908426-22952",
+        "candidate": "1791164338138633229-23277",
+        "accepted": 6,
+        "different": 0,
+        "missing": 6,
+        "nonAc": 0,
+        "before_scores": {
+          "uniqueBrands": 111,
+          "dailyBrands": 636,
+          "udon": 1094
+        },
+        "after_scores": {
+          "uniqueBrands": 111,
+          "dailyBrands": 639,
+          "udon": 1121
+        },
+        "outcomes": {
+          "wins": 5,
+          "draws": 0,
+          "losses": 1
+        }
+      }
+    },
+    {
+      "run_id": "1791164840924733524-23474",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791164840924733524-23474/run.json",
+      "local_run_json": ".game/pool-g007-development/1791164840924733524-23474.json",
+      "manifest_sha256": "d9ba376b97472c825853758f861b98b442f31db1149cffb5825c07705b81e2ff",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1274,
+          2814
+        ],
+        [
+          222,
+          1270,
+          2815
+        ],
+        [
+          222,
+          1210,
+          2582
+        ],
+        [
+          222,
+          1275,
+          2830
+        ],
+        [
+          222,
+          1274,
+          2844
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "11",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 11,
+      "ac_subset_rank_sums": [
+        29,
+        37,
+        30,
+        33,
+        29
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v15: 補給車途中移動と巡回車の途中補給待機・走行再開",
+      "planner_sha256": "cf8b2fd99741ad9e5088315ad7ce6a45ac2fe27a88f470495801d7e799d82d52",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791164840924733524-23474",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderrの診断件数"
+        },
+        "compare": {
+          "baseline": "1791164242676761242-23090",
+          "candidate": "1791164840924733524-23474",
+          "accepted": 9,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 3,
+          "before_scores": {
+            "uniqueBrands": 142,
+            "dailyBrands": 873,
+            "udon": 1757
+          },
+          "after_scores": {
+            "uniqueBrands": 142,
+            "dailyBrands": 874,
+            "udon": 1752
+          },
+          "outcomes": {
+            "wins": 5,
+            "draws": 0,
+            "losses": 4
+          }
+        }
+      },
+      "verified_cui_comparison": {
+        "baseline": "1791164242676761242-23090",
+        "candidate": "1791164840924733524-23474",
+        "accepted": 9,
+        "different": 0,
+        "missing": 0,
+        "nonAc": 3,
+        "before_scores": {
+          "uniqueBrands": 142,
+          "dailyBrands": 873,
+          "udon": 1757
+        },
+        "after_scores": {
+          "uniqueBrands": 142,
+          "dailyBrands": 874,
+          "udon": 1752
+        },
+        "outcomes": {
+          "wins": 5,
+          "draws": 0,
+          "losses": 4
+        }
+      }
+    },
+    {
+      "run_id": "1791164961549378891-23698",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791164961549378891-23698/run.json",
+      "local_run_json": ".game/pool-g007-development/1791164961549378891-23698.json",
+      "manifest_sha256": "25b3012bed514b1d59312c4bdaa4ed6a61bfcfa85e039b9f36bbea9c9bb94c92",
+      "count": 12,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        36,
+        47,
+        23,
+        30,
+        40
+      ],
+      "score_totals": [
+        [
+          222,
+          1274,
+          2856
+        ],
+        [
+          222,
+          1269,
+          2829
+        ],
+        [
+          222,
+          1275,
+          2898
+        ],
+        [
+          222,
+          1275,
+          2885
+        ],
+        [
+          222,
+          1275,
+          2871
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 4,
+          "rank_sums": [
+            10,
+            18,
+            7,
+            8,
+            15
+          ],
+          "target_scores": [
+            48,
+            332,
+            625
+          ]
+        },
+        "semifinal": {
+          "count": 4,
+          "rank_sums": [
+            12,
+            16,
+            7,
+            11,
+            13
+          ],
+          "target_scores": [
+            69,
+            392,
+            853
+          ]
+        },
+        "final": {
+          "count": 4,
+          "rank_sums": [
+            14,
+            13,
+            9,
+            11,
+            12
+          ],
+          "target_scores": [
+            105,
+            550,
+            1378
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v15: 途中補給待機と走行再開・10秒確認",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791164961549378891-23698",
+        "log_files": 12,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "planner_sha256": "cf8b2fd99741ad9e5088315ad7ce6a45ac2fe27a88f470495801d7e799d82d52",
+      "verified_cui_comparison": {
+        "baseline": "1791164338138633229-23277",
+        "candidate": "1791164961549378891-23698",
+        "accepted": 12,
+        "different": 0,
+        "missing": 0,
+        "nonAc": 0,
+        "before_scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1275,
+          "udon": 2851
+        },
+        "after_scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1274,
+          "udon": 2856
+        },
+        "outcomes": {
+          "wins": 6,
+          "draws": 0,
+          "losses": 6
+        }
+      }
+    },
+    {
+      "run_id": "1791165438904281891-23894",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791165438904281891-23894/run.json",
+      "local_run_json": ".game/pool-g007-development/1791165438904281891-23894.json",
+      "manifest_sha256": "748dd10ca5fbc2bb65ee012487400998b772fd610770866c79f5cb868fbd0d6f",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 11,
+          "TLE": 1
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1268,
+          2733
+        ],
+        [
+          222,
+          1270,
+          2841
+        ],
+        [
+          222,
+          1208,
+          2492
+        ],
+        [
+          222,
+          1248,
+          2783
+        ],
+        [
+          222,
+          1273,
+          2857
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            },
+            {
+              "id": 3,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 11,
+      "ac_subset_rank_sums": [
+        44,
+        31,
+        28,
+        17,
+        34
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v16: 翌日到達性終端評価・既定重み2",
+      "planner_sha256": "1d99305a586bf785c367f52f93d5c3d876736e02fae4e7b85d151f8cd7860445",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791165438904281891-23894",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderrの診断件数"
+        },
+        "compare": {
+          "baseline": "1791164840924733524-23474",
+          "candidate": "1791165438904281891-23894",
+          "accepted": 10,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 2,
+          "before_scores": {
+            "uniqueBrands": 166,
+            "dailyBrands": 994,
+            "udon": 1940
+          },
+          "after_scores": {
+            "uniqueBrands": 166,
+            "dailyBrands": 988,
+            "udon": 1878
+          },
+          "outcomes": {
+            "wins": 1,
+            "draws": 1,
+            "losses": 8
+          }
+        }
+      },
+      "target_arguments": [
+        "0"
+      ]
+    },
+    {
+      "run_id": "1791165543596448210-24119",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791165543596448210-24119/run.json",
+      "local_run_json": ".game/pool-g007-development/1791165543596448210-24119.json",
+      "manifest_sha256": "fc0064e0555863f2091e558a3bb3d029ccf0babfcd7b3eed27293bc1bb1e33ed",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 10,
+          "TLE": 2
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1276,
+          2803
+        ],
+        [
+          222,
+          1271,
+          2823
+        ],
+        [
+          221,
+          1105,
+          2260
+        ],
+        [
+          222,
+          1275,
+          2868
+        ],
+        [
+          222,
+          1276,
+          2830
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "5",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 10,
+      "ac_subset_rank_sums": [
+        21,
+        39,
+        28,
+        23,
+        30
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v16: 翌日到達性終端評価・重み0",
+      "planner_sha256": "1d99305a586bf785c367f52f93d5c3d876736e02fae4e7b85d151f8cd7860445",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791165543596448210-24119",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderrの診断件数"
+        },
+        "compare": {
+          "baseline": "1791165438904281891-23894",
+          "candidate": "1791165543596448210-24119",
+          "accepted": 10,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 2,
+          "before_scores": {
+            "uniqueBrands": 169,
+            "dailyBrands": 978,
+            "udon": 1907
+          },
+          "after_scores": {
+            "uniqueBrands": 169,
+            "dailyBrands": 986,
+            "udon": 1992
+          },
+          "outcomes": {
+            "wins": 8,
+            "draws": 1,
+            "losses": 1
+          }
+        }
+      },
+      "target_arguments": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "run_id": "1791165682669673189-24265",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791165682669673189-24265/run.json",
+      "local_run_json": ".game/pool-g007-development/1791165682669673189-24265.json",
+      "manifest_sha256": "f82cb780125c24e9395654c2e8c887747808015298aaffe0eae3c4364972596a",
+      "count": 12,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 9,
+          "TLE": 3
+        },
+        {
+          "AC": 12
+        },
+        {
+          "AC": 12
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          222,
+          1271,
+          2793
+        ],
+        [
+          222,
+          1274,
+          2835
+        ],
+        [
+          222,
+          1118,
+          2339
+        ],
+        [
+          222,
+          1275,
+          2858
+        ],
+        [
+          222,
+          1273,
+          2845
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "2",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "5",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 9,
+      "ac_subset_rank_sums": [
+        31,
+        28,
+        19,
+        20,
+        27
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v16: 翌日到達性終端評価・重み0.25",
+      "planner_sha256": "1d99305a586bf785c367f52f93d5c3d876736e02fae4e7b85d151f8cd7860445",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791165682669673189-24265",
+          "log_files": 12,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderrの診断件数"
+        },
+        "compare": {
+          "baseline": "1791165543596448210-24119",
+          "candidate": "1791165682669673189-24265",
+          "accepted": 9,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 3,
+          "before_scores": {
+            "uniqueBrands": 145,
+            "dailyBrands": 866,
+            "udon": 1798
+          },
+          "after_scores": {
+            "uniqueBrands": 145,
+            "dailyBrands": 861,
+            "udon": 1785
+          },
+          "outcomes": {
+            "wins": 1,
+            "draws": 0,
+            "losses": 8
+          }
+        }
+      },
+      "target_arguments": [
+        "0",
+        "0.25"
+      ]
+    },
+    {
+      "run_id": "1791165856325785508-24439",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791165856325785508-24439/run.json",
+      "local_run_json": ".game/pool-g007-development/1791165856325785508-24439.json",
+      "manifest_sha256": "457e86e2312273b5fa9e6d6b872b74a677030faa6dfa2e185c30592de49f2453",
+      "count": 24,
+      "time_limit_ms": 3000,
+      "formal": false,
+      "all_players_ac": false,
+      "player_verdicts": [
+        {
+          "AC": 24
+        },
+        {
+          "AC": 24
+        },
+        {
+          "AC": 17,
+          "TLE": 7
+        },
+        {
+          "AC": 23,
+          "TLE": 1
+        },
+        {
+          "AC": 24
+        }
+      ],
+      "all_cases_score_totals": [
+        [
+          434,
+          2947,
+          6968
+        ],
+        [
+          434,
+          2940,
+          6923
+        ],
+        [
+          410,
+          2490,
+          5473
+        ],
+        [
+          406,
+          2815,
+          6538
+        ],
+        [
+          434,
+          2949,
+          7066
+        ]
+      ],
+      "non_ac_cases": [
+        {
+          "seed": "2",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "8",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            },
+            {
+              "id": 3,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "11",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "14",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "17",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "20",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        },
+        {
+          "seed": "23",
+          "players": [
+            {
+              "id": 2,
+              "status": "TLE"
+            }
+          ]
+        }
+      ],
+      "all_players_ac_cases": 17,
+      "ac_subset_rank_sums": [
+        50,
+        62,
+        43,
+        32,
+        47
+      ],
+      "ac_subset_scope": "全員ACケースのみの参考順位。非AC除外を達成扱いしない。",
+      "candidate_change": "v16: 到達性重み0の後半seed確認・3秒24件",
+      "planner_sha256": "1d99305a586bf785c367f52f93d5c3d876736e02fae4e7b85d151f8cd7860445",
+      "verified_evidence": {
+        "diagnostic": {
+          "run_id": "1791165856325785508-24439",
+          "log_files": 24,
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0,
+          "scope": "対象stderrの診断件数"
+        },
+        "compare": {
+          "baseline": "1791165543596448210-24119",
+          "candidate": "1791165856325785508-24439",
+          "accepted": 8,
+          "different": 0,
+          "missing": 12,
+          "nonAc": 4,
+          "before_scores": {
+            "uniqueBrands": 117,
+            "dailyBrands": 726,
+            "udon": 1454
+          },
+          "after_scores": {
+            "uniqueBrands": 117,
+            "dailyBrands": 724,
+            "udon": 1450
+          },
+          "outcomes": {
+            "wins": 2,
+            "draws": 1,
+            "losses": 5
+          }
+        }
+      },
+      "target_arguments": [
+        "0",
+        "0"
+      ],
+      "verified_cui_comparison": {
+        "baseline": "1791165543596448210-24119",
+        "candidate": "1791165856325785508-24439",
+        "accepted": 8,
+        "different": 0,
+        "missing": 12,
+        "nonAc": 4,
+        "before_scores": {
+          "uniqueBrands": 117,
+          "dailyBrands": 726,
+          "udon": 1454
+        },
+        "after_scores": {
+          "uniqueBrands": 117,
+          "dailyBrands": 724,
+          "udon": 1450
+        },
+        "outcomes": {
+          "wins": 2,
+          "draws": 1,
+          "losses": 5
+        }
+      }
+    },
+    {
+      "run_id": "1791166019856478289-24642",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791166019856478289-24642/run.json",
+      "local_run_json": ".game/pool-g007-development/1791166019856478289-24642.json",
+      "manifest_sha256": "ee99611bbea11da342c5550c96e0e68da569979404367e1a88d88067618a44d3",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        83,
+        69,
+        71,
+        59,
+        63
+      ],
+      "score_totals": [
+        [
+          434,
+          2947,
+          7052
+        ],
+        [
+          434,
+          2943,
+          7015
+        ],
+        [
+          434,
+          2949,
+          7058
+        ],
+        [
+          434,
+          2953,
+          7174
+        ],
+        [
+          434,
+          2953,
+          7123
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            28,
+            24,
+            15,
+            20,
+            24
+          ],
+          "target_scores": [
+            96,
+            703,
+            1455
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            29,
+            19,
+            27,
+            22,
+            18
+          ],
+          "target_scores": [
+            142,
+            911,
+            1890
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            26,
+            26,
+            29,
+            17,
+            21
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3707
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v16: 到達性重み0の後半seed確認・10秒24件",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791166019856478289-24642",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0",
+        "0"
+      ],
+      "planner_sha256": "1d99305a586bf785c367f52f93d5c3d876736e02fae4e7b85d151f8cd7860445",
+      "verified_cui_comparison": {
+        "baseline": "1791164961549378891-23698",
+        "candidate": "1791166019856478289-24642",
+        "accepted": 12,
+        "different": 0,
+        "missing": 12,
+        "nonAc": 0,
+        "before_scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1274,
+          "udon": 2856
+        },
+        "after_scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1273,
+          "udon": 2843
+        },
+        "outcomes": {
+          "wins": 5,
+          "draws": 2,
+          "losses": 5
+        }
+      }
+    },
+    {
+      "run_id": "1791166648663645364-24979",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791166648663645364-24979/run.json",
+      "local_run_json": ".game/pool-g007-development/1791166648663645364-24979.json",
+      "manifest_sha256": "6248ec3f9a85a171a55bb7d5b73ef6254596cfaea52c15456c8e55a3f6729f4f",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        80,
+        82,
+        72,
+        52,
+        57
+      ],
+      "score_totals": [
+        [
+          434,
+          2943,
+          7067
+        ],
+        [
+          434,
+          2941,
+          7043
+        ],
+        [
+          434,
+          2945,
+          7082
+        ],
+        [
+          434,
+          2956,
+          7184
+        ],
+        [
+          434,
+          2947,
+          7127
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            22,
+            33,
+            19,
+            24,
+            16
+          ],
+          "target_scores": [
+            96,
+            705,
+            1470
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            32,
+            23,
+            23,
+            13,
+            20
+          ],
+          "target_scores": [
+            142,
+            905,
+            1891
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            26,
+            26,
+            30,
+            15,
+            21
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3706
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v17: 補給4箇所・終端低燃料二乗減点・ビーム探索拡大",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791166648663645364-24979",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "886459b59f6ea78a762bf020fa40346303b4a3902076b6d8b4e84ce6fa4fbb4a",
+      "verified_cui_comparison": {
+        "baseline": "1791166019856478289-24642",
+        "candidate": "1791166648663645364-24979",
+        "accepted": 24,
+        "different": 0,
+        "missing": 0,
+        "nonAc": 0,
+        "before_scores": {
+          "uniqueBrands": 434,
+          "dailyBrands": 2947,
+          "udon": 7052
+        },
+        "after_scores": {
+          "uniqueBrands": 434,
+          "dailyBrands": 2943,
+          "udon": 7067
+        },
+        "outcomes": {
+          "wins": 13,
+          "draws": 2,
+          "losses": 9
+        }
+      }
+    },
+    {
+      "run_id": "1791167849941088574-25387",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791167849941088574-25387/run.json",
+      "local_run_json": ".game/pool-g007-development/1791167849941088574-25387.json",
+      "manifest_sha256": "ce849a84b51e677b91c9f212bf19b49fbf931b29a819a93df7e8c4bc98a394c0",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        78,
+        84,
+        63,
+        66,
+        55
+      ],
+      "score_totals": [
+        [
+          434,
+          2953,
+          7056
+        ],
+        [
+          434,
+          2934,
+          6985
+        ],
+        [
+          434,
+          2952,
+          7057
+        ],
+        [
+          434,
+          2950,
+          7135
+        ],
+        [
+          434,
+          2952,
+          7146
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            23,
+            30,
+            12,
+            29,
+            20
+          ],
+          "target_scores": [
+            96,
+            704,
+            1460
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            27,
+            28,
+            19,
+            22,
+            18
+          ],
+          "target_scores": [
+            142,
+            916,
+            1900
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            28,
+            26,
+            32,
+            15,
+            17
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3696
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v18: 補給役候補の独立探索と別店舗への最少燃料不足評価",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791167849941088574-25387",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "2e789d19eb48ba5ff2b201657c46c15b02a6d41c2a1883e497b21fc54578a0db",
+      "verified_cui_comparison": {
+        "baseline": "1791166648663645364-24979",
+        "candidate": "1791167849941088574-25387",
+        "accepted": 24,
+        "different": 0,
+        "missing": 0,
+        "nonAc": 0,
+        "before_scores": {
+          "uniqueBrands": 434,
+          "dailyBrands": 2943,
+          "udon": 7067
+        },
+        "after_scores": {
+          "uniqueBrands": 434,
+          "dailyBrands": 2953,
+          "udon": 7056
+        },
+        "outcomes": {
+          "wins": 8,
+          "draws": 3,
+          "losses": 13
+        }
+      }
+    },
+    {
+      "run_id": "1791168446344146321-25670",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791168446344146321-25670/run.json",
+      "local_run_json": ".game/pool-g007-development/1791168446344146321-25670.json",
+      "manifest_sha256": "7891c465815060660536a3fadb484b2112a5be2ebb209ee0aad7cbba3c8cd343",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        62,
+        82,
+        65,
+        68,
+        60
+      ],
+      "score_totals": [
+        [
+          434,
+          2950,
+          7101
+        ],
+        [
+          434,
+          2941,
+          7005
+        ],
+        [
+          434,
+          2952,
+          7087
+        ],
+        [
+          434,
+          2950,
+          7143
+        ],
+        [
+          434,
+          2952,
+          7134
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            18,
+            30,
+            15,
+            28,
+            19
+          ],
+          "target_scores": [
+            96,
+            705,
+            1473
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            19,
+            29,
+            16,
+            23,
+            21
+          ],
+          "target_scores": [
+            142,
+            912,
+            1921
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            25,
+            23,
+            34,
+            17,
+            20
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3707
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v19: 訪問列後半交換と連続区間の車間移動",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791168446344146321-25670",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "9f78a5888fd1f8f7661693e78f43e9f0151cda94cd0a7b3c82946a3077767609",
+      "verified_cui_comparison": {
+        "baseline": "1791167849941088574-25387",
+        "candidate": "1791168446344146321-25670",
+        "accepted": 24,
+        "different": 0,
+        "missing": 0,
+        "nonAc": 0,
+        "before_scores": {
+          "uniqueBrands": 434,
+          "dailyBrands": 2953,
+          "udon": 7056
+        },
+        "after_scores": {
+          "uniqueBrands": 434,
+          "dailyBrands": 2950,
+          "udon": 7101
+        },
+        "outcomes": {
+          "wins": 17,
+          "draws": 1,
+          "losses": 6
+        }
+      }
+    },
+    {
+      "run_id": "1791169039140748139-25984",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791169039140748139-25984/run.json",
+      "local_run_json": ".game/pool-g007-development/1791169039140748139-25984.json",
+      "manifest_sha256": "647b0111c9a8b2f605cd369a147427ea4a3136b84e9319690fea4b4bfa9a7034",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        67,
+        97,
+        59,
+        62,
+        61
+      ],
+      "score_totals": [
+        [
+          434,
+          2953,
+          7073
+        ],
+        [
+          434,
+          2942,
+          6997
+        ],
+        [
+          434,
+          2955,
+          7082
+        ],
+        [
+          434,
+          2951,
+          7144
+        ],
+        [
+          434,
+          2950,
+          7133
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            20,
+            35,
+            10,
+            25,
+            20
+          ],
+          "target_scores": [
+            96,
+            705,
+            1470
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            20,
+            28,
+            23,
+            24,
+            21
+          ],
+          "target_scores": [
+            142,
+            915,
+            1912
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            27,
+            34,
+            26,
+            13,
+            20
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3691
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v20: 到着時燃料を使うビーム状態整理",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791169039140748139-25984",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "330ca08791f6798f16ac2fb82f4ace61e1d80689af8133e9a8880c816c0a286f",
+      "verified_cui_comparison": {
+        "baseline": "1791168446344146321-25670",
+        "candidate": "1791169039140748139-25984",
+        "accepted": 24,
+        "different": 0,
+        "missing": 0,
+        "nonAc": 0,
+        "before_scores": {
+          "uniqueBrands": 434,
+          "dailyBrands": 2950,
+          "udon": 7101
+        },
+        "after_scores": {
+          "uniqueBrands": 434,
+          "dailyBrands": 2953,
+          "udon": 7073
+        },
+        "outcomes": {
+          "wins": 11,
+          "draws": 2,
+          "losses": 11
+        }
+      }
+    },
+    {
+      "run_id": "1791169635104553469-26302",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791169635104553469-26302/run.json",
+      "local_run_json": ".game/pool-g007-development/1791169635104553469-26302.json",
+      "manifest_sha256": "564c2d1053998530d5d6c97d8bb3548ac7491801ba5d380899b1f98e62961c0f",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        75,
+        83,
+        60,
+        62,
+        62
+      ],
+      "score_totals": [
+        [
+          434,
+          2948,
+          7100
+        ],
+        [
+          434,
+          2953,
+          7007
+        ],
+        [
+          434,
+          2949,
+          7064
+        ],
+        [
+          434,
+          2954,
+          7105
+        ],
+        [
+          434,
+          2948,
+          7122
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            29,
+            26,
+            15,
+            21,
+            21
+          ],
+          "target_scores": [
+            96,
+            702,
+            1454
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            24,
+            26,
+            19,
+            23,
+            22
+          ],
+          "target_scores": [
+            142,
+            913,
+            1919
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            22,
+            31,
+            26,
+            18,
+            19
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3727
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v21: ビーム途中候補の終了時刻減点・既定係数2",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791169635104553469-26302",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "b7b49b88ed40d29356ae160e0f430cb4136692ca9974136fac3dd2bc1c09dda3",
+      "verified_cui_comparisons": [
+        {
+          "baseline": "1791169039140748139-25984",
+          "candidate": "1791169635104553469-26302",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2953,
+            "udon": 7073
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2948,
+            "udon": 7100
+          },
+          "outcomes": {
+            "wins": 8,
+            "draws": 2,
+            "losses": 14
+          }
+        },
+        {
+          "baseline": "1791168446344146321-25670",
+          "candidate": "1791169635104553469-26302",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7101
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2948,
+            "udon": 7100
+          },
+          "outcomes": {
+            "wins": 9,
+            "draws": 1,
+            "losses": 14
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "1791170017073954709-26603",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791170017073954709-26603/run.json",
+      "local_run_json": ".game/pool-g007-development/1791170017073954709-26603.json",
+      "manifest_sha256": "97dbc70f2f91744f183477c833446ab6aa06af7affa7716197607b4809bf352e",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        73,
+        82,
+        66,
+        57,
+        66
+      ],
+      "score_totals": [
+        [
+          434,
+          2951,
+          7036
+        ],
+        [
+          434,
+          2949,
+          6972
+        ],
+        [
+          434,
+          2955,
+          7051
+        ],
+        [
+          434,
+          2954,
+          7146
+        ],
+        [
+          434,
+          2951,
+          7119
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            18,
+            28,
+            14,
+            27,
+            22
+          ],
+          "target_scores": [
+            96,
+            705,
+            1470
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            26,
+            26,
+            27,
+            17,
+            21
+          ],
+          "target_scores": [
+            142,
+            913,
+            1899
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            29,
+            28,
+            25,
+            13,
+            23
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3667
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v21: ビーム途中候補の時間係数0.5切り分け",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791170017073954709-26603",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0",
+        "0",
+        "0.5"
+      ],
+      "planner_sha256": "b7b49b88ed40d29356ae160e0f430cb4136692ca9974136fac3dd2bc1c09dda3",
+      "verified_cui_comparisons": [
+        {
+          "baseline": "1791169635104553469-26302",
+          "candidate": "1791170017073954709-26603",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2948,
+            "udon": 7100
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2951,
+            "udon": 7036
+          },
+          "outcomes": {
+            "wins": 8,
+            "draws": 3,
+            "losses": 13
+          }
+        },
+        {
+          "baseline": "1791168446344146321-25670",
+          "candidate": "1791170017073954709-26603",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7101
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2951,
+            "udon": 7036
+          },
+          "outcomes": {
+            "wins": 4,
+            "draws": 5,
+            "losses": 15
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "1791170840515750136-26976",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791170840515750136-26976/run.json",
+      "local_run_json": ".game/pool-g007-development/1791170840515750136-26976.json",
+      "manifest_sha256": "2ad156922d4fec9a74d29536f1d85aaec27b5db9158eee5a1ca6e43b09711f8a",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        74,
+        71,
+        59,
+        61,
+        74
+      ],
+      "score_totals": [
+        [
+          434,
+          2947,
+          7052
+        ],
+        [
+          434,
+          2947,
+          7043
+        ],
+        [
+          434,
+          2956,
+          7090
+        ],
+        [
+          434,
+          2953,
+          7178
+        ],
+        [
+          434,
+          2947,
+          7139
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            19,
+            24,
+            12,
+            29,
+            24
+          ],
+          "target_scores": [
+            96,
+            704,
+            1477
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            25,
+            22,
+            20,
+            19,
+            26
+          ],
+          "target_scores": [
+            142,
+            910,
+            1902
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            30,
+            25,
+            27,
+            13,
+            24
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3673
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v22: 規模別時間評価と店舗経由の第4経路",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791170840515750136-26976",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "96ecef00c1f09e3616023fd5c550471c891bfbb5eac08559e0e84830b24f3d6b",
+      "verified_cui_comparisons": [
+        {
+          "baseline": "1791169635104553469-26302",
+          "candidate": "1791170840515750136-26976",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2948,
+            "udon": 7100
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2947,
+            "udon": 7052
+          },
+          "outcomes": {
+            "wins": 11,
+            "draws": 1,
+            "losses": 12
+          }
+        },
+        {
+          "baseline": "1791168446344146321-25670",
+          "candidate": "1791170840515750136-26976",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7101
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2947,
+            "udon": 7052
+          },
+          "outcomes": {
+            "wins": 8,
+            "draws": 2,
+            "losses": 14
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "1791171445385574207-27361",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791171445385574207-27361/run.json",
+      "local_run_json": ".game/pool-g007-development/1791171445385574207-27361.json",
+      "manifest_sha256": "9d5630660a46395a9b6d0534bb55bed6901a1533fbb4b1117624331874e10207",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        71,
+        81,
+        76,
+        55,
+        66
+      ],
+      "score_totals": [
+        [
+          434,
+          2947,
+          7077
+        ],
+        [
+          434,
+          2940,
+          6960
+        ],
+        [
+          434,
+          2948,
+          7041
+        ],
+        [
+          434,
+          2951,
+          7156
+        ],
+        [
+          434,
+          2953,
+          7108
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            27,
+            26,
+            20,
+            23,
+            21
+          ],
+          "target_scores": [
+            96,
+            703,
+            1463
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            21,
+            26,
+            25,
+            22,
+            25
+          ],
+          "target_scores": [
+            142,
+            911,
+            1901
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            23,
+            29,
+            31,
+            10,
+            20
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3713
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v23: 補給役選択時の翌日試算",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791171445385574207-27361",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "c1802a8ed31f97e72f35c5eafa3ba314f505d41f98cda5276c4c35d993310bf5",
+      "verified_cui_comparisons": [
+        {
+          "baseline": "1791170840515750136-26976",
+          "candidate": "1791171445385574207-27361",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2947,
+            "udon": 7052
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2947,
+            "udon": 7077
+          },
+          "outcomes": {
+            "wins": 12,
+            "draws": 2,
+            "losses": 10
+          }
+        },
+        {
+          "baseline": "1791168446344146321-25670",
+          "candidate": "1791171445385574207-27361",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7101
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2947,
+            "udon": 7077
+          },
+          "outcomes": {
+            "wins": 10,
+            "draws": 1,
+            "losses": 13
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "1791171886484654917-27663",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791171886484654917-27663/run.json",
+      "local_run_json": ".game/pool-g007-development/1791171886484654917-27663.json",
+      "manifest_sha256": "f2eeed5cb87efadebe36bab0f0c890960733c171a1153d5db2c2a6c935ee665e",
+      "count": 6,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        21,
+        17,
+        11,
+        17,
+        21
+      ],
+      "score_totals": [
+        [
+          111,
+          637,
+          1145
+        ],
+        [
+          111,
+          640,
+          1138
+        ],
+        [
+          111,
+          638,
+          1169
+        ],
+        [
+          111,
+          642,
+          1150
+        ],
+        [
+          111,
+          639,
+          1161
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 2,
+          "rank_sums": [
+            7,
+            4,
+            5,
+            6,
+            6
+          ],
+          "target_scores": [
+            25,
+            182,
+            391
+          ]
+        },
+        "semifinal": {
+          "count": 2,
+          "rank_sums": [
+            7,
+            9,
+            3,
+            3,
+            8
+          ],
+          "target_scores": [
+            37,
+            185,
+            250
+          ]
+        },
+        "final": {
+          "count": 2,
+          "rank_sums": [
+            7,
+            4,
+            3,
+            8,
+            7
+          ],
+          "target_scores": [
+            49,
+            270,
+            504
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v23: 補給役選択時の翌日試算・既定時間6件確認",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791171886484654917-27663",
+        "log_files": 6,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderr6件の診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "c1802a8ed31f97e72f35c5eafa3ba314f505d41f98cda5276c4c35d993310bf5",
+      "verified_cui_comparison": {
+        "baseline": "1791161909000394588-21828",
+        "candidate": "1791171886484654917-27663",
+        "accepted": 3,
+        "different": 0,
+        "missing": 3,
+        "nonAc": 0,
+        "before_scores": {
+          "uniqueBrands": 54,
+          "dailyBrands": 261,
+          "udon": 365
+        },
+        "after_scores": {
+          "uniqueBrands": 54,
+          "dailyBrands": 262,
+          "udon": 395
+        },
+        "outcomes": {
+          "wins": 3,
+          "draws": 0,
+          "losses": 0
+        }
+      }
+    },
+    {
+      "run_id": "1791173247285789176-28069",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791173247285789176-28069/run.json",
+      "local_run_json": ".game/pool-g007-development/1791173247285789176-28069.json",
+      "manifest_sha256": "552986dc2144d127a67702b90e2ed3c8f4da4b0557c4fbf531c928cf43555422",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        86,
+        85,
+        53,
+        54,
+        67
+      ],
+      "score_totals": [
+        [
+          434,
+          2951,
+          7005
+        ],
+        [
+          434,
+          2944,
+          7013
+        ],
+        [
+          434,
+          2954,
+          7109
+        ],
+        [
+          434,
+          2953,
+          7167
+        ],
+        [
+          434,
+          2949,
+          7136
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            25,
+            29,
+            15,
+            24,
+            20
+          ],
+          "target_scores": [
+            96,
+            705,
+            1459
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            31,
+            27,
+            12,
+            18,
+            25
+          ],
+          "target_scores": [
+            142,
+            913,
+            1889
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            30,
+            29,
+            26,
+            12,
+            22
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3657
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v24: 当日有力案の翌日ビーム比較と計画引き継ぎ",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791173247285789176-28069",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "05dd6569d7d82db34fc15ade6956f80b44e5fb0b82725c322056cfd44d3e572b",
+      "verified_cui_comparisons": [
+        {
+          "baseline": "1791171445385574207-27361",
+          "candidate": "1791173247285789176-28069",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2947,
+            "udon": 7077
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2951,
+            "udon": 7005
+          },
+          "outcomes": {
+            "wins": 8,
+            "draws": 0,
+            "losses": 16
+          }
+        },
+        {
+          "baseline": "1791168446344146321-25670",
+          "candidate": "1791173247285789176-28069",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7101
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2951,
+            "udon": 7005
+          },
+          "outcomes": {
+            "wins": 7,
+            "draws": 1,
+            "losses": 16
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "1791173842960942307-28399",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791173842960942307-28399/run.json",
+      "local_run_json": ".game/pool-g007-development/1791173842960942307-28399.json",
+      "manifest_sha256": "b041c1ae0ad6d0c40d66c4cdd4e1edc584b6e26cd75fe1a7674e0693501c287d",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        88,
+        73,
+        63,
+        58,
+        59
+      ],
+      "score_totals": [
+        [
+          434,
+          2950,
+          7006
+        ],
+        [
+          434,
+          2945,
+          7040
+        ],
+        [
+          434,
+          2954,
+          7059
+        ],
+        [
+          434,
+          2954,
+          7162
+        ],
+        [
+          434,
+          2953,
+          7130
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            23,
+            25,
+            22,
+            19,
+            21
+          ],
+          "target_scores": [
+            96,
+            705,
+            1457
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            33,
+            25,
+            14,
+            26,
+            17
+          ],
+          "target_scores": [
+            142,
+            912,
+            1893
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            32,
+            23,
+            27,
+            13,
+            21
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3656
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v25: 自チーム道路滞在数からの翌日交通予測",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791173842960942307-28399",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "3b3191e0efe3d5d97f56d251435b1125b11deed3a0f33cd02b45b894dcf0db24",
+      "verified_cui_comparisons": [
+        {
+          "baseline": "1791173247285789176-28069",
+          "candidate": "1791173842960942307-28399",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2951,
+            "udon": 7005
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7006
+          },
+          "outcomes": {
+            "wins": 12,
+            "draws": 1,
+            "losses": 11
+          }
+        },
+        {
+          "baseline": "1791171445385574207-27361",
+          "candidate": "1791173842960942307-28399",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2947,
+            "udon": 7077
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7006
+          },
+          "outcomes": {
+            "wins": 8,
+            "draws": 0,
+            "losses": 16
+          }
+        },
+        {
+          "baseline": "1791168446344146321-25670",
+          "candidate": "1791173842960942307-28399",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7101
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7006
+          },
+          "outcomes": {
+            "wins": 6,
+            "draws": 0,
+            "losses": 18
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "1791174449050885291-28831",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791174449050885291-28831/run.json",
+      "local_run_json": ".game/pool-g007-development/1791174449050885291-28831.json",
+      "manifest_sha256": "e509afeed81f647dbe6656fb8a0c33f44311f1722ee34c4347af05fd669ba7e6",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        70,
+        87,
+        63,
+        63,
+        60
+      ],
+      "score_totals": [
+        [
+          434,
+          2949,
+          7063
+        ],
+        [
+          434,
+          2940,
+          7007
+        ],
+        [
+          434,
+          2954,
+          7099
+        ],
+        [
+          434,
+          2955,
+          7171
+        ],
+        [
+          434,
+          2954,
+          7169
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            19,
+            36,
+            17,
+            21,
+            18
+          ],
+          "target_scores": [
+            96,
+            706,
+            1468
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            22,
+            27,
+            17,
+            28,
+            20
+          ],
+          "target_scores": [
+            142,
+            911,
+            1903
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            29,
+            24,
+            29,
+            14,
+            22
+          ],
+          "target_scores": [
+            196,
+            1332,
+            3692
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v26: 日ごとの翌日比較無効化の切り分け",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791174449050885291-28831",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "90ae836988f9d5125453bb379b4a0639f3e1679d756e51b70c286febc55da709",
+      "verified_cui_comparisons": [
+        {
+          "baseline": "1791173842960942307-28399",
+          "candidate": "1791174449050885291-28831",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7006
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2949,
+            "udon": 7063
+          },
+          "outcomes": {
+            "wins": 16,
+            "draws": 1,
+            "losses": 7
+          }
+        },
+        {
+          "baseline": "1791171445385574207-27361",
+          "candidate": "1791174449050885291-28831",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2947,
+            "udon": 7077
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2949,
+            "udon": 7063
+          },
+          "outcomes": {
+            "wins": 11,
+            "draws": 2,
+            "losses": 11
+          }
+        },
+        {
+          "baseline": "1791168446344146321-25670",
+          "candidate": "1791174449050885291-28831",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7101
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2949,
+            "udon": 7063
+          },
+          "outcomes": {
+            "wins": 13,
+            "draws": 1,
+            "losses": 10
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "1791175046966316284-29292",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791175046966316284-29292/run.json",
+      "local_run_json": ".game/pool-g007-development/1791175046966316284-29292.json",
+      "manifest_sha256": "159b339107e4d48981e31f48a0dbaeb5377ec2d58a7e1d448ca74c3776e5df98",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        62,
+        80,
+        77,
+        61,
+        63
+      ],
+      "score_totals": [
+        [
+          434,
+          2946,
+          7096
+        ],
+        [
+          434,
+          2947,
+          7021
+        ],
+        [
+          434,
+          2953,
+          7046
+        ],
+        [
+          434,
+          2955,
+          7159
+        ],
+        [
+          434,
+          2955,
+          7137
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            19,
+            33,
+            19,
+            22,
+            19
+          ],
+          "target_scores": [
+            96,
+            705,
+            1458
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            19,
+            23,
+            22,
+            25,
+            23
+          ],
+          "target_scores": [
+            142,
+            909,
+            1911
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            24,
+            24,
+            36,
+            14,
+            21
+          ],
+          "target_scores": [
+            196,
+            1332,
+            3727
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v27: 固定長評価配列と作業領域再利用によるメモリ確保削減",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791175046966316284-29292",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "a93a9f68f4bb19c306abf37f9a54bcb4cbad17b5d7d6d4f39985de0860838848",
+      "verified_cui_comparisons": [
+        {
+          "baseline": "1791174449050885291-28831",
+          "candidate": "1791175046966316284-29292",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2949,
+            "udon": 7063
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2946,
+            "udon": 7096
+          },
+          "outcomes": {
+            "wins": 11,
+            "draws": 1,
+            "losses": 12
+          }
+        },
+        {
+          "baseline": "1791168446344146321-25670",
+          "candidate": "1791175046966316284-29292",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7101
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2946,
+            "udon": 7096
+          },
+          "outcomes": {
+            "wins": 9,
+            "draws": 2,
+            "losses": 13
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "1791175705608351615-29798",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791175705608351615-29798/run.json",
+      "local_run_json": ".game/pool-g007-development/1791175705608351615-29798.json",
+      "manifest_sha256": "9507f30fd6c62d13467260a459142b64dec0e74c576c9f38630f09ee47bf0d32",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        79,
+        74,
+        57,
+        62,
+        67
+      ],
+      "score_totals": [
+        [
+          434,
+          2950,
+          7077
+        ],
+        [
+          434,
+          2951,
+          7024
+        ],
+        [
+          434,
+          2952,
+          7092
+        ],
+        [
+          434,
+          2951,
+          7138
+        ],
+        [
+          434,
+          2951,
+          7107
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            25,
+            29,
+            12,
+            27,
+            22
+          ],
+          "target_scores": [
+            96,
+            705,
+            1462
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            29,
+            22,
+            20,
+            18,
+            19
+          ],
+          "target_scores": [
+            142,
+            912,
+            1909
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            25,
+            23,
+            25,
+            17,
+            26
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3706
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v28: 全巡回車再構築と低燃料車への先行補給",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791175705608351615-29798",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "967e0c8d391258ef8b31597dbeeb66ed0fcc9da04e1feda994c6e2d51028b48b",
+      "verified_cui_comparisons": [
+        {
+          "baseline": "1791175046966316284-29292",
+          "candidate": "1791175705608351615-29798",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2946,
+            "udon": 7096
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7077
+          },
+          "outcomes": {
+            "wins": 11,
+            "draws": 2,
+            "losses": 11
+          }
+        },
+        {
+          "baseline": "1791168446344146321-25670",
+          "candidate": "1791175705608351615-29798",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7101
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7077
+          },
+          "outcomes": {
+            "wins": 4,
+            "draws": 6,
+            "losses": 14
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "1791176259083543550-30125",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791176259083543550-30125/run.json",
+      "local_run_json": ".game/pool-g007-development/1791176259083543550-30125.json",
+      "manifest_sha256": "f97dd965d908e5e6d5d8ebc675b3bc02a07c6f0437757edadc1d751f93dc656c",
+      "count": 24,
+      "time_limit_ms": 10000,
+      "all_players_ac": true,
+      "rank_sums": [
+        56,
+        89,
+        59,
+        57,
+        76
+      ],
+      "score_totals": [
+        [
+          434,
+          2951,
+          7115
+        ],
+        [
+          434,
+          2942,
+          6993
+        ],
+        [
+          434,
+          2951,
+          7081
+        ],
+        [
+          434,
+          2954,
+          7110
+        ],
+        [
+          434,
+          2950,
+          7082
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 8,
+          "rank_sums": [
+            15,
+            30,
+            14,
+            25,
+            25
+          ],
+          "target_scores": [
+            96,
+            704,
+            1478
+          ]
+        },
+        "semifinal": {
+          "count": 8,
+          "rank_sums": [
+            20,
+            25,
+            20,
+            17,
+            28
+          ],
+          "target_scores": [
+            142,
+            914,
+            1912
+          ]
+        },
+        "final": {
+          "count": 8,
+          "rank_sums": [
+            21,
+            34,
+            25,
+            15,
+            23
+          ],
+          "target_scores": [
+            196,
+            1333,
+            3725
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v29: 先行補給が必要な場面だけの全車再構築・正式候補提出",
+      "comparisons": {},
+      "verified_diagnostics": {
+        "run_id": "1791176259083543550-30125",
+        "log_files": 24,
+        "model_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0,
+        "scope": "対象stderrの診断件数"
+      },
+      "target_arguments": [
+        "0"
+      ],
+      "planner_sha256": "27ac916e1b3ed962f58ce14614db35a40a8964185ef728b08d2754c5db2999c4",
+      "verified_cui_comparisons": [
+        {
+          "baseline": "1791175705608351615-29798",
+          "candidate": "1791176259083543550-30125",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7077
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2951,
+            "udon": 7115
+          },
+          "outcomes": {
+            "wins": 14,
+            "draws": 2,
+            "losses": 8
+          }
+        },
+        {
+          "baseline": "1791175046966316284-29292",
+          "candidate": "1791176259083543550-30125",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2946,
+            "udon": 7096
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2951,
+            "udon": 7115
+          },
+          "outcomes": {
+            "wins": 11,
+            "draws": 2,
+            "losses": 11
+          }
+        },
+        {
+          "baseline": "1791168446344146321-25670",
+          "candidate": "1791176259083543550-30125",
+          "accepted": 24,
+          "different": 0,
+          "missing": 0,
+          "nonAc": 0,
+          "before_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2950,
+            "udon": 7101
+          },
+          "after_scores": {
+            "uniqueBrands": 434,
+            "dailyBrands": 2951,
+            "udon": 7115
+          },
+          "outcomes": {
+            "wins": 12,
+            "draws": 5,
+            "losses": 7
+          }
+        }
+      ]
+    },
+    {
+      "run_id": "1791180455197013397-30727",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791180455197013397-30727/run.json",
+      "local_run_json": ".game/pool-g007-development/1791180455197013397-30727.json",
+      "manifest_sha256": "e490d5f48d10269967abe8f0bda27f6a1b18d5c16f5d28beab4806b12dd1dea4",
+      "count": 6,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        19,
+        17,
+        12,
+        15,
+        24
+      ],
+      "score_totals": [
+        [
+          111,
+          640,
+          1149
+        ],
+        [
+          111,
+          640,
+          1153
+        ],
+        [
+          111,
+          642,
+          1155
+        ],
+        [
+          111,
+          640,
+          1153
+        ],
+        [
+          111,
+          639,
+          1142
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 2,
+          "rank_sums": [
+            4,
+            8,
+            2,
+            6,
+            10
+          ],
+          "target_scores": [
+            25,
+            185,
+            392
+          ]
+        },
+        "semifinal": {
+          "count": 2,
+          "rank_sums": [
+            9,
+            7,
+            3,
+            2,
+            7
+          ],
+          "target_scores": [
+            37,
+            185,
+            243
+          ]
+        },
+        "final": {
+          "count": 2,
+          "rank_sums": [
+            6,
+            2,
+            7,
+            7,
+            7
+          ],
+          "target_scores": [
+            49,
+            270,
+            514
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v29: 改善再開時の既定時間6件比較基準",
+      "comparisons": {}
+    },
+    {
+      "run_id": "1791181096555641200-30837",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791181096555641200-30837/run.json",
+      "local_run_json": ".game/pool-g007-development/1791181096555641200-30837.json",
+      "manifest_sha256": "75e7665c88c992475520f8376d2ba99d76c4346561137f7ecc86a2cbf22c9138",
+      "count": 6,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        20,
+        11,
+        20,
+        13,
+        22
+      ],
+      "score_totals": [
+        [
+          111,
+          639,
+          1146
+        ],
+        [
+          111,
+          641,
+          1159
+        ],
+        [
+          111,
+          640,
+          1141
+        ],
+        [
+          111,
+          642,
+          1160
+        ],
+        [
+          111,
+          639,
+          1146
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 2,
+          "rank_sums": [
+            4,
+            4,
+            6,
+            5,
+            9
+          ],
+          "target_scores": [
+            25,
+            185,
+            386
+          ]
+        },
+        "semifinal": {
+          "count": 2,
+          "rank_sums": [
+            9,
+            3,
+            6,
+            6,
+            5
+          ],
+          "target_scores": [
+            37,
+            184,
+            245
+          ]
+        },
+        "final": {
+          "count": 2,
+          "rank_sums": [
+            7,
+            4,
+            8,
+            2,
+            8
+          ],
+          "target_scores": [
+            49,
+            270,
+            515
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v30: 幅128再構築・既定6件比較で悪化のため不採用",
+      "comparisons": {},
+      "official_cui_comparison_file": ".game/pool-g007-v30-compare.json"
+    },
+    {
+      "run_id": "1791182260607410980-31107",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791182260607410980-31107/run.json",
+      "local_run_json": ".game/pool-g007-development/1791182260607410980-31107.json",
+      "manifest_sha256": "4c30e8faa34d6730fdbe1c5ba9f8a59e382e27863b4d8759fa3fd7170c4c5e4c",
+      "count": 6,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        12,
+        20,
+        13,
+        19,
+        22
+      ],
+      "score_totals": [
+        [
+          111,
+          641,
+          1165
+        ],
+        [
+          111,
+          640,
+          1149
+        ],
+        [
+          111,
+          639,
+          1166
+        ],
+        [
+          111,
+          640,
+          1153
+        ],
+        [
+          111,
+          638,
+          1161
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 2,
+          "rank_sums": [
+            3,
+            5,
+            5,
+            8,
+            8
+          ],
+          "target_scores": [
+            25,
+            186,
+            388
+          ]
+        },
+        "semifinal": {
+          "count": 2,
+          "rank_sums": [
+            5,
+            9,
+            2,
+            5,
+            8
+          ],
+          "target_scores": [
+            37,
+            185,
+            251
+          ]
+        },
+        "final": {
+          "count": 2,
+          "rank_sums": [
+            4,
+            6,
+            6,
+            6,
+            6
+          ],
+          "target_scores": [
+            49,
+            270,
+            526
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v31: 冷却周期の最良案復帰・既定時間6件",
+      "comparisons": {},
+      "verified_cui_comparison": {
+        "file": ".game/pool-g007-v31-compare.json",
+        "accepted": 6,
+        "excluded": 0,
+        "outcomes": {
+          "wins": 4,
+          "draws": 1,
+          "losses": 1
+        },
+        "baseline_scores": {
+          "uniqueBrands": 111,
+          "dailyBrands": 640,
+          "udon": 1149
+        },
+        "candidate_scores": {
+          "uniqueBrands": 111,
+          "dailyBrands": 641,
+          "udon": 1165
+        }
+      }
+    },
+    {
+      "run_id": "1791182928139673994-31314",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791182928139673994-31314/run.json",
+      "local_run_json": ".game/pool-g007-development/1791182928139673994-31314.json",
+      "manifest_sha256": "9aa1bee4878f24869b09b6b2b98f6b32b001f0876823cc778bb9198712a6e3c4",
+      "count": 12,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        28,
+        42,
+        26,
+        29,
+        45
+      ],
+      "score_totals": [
+        [
+          222,
+          1277,
+          2929
+        ],
+        [
+          222,
+          1275,
+          2891
+        ],
+        [
+          222,
+          1275,
+          2927
+        ],
+        [
+          222,
+          1276,
+          2922
+        ],
+        [
+          222,
+          1275,
+          2888
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 4,
+          "rank_sums": [
+            11,
+            12,
+            9,
+            10,
+            14
+          ],
+          "target_scores": [
+            48,
+            334,
+            619
+          ]
+        },
+        "semifinal": {
+          "count": 4,
+          "rank_sums": [
+            7,
+            14,
+            7,
+            12,
+            15
+          ],
+          "target_scores": [
+            69,
+            393,
+            872
+          ]
+        },
+        "final": {
+          "count": 4,
+          "rank_sums": [
+            10,
+            16,
+            10,
+            7,
+            16
+          ],
+          "target_scores": [
+            105,
+            550,
+            1438
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v31: 冷却周期の最良案復帰・既定時間12件への拡張",
+      "comparisons": {},
+      "verified_cui_comparison": {
+        "file": ".game/pool-g007-v31-default12-compare.json",
+        "accepted": 6,
+        "missing": 6,
+        "outcomes": {
+          "wins": 5,
+          "draws": 1,
+          "losses": 0
+        },
+        "baseline_scores": {
+          "uniqueBrands": 111,
+          "dailyBrands": 640,
+          "udon": 1149
+        },
+        "candidate_scores": {
+          "uniqueBrands": 111,
+          "dailyBrands": 641,
+          "udon": 1168
+        },
+        "note": "共通6件のみの比較。全12件の勝敗ではない。"
+      }
+    },
+    {
+      "run_id": "1791184678083777228-31643",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791184678083777228-31643/run.json",
+      "local_run_json": ".game/pool-g007-development/1791184678083777228-31643.json",
+      "manifest_sha256": "81cb4112f1eff1f62e072bcff12d0ae2319ed2197ad9c7019da9c67635b2a1fb",
+      "count": 12,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        31,
+        34,
+        35,
+        31,
+        40
+      ],
+      "score_totals": [
+        [
+          222,
+          1276,
+          2913
+        ],
+        [
+          222,
+          1275,
+          2905
+        ],
+        [
+          222,
+          1277,
+          2900
+        ],
+        [
+          222,
+          1277,
+          2891
+        ],
+        [
+          222,
+          1277,
+          2888
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 4,
+          "rank_sums": [
+            10,
+            12,
+            8,
+            10,
+            13
+          ],
+          "target_scores": [
+            48,
+            333,
+            626
+          ]
+        },
+        "semifinal": {
+          "count": 4,
+          "rank_sums": [
+            8,
+            11,
+            14,
+            11,
+            14
+          ],
+          "target_scores": [
+            69,
+            393,
+            871
+          ]
+        },
+        "final": {
+          "count": 4,
+          "rank_sums": [
+            13,
+            11,
+            13,
+            10,
+            13
+          ],
+          "target_scores": [
+            105,
+            550,
+            1416
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v32: 在庫付き玉数・種類のビット集計高速化・既定12件",
+      "comparisons": {},
+      "verified_cui_comparison": {
+        "file": ".game/pool-g007-v32-compare.json",
+        "accepted": 12,
+        "excluded": 0,
+        "outcomes": {
+          "wins": 4,
+          "draws": 2,
+          "losses": 6
+        },
+        "baseline_scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1277,
+          "udon": 2929
+        },
+        "candidate_scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1276,
+          "udon": 2913
+        }
+      }
+    },
+    {
+      "run_id": "1791186512544120702-32061",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791186512544120702-32061/run.json",
+      "local_run_json": ".game/pool-g007-development/1791186512544120702-32061.json",
+      "manifest_sha256": "1878276440298097f0869f52590ea8733b8319b9fdce30d8a7017aa69852850f",
+      "count": 12,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        25,
+        42,
+        29,
+        33,
+        44
+      ],
+      "score_totals": [
+        [
+          222,
+          1277,
+          2935
+        ],
+        [
+          222,
+          1277,
+          2891
+        ],
+        [
+          222,
+          1277,
+          2925
+        ],
+        [
+          222,
+          1275,
+          2908
+        ],
+        [
+          222,
+          1273,
+          2915
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 4,
+          "rank_sums": [
+            6,
+            13,
+            9,
+            12,
+            18
+          ],
+          "target_scores": [
+            48,
+            334,
+            621
+          ]
+        },
+        "semifinal": {
+          "count": 4,
+          "rank_sums": [
+            9,
+            13,
+            10,
+            11,
+            15
+          ],
+          "target_scores": [
+            69,
+            393,
+            873
+          ]
+        },
+        "final": {
+          "count": 4,
+          "rank_sums": [
+            10,
+            16,
+            10,
+            10,
+            11
+          ],
+          "target_scores": [
+            105,
+            550,
+            1441
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v33: 補給役の最大3日試算・正式候補提出",
+      "comparisons": {},
+      "verified_cui_comparison": {
+        "file": ".game/pool-g007-v33-compare.json",
+        "accepted": 12,
+        "outcomes": {
+          "wins": 8,
+          "draws": 0,
+          "losses": 4
+        },
+        "baseline_scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1277,
+          "udon": 2929
+        },
+        "candidate_scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1277,
+          "udon": 2935
+        }
+      }
+    },
+    {
+      "run_id": "1791190902661872585-32453",
+      "host": "voidlinux-3",
+      "formal": false,
+      "count": 1,
+      "seeds": [
+        24
+      ],
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        4,
+        2,
+        5,
+        1,
+        3
+      ],
+      "score_totals": [
+        [
+          14,
+          66,
+          78
+        ],
+        [
+          14,
+          68,
+          77
+        ],
+        [
+          14,
+          66,
+          73
+        ],
+        [
+          14,
+          69,
+          76
+        ],
+        [
+          14,
+          67,
+          75
+        ]
+      ],
+      "local_run_json": ".game/pool-g007-development/1791190902661872585-32453.json",
+      "manifest_sha256": "a6a6eba30ce0a6fdc58eb522e70627ecc4ad741e18b824deb1259e62eead6cc1",
+      "candidate_change": "v33: seed24既定時間単一ケース比較基準",
+      "note": "SSH1正式とはホストと同時数が異なる。"
+    },
+    {
+      "run_id": "1791191902454149761-32606",
+      "formal": false,
+      "count": 1,
+      "seeds": [
+        24
+      ],
+      "all_players_ac": true,
+      "score_totals": [
+        [
+          14,
+          68,
+          72
+        ],
+        [
+          14,
+          68,
+          77
+        ],
+        [
+          14,
+          68,
+          74
+        ],
+        [
+          14,
+          69,
+          76
+        ],
+        [
+          14,
+          66,
+          75
+        ]
+      ],
+      "rank_sums": [
+        4,
+        2,
+        3,
+        1,
+        5
+      ],
+      "candidate_change": "v34: 小盤面翌日試算・seed24",
+      "verified_cui_comparison": {
+        "file": ".game/pool-g007-v34-seed24-compare.json",
+        "accepted": 1,
+        "outcomes": {
+          "wins": 1,
+          "draws": 0,
+          "losses": 0
+        },
+        "baseline_scores": {
+          "uniqueBrands": 14,
+          "dailyBrands": 66,
+          "udon": 78
+        },
+        "candidate_scores": {
+          "uniqueBrands": 14,
+          "dailyBrands": 68,
+          "udon": 72
+        }
+      },
+      "note": "当日選択変更の直接効果と断定しない。翌日計画引き継ぎ/時間配分/時間制探索変動を含む。"
+    },
+    {
+      "run_id": "1791192307690199760-32710",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791192307690199760-32710/run.json",
+      "local_run_json": ".game/pool-g007-development/1791192307690199760-32710.json",
+      "manifest_sha256": "ec0815bb940b124f2c240622bf1f66f9d3d84f3903430cc2f22ffb4706927ae1",
+      "count": 12,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        28,
+        40,
+        24,
+        31,
+        46
+      ],
+      "score_totals": [
+        [
+          222,
+          1276,
+          2938
+        ],
+        [
+          222,
+          1274,
+          2908
+        ],
+        [
+          222,
+          1276,
+          2944
+        ],
+        [
+          222,
+          1275,
+          2932
+        ],
+        [
+          222,
+          1275,
+          2891
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 4,
+          "rank_sums": [
+            9,
+            14,
+            5,
+            11,
+            17
+          ],
+          "target_scores": [
+            48,
+            333,
+            626
+          ]
+        },
+        "semifinal": {
+          "count": 4,
+          "rank_sums": [
+            8,
+            15,
+            10,
+            11,
+            12
+          ],
+          "target_scores": [
+            69,
+            393,
+            871
+          ]
+        },
+        "final": {
+          "count": 4,
+          "rank_sums": [
+            11,
+            11,
+            9,
+            9,
+            17
+          ],
+          "target_scores": [
+            105,
+            550,
+            1441
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v34: 小盤面の翌日種類数比較・既定12件",
+      "comparisons": {},
+      "verified_cui_comparison": {
+        "file": ".game/pool-g007-v34-default12-compare.json",
+        "accepted": 12,
+        "excluded": 0,
+        "outcomes": {
+          "wins": 4,
+          "draws": 3,
+          "losses": 5
+        },
+        "baseline_scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1277,
+          "udon": 2935
+        },
+        "candidate_scores": {
+          "uniqueBrands": 222,
+          "dailyBrands": 1276,
+          "udon": 2938
+        }
+      }
+    },
+    {
+      "run_id": "1791193690299280368-675",
+      "formal": false,
+      "count": 1,
+      "seeds": [
+        24
+      ],
+      "all_players_ac": true,
+      "score_totals": [
+        [
+          14,
+          66,
+          81
+        ],
+        [
+          14,
+          66,
+          76
+        ],
+        [
+          14,
+          66,
+          80
+        ],
+        [
+          14,
+          69,
+          80
+        ],
+        [
+          14,
+          67,
+          72
+        ]
+      ],
+      "rank_sums": [
+        3,
+        5,
+        4,
+        1,
+        2
+      ],
+      "candidate_change": "v35: 翌日交通予測係数・seed24",
+      "verified_cui_comparison": {
+        "file": ".game/pool-g007-v35-seed24-compare.json",
+        "accepted": 1,
+        "outcomes": {
+          "wins": 0,
+          "draws": 0,
+          "losses": 1
+        },
+        "baseline_scores": {
+          "uniqueBrands": 14,
+          "dailyBrands": 68,
+          "udon": 72
+        },
+        "candidate_scores": {
+          "uniqueBrands": 14,
+          "dailyBrands": 66,
+          "udon": 81
+        }
+      }
+    },
+    {
+      "run_id": "1791194924844258669-981",
+      "formal": false,
+      "count": 1,
+      "seeds": [
+        24
+      ],
+      "all_players_ac": true,
+      "score_totals": [
+        [
+          14,
+          68,
+          76
+        ],
+        [
+          14,
+          67,
+          74
+        ],
+        [
+          14,
+          68,
+          79
+        ],
+        [
+          14,
+          69,
+          82
+        ],
+        [
+          14,
+          68,
+          79
+        ]
+      ],
+      "rank_sums": [
+        4,
+        5,
+        2,
+        1,
+        2
+      ],
+      "candidate_change": "v36: 三台循環交換・seed24",
+      "verified_cui_comparison": {
+        "file": ".game/pool-g007-v36-seed24-compare.json",
+        "accepted": 1,
+        "outcomes": {
+          "wins": 1,
+          "draws": 0,
+          "losses": 0
+        },
+        "baseline_scores": {
+          "uniqueBrands": 14,
+          "dailyBrands": 68,
+          "udon": 72
+        },
+        "candidate_scores": {
+          "uniqueBrands": 14,
+          "dailyBrands": 68,
+          "udon": 76
+        }
+      }
+    },
+    {
+      "run_id": "1791195309042337334-1184",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791195309042337334-1184/run.json",
+      "local_run_json": ".game/pool-g007-development/1791195309042337334-1184.json",
+      "manifest_sha256": "48196cde8130df3e6482cbd89e9d9f32835d173d4bae5e9bff4584c7cf632eeb",
+      "count": 12,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        30,
+        34,
+        23,
+        36,
+        41
+      ],
+      "score_totals": [
+        [
+          222,
+          1275,
+          2940
+        ],
+        [
+          222,
+          1276,
+          2892
+        ],
+        [
+          222,
+          1276,
+          2929
+        ],
+        [
+          222,
+          1276,
+          2911
+        ],
+        [
+          222,
+          1275,
+          2903
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 4,
+          "rank_sums": [
+            8,
+            11,
+            9,
+            14,
+            15
+          ],
+          "target_scores": [
+            48,
+            332,
+            633
+          ]
+        },
+        "semifinal": {
+          "count": 4,
+          "rank_sums": [
+            10,
+            10,
+            7,
+            11,
+            13
+          ],
+          "target_scores": [
+            69,
+            393,
+            871
+          ]
+        },
+        "final": {
+          "count": 4,
+          "rank_sums": [
+            12,
+            13,
+            7,
+            11,
+            13
+          ],
+          "target_scores": [
+            105,
+            550,
+            1436
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v36: 3台間の経路交換候補と翌日予測係数0.5。正式提出なし。",
+      "comparisons": {}
+    },
+    {
+      "run_id": "1791196688066814451-1711",
+      "host": "voidlinux-3",
+      "remote_run_json": "/tmp/procon37-g007-dev.XhlUu9/1791196688066814451-1711/run.json",
+      "local_run_json": ".game/pool-g007-development/1791196688066814451-1711.json",
+      "manifest_sha256": "5e2bce25fceb9be62fbe98690bf5e2d88ab89129c0b31b5979f436fdb3972a6a",
+      "count": 12,
+      "time_limit_ms": null,
+      "all_players_ac": true,
+      "rank_sums": [
+        28,
+        33,
+        33,
+        36,
+        43
+      ],
+      "score_totals": [
+        [
+          222,
+          1275,
+          2940
+        ],
+        [
+          222,
+          1270,
+          2882
+        ],
+        [
+          222,
+          1274,
+          2923
+        ],
+        [
+          222,
+          1276,
+          2911
+        ],
+        [
+          222,
+          1275,
+          2885
+        ]
+      ],
+      "by_format": {
+        "first": {
+          "count": 4,
+          "rank_sums": [
+            11,
+            4,
+            16,
+            10,
+            15
+          ],
+          "target_scores": [
+            48,
+            332,
+            625
+          ]
+        },
+        "semifinal": {
+          "count": 4,
+          "rank_sums": [
+            7,
+            15,
+            9,
+            14,
+            14
+          ],
+          "target_scores": [
+            69,
+            393,
+            878
+          ]
+        },
+        "final": {
+          "count": 4,
+          "rank_sums": [
+            10,
+            14,
+            8,
+            12,
+            14
+          ],
+          "target_scores": [
+            105,
+            550,
+            1437
+          ]
+        }
+      },
+      "formal": false,
+      "candidate_change": "v37: 小盤面の全通行可能セルを補給地点候補に追加。開発12件単独首位、追加確認中。",
+      "comparisons": {}
+    }
+  ],
+  "formal_attempts": [
+    {
+      "attempt": 1,
+      "host": "voidlinux-1",
+      "run_id": "1791176997855521450-16999",
+      "pid": 16999,
+      "wrapper_pid": 16997,
+      "remote_root": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+      "remote_run_json": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/runs/1791176997855521450-16999/run.json",
+      "log": ".game/pool-g007-formal-1.log",
+      "exit": ".game/pool-g007-formal-1.exit",
+      "freeze": ".game/pool-g007-formal-1.freeze.json",
+      "freeze_check": ".game/pool-g007-formal-1.freeze-check.json",
+      "freeze_check_exit": ".game/pool-g007-formal-1.freeze-check.exit",
+      "actual_process": ".game/pool-g007-formal-1.actual-process.json",
+      "config": ".game/pool-g007-host1-config.json",
+      "status": "completed",
+      "started_at": "2026-10-05T05:11:12.054309+00:00",
+      "audit": {
+        "run_id": "1791176997855521450-16999",
+        "valid_formal_run": true,
+        "errors": [],
+        "rank_sums": [
+          89,
+          96,
+          76,
+          77,
+          89
+        ],
+        "average_ranks": [
+          2.966666666666667,
+          3.2,
+          2.533333333333333,
+          2.566666666666667,
+          2.966666666666667
+        ],
+        "score_totals": [
+          [
+            543,
+            3677,
+            8356
+          ],
+          [
+            543,
+            3677,
+            8280
+          ],
+          [
+            543,
+            3678,
+            8366
+          ],
+          [
+            543,
+            3684,
+            8382
+          ],
+          [
+            543,
+            3677,
+            8335
+          ]
+        ],
+        "warnings": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_identities": [
+          "content-v3:6abeeb40e89ecd016b5e0eb70c88cec8",
+          "content-v3:a4a0e3804ef79e2d242536fff4d0610f",
+          "content-v3:6820fb905f409b9655e64f672d8db46d",
+          "content-v3:9f107ad383c8f566ca695a5ccded5cfd"
+        ],
+        "target_sole_first": false,
+        "note": "昇格には別途、評価中の実装凍結・識別一致と実際のSSH実行条件を照合する。",
+        "all_players_ac": true,
+        "by_format": {
+          "first": {
+            "count": 10,
+            "rank_sums": [
+              26,
+              32,
+              26,
+              28,
+              29
+            ],
+            "score_totals": [
+              [
+                124,
+                882,
+                1696
+              ],
+              [
+                124,
+                880,
+                1676
+              ],
+              [
+                124,
+                881,
+                1681
+              ],
+              [
+                124,
+                886,
+                1674
+              ],
+              [
+                124,
+                882,
+                1680
+              ]
+            ]
+          },
+          "semifinal": {
+            "count": 10,
+            "rank_sums": [
+              33,
+              25,
+              27,
+              25,
+              30
+            ],
+            "score_totals": [
+              [
+                179,
+                1174,
+                2319
+              ],
+              [
+                179,
+                1176,
+                2335
+              ],
+              [
+                179,
+                1176,
+                2335
+              ],
+              [
+                179,
+                1177,
+                2344
+              ],
+              [
+                179,
+                1174,
+                2327
+              ]
+            ]
+          },
+          "final": {
+            "count": 10,
+            "rank_sums": [
+              30,
+              39,
+              23,
+              24,
+              30
+            ],
+            "score_totals": [
+              [
+                240,
+                1621,
+                4341
+              ],
+              [
+                240,
+                1621,
+                4269
+              ],
+              [
+                240,
+                1621,
+                4350
+              ],
+              [
+                240,
+                1621,
+                4364
+              ],
+              [
+                240,
+                1621,
+                4328
+              ]
+            ]
+          }
+        },
+        "verified_diagnostics": {
+          "model_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0
+        },
+        "diagnostic_log_files": 30,
+        "freeze_unchanged": true,
+        "fixed_hashes_matched": true,
+        "local_candidate_hashes_matched": true,
+        "execution": {
+          "availableCpus": 32,
+          "jobs": 6
+        },
+        "exit_code": 0,
+        "freeze_check_exit_code": 0,
+        "archive_sha256": "991b5ee280c3b04f2358fd1a2a3254bb2d5681655718dcb22beb5538f960c04f",
+        "local_run_json": ".game/runs/1791176997855521450-16999/run.json",
+        "promoted": false
+      },
+      "completed_at": "2026-10-05T06:01:41.377006+00:00"
+    },
+    {
+      "attempt": 2,
+      "host": "voidlinux-1",
+      "run_id": "1791187789582024311-17740",
+      "pid": 17740,
+      "wrapper_pid": 17738,
+      "remote_root": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+      "remote_run_json": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/runs/1791187789582024311-17740/run.json",
+      "log": ".game/pool-g007-formal-2.log",
+      "exit": ".game/pool-g007-formal-2.exit",
+      "freeze": ".game/pool-g007-formal-2.freeze.json",
+      "freeze_check": ".game/pool-g007-formal-2.freeze-check.json",
+      "freeze_check_exit": ".game/pool-g007-formal-2.freeze-check.exit",
+      "actual_process": ".game/pool-g007-formal-2.actual-process.json",
+      "config": ".game/pool-g007-host1-config.json",
+      "status": "completed",
+      "started_at": "2026-10-05T08:10:58.150349+00:00",
+      "audit": {
+        "run_id": "1791187789582024311-17740",
+        "valid_formal_run": true,
+        "errors": [],
+        "rank_sums": [
+          83,
+          110,
+          77,
+          81,
+          82
+        ],
+        "average_ranks": [
+          2.7666666666666666,
+          3.6666666666666665,
+          2.566666666666667,
+          2.7,
+          2.7333333333333334
+        ],
+        "score_totals": [
+          [
+            543,
+            3674,
+            8373
+          ],
+          [
+            543,
+            3676,
+            8248
+          ],
+          [
+            543,
+            3677,
+            8395
+          ],
+          [
+            543,
+            3683,
+            8389
+          ],
+          [
+            543,
+            3682,
+            8350
+          ]
+        ],
+        "warnings": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_identities": [
+          "content-v3:6abeeb40e89ecd016b5e0eb70c88cec8",
+          "content-v3:a4a0e3804ef79e2d242536fff4d0610f",
+          "content-v3:6820fb905f409b9655e64f672d8db46d",
+          "content-v3:9f107ad383c8f566ca695a5ccded5cfd"
+        ],
+        "target_sole_first": false,
+        "note": "昇格には別途、評価中の実装凍結・識別一致と実際のSSH実行条件を照合する。",
+        "all_players_ac": true,
+        "by_format": {
+          "first": {
+            "count": 10,
+            "rank_sums": [
+              32,
+              37,
+              18,
+              30,
+              25
+            ],
+            "score_totals": [
+              [
+                124,
+                879,
+                1683
+              ],
+              [
+                124,
+                881,
+                1656
+              ],
+              [
+                124,
+                884,
+                1694
+              ],
+              [
+                124,
+                886,
+                1670
+              ],
+              [
+                124,
+                883,
+                1693
+              ]
+            ]
+          },
+          "semifinal": {
+            "count": 10,
+            "rank_sums": [
+              22,
+              33,
+              34,
+              32,
+              21
+            ],
+            "score_totals": [
+              [
+                179,
+                1174,
+                2355
+              ],
+              [
+                179,
+                1174,
+                2330
+              ],
+              [
+                179,
+                1172,
+                2342
+              ],
+              [
+                179,
+                1176,
+                2337
+              ],
+              [
+                179,
+                1178,
+                2338
+              ]
+            ]
+          },
+          "final": {
+            "count": 10,
+            "rank_sums": [
+              29,
+              40,
+              25,
+              19,
+              36
+            ],
+            "score_totals": [
+              [
+                240,
+                1621,
+                4335
+              ],
+              [
+                240,
+                1621,
+                4262
+              ],
+              [
+                240,
+                1621,
+                4359
+              ],
+              [
+                240,
+                1621,
+                4382
+              ],
+              [
+                240,
+                1621,
+                4319
+              ]
+            ]
+          }
+        },
+        "verified_diagnostics": {
+          "model_mismatch_count": 0,
+          "score_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0
+        },
+        "diagnostic_log_files": 30,
+        "freeze_unchanged": true,
+        "fixed_hashes_matched": true,
+        "local_candidate_hashes_matched": true,
+        "execution": {
+          "availableCpus": 32,
+          "jobs": 6
+        },
+        "exit_code": 0,
+        "freeze_check_exit_code": 0,
+        "archive_sha256": "3b6b55177ebc74a725e1ad0bf736c7a74eb2cd6ec8abc744bf61d7c0875ca013",
+        "local_run_json": ".game/runs/1791187789582024311-17740/run.json",
+        "promoted": false,
+        "verified_cui_comparison": {
+          "file": ".game/pool-g007-formal-2.compare.json",
+          "accepted": 30,
+          "excluded": 0,
+          "outcomes": {
+            "wins": 18,
+            "draws": 1,
+            "losses": 11
+          },
+          "baseline_scores": {
+            "uniqueBrands": 543,
+            "dailyBrands": 3677,
+            "udon": 8356
+          },
+          "candidate_scores": {
+            "uniqueBrands": 543,
+            "dailyBrands": 3674,
+            "udon": 8373
+          }
+        }
+      },
+      "completed_at": "2026-10-05T08:58:12.686766+00:00"
+    },
+    {
+      "attempt": 3,
+      "host": "voidlinux-1",
+      "run_id": "1791198519955245014-18519",
+      "pid": 18519,
+      "wrapper_pid": 18517,
+      "remote_root": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+      "remote_run_json": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/runs/1791198519955245014-18519/run.json",
+      "status": "completed",
+      "started_at": "2026-10-05T11:09:51.698215+00:00",
+      "config": ".game/pool-g007-host1-config.json",
+      "log": ".game/pool-g007-formal-3.log",
+      "exit": ".game/pool-g007-formal-3.exit",
+      "freeze": ".game/pool-g007-formal-3.freeze.json",
+      "freeze_check": ".game/pool-g007-formal-3.freeze-check.json",
+      "freeze_check_exit": ".game/pool-g007-formal-3.freeze-check.exit",
+      "actual_process": ".game/pool-g007-formal-3.actual-process.json",
+      "audit": {
+        "run_id": "1791198519955245014-18519",
+        "valid_formal_run": true,
+        "errors": [],
+        "rank_sums": [
+          65,
+          108,
+          75,
+          85,
+          96
+        ],
+        "average_ranks": [
+          2.1666666666666665,
+          3.6,
+          2.5,
+          2.8333333333333335,
+          3.2
+        ],
+        "score_totals": [
+          [
+            543,
+            3676,
+            8419
+          ],
+          [
+            543,
+            3676,
+            8239
+          ],
+          [
+            543,
+            3674,
+            8380
+          ],
+          [
+            543,
+            3680,
+            8357
+          ],
+          [
+            543,
+            3681,
+            8325
+          ]
+        ],
+        "warnings": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "opponent_identities": [
+          "content-v3:6abeeb40e89ecd016b5e0eb70c88cec8",
+          "content-v3:a4a0e3804ef79e2d242536fff4d0610f",
+          "content-v3:6820fb905f409b9655e64f672d8db46d",
+          "content-v3:9f107ad383c8f566ca695a5ccded5cfd"
+        ],
+        "target_sole_first": true,
+        "note": "昇格には別途、評価中の実装凍結・識別一致と実際のSSH実行条件を照合する。",
+        "all_players_ac": true,
+        "freeze_unchanged": true,
+        "fixed_hashes_matched": true,
+        "local_candidate_hashes_matched": true,
+        "exit_code": 0,
+        "freeze_check_exit_code": 0,
+        "execution": {
+          "jobs": 6,
+          "availableCpus": 32
+        },
+        "diagnostic_log_files": 30,
+        "verified_diagnostics": {
+          "model_mismatch_count": 0,
+          "score_mismatch_count": 0,
+          "validation_fallback_count": 0,
+          "panic_count": 0
+        },
+        "archive_sha256": "615951d7f5f76415d3ce5defb745d9dd6c0f56a6113cf132b262c7b399820431",
+        "local_run_json": ".game/runs/1791198519955245014-18519/run.json",
+        "promoted": true
+      },
+      "completed_at": "2026-10-05T11:58:38.843105+00:00"
+    }
+  ],
+  "promoted": true,
+  "commit": "da1c7888e251b84689059b61569ec8040809b177",
+  "pushed": true,
+  "developer": "/root/pool_g007_developer",
+  "fixed_opponents_sha256_by_host": {
+    "voidlinux-1": {
+      "tester/game/samples/src/bin/game-sample-2.rs": "0db2be414d56cb6c1875efb25071a34e16bf12d74b3e7d8ad7defa6a08cbdc97",
+      "tester/game/samples/src/bin/game-sample-4.rs": "9c17a019ea6a99aef2e162a28180a5731ab1ada06ec11285f80aa1eba14972a5",
+      "tester/game/samples/src/bin/game-sample-1.rs": "5fd03403a449c3d0a407ce0fe9449e0d510b7be5235803fc869688743eebebdb",
+      "tester/game/samples/src/bin/game-sample-3.rs": "7ffe3910d024e505ce6a3911683e05df92398c964ce48ce50ea13576947788f2",
+      "tester/game/samples/src/pool-generation-006/planner.rs": "1003c94dcc9f1a42b96f55aa568803e0aa800a4a02837d53f8a349d953595a34",
+      "target/release/game-sample-1": "44df9525c3f4f7e970fc3fac2b8a2fd892460644ffd1d881144f51353d1a0d42",
+      "target/release/game-sample-2": "afd116ef25ed386338b8cf36e119cc83891f1d73b78feb74c8d818c87b877507",
+      "target/release/game-sample-3": "7a415f5aa02d3f0926fc4eee052357b6cc7dcb6de6d77ba7fca9687bd109d183",
+      "target/release/game-sample-4": "46c582e927abb9d67ed42a72fcf25d31fc83783b8f8f4691bc4477fedce9586b"
+    },
+    "voidlinux-3": {
+      "tester/game/samples/src/bin/game-sample-1.rs": "5fd03403a449c3d0a407ce0fe9449e0d510b7be5235803fc869688743eebebdb",
+      "tester/game/samples/src/bin/game-sample-2.rs": "0db2be414d56cb6c1875efb25071a34e16bf12d74b3e7d8ad7defa6a08cbdc97",
+      "tester/game/samples/src/bin/game-sample-4.rs": "9c17a019ea6a99aef2e162a28180a5731ab1ada06ec11285f80aa1eba14972a5",
+      "tester/game/samples/src/bin/game-sample-3.rs": "7ffe3910d024e505ce6a3911683e05df92398c964ce48ce50ea13576947788f2",
+      "tester/game/samples/src/pool-generation-006/planner.rs": "1003c94dcc9f1a42b96f55aa568803e0aa800a4a02837d53f8a349d953595a34",
+      "target/release/game-sample-1": "cb5f50866f9affd164d18f89b2a4e9553d5af32092fb2d1bb3a75baea38aff20",
+      "target/release/game-sample-2": "07f1f6d3d18aad90e5eb1c39ea5313e9a03f1c81fe286cf12829f78a8162a455",
+      "target/release/game-sample-3": "41d6df687a6788709ee1c066d3f7b222d4d06891fc4bafef37ddf2c03c290fd0",
+      "target/release/game-sample-4": "f80ebd58a815498aa387380357781a7eaf661dd3b32aef79e2a94049ca56afe9"
+    }
+  },
+  "opponents_build_verified": {
+    "voidlinux-1": true,
+    "voidlinux-3": true
+  },
+  "developer_task_file": "/home/jikky/Downloads/procon37/.game/pool-g007-developer-task.txt",
+  "updated_at": "2026-10-05T10:08:24.055873+00:00",
+  "candidate_source_sha256": {
+    "main.rs": "017b4d04ae4e7d8310d39f48b3d5ce0a72ff54aacc62fc1ac84b22ea469cc9a7",
+    "solver/planner.rs": "27ac916e1b3ed962f58ce14614db35a40a8964185ef728b08d2754c5db2999c4"
+  },
+  "latest_candidate_transfer": {
+    "host": "voidlinux-3",
+    "source_sha256": {
+      "main.rs": "017b4d04ae4e7d8310d39f48b3d5ce0a72ff54aacc62fc1ac84b22ea469cc9a7",
+      "solver/planner.rs": "9e4f5475b95adf1a634b5113e111276570d7c939435ae8df62a860603431c0b2",
+      "solver/README.md": "fd5f96a6fe638ad2895ef6aa2c7ddf7726fdd4c17f9c8fb6fd8d8b281fa7b151",
+      "solver/docs/algorithm.md": "9894a1b818d1f00c723b35fe3cd2d665ec6c394318e51bf9b92052ad7e01f06d",
+      "solver/docs/settings.md": "1f6fa2b3cc44ff15172689cba4b8584c9ec47c74ae0752532a35db623a8ab811",
+      "solver/docs/validation.md": "136f84821561a6e3ad561ef9952e5d736e706a3f711ad3b12793b1a5bcb2f7bd"
+    },
+    "verified": true,
+    "version": "v36: 三台訪問列の循環交換近傍",
+    "checked_at": "2026-10-05T10:08:24.055873+00:00"
+  },
+  "formal_candidate_files_sha256": {
+    "main.rs": "017b4d04ae4e7d8310d39f48b3d5ce0a72ff54aacc62fc1ac84b22ea469cc9a7",
+    "solver/planner.rs": "cd9700025a440c5a0fde3e2e30f180d0371ed0e7ef071489c53acf904ed62a1a",
+    "solver/README.md": "fd5f96a6fe638ad2895ef6aa2c7ddf7726fdd4c17f9c8fb6fd8d8b281fa7b151",
+    "solver/docs/algorithm.md": "b7b06ee5994ec4d42b81bf56f4c41c6a5a8332a00caf43c6259171ed7f922a7e",
+    "solver/docs/settings.md": "6daa9c792f84500bc0e8aae40597c9a7f24465556c7e9d326996f5ddccc357cf",
+    "solver/docs/validation.md": "c892aa274d168b63d4c3cb1d540d0f8748c4a1620f887b570c72af2a38ca5f7f"
+  },
+  "developer_stopped_for_formal": true,
+  "formal_evaluation": {
+    "attempt": 3,
+    "host": "voidlinux-1",
+    "run_id": "1791198519955245014-18519",
+    "pid": 18519,
+    "wrapper_pid": 18517,
+    "remote_root": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+    "remote_run_json": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/runs/1791198519955245014-18519/run.json",
+    "status": "completed",
+    "started_at": "2026-10-05T11:09:51.698215+00:00",
+    "config": ".game/pool-g007-host1-config.json",
+    "log": ".game/pool-g007-formal-3.log",
+    "exit": ".game/pool-g007-formal-3.exit",
+    "freeze": ".game/pool-g007-formal-3.freeze.json",
+    "freeze_check": ".game/pool-g007-formal-3.freeze-check.json",
+    "freeze_check_exit": ".game/pool-g007-formal-3.freeze-check.exit",
+    "actual_process": ".game/pool-g007-formal-3.actual-process.json",
+    "audit": {
+      "run_id": "1791198519955245014-18519",
+      "valid_formal_run": true,
+      "errors": [],
+      "rank_sums": [
+        65,
+        108,
+        75,
+        85,
+        96
+      ],
+      "average_ranks": [
+        2.1666666666666665,
+        3.6,
+        2.5,
+        2.8333333333333335,
+        3.2
+      ],
+      "score_totals": [
+        [
+          543,
+          3676,
+          8419
+        ],
+        [
+          543,
+          3676,
+          8239
+        ],
+        [
+          543,
+          3674,
+          8380
+        ],
+        [
+          543,
+          3680,
+          8357
+        ],
+        [
+          543,
+          3681,
+          8325
+        ]
+      ],
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "opponent_identities": [
+        "content-v3:6abeeb40e89ecd016b5e0eb70c88cec8",
+        "content-v3:a4a0e3804ef79e2d242536fff4d0610f",
+        "content-v3:6820fb905f409b9655e64f672d8db46d",
+        "content-v3:9f107ad383c8f566ca695a5ccded5cfd"
+      ],
+      "target_sole_first": true,
+      "note": "昇格には別途、評価中の実装凍結・識別一致と実際のSSH実行条件を照合する。",
+      "all_players_ac": true,
+      "freeze_unchanged": true,
+      "fixed_hashes_matched": true,
+      "local_candidate_hashes_matched": true,
+      "exit_code": 0,
+      "freeze_check_exit_code": 0,
+      "execution": {
+        "jobs": 6,
+        "availableCpus": 32
+      },
+      "diagnostic_log_files": 30,
+      "verified_diagnostics": {
+        "model_mismatch_count": 0,
+        "score_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0
+      },
+      "archive_sha256": "615951d7f5f76415d3ce5defb745d9dd6c0f56a6113cf132b262c7b399820431",
+      "local_run_json": ".game/runs/1791198519955245014-18519/run.json",
+      "promoted": true
+    },
+    "completed_at": "2026-10-05T11:58:38.843105+00:00"
+  },
+  "developer_running_evaluation": {
+    "run_id": "1791197677243507226-1967",
+    "pid": 1967,
+    "host": "voidlinux-3",
+    "remote_output_dir": "/tmp/procon37-g007-dev.XhlUu9",
+    "status": "completed",
+    "count": 1,
+    "seed": 24,
+    "time_limit_ms": null,
+    "arenaMaps": true,
+    "label": "g007-v37-seed24-all-cell-hubs-default",
+    "actual_cmdline_verified": true,
+    "checked_at": "2026-10-05T10:57:14.236768+00:00"
+  },
+  "developer_reported_unit_test": {
+    "version": "v32",
+    "host": "voidlinux-3",
+    "success": true,
+    "count": 1,
+    "coverage": "256訪問パターン×在庫オフセット9通り、32bit全位置",
+    "source": "開発者報告・親はテストを再起動しない"
+  },
+  "formal_launch_script": ".game/pool-g007-formal.sh",
+  "completed_generations_this_session": 2,
+  "reference_evaluation_required_before_next_generation": true,
+  "reference_evaluation": {
+    "host": "voidlinux-1",
+    "run_id": "1791201569461549104-18884",
+    "pid": 18884,
+    "wrapper_pid": 18882,
+    "remote_root": "/home/voidlinux-1/procon37-pool-new-map-20261004",
+    "remote_run_json": "/home/voidlinux-1/procon37-pool-new-map-20261004/.game/runs/1791201569461549104-18884/run.json",
+    "status": "completed",
+    "config": ".game/pool-g007-reference-config.json",
+    "started_at": "2026-10-05T12:01:18.456147+00:00",
+    "same_formal_sources_and_binaries": true,
+    "log": ".game/pool-g007-reference.log",
+    "exit": ".game/pool-g007-reference.exit",
+    "freeze": ".game/pool-g007-reference.freeze.json",
+    "freeze_check": ".game/pool-g007-reference.freeze-check.json",
+    "freeze_check_exit": ".game/pool-g007-reference.freeze-check.exit",
+    "actual_process": ".game/pool-g007-reference.actual-process.json",
+    "audit": {
+      "run_id": "1791201569461549104-18884",
+      "valid_reference_run": true,
+      "errors": [],
+      "rank_sums": [
+        71,
+        115,
+        76,
+        85,
+        84
+      ],
+      "average_ranks": [
+        2.3666666666666667,
+        3.8333333333333335,
+        2.533333333333333,
+        2.8333333333333335,
+        2.8
+      ],
+      "score_totals": [
+        [
+          542,
+          3587,
+          7469
+        ],
+        [
+          542,
+          3585,
+          7300
+        ],
+        [
+          542,
+          3590,
+          7453
+        ],
+        [
+          542,
+          3592,
+          7428
+        ],
+        [
+          542,
+          3588,
+          7419
+        ]
+      ],
+      "warnings": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "opponent_identities": [
+        "content-v3:6abeeb40e89ecd016b5e0eb70c88cec8",
+        "content-v3:a4a0e3804ef79e2d242536fff4d0610f",
+        "content-v3:6820fb905f409b9655e64f672d8db46d",
+        "content-v3:9f107ad383c8f566ca695a5ccded5cfd"
+      ],
+      "reference_target_sole_first": true,
+      "note": "参考評価のみ。正式な昇格判定には使用しない。凍結とSSH実条件は別途確認する。",
+      "all_players_ac": true,
+      "freeze_unchanged": true,
+      "exit_code": 0,
+      "freeze_check_exit_code": 0,
+      "same_formal_sources_and_binaries": true,
+      "diagnostic_log_files": 30,
+      "verified_diagnostics": {
+        "model_mismatch_count": 0,
+        "score_mismatch_count": 0,
+        "validation_fallback_count": 0,
+        "panic_count": 0
+      },
+      "comparison": {
+        "accepted": 23,
+        "different": 7,
+        "results": [
+          {
+            "game": {
+              "ranks": [
+                11,
+                5,
+                4,
+                1,
+                2
+              ],
+              "averageRank": 2.0434782608695654,
+              "playerAverageRanks": [
+                2.0434782608695654,
+                3.869565217391304,
+                2.652173913043478,
+                2.608695652173913,
+                3.3043478260869565
+              ],
+              "opponents": [
+                {
+                  "wins": 21,
+                  "draws": 0,
+                  "losses": 2
+                },
+                {
+                  "wins": 13,
+                  "draws": 1,
+                  "losses": 9
+                },
+                {
+                  "wins": 12,
+                  "draws": 2,
+                  "losses": 9
+                },
+                {
+                  "wins": 18,
+                  "draws": 1,
+                  "losses": 4
+                }
+              ],
+              "scores": [
+                {
+                  "uniqueBrands": 421,
+                  "dailyBrands": 2861,
+                  "udon": 6129
+                },
+                {
+                  "uniqueBrands": 421,
+                  "dailyBrands": 2859,
+                  "udon": 5959
+                },
+                {
+                  "uniqueBrands": 421,
+                  "dailyBrands": 2858,
+                  "udon": 6086
+                },
+                {
+                  "uniqueBrands": 421,
+                  "dailyBrands": 2864,
+                  "udon": 6094
+                },
+                {
+                  "uniqueBrands": 421,
+                  "dailyBrands": 2864,
+                  "udon": 6054
+                }
+              ],
+              "accepted": 23
+            },
+            "id": "1791198519955245014-18519",
+            "outcomes": null,
+            "scores": {
+              "uniqueBrands": 421,
+              "dailyBrands": 2861,
+              "udon": 6129
+            },
+            "delta": null
+          },
+          {
+            "game": {
+              "ranks": [
+                8,
+                7,
+                2,
+                4,
+                2
+              ],
+              "averageRank": 2.347826086956522,
+              "playerAverageRanks": [
+                2.347826086956522,
+                3.782608695652174,
+                2.4347826086956523,
+                2.8260869565217392,
+                3.0
+              ],
+              "opponents": [
+                {
+                  "wins": 18,
+                  "draws": 0,
+                  "losses": 5
+                },
+                {
+                  "wins": 11,
+                  "draws": 1,
+                  "losses": 11
+                },
+                {
+                  "wins": 15,
+                  "draws": 0,
+                  "losses": 8
+                },
+                {
+                  "wins": 14,
+                  "draws": 2,
+                  "losses": 7
+                }
+              ],
+              "scores": [
+                {
+                  "uniqueBrands": 421,
+                  "dailyBrands": 2862,
+                  "udon": 6157
+                },
+                {
+                  "uniqueBrands": 421,
+                  "dailyBrands": 2862,
+                  "udon": 5984
+                },
+                {
+                  "uniqueBrands": 421,
+                  "dailyBrands": 2865,
+                  "udon": 6104
+                },
+                {
+                  "uniqueBrands": 421,
+                  "dailyBrands": 2868,
+                  "udon": 6098
+                },
+                {
+                  "uniqueBrands": 421,
+                  "dailyBrands": 2862,
+                  "udon": 6069
+                }
+              ],
+              "accepted": 23
+            },
+            "id": "1791201569461549104-18884",
+            "outcomes": {
+              "wins": 8,
+              "draws": 2,
+              "losses": 13
+            },
+            "scores": {
+              "uniqueBrands": 421,
+              "dailyBrands": 2862,
+              "udon": 6157
+            },
+            "delta": {
+              "uniqueBrands": 0,
+              "dailyBrands": 1,
+              "udon": 28
+            }
+          }
+        ]
+      },
+      "local_run_json": ".game/runs/1791201569461549104-18884/run.json"
+    },
+    "completed_at": "2026-10-05T13:45:16.429448+00:00"
+  },
+  "push_receipt": {
+    "implementation_commit": "da1c7888e251b84689059b61569ec8040809b177",
+    "remote": "https://github.com/Kyopronitac/procon37.git",
+    "branch": "feat/solver-for-new-map",
+    "success": true
+  }
+}

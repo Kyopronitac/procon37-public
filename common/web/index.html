@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>procon37/tester</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header class="app-header"><div><h1>procon37/tester</h1><p class="note">実行記録とリプレイ</p></div><div class="header-actions"><span id="connection" class="badge">ローカル実行</span><button id="newRun" class="primary">＋ 新しく実行</button></div></header>
+<div class="layout">
+  <aside class="sidebar">
+    <div class="section-heading"><h2>実行履歴</h2><button id="refresh" class="quiet" aria-label="実行履歴を更新">更新</button></div>
+    <div id="activePanel" class="card active-panel" hidden><div id="progressText" class="note" role="status"></div><progress id="progress" value="0" max="1"></progress><div class="btn-row"><button id="showActive">実行中の結果</button><button id="cancel" disabled>中断</button></div></div>
+    <button id="chooseComparison">履歴を比較</button><div id="compareControls" class="compare-actions" hidden><div class="btn-row"><button id="compareSelected" class="primary" disabled>比較する</button><button id="cancelComparison">キャンセル</button></div><span id="compareCount" class="note">2〜4件を選択</span></div>
+    <button id="importHistory">履歴をインポート</button>
+    <nav id="history" class="history-list" aria-label="実行履歴"><p class="note">履歴を読み込んでいます…</p></nav>
+    <div class="sidebar-tools"><button id="newPreview">問題を生成して見る</button><label class="file-button" for="replayFile">JSONファイルを開く<input type="file" id="replayFile" accept=".json" aria-label="JSONファイルを開く"></label><p class="note">実行結果は自動保存されます。<br>ファイル読み込みは外部の記録や問題の閲覧に使えます。</p></div>
+  </aside>
+  <main class="main">
+    <div id="error" class="error" role="alert" hidden></div>
+    <section id="emptyView" class="card empty-state"><h2>実行結果をここに蓄積します</h2><p>seedと形式を指定して実行すると、得点の一覧と各試合のリプレイを確認できます。</p><button id="emptyRun" class="primary">最初のテストを実行</button></section>
+    <section id="compareView" hidden>
+      <div class="record-header"><div><p class="eyebrow">実行履歴の比較</p><h2>同じ問題で、結果を見比べる</h2><p id="compareDescription" class="note"></p></div><button id="refreshComparison">比較を更新</button></div>
+      <div class="card compare-tools"><div class="result-tools"><label>比較の基準<select id="compareBaseline"></select></label><label>表示する値<select id="compareMetric"><option value="uniqueBrands">種類数</option><option value="dailyBrands">日別種類</option><option value="udon">玉数</option><option value="answerTimeMs">回答時間（ms）</option></select></label><label>形式<select id="compareFormat"><option value="">すべての形式</option><option value="first">1回戦</option><option value="semifinal">準決勝</option><option value="final">決勝</option></select></label><label>ケース<select id="compareFilter"><option value="all">すべて</option><option value="matched">同一問題</option><option value="changed">得点・判定に差がある</option><option value="unmatched">問題相違・未実行など</option></select></label></div></div>
+      <div id="compareCards" class="compare-cards"></div>
+      <div class="card"><p id="compareSummary" class="note"></p><div class="table-scroll"><table id="comparisonTable" class="data-table"></table></div><p id="compareEmpty" class="empty-message" hidden>条件に一致するケースがありません。</p></div>
+    </section>
+    <section id="recordHeader" class="record-header" hidden><div><p id="recordSource" class="eyebrow"></p><h2 id="recordTitle"></h2><p id="recordMeta" class="note"></p></div><div class="record-actions"><span id="recordStatus" class="badge"></span><button id="exportRun" hidden>履歴をエクスポート</button><button id="rerun">この設定で再実行</button></div></section>
+    <nav id="viewTabs" class="tabs" aria-label="記録の表示" hidden><button id="resultsTab" data-view="results" class="active">結果一覧</button><button id="mapTab" data-view="map" disabled>リプレイ</button><button id="logsTab" data-view="logs">ログ</button></nav>
+    <section id="resultsView" hidden>
+      <div id="runMetrics" class="metrics"></div>
+      <section class="card score-summary"><div class="section-heading"><h2>スコア合計</h2><span id="totalsNote" class="note"></span></div><div id="runTotals" class="table-scroll"></div></section>
+      <div class="card">
+        <div class="result-tools"><label>形式<select id="filterFormat"><option value="">すべての形式</option><option value="first">1回戦</option><option value="semifinal">準決勝</option><option value="final">決勝</option></select></label><label>判定<select id="filterStatus"><option value="">すべての判定</option><option value="AC">AC</option><option value="WA">WA</option><option value="TLE">TLE</option><option value="RE">RE</option></select></label><label class="seed-filter">seed<input id="filterSeed" type="search" placeholder="seedを検索" inputmode="numeric"></label><label>並び順<select id="sortCases"><option value="seed">seed順</option><option value="score">得点順</option><option value="issues">問題のあるケースを先に</option></select></label></div>
+        <p id="resultSummary" class="note"></p><div class="table-scroll"><table id="results" class="data-table"><thead><tr><th>seed</th><th>形式</th><th>種類数</th><th>日別種類</th><th>玉数</th><th>回答時間</th><th>判定</th><th></th></tr></thead><tbody></tbody></table></div><p id="noCases" class="empty-message" hidden></p>
+      </div>
+      <details class="card run-details"><summary>この実行の設定</summary><p class="note">記録された設定です。変更して実行する場合は「この設定で再実行」を使います。</p><pre id="recordConfig"></pre></details>
+    </section>
+    <section id="mapView" hidden>
+      <div class="case-toolbar"><div><h3 id="caseLabel"></h3><p id="caseOrigin" class="note"></p></div><div class="btn-row"><button id="previousCase" aria-label="前のケース" disabled>← 前のseed</button><button id="nextCase" aria-label="次のケース" disabled>次のseed →</button><button id="backToResults">一覧へ</button><button id="toggleInspector" aria-controls="replayInspector" aria-expanded="true">詳細</button><button id="toggleHeatmap" aria-pressed="false" aria-controls="heatmapControls" disabled>ヒートマップ</button><button id="exportGif" class="primary" disabled>GIF出力</button></div></div>
+      <div id="heatmapControls" class="heatmap-controls" hidden>
+        <label>車種<select id="heatmapMode"><option value="both">巡回車＋補給車（合計）</option><option value="patrol">巡回車</option><option value="supply">補給車</option></select></label>
+        <label>範囲<select id="heatmapScope"><option value="day">当日</option><option value="all">全日</option></select></label>
+        <label id="heatmapTeamsField">対象<select id="heatmapTeams"><option value="selected">選択チーム</option><option value="all">全チーム</option></select></label>
+        <span id="heatmapScale" class="heatmap-scale"></span>
+        <span id="heatmapDescription" class="note"></span>
+      </div>
+      <div class="viewer-grid"><div class="board-column">
+        <div class="canvas-wrap"><canvas id="canvas" width="860" height="660" aria-label="六角形の試合盤面"></canvas><div class="zoom-controls" role="group" aria-label="盤面の拡大と縮小"><button id="zoomIn" aria-label="拡大">+</button><button id="zoomOut" aria-label="縮小">−</button><button id="zoomReset" aria-label="ズームをリセット">⟲</button><span id="zoomLevel">100%</span></div></div><div id="cellInfo" class="note cell-info">セルをクリックすると詳細を表示します。</div>
+        <div class="card playback">
+          <div id="chapterSeek" class="chapter-seek"><div id="chapterTrack" class="chapter-track" aria-hidden="true"></div><input id="slider" type="range" min="0" max="0" value="0" aria-label="再生位置" disabled><div id="seekTooltip" class="seek-tooltip" hidden></div></div>
+          <div id="chapterLabels" class="chapter-labels" role="group" aria-label="日ごとの再生位置"></div>
+          <div class="playback-controls"><div class="timeline"><button id="prev" aria-label="前のステップ" disabled>‹</button><button id="play" disabled>▶ 再生</button><button id="next" aria-label="次のステップ" disabled>›</button><select id="speed" aria-label="再生速度"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option><option value="16">16×</option></select></div><div class="day-controls"><label for="day">日</label><select id="day" disabled></select><label for="step">Step</label><input id="step" type="number" value="0" min="0" disabled></div><span id="tpos" class="tpos">初期配置</span></div>
+        </div>
+      </div><aside id="replayInspector" class="inspector card" aria-label="リプレイの詳細">
+        <div class="inspector-heading"><div class="inspector-tabs" role="tablist" aria-label="詳細の表示"><button id="inspect-score" data-inspector="score" role="tab" aria-controls="inspector-score" aria-selected="true">スコア</button><button id="inspect-agents" data-inspector="agents" role="tab" aria-controls="inspector-agents" aria-selected="false" tabindex="-1">車</button><button id="inspect-events" data-inspector="events" role="tab" aria-controls="inspector-events" aria-selected="false" tabindex="-1">出来事</button><button id="inspect-settings" data-inspector="settings" role="tab" aria-controls="inspector-settings" aria-selected="false" tabindex="-1">設定</button></div><button id="closeInspector" class="quiet" aria-label="詳細を閉じる">×</button></div>
+        <section id="inspector-score" class="inspector-panel" role="tabpanel" aria-labelledby="inspect-score"><h2>表示ステップのスコア</h2><table class="stats" id="stats"></table><div class="brandbar"><div class="brow"><span class="blabel">試合</span><span id="brandCount" class="bcount">0種類</span><div id="brands" class="chips"></div></div><div class="brow"><span class="blabel">当日</span><span id="dayBrandCount" class="bcount">0種類</span><div id="dayBrands" class="chips"></div></div></div></section>
+        <section id="inspector-agents" class="inspector-panel" role="tabpanel" aria-labelledby="inspect-agents" hidden><h2>エージェント <span class="note">選択して位置・燃料を確認</span></h2><div class="table-scroll"><table id="agents" class="data-table"></table></div></section>
+        <section id="inspector-events" class="inspector-panel" role="tabpanel" aria-labelledby="inspect-events" hidden><h2>このステップの出来事</h2><div id="events" class="event-list note"></div><div id="dayFailure" class="error" hidden></div></section>
+        <section id="inspector-settings" class="inspector-panel" role="tabpanel" aria-labelledby="inspect-settings" hidden><h2>凡例・表示設定</h2><div id="legend"></div><label class="check"><input type="checkbox" id="showIds">セル番号を表示</label><label class="check"><input type="checkbox" id="showRoute" checked>全車両の当日の経路を表示（点線）</label></section>
+        <div class="btn-row export-actions"><button id="download" disabled>リプレイJSON</button><button id="saveProblem" disabled>問題JSON</button></div>
+      </aside></div>
+    </section>
+    <section id="logsView" hidden><div class="card"><h2>この実行のビルドログ</h2><pre id="buildLog"></pre></div><div class="card"><h2 id="solverLogTitle">ソルバログ（stderr）</h2><pre id="solverLog">結果一覧からケースを開くと表示されます。</pre></div></section>
+  </main>
+</div>
+<dialog id="runDialog" aria-labelledby="runDialogTitle"><form id="runForm">
+  <div class="dialog-heading"><div><p class="eyebrow">テストを開始</p><h2 id="runDialogTitle">新しい実行</h2></div><button type="button" data-close="runDialog" aria-label="実行設定を閉じる">×</button></div>
+  <p id="runDialogHint" class="note">実行が終わると、結果とリプレイが自動保存されます。</p>
+  <label class="block" for="runLabel">実行名（任意）</label><input id="runLabel" type="text" maxlength="80" placeholder="例: 貪欲法 v2">
+  <label class="check"><input id="arenaMaps" type="checkbox" checked>非公式練習場のマップを含める（4ケースに1ケース）</label>
+  <div class="form-grid"><label>実行対象<select id="mode"><option value="batch">seed 0 から一括</option><option value="single">単一seed</option></select></label><label id="countRow">seed数<input id="count" type="number" min="1" max="10000" value="60"></label><label id="seedRow" hidden>seed<input id="seed" type="text" inputmode="numeric" value="0"></label><label>形式<select id="format"><option value="auto">形式自動決定</option><option value="first">1回戦 · 16×16</option><option value="semifinal">準決勝 · 24×24</option><option value="final">決勝 · 32×32</option></select></label><label>ソルバ内の並列処理<select id="solverParallel"><option value="false">なし · 複数seedを並列実行</option><option value="true">あり · 1seedずつ実行</option></select></label></div><p id="parallelHint" class="note"></p>
+  <details><summary>詳細設定・ビルド・ソルバ</summary><label class="block" for="jobs">同時seed数の上書き</label><input id="jobs" type="number" min="1" max="256" placeholder="空欄で自動"><p class="note">自動ではCPU数とソルバ内並列の設定に合わせます。</p><label class="check"><input id="buildEnabled" type="checkbox" checked>実行前にビルドする</label><label class="block" for="timeout">制限時間の上書き（ms）</label><input id="timeout" type="number" min="1" max="3600000" placeholder="空欄で公式条件"><label class="block" for="buildConfig">ビルドコマンド</label><textarea id="buildConfig" rows="5" spellcheck="false"></textarea><label class="block" for="solverConfig">ソルバコマンド</label><textarea id="solverConfig" rows="6" spellcheck="false"></textarea><p class="note">program / args / cwd / env を設定できます。</p></details>
+  <p id="runError" class="error" role="alert" hidden></p><div class="dialog-footer"><span id="runBusyNote" class="note" hidden>実行中のテストが完了するか、中断してから開始できます。</span><button type="button" data-close="runDialog">戻る</button><button id="run" type="submit" class="primary">ビルドして実行</button></div>
+</form></dialog>
+<dialog id="previewDialog" aria-labelledby="previewTitle"><form id="previewForm"><div class="dialog-heading"><div><p class="eyebrow">実行せずに確認</p><h2 id="previewTitle">問題を生成</h2></div><button type="button" data-close="previewDialog" aria-label="問題生成を閉じる">×</button></div><p class="note">盤面だけを表示します。実行履歴には保存されません。</p><div class="form-grid"><label>プレビューseed<input id="previewSeed" type="text" inputmode="numeric" value="0"></label><label>プレビュー形式<select id="previewFormat"><option value="auto">形式自動決定</option><option value="first">1回戦 · 16×16</option><option value="semifinal">準決勝 · 24×24</option><option value="final">決勝 · 32×32</option></select></label></div><label class="check"><input id="previewArenaMaps" type="checkbox" checked>非公式練習場のマップを含める（4ケースに1ケース）</label><p id="previewError" class="error" role="alert" hidden></p><div class="dialog-footer"><button type="button" data-close="previewDialog">戻る</button><button id="generate" type="submit" class="primary">盤面を表示</button></div></form></dialog>
+<dialog id="importDialog" aria-labelledby="importTitle"><form id="importForm">
+  <div class="dialog-heading"><h2 id="importTitle">実行履歴をインポート</h2><button type="button" data-close="importDialog" aria-label="インポートを閉じる">×</button></div>
+  <p class="note">別の端末でエクスポートしたZIPを選びます。結果・問題・リプレイ・ログを新しい履歴として保存し、この端末の実行と比較できます。</p>
+  <label class="import-field">履歴ZIP<input id="historyFile" type="file" accept=".zip,application/zip" required></label>
+  <label class="import-field">実行名（任意）<input id="importLabel" type="text" maxlength="80" placeholder="例: ノートPC · 改善版"><span class="note">空欄なら元の実行名を使います。</span></label>
+  <p id="importProgress" class="note" role="status" hidden>ZIPを検証して取り込んでいます…</p><p id="importError" class="error" role="alert" hidden></p>
+  <div class="dialog-footer"><button type="button" data-close="importDialog">キャンセル</button><button type="submit" class="primary">取り込む</button></div>
+</form></dialog>
+<dialog id="deleteDialog" aria-labelledby="deleteTitle" aria-describedby="deleteDescription"><form id="deleteForm">
+  <div class="dialog-heading"><h2 id="deleteTitle">実行履歴を削除</h2><button type="button" data-close="deleteDialog" aria-label="削除確認を閉じる">×</button></div>
+  <p id="deleteTarget" class="delete-target"></p><p id="deleteDescription" class="note">この実行の結果・問題・リプレイ・ログをすべて削除します。この操作は取り消せません。</p>
+  <p id="deleteError" class="error" role="alert" hidden></p><div class="dialog-footer"><button type="button" data-close="deleteDialog" autofocus>キャンセル</button><button id="confirmDelete" type="submit" class="danger">削除する</button></div>
+</form></dialog>
+<dialog id="gifDialog" aria-labelledby="gifTitle"><form id="gifForm">
+  <div class="dialog-heading"><h2 id="gifTitle">GIF出力</h2><button type="button" data-close="gifDialog" aria-label="GIF出力を閉じる">×</button></div>
+  <p id="gifSource" class="note"></p>
+  <fieldset id="gifOptions" class="gif-options"><label>出力範囲<select id="gifScope"><option value="all">全日</option><option value="day">表示中の日</option></select></label><label>再生速度<select id="gifSpeed"><option value="1">1×</option><option value="2">2×</option><option value="4">4×</option><option value="8" selected>8×</option><option value="16">16×</option></select></label><label>画像幅<select id="gifWidth"><option value="480">480 px</option><option value="640" selected>640 px</option><option value="960">960 px</option></select></label></fieldset>
+  <p id="gifHint" class="note"></p><p class="note">盤面・日・ステップ・スコアを出力します。高速再生ではフレームを間引き、各日の先頭と末尾は残します。</p>
+  <div id="gifProgressRow" hidden><progress id="gifProgress" value="0" max="1" aria-label="GIF生成の進捗"></progress><p id="gifProgressText" class="note" role="status"></p></div>
+  <p id="gifError" class="error" role="alert" hidden></p>
+  <div id="gifReady" hidden><img id="gifPreview" alt="生成したGIFのプレビュー"><a id="gifDownload" class="file-button" download>GIFを保存</a></div>
+  <div class="dialog-footer"><button type="button" data-close="gifDialog">閉じる・中止</button><button id="makeGif" type="submit" class="primary">GIFを作成</button></div>
+</form></dialog>
+<script type="module" src="/app.js"></script>
+</body></html>

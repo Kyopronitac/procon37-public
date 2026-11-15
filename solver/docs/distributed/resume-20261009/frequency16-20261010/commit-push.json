@@ -1,0 +1,26 @@
+{
+  "status": "completed",
+  "branch": "feat/parallel-distributed-solver",
+  "remote": "origin",
+  "scope": "C013 competition deployment, scheduled submissions, comparison and reproducibility records",
+  "startingCommit": "0a17ab83ed768cbbf590f96ee2f25cf6cc57905c",
+  "normalPushRequired": true,
+  "implementationCommit": "dfd5759177f270477a33388b4d1d5f6566436070",
+  "implementationPush": {
+    "completedAtJst": "2026-10-10T06:08:38.137599+09:00",
+    "command": [
+      "git",
+      "push",
+      "origin",
+      "HEAD:refs/heads/feat/parallel-distributed-solver"
+    ],
+    "exitCode": 0,
+    "force": false,
+    "remoteBefore": "0a17ab83ed768cbbf590f96ee2f25cf6cc57905c",
+    "remoteAfter": "dfd5759177f270477a33388b4d1d5f6566436070",
+    "output": "To https://github.com/Kyopronitac/procon37.git\n   0a17ab8..dfd5759  HEAD -> feat/parallel-distributed-solver\n"
+  },
+  "sourceAfterCommitMatchesEvaluatedManifest": true,
+  "committedTaskPathsMatchWorkingTree": true,
+  "recordPublication": "This record is saved in a subsequent documentation commit; the implementation adoption and its successful push are identified above."
+}

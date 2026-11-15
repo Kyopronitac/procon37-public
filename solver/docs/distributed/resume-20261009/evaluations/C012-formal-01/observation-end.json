@@ -1,0 +1,2173 @@
+{
+  "stage": "C012-formal-01",
+  "phase": "end",
+  "observerSha256": "dffed3f07d341fecfc2f1aaf6c53f2d15b16927edc0109c1ee4cc368cdd53f38",
+  "configurationSha256": "5f981006bbaf4b662131f19be53d856c187a4e3ea920dcb4fabf626b02c3aaf2",
+  "nodes": {
+    "v1": {
+      "capturedAtUtc": "2026-10-09T17:57:36.158474+00:00",
+      "phase": "end",
+      "bootId": "7393e939-6ceb-4ae1-80dd-666ab95671f1",
+      "processes": [
+        {
+          "pid": 5477,
+          "startTicks": "1321693",
+          "state": "S",
+          "argv": [
+            "python3",
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team-runner.py",
+            "--bridge",
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+            "--solver",
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--team",
+            "0",
+            "--cpus",
+            "0-31",
+            ""
+          ],
+          "cpus": "0-31",
+          "threads": [
+            {
+              "tid": 5477,
+              "name": "python3",
+              "ticks": 1,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            }
+          ]
+        },
+        {
+          "pid": 6832,
+          "startTicks": "1869100",
+          "state": "S",
+          "argv": [
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/server-bridge",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--token",
+            "[redacted]",
+            "--solver",
+            "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+            ""
+          ],
+          "cpus": "0-31",
+          "threads": [
+            {
+              "tid": 6832,
+              "name": "server-bridge",
+              "ticks": 376,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6833,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6834,
+              "name": "tokio-rt-worker",
+              "ticks": 159,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6835,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6836,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6837,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6838,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6839,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6840,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6841,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6842,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6843,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6844,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6845,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6846,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6847,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6848,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6849,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6850,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6851,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6852,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6853,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6854,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6855,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6856,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6857,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6858,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6859,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6860,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6861,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6862,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6863,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 6864,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "scaling_governor": {
+          "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy28/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy18/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy26/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy16/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy24/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy22/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy30/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy20/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy29/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy19/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy27/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy17/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy25/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy23/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy31/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy21/scaling_governor": "performance"
+        },
+        "energy_performance_preference": {
+          "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy28/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy18/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy26/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy16/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy24/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy22/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy30/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy20/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy29/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy19/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy27/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy17/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy25/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy23/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy31/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy21/energy_performance_preference": "performance"
+        }
+      },
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": 0.002384185791015625,
+            "roundTripMs": 0.4229545593261719
+          },
+          {
+            "serverMinusClientMs": -0.26214122772216797,
+            "roundTripMs": 0.7336139678955078
+          },
+          {
+            "serverMinusClientMs": -0.24509429931640625,
+            "roundTripMs": 0.7638931274414062
+          },
+          {
+            "serverMinusClientMs": -0.4210472106933594,
+            "roundTripMs": 1.0457038879394531
+          },
+          {
+            "serverMinusClientMs": -0.23376941680908203,
+            "roundTripMs": 0.7393360137939453
+          },
+          {
+            "serverMinusClientMs": -0.25343894958496094,
+            "roundTripMs": 0.7429122924804688
+          },
+          {
+            "serverMinusClientMs": -0.3744363784790039,
+            "roundTripMs": 1.0540485382080078
+          },
+          {
+            "serverMinusClientMs": -0.24521350860595703,
+            "roundTripMs": 0.7288455963134766
+          }
+        ],
+        "medianBestHalfOffsetMs": -0.23949146270751953,
+        "minimumRoundTripMs": 0.4229545593261719,
+        "capturedUnix": 1791568656.5693998
+      },
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 17:57:25 2026\nSystem time     : 0.000009818 seconds fast of NTP time\nLast offset     : +0.000022119 seconds\nRMS offset      : 0.000011914 seconds\nFrequency       : 187.886 ppm fast\nResidual freq   : +0.009 ppm\nSkew            : 0.200 ppm\nRoot delay      : 0.000220403 seconds\nRoot dispersion : 0.001039415 seconds\nUpdate interval : 16.0 seconds\nLeap status     : Normal\n",
+        "stderr": ""
+      },
+      "logs": {
+        "resume-team.log": {
+          "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/resume-team.log",
+          "startByte": 85291,
+          "endByte": 91650,
+          "sha256": "87616dbf494755c7b162558da4af0eab9b2c74f5719a60e9ead329edd2d76a71",
+          "lineCount": 134,
+          "diagnosticLines": [
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0"
+          ],
+          "errorLines": []
+        },
+        "stderr.log": {
+          "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/stderr.log",
+          "startByte": 0,
+          "endByte": 233095,
+          "sha256": "e2b8bcf967bc9a5b39b014dc6baa92a2fb927b8554a59cd215909794e0b8dd43",
+          "lineCount": 1822,
+          "diagnosticLines": [
+            "dist mode=coordinator total_threads=32 cluster_threads=80 search_threads=77 session=1791566549116198978 cross_elite=true",
+            "dist peer=192.168.0.22:39370 request=1 completed=15/15 elapsed_ms=113265 rx_bytes=14131 tx_bytes=3696",
+            "dist peer=192.168.0.33:39370 request=1 completed=31/31 elapsed_ms=113329 rx_bytes=14138 tx_bytes=3696",
+            "dist request=1 external_request=0 phase=select input_digest=e941150ef16fbb29 selected_worker=46 value=76635.157 local_completed=31/31 remote_results=2/2 elapsed_ms=113408 state_digest=98de713e2e18a0ac",
+            "dist peer=192.168.0.22:39370 request=2 completed=15/15 elapsed_ms=55823 rx_bytes=130582 tx_bytes=221055",
+            "dist peer=192.168.0.33:39370 request=2 completed=31/31 elapsed_ms=55893 rx_bytes=130952 tx_bytes=220682",
+            "dist request=2 external_request=1 phase=plan input_digest=605efab4be52a7bc selected_worker=18 value=76620.954 local_completed=31/31 remote_results=2/2 elapsed_ms=55958 state_digest=eca5e03de8f15bb9",
+            "cross_elite request=2 origin=0 receiver=Some(7) published=23 received=29 rejected=0 context_mismatch=0 imports=6 improved=0 sent=32 oversized=0 probes=11 probe_ns=104276 repair_ns=23801937 duplicates=0 checks=134 eligible=106 max_stall_ms=34514 group_published=[4, 3, 2, 4, 5, 3, 2] group_received=[5, 4, 5, 2, 4, 5, 4] group_sent=[13, 10, 9, 10, 14, 11, 8] max_receiver_mailbox_age_ms=2583",
+            "dist peer=192.168.0.22:39370 request=3 completed=15/15 elapsed_ms=55633 rx_bytes=496967 tx_bytes=728564",
+            "dist peer=192.168.0.33:39370 request=3 completed=31/31 elapsed_ms=55702 rx_bytes=501512 tx_bytes=739815",
+            "dist request=3 external_request=2 phase=plan input_digest=85b168c435f3a011 selected_worker=56 value=75847.932 local_completed=31/31 remote_results=2/2 elapsed_ms=55771 state_digest=1a6727c3fb857191",
+            "cross_elite request=3 origin=0 receiver=Some(7) published=127 received=182 rejected=0 context_mismatch=0 imports=22 improved=3 sent=75 oversized=0 probes=50 probe_ns=444633 repair_ns=57625513 duplicates=0 checks=137 eligible=41 max_stall_ms=17884 group_published=[19, 19, 20, 16, 22, 19, 12] group_received=[29, 23, 28, 24, 28, 24, 26] group_sent=[43, 45, 48, 45, 50, 45, 40] max_receiver_mailbox_age_ms=4797",
+            "dist peer=192.168.0.22:39370 request=4 completed=15/15 elapsed_ms=55821 rx_bytes=856483 tx_bytes=1211893",
+            "dist peer=192.168.0.33:39370 request=4 completed=31/31 elapsed_ms=55889 rx_bytes=896544 tx_bytes=1198146",
+            "dist request=4 external_request=3 phase=plan input_digest=5284dfc998f78b22 selected_worker=15 value=75631.095 local_completed=31/31 remote_results=2/2 elapsed_ms=55959 state_digest=5b6d35f7c33c42ac",
+            "cross_elite request=4 origin=0 receiver=Some(7) published=119 received=194 rejected=0 context_mismatch=0 imports=19 improved=3 sent=68 oversized=0 probes=48 probe_ns=398193 repair_ns=62399142 duplicates=0 checks=138 eligible=44 max_stall_ms=14935 group_published=[20, 19, 24, 17, 14, 12, 13] group_received=[26, 26, 34, 29, 29, 21, 29] group_sent=[45, 38, 60, 51, 39, 33, 35] max_receiver_mailbox_age_ms=5328",
+            "dist peer=192.168.0.22:39370 request=5 completed=15/15 elapsed_ms=55822 rx_bytes=1283648 tx_bytes=1686627",
+            "dist peer=192.168.0.33:39370 request=5 completed=31/31 elapsed_ms=55891 rx_bytes=1242819 tx_bytes=1720044",
+            "dist request=5 external_request=4 phase=plan input_digest=7c46e66e30fb158d selected_worker=59 value=76057.361 local_completed=31/31 remote_results=2/2 elapsed_ms=55968 state_digest=10dcd8a7ac0052e5",
+            "cross_elite request=5 origin=0 receiver=Some(7) published=131 received=176 rejected=0 context_mismatch=0 imports=20 improved=1 sent=72 oversized=0 probes=55 probe_ns=364445 repair_ns=72460974 duplicates=0 checks=135 eligible=39 max_stall_ms=19687 group_published=[25, 19, 18, 16, 19, 18, 16] group_received=[27, 33, 25, 17, 23, 27, 24] group_sent=[45, 44, 37, 37, 49, 47, 37] max_receiver_mailbox_age_ms=6422",
+            "dist peer=192.168.0.22:39370 request=6 completed=15/15 elapsed_ms=52617 rx_bytes=1771442 tx_bytes=2315840",
+            "dist peer=192.168.0.33:39370 request=6 completed=31/31 elapsed_ms=52685 rx_bytes=1706102 tx_bytes=2362887",
+            "dist request=6 external_request=5 phase=plan input_digest=e8c4fab53776d720 selected_worker=49 value=43479.370 local_completed=31/31 remote_results=2/2 elapsed_ms=52747 state_digest=5c406e34fa3f872c",
+            "cross_elite request=6 origin=0 receiver=Some(7) published=151 received=200 rejected=0 context_mismatch=0 imports=27 improved=4 sent=95 oversized=0 probes=73 probe_ns=626242 repair_ns=81465492 duplicates=0 checks=203 eligible=75 max_stall_ms=15163 group_published=[25, 20, 25, 20, 21, 19, 21] group_received=[29, 34, 31, 29, 27, 22, 28] group_sent=[40, 49, 55, 50, 46, 45, 43] max_receiver_mailbox_age_ms=6514"
+          ],
+          "errorLines": []
+        }
+      },
+      "files": {
+        "distributed-solver": "574dd99a8ff0d20035acccca3f4e207ad2d7701308bc10374694137aa0f33016",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "ebcd6ee7841830d20e4ceafeeea94ccd367558fa8401e39593c1ded75b029897",
+        "resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118"
+      }
+    },
+    "v2": {
+      "capturedAtUtc": "2026-10-09T17:57:36.177113+00:00",
+      "phase": "end",
+      "bootId": "9903a715-edd1-4b7b-afba-100dd929dbaf",
+      "processes": [
+        {
+          "pid": 2573,
+          "startTicks": "1349537",
+          "state": "S",
+          "argv": [
+            "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver",
+            "--mode",
+            "worker",
+            "--threads",
+            "16",
+            "--worker-offset",
+            "31",
+            "--listen",
+            "192.168.0.22:39370",
+            "--cross-elite",
+            "on",
+            ""
+          ],
+          "cpus": "0-15",
+          "threads": [
+            {
+              "tid": 2573,
+              "name": "distributed-sol",
+              "ticks": 4641,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2574,
+              "name": "dist-search-31",
+              "ticks": 495219,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2575,
+              "name": "dist-search-32",
+              "ticks": 495249,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2576,
+              "name": "dist-search-33",
+              "ticks": 495292,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2577,
+              "name": "dist-search-34",
+              "ticks": 495214,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2578,
+              "name": "dist-search-35",
+              "ticks": 494957,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2579,
+              "name": "dist-search-36",
+              "ticks": 495247,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2580,
+              "name": "dist-search-37",
+              "ticks": 495231,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2581,
+              "name": "dist-search-38",
+              "ticks": 495405,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2582,
+              "name": "dist-search-39",
+              "ticks": 495152,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2583,
+              "name": "dist-search-40",
+              "ticks": 495314,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2584,
+              "name": "dist-search-41",
+              "ticks": 495254,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2585,
+              "name": "dist-search-42",
+              "ticks": 495409,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2586,
+              "name": "dist-search-43",
+              "ticks": 495255,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2587,
+              "name": "dist-search-44",
+              "ticks": 495233,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 2588,
+              "name": "dist-search-45",
+              "ticks": 495114,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "scaling_governor": {
+          "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance"
+        },
+        "energy_performance_preference": {
+          "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance"
+        }
+      },
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": -0.022411346435546875,
+            "roundTripMs": 0.23031234741210938
+          },
+          {
+            "serverMinusClientMs": -0.02956390380859375,
+            "roundTripMs": 0.247955322265625
+          },
+          {
+            "serverMinusClientMs": -0.04851818084716797,
+            "roundTripMs": 0.2391338348388672
+          },
+          {
+            "serverMinusClientMs": -0.025510787963867188,
+            "roundTripMs": 0.22411346435546875
+          },
+          {
+            "serverMinusClientMs": -0.025391578674316406,
+            "roundTripMs": 0.2219676971435547
+          },
+          {
+            "serverMinusClientMs": -0.031232833862304688,
+            "roundTripMs": 0.22077560424804688
+          },
+          {
+            "serverMinusClientMs": -0.02968311309814453,
+            "roundTripMs": 0.21910667419433594
+          },
+          {
+            "serverMinusClientMs": -0.026106834411621094,
+            "roundTripMs": 0.23436546325683594
+          }
+        ],
+        "medianBestHalfOffsetMs": -0.02759695053100586,
+        "minimumRoundTripMs": 0.21910667419433594,
+        "capturedUnix": 1791568656.5799437
+      },
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 17:57:29 2026\nSystem time     : 0.000010345 seconds fast of NTP time\nLast offset     : +0.000006544 seconds\nRMS offset      : 0.000023232 seconds\nFrequency       : 5.038 ppm fast\nResidual freq   : +0.007 ppm\nSkew            : 0.394 ppm\nRoot delay      : 0.000210034 seconds\nRoot dispersion : 0.001035850 seconds\nUpdate interval : 16.1 seconds\nLeap status     : Normal\n",
+        "stderr": ""
+      },
+      "logs": {
+        "resume-team.log": {
+          "path": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/resume-team.log",
+          "startByte": 16735126,
+          "endByte": 18575108,
+          "sha256": "da5dcc5213ba1602c00f7caaabd12584006d8d2cdf3af7c0f96a4975bad70a22",
+          "lineCount": 14484,
+          "diagnosticLines": [
+            "dist accepted_peer=192.168.0.11:46128",
+            "dist worker request=1 job=1 phase=select input_digest=8003180c8cea77f8 started=15 budget_ms=57844",
+            "dist worker request=1 completed=15/15 selected_worker=31 elapsed_ms=55482 rx_bytes=1559 tx_bytes=77",
+            "dist worker request=2 job=2 phase=plan input_digest=7d23c00af2866062 started=15 budget_ms=57695",
+            "dist worker request=2 completed=15/15 selected_worker=39 elapsed_ms=56458 rx_bytes=19429 tx_bytes=9526",
+            "cross_elite request=2 origin=31 receiver=Some(35) published=7 received=14 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=139 eligible=127 max_stall_ms=34580 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[2, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=1350",
+            "dist worker request=3 job=3 phase=plan input_digest=1e51e7ce2dbca7b9 started=15 budget_ms=57665",
+            "dist worker request=3 completed=15/15 selected_worker=38 elapsed_ms=56438 rx_bytes=168575 tx_bytes=114576",
+            "cross_elite request=3 origin=31 receiver=Some(35) published=71 received=93 rejected=0 context_mismatch=0 imports=21 improved=3 sent=24 oversized=0 probes=46 probe_ns=165219 repair_ns=25328167 duplicates=0 checks=139 eligible=55 max_stall_ms=17038 group_published=[13, 9, 12, 5, 9, 11, 12] group_received=[18, 17, 11, 13, 11, 11, 12] group_sent=[11, 7, 10, 5, 7, 9, 11] max_receiver_mailbox_age_ms=4614",
+            "dist worker request=4 job=4 phase=plan input_digest=38d9e28db507ea6b started=15 budget_ms=57661",
+            "dist worker request=4 completed=15/15 selected_worker=44 elapsed_ms=56429 rx_bytes=316479 tx_bytes=213872",
+            "cross_elite request=4 origin=31 receiver=Some(35) published=79 received=97 rejected=0 context_mismatch=0 imports=21 improved=2 sent=22 oversized=0 probes=46 probe_ns=204605 repair_ns=22158883 duplicates=0 checks=139 eligible=51 max_stall_ms=23312 group_published=[13, 18, 12, 7, 10, 9, 10] group_received=[17, 12, 18, 10, 11, 14, 15] group_sent=[10, 14, 10, 7, 7, 6, 6] max_receiver_mailbox_age_ms=3862",
+            "dist worker request=5 job=5 phase=plan input_digest=0175863233b414aa started=15 budget_ms=57662",
+            "dist worker request=5 completed=15/15 selected_worker=45 elapsed_ms=56430 rx_bytes=475085 tx_bytes=326236",
+            "cross_elite request=5 origin=31 receiver=Some(35) published=61 received=98 rejected=0 context_mismatch=0 imports=24 improved=7 sent=26 oversized=0 probes=58 probe_ns=230157 repair_ns=23538224 duplicates=0 checks=139 eligible=44 max_stall_ms=12794 group_published=[4, 12, 10, 8, 8, 11, 8] group_received=[11, 16, 14, 12, 15, 14, 16] group_sent=[4, 9, 9, 8, 7, 10, 6] max_receiver_mailbox_age_ms=4371",
+            "dist worker request=6 job=6 phase=plan input_digest=2c552b4d7f3d91db started=15 budget_ms=57660",
+            "dist worker request=6 completed=15/15 selected_worker=35 elapsed_ms=52508 rx_bytes=617711 tx_bytes=396219",
+            "cross_elite request=6 origin=31 receiver=Some(35) published=58 received=98 rejected=0 context_mismatch=0 imports=21 improved=4 sent=14 oversized=0 probes=46 probe_ns=185181 repair_ns=21521962 duplicates=0 checks=209 eligible=118 max_stall_ms=30336 group_published=[6, 8, 8, 8, 7, 14, 7] group_received=[17, 10, 12, 16, 14, 13, 16] group_sent=[4, 6, 6, 8, 7, 10, 5] max_receiver_mailbox_age_ms=5331",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:50174",
+            "dist worker request=1 job=7 phase=select input_digest=7dfc465c5b815e20 started=15 budget_ms=87846",
+            "dist worker request=1 completed=15/15 selected_worker=31 elapsed_ms=84333 rx_bytes=2497 tx_bytes=77",
+            "dist worker request=2 job=8 phase=plan input_digest=d18e0e8e4d63af09 started=15 budget_ms=57805",
+            "dist worker request=2 completed=15/15 selected_worker=40 elapsed_ms=55670 rx_bytes=99892 tx_bytes=32335",
+            "cross_elite request=2 origin=31 receiver=Some(35) published=15 received=37 rejected=0 context_mismatch=0 imports=4 improved=0 sent=3 oversized=0 probes=7 probe_ns=51206 repair_ns=10143433 duplicates=0 checks=139 eligible=112 max_stall_ms=25117 group_published=[2, 2, 2, 2, 3, 2, 2] group_received=[7, 5, 4, 5, 7, 5, 4] group_sent=[2, 2, 2, 2, 3, 2, 2] max_receiver_mailbox_age_ms=1498",
+            "dist worker request=3 job=9 phase=plan input_digest=bea844e72c6e4af9 started=15 budget_ms=57764",
+            "dist worker request=3 completed=15/15 selected_worker=44 elapsed_ms=55631 rx_bytes=389484 tx_bytes=208731",
+            "cross_elite request=3 origin=31 receiver=Some(35) published=86 received=128 rejected=0 context_mismatch=0 imports=22 improved=2 sent=21 oversized=0 probes=52 probe_ns=449395 repair_ns=46592092 duplicates=0 checks=139 eligible=49 max_stall_ms=24090 group_published=[15, 16, 16, 9, 7, 9, 14] group_received=[16, 21, 15, 19, 20, 19, 18] group_sent=[11, 12, 13, 9, 6, 8, 11] max_receiver_mailbox_age_ms=4980",
+            "dist worker request=4 job=10 phase=plan input_digest=d2a5101c20a09e12 started=15 budget_ms=57755",
+            "dist worker request=4 completed=15/15 selected_worker=42 elapsed_ms=55623 rx_bytes=749126 tx_bytes=470437",
+            "cross_elite request=4 origin=31 receiver=Some(35) published=98 received=166 rejected=0 context_mismatch=0 imports=23 improved=2 sent=33 oversized=0 probes=57 probe_ns=422575 repair_ns=44876286 duplicates=0 checks=139 eligible=32 max_stall_ms=9029 group_published=[21, 17, 11, 9, 14, 14, 12] group_received=[27, 19, 22, 25, 26, 19, 28] group_sent=[19, 14, 9, 9, 12, 11, 10] max_receiver_mailbox_age_ms=5736",
+            "dist worker request=5 job=11 phase=plan input_digest=56298371d293326a started=15 budget_ms=57753",
+            "dist worker request=5 completed=15/15 selected_worker=44 elapsed_ms=55626 rx_bytes=1053914 tx_bytes=707894",
+            "cross_elite request=5 origin=31 receiver=Some(35) published=98 received=144 rejected=0 context_mismatch=0 imports=22 improved=5 sent=29 oversized=0 probes=61 probe_ns=410515 repair_ns=41574687 duplicates=0 checks=139 eligible=46 max_stall_ms=10548 group_published=[15, 10, 15, 10, 20, 12, 16] group_received=[23, 19, 19, 24, 19, 20, 20] group_sent=[13, 6, 13, 10, 17, 9, 15] max_receiver_mailbox_age_ms=6484",
+            "dist worker request=6 job=12 phase=plan input_digest=fd7cbd22ec979ee7 started=15 budget_ms=57749",
+            "dist worker request=6 completed=15/15 selected_worker=31 elapsed_ms=52612 rx_bytes=1316183 tx_bytes=969888",
+            "cross_elite request=6 origin=31 receiver=Some(35) published=90 received=104 rejected=0 context_mismatch=0 imports=28 improved=4 sent=33 oversized=0 probes=56 probe_ns=368210 repair_ns=46044177 duplicates=0 checks=207 eligible=109 max_stall_ms=42572 group_published=[10, 16, 8, 11, 11, 15, 19] group_received=[18, 11, 15, 11, 15, 15, 19] group_sent=[8, 11, 7, 11, 8, 13, 15] max_receiver_mailbox_age_ms=5232",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:43888",
+            "dist worker request=1 job=13 phase=select input_digest=a6d5a674b76be5eb started=15 budget_ms=117845",
+            "dist worker request=1 completed=15/15 selected_worker=32 elapsed_ms=113218 rx_bytes=3696 tx_bytes=77",
+            "dist worker request=2 job=14 phase=plan input_digest=9149dc1f30123354 started=15 budget_ms=57694",
+            "dist worker request=2 completed=15/15 selected_worker=40 elapsed_ms=55639 rx_bytes=333820 tx_bytes=116457",
+            "cross_elite request=2 origin=31 receiver=Some(35) published=15 received=73 rejected=0 context_mismatch=0 imports=12 improved=3 sent=9 oversized=0 probes=21 probe_ns=282381 repair_ns=32661632 duplicates=0 checks=137 eligible=71 max_stall_ms=24854 group_published=[2, 8, 1, 1, 1, 1, 1] group_received=[17, 7, 17, 13, 12, 5, 2] group_sent=[2, 8, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=1781",
+            "dist worker request=3 job=15 phase=plan input_digest=1e4a4c2dd0e5845e started=15 budget_ms=57679",
+            "dist worker request=3 completed=15/15 selected_worker=35 elapsed_ms=55619 rx_bytes=829776 tx_bytes=530937",
+            "cross_elite request=3 origin=31 receiver=Some(35) published=131 received=162 rejected=0 context_mismatch=0 imports=22 improved=4 sent=32 oversized=0 probes=53 probe_ns=741611 repair_ns=73528064 duplicates=0 checks=135 eligible=39 max_stall_ms=15541 group_published=[16, 24, 21, 13, 19, 20, 18] group_received=[29, 25, 24, 22, 18, 21, 23] group_sent=[14, 17, 17, 13, 15, 14, 13] max_receiver_mailbox_age_ms=5086",
+            "dist worker request=4 job=16 phase=plan input_digest=45e9b4c7916d296b started=15 budget_ms=57682",
+            "dist worker request=4 completed=15/15 selected_worker=39 elapsed_ms=55625 rx_bytes=1283368 tx_bytes=831884",
+            "cross_elite request=4 origin=31 receiver=Some(35) published=87 received=111 rejected=0 context_mismatch=0 imports=20 improved=3 sent=22 oversized=0 probes=45 probe_ns=465147 repair_ns=47140162 duplicates=0 checks=138 eligible=41 max_stall_ms=15847 group_published=[10, 13, 14, 12, 9, 13, 16] group_received=[20, 12, 15, 16, 16, 16, 16] group_sent=[8, 9, 12, 12, 8, 11, 12] max_receiver_mailbox_age_ms=5516",
+            "dist worker request=5 job=17 phase=plan input_digest=ad0602a21808e9b5 started=15 budget_ms=57687",
+            "dist worker request=5 completed=15/15 selected_worker=35 elapsed_ms=55627 rx_bytes=1810414 tx_bytes=1254376",
+            "cross_elite request=5 origin=31 receiver=Some(35) published=118 received=156 rejected=0 context_mismatch=0 imports=23 improved=5 sent=32 oversized=0 probes=57 probe_ns=792088 repair_ns=74067330 duplicates=0 checks=137 eligible=36 max_stall_ms=6254 group_published=[18, 19, 22, 10, 14, 20, 15] group_received=[23, 23, 27, 24, 20, 17, 22] group_sent=[15, 16, 18, 10, 10, 14, 10] max_receiver_mailbox_age_ms=5012",
+            "dist worker request=6 job=18 phase=plan input_digest=1135734eda6e9e53 started=15 budget_ms=57690",
+            "dist worker request=6 completed=15/15 selected_worker=35 elapsed_ms=52620 rx_bytes=2323535 tx_bytes=1668464",
+            "cross_elite request=6 origin=31 receiver=Some(35) published=119 received=143 rejected=0 context_mismatch=0 imports=29 improved=4 sent=31 oversized=0 probes=68 probe_ns=832811 repair_ns=83594837 duplicates=0 checks=205 eligible=88 max_stall_ms=30372 group_published=[17, 16, 19, 13, 21, 20, 13] group_received=[24, 17, 24, 20, 16, 24, 18] group_sent=[15, 12, 15, 13, 17, 17, 10] max_receiver_mailbox_age_ms=4771",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:42814",
+            "dist worker request=1 job=19 phase=select input_digest=321810d33d77421e started=15 budget_ms=57846",
+            "dist worker request=1 completed=15/15 selected_worker=36 elapsed_ms=55478 rx_bytes=1600 tx_bytes=77",
+            "dist worker request=2 job=20 phase=plan input_digest=b03523a3fb207817 started=15 budget_ms=57774",
+            "dist worker request=2 completed=15/15 selected_worker=34 elapsed_ms=56541 rx_bytes=19556 tx_bytes=9599",
+            "cross_elite request=2 origin=31 receiver=Some(35) published=7 received=14 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=139 eligible=128 max_stall_ms=34740 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[2, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=1364",
+            "dist worker request=3 job=21 phase=plan input_digest=de07ac78eea47690 started=15 budget_ms=57666",
+            "dist worker request=3 completed=15/15 selected_worker=32 elapsed_ms=56432 rx_bytes=109338 tx_bytes=83075",
+            "cross_elite request=3 origin=31 receiver=Some(35) published=44 received=69 rejected=0 context_mismatch=0 imports=12 improved=2 sent=16 oversized=0 probes=29 probe_ns=189208 repair_ns=11195622 duplicates=0 checks=139 eligible=90 max_stall_ms=29123 group_published=[6, 7, 6, 4, 7, 6, 8] group_received=[10, 10, 10, 12, 8, 9, 10] group_sent=[6, 6, 5, 4, 6, 6, 7] max_receiver_mailbox_age_ms=4373",
+            "dist worker request=4 job=22 phase=plan input_digest=6d515b1495626902 started=15 budget_ms=57664",
+            "dist worker request=4 completed=15/15 selected_worker=32 elapsed_ms=56433 rx_bytes=197567 tx_bytes=152812",
+            "cross_elite request=4 origin=31 receiver=Some(35) published=66 received=71 rejected=0 context_mismatch=0 imports=12 improved=0 sent=14 oversized=0 probes=27 probe_ns=174477 repair_ns=10397325 duplicates=0 checks=139 eligible=84 max_stall_ms=32131 group_published=[7, 9, 9, 8, 14, 11, 8] group_received=[9, 9, 7, 11, 9, 10, 16] group_sent=[5, 8, 5, 8, 10, 7, 6] max_receiver_mailbox_age_ms=4875",
+            "dist worker request=5 job=23 phase=plan input_digest=e98fa4b36816187d started=15 budget_ms=57661",
+            "dist worker request=5 completed=15/15 selected_worker=35 elapsed_ms=56431 rx_bytes=329912 tx_bytes=224241",
+            "cross_elite request=5 origin=31 receiver=Some(35) published=64 received=103 rejected=0 context_mismatch=0 imports=18 improved=0 sent=14 oversized=0 probes=43 probe_ns=321249 repair_ns=42049106 duplicates=0 checks=139 eligible=57 max_stall_ms=27399 group_published=[11, 13, 8, 7, 10, 6, 9] group_received=[15, 14, 16, 14, 13, 15, 16] group_sent=[10, 8, 7, 7, 7, 5, 6] max_receiver_mailbox_age_ms=4403",
+            "dist worker request=6 job=24 phase=plan input_digest=05bad6e9481709de started=15 budget_ms=57659",
+            "dist worker request=6 completed=15/15 selected_worker=32 elapsed_ms=56426 rx_bytes=376890 tx_bytes=251466",
+            "cross_elite request=6 origin=31 receiver=Some(35) published=14 received=28 rejected=0 context_mismatch=0 imports=7 improved=1 sent=4 oversized=0 probes=14 probe_ns=50462 repair_ns=6146623 duplicates=0 checks=139 eligible=105 max_stall_ms=28099 group_published=[2, 2, 2, 2, 2, 2, 2] group_received=[4, 4, 4, 4, 4, 4, 4] group_sent=[2, 2, 2, 2, 2, 2, 2] max_receiver_mailbox_age_ms=2874",
+            "dist worker request=7 job=25 phase=plan input_digest=ff02716a9ef7bdc1 started=15 budget_ms=57663",
+            "dist worker request=7 completed=15/15 selected_worker=31 elapsed_ms=56432 rx_bytes=462892 tx_bytes=327724",
+            "cross_elite request=7 origin=31 receiver=Some(35) published=34 received=48 rejected=0 context_mismatch=0 imports=15 improved=1 sent=17 oversized=0 probes=26 probe_ns=141565 repair_ns=19262924 duplicates=0 checks=139 eligible=80 max_stall_ms=23325 group_published=[2, 5, 9, 6, 4, 3, 5] group_received=[4, 7, 7, 7, 12, 4, 7] group_sent=[2, 5, 9, 6, 4, 3, 5] max_receiver_mailbox_age_ms=4366",
+            "dist worker request=8 job=26 phase=plan input_digest=0e05e0ab91676784 started=15 budget_ms=57666",
+            "dist worker request=8 completed=15/15 selected_worker=37 elapsed_ms=56431 rx_bytes=583074 tx_bytes=403072",
+            "cross_elite request=8 origin=31 receiver=Some(35) published=70 received=87 rejected=0 context_mismatch=0 imports=16 improved=2 sent=15 oversized=0 probes=36 probe_ns=222579 repair_ns=42790008 duplicates=0 checks=139 eligible=67 max_stall_ms=23904 group_published=[11, 13, 11, 6, 12, 9, 8] group_received=[11, 12, 12, 14, 12, 15, 11] group_sent=[9, 8, 9, 6, 9, 7, 8] max_receiver_mailbox_age_ms=6144",
+            "dist worker request=9 job=27 phase=plan input_digest=3771fe77f3cdc1db started=15 budget_ms=57662",
+            "dist worker request=9 completed=15/15 selected_worker=37 elapsed_ms=56429 rx_bytes=651652 tx_bytes=438636",
+            "cross_elite request=9 origin=31 receiver=Some(35) published=20 received=47 rejected=0 context_mismatch=0 imports=11 improved=0 sent=6 oversized=0 probes=26 probe_ns=161643 repair_ns=16685796 duplicates=0 checks=139 eligible=91 max_stall_ms=31932 group_published=[4, 4, 2, 2, 4, 2, 2] group_received=[5, 9, 6, 6, 6, 8, 7] group_sent=[4, 4, 2, 2, 4, 2, 2] max_receiver_mailbox_age_ms=2646",
+            "dist worker request=10 job=28 phase=plan input_digest=87f653b403905356 started=15 budget_ms=57668",
+            "dist worker request=10 completed=15/15 selected_worker=32 elapsed_ms=56438 rx_bytes=788069 tx_bytes=520471",
+            "cross_elite request=10 origin=31 receiver=Some(35) published=62 received=96 rejected=0 context_mismatch=0 imports=19 improved=0 sent=17 oversized=0 probes=40 probe_ns=293612 repair_ns=22155990 duplicates=0 checks=139 eligible=61 max_stall_ms=28875 group_published=[9, 8, 8, 8, 11, 6, 12] group_received=[10, 20, 11, 16, 14, 15, 10] group_sent=[7, 6, 7, 8, 9, 6, 10] max_receiver_mailbox_age_ms=4876",
+            "dist worker request=11 job=29 phase=plan input_digest=5651e4fb165d3519 started=15 budget_ms=57662",
+            "dist worker request=11 completed=15/15 selected_worker=35 elapsed_ms=52511 rx_bytes=936829 tx_bytes=624512",
+            "cross_elite request=11 origin=31 receiver=Some(35) published=77 received=110 rejected=0 context_mismatch=0 imports=25 improved=2 sent=23 oversized=0 probes=49 probe_ns=168248 repair_ns=29110638 duplicates=0 checks=209 eligible=111 max_stall_ms=46880 group_published=[12, 10, 10, 10, 9, 12, 14] group_received=[15, 16, 15, 17, 16, 13, 18] group_sent=[9, 7, 8, 10, 6, 11, 11] max_receiver_mailbox_age_ms=4812",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:53480",
+            "dist worker request=1 job=30 phase=select input_digest=c20fec95f0e556ec started=15 budget_ms=87847",
+            "dist worker request=1 completed=15/15 selected_worker=35 elapsed_ms=84326 rx_bytes=2498 tx_bytes=77",
+            "dist worker request=2 job=31 phase=plan input_digest=d875efabcc5b92bf started=15 budget_ms=57814",
+            "dist worker request=2 completed=15/15 selected_worker=32 elapsed_ms=55681 rx_bytes=122955 tx_bytes=50375",
+            "cross_elite request=2 origin=31 receiver=Some(35) published=13 received=35 rejected=0 context_mismatch=0 imports=10 improved=1 sent=6 oversized=0 probes=15 probe_ns=89989 repair_ns=18820679 duplicates=0 checks=139 eligible=94 max_stall_ms=25594 group_published=[3, 2, 1, 1, 3, 1, 2] group_received=[6, 6, 5, 4, 6, 4, 4] group_sent=[3, 2, 1, 1, 3, 1, 2] max_receiver_mailbox_age_ms=1456",
+            "dist worker request=3 job=32 phase=plan input_digest=fd611b6f3e11f655 started=15 budget_ms=57760",
+            "dist worker request=3 completed=15/15 selected_worker=44 elapsed_ms=55633 rx_bytes=413340 tx_bytes=278308",
+            "cross_elite request=3 origin=31 receiver=Some(35) published=88 received=120 rejected=0 context_mismatch=0 imports=21 improved=4 sent=29 oversized=0 probes=50 probe_ns=302531 repair_ns=37727320 duplicates=0 checks=139 eligible=51 max_stall_ms=21850 group_published=[10, 21, 12, 13, 8, 11, 13] group_received=[15, 18, 18, 14, 17, 19, 19] group_sent=[10, 13, 11, 13, 6, 9, 11] max_receiver_mailbox_age_ms=3976",
+            "dist worker request=4 job=33 phase=plan input_digest=0f47858a694a08b2 started=15 budget_ms=57751",
+            "dist worker request=4 completed=15/15 selected_worker=35 elapsed_ms=55631 rx_bytes=769632 tx_bytes=573238",
+            "cross_elite request=4 origin=31 receiver=Some(35) published=111 received=138 rejected=0 context_mismatch=0 imports=23 improved=4 sent=38 oversized=0 probes=58 probe_ns=313688 repair_ns=44066012 duplicates=0 checks=139 eligible=42 max_stall_ms=17817 group_published=[20, 19, 14, 13, 21, 12, 12] group_received=[25, 15, 20, 23, 21, 20, 14] group_sent=[18, 11, 13, 13, 18, 10, 10] max_receiver_mailbox_age_ms=5473",
+            "dist worker request=5 job=34 phase=plan input_digest=83f378e89c66ec1d started=15 budget_ms=57758",
+            "dist worker request=5 completed=15/15 selected_worker=42 elapsed_ms=55635 rx_bytes=997223 tx_bytes=769980",
+            "cross_elite request=5 origin=31 receiver=Some(35) published=73 received=88 rejected=0 context_mismatch=0 imports=13 improved=2 sent=24 oversized=0 probes=33 probe_ns=180561 repair_ns=20074389 duplicates=0 checks=139 eligible=67 max_stall_ms=19624 group_published=[16, 8, 8, 11, 11, 13, 6] group_received=[17, 10, 13, 13, 13, 11, 11] group_sent=[13, 7, 7, 11, 9, 11, 6] max_receiver_mailbox_age_ms=4960",
+            "dist worker request=6 job=35 phase=plan input_digest=738a4c3465cf720d started=15 budget_ms=57758",
+            "dist worker request=6 completed=15/15 selected_worker=35 elapsed_ms=52619 rx_bytes=1439593 tx_bytes=1022839",
+            "cross_elite request=6 origin=31 receiver=Some(35) published=86 received=156 rejected=0 context_mismatch=0 imports=34 improved=5 sent=32 oversized=0 probes=81 probe_ns=485654 repair_ns=47859537 duplicates=0 checks=208 eligible=63 max_stall_ms=24640 group_published=[10, 14, 13, 10, 14, 8, 17] group_received=[21, 22, 34, 15, 21, 17, 26] group_sent=[8, 12, 12, 10, 13, 7, 15] max_receiver_mailbox_age_ms=6228",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:43652",
+            "dist worker request=1 job=36 phase=select input_digest=ae5db5c883d80190 started=15 budget_ms=117848",
+            "dist worker request=1 completed=15/15 selected_worker=39 elapsed_ms=113215 rx_bytes=3703 tx_bytes=77",
+            "dist worker request=2 job=37 phase=plan input_digest=c780d0368bdc1dc5 started=15 budget_ms=57699",
+            "dist worker request=2 completed=15/15 selected_worker=32 elapsed_ms=55634 rx_bytes=203063 tx_bytes=128595",
+            "cross_elite request=2 origin=31 receiver=Some(35) published=23 received=38 rejected=0 context_mismatch=0 imports=8 improved=1 sent=10 oversized=0 probes=11 probe_ns=125426 repair_ns=33951599 duplicates=0 checks=135 eligible=98 max_stall_ms=31746 group_published=[7, 9, 1, 1, 2, 1, 2] group_received=[8, 3, 9, 5, 3, 3, 7] group_sent=[6, 6, 1, 1, 2, 1, 2] max_receiver_mailbox_age_ms=1744",
+            "dist worker request=3 job=38 phase=plan input_digest=46db69978eda5999 started=15 budget_ms=57685",
+            "dist worker request=3 completed=15/15 selected_worker=39 elapsed_ms=55620 rx_bytes=709871 tx_bytes=540994",
+            "cross_elite request=3 origin=31 receiver=Some(35) published=118 received=161 rejected=0 context_mismatch=0 imports=18 improved=6 sent=32 oversized=0 probes=49 probe_ns=547131 repair_ns=58511759 duplicates=0 checks=136 eligible=46 max_stall_ms=11451 group_published=[17, 23, 16, 12, 19, 10, 21] group_received=[32, 24, 15, 34, 18, 14, 24] group_sent=[14, 18, 13, 12, 15, 9, 15] max_receiver_mailbox_age_ms=6812",
+            "dist worker request=4 job=39 phase=plan input_digest=e023ceb90621b653 started=15 budget_ms=57681",
+            "dist worker request=4 completed=15/15 selected_worker=43 elapsed_ms=55621 rx_bytes=1222884 tx_bytes=977428",
+            "cross_elite request=4 origin=31 receiver=Some(35) published=112 received=138 rejected=0 context_mismatch=0 imports=24 improved=4 sent=34 oversized=0 probes=57 probe_ns=629467 repair_ns=87186485 duplicates=0 checks=135 eligible=40 max_stall_ms=13017 group_published=[22, 17, 18, 16, 15, 15, 9] group_received=[16, 23, 26, 21, 18, 17, 17] group_sent=[16, 15, 14, 16, 15, 15, 7] max_receiver_mailbox_age_ms=3726",
+            "dist worker request=5 job=40 phase=plan input_digest=07e01c0f3428295a started=15 budget_ms=57689",
+            "dist worker request=5 completed=15/15 selected_worker=32 elapsed_ms=55626 rx_bytes=1748666 tx_bytes=1398490",
+            "cross_elite request=5 origin=31 receiver=Some(35) published=125 received=169 rejected=0 context_mismatch=0 imports=20 improved=3 sent=32 oversized=0 probes=49 probe_ns=466723 repair_ns=50070201 duplicates=0 checks=138 eligible=38 max_stall_ms=14560 group_published=[13, 16, 15, 15, 28, 18, 20] group_received=[22, 26, 24, 25, 21, 28, 23] group_sent=[13, 12, 12, 15, 23, 13, 18] max_receiver_mailbox_age_ms=5474",
+            "dist worker request=6 job=41 phase=plan input_digest=75131fbc30207e9b started=15 budget_ms=57688",
+            "dist worker request=6 completed=15/15 selected_worker=40 elapsed_ms=55625 rx_bytes=2248250 tx_bytes=1805434",
+            "cross_elite request=6 origin=31 receiver=Some(35) published=105 received=147 rejected=0 context_mismatch=0 imports=21 improved=5 sent=31 oversized=0 probes=51 probe_ns=670085 repair_ns=66565149 duplicates=0 checks=136 eligible=43 max_stall_ms=13297 group_published=[20, 14, 21, 10, 11, 10, 19] group_received=[17, 20, 19, 14, 22, 32, 23] group_sent=[18, 10, 16, 10, 10, 10, 17] max_receiver_mailbox_age_ms=5811",
+            "dist worker request=7 job=42 phase=plan input_digest=50fd35554c73af98 started=15 budget_ms=57690",
+            "dist worker request=7 completed=15/15 selected_worker=35 elapsed_ms=52614 rx_bytes=2866387 tx_bytes=2388026",
+            "cross_elite request=7 origin=31 receiver=Some(35) published=154 received=176 rejected=0 context_mismatch=0 imports=28 improved=5 sent=46 oversized=0 probes=66 probe_ns=1024163 repair_ns=97324425 duplicates=0 checks=204 eligible=80 max_stall_ms=21961 group_published=[20, 19, 20, 21, 31, 23, 20] group_received=[35, 20, 24, 31, 28, 17, 21] group_sent=[16, 14, 19, 21, 25, 20, 15] max_receiver_mailbox_age_ms=4574",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:33870",
+            "dist worker request=1 job=43 phase=select input_digest=0012b1c80d10494f started=15 budget_ms=57847",
+            "dist worker request=1 completed=15/15 selected_worker=34 elapsed_ms=55471 rx_bytes=1577 tx_bytes=77",
+            "dist worker request=2 job=44 phase=plan input_digest=1864ad7dc1fa41b2 started=15 budget_ms=57787",
+            "dist worker request=2 completed=15/15 selected_worker=42 elapsed_ms=56542 rx_bytes=78499 tx_bytes=45229",
+            "cross_elite request=2 origin=31 receiver=Some(35) published=22 received=44 rejected=0 context_mismatch=0 imports=10 improved=2 sent=11 oversized=0 probes=21 probe_ns=89796 repair_ns=17690264 duplicates=0 checks=139 eligible=97 max_stall_ms=31404 group_published=[8, 3, 2, 1, 3, 1, 4] group_received=[5, 6, 7, 3, 8, 7, 8] group_sent=[7, 3, 2, 1, 3, 1, 3] max_receiver_mailbox_age_ms=2181",
+            "dist worker request=3 job=45 phase=plan input_digest=5716a7994ca1bbe6 started=15 budget_ms=57675",
+            "dist worker request=3 completed=15/15 selected_worker=37 elapsed_ms=56433 rx_bytes=227722 tx_bytes=167969",
+            "cross_elite request=3 origin=31 receiver=Some(35) published=86 received=117 rejected=0 context_mismatch=0 imports=22 improved=1 sent=29 oversized=0 probes=49 probe_ns=260868 repair_ns=34382412 duplicates=0 checks=139 eligible=56 max_stall_ms=26329 group_published=[10, 15, 13, 9, 9, 18, 12] group_received=[14, 17, 15, 17, 14, 18, 22] group_sent=[8, 11, 12, 9, 8, 15, 10] max_receiver_mailbox_age_ms=3850",
+            "dist worker request=4 job=46 phase=plan input_digest=1ba278b12388d3dd started=15 budget_ms=57668",
+            "dist worker request=4 completed=15/15 selected_worker=32 elapsed_ms=56425 rx_bytes=310081 tx_bytes=241730",
+            "cross_elite request=4 origin=31 receiver=Some(35) published=54 received=72 rejected=0 context_mismatch=0 imports=11 improved=1 sent=16 oversized=0 probes=26 probe_ns=109235 repair_ns=15088986 duplicates=0 checks=139 eligible=84 max_stall_ms=31094 group_published=[9, 8, 7, 6, 8, 8, 8] group_received=[9, 11, 11, 9, 10, 10, 12] group_sent=[7, 5, 6, 6, 7, 6, 8] max_receiver_mailbox_age_ms=3096",
+            "dist worker request=5 job=47 phase=plan input_digest=fbd45c9450bb2242 started=15 budget_ms=57670",
+            "dist worker request=5 completed=15/15 selected_worker=35 elapsed_ms=56432 rx_bytes=438574 tx_bytes=340286",
+            "cross_elite request=5 origin=31 receiver=Some(35) published=68 received=92 rejected=0 context_mismatch=0 imports=20 improved=3 sent=22 oversized=0 probes=41 probe_ns=196829 repair_ns=24671574 duplicates=0 checks=139 eligible=56 max_stall_ms=22576 group_published=[8, 7, 13, 9, 12, 10, 9] group_received=[10, 14, 15, 12, 15, 14, 12] group_sent=[7, 5, 11, 9, 11, 10, 9] max_receiver_mailbox_age_ms=4351",
+            "dist worker request=6 job=48 phase=plan input_digest=1be53a625553de26 started=15 budget_ms=57668",
+            "dist worker request=6 completed=15/15 selected_worker=36 elapsed_ms=56430 rx_bytes=583083 tx_bytes=436172",
+            "cross_elite request=6 origin=31 receiver=Some(35) published=79 received=120 rejected=0 context_mismatch=0 imports=17 improved=3 sent=21 oversized=0 probes=39 probe_ns=281619 repair_ns=22173451 duplicates=0 checks=139 eligible=57 max_stall_ms=21560 group_published=[10, 14, 14, 10, 10, 9, 12] group_received=[26, 14, 16, 15, 15, 17, 17] group_sent=[8, 11, 11, 10, 7, 8, 10] max_receiver_mailbox_age_ms=4841",
+            "dist worker request=7 job=49 phase=plan input_digest=fd5c60ce7cc4f520 started=15 budget_ms=57674",
+            "dist worker request=7 completed=15/15 selected_worker=35 elapsed_ms=56434 rx_bytes=666383 tx_bytes=502753",
+            "cross_elite request=7 origin=31 receiver=Some(35) published=72 received=68 rejected=0 context_mismatch=0 imports=11 improved=0 sent=13 oversized=0 probes=25 probe_ns=130747 repair_ns=9115813 duplicates=0 checks=139 eligible=84 max_stall_ms=31844 group_published=[7, 11, 11, 11, 12, 10, 10] group_received=[8, 9, 8, 10, 9, 11, 13] group_sent=[6, 7, 7, 11, 8, 7, 6] max_receiver_mailbox_age_ms=4099",
+            "dist worker request=8 job=50 phase=plan input_digest=45ee939c94f389b5 started=15 budget_ms=57661",
+            "dist worker request=8 completed=15/15 selected_worker=34 elapsed_ms=56423 rx_bytes=765461 tx_bytes=593131",
+            "cross_elite request=8 origin=31 receiver=Some(35) published=69 received=77 rejected=0 context_mismatch=0 imports=15 improved=0 sent=20 oversized=0 probes=29 probe_ns=174028 repair_ns=21327745 duplicates=0 checks=139 eligible=75 max_stall_ms=32093 group_published=[6, 8, 11, 11, 11, 13, 9] group_received=[11, 11, 15, 11, 8, 12, 9] group_sent=[5, 7, 7, 11, 9, 9, 5] max_receiver_mailbox_age_ms=4108",
+            "dist worker request=9 job=51 phase=plan input_digest=ed46f72f20ade312 started=15 budget_ms=57668",
+            "dist worker request=9 completed=15/15 selected_worker=35 elapsed_ms=52507 rx_bytes=963503 tx_bytes=741582",
+            "cross_elite request=9 origin=31 receiver=Some(35) published=100 received=145 rejected=0 context_mismatch=0 imports=28 improved=5 sent=35 oversized=0 probes=71 probe_ns=355807 repair_ns=27390023 duplicates=0 checks=208 eligible=99 max_stall_ms=29843 group_published=[12, 11, 13, 16, 16, 15, 17] group_received=[19, 19, 27, 21, 21, 21, 17] group_sent=[11, 10, 10, 16, 14, 12, 14] max_receiver_mailbox_age_ms=3639",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:56146",
+            "dist worker request=1 job=52 phase=select input_digest=f7d28d8dd2a081c4 started=15 budget_ms=87845",
+            "dist worker request=1 completed=15/15 selected_worker=37 elapsed_ms=84328 rx_bytes=2502 tx_bytes=77",
+            "dist worker request=2 job=53 phase=plan input_digest=7d510fcae6eaf3b0 started=15 budget_ms=57811",
+            "dist worker request=2 completed=15/15 selected_worker=35 elapsed_ms=55681 rx_bytes=34112 tx_bytes=16908",
+            "cross_elite request=2 origin=31 receiver=Some(35) published=7 received=14 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=135 eligible=122 max_stall_ms=34707 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[2, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=1518",
+            "dist worker request=3 job=54 phase=plan input_digest=2e94fa0c16f8f69d started=15 budget_ms=57753",
+            "dist worker request=3 completed=15/15 selected_worker=45 elapsed_ms=55627 rx_bytes=318655 tx_bytes=199161",
+            "cross_elite request=3 origin=31 receiver=Some(35) published=73 received=121 rejected=0 context_mismatch=0 imports=20 improved=1 sent=22 oversized=0 probes=53 probe_ns=731755 repair_ns=90841385 duplicates=0 checks=135 eligible=40 max_stall_ms=8312 group_published=[12, 13, 10, 8, 11, 9, 10] group_received=[21, 20, 15, 18, 17, 13, 17] group_sent=[10, 9, 9, 8, 10, 9, 8] max_receiver_mailbox_age_ms=4586",
+            "dist worker request=4 job=55 phase=plan input_digest=8e84afd197609b27 started=15 budget_ms=57756",
+            "dist worker request=4 completed=15/15 selected_worker=40 elapsed_ms=55628 rx_bytes=580027 tx_bytes=346439",
+            "cross_elite request=4 origin=31 receiver=Some(35) published=64 received=109 rejected=0 context_mismatch=0 imports=19 improved=4 sent=17 oversized=0 probes=46 probe_ns=528840 repair_ns=48224825 duplicates=0 checks=138 eligible=58 max_stall_ms=20368 group_published=[7, 13, 10, 7, 11, 9, 7] group_received=[19, 10, 21, 15, 14, 18, 12] group_sent=[6, 9, 8, 7, 8, 9, 5] max_receiver_mailbox_age_ms=5467",
+            "dist worker request=5 job=56 phase=plan input_digest=25d8a551012e4cf4 started=15 budget_ms=57749",
+            "dist worker request=5 completed=15/15 selected_worker=32 elapsed_ms=55621 rx_bytes=822702 tx_bytes=526086",
+            "cross_elite request=5 origin=31 receiver=Some(35) published=67 received=97 rejected=0 context_mismatch=0 imports=19 improved=2 sent=22 oversized=0 probes=47 probe_ns=405316 repair_ns=38656054 duplicates=0 checks=139 eligible=61 max_stall_ms=22841 group_published=[5, 14, 10, 6, 6, 13, 13] group_received=[9, 10, 17, 19, 11, 17, 14] group_sent=[3, 9, 9, 6, 5, 11, 9] max_receiver_mailbox_age_ms=3999",
+            "dist worker request=6 job=57 phase=plan input_digest=e4dec9ba8d41aa2c started=15 budget_ms=57754",
+            "dist worker request=6 completed=15/15 selected_worker=32 elapsed_ms=52618 rx_bytes=1168449 tx_bytes=782034",
+            "cross_elite request=6 origin=31 receiver=Some(35) published=99 received=147 rejected=0 context_mismatch=0 imports=25 improved=1 sent=32 oversized=0 probes=63 probe_ns=480563 repair_ns=39057410 duplicates=0 checks=207 eligible=84 max_stall_ms=13395 group_published=[15, 19, 11, 11, 19, 11, 13] group_received=[20, 23, 18, 22, 25, 20, 19] group_sent=[14, 14, 8, 11, 14, 10, 13] max_receiver_mailbox_age_ms=5709",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:57574",
+            "dist worker request=1 job=58 phase=select input_digest=436920d5213f9dbc started=15 budget_ms=117846",
+            "dist worker request=1 completed=15/15 selected_worker=44 elapsed_ms=113219 rx_bytes=3701 tx_bytes=77",
+            "dist worker request=2 job=59 phase=plan input_digest=5cbfbd59b7de3f0b started=15 budget_ms=57694",
+            "dist worker request=2 completed=15/15 selected_worker=31 elapsed_ms=55635 rx_bytes=149095 tx_bytes=153643",
+            "cross_elite request=2 origin=31 receiver=Some(35) published=21 received=29 rejected=0 context_mismatch=0 imports=3 improved=0 sent=12 oversized=0 probes=7 probe_ns=65964 repair_ns=23226341 duplicates=0 checks=128 eligible=106 max_stall_ms=28836 group_published=[2, 9, 2, 2, 2, 2, 2] group_received=[5, 4, 4, 4, 4, 4, 4] group_sent=[2, 8, 2, 2, 2, 2, 2] max_receiver_mailbox_age_ms=3420",
+            "dist worker request=3 job=60 phase=plan input_digest=3e6a8736d36951c5 started=15 budget_ms=57688",
+            "dist worker request=3 completed=15/15 selected_worker=36 elapsed_ms=55630 rx_bytes=663395 tx_bytes=545452",
+            "cross_elite request=3 origin=31 receiver=Some(35) published=123 received=160 rejected=0 context_mismatch=0 imports=18 improved=2 sent=29 oversized=0 probes=47 probe_ns=1013965 repair_ns=114534368 duplicates=0 checks=128 eligible=43 max_stall_ms=10822 group_published=[17, 21, 16, 10, 24, 20, 15] group_received=[27, 24, 19, 21, 24, 24, 21] group_sent=[14, 13, 14, 10, 19, 15, 11] max_receiver_mailbox_age_ms=4070",
+            "dist worker request=4 job=61 phase=plan input_digest=29ac8760eb0a6179 started=15 budget_ms=57689",
+            "dist worker request=4 completed=15/15 selected_worker=43 elapsed_ms=55630 rx_bytes=1208791 tx_bytes=919809",
+            "cross_elite request=4 origin=31 receiver=Some(35) published=127 received=176 rejected=0 context_mismatch=0 imports=17 improved=3 sent=27 oversized=0 probes=44 probe_ns=811495 repair_ns=85906522 duplicates=0 checks=131 eligible=32 max_stall_ms=8740 group_published=[17, 17, 20, 14, 22, 19, 18] group_received=[26, 28, 19, 21, 26, 29, 27] group_sent=[13, 14, 16, 14, 16, 17, 13] max_receiver_mailbox_age_ms=4625",
+            "dist worker request=5 job=62 phase=plan input_digest=5de8d2956a2806ae started=15 budget_ms=57681",
+            "dist worker request=5 completed=15/15 selected_worker=31 elapsed_ms=55621 rx_bytes=1792761 tx_bytes=1293245",
+            "cross_elite request=5 origin=31 receiver=Some(35) published=119 received=179 rejected=0 context_mismatch=0 imports=22 improved=5 sent=27 oversized=0 probes=56 probe_ns=1176334 repair_ns=135901189 duplicates=0 checks=129 eligible=27 max_stall_ms=15831 group_published=[19, 18, 16, 13, 14, 19, 20] group_received=[26, 25, 24, 23, 32, 24, 25] group_sent=[15, 13, 12, 13, 10, 15, 16] max_receiver_mailbox_age_ms=6286",
+            "dist worker request=6 job=63 phase=plan input_digest=9ac6f88e17d39b53 started=15 budget_ms=57688",
+            "dist worker request=6 completed=15/15 selected_worker=44 elapsed_ms=52619 rx_bytes=2458616 tx_bytes=1789100",
+            "cross_elite request=6 origin=31 receiver=Some(35) published=149 received=216 rejected=0 context_mismatch=0 imports=28 improved=4 sent=37 oversized=0 probes=75 probe_ns=1730486 repair_ns=163538146 duplicates=0 checks=196 eligible=71 max_stall_ms=15190 group_published=[25, 26, 17, 12, 28, 19, 22] group_received=[33, 29, 29, 35, 34, 26, 30] group_sent=[21, 17, 15, 12, 23, 15, 17] max_receiver_mailbox_age_ms=4112",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:55834",
+            "dist worker request=1 job=64 phase=select input_digest=e950d2c1e229410b started=15 budget_ms=57849",
+            "dist worker request=1 completed=15/15 selected_worker=32 elapsed_ms=55477 rx_bytes=1565 tx_bytes=77",
+            "dist worker request=2 job=65 phase=plan input_digest=49a22391158eaf7f started=15 budget_ms=57777",
+            "dist worker request=2 completed=15/15 selected_worker=31 elapsed_ms=56540 rx_bytes=18574 tx_bytes=9039",
+            "cross_elite request=2 origin=31 receiver=Some(35) published=7 received=14 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=139 eligible=127 max_stall_ms=34635 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[2, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=1345",
+            "dist worker request=3 job=66 phase=plan input_digest=549dd9d8a2e1f9a6 started=15 budget_ms=57664",
+            "dist worker request=3 completed=15/15 selected_worker=44 elapsed_ms=56428 rx_bytes=138358 tx_bytes=92631",
+            "cross_elite request=3 origin=31 receiver=Some(35) published=71 received=89 rejected=0 context_mismatch=0 imports=18 improved=1 sent=18 oversized=0 probes=42 probe_ns=186129 repair_ns=17998660 duplicates=0 checks=139 eligible=66 max_stall_ms=31100 group_published=[9, 11, 11, 9, 8, 11, 12] group_received=[17, 13, 8, 12, 12, 15, 12] group_sent=[7, 10, 7, 9, 8, 9, 10] max_receiver_mailbox_age_ms=4857",
+            "dist worker request=4 job=67 phase=plan input_digest=ad70ad2ef5411de3 started=15 budget_ms=57667",
+            "dist worker request=4 completed=15/15 selected_worker=35 elapsed_ms=56429 rx_bytes=227393 tx_bytes=149714",
+            "cross_elite request=4 origin=31 receiver=Some(35) published=62 received=68 rejected=0 context_mismatch=0 imports=12 improved=2 sent=11 oversized=0 probes=27 probe_ns=105057 repair_ns=10733002 duplicates=0 checks=139 eligible=81 max_stall_ms=29089 group_published=[10, 8, 9, 10, 7, 9, 9] group_received=[9, 11, 9, 11, 10, 9, 9] group_sent=[7, 4, 6, 10, 4, 6, 7] max_receiver_mailbox_age_ms=5363",
+            "dist worker request=5 job=68 phase=plan input_digest=89833b39e59f10ef started=15 budget_ms=57662",
+            "dist worker request=5 completed=15/15 selected_worker=31 elapsed_ms=56426 rx_bytes=346682 tx_bytes=224222",
+            "cross_elite request=5 origin=31 receiver=Some(35) published=72 received=83 rejected=0 context_mismatch=0 imports=17 improved=1 sent=15 oversized=0 probes=32 probe_ns=105119 repair_ns=12529087 duplicates=0 checks=139 eligible=65 max_stall_ms=30566 group_published=[11, 12, 12, 10, 8, 10, 9] group_received=[10, 16, 12, 14, 7, 9, 15] group_sent=[9, 8, 9, 10, 8, 7, 8] max_receiver_mailbox_age_ms=4355",
+            "dist worker request=6 job=69 phase=plan input_digest=e95fbf0bdfea7781 started=15 budget_ms=57661",
+            "dist worker request=6 completed=15/15 selected_worker=31 elapsed_ms=52505 rx_bytes=408476 tx_bytes=278234",
+            "cross_elite request=6 origin=31 receiver=Some(35) published=57 received=64 rejected=0 context_mismatch=0 imports=5 improved=0 sent=10 oversized=0 probes=14 probe_ns=54779 repair_ns=4333556 duplicates=0 checks=208 eligible=170 max_stall_ms=49135 group_published=[8, 12, 8, 8, 6, 5, 10] group_received=[9, 9, 8, 8, 9, 10, 11] group_sent=[7, 7, 7, 8, 4, 4, 6] max_receiver_mailbox_age_ms=3856",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:60550",
+            "dist worker request=1 job=70 phase=select input_digest=38cd995e90defab9 started=15 budget_ms=87846",
+            "dist worker request=1 completed=15/15 selected_worker=33 elapsed_ms=84326 rx_bytes=2520 tx_bytes=77",
+            "dist worker request=2 job=71 phase=plan input_digest=0b93e9b6605f6a5a started=15 budget_ms=57807",
+            "dist worker request=2 completed=15/15 selected_worker=35 elapsed_ms=55674 rx_bytes=83613 tx_bytes=17140",
+            "cross_elite request=2 origin=31 receiver=Some(35) published=7 received=22 rejected=0 context_mismatch=0 imports=5 improved=1 sent=1 oversized=0 probes=6 probe_ns=68059 repair_ns=14591416 duplicates=0 checks=139 eligible=115 max_stall_ms=19378 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[3, 4, 2, 2, 5, 4, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=1468",
+            "dist worker request=3 job=72 phase=plan input_digest=a32a33fd700327d9 started=15 budget_ms=57761",
+            "dist worker request=3 completed=15/15 selected_worker=45 elapsed_ms=55629 rx_bytes=361951 tx_bytes=222770",
+            "cross_elite request=3 origin=31 receiver=Some(35) published=71 received=117 rejected=0 context_mismatch=0 imports=22 improved=3 sent=25 oversized=0 probes=50 probe_ns=460922 repair_ns=59123529 duplicates=0 checks=139 eligible=49 max_stall_ms=26169 group_published=[7, 15, 11, 7, 7, 13, 11] group_received=[14, 19, 12, 15, 22, 19, 16] group_sent=[6, 14, 9, 7, 7, 13, 9] max_receiver_mailbox_age_ms=3994",
+            "dist worker request=4 job=73 phase=plan input_digest=a0a6ac9d5fae17b6 started=15 budget_ms=57753",
+            "dist worker request=4 completed=15/15 selected_worker=37 elapsed_ms=55622 rx_bytes=560248 tx_bytes=381328",
+            "cross_elite request=4 origin=31 receiver=Some(35) published=71 received=91 rejected=0 context_mismatch=0 imports=16 improved=3 sent=18 oversized=0 probes=36 probe_ns=309000 repair_ns=39480728 duplicates=0 checks=139 eligible=69 max_stall_ms=26382 group_published=[10, 16, 8, 7, 10, 12, 8] group_received=[11, 10, 16, 11, 16, 14, 13] group_sent=[9, 11, 8, 7, 8, 12, 6] max_receiver_mailbox_age_ms=4487",
+            "dist worker request=5 job=74 phase=plan input_digest=31f65ccd3d1d403d started=15 budget_ms=57754",
+            "dist worker request=5 completed=15/15 selected_worker=38 elapsed_ms=55621 rx_bytes=866491 tx_bytes=567507",
+            "cross_elite request=5 origin=31 receiver=Some(35) published=62 received=106 rejected=0 context_mismatch=0 imports=23 improved=1 sent=22 oversized=0 probes=48 probe_ns=407243 repair_ns=50738347 duplicates=0 checks=139 eligible=42 max_stall_ms=17366 group_published=[6, 15, 10, 6, 9, 9, 7] group_received=[19, 15, 14, 11, 14, 15, 18] group_sent=[5, 10, 9, 6, 8, 8, 7] max_receiver_mailbox_age_ms=4223",
+            "dist worker request=6 job=75 phase=plan input_digest=7ce90691e7f5e091 started=15 budget_ms=57758",
+            "dist worker request=6 completed=15/15 selected_worker=40 elapsed_ms=55626 rx_bytes=1160188 tx_bytes=804345",
+            "cross_elite request=6 origin=31 receiver=Some(35) published=107 received=138 rejected=0 context_mismatch=0 imports=22 improved=1 sent=28 oversized=0 probes=54 probe_ns=386639 repair_ns=38777227 duplicates=0 checks=139 eligible=46 max_stall_ms=21361 group_published=[20, 15, 16, 12, 17, 16, 11] group_received=[25, 21, 19, 19, 12, 22, 20] group_sent=[18, 14, 13, 12, 13, 12, 11] max_receiver_mailbox_age_ms=4989",
+            "dist worker request=7 job=76 phase=plan input_digest=b76dc9977ebbb006 started=15 budget_ms=57759",
+            "dist worker request=7 completed=15/15 selected_worker=36 elapsed_ms=55629 rx_bytes=1433488 tx_bytes=987090",
+            "cross_elite request=7 origin=31 receiver=Some(35) published=84 received=109 rejected=0 context_mismatch=0 imports=20 improved=2 sent=21 oversized=0 probes=49 probe_ns=385148 repair_ns=34417360 duplicates=0 checks=139 eligible=51 max_stall_ms=20363 group_published=[12, 11, 15, 10, 11, 16, 9] group_received=[17, 20, 12, 11, 17, 17, 15] group_sent=[10, 7, 12, 10, 8, 12, 9] max_receiver_mailbox_age_ms=4147",
+            "dist worker request=8 job=77 phase=plan input_digest=f4cdf3bb569b6b32 started=15 budget_ms=57761",
+            "dist worker request=8 completed=15/15 selected_worker=35 elapsed_ms=55630 rx_bytes=1691341 tx_bytes=1143409",
+            "cross_elite request=8 origin=31 receiver=Some(35) published=53 received=102 rejected=0 context_mismatch=0 imports=22 improved=0 sent=18 oversized=0 probes=56 probe_ns=557326 repair_ns=56602420 duplicates=0 checks=139 eligible=55 max_stall_ms=17352 group_published=[7, 12, 10, 3, 8, 5, 8] group_received=[10, 15, 16, 18, 17, 16, 10] group_sent=[7, 8, 8, 3, 7, 5, 6] max_receiver_mailbox_age_ms=4736",
+            "dist worker request=9 job=78 phase=plan input_digest=d1f13df157597240 started=15 budget_ms=57758",
+            "dist worker request=9 completed=15/15 selected_worker=40 elapsed_ms=52617 rx_bytes=1982166 tx_bytes=1360684",
+            "cross_elite request=9 origin=31 receiver=Some(35) published=83 received=124 rejected=0 context_mismatch=0 imports=27 improved=1 sent=26 oversized=0 probes=66 probe_ns=638374 repair_ns=61196863 duplicates=0 checks=207 eligible=95 max_stall_ms=28537 group_published=[10, 11, 8, 14, 11, 16, 13] group_received=[20, 19, 12, 23, 20, 15, 15] group_sent=[10, 9, 6, 14, 8, 13, 9] max_receiver_mailbox_age_ms=4729",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:49174",
+            "dist worker request=1 job=79 phase=select input_digest=e941150ef16fbb29 started=15 budget_ms=117845",
+            "dist worker request=1 completed=15/15 selected_worker=38 elapsed_ms=113265 rx_bytes=3696 tx_bytes=77",
+            "dist worker request=2 job=80 phase=plan input_digest=605efab4be52a7bc started=15 budget_ms=57843",
+            "dist worker request=2 completed=15/15 selected_worker=39 elapsed_ms=55823 rx_bytes=221055 tx_bytes=97480",
+            "cross_elite request=2 origin=31 receiver=Some(35) published=14 received=38 rejected=0 context_mismatch=0 imports=12 improved=0 sent=7 oversized=0 probes=19 probe_ns=267771 repair_ns=65061975 duplicates=0 checks=131 eligible=83 max_stall_ms=34241 group_published=[2, 3, 1, 1, 2, 2, 3] group_received=[7, 4, 6, 5, 7, 6, 3] group_sent=[2, 3, 1, 1, 2, 2, 3] max_receiver_mailbox_age_ms=2900",
+            "dist worker request=3 job=81 phase=plan input_digest=85b168c435f3a011 started=15 budget_ms=57648",
+            "dist worker request=3 completed=15/15 selected_worker=45 elapsed_ms=55633 rx_bytes=728564 tx_bytes=459971",
+            "cross_elite request=3 origin=31 receiver=Some(35) published=100 received=157 rejected=0 context_mismatch=0 imports=21 improved=2 sent=27 oversized=0 probes=53 probe_ns=728470 repair_ns=65350614 duplicates=0 checks=134 eligible=42 max_stall_ms=20113 group_published=[18, 14, 17, 6, 18, 10, 17] group_received=[20, 23, 23, 27, 20, 24, 20] group_sent=[15, 10, 14, 6, 17, 9, 14] max_receiver_mailbox_age_ms=5337",
+            "dist worker request=4 job=82 phase=plan input_digest=5284dfc998f78b22 started=15 budget_ms=57843",
+            "dist worker request=4 completed=15/15 selected_worker=33 elapsed_ms=55821 rx_bytes=1211893 tx_bytes=815299",
+            "cross_elite request=4 origin=31 receiver=Some(35) published=115 received=155 rejected=0 context_mismatch=0 imports=19 improved=1 sent=26 oversized=0 probes=51 probe_ns=590792 repair_ns=43888739 duplicates=0 checks=134 eligible=43 max_stall_ms=24826 group_published=[12, 21, 23, 13, 22, 9, 15] group_received=[25, 18, 30, 27, 17, 19, 19] group_sent=[11, 15, 17, 13, 17, 8, 13] max_receiver_mailbox_age_ms=3974",
+            "dist worker request=5 job=83 phase=plan input_digest=7c46e66e30fb158d started=15 budget_ms=57847",
+            "dist worker request=5 completed=15/15 selected_worker=36 elapsed_ms=55822 rx_bytes=1686627 tx_bytes=1242598",
+            "cross_elite request=5 origin=31 receiver=Some(35) published=112 received=144 rejected=0 context_mismatch=0 imports=19 improved=3 sent=32 oversized=0 probes=54 probe_ns=681129 repair_ns=97884062 duplicates=0 checks=134 eligible=48 max_stall_ms=19227 group_published=[17, 23, 15, 7, 17, 15, 18] group_received=[21, 20, 18, 20, 22, 26, 17] group_sent=[15, 18, 13, 7, 14, 11, 14] max_receiver_mailbox_age_ms=7435",
+            "dist worker request=6 job=84 phase=plan input_digest=e8c4fab53776d720 started=15 budget_ms=57646",
+            "dist worker request=6 completed=15/15 selected_worker=41 elapsed_ms=52617 rx_bytes=2315840 tx_bytes=1731327",
+            "cross_elite request=6 origin=31 receiver=Some(35) published=125 received=160 rejected=0 context_mismatch=0 imports=27 improved=4 sent=37 oversized=0 probes=66 probe_ns=1020026 repair_ns=97865587 duplicates=0 checks=202 eligible=78 max_stall_ms=13631 group_published=[22, 28, 15, 12, 16, 13, 19] group_received=[16, 21, 30, 27, 22, 24, 20] group_sent=[19, 21, 13, 12, 13, 9, 16] max_receiver_mailbox_age_ms=5904",
+            "dist worker connection_closed=peer disconnected"
+          ],
+          "errorLines": []
+        }
+      },
+      "files": {
+        "distributed-solver": "574dd99a8ff0d20035acccca3f4e207ad2d7701308bc10374694137aa0f33016",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "24da22f8f4542aa7ffd27f6859ca79e4bed5ef7749e8b129c74c46eb5afc90c4"
+      }
+    },
+    "v3": {
+      "capturedAtUtc": "2026-10-09T17:57:36.191905+00:00",
+      "phase": "end",
+      "bootId": "f828f174-169c-4a64-91c8-a220c554ae58",
+      "processes": [
+        {
+          "pid": 1648,
+          "startTicks": "493249",
+          "state": "S",
+          "argv": [
+            "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver",
+            "--mode",
+            "worker",
+            "--threads",
+            "32",
+            "--worker-offset",
+            "46",
+            "--listen",
+            "192.168.0.33:39370",
+            "--cross-elite",
+            "on",
+            ""
+          ],
+          "cpus": "0-31",
+          "threads": [
+            {
+              "tid": 1648,
+              "name": "distributed-sol",
+              "ticks": 1153,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1649,
+              "name": "dist-search-46",
+              "ticks": 498866,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1650,
+              "name": "dist-search-47",
+              "ticks": 498919,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1651,
+              "name": "dist-search-48",
+              "ticks": 498871,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1652,
+              "name": "dist-search-49",
+              "ticks": 498842,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1653,
+              "name": "dist-search-50",
+              "ticks": 498934,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1654,
+              "name": "dist-search-51",
+              "ticks": 498914,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1655,
+              "name": "dist-search-52",
+              "ticks": 498899,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1656,
+              "name": "dist-search-53",
+              "ticks": 498905,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1657,
+              "name": "dist-search-54",
+              "ticks": 498917,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1658,
+              "name": "dist-search-55",
+              "ticks": 498874,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1659,
+              "name": "dist-search-56",
+              "ticks": 498883,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1660,
+              "name": "dist-search-57",
+              "ticks": 498875,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1661,
+              "name": "dist-search-58",
+              "ticks": 498897,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1662,
+              "name": "dist-search-59",
+              "ticks": 498831,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1663,
+              "name": "dist-search-60",
+              "ticks": 498938,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1664,
+              "name": "dist-search-61",
+              "ticks": 498912,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1665,
+              "name": "dist-search-62",
+              "ticks": 498915,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1666,
+              "name": "dist-search-63",
+              "ticks": 498884,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1667,
+              "name": "dist-search-64",
+              "ticks": 498900,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1668,
+              "name": "dist-search-65",
+              "ticks": 498849,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1669,
+              "name": "dist-search-66",
+              "ticks": 498902,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1670,
+              "name": "dist-search-67",
+              "ticks": 498855,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1671,
+              "name": "dist-search-68",
+              "ticks": 498869,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1672,
+              "name": "dist-search-69",
+              "ticks": 498852,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1673,
+              "name": "dist-search-70",
+              "ticks": 498838,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1674,
+              "name": "dist-search-71",
+              "ticks": 498834,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1675,
+              "name": "dist-search-72",
+              "ticks": 498862,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1676,
+              "name": "dist-search-73",
+              "ticks": 498866,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1677,
+              "name": "dist-search-74",
+              "ticks": 498805,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1678,
+              "name": "dist-search-75",
+              "ticks": 498814,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 1679,
+              "name": "dist-search-76",
+              "ticks": 498765,
+              "cpus": "0-31",
+              "deltaTicks": 0
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "scaling_governor": {
+          "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy28/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy18/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy26/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy16/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy24/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy22/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy30/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy20/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy29/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy19/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy27/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy17/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy25/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy23/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy31/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy21/scaling_governor": "performance"
+        },
+        "energy_performance_preference": {
+          "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy28/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy18/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy26/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy16/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy24/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy22/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy30/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy20/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy29/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy19/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy27/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy17/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy25/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy23/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy31/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy21/energy_performance_preference": "performance"
+        }
+      },
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": -0.008225440979003906,
+            "roundTripMs": 0.17905235290527344
+          },
+          {
+            "serverMinusClientMs": -0.004649162292480469,
+            "roundTripMs": 0.2372264862060547
+          },
+          {
+            "serverMinusClientMs": -0.1399517059326172,
+            "roundTripMs": 0.5121231079101562
+          },
+          {
+            "serverMinusClientMs": -0.15938282012939453,
+            "roundTripMs": 0.5280971527099609
+          },
+          {
+            "serverMinusClientMs": -0.3161430358886719,
+            "roundTripMs": 0.9140968322753906
+          },
+          {
+            "serverMinusClientMs": -0.1684427261352539,
+            "roundTripMs": 0.6020069122314453
+          },
+          {
+            "serverMinusClientMs": -0.3581047058105469,
+            "roundTripMs": 0.965118408203125
+          },
+          {
+            "serverMinusClientMs": -0.16605854034423828,
+            "roundTripMs": 0.5791187286376953
+          }
+        ],
+        "medianBestHalfOffsetMs": -0.07408857345581055,
+        "minimumRoundTripMs": 0.17905235290527344,
+        "capturedUnix": 1791568656.5991988
+      },
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 17:57:34 2026\nSystem time     : 0.000001415 seconds fast of NTP time\nLast offset     : +0.000001494 seconds\nRMS offset      : 0.000014911 seconds\nFrequency       : 2.125 ppm slow\nResidual freq   : +0.000 ppm\nSkew            : 0.024 ppm\nRoot delay      : 0.000151174 seconds\nRoot dispersion : 0.001013070 seconds\nUpdate interval : 16.3 seconds\nLeap status     : Normal\n",
+        "stderr": ""
+      },
+      "logs": {
+        "resume-team.log": {
+          "path": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/resume-team.log",
+          "startByte": 34228295,
+          "endByte": 37983344,
+          "sha256": "0ed8a6da96bba284b329edc4cf15d3a9d5138927e2c8926fb59f44948db34276",
+          "lineCount": 29652,
+          "diagnosticLines": [
+            "dist accepted_peer=192.168.0.11:47858",
+            "dist worker request=1 job=1 phase=select input_digest=8003180c8cea77f8 started=31 budget_ms=57841",
+            "dist worker request=1 completed=31/31 selected_worker=51 elapsed_ms=55493 rx_bytes=1559 tx_bytes=77",
+            "dist worker request=2 job=2 phase=plan input_digest=7d23c00af2866062 started=31 budget_ms=57695",
+            "dist worker request=2 completed=31/31 selected_worker=70 elapsed_ms=56478 rx_bytes=19429 tx_bytes=9534",
+            "cross_elite request=2 origin=46 receiver=Some(49) published=7 received=14 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=139 eligible=127 max_stall_ms=34586 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[2, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=1383",
+            "dist worker request=3 job=3 phase=plan input_digest=1e51e7ce2dbca7b9 started=31 budget_ms=57665",
+            "dist worker request=3 completed=31/31 selected_worker=52 elapsed_ms=56449 rx_bytes=170688 tx_bytes=105142",
+            "cross_elite request=3 origin=46 receiver=Some(49) published=68 received=102 rejected=0 context_mismatch=0 imports=23 improved=7 sent=22 oversized=0 probes=49 probe_ns=138544 repair_ns=24200893 duplicates=0 checks=139 eligible=49 max_stall_ms=18055 group_published=[11, 9, 11, 10, 7, 9, 11] group_received=[20, 17, 13, 9, 12, 15, 16] group_sent=[9, 7, 8, 9, 5, 5, 6] max_receiver_mailbox_age_ms=6390",
+            "dist worker request=4 job=4 phase=plan input_digest=38d9e28db507ea6b started=31 budget_ms=57661",
+            "dist worker request=4 completed=31/31 selected_worker=46 elapsed_ms=56445 rx_bytes=326592 tx_bytes=196354",
+            "cross_elite request=4 origin=46 receiver=Some(49) published=85 received=102 rejected=0 context_mismatch=0 imports=23 improved=1 sent=20 oversized=0 probes=49 probe_ns=130153 repair_ns=17264183 duplicates=0 checks=139 eligible=44 max_stall_ms=17028 group_published=[14, 7, 16, 12, 10, 12, 14] group_received=[23, 19, 16, 10, 12, 11, 11] group_sent=[6, 6, 11, 8, 6, 9, 10] max_receiver_mailbox_age_ms=4112",
+            "dist worker request=5 job=5 phase=plan input_digest=0175863233b414aa started=31 budget_ms=57662",
+            "dist worker request=5 completed=31/31 selected_worker=50 elapsed_ms=56446 rx_bytes=500547 tx_bytes=280502",
+            "cross_elite request=5 origin=46 receiver=Some(49) published=69 received=104 rejected=0 context_mismatch=0 imports=23 improved=4 sent=18 oversized=0 probes=59 probe_ns=169071 repair_ns=22668655 duplicates=0 checks=139 eligible=50 max_stall_ms=18792 group_published=[8, 10, 6, 12, 10, 9, 14] group_received=[9, 19, 18, 11, 15, 18, 14] group_sent=[7, 6, 5, 9, 7, 7, 10] max_receiver_mailbox_age_ms=4893",
+            "dist worker request=6 job=6 phase=plan input_digest=2c552b4d7f3d91db started=31 budget_ms=57660",
+            "dist worker request=6 completed=31/31 selected_worker=74 elapsed_ms=52524 rx_bytes=623553 tx_bytes=383691",
+            "cross_elite request=6 origin=46 receiver=Some(49) published=84 received=86 rejected=0 context_mismatch=0 imports=18 improved=3 sent=23 oversized=0 probes=37 probe_ns=133378 repair_ns=21149959 duplicates=0 checks=208 eligible=134 max_stall_ms=46633 group_published=[12, 10, 15, 11, 8, 13, 15] group_received=[13, 10, 11, 13, 13, 15, 11] group_sent=[10, 6, 7, 9, 8, 8, 10] max_receiver_mailbox_age_ms=4906",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:52006",
+            "dist worker request=1 job=7 phase=select input_digest=7dfc465c5b815e20 started=31 budget_ms=87846",
+            "dist worker request=1 completed=31/31 selected_worker=61 elapsed_ms=84348 rx_bytes=2497 tx_bytes=77",
+            "dist worker request=2 job=8 phase=plan input_digest=d18e0e8e4d63af09 started=31 budget_ms=57805",
+            "dist worker request=2 completed=31/31 selected_worker=71 elapsed_ms=55697 rx_bytes=92487 tx_bytes=52956",
+            "cross_elite request=2 origin=46 receiver=Some(49) published=18 received=34 rejected=0 context_mismatch=0 imports=0 improved=0 sent=6 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[3, 3, 2, 3, 3, 2, 2] group_received=[6, 4, 4, 4, 7, 5, 4] group_sent=[3, 3, 2, 3, 3, 2, 2] max_receiver_mailbox_age_ms=0",
+            "dist worker request=3 job=9 phase=plan input_digest=bea844e72c6e4af9 started=31 budget_ms=57764",
+            "dist worker request=3 completed=31/31 selected_worker=49 elapsed_ms=55657 rx_bytes=332047 tx_bytes=297799",
+            "cross_elite request=3 origin=46 receiver=Some(49) published=112 received=113 rejected=0 context_mismatch=0 imports=0 improved=0 sent=31 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[11, 17, 20, 21, 16, 16, 11] group_received=[17, 18, 17, 11, 15, 16, 19] group_sent=[9, 12, 11, 16, 11, 11, 9] max_receiver_mailbox_age_ms=0",
+            "dist worker request=4 job=10 phase=plan input_digest=d2a5101c20a09e12 started=31 budget_ms=57754",
+            "dist worker request=4 completed=31/31 selected_worker=54 elapsed_ms=55647 rx_bytes=704423 tx_bytes=534169",
+            "cross_elite request=4 origin=46 receiver=Some(49) published=120 received=162 rejected=0 context_mismatch=0 imports=0 improved=0 sent=29 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[21, 13, 16, 14, 22, 13, 21] group_received=[31, 22, 19, 25, 21, 21, 23] group_sent=[16, 10, 11, 10, 16, 11, 15] max_receiver_mailbox_age_ms=0",
+            "dist worker request=5 job=11 phase=plan input_digest=56298371d293326a started=31 budget_ms=57753",
+            "dist worker request=5 completed=31/31 selected_worker=58 elapsed_ms=55643 rx_bytes=1014587 tx_bytes=758375",
+            "cross_elite request=5 origin=46 receiver=Some(49) published=109 received=139 rejected=0 context_mismatch=0 imports=23 improved=5 sent=27 oversized=0 probes=63 probe_ns=331848 repair_ns=44245941 duplicates=0 checks=139 eligible=42 max_stall_ms=13317 group_published=[22, 13, 16, 14, 10, 15, 19] group_received=[21, 15, 20, 21, 24, 18, 20] group_sent=[15, 10, 10, 10, 9, 13, 15] max_receiver_mailbox_age_ms=5534",
+            "dist worker request=6 job=12 phase=plan input_digest=fd7cbd22ec979ee7 started=31 budget_ms=57748",
+            "dist worker request=6 completed=31/31 selected_worker=46 elapsed_ms=52628 rx_bytes=1340579 tx_bytes=957134",
+            "cross_elite request=6 origin=46 receiver=Some(49) published=84 received=120 rejected=0 context_mismatch=0 imports=29 improved=1 sent=24 oversized=0 probes=57 probe_ns=284262 repair_ns=42755616 duplicates=0 checks=207 eligible=99 max_stall_ms=43769 group_published=[11, 9, 13, 8, 10, 16, 17] group_received=[17, 16, 16, 18, 15, 16, 22] group_sent=[9, 6, 8, 5, 7, 12, 12] max_receiver_mailbox_age_ms=4025",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:39914",
+            "dist worker request=1 job=13 phase=select input_digest=a6d5a674b76be5eb started=31 budget_ms=117845",
+            "dist worker request=1 completed=31/31 selected_worker=55 elapsed_ms=113269 rx_bytes=3696 tx_bytes=77",
+            "dist worker request=2 job=14 phase=plan input_digest=9149dc1f30123354 started=31 budget_ms=57694",
+            "dist worker request=2 completed=31/31 selected_worker=72 elapsed_ms=55690 rx_bytes=295852 tx_bytes=198429",
+            "cross_elite request=2 origin=46 receiver=Some(49) published=36 received=56 rejected=0 context_mismatch=0 imports=0 improved=0 sent=16 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[11, 1, 9, 8, 1, 5, 1] group_received=[9, 14, 9, 8, 12, 2, 2] group_sent=[10, 1, 9, 6, 1, 4, 1] max_receiver_mailbox_age_ms=0",
+            "dist worker request=3 job=15 phase=plan input_digest=1e4a4c2dd0e5845e started=31 budget_ms=57678",
+            "dist worker request=3 completed=31/31 selected_worker=56 elapsed_ms=55670 rx_bytes=860494 tx_bytes=543719",
+            "cross_elite request=3 origin=46 receiver=Some(49) published=133 received=171 rejected=0 context_mismatch=0 imports=19 improved=1 sent=26 oversized=0 probes=45 probe_ns=416328 repair_ns=60758280 duplicates=0 checks=137 eligible=33 max_stall_ms=17590 group_published=[20, 21, 26, 19, 14, 16, 17] group_received=[30, 26, 27, 20, 24, 23, 21] group_sent=[14, 14, 15, 15, 9, 10, 14] max_receiver_mailbox_age_ms=4520",
+            "dist worker request=4 job=16 phase=plan input_digest=45e9b4c7916d296b started=31 budget_ms=57681",
+            "dist worker request=4 completed=31/31 selected_worker=49 elapsed_ms=55672 rx_bytes=1314783 tx_bytes=820588",
+            "cross_elite request=4 origin=46 receiver=Some(49) published=89 received=115 rejected=0 context_mismatch=0 imports=23 improved=5 sent=20 oversized=0 probes=54 probe_ns=456225 repair_ns=68367912 duplicates=0 checks=137 eligible=44 max_stall_ms=13075 group_published=[11, 9, 15, 14, 13, 15, 12] group_received=[18, 13, 18, 16, 14, 16, 20] group_sent=[9, 7, 8, 12, 10, 11, 8] max_receiver_mailbox_age_ms=3668",
+            "dist worker request=5 job=17 phase=plan input_digest=ad0602a21808e9b5 started=31 budget_ms=57686",
+            "dist worker request=5 completed=31/31 selected_worker=49 elapsed_ms=55675 rx_bytes=1843242 tx_bytes=1208344",
+            "cross_elite request=5 origin=46 receiver=Some(49) published=118 received=161 rejected=0 context_mismatch=0 imports=24 improved=5 sent=29 oversized=0 probes=60 probe_ns=552155 repair_ns=68601971 duplicates=0 checks=136 eligible=35 max_stall_ms=13228 group_published=[18, 20, 24, 15, 13, 11, 17] group_received=[27, 22, 27, 21, 20, 24, 20] group_sent=[11, 16, 18, 14, 10, 7, 11] max_receiver_mailbox_age_ms=4422",
+            "dist worker request=6 job=18 phase=plan input_digest=1135734eda6e9e53 started=31 budget_ms=57689",
+            "dist worker request=6 completed=31/31 selected_worker=72 elapsed_ms=52665 rx_bytes=2404679 tx_bytes=1553139",
+            "cross_elite request=6 origin=46 receiver=Some(49) published=134 received=156 rejected=0 context_mismatch=0 imports=30 improved=6 sent=25 oversized=0 probes=69 probe_ns=599248 repair_ns=85484810 duplicates=0 checks=204 eligible=76 max_stall_ms=14422 group_published=[19, 16, 24, 21, 20, 18, 16] group_received=[26, 18, 23, 20, 24, 28, 17] group_sent=[14, 11, 18, 13, 10, 12, 11] max_receiver_mailbox_age_ms=6202",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:38096",
+            "dist worker request=1 job=19 phase=select input_digest=321810d33d77421e started=31 budget_ms=57846",
+            "dist worker request=1 completed=31/31 selected_worker=62 elapsed_ms=55495 rx_bytes=1600 tx_bytes=77",
+            "dist worker request=2 job=20 phase=plan input_digest=b03523a3fb207817 started=31 budget_ms=57774",
+            "dist worker request=2 completed=31/31 selected_worker=48 elapsed_ms=56552 rx_bytes=19556 tx_bytes=9595",
+            "cross_elite request=2 origin=46 receiver=Some(49) published=7 received=14 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=139 eligible=128 max_stall_ms=34720 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[2, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=1393",
+            "dist worker request=3 job=21 phase=plan input_digest=de07ac78eea47690 started=31 budget_ms=57666",
+            "dist worker request=3 completed=31/31 selected_worker=54 elapsed_ms=56448 rx_bytes=127057 tx_bytes=62341",
+            "cross_elite request=3 origin=46 receiver=Some(49) published=50 received=71 rejected=0 context_mismatch=0 imports=16 improved=2 sent=10 oversized=0 probes=35 probe_ns=143260 repair_ns=19261154 duplicates=0 checks=139 eligible=80 max_stall_ms=25091 group_published=[9, 7, 8, 6, 6, 7, 7] group_received=[11, 11, 10, 9, 8, 10, 12] group_sent=[6, 5, 7, 6, 6, 5, 5] max_receiver_mailbox_age_ms=4652",
+            "dist worker request=4 job=22 phase=plan input_digest=6d515b1495626902 started=31 budget_ms=57664",
+            "dist worker request=4 completed=31/31 selected_worker=49 elapsed_ms=56446 rx_bytes=212189 tx_bytes=131918",
+            "cross_elite request=4 origin=46 receiver=Some(49) published=71 received=74 rejected=0 context_mismatch=0 imports=10 improved=1 sent=14 oversized=0 probes=26 probe_ns=103730 repair_ns=8621671 duplicates=0 checks=139 eligible=88 max_stall_ms=28601 group_published=[8, 9, 10, 11, 11, 10, 12] group_received=[8, 10, 8, 11, 12, 11, 14] group_sent=[5, 6, 5, 9, 6, 7, 9] max_receiver_mailbox_age_ms=3909",
+            "dist worker request=5 job=23 phase=plan input_digest=e98fa4b36816187d started=31 budget_ms=57661",
+            "dist worker request=5 completed=31/31 selected_worker=46 elapsed_ms=56444 rx_bytes=324943 tx_bytes=223582",
+            "cross_elite request=5 origin=46 receiver=Some(49) published=96 received=94 rejected=0 context_mismatch=0 imports=14 improved=0 sent=19 oversized=0 probes=33 probe_ns=150651 repair_ns=29289924 duplicates=0 checks=139 eligible=57 max_stall_ms=14580 group_published=[19, 14, 15, 10, 11, 14, 13] group_received=[16, 13, 13, 14, 15, 12, 11] group_sent=[11, 10, 9, 9, 5, 9, 9] max_receiver_mailbox_age_ms=4912",
+            "dist worker request=6 job=24 phase=plan input_digest=05bad6e9481709de started=31 budget_ms=57659",
+            "dist worker request=6 completed=31/31 selected_worker=46 elapsed_ms=56440 rx_bytes=371910 tx_bytes=247457",
+            "cross_elite request=6 origin=46 receiver=Some(49) published=14 received=28 rejected=0 context_mismatch=0 imports=7 improved=1 sent=3 oversized=0 probes=14 probe_ns=36237 repair_ns=6922794 duplicates=0 checks=139 eligible=106 max_stall_ms=28095 group_published=[2, 2, 2, 2, 2, 2, 2] group_received=[4, 4, 4, 4, 4, 4, 4] group_sent=[2, 2, 2, 2, 2, 2, 2] max_receiver_mailbox_age_ms=2878",
+            "dist worker request=7 job=25 phase=plan input_digest=ff02716a9ef7bdc1 started=31 budget_ms=57663",
+            "dist worker request=7 completed=31/31 selected_worker=52 elapsed_ms=56446 rx_bytes=484208 tx_bytes=297422",
+            "cross_elite request=7 origin=46 receiver=Some(49) published=26 received=58 rejected=0 context_mismatch=0 imports=18 improved=0 sent=10 oversized=0 probes=37 probe_ns=102285 repair_ns=12694278 duplicates=0 checks=139 eligible=66 max_stall_ms=27074 group_published=[3, 3, 3, 3, 7, 2, 5] group_received=[4, 9, 13, 10, 10, 5, 7] group_sent=[2, 3, 3, 3, 6, 2, 5] max_receiver_mailbox_age_ms=3355",
+            "dist worker request=8 job=26 phase=plan input_digest=0e05e0ab91676784 started=31 budget_ms=57666",
+            "dist worker request=8 completed=31/31 selected_worker=70 elapsed_ms=56448 rx_bytes=602375 tx_bytes=370627",
+            "cross_elite request=8 origin=46 receiver=Some(49) published=67 received=94 rejected=0 context_mismatch=0 imports=15 improved=3 sent=15 oversized=0 probes=36 probe_ns=148224 repair_ns=42647490 duplicates=0 checks=139 eligible=71 max_stall_ms=21862 group_published=[10, 10, 8, 8, 11, 11, 9] group_received=[13, 12, 14, 13, 14, 14, 14] group_sent=[6, 7, 6, 7, 7, 8, 5] max_receiver_mailbox_age_ms=3909",
+            "dist worker request=9 job=27 phase=plan input_digest=3771fe77f3cdc1db started=31 budget_ms=57662",
+            "dist worker request=9 completed=31/31 selected_worker=70 elapsed_ms=56445 rx_bytes=666386 tx_bytes=414214",
+            "cross_elite request=9 origin=46 receiver=Some(49) published=26 received=42 rejected=0 context_mismatch=0 imports=10 improved=0 sent=8 oversized=0 probes=26 probe_ns=113633 repair_ns=13459387 duplicates=0 checks=139 eligible=92 max_stall_ms=29129 group_published=[2, 5, 3, 3, 4, 4, 5] group_received=[7, 8, 6, 5, 6, 6, 4] group_sent=[2, 5, 2, 3, 4, 4, 5] max_receiver_mailbox_age_ms=2916",
+            "dist worker request=10 job=28 phase=plan input_digest=87f653b403905356 started=31 budget_ms=57668",
+            "dist worker request=10 completed=31/31 selected_worker=64 elapsed_ms=56452 rx_bytes=795968 tx_bytes=500992",
+            "cross_elite request=10 origin=46 receiver=Some(49) published=78 received=97 rejected=0 context_mismatch=0 imports=20 improved=0 sent=18 oversized=0 probes=45 probe_ns=195654 repair_ns=23217833 duplicates=0 checks=139 eligible=58 max_stall_ms=14303 group_published=[9, 17, 9, 11, 12, 11, 9] group_received=[12, 12, 12, 15, 17, 15, 14] group_sent=[6, 14, 7, 9, 7, 9, 7] max_receiver_mailbox_age_ms=3905",
+            "dist worker request=11 job=29 phase=plan input_digest=5651e4fb165d3519 started=31 budget_ms=57662",
+            "dist worker request=11 completed=31/31 selected_worker=46 elapsed_ms=52525 rx_bytes=940979 tx_bytes=605487",
+            "cross_elite request=11 origin=46 receiver=Some(49) published=93 received=109 rejected=0 context_mismatch=0 imports=23 improved=1 sent=23 oversized=0 probes=49 probe_ns=145926 repair_ns=42169750 duplicates=0 checks=208 eligible=118 max_stall_ms=48664 group_published=[13, 13, 10, 13, 12, 12, 20] group_received=[16, 15, 18, 16, 14, 15, 15] group_sent=[8, 9, 7, 10, 7, 9, 14] max_receiver_mailbox_age_ms=4898",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:48846",
+            "dist worker request=1 job=30 phase=select input_digest=c20fec95f0e556ec started=31 budget_ms=87847",
+            "dist worker request=1 completed=31/31 selected_worker=65 elapsed_ms=84351 rx_bytes=2498 tx_bytes=77",
+            "dist worker request=2 job=31 phase=plan input_digest=d875efabcc5b92bf started=31 budget_ms=57814",
+            "dist worker request=2 completed=31/31 selected_worker=48 elapsed_ms=55708 rx_bytes=102038 tx_bytes=71312",
+            "cross_elite request=2 origin=46 receiver=Some(49) published=18 received=30 rejected=0 context_mismatch=0 imports=0 improved=0 sent=9 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[3, 3, 3, 2, 3, 2, 2] group_received=[6, 5, 3, 3, 6, 3, 4] group_sent=[3, 3, 3, 2, 3, 2, 2] max_receiver_mailbox_age_ms=0",
+            "dist worker request=3 job=32 phase=plan input_digest=fd611b6f3e11f655 started=31 budget_ms=57760",
+            "dist worker request=3 completed=31/31 selected_worker=50 elapsed_ms=55655 rx_bytes=406944 tx_bytes=283822",
+            "cross_elite request=3 origin=46 receiver=Some(49) published=83 received=125 rejected=0 context_mismatch=0 imports=23 improved=4 sent=27 oversized=0 probes=51 probe_ns=195805 repair_ns=48310834 duplicates=0 checks=139 eligible=39 max_stall_ms=16051 group_published=[8, 13, 12, 14, 14, 9, 13] group_received=[19, 19, 19, 17, 14, 18, 19] group_sent=[6, 11, 9, 9, 9, 9, 11] max_receiver_mailbox_age_ms=4288",
+            "dist worker request=4 job=33 phase=plan input_digest=0f47858a694a08b2 started=31 budget_ms=57750",
+            "dist worker request=4 completed=31/31 selected_worker=49 elapsed_ms=55647 rx_bytes=754158 tx_bytes=520427",
+            "cross_elite request=4 origin=46 receiver=Some(49) published=89 received=156 rejected=0 context_mismatch=0 imports=25 improved=4 sent=30 oversized=0 probes=60 probe_ns=240961 repair_ns=43895964 duplicates=0 checks=139 eligible=43 max_stall_ms=17556 group_published=[12, 10, 13, 13, 13, 15, 13] group_received=[31, 18, 23, 24, 26, 19, 15] group_sent=[10, 7, 11, 11, 12, 11, 8] max_receiver_mailbox_age_ms=4041",
+            "dist worker request=5 job=34 phase=plan input_digest=83f378e89c66ec1d started=31 budget_ms=57758",
+            "dist worker request=5 completed=31/31 selected_worker=48 elapsed_ms=55655 rx_bytes=1001487 tx_bytes=690367",
+            "cross_elite request=5 origin=46 receiver=Some(49) published=85 received=88 rejected=0 context_mismatch=0 imports=18 improved=3 sent=20 oversized=0 probes=39 probe_ns=147329 repair_ns=35286822 duplicates=0 checks=139 eligible=50 max_stall_ms=14075 group_published=[16, 12, 12, 9, 14, 12, 10] group_received=[16, 10, 11, 14, 13, 13, 11] group_sent=[13, 8, 8, 9, 8, 9, 8] max_receiver_mailbox_age_ms=4281",
+            "dist worker request=6 job=35 phase=plan input_digest=738a4c3465cf720d started=31 budget_ms=57758",
+            "dist worker request=6 completed=31/31 selected_worker=49 elapsed_ms=52641 rx_bytes=1439297 tx_bytes=954293",
+            "cross_elite request=6 origin=46 receiver=Some(49) published=93 received=165 rejected=0 context_mismatch=0 imports=35 improved=5 sent=34 oversized=0 probes=83 probe_ns=334576 repair_ns=52600498 duplicates=0 checks=208 eligible=73 max_stall_ms=27600 group_published=[12, 11, 25, 12, 13, 9, 11] group_received=[21, 25, 27, 16, 27, 18, 31] group_sent=[8, 8, 19, 8, 8, 7, 10] max_receiver_mailbox_age_ms=6276",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:47106",
+            "dist worker request=1 job=36 phase=select input_digest=ae5db5c883d80190 started=31 budget_ms=117845",
+            "dist worker request=1 completed=31/31 selected_worker=70 elapsed_ms=113263 rx_bytes=3703 tx_bytes=77",
+            "dist worker request=2 job=37 phase=plan input_digest=c780d0368bdc1dc5 started=31 budget_ms=57699",
+            "dist worker request=2 completed=31/31 selected_worker=67 elapsed_ms=55685 rx_bytes=234658 tx_bytes=129657",
+            "cross_elite request=2 origin=46 receiver=Some(49) published=29 received=34 rejected=0 context_mismatch=0 imports=9 improved=0 sent=10 oversized=0 probes=14 probe_ns=133209 repair_ns=29729247 duplicates=0 checks=135 eligible=84 max_stall_ms=18699 group_published=[1, 2, 13, 4, 1, 1, 7] group_received=[13, 7, 2, 2, 4, 3, 3] group_sent=[1, 2, 8, 4, 1, 1, 6] max_receiver_mailbox_age_ms=1931",
+            "dist worker request=3 job=38 phase=plan input_digest=46db69978eda5999 started=31 budget_ms=57684",
+            "dist worker request=3 completed=31/31 selected_worker=65 elapsed_ms=55666 rx_bytes=752943 tx_bytes=519312",
+            "cross_elite request=3 origin=46 receiver=Some(49) published=133 received=164 rejected=0 context_mismatch=0 imports=18 improved=5 sent=30 oversized=0 probes=44 probe_ns=381164 repair_ns=70830692 duplicates=0 checks=135 eligible=40 max_stall_ms=12852 group_published=[27, 21, 16, 22, 15, 11, 21] group_received=[26, 27, 20, 27, 22, 16, 26] group_sent=[19, 13, 9, 18, 11, 8, 14] max_receiver_mailbox_age_ms=6011",
+            "dist worker request=4 job=39 phase=plan input_digest=e023ceb90621b653 started=31 budget_ms=57680",
+            "dist worker request=4 completed=31/31 selected_worker=51 elapsed_ms=55664 rx_bytes=1245301 tx_bytes=899177",
+            "cross_elite request=4 origin=46 receiver=Some(49) published=133 received=144 rejected=0 context_mismatch=0 imports=24 improved=1 sent=29 oversized=0 probes=57 probe_ns=450277 repair_ns=77961946 duplicates=0 checks=137 eligible=46 max_stall_ms=20618 group_published=[16, 20, 23, 19, 16, 19, 20] group_received=[20, 25, 20, 25, 22, 22, 10] group_sent=[12, 12, 19, 12, 11, 11, 13] max_receiver_mailbox_age_ms=4125",
+            "dist worker request=5 job=40 phase=plan input_digest=07e01c0f3428295a started=31 budget_ms=57689",
+            "dist worker request=5 completed=31/31 selected_worker=63 elapsed_ms=55673 rx_bytes=1772221 tx_bytes=1298400",
+            "cross_elite request=5 origin=46 receiver=Some(49) published=159 received=174 rejected=0 context_mismatch=0 imports=19 improved=5 sent=30 oversized=0 probes=51 probe_ns=428011 repair_ns=74048066 duplicates=0 checks=136 eligible=42 max_stall_ms=18133 group_published=[21, 25, 29, 19, 22, 27, 16] group_received=[22, 22, 21, 25, 32, 24, 28] group_sent=[14, 16, 16, 16, 13, 19, 12] max_receiver_mailbox_age_ms=4004",
+            "dist worker request=6 job=41 phase=plan input_digest=75131fbc30207e9b started=31 budget_ms=57687",
+            "dist worker request=6 completed=31/31 selected_worker=73 elapsed_ms=55670 rx_bytes=2260977 tx_bytes=1694224",
+            "cross_elite request=6 origin=46 receiver=Some(49) published=133 received=147 rejected=0 context_mismatch=0 imports=19 improved=5 sent=30 oversized=0 probes=47 probe_ns=450861 repair_ns=57198461 duplicates=0 checks=136 eligible=44 max_stall_ms=17838 group_published=[15, 21, 17, 15, 19, 26, 20] group_received=[22, 18, 24, 14, 19, 25, 25] group_sent=[11, 13, 11, 9, 13, 18, 15] max_receiver_mailbox_age_ms=6774",
+            "dist worker request=7 job=42 phase=plan input_digest=50fd35554c73af98 started=31 budget_ms=57689",
+            "dist worker request=7 completed=31/31 selected_worker=49 elapsed_ms=52656 rx_bytes=2927662 tx_bytes=2139403",
+            "cross_elite request=7 origin=46 receiver=Some(49) published=151 received=194 rejected=0 context_mismatch=0 imports=32 improved=5 sent=34 oversized=0 probes=72 probe_ns=695619 repair_ns=104566625 duplicates=0 checks=205 eligible=72 max_stall_ms=22205 group_published=[32, 13, 17, 26, 22, 23, 18] group_received=[28, 23, 32, 30, 35, 24, 22] group_sent=[22, 12, 12, 22, 16, 13, 11] max_receiver_mailbox_age_ms=4885",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:48022",
+            "dist worker request=1 job=43 phase=select input_digest=0012b1c80d10494f started=31 budget_ms=57846",
+            "dist worker request=1 completed=31/31 selected_worker=73 elapsed_ms=55485 rx_bytes=1577 tx_bytes=77",
+            "dist worker request=2 job=44 phase=plan input_digest=1864ad7dc1fa41b2 started=31 budget_ms=57787",
+            "dist worker request=2 completed=31/31 selected_worker=57 elapsed_ms=56556 rx_bytes=74267 tx_bytes=42783",
+            "cross_elite request=2 origin=46 receiver=Some(49) published=24 received=40 rejected=0 context_mismatch=0 imports=8 improved=0 sent=10 oversized=0 probes=18 probe_ns=60816 repair_ns=10916024 duplicates=0 checks=139 eligible=105 max_stall_ms=30372 group_published=[2, 3, 3, 2, 4, 4, 6] group_received=[10, 6, 6, 2, 7, 4, 5] group_sent=[2, 3, 3, 2, 4, 4, 6] max_receiver_mailbox_age_ms=1930",
+            "dist worker request=3 job=45 phase=plan input_digest=5716a7994ca1bbe6 started=31 budget_ms=57675",
+            "dist worker request=3 completed=31/31 selected_worker=59 elapsed_ms=56446 rx_bytes=236266 tx_bytes=141371",
+            "cross_elite request=3 origin=46 receiver=Some(49) published=89 received=132 rejected=0 context_mismatch=0 imports=23 improved=2 sent=22 oversized=0 probes=58 probe_ns=208448 repair_ns=37756948 duplicates=0 checks=139 eligible=44 max_stall_ms=24309 group_published=[14, 8, 12, 14, 13, 14, 14] group_received=[13, 21, 21, 17, 15, 22, 23] group_sent=[10, 8, 7, 11, 10, 11, 11] max_receiver_mailbox_age_ms=5384",
+            "dist worker request=4 job=46 phase=plan input_digest=1ba278b12388d3dd started=31 budget_ms=57668",
+            "dist worker request=4 completed=31/31 selected_worker=52 elapsed_ms=56439 rx_bytes=324553 tx_bytes=209891",
+            "cross_elite request=4 origin=46 receiver=Some(49) published=73 received=68 rejected=0 context_mismatch=0 imports=11 improved=1 sent=14 oversized=0 probes=24 probe_ns=71155 repair_ns=14036118 duplicates=0 checks=139 eligible=85 max_stall_ms=30577 group_published=[11, 13, 7, 9, 10, 10, 13] group_received=[9, 8, 11, 9, 11, 8, 12] group_sent=[8, 10, 5, 7, 6, 8, 9] max_receiver_mailbox_age_ms=4621",
+            "dist worker request=5 job=47 phase=plan input_digest=fbd45c9450bb2242 started=31 budget_ms=57670",
+            "dist worker request=5 completed=31/31 selected_worker=66 elapsed_ms=56442 rx_bytes=464638 tx_bytes=300079",
+            "cross_elite request=5 origin=46 receiver=Some(49) published=79 received=100 rejected=0 context_mismatch=0 imports=21 improved=5 sent=20 oversized=0 probes=41 probe_ns=145772 repair_ns=26291864 duplicates=0 checks=139 eligible=56 max_stall_ms=17300 group_published=[9, 13, 12, 9, 12, 17, 7] group_received=[11, 10, 19, 14, 18, 12, 16] group_sent=[6, 9, 7, 8, 8, 11, 5] max_receiver_mailbox_age_ms=3663",
+            "dist worker request=6 job=48 phase=plan input_digest=1be53a625553de26 started=31 budget_ms=57668",
+            "dist worker request=6 completed=31/31 selected_worker=50 elapsed_ms=56440 rx_bytes=606785 tx_bytes=411033",
+            "cross_elite request=6 origin=46 receiver=Some(49) published=97 received=109 rejected=0 context_mismatch=0 imports=20 improved=4 sent=25 oversized=0 probes=44 probe_ns=155223 repair_ns=26152196 duplicates=0 checks=139 eligible=54 max_stall_ms=20566 group_published=[18, 10, 15, 9, 14, 15, 16] group_received=[18, 17, 16, 16, 11, 15, 16] group_sent=[14, 9, 10, 8, 10, 11, 11] max_receiver_mailbox_age_ms=4629",
+            "dist worker request=7 job=49 phase=plan input_digest=fd5c60ce7cc4f520 started=31 budget_ms=57674",
+            "dist worker request=7 completed=31/31 selected_worker=54 elapsed_ms=56446 rx_bytes=697642 tx_bytes=475998",
+            "cross_elite request=7 origin=46 receiver=Some(49) published=76 received=70 rejected=0 context_mismatch=0 imports=12 improved=1 sent=13 oversized=0 probes=23 probe_ns=85478 repair_ns=10454252 duplicates=0 checks=139 eligible=79 max_stall_ms=30596 group_published=[10, 12, 12, 11, 8, 8, 15] group_received=[8, 8, 8, 13, 11, 11, 11] group_sent=[7, 6, 6, 7, 5, 6, 9] max_receiver_mailbox_age_ms=4379",
+            "dist worker request=8 job=50 phase=plan input_digest=45ee939c94f389b5 started=31 budget_ms=57661",
+            "dist worker request=8 completed=31/31 selected_worker=66 elapsed_ms=56434 rx_bytes=821399 tx_bytes=545976",
+            "cross_elite request=8 origin=46 receiver=Some(49) published=83 received=82 rejected=0 context_mismatch=0 imports=16 improved=2 sent=14 oversized=0 probes=34 probe_ns=133788 repair_ns=20954279 duplicates=0 checks=139 eligible=67 max_stall_ms=29588 group_published=[13, 11, 12, 12, 9, 12, 14] group_received=[8, 10, 16, 14, 14, 12, 8] group_sent=[8, 6, 8, 8, 6, 9, 7] max_receiver_mailbox_age_ms=5376",
+            "dist worker request=9 job=51 phase=plan input_digest=ed46f72f20ade312 started=31 budget_ms=57668",
+            "dist worker request=9 completed=31/31 selected_worker=49 elapsed_ms=52520 rx_bytes=1024200 tx_bytes=669242",
+            "cross_elite request=9 origin=46 receiver=Some(49) published=114 received=150 rejected=0 context_mismatch=0 imports=31 improved=4 sent=28 oversized=0 probes=72 probe_ns=279273 repair_ns=27474304 duplicates=0 checks=208 eligible=92 max_stall_ms=30342 group_published=[15, 15, 22, 13, 18, 14, 17] group_received=[16, 17, 24, 26, 25, 22, 20] group_sent=[11, 10, 14, 10, 12, 12, 11] max_receiver_mailbox_age_ms=3619",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:42398",
+            "dist worker request=1 job=52 phase=select input_digest=f7d28d8dd2a081c4 started=31 budget_ms=87844",
+            "dist worker request=1 completed=31/31 selected_worker=70 elapsed_ms=84354 rx_bytes=2502 tx_bytes=77",
+            "dist worker request=2 job=53 phase=plan input_digest=7d510fcae6eaf3b0 started=31 budget_ms=57811",
+            "dist worker request=2 completed=31/31 selected_worker=52 elapsed_ms=55708 rx_bytes=34112 tx_bytes=16882",
+            "cross_elite request=2 origin=46 receiver=Some(49) published=7 received=14 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=0 eligible=0 max_stall_ms=0 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[2, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=0",
+            "dist worker request=3 job=54 phase=plan input_digest=2e94fa0c16f8f69d started=31 budget_ms=57753",
+            "dist worker request=3 completed=31/31 selected_worker=58 elapsed_ms=55653 rx_bytes=304111 tx_bytes=215500",
+            "cross_elite request=3 origin=46 receiver=Some(49) published=99 received=117 rejected=0 context_mismatch=0 imports=22 improved=2 sent=24 oversized=0 probes=54 probe_ns=480380 repair_ns=107289130 duplicates=0 checks=135 eligible=46 max_stall_ms=16656 group_published=[18, 16, 16, 12, 15, 10, 12] group_received=[20, 18, 13, 17, 17, 15, 17] group_sent=[13, 11, 11, 10, 12, 7, 9] max_receiver_mailbox_age_ms=6077",
+            "dist worker request=4 job=55 phase=plan input_digest=8e84afd197609b27 started=31 budget_ms=57755",
+            "dist worker request=4 completed=31/31 selected_worker=60 elapsed_ms=55658 rx_bytes=550339 tx_bytes=385311",
+            "cross_elite request=4 origin=46 receiver=Some(49) published=83 received=103 rejected=0 context_mismatch=0 imports=20 improved=1 sent=20 oversized=0 probes=48 probe_ns=308567 repair_ns=55418805 duplicates=0 checks=138 eligible=53 max_stall_ms=26767 group_published=[16, 11, 18, 8, 11, 11, 8] group_received=[12, 12, 18, 14, 17, 19, 11] group_sent=[12, 7, 12, 8, 6, 8, 7] max_receiver_mailbox_age_ms=5443",
+            "dist worker request=5 job=56 phase=plan input_digest=25d8a551012e4cf4 started=31 budget_ms=57748",
+            "dist worker request=5 completed=31/31 selected_worker=74 elapsed_ms=55648 rx_bytes=819513 tx_bytes=553524",
+            "cross_elite request=5 origin=46 receiver=Some(49) published=85 received=98 rejected=0 context_mismatch=0 imports=21 improved=2 sent=20 oversized=0 probes=44 probe_ns=249169 repair_ns=34946808 duplicates=0 checks=138 eligible=54 max_stall_ms=26733 group_published=[8, 10, 13, 16, 13, 14, 11] group_received=[8, 11, 18, 14, 10, 20, 17] group_sent=[6, 7, 10, 13, 8, 8, 6] max_receiver_mailbox_age_ms=3910",
+            "dist worker request=6 job=57 phase=plan input_digest=e4dec9ba8d41aa2c started=31 budget_ms=57754",
+            "dist worker request=6 completed=31/31 selected_worker=50 elapsed_ms=52643 rx_bytes=1178436 tx_bytes=801598",
+            "cross_elite request=6 origin=46 receiver=Some(49) published=117 received=149 rejected=0 context_mismatch=0 imports=25 improved=2 sent=31 oversized=0 probes=62 probe_ns=403306 repair_ns=57469933 duplicates=0 checks=207 eligible=88 max_stall_ms=22189 group_published=[16, 12, 13, 16, 22, 21, 17] group_received=[20, 30, 16, 20, 23, 17, 23] group_sent=[12, 8, 8, 13, 15, 13, 9] max_receiver_mailbox_age_ms=4338",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:38806",
+            "dist worker request=1 job=58 phase=select input_digest=436920d5213f9dbc started=31 budget_ms=117846",
+            "dist worker request=1 completed=31/31 selected_worker=51 elapsed_ms=113270 rx_bytes=3701 tx_bytes=77",
+            "dist worker request=2 job=59 phase=plan input_digest=5cbfbd59b7de3f0b started=31 budget_ms=57694",
+            "dist worker request=2 completed=31/31 selected_worker=59 elapsed_ms=55687 rx_bytes=206106 tx_bytes=63282",
+            "cross_elite request=2 origin=46 receiver=Some(49) published=14 received=34 rejected=0 context_mismatch=0 imports=8 improved=0 sent=4 oversized=0 probes=12 probe_ns=130746 repair_ns=52776840 duplicates=0 checks=131 eligible=91 max_stall_ms=29172 group_published=[2, 2, 2, 2, 2, 2, 2] group_received=[5, 9, 4, 4, 4, 4, 4] group_sent=[2, 2, 2, 2, 2, 2, 2] max_receiver_mailbox_age_ms=2979",
+            "dist worker request=3 job=60 phase=plan input_digest=3e6a8736d36951c5 started=31 budget_ms=57687",
+            "dist worker request=3 completed=31/31 selected_worker=71 elapsed_ms=55680 rx_bytes=752251 tx_bytes=411624",
+            "cross_elite request=3 origin=46 receiver=Some(49) published=144 received=158 rejected=0 context_mismatch=0 imports=21 improved=2 sent=25 oversized=0 probes=55 probe_ns=916440 repair_ns=147312803 duplicates=0 checks=128 eligible=32 max_stall_ms=10818 group_published=[24, 27, 19, 19, 23, 17, 15] group_received=[25, 20, 20, 18, 27, 27, 21] group_sent=[16, 17, 12, 14, 15, 13, 10] max_receiver_mailbox_age_ms=5733",
+            "dist worker request=4 job=61 phase=plan input_digest=29ac8760eb0a6179 started=31 budget_ms=57688",
+            "dist worker request=4 completed=31/31 selected_worker=57 elapsed_ms=55680 rx_bytes=1272043 tx_bytes=821471",
+            "cross_elite request=4 origin=46 receiver=Some(49) published=169 received=168 rejected=0 context_mismatch=0 imports=20 improved=1 sent=30 oversized=0 probes=47 probe_ns=757149 repair_ns=120856450 duplicates=0 checks=129 eligible=37 max_stall_ms=20113 group_published=[25, 30, 17, 14, 29, 26, 28] group_received=[24, 27, 23, 23, 25, 27, 19] group_sent=[17, 16, 12, 12, 16, 16, 18] max_receiver_mailbox_age_ms=5003",
+            "dist worker request=5 job=62 phase=plan input_digest=5de8d2956a2806ae started=31 budget_ms=57681",
+            "dist worker request=5 completed=31/31 selected_worker=51 elapsed_ms=55675 rx_bytes=1780823 tx_bytes=1236738",
+            "cross_elite request=5 origin=46 receiver=Some(49) published=169 received=160 rejected=0 context_mismatch=0 imports=19 improved=3 sent=30 oversized=0 probes=50 probe_ns=837125 repair_ns=114614669 duplicates=0 checks=128 eligible=44 max_stall_ms=18074 group_published=[24, 29, 26, 20, 25, 20, 25] group_received=[26, 21, 20, 20, 22, 25, 26] group_sent=[17, 16, 17, 16, 18, 13, 16] max_receiver_mailbox_age_ms=6044",
+            "dist worker request=6 job=63 phase=plan input_digest=9ac6f88e17d39b53 started=31 budget_ms=57687",
+            "dist worker request=6 completed=31/31 selected_worker=57 elapsed_ms=52672 rx_bytes=2457413 tx_bytes=1715120",
+            "cross_elite request=6 origin=46 receiver=Some(49) published=187 received=217 rejected=0 context_mismatch=0 imports=30 improved=0 sent=35 oversized=0 probes=77 probe_ns=1336741 repair_ns=188356635 duplicates=0 checks=196 eligible=60 max_stall_ms=20464 group_published=[26, 27, 26, 28, 30, 29, 21] group_received=[35, 31, 30, 26, 36, 27, 32] group_sent=[21, 17, 16, 20, 22, 18, 14] max_receiver_mailbox_age_ms=5517",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:38376",
+            "dist worker request=1 job=64 phase=select input_digest=e950d2c1e229410b started=31 budget_ms=57849",
+            "dist worker request=1 completed=31/31 selected_worker=60 elapsed_ms=55494 rx_bytes=1565 tx_bytes=77",
+            "dist worker request=2 job=65 phase=plan input_digest=49a22391158eaf7f started=31 budget_ms=57777",
+            "dist worker request=2 completed=31/31 selected_worker=46 elapsed_ms=56555 rx_bytes=18574 tx_bytes=9073",
+            "cross_elite request=2 origin=46 receiver=Some(49) published=7 received=14 rejected=0 context_mismatch=0 imports=0 improved=0 sent=1 oversized=0 probes=0 probe_ns=0 repair_ns=0 duplicates=0 checks=139 eligible=127 max_stall_ms=34604 group_published=[1, 1, 1, 1, 1, 1, 1] group_received=[2, 2, 2, 2, 2, 2, 2] group_sent=[1, 1, 1, 1, 1, 1, 1] max_receiver_mailbox_age_ms=1378",
+            "dist worker request=3 job=66 phase=plan input_digest=549dd9d8a2e1f9a6 started=31 budget_ms=57664",
+            "dist worker request=3 completed=31/31 selected_worker=61 elapsed_ms=56443 rx_bytes=141977 tx_bytes=101532",
+            "cross_elite request=3 origin=46 receiver=Some(49) published=82 received=90 rejected=0 context_mismatch=0 imports=19 improved=1 sent=21 oversized=0 probes=42 probe_ns=127332 repair_ns=16428794 duplicates=0 checks=139 eligible=63 max_stall_ms=31085 group_published=[13, 12, 6, 15, 12, 12, 12] group_received=[15, 14, 11, 11, 12, 15, 12] group_sent=[9, 8, 4, 10, 8, 8, 8] max_receiver_mailbox_age_ms=4386",
+            "dist worker request=4 job=67 phase=plan input_digest=ad70ad2ef5411de3 started=31 budget_ms=57667",
+            "dist worker request=4 completed=31/31 selected_worker=62 elapsed_ms=56445 rx_bytes=227533 tx_bytes=158996",
+            "cross_elite request=4 origin=46 receiver=Some(49) published=82 received=67 rejected=0 context_mismatch=0 imports=11 improved=1 sent=11 oversized=0 probes=25 probe_ns=71877 repair_ns=10536808 duplicates=0 checks=139 eligible=85 max_stall_ms=31082 group_published=[15, 13, 12, 14, 12, 7, 9] group_received=[10, 7, 9, 14, 9, 9, 9] group_sent=[6, 9, 7, 7, 7, 4, 6] max_receiver_mailbox_age_ms=3881",
+            "dist worker request=5 job=68 phase=plan input_digest=89833b39e59f10ef started=31 budget_ms=57662",
+            "dist worker request=5 completed=31/31 selected_worker=49 elapsed_ms=56442 rx_bytes=355540 tx_bytes=220786",
+            "cross_elite request=5 origin=46 receiver=Some(49) published=82 received=92 rejected=0 context_mismatch=0 imports=19 improved=3 sent=12 oversized=0 probes=38 probe_ns=103834 repair_ns=20052813 duplicates=0 checks=139 eligible=57 max_stall_ms=26076 group_published=[8, 13, 16, 11, 11, 9, 14] group_received=[13, 17, 14, 16, 9, 9, 14] group_sent=[5, 7, 8, 6, 6, 7, 9] max_receiver_mailbox_age_ms=4639",
+            "dist worker request=6 job=69 phase=plan input_digest=e95fbf0bdfea7781 started=31 budget_ms=57661",
+            "dist worker request=6 completed=31/31 selected_worker=46 elapsed_ms=52523 rx_bytes=421338 tx_bytes=267498",
+            "cross_elite request=6 origin=46 receiver=Some(49) published=62 received=67 rejected=0 context_mismatch=0 imports=8 improved=1 sent=8 oversized=0 probes=20 probe_ns=63800 repair_ns=7488529 duplicates=0 checks=208 eligible=166 max_stall_ms=49126 group_published=[7, 6, 10, 6, 8, 10, 15] group_received=[10, 11, 8, 12, 9, 8, 9] group_sent=[5, 5, 6, 4, 5, 7, 8] max_receiver_mailbox_age_ms=4647",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:53158",
+            "dist worker request=1 job=70 phase=select input_digest=38cd995e90defab9 started=31 budget_ms=87845",
+            "dist worker request=1 completed=31/31 selected_worker=73 elapsed_ms=84350 rx_bytes=2520 tx_bytes=77",
+            "dist worker request=2 job=71 phase=plan input_digest=0b93e9b6605f6a5a started=31 budget_ms=57807",
+            "dist worker request=2 completed=31/31 selected_worker=50 elapsed_ms=55701 rx_bytes=76649 tx_bytes=24069",
+            "cross_elite request=2 origin=46 receiver=Some(49) published=8 received=21 rejected=0 context_mismatch=0 imports=4 improved=0 sent=2 oversized=0 probes=5 probe_ns=38963 repair_ns=10851968 duplicates=0 checks=138 eligible=116 max_stall_ms=34581 group_published=[1, 1, 1, 1, 2, 1, 1] group_received=[3, 4, 2, 2, 4, 4, 2] group_sent=[1, 1, 1, 1, 2, 1, 1] max_receiver_mailbox_age_ms=1579",
+            "dist worker request=3 job=72 phase=plan input_digest=a32a33fd700327d9 started=31 budget_ms=57761",
+            "dist worker request=3 completed=31/31 selected_worker=65 elapsed_ms=55656 rx_bytes=391977 tx_bytes=185725",
+            "cross_elite request=3 origin=46 receiver=Some(49) published=68 received=129 rejected=0 context_mismatch=0 imports=25 improved=7 sent=19 oversized=0 probes=59 probe_ns=370483 repair_ns=69415883 duplicates=0 checks=139 eligible=37 max_stall_ms=14318 group_published=[9, 13, 6, 7, 12, 14, 7] group_received=[12, 23, 16, 14, 21, 23, 20] group_sent=[7, 11, 5, 7, 8, 9, 5] max_receiver_mailbox_age_ms=5540",
+            "dist worker request=4 job=73 phase=plan input_digest=a0a6ac9d5fae17b6 started=31 budget_ms=57752",
+            "dist worker request=4 completed=31/31 selected_worker=68 elapsed_ms=55647 rx_bytes=611666 tx_bytes=329629",
+            "cross_elite request=4 origin=46 receiver=Some(49) published=92 received=96 rejected=0 context_mismatch=0 imports=17 improved=2 sent=16 oversized=0 probes=36 probe_ns=208318 repair_ns=45929627 duplicates=0 checks=138 eligible=56 max_stall_ms=26146 group_published=[12, 8, 17, 9, 16, 19, 11] group_received=[13, 13, 14, 13, 14, 16, 13] group_sent=[7, 5, 11, 5, 11, 11, 7] max_receiver_mailbox_age_ms=5954",
+            "dist worker request=5 job=74 phase=plan input_digest=31f65ccd3d1d403d started=31 budget_ms=57753",
+            "dist worker request=5 completed=31/31 selected_worker=48 elapsed_ms=55651 rx_bytes=882220 tx_bytes=545310",
+            "cross_elite request=5 origin=46 receiver=Some(49) published=88 received=97 rejected=0 context_mismatch=0 imports=23 improved=2 sent=26 oversized=0 probes=48 probe_ns=246168 repair_ns=41103190 duplicates=0 checks=139 eligible=46 max_stall_ms=20574 group_published=[14, 12, 10, 9, 12, 14, 17] group_received=[15, 15, 16, 12, 12, 14, 13] group_sent=[10, 10, 7, 6, 10, 9, 12] max_receiver_mailbox_age_ms=4979",
+            "dist worker request=6 job=75 phase=plan input_digest=7ce90691e7f5e091 started=31 budget_ms=57757",
+            "dist worker request=6 completed=31/31 selected_worker=51 elapsed_ms=55654 rx_bytes=1190754 tx_bytes=774516",
+            "cross_elite request=6 origin=46 receiver=Some(49) published=120 received=141 rejected=0 context_mismatch=0 imports=24 improved=2 sent=27 oversized=0 probes=55 probe_ns=356681 repair_ns=59021536 duplicates=0 checks=139 eligible=37 max_stall_ms=14323 group_published=[19, 15, 18, 18, 14, 19, 17] group_received=[29, 23, 18, 17, 16, 20, 18] group_sent=[14, 12, 14, 16, 10, 13, 13] max_receiver_mailbox_age_ms=3029",
+            "dist worker request=7 job=76 phase=plan input_digest=b76dc9977ebbb006 started=31 budget_ms=57758",
+            "dist worker request=7 completed=31/31 selected_worker=70 elapsed_ms=55659 rx_bytes=1455616 tx_bytes=971547",
+            "cross_elite request=7 origin=46 receiver=Some(49) published=108 received=102 rejected=0 context_mismatch=0 imports=18 improved=2 sent=23 oversized=0 probes=40 probe_ns=262793 repair_ns=41963407 duplicates=0 checks=139 eligible=54 max_stall_ms=14340 group_published=[19, 17, 17, 9, 16, 18, 12] group_received=[14, 17, 13, 13, 14, 17, 14] group_sent=[13, 10, 9, 6, 11, 12, 10] max_receiver_mailbox_age_ms=3278",
+            "dist worker request=8 job=77 phase=plan input_digest=f4cdf3bb569b6b32 started=31 budget_ms=57760",
+            "dist worker request=8 completed=31/31 selected_worker=61 elapsed_ms=55656 rx_bytes=1697720 tx_bytes=1144335",
+            "cross_elite request=8 origin=46 receiver=Some(49) published=66 received=93 rejected=0 context_mismatch=0 imports=21 improved=2 sent=20 oversized=0 probes=47 probe_ns=334828 repair_ns=53877575 duplicates=0 checks=138 eligible=61 max_stall_ms=26180 group_published=[7, 11, 10, 8, 14, 11, 5] group_received=[11, 13, 15, 14, 14, 13, 13] group_sent=[6, 10, 10, 7, 10, 9, 4] max_receiver_mailbox_age_ms=3441",
+            "dist worker request=9 job=78 phase=plan input_digest=d1f13df157597240 started=31 budget_ms=57758",
+            "dist worker request=9 completed=31/31 selected_worker=54 elapsed_ms=52642 rx_bytes=1990394 tx_bytes=1347358",
+            "cross_elite request=9 origin=46 receiver=Some(49) published=93 received=130 rejected=0 context_mismatch=0 imports=27 improved=2 sent=24 oversized=0 probes=67 probe_ns=437179 repair_ns=55628482 duplicates=0 checks=207 eligible=91 max_stall_ms=25962 group_published=[14, 13, 8, 13, 16, 16, 13] group_received=[20, 19, 12, 25, 19, 19, 16] group_sent=[9, 11, 6, 13, 10, 9, 8] max_receiver_mailbox_age_ms=6283",
+            "dist worker connection_closed=peer disconnected",
+            "dist accepted_peer=192.168.0.11:46558",
+            "dist worker request=1 job=79 phase=select input_digest=e941150ef16fbb29 started=31 budget_ms=117845",
+            "dist worker request=1 completed=31/31 selected_worker=46 elapsed_ms=113329 rx_bytes=3696 tx_bytes=77",
+            "dist worker request=2 job=80 phase=plan input_digest=605efab4be52a7bc started=31 budget_ms=57842",
+            "dist worker request=2 completed=31/31 selected_worker=46 elapsed_ms=55893 rx_bytes=220682 tx_bytes=97860",
+            "cross_elite request=2 origin=46 receiver=Some(49) published=16 received=37 rejected=0 context_mismatch=0 imports=12 improved=0 sent=7 oversized=0 probes=16 probe_ns=185670 repair_ns=75118663 duplicates=0 checks=130 eligible=77 max_stall_ms=29170 group_published=[3, 1, 4, 1, 3, 3, 1] group_received=[6, 6, 3, 5, 7, 5, 5] group_sent=[3, 1, 4, 1, 2, 3, 1] max_receiver_mailbox_age_ms=2943",
+            "dist worker request=3 job=81 phase=plan input_digest=85b168c435f3a011 started=31 budget_ms=57647",
+            "dist worker request=3 completed=31/31 selected_worker=56 elapsed_ms=55702 rx_bytes=739815 tx_bytes=464522",
+            "cross_elite request=3 origin=46 receiver=Some(49) published=135 received=159 rejected=0 context_mismatch=0 imports=19 improved=3 sent=27 oversized=0 probes=40 probe_ns=402868 repair_ns=58282066 duplicates=0 checks=133 eligible=33 max_stall_ms=17341 group_published=[22, 18, 20, 22, 18, 20, 15] group_received=[23, 22, 25, 18, 30, 21, 20] group_sent=[14, 13, 14, 18, 11, 15, 12] max_receiver_mailbox_age_ms=6319",
+            "dist worker request=4 job=82 phase=plan input_digest=5284dfc998f78b22 started=31 budget_ms=57842",
+            "dist worker request=4 completed=31/31 selected_worker=49 elapsed_ms=55889 rx_bytes=1198146 tx_bytes=855338",
+            "cross_elite request=4 origin=46 receiver=Some(49) published=148 received=146 rejected=0 context_mismatch=0 imports=17 improved=5 sent=29 oversized=0 probes=41 probe_ns=373725 repair_ns=53294352 duplicates=0 checks=135 eligible=43 max_stall_ms=8820 group_published=[25, 19, 30, 18, 18, 17, 21] group_received=[20, 20, 30, 24, 22, 14, 16] group_sent=[15, 11, 17, 16, 12, 13, 16] max_receiver_mailbox_age_ms=6087",
+            "dist worker request=5 job=83 phase=plan input_digest=7c46e66e30fb158d started=31 budget_ms=57846",
+            "dist worker request=5 completed=31/31 selected_worker=59 elapsed_ms=55891 rx_bytes=1720044 tx_bytes=1201671",
+            "cross_elite request=5 origin=46 receiver=Some(49) published=128 received=152 rejected=0 context_mismatch=0 imports=19 improved=3 sent=25 oversized=0 probes=48 probe_ns=456454 repair_ns=84243342 duplicates=0 checks=133 eligible=38 max_stall_ms=18206 group_published=[20, 19, 18, 13, 16, 23, 19] group_received=[24, 24, 19, 17, 27, 21, 20] group_sent=[12, 15, 12, 10, 9, 16, 10] max_receiver_mailbox_age_ms=5138",
+            "dist worker request=6 job=84 phase=plan input_digest=e8c4fab53776d720 started=31 budget_ms=57645",
+            "dist worker request=6 completed=31/31 selected_worker=49 elapsed_ms=52685 rx_bytes=2362887 tx_bytes=1666067",
+            "cross_elite request=6 origin=46 receiver=Some(49) published=129 received=168 rejected=0 context_mismatch=0 imports=29 improved=7 sent=35 oversized=0 probes=72 probe_ns=841917 repair_ns=96622074 duplicates=0 checks=201 eligible=76 max_stall_ms=27465 group_published=[14, 18, 26, 17, 25, 16, 13] group_received=[24, 28, 25, 23, 24, 21, 23] group_sent=[10, 13, 18, 17, 14, 13, 12] max_receiver_mailbox_age_ms=5461",
+            "dist worker connection_closed=peer disconnected"
+          ],
+          "errorLines": []
+        }
+      },
+      "files": {
+        "distributed-solver": "574dd99a8ff0d20035acccca3f4e207ad2d7701308bc10374694137aa0f33016",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "994d0b9e7f8ca30386fd42a5c403269065e80c5ab7c3a0fbebc5ab80bdb7471c"
+      }
+    },
+    "nomlab": {
+      "capturedAtUtc": "2026-10-09T17:57:36.206679+00:00",
+      "phase": "end",
+      "bootId": "6c4c3c67-7b03-49c0-9073-e209bfa9cf68",
+      "processes": [
+        {
+          "pid": 10785,
+          "startTicks": "1333098",
+          "state": "S",
+          "argv": [
+            "python3",
+            "/home/nomlab-ubuntu/procon37-distributed/resume-team-runner.py",
+            "--bridge",
+            "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+            "--solver",
+            "/home/nomlab-ubuntu/procon37-distributed/launcher",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--team",
+            "1",
+            "--cpus",
+            "0-15",
+            ""
+          ],
+          "cpus": "0-15",
+          "threads": [
+            {
+              "tid": 10785,
+              "name": "python3",
+              "ticks": 2,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            }
+          ]
+        },
+        {
+          "pid": 11817,
+          "startTicks": "1882345",
+          "state": "S",
+          "argv": [
+            "/home/nomlab-ubuntu/procon37-distributed/bin/server-bridge",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--token",
+            "[redacted]",
+            "--solver",
+            "/home/nomlab-ubuntu/procon37-distributed/launcher",
+            ""
+          ],
+          "cpus": "0-15",
+          "threads": [
+            {
+              "tid": 11817,
+              "name": "server-bridge",
+              "ticks": 305,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11818,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11819,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11820,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11821,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11822,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11823,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11824,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11825,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11826,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11827,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11828,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11829,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11830,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11831,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11832,
+              "name": "tokio-rt-worker",
+              "ticks": 175,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 11833,
+              "name": "tokio-rt-worker",
+              "ticks": 0,
+              "cpus": "0-15",
+              "deltaTicks": 0
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "scaling_governor": {
+          "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance"
+        },
+        "energy_performance_preference": {
+          "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance"
+        }
+      },
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": 0.019431114196777344,
+            "roundTripMs": 1.3973712921142578
+          },
+          {
+            "serverMinusClientMs": -0.22709369659423828,
+            "roundTripMs": 2.1507740020751953
+          },
+          {
+            "serverMinusClientMs": -0.09393692016601562,
+            "roundTripMs": 1.8048286437988281
+          },
+          {
+            "serverMinusClientMs": 0.05984306335449219,
+            "roundTripMs": 1.5015602111816406
+          },
+          {
+            "serverMinusClientMs": -0.14090538024902344,
+            "roundTripMs": 1.8877983093261719
+          },
+          {
+            "serverMinusClientMs": 0.048279762268066406,
+            "roundTripMs": 1.5399456024169922
+          },
+          {
+            "serverMinusClientMs": 0.06687641143798828,
+            "roundTripMs": 1.5556812286376953
+          },
+          {
+            "serverMinusClientMs": -0.27883052825927734,
+            "roundTripMs": 2.256155014038086
+          }
+        ],
+        "medianBestHalfOffsetMs": 0.0540614128112793,
+        "minimumRoundTripMs": 1.3973712921142578,
+        "capturedUnix": 1791568656.623891
+      },
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 17:57:25 2026\nSystem time     : 0.000015399 seconds fast of NTP time\nLast offset     : +0.000017125 seconds\nRMS offset      : 0.000034387 seconds\nFrequency       : 20.765 ppm slow\nResidual freq   : +0.013 ppm\nSkew            : 0.562 ppm\nRoot delay      : 0.001689918 seconds\nRoot dispersion : 0.001061130 seconds\nUpdate interval : 16.2 seconds\nLeap status     : Normal\n",
+        "stderr": ""
+      },
+      "logs": {
+        "resume-team.log": {
+          "path": "/home/nomlab-ubuntu/procon37-distributed/resume-team.log",
+          "startByte": 82576,
+          "endByte": 88935,
+          "sha256": "83185844ae60d1e2d90075212082a9c9e42b1065a603f781684242d61a71347f",
+          "lineCount": 134,
+          "diagnosticLines": [
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0",
+            "[team-runner] bridge exited 0"
+          ],
+          "errorLines": []
+        },
+        "stderr.log": {
+          "path": "/home/nomlab-ubuntu/procon37-distributed/stderr.log",
+          "startByte": 0,
+          "endByte": 110642,
+          "sha256": "8fcc0a1cbcc09edcdaebc38a182eb0493f7515c08721792a36c7a8d987d7dfff",
+          "lineCount": 877,
+          "diagnosticLines": [],
+          "errorLines": []
+        }
+      },
+      "files": {
+        "bin/distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+        "resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+        "run.sh": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27"
+      }
+    },
+    "local": {
+      "capturedAtUtc": "2026-10-09T17:57:35.979988+00:00",
+      "phase": "end",
+      "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422",
+      "processes": [
+        {
+          "pid": 45307,
+          "startTicks": "1328804",
+          "state": "S",
+          "argv": [
+            "/usr/bin/python3",
+            "/home/imak/work/procon37/solver/distributed-lab/clock_sync.py",
+            "serve",
+            "--address",
+            "192.168.0.81",
+            "--port",
+            "32123",
+            "--record-dir",
+            "/home/imak/work/procon37/.server/distributed/clock",
+            ""
+          ],
+          "cpus": "1,3,5,7",
+          "threads": [
+            {
+              "tid": 45307,
+              "name": "python3",
+              "ticks": 27,
+              "cpus": "1,3,5,7",
+              "deltaTicks": 0
+            }
+          ]
+        },
+        {
+          "pid": 45700,
+          "startTicks": "1346032",
+          "state": "S",
+          "argv": [
+            "python3",
+            "/home/imak/work/procon37/.server/distributed/team2/resume-team-runner.py",
+            "--bridge",
+            "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+            "--solver",
+            "/home/imak/work/procon37/.server/distributed/launchers/generation6.sh",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--team",
+            "2",
+            "--cpus",
+            "0",
+            ""
+          ],
+          "cpus": "0",
+          "threads": [
+            {
+              "tid": 45700,
+              "name": "python3",
+              "ticks": 2,
+              "cpus": "0",
+              "deltaTicks": 0
+            }
+          ]
+        },
+        {
+          "pid": 45704,
+          "startTicks": "1346065",
+          "state": "S",
+          "argv": [
+            "python3",
+            "/home/imak/work/procon37/.server/distributed/team3/resume-team-runner.py",
+            "--bridge",
+            "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+            "--solver",
+            "/home/imak/work/procon37/.server/distributed/launchers/generation8.sh",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--team",
+            "3",
+            "--cpus",
+            "2",
+            ""
+          ],
+          "cpus": "2",
+          "threads": [
+            {
+              "tid": 45704,
+              "name": "python3",
+              "ticks": 2,
+              "cpus": "2",
+              "deltaTicks": 0
+            }
+          ]
+        },
+        {
+          "pid": 49888,
+          "startTicks": "1895231",
+          "state": "S",
+          "argv": [
+            "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--token",
+            "[redacted]",
+            "--solver",
+            "/home/imak/work/procon37/.server/distributed/launchers/generation6.sh",
+            ""
+          ],
+          "cpus": "0",
+          "threads": [
+            {
+              "tid": 49888,
+              "name": "server-bridge",
+              "ticks": 226,
+              "cpus": "0",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 49889,
+              "name": "tokio-rt-worker",
+              "ticks": 114,
+              "cpus": "0",
+              "deltaTicks": 0
+            }
+          ]
+        },
+        {
+          "pid": 49890,
+          "startTicks": "1895231",
+          "state": "S",
+          "argv": [
+            "/home/imak/work/procon37/.server/distributed/bin/server-bridge",
+            "--server",
+            "http://192.168.0.81:11451",
+            "--token",
+            "[redacted]",
+            "--solver",
+            "/home/imak/work/procon37/.server/distributed/launchers/generation8.sh",
+            ""
+          ],
+          "cpus": "2",
+          "threads": [
+            {
+              "tid": 49890,
+              "name": "server-bridge",
+              "ticks": 223,
+              "cpus": "2",
+              "deltaTicks": 0
+            },
+            {
+              "tid": 49891,
+              "name": "tokio-rt-worker",
+              "ticks": 111,
+              "cpus": "2",
+              "deltaTicks": 0
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "scaling_governor": {
+          "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance"
+        },
+        "energy_performance_preference": {
+          "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+          "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance"
+        }
+      },
+      "clockProbe": {
+        "server": "192.168.0.81",
+        "port": 32123,
+        "samples": [
+          {
+            "serverMinusClientMs": 0.011801719665527344,
+            "roundTripMs": 0.08177757263183594
+          },
+          {
+            "serverMinusClientMs": 0.015735626220703125,
+            "roundTripMs": 0.118255615234375
+          },
+          {
+            "serverMinusClientMs": 0.008344650268554688,
+            "roundTripMs": 0.12922286987304688
+          },
+          {
+            "serverMinusClientMs": 0.007152557373046875,
+            "roundTripMs": 0.12111663818359375
+          },
+          {
+            "serverMinusClientMs": 0.011801719665527344,
+            "roundTripMs": 0.07414817810058594
+          },
+          {
+            "serverMinusClientMs": -0.00858306884765625,
+            "roundTripMs": 0.09822845458984375
+          },
+          {
+            "serverMinusClientMs": 0.007271766662597656,
+            "roundTripMs": 0.10037422180175781
+          },
+          {
+            "serverMinusClientMs": -0.0032186508178710938,
+            "roundTripMs": 0.06890296936035156
+          }
+        ],
+        "medianBestHalfOffsetMs": 0.004291534423828125,
+        "minimumRoundTripMs": 0.06890296936035156,
+        "capturedUnix": 1791568656.381798
+      },
+      "chronyTracking": {
+        "exitCode": 0,
+        "stdout": "Reference ID    : 5BBD5B71 (91.189.91.113)\nStratum         : 3\nRef time (UTC)  : Fri Oct 09 17:56:48 2026\nSystem time     : 0.000796666 seconds fast of NTP time\nLast offset     : -0.000198801 seconds\nRMS offset      : 0.033566382 seconds\nFrequency       : 11.593 ppm slow\nResidual freq   : +0.010 ppm\nSkew            : 1.083 ppm\nRoot delay      : 0.253432035 seconds\nRoot dispersion : 0.010515164 seconds\nUpdate interval : 1025.2 seconds\nLeap status     : Normal\n",
+        "stderr": ""
+      },
+      "logs": {},
+      "files": {}
+    }
+  },
+  "scope": "One start sample only. v1/NOM stderr covers the current/final case, not the full run."
+}

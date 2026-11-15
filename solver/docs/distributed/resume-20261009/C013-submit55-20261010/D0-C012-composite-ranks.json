@@ -1,0 +1,249 @@
+{
+  "scope": "Saved D0 formal12 versus descriptive composite: C012 8 cases with all teamsAC plus C013 user-requested rerun4; not a homogeneous formal performance evaluation. Short runs excluded.",
+  "metric": "Recorded server team0 ranks, including tied ranks as recorded; smaller is better.",
+  "summary": {
+    "all": {
+      "count": 12,
+      "D0MeanRank": 1.6666666666666667,
+      "combinedMeanRank": 1.4166666666666667,
+      "C012OriginalIncludingFailedOpponentCasesMeanRank": 1.4166666666666667,
+      "unchangedValidSubset": {
+        "count": 8,
+        "D0MeanRank": 1.625,
+        "C012MeanRank": 1.5,
+        "D0OpponentParallelMeanRank": 2.25,
+        "C012OpponentParallelMeanRank": 2.625
+      },
+      "D0OpponentParallelMeanRank": 2.0833333333333335,
+      "combinedOpponentParallelMeanRank": 2.3333333333333335
+    },
+    "16x16": {
+      "count": 4,
+      "D0MeanRank": 2.25,
+      "combinedMeanRank": 1.5,
+      "C012OriginalIncludingFailedOpponentCasesMeanRank": 1.5,
+      "unchangedValidSubset": {
+        "count": 1,
+        "D0MeanRank": 3.0,
+        "C012MeanRank": 2.0,
+        "D0OpponentParallelMeanRank": 2.0,
+        "C012OpponentParallelMeanRank": 2.0
+      },
+      "D0OpponentParallelMeanRank": 1.5,
+      "combinedOpponentParallelMeanRank": 1.5
+    },
+    "24x24": {
+      "count": 4,
+      "D0MeanRank": 1.75,
+      "combinedMeanRank": 1.25,
+      "C012OriginalIncludingFailedOpponentCasesMeanRank": 1.25,
+      "unchangedValidSubset": {
+        "count": 3,
+        "D0MeanRank": 2.0,
+        "C012MeanRank": 1.3333333333333333,
+        "D0OpponentParallelMeanRank": 2.0,
+        "C012OpponentParallelMeanRank": 3.3333333333333335
+      },
+      "D0OpponentParallelMeanRank": 2.25,
+      "combinedOpponentParallelMeanRank": 3.25
+    },
+    "32x32": {
+      "count": 4,
+      "D0MeanRank": 1.0,
+      "combinedMeanRank": 1.5,
+      "C012OriginalIncludingFailedOpponentCasesMeanRank": 1.5,
+      "unchangedValidSubset": {
+        "count": 4,
+        "D0MeanRank": 1.0,
+        "C012MeanRank": 1.5,
+        "D0OpponentParallelMeanRank": 2.5,
+        "C012OpponentParallelMeanRank": 2.25
+      },
+      "D0OpponentParallelMeanRank": 2.5,
+      "combinedOpponentParallelMeanRank": 2.25
+    }
+  },
+  "cases": [
+    {
+      "seed": 0,
+      "size": "16x16",
+      "D0Rank": 3,
+      "C012OriginalRank": 2,
+      "C012OriginalAllTeamsAC": true,
+      "combinedRank": 2,
+      "combinedVersion": "C012",
+      "combinedRunId": "1791561513817407923-45859",
+      "D0OpponentParallelRank": 2,
+      "C012OpponentParallelOriginalRank": 2,
+      "combinedOpponentParallelRank": 2
+    },
+    {
+      "seed": 1,
+      "size": "24x24",
+      "D0Rank": 1,
+      "C012OriginalRank": 1,
+      "C012OriginalAllTeamsAC": true,
+      "combinedRank": 1,
+      "combinedVersion": "C012",
+      "combinedRunId": "1791561513817407923-45859",
+      "D0OpponentParallelRank": 2,
+      "C012OpponentParallelOriginalRank": 3,
+      "combinedOpponentParallelRank": 3
+    },
+    {
+      "seed": 2,
+      "size": "32x32",
+      "D0Rank": 1,
+      "C012OriginalRank": 2,
+      "C012OriginalAllTeamsAC": true,
+      "combinedRank": 2,
+      "combinedVersion": "C012",
+      "combinedRunId": "1791561513817407923-45859",
+      "D0OpponentParallelRank": 2,
+      "C012OpponentParallelOriginalRank": 1,
+      "combinedOpponentParallelRank": 1
+    },
+    {
+      "seed": 3,
+      "size": "16x16",
+      "D0Rank": 1,
+      "C012OriginalRank": 1,
+      "C012OriginalAllTeamsAC": false,
+      "combinedRank": 2,
+      "combinedVersion": "C013-submit55-dedup",
+      "combinedRunId": "1791570846766461500-69241",
+      "D0OpponentParallelRank": 1,
+      "C012OpponentParallelOriginalRank": 3,
+      "combinedOpponentParallelRank": 2
+    },
+    {
+      "seed": 4,
+      "size": "24x24",
+      "D0Rank": 4,
+      "C012OriginalRank": 2,
+      "C012OriginalAllTeamsAC": true,
+      "combinedRank": 2,
+      "combinedVersion": "C012",
+      "combinedRunId": "1791561513817407923-45859",
+      "D0OpponentParallelRank": 2,
+      "C012OpponentParallelOriginalRank": 4,
+      "combinedOpponentParallelRank": 4
+    },
+    {
+      "seed": 5,
+      "size": "32x32",
+      "D0Rank": 1,
+      "C012OriginalRank": 2,
+      "C012OriginalAllTeamsAC": true,
+      "combinedRank": 2,
+      "combinedVersion": "C012",
+      "combinedRunId": "1791561513817407923-45859",
+      "D0OpponentParallelRank": 2,
+      "C012OpponentParallelOriginalRank": 1,
+      "combinedOpponentParallelRank": 1
+    },
+    {
+      "seed": 6,
+      "size": "16x16",
+      "D0Rank": 3,
+      "C012OriginalRank": 1,
+      "C012OriginalAllTeamsAC": false,
+      "combinedRank": 1,
+      "combinedVersion": "C013-submit55-dedup",
+      "combinedRunId": "1791571511084942906-69717",
+      "D0OpponentParallelRank": 1,
+      "C012OpponentParallelOriginalRank": 2,
+      "combinedOpponentParallelRank": 1
+    },
+    {
+      "seed": 7,
+      "size": "24x24",
+      "D0Rank": 1,
+      "C012OriginalRank": 1,
+      "C012OriginalAllTeamsAC": false,
+      "combinedRank": 1,
+      "combinedVersion": "C013-submit55-dedup",
+      "combinedRunId": "1791572056057840612-70037",
+      "D0OpponentParallelRank": 3,
+      "C012OpponentParallelOriginalRank": 1,
+      "combinedOpponentParallelRank": 3
+    },
+    {
+      "seed": 8,
+      "size": "32x32",
+      "D0Rank": 1,
+      "C012OriginalRank": 1,
+      "C012OriginalAllTeamsAC": true,
+      "combinedRank": 1,
+      "combinedVersion": "C012",
+      "combinedRunId": "1791561513817407923-45859",
+      "D0OpponentParallelRank": 2,
+      "C012OpponentParallelOriginalRank": 4,
+      "combinedOpponentParallelRank": 4
+    },
+    {
+      "seed": 9,
+      "size": "16x16",
+      "D0Rank": 2,
+      "C012OriginalRank": 2,
+      "C012OriginalAllTeamsAC": false,
+      "combinedRank": 1,
+      "combinedVersion": "C013-submit55-dedup",
+      "combinedRunId": "1791572451015433291-71066",
+      "D0OpponentParallelRank": 2,
+      "C012OpponentParallelOriginalRank": 1,
+      "combinedOpponentParallelRank": 1
+    },
+    {
+      "seed": 10,
+      "size": "24x24",
+      "D0Rank": 1,
+      "C012OriginalRank": 1,
+      "C012OriginalAllTeamsAC": true,
+      "combinedRank": 1,
+      "combinedVersion": "C012",
+      "combinedRunId": "1791561513817407923-45859",
+      "D0OpponentParallelRank": 2,
+      "C012OpponentParallelOriginalRank": 3,
+      "combinedOpponentParallelRank": 3
+    },
+    {
+      "seed": 11,
+      "size": "32x32",
+      "D0Rank": 1,
+      "C012OriginalRank": 1,
+      "C012OriginalAllTeamsAC": true,
+      "combinedRank": 1,
+      "combinedVersion": "C012",
+      "combinedRunId": "1791561513817407923-45859",
+      "D0OpponentParallelRank": 4,
+      "C012OpponentParallelOriginalRank": 3,
+      "combinedOpponentParallelRank": 3
+    }
+  ],
+  "inputs": {
+    "solver/docs/distributed/initial-formal-run.json": "b25645bcf83f0b5b7e1abdedddbddaa4b2eea6a78ee72470b91c54aa01074b9b",
+    ".server/runs/1791561513817407923-45859/run.json": "c9474d9f971385261b49f07581e02e70958611bab9026108c0c59144c4bf4aa9",
+    ".server/distributed/evaluations/C013-submit55-dedup-regression-01/results.json": "2b81bf3b6a3ae9ab5f503a5151c64c5bec2c6d10fd8417504ae8eff92c2be2d8",
+    "solver/docs/distributed/resume-20261009/D0-by-board-size.json": "20966e7875f33da8586e3deb59c086ec3f0c53dd6eaebb632dd6c215d0b15f24",
+    ".server/runs/1791561513817407923-45859/0/problem.json": "fb7a90c309d5a527a16c0efc45b58bdf2b18f6bcdf7fc70608c994d878ba3912",
+    ".server/runs/1791561513817407923-45859/1/problem.json": "10391a9fe54d7a71a0d6557c62aff315bb5ff3fe135412ea9c8b9bcabf047cf6",
+    ".server/runs/1791561513817407923-45859/2/problem.json": "550d0960cb93fafa5cc17063f143df785ca47306a9904c7e9297c48b5ec32fec",
+    ".server/runs/1791561513817407923-45859/3/problem.json": "a9ef0edf9360fa7aaa6e946ac8b80268231bbdcde41eae006fce7fb49f4af961",
+    ".server/runs/1791561513817407923-45859/4/problem.json": "a1cf65ff0149ab35a989f32d867c1320ce95d0bcf22ea38b84be036e4d62f739",
+    ".server/runs/1791561513817407923-45859/5/problem.json": "a8339f0fb431e73a043e8c85156e03654e44fe1d3712036ce115d05d5f1a6116",
+    ".server/runs/1791561513817407923-45859/6/problem.json": "6fb6f285800469a40dde8d7b4a9777dbc67461abe8eaae59d65f9b10427b8a73",
+    ".server/runs/1791561513817407923-45859/7/problem.json": "a2750634c6686dc9a9e23adbb9c95aa30c19472542af0dda3274ecfae45be695",
+    ".server/runs/1791561513817407923-45859/8/problem.json": "6af1452523fb7d8dc48a15feb5f9a7f2f4db43e13204951a9c1d401de7d13739",
+    ".server/runs/1791561513817407923-45859/9/problem.json": "8cecd3c3f98d7d0692615000aba95ad5cf5d1a1b9178407f98e452f91d7a97ac",
+    ".server/runs/1791561513817407923-45859/10/problem.json": "2ac41ed93781d103a6e3e6ec9e81a38dc3cc696c3c2b63ab953fea5e1d6ce954",
+    ".server/runs/1791561513817407923-45859/11/problem.json": "e4138f2cbbfb900382d933c8a0f3b8eb7515029fe05aaa029b679aa4b011a020"
+  },
+  "limitations": [
+    "Rerun4 uses C013 streaming/55sec/unchanged-payload submission, whereas original8 use C012 previous policy.",
+    "Saved D0 formal fixed local builds/placement differ from resumed experiment.",
+    "Original D0 problem files absent locally; cannot prove exact original problem hash match.",
+    "No composite result is used for adoption."
+  ],
+  "parallelOpponentDefinition": "Recorded team1 from the same case as each team0 result; D0 column uses saved initial formal12; C012-family column uses original8 plus C013 rerun4. They are separate opponent observations, not extra teams in one match."
+}

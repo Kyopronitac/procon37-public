@@ -1,0 +1,748 @@
+{
+  "schemaVersion": 1,
+  "baseline": "1791357802993159612-11679",
+  "runs": [
+    {
+      "id": "1791357802993159612-11679",
+      "label": "PR22レビュー修正前v117・SSH1同条件比較・game既定フル30件",
+      "importedFrom": null,
+      "status": "completed",
+      "verdict": "AC",
+      "total": 30,
+      "completed": 30,
+      "verdicts": {
+        "AC": 30,
+        "WA": 0,
+        "TLE": 0,
+        "RE": 0
+      },
+      "execution": {
+        "availableCpus": 32,
+        "jobs": 6
+      },
+      "solverParallel": false,
+      "arenaMaps": true,
+      "timeLimitMs": null
+    },
+    {
+      "id": "1791360155933329970-11992",
+      "label": "PR22レビュー修正後・SSH1同条件比較・game既定フル30件",
+      "importedFrom": null,
+      "status": "completed",
+      "verdict": "AC",
+      "total": 30,
+      "completed": 30,
+      "verdicts": {
+        "AC": 30,
+        "WA": 0,
+        "TLE": 0,
+        "RE": 0
+      },
+      "execution": {
+        "availableCpus": 32,
+        "jobs": 6
+      },
+      "solverParallel": false,
+      "arenaMaps": true,
+      "timeLimitMs": null
+    }
+  ],
+  "scopes": [
+    {
+      "format": null,
+      "seeds": 30,
+      "matched": 30,
+      "accepted": 30,
+      "different": 0,
+      "missing": 0,
+      "unavailable": 0,
+      "nonAc": 0,
+      "results": [
+        {
+          "game": {
+            "ranks": [
+              19,
+              3,
+              6,
+              0,
+              2
+            ],
+            "averageRank": 1.7666666666666666,
+            "playerAverageRanks": [
+              1.7666666666666666,
+              3.6,
+              2.2333333333333334,
+              3.1666666666666665,
+              3.2333333333333334
+            ],
+            "opponents": [
+              {
+                "wins": 26,
+                "draws": 1,
+                "losses": 3
+              },
+              {
+                "wins": 18,
+                "draws": 3,
+                "losses": 9
+              },
+              {
+                "wins": 25,
+                "draws": 0,
+                "losses": 5
+              },
+              {
+                "wins": 21,
+                "draws": 3,
+                "losses": 6
+              }
+            ],
+            "scores": [
+              {
+                "uniqueBrands": 543,
+                "dailyBrands": 3682,
+                "udon": 8520
+              },
+              {
+                "uniqueBrands": 543,
+                "dailyBrands": 3668,
+                "udon": 8233
+              },
+              {
+                "uniqueBrands": 543,
+                "dailyBrands": 3681,
+                "udon": 8396
+              },
+              {
+                "uniqueBrands": 543,
+                "dailyBrands": 3680,
+                "udon": 8365
+              },
+              {
+                "uniqueBrands": 543,
+                "dailyBrands": 3680,
+                "udon": 8295
+              }
+            ],
+            "accepted": 30
+          },
+          "id": "1791357802993159612-11679",
+          "outcomes": null,
+          "scores": {
+            "uniqueBrands": 543,
+            "dailyBrands": 3682,
+            "udon": 8520
+          },
+          "delta": null
+        },
+        {
+          "game": {
+            "ranks": [
+              20,
+              6,
+              2,
+              1,
+              1
+            ],
+            "averageRank": 1.5666666666666667,
+            "playerAverageRanks": [
+              1.5666666666666667,
+              3.6666666666666665,
+              3.033333333333333,
+              3.1,
+              2.933333333333333
+            ],
+            "opponents": [
+              {
+                "wins": 25,
+                "draws": 3,
+                "losses": 2
+              },
+              {
+                "wins": 23,
+                "draws": 2,
+                "losses": 5
+              },
+              {
+                "wins": 23,
+                "draws": 1,
+                "losses": 6
+              },
+              {
+                "wins": 21,
+                "draws": 5,
+                "losses": 4
+              }
+            ],
+            "scores": [
+              {
+                "uniqueBrands": 543,
+                "dailyBrands": 3683,
+                "udon": 8511
+              },
+              {
+                "uniqueBrands": 543,
+                "dailyBrands": 3672,
+                "udon": 8231
+              },
+              {
+                "uniqueBrands": 543,
+                "dailyBrands": 3679,
+                "udon": 8366
+              },
+              {
+                "uniqueBrands": 543,
+                "dailyBrands": 3686,
+                "udon": 8374
+              },
+              {
+                "uniqueBrands": 543,
+                "dailyBrands": 3679,
+                "udon": 8372
+              }
+            ],
+            "accepted": 30
+          },
+          "id": "1791360155933329970-11992",
+          "outcomes": {
+            "wins": 15,
+            "draws": 1,
+            "losses": 14
+          },
+          "scores": {
+            "uniqueBrands": 543,
+            "dailyBrands": 3683,
+            "udon": 8511
+          },
+          "delta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 1,
+            "udon": -9
+          }
+        }
+      ]
+    },
+    {
+      "format": "first",
+      "seeds": 10,
+      "matched": 10,
+      "accepted": 10,
+      "different": 0,
+      "missing": 0,
+      "unavailable": 0,
+      "nonAc": 0,
+      "results": [
+        {
+          "game": {
+            "ranks": [
+              5,
+              2,
+              2,
+              0,
+              1
+            ],
+            "averageRank": 2.0,
+            "playerAverageRanks": [
+              2.0,
+              3.2,
+              1.8,
+              3.5,
+              3.3
+            ],
+            "opponents": [
+              {
+                "wins": 8,
+                "draws": 1,
+                "losses": 1
+              },
+              {
+                "wins": 4,
+                "draws": 1,
+                "losses": 5
+              },
+              {
+                "wins": 8,
+                "draws": 0,
+                "losses": 2
+              },
+              {
+                "wins": 7,
+                "draws": 1,
+                "losses": 2
+              }
+            ],
+            "scores": [
+              {
+                "uniqueBrands": 124,
+                "dailyBrands": 885,
+                "udon": 1691
+              },
+              {
+                "uniqueBrands": 124,
+                "dailyBrands": 879,
+                "udon": 1689
+              },
+              {
+                "uniqueBrands": 124,
+                "dailyBrands": 886,
+                "udon": 1693
+              },
+              {
+                "uniqueBrands": 124,
+                "dailyBrands": 884,
+                "udon": 1669
+              },
+              {
+                "uniqueBrands": 124,
+                "dailyBrands": 881,
+                "udon": 1683
+              }
+            ],
+            "accepted": 10
+          },
+          "id": "1791357802993159612-11679",
+          "outcomes": null,
+          "scores": {
+            "uniqueBrands": 124,
+            "dailyBrands": 885,
+            "udon": 1691
+          },
+          "delta": null
+        },
+        {
+          "game": {
+            "ranks": [
+              6,
+              2,
+              1,
+              0,
+              1
+            ],
+            "averageRank": 1.8,
+            "playerAverageRanks": [
+              1.8,
+              3.9,
+              2.7,
+              3.1,
+              2.7
+            ],
+            "opponents": [
+              {
+                "wins": 8,
+                "draws": 1,
+                "losses": 1
+              },
+              {
+                "wins": 6,
+                "draws": 2,
+                "losses": 2
+              },
+              {
+                "wins": 7,
+                "draws": 0,
+                "losses": 3
+              },
+              {
+                "wins": 6,
+                "draws": 2,
+                "losses": 2
+              }
+            ],
+            "scores": [
+              {
+                "uniqueBrands": 124,
+                "dailyBrands": 886,
+                "udon": 1694
+              },
+              {
+                "uniqueBrands": 124,
+                "dailyBrands": 877,
+                "udon": 1659
+              },
+              {
+                "uniqueBrands": 124,
+                "dailyBrands": 884,
+                "udon": 1676
+              },
+              {
+                "uniqueBrands": 124,
+                "dailyBrands": 887,
+                "udon": 1675
+              },
+              {
+                "uniqueBrands": 124,
+                "dailyBrands": 883,
+                "udon": 1687
+              }
+            ],
+            "accepted": 10
+          },
+          "id": "1791360155933329970-11992",
+          "outcomes": {
+            "wins": 5,
+            "draws": 1,
+            "losses": 4
+          },
+          "scores": {
+            "uniqueBrands": 124,
+            "dailyBrands": 886,
+            "udon": 1694
+          },
+          "delta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 1,
+            "udon": 3
+          }
+        }
+      ]
+    },
+    {
+      "format": "semifinal",
+      "seeds": 10,
+      "matched": 10,
+      "accepted": 10,
+      "different": 0,
+      "missing": 0,
+      "unavailable": 0,
+      "nonAc": 0,
+      "results": [
+        {
+          "game": {
+            "ranks": [
+              6,
+              1,
+              2,
+              0,
+              1
+            ],
+            "averageRank": 1.9,
+            "playerAverageRanks": [
+              1.9,
+              3.8,
+              2.2,
+              3.1,
+              2.6
+            ],
+            "opponents": [
+              {
+                "wins": 9,
+                "draws": 0,
+                "losses": 1
+              },
+              {
+                "wins": 6,
+                "draws": 1,
+                "losses": 3
+              },
+              {
+                "wins": 8,
+                "draws": 0,
+                "losses": 2
+              },
+              {
+                "wins": 6,
+                "draws": 1,
+                "losses": 3
+              }
+            ],
+            "scores": [
+              {
+                "uniqueBrands": 179,
+                "dailyBrands": 1176,
+                "udon": 2386
+              },
+              {
+                "uniqueBrands": 179,
+                "dailyBrands": 1168,
+                "udon": 2294
+              },
+              {
+                "uniqueBrands": 179,
+                "dailyBrands": 1174,
+                "udon": 2349
+              },
+              {
+                "uniqueBrands": 179,
+                "dailyBrands": 1175,
+                "udon": 2340
+              },
+              {
+                "uniqueBrands": 179,
+                "dailyBrands": 1178,
+                "udon": 2319
+              }
+            ],
+            "accepted": 10
+          },
+          "id": "1791357802993159612-11679",
+          "outcomes": null,
+          "scores": {
+            "uniqueBrands": 179,
+            "dailyBrands": 1176,
+            "udon": 2386
+          },
+          "delta": null
+        },
+        {
+          "game": {
+            "ranks": [
+              7,
+              1,
+              1,
+              1,
+              0
+            ],
+            "averageRank": 1.6,
+            "playerAverageRanks": [
+              1.6,
+              3.2,
+              3.3,
+              3.2,
+              2.9
+            ],
+            "opponents": [
+              {
+                "wins": 7,
+                "draws": 2,
+                "losses": 1
+              },
+              {
+                "wins": 9,
+                "draws": 0,
+                "losses": 1
+              },
+              {
+                "wins": 8,
+                "draws": 0,
+                "losses": 2
+              },
+              {
+                "wins": 7,
+                "draws": 1,
+                "losses": 2
+              }
+            ],
+            "scores": [
+              {
+                "uniqueBrands": 179,
+                "dailyBrands": 1176,
+                "udon": 2380
+              },
+              {
+                "uniqueBrands": 179,
+                "dailyBrands": 1175,
+                "udon": 2298
+              },
+              {
+                "uniqueBrands": 179,
+                "dailyBrands": 1174,
+                "udon": 2331
+              },
+              {
+                "uniqueBrands": 179,
+                "dailyBrands": 1178,
+                "udon": 2340
+              },
+              {
+                "uniqueBrands": 179,
+                "dailyBrands": 1175,
+                "udon": 2346
+              }
+            ],
+            "accepted": 10
+          },
+          "id": "1791360155933329970-11992",
+          "outcomes": {
+            "wins": 6,
+            "draws": 0,
+            "losses": 4
+          },
+          "scores": {
+            "uniqueBrands": 179,
+            "dailyBrands": 1176,
+            "udon": 2380
+          },
+          "delta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": -6
+          }
+        }
+      ]
+    },
+    {
+      "format": "final",
+      "seeds": 10,
+      "matched": 10,
+      "accepted": 10,
+      "different": 0,
+      "missing": 0,
+      "unavailable": 0,
+      "nonAc": 0,
+      "results": [
+        {
+          "game": {
+            "ranks": [
+              8,
+              0,
+              2,
+              0,
+              0
+            ],
+            "averageRank": 1.4,
+            "playerAverageRanks": [
+              1.4,
+              3.8,
+              2.7,
+              2.9,
+              3.8
+            ],
+            "opponents": [
+              {
+                "wins": 9,
+                "draws": 0,
+                "losses": 1
+              },
+              {
+                "wins": 8,
+                "draws": 1,
+                "losses": 1
+              },
+              {
+                "wins": 9,
+                "draws": 0,
+                "losses": 1
+              },
+              {
+                "wins": 8,
+                "draws": 1,
+                "losses": 1
+              }
+            ],
+            "scores": [
+              {
+                "uniqueBrands": 240,
+                "dailyBrands": 1621,
+                "udon": 4443
+              },
+              {
+                "uniqueBrands": 240,
+                "dailyBrands": 1621,
+                "udon": 4250
+              },
+              {
+                "uniqueBrands": 240,
+                "dailyBrands": 1621,
+                "udon": 4354
+              },
+              {
+                "uniqueBrands": 240,
+                "dailyBrands": 1621,
+                "udon": 4356
+              },
+              {
+                "uniqueBrands": 240,
+                "dailyBrands": 1621,
+                "udon": 4293
+              }
+            ],
+            "accepted": 10
+          },
+          "id": "1791357802993159612-11679",
+          "outcomes": null,
+          "scores": {
+            "uniqueBrands": 240,
+            "dailyBrands": 1621,
+            "udon": 4443
+          },
+          "delta": null
+        },
+        {
+          "game": {
+            "ranks": [
+              7,
+              3,
+              0,
+              0,
+              0
+            ],
+            "averageRank": 1.3,
+            "playerAverageRanks": [
+              1.3,
+              3.9,
+              3.1,
+              3.0,
+              3.2
+            ],
+            "opponents": [
+              {
+                "wins": 10,
+                "draws": 0,
+                "losses": 0
+              },
+              {
+                "wins": 8,
+                "draws": 0,
+                "losses": 2
+              },
+              {
+                "wins": 8,
+                "draws": 1,
+                "losses": 1
+              },
+              {
+                "wins": 8,
+                "draws": 2,
+                "losses": 0
+              }
+            ],
+            "scores": [
+              {
+                "uniqueBrands": 240,
+                "dailyBrands": 1621,
+                "udon": 4437
+              },
+              {
+                "uniqueBrands": 240,
+                "dailyBrands": 1620,
+                "udon": 4274
+              },
+              {
+                "uniqueBrands": 240,
+                "dailyBrands": 1621,
+                "udon": 4359
+              },
+              {
+                "uniqueBrands": 240,
+                "dailyBrands": 1621,
+                "udon": 4359
+              },
+              {
+                "uniqueBrands": 240,
+                "dailyBrands": 1621,
+                "udon": 4339
+              }
+            ],
+            "accepted": 10
+          },
+          "id": "1791360155933329970-11992",
+          "outcomes": {
+            "wins": 4,
+            "draws": 0,
+            "losses": 6
+          },
+          "scores": {
+            "uniqueBrands": 240,
+            "dailyBrands": 1621,
+            "udon": 4437
+          },
+          "delta": {
+            "uniqueBrands": 0,
+            "dailyBrands": 0,
+            "udon": -6
+          }
+        }
+      ]
+    }
+  ]
+}

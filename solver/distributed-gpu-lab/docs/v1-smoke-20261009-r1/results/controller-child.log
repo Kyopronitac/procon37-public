@@ -1,0 +1,2 @@
+{"event":"benchmark_started","pid":26022,"output":"/home/voidlinux-1/procon37-distributed/procon37-gpu-producer-smoke-20261009-r1/results/smoke"}
+{"event":"benchmark_finished","pid":26022,"exit_code":0,"peak_root_threads":10,"peak_tree_threads":10,"wall_seconds":2.867904269005521}

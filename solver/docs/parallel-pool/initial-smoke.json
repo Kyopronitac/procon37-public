@@ -1,0 +1,287 @@
+{
+  "run_id": "1791368413421367241-219205",
+  "run_json": "/tmp/parallel-pool-smoke-yl479iuc/1791368413421367241-219205/run.json",
+  "condition": "7秒短縮3件、正式判定には不使用",
+  "all_18_player_cases_ac": true,
+  "cases": [
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "チーム0",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 57,
+            "udon": 63
+          },
+          "status": "AC",
+          "answerTimeMs": 27280,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "チーム1",
+          "rank": 3,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 56,
+            "udon": 69
+          },
+          "status": "AC",
+          "answerTimeMs": 29661,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "チーム2",
+          "rank": 4,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 55,
+            "udon": 73
+          },
+          "status": "AC",
+          "answerTimeMs": 28885,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "チーム3",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 57,
+            "udon": 63
+          },
+          "status": "AC",
+          "answerTimeMs": 28057,
+          "warnings": 0
+        },
+        {
+          "id": 4,
+          "name": "チーム4",
+          "rank": 5,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 54,
+            "udon": 62
+          },
+          "status": "AC",
+          "answerTimeMs": 28752,
+          "warnings": 0
+        },
+        {
+          "id": 5,
+          "name": "チーム5",
+          "rank": 6,
+          "score": {
+            "uniqueBrands": 12,
+            "dailyBrands": 53,
+            "udon": 72
+          },
+          "status": "AC",
+          "answerTimeMs": 29068,
+          "warnings": 0
+        }
+      ],
+      "seed": "0",
+      "format": "first",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 12,
+        "dailyBrands": 57,
+        "udon": 63
+      },
+      "answerTimeMs": 27280,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "チーム0",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 128
+          },
+          "status": "AC",
+          "answerTimeMs": 27427,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "チーム1",
+          "rank": 6,
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 120
+          },
+          "status": "AC",
+          "answerTimeMs": 29637,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "チーム2",
+          "rank": 3,
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 123
+          },
+          "status": "AC",
+          "answerTimeMs": 28910,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "チーム3",
+          "rank": 3,
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 123
+          },
+          "status": "AC",
+          "answerTimeMs": 27989,
+          "warnings": 0
+        },
+        {
+          "id": 4,
+          "name": "チーム4",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 124
+          },
+          "status": "AC",
+          "answerTimeMs": 28914,
+          "warnings": 0
+        },
+        {
+          "id": 5,
+          "name": "チーム5",
+          "rank": 5,
+          "score": {
+            "uniqueBrands": 18,
+            "dailyBrands": 90,
+            "udon": 121
+          },
+          "status": "AC",
+          "answerTimeMs": 29022,
+          "warnings": 0
+        }
+      ],
+      "seed": "1",
+      "format": "semifinal",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 18,
+        "dailyBrands": 90,
+        "udon": 128
+      },
+      "answerTimeMs": 27427,
+      "warnings": 0,
+      "error": null
+    },
+    {
+      "players": [
+        {
+          "id": 0,
+          "name": "チーム0",
+          "rank": 1,
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 207
+          },
+          "status": "AC",
+          "answerTimeMs": 27497,
+          "warnings": 0
+        },
+        {
+          "id": 1,
+          "name": "チーム1",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 204
+          },
+          "status": "AC",
+          "answerTimeMs": 29716,
+          "warnings": 0
+        },
+        {
+          "id": 2,
+          "name": "チーム2",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 204
+          },
+          "status": "AC",
+          "answerTimeMs": 29015,
+          "warnings": 0
+        },
+        {
+          "id": 3,
+          "name": "チーム3",
+          "rank": 2,
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 204
+          },
+          "status": "AC",
+          "answerTimeMs": 29007,
+          "warnings": 0
+        },
+        {
+          "id": 4,
+          "name": "チーム4",
+          "rank": 6,
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 193
+          },
+          "status": "AC",
+          "answerTimeMs": 29746,
+          "warnings": 0
+        },
+        {
+          "id": 5,
+          "name": "チーム5",
+          "rank": 5,
+          "score": {
+            "uniqueBrands": 24,
+            "dailyBrands": 120,
+            "udon": 203
+          },
+          "status": "AC",
+          "answerTimeMs": 29076,
+          "warnings": 0
+        }
+      ],
+      "seed": "2",
+      "format": "final",
+      "status": "AC",
+      "score": {
+        "uniqueBrands": 24,
+        "dailyBrands": 120,
+        "udon": 207
+      },
+      "answerTimeMs": 27497,
+      "warnings": 0,
+      "error": null
+    }
+  ]
+}

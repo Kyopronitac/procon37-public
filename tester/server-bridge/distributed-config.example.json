@@ -1,0 +1,15 @@
+{
+  "server_url": "http://CHANGE_ME:11451",
+  "remote_directory": "procon37-production/D0",
+  "worker_port": 39370,
+  "select_ms": null,
+  "solver_binary": "solver/distributed/target/release/distributed-solver",
+  "solver_sha256": null,
+  "bridge_binary": "target/release/server-bridge",
+  "bridge_sha256": null,
+  "nodes": {
+    "v1": {"ssh": "voidlinux-1@192.168.0.11", "address": "192.168.0.11", "cpus": "0-31"},
+    "v2": {"ssh": "voidlinux-2@192.168.0.22", "address": "192.168.0.22", "cpus": "0-15"},
+    "v3": {"ssh": "voidlinux-3@192.168.0.33", "address": "192.168.0.33", "cpus": "0-31"}
+  }
+}

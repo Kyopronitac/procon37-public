@@ -1,0 +1,17 @@
+{
+  "generation": 3,
+  "target_id": "P0",
+  "run_id": "1791406043071407716-280358",
+  "rank_sums": [
+    20,
+    39,
+    32,
+    28,
+    52,
+    42
+  ],
+  "next_target": "P1",
+  "commit": "080f1788918ab512b8b736977f22df7beac01a56",
+  "push": "succeeded",
+  "pushed_at": 1791411749.6564915
+}

@@ -1,0 +1,230 @@
+{
+  "runId": "1791405140300199441-279132",
+  "runJson": "/tmp/parallel-pool-g003-p0-v3-0itk6l7c/short/1791405140300199441-279132/run.json",
+  "config": {
+    "count": 9,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "並列pool第3世代P0 v3・混雑持続比較・短縮9件6秒",
+    "players": 6,
+    "teamNames": [],
+    "timeLimitMs": 6000,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "allAC": true,
+  "rankSums": [
+    15,
+    26,
+    28,
+    27,
+    40,
+    34
+  ],
+  "identitiesUnchanged": true,
+  "sourceHash": "d0c8723ed4a2cf6eb29a622bfd95e1a2a7eded1a2a42a3a6fbc58811073eb4ad",
+  "binaryHash": "888c987ecdad2b19c06fa1d6f4b6c8cd3dda61998d11c9438ac46b909e824bb0",
+  "threads": {
+    "P1": {
+      "maxThreads": 15,
+      "maxRssKiB": 3768944,
+      "pids": [
+        9774,
+        9881,
+        9987,
+        10094,
+        10218,
+        10309,
+        10416,
+        10538,
+        10625
+      ],
+      "cpuSets": [
+        "4-7,12-15,20-23,28-30"
+      ]
+    },
+    "P0": {
+      "maxThreads": 15,
+      "maxRssKiB": 3765564,
+      "pids": [
+        9776,
+        9897,
+        10003,
+        10110,
+        10202,
+        10325,
+        10432,
+        10522,
+        10641
+      ],
+      "cpuSets": [
+        "0-3,8-11,16-19,24-26"
+      ]
+    },
+    "S0": {
+      "maxThreads": 1,
+      "maxRssKiB": 913524,
+      "pids": [
+        8070,
+        8110,
+        8149,
+        8192,
+        8233,
+        8274,
+        8313,
+        8354,
+        8395
+      ],
+      "cpuSets": [
+        "0"
+      ]
+    },
+    "S1": {
+      "maxThreads": 1,
+      "maxRssKiB": 272064,
+      "pids": [
+        8071,
+        8108,
+        8151,
+        8190,
+        8231,
+        8255,
+        8311,
+        8352,
+        8376
+      ],
+      "cpuSets": [
+        "2"
+      ]
+    },
+    "P2": {
+      "maxThreads": 15,
+      "maxRssKiB": 3766060,
+      "pids": [
+        30772,
+        30893,
+        31000,
+        31106,
+        31213,
+        31320,
+        31425,
+        31531,
+        31637
+      ],
+      "cpuSets": [
+        "0-3,8-11,16-19,24-26"
+      ]
+    },
+    "P3": {
+      "maxThreads": 15,
+      "maxRssKiB": 3764220,
+      "pids": [
+        30773,
+        30877,
+        30951,
+        31090,
+        31197,
+        31271,
+        31409,
+        31515,
+        31588
+      ],
+      "cpuSets": [
+        "4-7,12-15,20-23,28-30"
+      ]
+    }
+  },
+  "scoreSums": [
+    {
+      "uniqueBrands": 166,
+      "dailyBrands": 948,
+      "udon": 2132
+    },
+    {
+      "uniqueBrands": 166,
+      "dailyBrands": 947,
+      "udon": 2120
+    },
+    {
+      "uniqueBrands": 166,
+      "dailyBrands": 948,
+      "udon": 2104
+    },
+    {
+      "uniqueBrands": 166,
+      "dailyBrands": 948,
+      "udon": 2112
+    },
+    {
+      "uniqueBrands": 166,
+      "dailyBrands": 946,
+      "udon": 2058
+    },
+    {
+      "uniqueBrands": 166,
+      "dailyBrands": 948,
+      "udon": 2083
+    }
+  ],
+  "strictLeader": true,
+  "averageRanks": [
+    1.6666666666666667,
+    2.888888888888889,
+    3.111111111111111,
+    3.0,
+    4.444444444444445,
+    3.7777777777777777
+  ],
+  "frozen": true,
+  "version": "v3",
+  "candidateRoot": "/home/jikky/Downloads/procon37/solver/parallel-pool/generation-003-P0",
+  "host": "voidlinux-1@192.168.0.11",
+  "team": 0,
+  "remoteSolver": "/home/voidlinux-1/procon37-parallel-pool/teams/P0/solver",
+  "remoteLauncher": "/home/voidlinux-1/procon37-parallel-pool/teams/P0/launcher",
+  "launcherHash": "ed5a582de0147ead9060212caf4c9b52e15f420cd97b4fff842c0f40e565a310",
+  "args": [
+    "0"
+  ],
+  "env": {
+    "PROCON37_G007_FUTURE_WEIGHT": "0",
+    "PROCON37_G007_RESERVE_WEIGHT": "15"
+  },
+  "runShPid": 12797,
+  "server": "http://192.168.0.81:11451",
+  "monitorsStopped": true,
+  "testCommand": "PATH=/home/jikky/.cargo/bin:$PATH cargo test --release -p solver -j 2 -- --test-threads=1",
+  "unitTestsPassed": 7,
+  "soloRunJson": "/tmp/parallel-pool-g003-p0-v3-0itk6l7c/solo/1791405034931819938-2/run.json",
+  "shortProcess": {
+    "command": [
+      "/home/jikky/.cargo/bin/cargo",
+      "run",
+      "--release",
+      "-p",
+      "server",
+      "--",
+      "run",
+      "9",
+      "--players",
+      "6",
+      "--label",
+      "並列pool第3世代P0 v3・混雑持続比較・短縮9件6秒",
+      "--time-limit-ms",
+      "6000",
+      "--output-dir",
+      "/tmp/parallel-pool-g003-p0-v3-0itk6l7c/short"
+    ],
+    "cwd": "/home/jikky/Downloads/procon37",
+    "label": "並列pool第3世代P0 v3・混雑持続比較・短縮9件6秒",
+    "pid": 279132,
+    "wrapperPid": 279131,
+    "startedAt": 1791405140.2307472,
+    "exitCode": 0,
+    "finishedAt": 1791405563.179419
+  },
+  "deploymentChangedPaths": [
+    "/home/voidlinux-1/procon37-parallel-pool/teams/P0/solver"
+  ],
+  "opponentsAndCommonUnchangedSinceV2": true
+}

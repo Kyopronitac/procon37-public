@@ -1,0 +1,18 @@
+{
+  "pid": 90752,
+  "bind": "192.168.0.81",
+  "port": 32123,
+  "startedUnix": 1791503119.6936052,
+  "startTicks": "5312760",
+  "bootId": "0ed549c2-ebe5-4a00-a7fe-2a56c0403979",
+  "clock": "CLOCK_REALTIME / time.time_ns; same host as problem server",
+  "source": "/home/imak/work/procon37/solver/distributed-lab/clock_sync.py",
+  "allowedClients": [
+    "127.0.0.1",
+    "192.168.0.11",
+    "192.168.0.22",
+    "192.168.0.33",
+    "192.168.0.55",
+    "192.168.0.81"
+  ]
+}

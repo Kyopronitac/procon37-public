@@ -1,0 +1,31 @@
+<mxfile host="65bd71144e">
+    <diagram id="hill-step" name="山登り法の1回の操作">
+        <mxGraphModel dx="398" dy="330" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1060" pageHeight="240" math="0" shadow="0">
+            <root>
+                <mxCell id="0" />
+                <mxCell id="1" parent="0" />
+                <mxCell id="current" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF7FF;strokeColor=#185B80;strokeWidth=2;fontColor=#242424;fontSize=25;fontStyle=1;spacing=12;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="現在の計画&#10;A → B → C" vertex="1">
+                    <mxGeometry height="112" width="220" x="20" y="58" as="geometry" />
+                </mxCell>
+                <mxCell id="neighbor" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2E8;strokeColor=#E96B28;strokeWidth=2;fontColor=#242424;fontSize=25;fontStyle=1;spacing=12;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="近傍を作る&#10;A → C → B" vertex="1">
+                    <mxGeometry height="112" width="220" x="294" y="58" as="geometry" />
+                </mxCell>
+                <mxCell id="compare" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFF2F5;strokeColor=#97283C;strokeWidth=2;fontColor=#242424;fontSize=24;fontStyle=1;spacing=10;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="評価を比較" vertex="1">
+                    <mxGeometry height="148" width="205" x="576" y="40" as="geometry" />
+                </mxCell>
+                <mxCell id="take" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2FBE4;strokeColor=#668E38;strokeWidth=2;fontColor=#242424;fontSize=19;fontStyle=1;spacing=12;fontFamily=Murecho;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DMurecho;" value="近傍を採用する&lt;br&gt;現在の計画を更新する" vertex="1">
+                    <mxGeometry height="112" width="220" x="833" y="58" as="geometry" />
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="1" source="current" style="endArrow=block;endFill=1;html=1;strokeColor=#97283C;strokeWidth=2;" target="neighbor">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="neighbor" style="endArrow=block;endFill=1;html=1;strokeColor=#97283C;strokeWidth=2;" target="compare">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="compare" style="endArrow=block;endFill=1;html=1;strokeColor=#97283C;strokeWidth=2;" target="take">
+                    <mxGeometry relative="1" as="geometry" />
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

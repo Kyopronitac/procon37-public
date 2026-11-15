@@ -1,0 +1,233 @@
+{
+  "candidate": "C009-gpu-owner",
+  "recordedAt": "2026-10-09T01:18:04.649409+00:00",
+  "status": "unadopted; local release correctness and localhost checks passed; no remote GPU or match evaluation",
+  "sourceAggregateSha256": "9f8e182d3573dfc3514502c75ba8a4f11bb9c39be8f2dc2e4294ca675d4b533a",
+  "toolchain": {
+    "rustc": "rustc 1.94.0 (4a4ef493e 2026-03-02)",
+    "cargo": "cargo 1.94.0 (85eff7c80 2026-01-15)",
+    "buildJobs": 1,
+    "profile": "release",
+    "cpu": 3
+  },
+  "binary": {
+    "path": "target/release/distributed-solver",
+    "sha256": "a95804297f7f9aefd808167a6f2772454919f9c014b8f7f3cf0d1e750df32b4b"
+  },
+  "unitTests": {
+    "passed": 30,
+    "failed": 0,
+    "ignored": 1,
+    "ignoredScope": "Inherited performance microbench not run"
+  },
+  "gpuLibraryTests": {
+    "passed": 8,
+    "failed": 0,
+    "gpuStarted": false
+  },
+  "networkTests": {
+    "passed": 2,
+    "failed": 0,
+    "scope": "localhost processes only"
+  },
+  "equivalence": {
+    "d0EagerRoutes": 1608270,
+    "generatedGpuAdapterRoutes": 1604490,
+    "duplicateTrafficSparseGpuAdapterRoutes": 59238,
+    "cpuHeapJacobiRoutes": 13200,
+    "actualGpuKernelUsed": false
+  },
+  "processes": [
+    {
+      "pid": 111561,
+      "stopped": true,
+      "processRecord": "/tmp/procon37-parallel16-test-111559/parallel16.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 111605,
+      "stopped": true,
+      "processRecord": "/tmp/procon37-dist-test-111559-1791508533132/worker-a-restarted.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 111584,
+      "stopped": true,
+      "processRecord": "/tmp/procon37-dist-test-111559-1791508533132/coordinator.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 111581,
+      "stopped": true,
+      "processRecord": "/tmp/procon37-dist-test-111559-1791508533132/worker-b.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 111578,
+      "stopped": true,
+      "processRecord": "/tmp/procon37-dist-test-111559-1791508533132/worker-a.process.json",
+      "pidPresent": false
+    }
+  ],
+  "postflight": "docs/local-validation-20261009/postflight.json",
+  "commands": [
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "3",
+        "cargo",
+        "build",
+        "--release",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "solver/distributed-candidates/c009-gpu-owner/Cargo.toml",
+        "-p",
+        "procon37-distributed",
+        "--bin",
+        "distributed-solver",
+        "-j1"
+      ],
+      "pid": 4,
+      "exitCode": 0,
+      "elapsedSeconds": 38.19777630500175,
+      "log": "docs/local-validation-20261009/initial-1.log",
+      "cpu": 3,
+      "buildJobs": 1,
+      "gpuStarted": false,
+      "remoteOperations": false
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "3",
+        "cargo",
+        "test",
+        "--release",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "solver/distributed-candidates/c009-gpu-owner/Cargo.toml",
+        "-p",
+        "procon37-distributed",
+        "--bin",
+        "distributed-solver",
+        "-j1",
+        "--",
+        "--test-threads=1",
+        "--nocapture",
+        "--skip",
+        "wire::tests::fragmented_frames_and_oversized_frames"
+      ],
+      "pid": 529,
+      "exitCode": 0,
+      "elapsedSeconds": 23.013470662001055,
+      "log": "docs/local-validation-20261009/initial-2.log",
+      "cpu": 3,
+      "buildJobs": 1,
+      "gpuStarted": false,
+      "remoteOperations": false
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "3",
+        "cargo",
+        "test",
+        "--release",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "solver/distributed-candidates/c009-gpu-owner/Cargo.toml",
+        "-p",
+        "procon37-distributed-gpu-lab",
+        "-j1",
+        "--",
+        "--test-threads=1",
+        "--nocapture"
+      ],
+      "pid": 646,
+      "exitCode": 0,
+      "elapsedSeconds": 3.220833325998683,
+      "log": "docs/local-validation-20261009/initial-3.log",
+      "cpu": 3,
+      "buildJobs": 1,
+      "gpuStarted": false,
+      "remoteOperations": false
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "3",
+        "cargo",
+        "test",
+        "--release",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "solver/distributed-candidates/c009-gpu-owner/Cargo.toml",
+        "-p",
+        "procon37-distributed",
+        "--bin",
+        "distributed-solver",
+        "-j1",
+        "wire::tests::fragmented_frames_and_oversized_frames",
+        "--",
+        "--test-threads=1",
+        "--nocapture"
+      ],
+      "pid": 111505,
+      "exitCode": 0,
+      "elapsedSeconds": 0.032103750003443565,
+      "log": "docs/local-validation-20261009/localhost-1.log",
+      "cpu": 3,
+      "buildJobs": 1,
+      "gpuStarted": false,
+      "remoteOperations": false,
+      "network": "localhost only"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "3",
+        "cargo",
+        "test",
+        "--release",
+        "--offline",
+        "--locked",
+        "--manifest-path",
+        "solver/distributed-candidates/c009-gpu-owner/Cargo.toml",
+        "-p",
+        "procon37-distributed",
+        "--test",
+        "network",
+        "-j1",
+        "--",
+        "--test-threads=1",
+        "--nocapture"
+      ],
+      "pid": 111510,
+      "exitCode": 0,
+      "elapsedSeconds": 5.574688317996333,
+      "log": "docs/local-validation-20261009/localhost-2.log",
+      "cpu": 3,
+      "buildJobs": 1,
+      "gpuStarted": false,
+      "remoteOperations": false,
+      "network": "localhost only"
+    }
+  ],
+  "warnings": [
+    "inherited common/src/generator.rs day_seconds dead_code",
+    "test-only GraphCache::get_with_wait dead_code in production build"
+  ],
+  "gpuStarted": false,
+  "remoteOperations": false,
+  "remoteGpuPreflightRequired": true,
+  "adopted": false
+}

@@ -1,0 +1,81 @@
+{
+  "runId": "1791559682028906394-40678",
+  "all48AC": true,
+  "players": [
+    {
+      "team": 0,
+      "rankSum": 15,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2982
+      },
+      "meanRank": 1.25
+    },
+    {
+      "team": 1,
+      "rankSum": 26,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2932
+      },
+      "meanRank": 2.1666666666666665
+    },
+    {
+      "team": 2,
+      "rankSum": 41,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2882
+      },
+      "meanRank": 3.4166666666666665
+    },
+    {
+      "team": 3,
+      "rankSum": 31,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1274,
+        "udon": 2922
+      },
+      "meanRank": 2.5833333333333335
+    }
+  ],
+  "version": "D0",
+  "stage": "H2-D0-short-02",
+  "verifiedUnchanged": true,
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "分散D0・再開後同環境の基準2回目・C012日中通信との反復比較・短縮12件・10秒",
+    "players": 4,
+    "teamNames": [
+      "分散D0",
+      "固定並列",
+      "固定第6世代",
+      "固定第8世代"
+    ],
+    "timeLimitMs": 10000,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "comparison": {
+    "win": 6,
+    "tie": 2,
+    "loss": 4
+  },
+  "beforeRunId": "1791557693555197384-34655",
+  "before": {
+    "team": 0,
+    "rankSum": 20,
+    "scores": {
+      "uniqueBrands": 222,
+      "dailyBrands": 1277,
+      "udon": 2961
+    },
+    "meanRank": 1.6666666666666667
+  }
+}

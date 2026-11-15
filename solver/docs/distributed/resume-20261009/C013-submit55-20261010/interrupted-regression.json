@@ -1,0 +1,8 @@
+{
+  "status": "interrupted_by_user",
+  "completedCases": 0,
+  "reason": "Same-payload later submissions must be skipped; restart under a new stage after implementation and validation.",
+  "stopRecord": ".server/distributed/evaluations/C013-submit55-regression-01/user-stop.json",
+  "stoppedUnix": 1791570501.116615,
+  "originalRunJsonPreserved": true
+}

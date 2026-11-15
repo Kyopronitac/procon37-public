@@ -1,0 +1,65 @@
+{
+  "capturedAtJst": "2026-10-09T07:41:37.623661+09:00",
+  "repository": "/home/imak/work/procon37",
+  "fixedOpponents": [
+    {
+      "id": "S0",
+      "generation": 6,
+      "source_hashes": {
+        "solver/docs/solver-pool-experiment/solver06/main.rs": "e9e3d0a0523d47922fd349b62e070f2b0c17509f776d2b6cc372bd8ecbd20a56",
+        "solver/docs/solver-pool-experiment/solver06/solver/planner.rs": "1003c94dcc9f1a42b96f55aa568803e0aa800a4a02837d53f8a349d953595a34"
+      },
+      "build_command": "PATH=/home/jikky/.cargo/bin:$PATH cargo build --release --manifest-path solver/docs/solver-pool-experiment/Cargo.toml --bin pool-solver-06 --bin pool-solver-08 --target-dir /tmp/parallel-pool-fixed-target -j 2",
+      "cpu": "0",
+      "team": 2,
+      "host": "local",
+      "binary_sha256": "90cb3b35e7ec1fe71738e5640b9dcd75ae3ebc931741ac1f29b8887d6da041a8",
+      "launcher_args": [],
+      "binaryPath": "/home/imak/work/procon37/.server/distributed/bin/pool-solver-06",
+      "sourceHashesMatch": true,
+      "currentBinarySha256": "055374eca5a4f89b4f6e01e77fb489bf9e0683720ad53b4895adf0704fb62a86",
+      "launcher": ".server/distributed/launchers/generation6.sh",
+      "launcherSha256": "34a9d5f3d7fa57b7977281d862f7559399b1338a59ec58324272f89b03d3d6f4"
+    },
+    {
+      "id": "S1",
+      "generation": 8,
+      "source_hashes": {
+        "solver/docs/solver-pool-experiment/solver08/main.rs": "017b4d04ae4e7d8310d39f48b3d5ce0a72ff54aacc62fc1ac84b22ea469cc9a7",
+        "solver/docs/solver-pool-experiment/solver08/solver/planner.rs": "a6f4c8c95fdf6f2ec6e3bf3927b4e5963ef7932de7045e33c482ceeba4370a84"
+      },
+      "build_command": "PATH=/home/jikky/.cargo/bin:$PATH cargo build --release --manifest-path solver/docs/solver-pool-experiment/Cargo.toml --bin pool-solver-06 --bin pool-solver-08 --target-dir /tmp/parallel-pool-fixed-target -j 2",
+      "cpu": "2",
+      "team": 3,
+      "host": "local",
+      "binary_sha256": "f5a6bcfc55feb853d7a1f355a11afd7af617fe96393a63b4ec1b05970b6a7ea0",
+      "launcher_args": [],
+      "binaryPath": "/home/imak/work/procon37/.server/distributed/bin/pool-solver-08",
+      "sourceHashesMatch": true,
+      "currentBinarySha256": "a7588e406d40fb1aa76ed606ed2a910a0aee911468f040ef37453037f033c5a2",
+      "launcher": ".server/distributed/launchers/generation8.sh",
+      "launcherSha256": "0fbe822a7a8cce9cf8f893fd7c5c5b82a2a10d725ce7ab95d6f571ff6db049d7"
+    }
+  ],
+  "rebuildReason": "現在の作業ユーザー領域に旧固定実行ファイルが無いため、内部実装を閲覧せず許可済みビルドで再作成。識別hash変更につきD0も同条件で再評価する。",
+  "sourceInspection": false,
+  "binaries": {
+    "target/release/server": "368ac7cb6334469a0a5735fcfded1d52875ffdfb1cb47ffbea7b03471e4638b0",
+    "target/release/server-bridge": "3076337dcf47ef611ada2cf9f04a01ad29533997a160a8ee4440ecb79d4e59d2",
+    "tester/server/procon-server": "769e101cbc6b80cce7732dae1e10d911ed1e9efefd3b1f94b6381652aa7741c1",
+    ".server/distributed/bin/distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+    ".server/distributed/bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e"
+  },
+  "build": {
+    "rust": "1.94.0",
+    "gcc": "15.2.0 Ubuntu",
+    "environmentScript": ".server/toolchain/env.sh",
+    "fixedTarget": ".server/fixed-target",
+    "systemPackagesInstalled": false
+  },
+  "localCpuAssignments": {
+    "generation6": "0",
+    "generation8": "2",
+    "physicalCoresDistinct": true
+  }
+}

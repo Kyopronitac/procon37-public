@@ -1,0 +1,1382 @@
+{
+  "v1": {
+    "hostname": "VOIDLINUX-1",
+    "bootId": "7393e939-6ceb-4ae1-80dd-666ab95671f1",
+    "cpu": {
+      "lscpu": [
+        {
+          "field": "Architecture:",
+          "data": "x86_64"
+        },
+        {
+          "field": "CPU op-mode(s):",
+          "data": "32-bit, 64-bit"
+        },
+        {
+          "field": "Address sizes:",
+          "data": "48 bits physical, 48 bits virtual"
+        },
+        {
+          "field": "Byte Order:",
+          "data": "Little Endian"
+        },
+        {
+          "field": "CPU(s):",
+          "data": "32"
+        },
+        {
+          "field": "On-line CPU(s) list:",
+          "data": "0-31"
+        },
+        {
+          "field": "Vendor ID:",
+          "data": "AuthenticAMD"
+        },
+        {
+          "field": "Model name:",
+          "data": "AMD Ryzen 9 9955HX3D 16-Core Processor"
+        },
+        {
+          "field": "CPU family:",
+          "data": "26"
+        },
+        {
+          "field": "Model:",
+          "data": "68"
+        },
+        {
+          "field": "Thread(s) per core:",
+          "data": "2"
+        },
+        {
+          "field": "Core(s) per socket:",
+          "data": "16"
+        },
+        {
+          "field": "Socket(s):",
+          "data": "1"
+        },
+        {
+          "field": "Stepping:",
+          "data": "0"
+        },
+        {
+          "field": "Frequency boost:",
+          "data": "enabled"
+        },
+        {
+          "field": "CPU(s) scaling MHz:",
+          "data": "34%"
+        },
+        {
+          "field": "CPU max MHz:",
+          "data": "5460.5269"
+        },
+        {
+          "field": "CPU min MHz:",
+          "data": "1217.1060"
+        },
+        {
+          "field": "BogoMIPS:",
+          "data": "4990.60"
+        },
+        {
+          "field": "Flags:",
+          "data": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good amd_lbr_v2 nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpuid_fault cpb cat_l3 cdp_l3 hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk avx_vnni avx512_bf16 clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif x2avic v_spec_ctrl vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid bus_lock_detect movdiri movdir64b overflow_recov succor smca fsrm avx512_vp2intersect flush_l1d amd_lbr_pmc_freeze"
+        },
+        {
+          "field": "Virtualization:",
+          "data": "AMD-V"
+        },
+        {
+          "field": "L1d cache:",
+          "data": "768 KiB (16 instances)"
+        },
+        {
+          "field": "L1i cache:",
+          "data": "512 KiB (16 instances)"
+        },
+        {
+          "field": "L2 cache:",
+          "data": "16 MiB (16 instances)"
+        },
+        {
+          "field": "L3 cache:",
+          "data": "128 MiB (2 instances)"
+        },
+        {
+          "field": "NUMA node(s):",
+          "data": "1"
+        },
+        {
+          "field": "NUMA node0 CPU(s):",
+          "data": "0-31"
+        },
+        {
+          "field": "Vulnerability Gather data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Ghostwrite:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Indirect target selection:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Itlb multihit:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability L1tf:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Mds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Meltdown:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Mmio stale data:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Old microcode:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Reg file data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Retbleed:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Spec rstack overflow:",
+          "data": "Mitigation; IBPB on VMEXIT only"
+        },
+        {
+          "field": "Vulnerability Spec store bypass:",
+          "data": "Mitigation; Speculative Store Bypass disabled via prctl"
+        },
+        {
+          "field": "Vulnerability Spectre v1:",
+          "data": "Mitigation; usercopy/swapgs barriers and __user pointer sanitization"
+        },
+        {
+          "field": "Vulnerability Spectre v2:",
+          "data": "Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP always-on; PBRSB-eIBRS Not affected; BHI Not affected"
+        },
+        {
+          "field": "Vulnerability Srbds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Tsa:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Tsx async abort:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Vmscape:",
+          "data": "Mitigation; IBPB on VMEXIT"
+        }
+      ]
+    },
+    "files": {
+      "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+      "launcher": "a7c37a7546fee4a62d2c0d5a9f82838e10793e2c3f9a08cd686d9c19c93c5b1a",
+      "resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118"
+    },
+    "settings": {
+      "scaling_governor": {
+        "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy28/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy18/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy26/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy16/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy24/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy22/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy30/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy20/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy29/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy19/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy27/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy17/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy25/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy23/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy31/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy21/scaling_governor": "performance"
+      },
+      "energy_performance_preference": {
+        "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy28/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy18/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy26/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy16/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy24/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy22/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy30/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy20/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy29/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy19/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy27/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy17/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy25/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy23/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy31/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy21/energy_performance_preference": "performance"
+      }
+    },
+    "processes": []
+  },
+  "v2": {
+    "hostname": "VOIDLINUX-2",
+    "bootId": "9903a715-edd1-4b7b-afba-100dd929dbaf",
+    "cpu": {
+      "lscpu": [
+        {
+          "field": "Architecture:",
+          "data": "x86_64"
+        },
+        {
+          "field": "CPU op-mode(s):",
+          "data": "32-bit, 64-bit"
+        },
+        {
+          "field": "Address sizes:",
+          "data": "48 bits physical, 48 bits virtual"
+        },
+        {
+          "field": "Byte Order:",
+          "data": "Little Endian"
+        },
+        {
+          "field": "CPU(s):",
+          "data": "16"
+        },
+        {
+          "field": "On-line CPU(s) list:",
+          "data": "0-15"
+        },
+        {
+          "field": "Vendor ID:",
+          "data": "AuthenticAMD"
+        },
+        {
+          "field": "Model name:",
+          "data": "AMD Ryzen 7 250 w/ Radeon 780M Graphics"
+        },
+        {
+          "field": "CPU family:",
+          "data": "25"
+        },
+        {
+          "field": "Model:",
+          "data": "117"
+        },
+        {
+          "field": "Thread(s) per core:",
+          "data": "2"
+        },
+        {
+          "field": "Core(s) per socket:",
+          "data": "8"
+        },
+        {
+          "field": "Socket(s):",
+          "data": "1"
+        },
+        {
+          "field": "Stepping:",
+          "data": "2"
+        },
+        {
+          "field": "Frequency boost:",
+          "data": "enabled"
+        },
+        {
+          "field": "CPU(s) scaling MHz:",
+          "data": "46%"
+        },
+        {
+          "field": "CPU max MHz:",
+          "data": "5134.8892"
+        },
+        {
+          "field": "CPU min MHz:",
+          "data": "419.1750"
+        },
+        {
+          "field": "BogoMIPS:",
+          "data": "6587.73"
+        },
+        {
+          "field": "Flags:",
+          "data": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good amd_lbr_v2 nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpuid_fault cpb cat_l3 cdp_l3 hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk avx512_bf16 clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold vgif x2avic v_spec_ctrl vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid overflow_recov succor smca fsrm flush_l1d amd_lbr_pmc_freeze"
+        },
+        {
+          "field": "Virtualization:",
+          "data": "AMD-V"
+        },
+        {
+          "field": "L1d cache:",
+          "data": "256 KiB (8 instances)"
+        },
+        {
+          "field": "L1i cache:",
+          "data": "256 KiB (8 instances)"
+        },
+        {
+          "field": "L2 cache:",
+          "data": "8 MiB (8 instances)"
+        },
+        {
+          "field": "L3 cache:",
+          "data": "16 MiB (1 instance)"
+        },
+        {
+          "field": "NUMA node(s):",
+          "data": "1"
+        },
+        {
+          "field": "NUMA node0 CPU(s):",
+          "data": "0-15"
+        },
+        {
+          "field": "Vulnerability Gather data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Ghostwrite:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Indirect target selection:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Itlb multihit:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability L1tf:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Mds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Meltdown:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Mmio stale data:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Old microcode:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Reg file data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Retbleed:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Spec rstack overflow:",
+          "data": "Mitigation; Safe RET"
+        },
+        {
+          "field": "Vulnerability Spec store bypass:",
+          "data": "Mitigation; Speculative Store Bypass disabled via prctl"
+        },
+        {
+          "field": "Vulnerability Spectre v1:",
+          "data": "Mitigation; usercopy/swapgs barriers and __user pointer sanitization"
+        },
+        {
+          "field": "Vulnerability Spectre v2:",
+          "data": "Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP always-on; PBRSB-eIBRS Not affected; BHI Not affected"
+        },
+        {
+          "field": "Vulnerability Srbds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Tsa:",
+          "data": "Mitigation; Clear CPU buffers"
+        },
+        {
+          "field": "Vulnerability Tsx async abort:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Vmscape:",
+          "data": "Mitigation; IBPB before exit to userspace"
+        }
+      ]
+    },
+    "files": {
+      "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+      "launcher": "cf8cd970a097cc64548e4471e6d68806ec41ab3aa8fdb3544647b27e893474ce"
+    },
+    "settings": {
+      "scaling_governor": {
+        "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance"
+      },
+      "energy_performance_preference": {
+        "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance"
+      }
+    },
+    "processes": []
+  },
+  "v3": {
+    "hostname": "VOIDLINUX-3",
+    "bootId": "f828f174-169c-4a64-91c8-a220c554ae58",
+    "cpu": {
+      "lscpu": [
+        {
+          "field": "Architecture:",
+          "data": "x86_64"
+        },
+        {
+          "field": "CPU op-mode(s):",
+          "data": "32-bit, 64-bit"
+        },
+        {
+          "field": "Address sizes:",
+          "data": "48 bits physical, 48 bits virtual"
+        },
+        {
+          "field": "Byte Order:",
+          "data": "Little Endian"
+        },
+        {
+          "field": "CPU(s):",
+          "data": "32"
+        },
+        {
+          "field": "On-line CPU(s) list:",
+          "data": "0-31"
+        },
+        {
+          "field": "Vendor ID:",
+          "data": "AuthenticAMD"
+        },
+        {
+          "field": "Model name:",
+          "data": "AMD Ryzen 9 9955HX 16-Core Processor"
+        },
+        {
+          "field": "CPU family:",
+          "data": "26"
+        },
+        {
+          "field": "Model:",
+          "data": "68"
+        },
+        {
+          "field": "Thread(s) per core:",
+          "data": "2"
+        },
+        {
+          "field": "Core(s) per socket:",
+          "data": "16"
+        },
+        {
+          "field": "Socket(s):",
+          "data": "1"
+        },
+        {
+          "field": "Stepping:",
+          "data": "0"
+        },
+        {
+          "field": "Frequency boost:",
+          "data": "enabled"
+        },
+        {
+          "field": "CPU(s) scaling MHz:",
+          "data": "35%"
+        },
+        {
+          "field": "CPU max MHz:",
+          "data": "5060.9761"
+        },
+        {
+          "field": "CPU min MHz:",
+          "data": "1219.5129"
+        },
+        {
+          "field": "BogoMIPS:",
+          "data": "4990.41"
+        },
+        {
+          "field": "Flags:",
+          "data": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good amd_lbr_v2 nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpuid_fault cpb cat_l3 cdp_l3 hw_pstate ssbd mba perfmon_v2 ibrs ibpb stibp ibrs_enhanced vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk avx_vnni avx512_bf16 clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold v_vmsave_vmload vgif x2avic v_spec_ctrl vnmi avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq rdpid bus_lock_detect movdiri movdir64b overflow_recov succor smca fsrm avx512_vp2intersect flush_l1d amd_lbr_pmc_freeze"
+        },
+        {
+          "field": "Virtualization:",
+          "data": "AMD-V"
+        },
+        {
+          "field": "L1d cache:",
+          "data": "768 KiB (16 instances)"
+        },
+        {
+          "field": "L1i cache:",
+          "data": "512 KiB (16 instances)"
+        },
+        {
+          "field": "L2 cache:",
+          "data": "16 MiB (16 instances)"
+        },
+        {
+          "field": "L3 cache:",
+          "data": "64 MiB (2 instances)"
+        },
+        {
+          "field": "NUMA node(s):",
+          "data": "1"
+        },
+        {
+          "field": "NUMA node0 CPU(s):",
+          "data": "0-31"
+        },
+        {
+          "field": "Vulnerability Gather data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Ghostwrite:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Indirect target selection:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Itlb multihit:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability L1tf:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Mds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Meltdown:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Mmio stale data:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Old microcode:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Reg file data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Retbleed:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Spec rstack overflow:",
+          "data": "Mitigation; IBPB on VMEXIT only"
+        },
+        {
+          "field": "Vulnerability Spec store bypass:",
+          "data": "Mitigation; Speculative Store Bypass disabled via prctl"
+        },
+        {
+          "field": "Vulnerability Spectre v1:",
+          "data": "Mitigation; usercopy/swapgs barriers and __user pointer sanitization"
+        },
+        {
+          "field": "Vulnerability Spectre v2:",
+          "data": "Mitigation; Enhanced / Automatic IBRS; IBPB conditional; STIBP always-on; PBRSB-eIBRS Not affected; BHI Not affected"
+        },
+        {
+          "field": "Vulnerability Srbds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Tsa:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Tsx async abort:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Vmscape:",
+          "data": "Mitigation; IBPB on VMEXIT"
+        }
+      ]
+    },
+    "files": {
+      "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+      "launcher": "e41fd115af140cd5260f36b0a8f88749f3c1ae7edf67c176a8a4ceef1cec21af"
+    },
+    "settings": {
+      "scaling_governor": {
+        "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy28/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy18/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy26/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy16/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy24/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy22/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy30/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy20/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy29/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy19/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy27/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy17/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy25/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy23/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy31/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy21/scaling_governor": "performance"
+      },
+      "energy_performance_preference": {
+        "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy28/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy18/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy26/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy16/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy24/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy22/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy30/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy20/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy29/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy19/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy27/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy17/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy25/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy23/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy31/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy21/energy_performance_preference": "performance"
+      }
+    },
+    "processes": []
+  },
+  "nomlab": {
+    "hostname": "NOMLAB-UBUNTU",
+    "bootId": "6c4c3c67-7b03-49c0-9073-e209bfa9cf68",
+    "cpu": {
+      "lscpu": [
+        {
+          "field": "Architecture:",
+          "data": "x86_64"
+        },
+        {
+          "field": "CPU op-mode(s):",
+          "data": "32-bit, 64-bit"
+        },
+        {
+          "field": "Address sizes:",
+          "data": "48 bits physical, 48 bits virtual"
+        },
+        {
+          "field": "Byte Order:",
+          "data": "Little Endian"
+        },
+        {
+          "field": "CPU(s):",
+          "data": "16"
+        },
+        {
+          "field": "On-line CPU(s) list:",
+          "data": "0-15"
+        },
+        {
+          "field": "Vendor ID:",
+          "data": "AuthenticAMD"
+        },
+        {
+          "field": "Model name:",
+          "data": "AMD Ryzen 9 5900HS with Radeon Graphics"
+        },
+        {
+          "field": "CPU family:",
+          "data": "25"
+        },
+        {
+          "field": "Model:",
+          "data": "80"
+        },
+        {
+          "field": "Thread(s) per core:",
+          "data": "2"
+        },
+        {
+          "field": "Core(s) per socket:",
+          "data": "8"
+        },
+        {
+          "field": "Socket(s):",
+          "data": "1"
+        },
+        {
+          "field": "Stepping:",
+          "data": "0"
+        },
+        {
+          "field": "Frequency boost:",
+          "data": "enabled"
+        },
+        {
+          "field": "CPU(s) scaling MHz:",
+          "data": "91%"
+        },
+        {
+          "field": "CPU max MHz:",
+          "data": "4683.4712"
+        },
+        {
+          "field": "CPU min MHz:",
+          "data": "423.2060"
+        },
+        {
+          "field": "BogoMIPS:",
+          "data": "6587.72"
+        },
+        {
+          "field": "Flags:",
+          "data": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm debug_swap"
+        },
+        {
+          "field": "Virtualization:",
+          "data": "AMD-V"
+        },
+        {
+          "field": "L1d cache:",
+          "data": "256 KiB (8 instances)"
+        },
+        {
+          "field": "L1i cache:",
+          "data": "256 KiB (8 instances)"
+        },
+        {
+          "field": "L2 cache:",
+          "data": "4 MiB (8 instances)"
+        },
+        {
+          "field": "L3 cache:",
+          "data": "16 MiB (1 instance)"
+        },
+        {
+          "field": "NUMA node(s):",
+          "data": "1"
+        },
+        {
+          "field": "NUMA node0 CPU(s):",
+          "data": "0-15"
+        },
+        {
+          "field": "Vulnerability Gather data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Ghostwrite:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Indirect target selection:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Itlb multihit:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability L1tf:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Mds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Meltdown:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Mmio stale data:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Old microcode:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Reg file data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Retbleed:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Spec rstack overflow:",
+          "data": "Mitigation; Safe RET"
+        },
+        {
+          "field": "Vulnerability Spec store bypass:",
+          "data": "Mitigation; Speculative Store Bypass disabled via prctl"
+        },
+        {
+          "field": "Vulnerability Spectre v1:",
+          "data": "Mitigation; usercopy/swapgs barriers and __user pointer sanitization"
+        },
+        {
+          "field": "Vulnerability Spectre v2:",
+          "data": "Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected"
+        },
+        {
+          "field": "Vulnerability Srbds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Tsa:",
+          "data": "Mitigation; Clear CPU buffers"
+        },
+        {
+          "field": "Vulnerability Tsx async abort:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Vmscape:",
+          "data": "Mitigation; IBPB before exit to userspace"
+        }
+      ]
+    },
+    "files": {
+      "bin/distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+      "bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+      "launcher": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+      "resume-team-runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+      "run.sh": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27"
+    },
+    "settings": {
+      "scaling_governor": {
+        "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance"
+      },
+      "energy_performance_preference": {
+        "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance"
+      }
+    },
+    "processes": []
+  },
+  "local": {
+    "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422",
+    "cpu": {
+      "lscpu": [
+        {
+          "field": "Architecture:",
+          "data": "x86_64"
+        },
+        {
+          "field": "CPU op-mode(s):",
+          "data": "32-bit, 64-bit"
+        },
+        {
+          "field": "Address sizes:",
+          "data": "48 bits physical, 48 bits virtual"
+        },
+        {
+          "field": "Byte Order:",
+          "data": "Little Endian"
+        },
+        {
+          "field": "CPU(s):",
+          "data": "16"
+        },
+        {
+          "field": "On-line CPU(s) list:",
+          "data": "0-15"
+        },
+        {
+          "field": "Vendor ID:",
+          "data": "AuthenticAMD"
+        },
+        {
+          "field": "Model name:",
+          "data": "AMD Ryzen 7 5800H with Radeon Graphics"
+        },
+        {
+          "field": "CPU family:",
+          "data": "25"
+        },
+        {
+          "field": "Model:",
+          "data": "80"
+        },
+        {
+          "field": "Thread(s) per core:",
+          "data": "2"
+        },
+        {
+          "field": "Core(s) per socket:",
+          "data": "8"
+        },
+        {
+          "field": "Socket(s):",
+          "data": "1"
+        },
+        {
+          "field": "Stepping:",
+          "data": "0"
+        },
+        {
+          "field": "Frequency boost:",
+          "data": "enabled"
+        },
+        {
+          "field": "CPU(s) scaling MHz:",
+          "data": "72%"
+        },
+        {
+          "field": "CPU max MHz:",
+          "data": "4465.2612"
+        },
+        {
+          "field": "CPU min MHz:",
+          "data": "403.4880"
+        },
+        {
+          "field": "BogoMIPS:",
+          "data": "6388.05"
+        },
+        {
+          "field": "Flags:",
+          "data": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local user_shstk clzero irperf xsaveerptr rdpru wbnoinvd cppc arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_recov succor smca fsrm debug_swap"
+        },
+        {
+          "field": "Virtualization:",
+          "data": "AMD-V"
+        },
+        {
+          "field": "L1d cache:",
+          "data": "256 KiB (8 instances)"
+        },
+        {
+          "field": "L1i cache:",
+          "data": "256 KiB (8 instances)"
+        },
+        {
+          "field": "L2 cache:",
+          "data": "4 MiB (8 instances)"
+        },
+        {
+          "field": "L3 cache:",
+          "data": "16 MiB (1 instance)"
+        },
+        {
+          "field": "NUMA node(s):",
+          "data": "1"
+        },
+        {
+          "field": "NUMA node0 CPU(s):",
+          "data": "0-15"
+        },
+        {
+          "field": "Vulnerability Gather data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Ghostwrite:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Indirect target selection:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Itlb multihit:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability L1tf:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Mds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Meltdown:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Mmio stale data:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Old microcode:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Reg file data sampling:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Retbleed:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Spec rstack overflow:",
+          "data": "Mitigation; Safe RET"
+        },
+        {
+          "field": "Vulnerability Spec store bypass:",
+          "data": "Mitigation; Speculative Store Bypass disabled via prctl"
+        },
+        {
+          "field": "Vulnerability Spectre v1:",
+          "data": "Mitigation; usercopy/swapgs barriers and __user pointer sanitization"
+        },
+        {
+          "field": "Vulnerability Spectre v2:",
+          "data": "Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always-on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected"
+        },
+        {
+          "field": "Vulnerability Srbds:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Tsa:",
+          "data": "Vulnerable: No microcode"
+        },
+        {
+          "field": "Vulnerability Tsx async abort:",
+          "data": "Not affected"
+        },
+        {
+          "field": "Vulnerability Vmscape:",
+          "data": "Mitigation; IBPB before exit to userspace"
+        }
+      ]
+    },
+    "address": [
+      {
+        "ifindex": 1,
+        "ifname": "lo",
+        "flags": [
+          "LOOPBACK",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 65536,
+        "qdisc": "noqueue",
+        "operstate": "UNKNOWN",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "loopback",
+        "address": "00:00:00:00:00:00",
+        "broadcast": "00:00:00:00:00:00",
+        "addr_info": [
+          {
+            "family": "inet",
+            "local": "127.0.0.1",
+            "prefixlen": 8,
+            "scope": "host",
+            "label": "lo",
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          },
+          {
+            "family": "inet6",
+            "local": "::1",
+            "prefixlen": 128,
+            "scope": "host",
+            "noprefixroute": true,
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          }
+        ]
+      },
+      {
+        "ifindex": 2,
+        "ifname": "eno1",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "fq_codel",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "7c:4d:8f:aa:e4:ff",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "altnames": [
+          "enp2s0",
+          "enx7c4d8faae4ff"
+        ],
+        "addr_info": [
+          {
+            "family": "inet",
+            "local": "192.168.0.81",
+            "prefixlen": 24,
+            "broadcast": "192.168.0.255",
+            "scope": "global",
+            "noprefixroute": true,
+            "label": "eno1",
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          }
+        ]
+      },
+      {
+        "ifindex": 3,
+        "ifname": "wlo1",
+        "flags": [
+          "BROADCAST",
+          "MULTICAST",
+          "UP",
+          "LOWER_UP"
+        ],
+        "mtu": 1500,
+        "qdisc": "noqueue",
+        "operstate": "UP",
+        "group": "default",
+        "txqlen": 1000,
+        "link_type": "ether",
+        "address": "bc:f4:d4:9f:bc:d9",
+        "broadcast": "ff:ff:ff:ff:ff:ff",
+        "altnames": [
+          "wlp3s0",
+          "wlxbcf4d49fbcd9"
+        ],
+        "addr_info": [
+          {
+            "family": "inet",
+            "local": "192.168.188.142",
+            "prefixlen": 24,
+            "broadcast": "192.168.188.255",
+            "scope": "global",
+            "dynamic": true,
+            "noprefixroute": true,
+            "label": "wlo1",
+            "valid_life_time": 80234,
+            "preferred_life_time": 80234
+          },
+          {
+            "family": "inet6",
+            "local": "2001:268:73b9:77c1:a6f9:3c3f:2629:e515",
+            "prefixlen": 64,
+            "scope": "global",
+            "temporary": true,
+            "dynamic": true,
+            "valid_life_time": 86384,
+            "preferred_life_time": 14384
+          },
+          {
+            "family": "inet6",
+            "local": "2001:268:73b9:77c1:2001:b4b0:f4b6:e865",
+            "prefixlen": 64,
+            "scope": "global",
+            "dynamic": true,
+            "mngtmpaddr": true,
+            "noprefixroute": true,
+            "valid_life_time": 86384,
+            "preferred_life_time": 14384
+          },
+          {
+            "family": "inet6",
+            "local": "fe80::6cb3:8f71:72e4:c963",
+            "prefixlen": 64,
+            "scope": "link",
+            "noprefixroute": true,
+            "valid_life_time": 4294967295,
+            "preferred_life_time": 4294967295
+          }
+        ]
+      }
+    ],
+    "settings": {
+      "scaling_governor": {
+        "/sys/devices/system/cpu/cpufreq/policy11/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy8/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy6/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy4/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy2/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy14/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy0/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy12/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy9/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy10/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy7/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy5/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy3/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy15/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy1/scaling_governor": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy13/scaling_governor": "performance"
+      },
+      "energy_performance_preference": {
+        "/sys/devices/system/cpu/cpufreq/policy11/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy8/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy6/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy4/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy2/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy14/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy0/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy12/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy9/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy10/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy7/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy5/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy3/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy15/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy1/energy_performance_preference": "performance",
+        "/sys/devices/system/cpu/cpufreq/policy13/energy_performance_preference": "performance"
+      }
+    }
+  }
+}

@@ -1,0 +1,305 @@
+/* @theme base */
+@import "default";
+
+@font-face {
+  font-family: "Murecho";
+  src: url("./fonts/Murecho-wght.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+:root {
+  --ink-color: #242424;
+  --main-color: #97283C;
+  --box-color: 206, 56, 82;
+  --rule-color: rgba(36, 36, 36, 0.13);
+}
+
+section {
+  font-family: "Murecho", sans-serif;
+  color: var(--ink-color);
+  font-size: 24px;
+  line-height: 1.52;
+  padding: 42px 54px 48px;
+  background: #ffffff;
+}
+
+section:not(.title) {
+  display: flex;
+  justify-content: flex-start;
+}
+
+section h1 {
+  color: var(--main-color);
+  font-size: 42px;
+  line-height: 1.18;
+  letter-spacing: 0.01em;
+  margin: 0 0 18px;
+  padding-bottom: 0;
+}
+
+section h2 {
+  font-size: 31px;
+  line-height: 1.25;
+  margin: 0 0 14px;
+}
+
+p,
+li {
+  line-height: 1.55;
+}
+
+li {
+  margin: 0.18em 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+code {
+  font-family: "Hack Nerd Font";
+}
+
+.columns2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  padding: 0.08in 0;
+}
+
+table th,
+table td {
+  padding: 6px 13px;
+  border: 1px solid var(--rule-color);
+  vertical-align: top;
+}
+
+th {
+  background: rgba(var(--box-color), 0.11);
+  font-weight: 700;
+}
+
+img[alt~="center"] {
+  display: block;
+  margin: 2px auto 0;
+}
+
+/* 競プロ班ロゴ */
+section::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 74px;
+  background: url("./fig/kyopro_w1.png") center / contain no-repeat;
+  z-index: 4;
+  pointer-events: none;
+}
+
+section:not(.title)::before {
+  right: 18px;
+  bottom: 31px;
+  opacity: 0.95;
+}
+
+section.title::before {
+  right: 24px;
+  bottom: 22px;
+  opacity: 0.97;
+}
+
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: unset;
+  bottom: 0;
+  width: 100%;
+  height: 22px;
+  padding: 2px 0 0;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--main-color);
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: 0.015em;
+}
+
+footer {
+  bottom: 2px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+section::after {
+  content: attr(data-marpit-pagination) " / " attr(data-marpit-pagination-total);
+  right: 18px;
+  bottom: 3px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* 表紙 */
+section.title {
+  justify-content: center;
+  background:
+    radial-gradient(circle at 10% 8%, rgba(var(--box-color), 0.10), transparent 32%),
+    radial-gradient(circle at 92% 82%, rgba(151, 40, 60, 0.07), transparent 30%),
+    #ffffff;
+}
+
+section.title > h1 {
+  font-size: 48px;
+  line-height: 1.14;
+  text-align: center;
+  margin: 0 auto 14px;
+}
+
+section.title > h2 {
+  color: #454545;
+  font-size: 29px;
+  font-weight: 600;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.title > p {
+  position: relative;
+  top: 20px;
+  text-align: center;
+}
+
+section.title .team-name {
+  display: inline-block;
+  background: linear-gradient(90deg, #43D5F5 0%, #2FA8F7 10%, #2878F5 40%, #3556E8 62%, #7655E9 82%, #C85AEF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+section.title::after,
+section.title header,
+section.title footer {
+  visibility: hidden;
+}
+
+/* 章扉 */
+section.chapter {
+  justify-content: center;
+  background:
+    linear-gradient(135deg, rgba(var(--box-color), 0.10), transparent 42%),
+    radial-gradient(circle at 88% 18%, rgba(151, 40, 60, 0.09), transparent 28%),
+    #ffffff;
+}
+
+section.chapter h1 {
+  font-size: 48px;
+  line-height: 1.15;
+  padding: 0;
+}
+
+section.chapter h2 {
+  color: #444444;
+  font-size: 28px;
+  line-height: 1.42;
+  font-weight: 600;
+  max-width: 940px;
+  margin-top: 10px;
+}
+
+/* MathJax 数式 */
+section mjx-container[display="true"] {
+  display: block;
+  box-sizing: border-box;
+  margin: 12px auto !important;
+  padding: 10px 24px 12px;
+  width: fit-content;
+  max-width: 94%;
+  border: 1px solid rgba(var(--box-color), 0.38);
+  border-radius: 11px;
+  background: #fff7f9;
+  color: var(--main-color);
+  overflow: visible;
+  font-size: 1.12em;
+}
+
+section mjx-container:not([display="true"]) {
+  line-height: 1.2;
+}
+
+/* 詳細説明：経路の前計算・ビームサーチ・分散処理 */
+section.neighborhood-detail {
+  font-size: 22px;
+}
+
+section.neighborhood-detail p {
+  margin: 0 0 12px;
+  line-height: 1.4;
+}
+
+section.neighborhood-detail ul {
+  margin: 0 0 12px;
+}
+
+section.neighborhood-detail li {
+  line-height: 1.4;
+  margin: 0.22em 0;
+}
+
+section.neighborhood-detail img {
+  object-fit: contain;
+}
+
+section.neighborhood-detail table {
+  flex-shrink: 0;
+  margin-bottom: 12px;
+}
+
+/* 近傍操作の一覧 */
+section.neighborhood-summary {
+  font-size: 21px;
+}
+
+section.neighborhood-summary p {
+  margin: 0 0 10px;
+  line-height: 1.4;
+}
+
+section.neighborhood-summary table {
+  flex-shrink: 0;
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+section.neighborhood-summary th,
+section.neighborhood-summary td {
+  padding: 5px 9px;
+  line-height: 1.3;
+}
+
+/* 参考文献：論文・書籍の書誌情報を最終ページにまとめる */
+.refs {
+  color: #555555;
+  font-size: 20px;
+  line-height: 1.38;
+}
+
+.refs li {
+  margin: 0.32em 0;
+  line-height: inherit;
+}
+
+.refs ol,
+.refs p {
+  margin: 0;
+}
+
+.refs p {
+  line-height: inherit;
+}

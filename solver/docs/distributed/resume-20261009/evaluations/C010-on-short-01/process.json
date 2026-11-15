@@ -1,0 +1,37 @@
+{
+  "stage": "C010-on-short-01",
+  "status": "running",
+  "label": "分散C010・PC間reserve15候補共有on・正式評価候補の選別・短縮12件・10秒",
+  "shortMs": 10000,
+  "startedUnix": 1791511015.7477384,
+  "command": [
+    "/home/imak/work/procon37/target/release/server",
+    "run",
+    "12",
+    "--players",
+    "4",
+    "--config",
+    "/home/imak/work/procon37/.server/distributed/evaluations/C010-on-short-01/run-config.json",
+    "--label",
+    "分散C010・PC間reserve15候補共有on・正式評価候補の選別・短縮12件・10秒",
+    "--match-port",
+    "11451",
+    "--time-limit-ms",
+    "10000"
+  ],
+  "directory": "/home/imak/work/procon37/.server/distributed/evaluations/C010-on-short-01",
+  "history": "/home/imak/work/procon37/.server/runs",
+  "version": "C010-cross-elite-on",
+  "existingRunIds": [
+    "1791503276339409187-91328",
+    "1791504436521618109-94528",
+    "1791505730154449433-101944",
+    "1791506866153064781-104560",
+    "1791508659730277323-111961",
+    "1791509941774759940-117170"
+  ],
+  "pid": 119460,
+  "startTicks": "6102370",
+  "state": "R",
+  "bootId": "0ed549c2-ebe5-4a00-a7fe-2a56c0403979"
+}

@@ -1,0 +1,64 @@
+{
+  "capturedAtJst": "2026-10-09T11:17:19.709600+09:00",
+  "stage": "C010-on-short-02",
+  "runId": "1791512070563519640-122297",
+  "basis": "Read-only C010 actual launchers captured with the single beginning observation; harness source read locally. No evaluation configuration or processes changed.",
+  "sourceRecord": "solver/docs/distributed/resume-20261009/participation-start-C010-on-short-02.json",
+  "sourceRecordSha256": "f2becc7b66c3ababa28ecc50eca134487576af6cadff199281c22738be6ad950",
+  "manifestSha256": "bb8b5ae5604f140bb8af77d97ed8b84eea34d4214b155d5a0b23b9ffc2793a3e",
+  "files": {
+    "solver/distributed-lab/manage.py": "13eb9fa455cea3070378234c88fffaee5a25b43bbe1cb688eb419dc5bdceb2ae",
+    "solver/distributed-lab/team_runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+    "solver/distributed-candidates/c010-cross-elite/main.rs": "b4457bf4cef4e4a5790e0a684c3d18085dd67ec6c0428a33152bd12689a30e1d",
+    "solver/distributed-candidates/c010-cross-elite/runtime.rs": "b7fed497c5d30534e4e502b1d32010201e232c814385237179ad5fbaa5e71011",
+    ".server/distributed/launchers/generation6.sh": "34a9d5f3d7fa57b7977281d862f7559399b1338a59ec58324272f89b03d3d6f4",
+    ".server/distributed/launchers/generation8.sh": "0fbe822a7a8cce9cf8f893fd7c5c5b82a2a10d725ce7ab95d6f571ff6db049d7"
+  },
+  "actualLaunchers": {
+    "v1": {
+      "path": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0/launcher",
+      "sha256": "ebcd6ee7841830d20e4ceafeeea94ccd367558fa8401e39593c1ded75b029897",
+      "text": "#!/bin/sh\nexec env -i PATH=/usr/bin:/bin PROCON37_G007_FUTURE_WEIGHT=0 PROCON37_G007_RESERVE_WEIGHT=15 PROCON37_DISTRIBUTED_TOKEN_FILE=/home/voidlinux-1/procon37-distributed-resume/20261009-D0/cluster.token taskset -c 0-31 /home/voidlinux-1/procon37-distributed-resume/20261009-D0/distributed-solver --mode coordinator --threads 32 --seed 0 --peers 192.168.0.22:39370/16/31,192.168.0.33:39370/32/46 --cross-elite on \"$@\"\n"
+    },
+    "v2": {
+      "path": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/launcher",
+      "sha256": "24da22f8f4542aa7ffd27f6859ca79e4bed5ef7749e8b129c74c46eb5afc90c4",
+      "text": "#!/bin/sh\nexec env -i PATH=/usr/bin:/bin PROCON37_G007_FUTURE_WEIGHT=0 PROCON37_G007_RESERVE_WEIGHT=15 PROCON37_DISTRIBUTED_TOKEN_FILE=/home/voidlinux-2/procon37-distributed-resume/20261009-D0/cluster.token taskset -c 0-15 /home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver --mode worker --threads 16 --worker-offset 31 --listen 192.168.0.22:39370 --cross-elite on \"$@\"\n"
+    },
+    "v3": {
+      "path": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0/launcher",
+      "sha256": "994d0b9e7f8ca30386fd42a5c403269065e80c5ab7c3a0fbebc5ab80bdb7471c",
+      "text": "#!/bin/sh\nexec env -i PATH=/usr/bin:/bin PROCON37_G007_FUTURE_WEIGHT=0 PROCON37_G007_RESERVE_WEIGHT=15 PROCON37_DISTRIBUTED_TOKEN_FILE=/home/voidlinux-3/procon37-distributed-resume/20261009-D0/cluster.token taskset -c 0-31 /home/voidlinux-3/procon37-distributed-resume/20261009-D0/distributed-solver --mode worker --threads 32 --worker-offset 46 --listen 192.168.0.33:39370 --cross-elite on \"$@\"\n"
+    },
+    "nomlab": {
+      "path": "/home/nomlab-ubuntu/procon37-distributed/launcher",
+      "sha256": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+      "text": "#!/bin/sh\nexport PROCON37_G007_FUTURE_WEIGHT=0\nexport PROCON37_G007_RESERVE_WEIGHT=15\nexec taskset -c 0-15 /home/nomlab-ubuntu/procon37-distributed/bin/distributed-solver --mode parallel --threads 16 --seed 0 \"$@\"\n"
+    }
+  },
+  "launcherManifestMatches": {
+    "v1": true,
+    "v2": true,
+    "v3": true,
+    "nomlab": true
+  },
+  "checks": {
+    "distributedCrossEliteOn": true,
+    "distributedEnvironmentCleared": true,
+    "noLauncherTimeCap": true,
+    "newFormalRunConfigTimeLimitNullIfShortMsOmitted": true,
+    "serverCliTimeLimitOnlyWhenShortMsSupplied": true,
+    "teamRunnerEnvironmentOnlyPathLang": true,
+    "fixedLocalLaunchersClearEnvironment": true
+  },
+  "formalLaunchConditions": [
+    "New stage, omit --short-ms; generated config timeLimitMs must be null and command must omit --time-limit-ms.",
+    "No --output-dir. Preserve taskset 1,3,5,7, 12 seeds 0..11, automatic formats, arenaMaps true, same fixed opponents and 4 teams.",
+    "Confirm actual problem daySeconds and official selection times, 48 AC and before/after hashes in that full run."
+  ],
+  "limitations": [
+    "This ongoing run is intentionally 10000ms short and is not a formal evaluation.",
+    "C010 sharing rate/size limits and normal search/deadline margins are algorithm parameters, not a testing time cap.",
+    "Observed launchers match this manifest; later source/launcher changes need another check."
+  ]
+}

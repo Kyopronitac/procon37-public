@@ -1,0 +1,50 @@
+{
+  "label": "pair1-seed0-c006",
+  "seed": 0,
+  "version": "c006",
+  "command": [
+    "taskset",
+    "-c",
+    "0-15",
+    "/home/voidlinux-2/procon37-distributed-resume/c006-micro-20261009/bin/c006",
+    "--mode",
+    "parallel",
+    "--threads",
+    "16",
+    "--seed",
+    "0"
+  ],
+  "inputSha256": "8ec95257ddcf413e230d7c0c3589d5dd3f632d2f0f39f88fdb91ca30eecf8c28",
+  "binarySha256": "23c0d0abb72e3d3aeff217c8a5aabfa8084a2655345d03ee7e291848fe7490d2",
+  "requests": [
+    {
+      "phase": "select",
+      "limitMs": 100,
+      "elapsedMs": 2.0550719927996397,
+      "processStatus": {
+        "Threads": "16",
+        "Cpus_allowed_list": "0-15",
+        "VmRSS": "4292 kB",
+        "VmHWM": "4292 kB"
+      }
+    },
+    {
+      "phase": "plan",
+      "limitMs": 10000,
+      "elapsedMs": 9686.018180000247,
+      "processStatus": {
+        "Threads": "16",
+        "Cpus_allowed_list": "0-15",
+        "VmRSS": "832956 kB",
+        "VmHWM": "832956 kB"
+      }
+    }
+  ],
+  "timedOut": false,
+  "pid": 8348,
+  "exitCode": 0,
+  "stopped": true,
+  "wallMs": 9752.917143996456,
+  "userCpuSeconds": 141.95184799999998,
+  "systemCpuSeconds": 1.8166830000000003
+}

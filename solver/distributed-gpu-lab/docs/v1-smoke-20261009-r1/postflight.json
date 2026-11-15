@@ -1,0 +1,20 @@
+{
+  "at_unix": 1791505651.4267232,
+  "host": "VOIDLINUX-1",
+  "remaining_exact_experiment_processes": [],
+  "known_pids_exist": {
+    "26020": false,
+    "26022": false
+  },
+  "cgroup_exists": false,
+  "binary_sha256": "91f2484496bb8577a6509fbec86b4421d9cf6168f08226b7a67488251dc5a94c",
+  "gpu_identity": "NVIDIA GeForce RTX 5070 Ti Laptop GPU, GPU-6f246023-401a-15e2-87e4-38a795d6202a, 595.104.02, 12227 MiB",
+  "files_sha256": {
+    "results/smoke.jsonl": "6b22e9bf878431f440eb2e7c17b43ec2880ca2cfe7e670f5c9406bf771819d0e",
+    "results/smoke.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/controller-child.log": "44e861d1e0a1bb30051a3c4541cc7a0e81bb8119ca05640787516a7d53314044",
+    "results/controller.json": "2631967368bab122a9c275700f2c371ba7bb336379c5545fef44b83539afebde",
+    "results/smoke.manifest.json": "01c16a201cf5abe3fb665f27e09731d4ecaf3cd8a07fc4368c6c4abdaf870849"
+  },
+  "local_result_sha256_match": true
+}

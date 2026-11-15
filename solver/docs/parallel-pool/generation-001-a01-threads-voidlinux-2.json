@@ -1,0 +1,30 @@
+{
+  "startedAt": 1791376007.9211009,
+  "observedAt": 1791376307.9188619,
+  "teams": {
+    "S0": {
+      "maxThreads": 1,
+      "maxRssKiB": 913452,
+      "pids": [
+        789,
+        833,
+        880
+      ],
+      "cpuSets": [
+        "0"
+      ]
+    },
+    "S1": {
+      "maxThreads": 1,
+      "maxRssKiB": 271964,
+      "pids": [
+        791,
+        831,
+        878
+      ],
+      "cpuSets": [
+        "2"
+      ]
+    }
+  }
+}

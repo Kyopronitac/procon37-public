@@ -1,0 +1,36 @@
+{
+  "runId": "1791413484073396191-301762",
+  "processId": 301762,
+  "configuration": {
+    "count": 12,
+    "players": 4,
+    "format": null,
+    "arenaMaps": true,
+    "timeLimitMs": 10000,
+    "label": "分散ソルバ・CPU初期版・接続と3台協調確認・短縮12件・10秒",
+    "teamNames": [
+      "分散80スレッド",
+      "固定並列16スレッド",
+      "固定第6世代",
+      "固定第8世代"
+    ]
+  },
+  "binarySha256": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+  "threadsObserved": {
+    "v1": 32,
+    "v2": 16,
+    "v3": 32,
+    "nomlab": 16,
+    "single6": 1,
+    "single8": 1
+  },
+  "status": "completed",
+  "auditNote": "起動前の監査JSON生成でマーカー解析エラー。配置時ハッシュに対する起動後実ファイル一致と32/16/32/16スレッドをinitial-short-startcheckで確認。探索実装・設定変更なし。正式評価起動は必須preflight成功後のみ進むようツールを修正。",
+  "monitor": {
+    "automationId": "automation",
+    "intervalMinutes": 5,
+    "status": "ACTIVE",
+    "purpose": "短縮完了から初回正式評価、commit/push後の継続改善"
+  },
+  "all48AC": true
+}

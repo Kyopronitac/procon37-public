@@ -1,0 +1,465 @@
+{
+  "baselineStages": [
+    "H2-D0-short-01"
+  ],
+  "candidateStages": [
+    "H2-C012-on-short-01"
+  ],
+  "environment": {
+    "revision": "restart-20261009-5800H-performance",
+    "localCpu": {
+      "Model name": "AMD Ryzen 7 5800H with Radeon Graphics",
+      "CPU(s)": "16",
+      "Thread(s) per core": "2",
+      "Core(s) per socket": "8",
+      "Socket(s)": "1",
+      "NUMA node(s)": "1"
+    },
+    "remoteCpu": {
+      "v1": {
+        "Model name": "AMD Ryzen 9 9955HX3D 16-Core Processor",
+        "CPU(s)": "32",
+        "Thread(s) per core": "2",
+        "Core(s) per socket": "16",
+        "Socket(s)": "1",
+        "NUMA node(s)": "1"
+      },
+      "v2": {
+        "Model name": "AMD Ryzen 7 250 w/ Radeon 780M Graphics",
+        "CPU(s)": "16",
+        "Thread(s) per core": "2",
+        "Core(s) per socket": "8",
+        "Socket(s)": "1",
+        "NUMA node(s)": "1"
+      },
+      "v3": {
+        "Model name": "AMD Ryzen 9 9955HX 16-Core Processor",
+        "CPU(s)": "32",
+        "Thread(s) per core": "2",
+        "Core(s) per socket": "16",
+        "Socket(s)": "1",
+        "NUMA node(s)": "1"
+      },
+      "nomlab": {
+        "Model name": "AMD Ryzen 9 5900HS with Radeon Graphics",
+        "CPU(s)": "16",
+        "Thread(s) per core": "2",
+        "Core(s) per socket": "8",
+        "Socket(s)": "1",
+        "NUMA node(s)": "1"
+      }
+    },
+    "localPowerProfile": "performance",
+    "remoteGovernor": "performance",
+    "remoteEpp": "performance",
+    "localFixedSolverCpu": {
+      "generation6": "0",
+      "generation8": "2"
+    },
+    "serverCpu": "1,3,5,7"
+  },
+  "shortMs": 10000,
+  "pairCount": 1,
+  "pairs": [
+    {
+      "baseline": "H2-D0-short-01",
+      "candidate": "H2-C012-on-short-01",
+      "rankSumDelta": -5,
+      "scoreDelta": {
+        "uniqueBrands": 0,
+        "dailyBrands": 0,
+        "udon": 4
+      },
+      "outcomes": {
+        "win": 6,
+        "tie": 0,
+        "loss": 6
+      }
+    }
+  ],
+  "cohorts": {
+    "baseline": {
+      "cases": 12,
+      "meanRank": 1.6666666666666667,
+      "scoreTotals": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2961
+      },
+      "meanScoreTotalsPerRun": {
+        "uniqueBrands": 222.0,
+        "dailyBrands": 1277.0,
+        "udon": 2961.0
+      },
+      "formats": {
+        "first": {
+          "cases": 4,
+          "meanRank": 2.5,
+          "scoreTotals": {
+            "uniqueBrands": 48,
+            "dailyBrands": 334,
+            "udon": 629
+          }
+        },
+        "semifinal": {
+          "cases": 4,
+          "meanRank": 1.5,
+          "scoreTotals": {
+            "uniqueBrands": 69,
+            "dailyBrands": 393,
+            "udon": 880
+          }
+        },
+        "final": {
+          "cases": 4,
+          "meanRank": 1.0,
+          "scoreTotals": {
+            "uniqueBrands": 105,
+            "dailyBrands": 550,
+            "udon": 1452
+          }
+        }
+      }
+    },
+    "candidate": {
+      "cases": 12,
+      "meanRank": 1.25,
+      "scoreTotals": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2965
+      },
+      "meanScoreTotalsPerRun": {
+        "uniqueBrands": 222.0,
+        "dailyBrands": 1277.0,
+        "udon": 2965.0
+      },
+      "formats": {
+        "first": {
+          "cases": 4,
+          "meanRank": 1.0,
+          "scoreTotals": {
+            "uniqueBrands": 48,
+            "dailyBrands": 334,
+            "udon": 630
+          }
+        },
+        "semifinal": {
+          "cases": 4,
+          "meanRank": 1.25,
+          "scoreTotals": {
+            "uniqueBrands": 69,
+            "dailyBrands": 393,
+            "udon": 884
+          }
+        },
+        "final": {
+          "cases": 4,
+          "meanRank": 1.5,
+          "scoreTotals": {
+            "uniqueBrands": 105,
+            "dailyBrands": 550,
+            "udon": 1451
+          }
+        }
+      }
+    }
+  },
+  "seedMeanOutcomes": {
+    "win": 6,
+    "tie": 0,
+    "loss": 6
+  },
+  "seeds": [
+    {
+      "seed": 0,
+      "format": "first",
+      "baselineScoreSum": [
+        12,
+        56,
+        68
+      ],
+      "candidateScoreSum": [
+        12,
+        56,
+        64
+      ],
+      "meanScoreDelta": [
+        0.0,
+        0.0,
+        -4.0
+      ],
+      "outcome": "loss"
+    },
+    {
+      "seed": 1,
+      "format": "semifinal",
+      "baselineScoreSum": [
+        18,
+        90,
+        123
+      ],
+      "candidateScoreSum": [
+        18,
+        90,
+        127
+      ],
+      "meanScoreDelta": [
+        0.0,
+        0.0,
+        4.0
+      ],
+      "outcome": "win"
+    },
+    {
+      "seed": 2,
+      "format": "final",
+      "baselineScoreSum": [
+        24,
+        120,
+        210
+      ],
+      "candidateScoreSum": [
+        24,
+        120,
+        207
+      ],
+      "meanScoreDelta": [
+        0.0,
+        0.0,
+        -3.0
+      ],
+      "outcome": "loss"
+    },
+    {
+      "seed": 3,
+      "format": "first",
+      "baselineScoreSum": [
+        13,
+        130,
+        324
+      ],
+      "candidateScoreSum": [
+        13,
+        130,
+        328
+      ],
+      "meanScoreDelta": [
+        0.0,
+        0.0,
+        4.0
+      ],
+      "outcome": "win"
+    },
+    {
+      "seed": 4,
+      "format": "semifinal",
+      "baselineScoreSum": [
+        19,
+        95,
+        130
+      ],
+      "candidateScoreSum": [
+        19,
+        95,
+        129
+      ],
+      "meanScoreDelta": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "outcome": "loss"
+    },
+    {
+      "seed": 5,
+      "format": "final",
+      "baselineScoreSum": [
+        25,
+        150,
+        335
+      ],
+      "candidateScoreSum": [
+        25,
+        150,
+        337
+      ],
+      "meanScoreDelta": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "outcome": "win"
+    },
+    {
+      "seed": 6,
+      "format": "first",
+      "baselineScoreSum": [
+        11,
+        88,
+        140
+      ],
+      "candidateScoreSum": [
+        11,
+        88,
+        139
+      ],
+      "meanScoreDelta": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "outcome": "loss"
+    },
+    {
+      "seed": 7,
+      "format": "semifinal",
+      "baselineScoreSum": [
+        16,
+        80,
+        265
+      ],
+      "candidateScoreSum": [
+        16,
+        80,
+        268
+      ],
+      "meanScoreDelta": [
+        0.0,
+        0.0,
+        3.0
+      ],
+      "outcome": "win"
+    },
+    {
+      "seed": 8,
+      "format": "final",
+      "baselineScoreSum": [
+        28,
+        140,
+        553
+      ],
+      "candidateScoreSum": [
+        28,
+        140,
+        557
+      ],
+      "meanScoreDelta": [
+        0.0,
+        0.0,
+        4.0
+      ],
+      "outcome": "win"
+    },
+    {
+      "seed": 9,
+      "format": "first",
+      "baselineScoreSum": [
+        12,
+        60,
+        97
+      ],
+      "candidateScoreSum": [
+        12,
+        60,
+        99
+      ],
+      "meanScoreDelta": [
+        0.0,
+        0.0,
+        2.0
+      ],
+      "outcome": "win"
+    },
+    {
+      "seed": 10,
+      "format": "semifinal",
+      "baselineScoreSum": [
+        16,
+        128,
+        362
+      ],
+      "candidateScoreSum": [
+        16,
+        128,
+        360
+      ],
+      "meanScoreDelta": [
+        0.0,
+        0.0,
+        -2.0
+      ],
+      "outcome": "loss"
+    },
+    {
+      "seed": 11,
+      "format": "final",
+      "baselineScoreSum": [
+        28,
+        140,
+        354
+      ],
+      "candidateScoreSum": [
+        28,
+        140,
+        350
+      ],
+      "meanScoreDelta": [
+        0.0,
+        0.0,
+        -4.0
+      ],
+      "outcome": "loss"
+    }
+  ],
+  "inputs": [
+    {
+      "stage": "H2-D0-short-01",
+      "runId": "1791557693555197384-34655",
+      "recordSha256": {
+        "manifest.json": "0e674c8616fb1134180ba008be7b6710c4f6a49ce82c41feb4db54ec70198d98",
+        "run.json": "04e0e4831da935ee0d1d81666b67e70764281036613264ab51be02d3506e048c",
+        "results.json": "766239647a83f7c3db4ee4b7bcfc78398d772683a7ab7aa10b881902a9febc60"
+      },
+      "problemSha256": {
+        "0": "ff0ffb88986635de1a8e1267a1335572fd842d3ef79fe8712d65b2f557545507",
+        "1": "2b3941dd6f59f829293b27dc68d2b2c34d3d605d3efade5281832e9c7d0e40b2",
+        "2": "6ca533612877191615211e13aef7a58a41dde61b3dc5208757008dba1e4d8c57",
+        "3": "2785f18eca3a8939bc7b950a05f32a9bd5fc2fb8e6b9a8a898b5958cc0bc8874",
+        "4": "5899d1abc32dc8f2c43901f3ead580f7c9649d94cf64a07ca347c479622ab0a7",
+        "5": "4a424c2e30e549d223ae6ddc83c5cbb2d697468443e79e3068aa20128c3cd7da",
+        "6": "6ee5e88d4d9d8e1670fb2b336056f738fbc1c5152786155f6017386fce4d5840",
+        "7": "42fe65185de532bff862f732c13129c0e81cd1e571cbcb6ab745af732fc18ce3",
+        "8": "4f2d9885e83e6681cf7a3ec0e0461ebfb53f218f2cebe0494d6d08a207345476",
+        "9": "fcee126ae6cc31aaaa78cb0f563a3f6f24014e337d75d548db89871ea8601d21",
+        "10": "603b1dc739999b2e90bc28d7dc417b8d30e50cb00a500c0d700d886124d023e1",
+        "11": "47ea2520b2e1e418ae308f5daea6e8e42101d3291dcbe01330b33120a0df8c2b"
+      }
+    },
+    {
+      "stage": "H2-C012-on-short-01",
+      "runId": "1791558686429216196-38666",
+      "recordSha256": {
+        "manifest.json": "5f981006bbaf4b662131f19be53d856c187a4e3ea920dcb4fabf626b02c3aaf2",
+        "run.json": "6660d468b8ebf7359adbe8b5f7a3acf71e27c06039d6983efe550a0a743ab8b8",
+        "results.json": "88423f01df4529d5b1f6c347677db3e6de739f9efa077af936c32e944e8d8f96"
+      },
+      "problemSha256": {
+        "0": "ff0ffb88986635de1a8e1267a1335572fd842d3ef79fe8712d65b2f557545507",
+        "1": "2b3941dd6f59f829293b27dc68d2b2c34d3d605d3efade5281832e9c7d0e40b2",
+        "2": "6ca533612877191615211e13aef7a58a41dde61b3dc5208757008dba1e4d8c57",
+        "3": "2785f18eca3a8939bc7b950a05f32a9bd5fc2fb8e6b9a8a898b5958cc0bc8874",
+        "4": "5899d1abc32dc8f2c43901f3ead580f7c9649d94cf64a07ca347c479622ab0a7",
+        "5": "4a424c2e30e549d223ae6ddc83c5cbb2d697468443e79e3068aa20128c3cd7da",
+        "6": "6ee5e88d4d9d8e1670fb2b336056f738fbc1c5152786155f6017386fce4d5840",
+        "7": "42fe65185de532bff862f732c13129c0e81cd1e571cbcb6ab745af732fc18ce3",
+        "8": "4f2d9885e83e6681cf7a3ec0e0461ebfb53f218f2cebe0494d6d08a207345476",
+        "9": "fcee126ae6cc31aaaa78cb0f563a3f6f24014e337d75d548db89871ea8601d21",
+        "10": "603b1dc739999b2e90bc28d7dc417b8d30e50cb00a500c0d700d886124d023e1",
+        "11": "47ea2520b2e1e418ae308f5daea6e8e42101d3291dcbe01330b33120a0df8c2b"
+      }
+    }
+  ],
+  "scriptSha256": "e98b989c528717fd3464e2ad43fa766a2f3ab3ad20079bb667e9b6380e9f6c53",
+  "note": "Paired score comparisons use uniqueBrands, dailyBrands, udon lexicographically. Scores are averaged within each seed before the seed-level comparison. Small timed runs do not establish statistical significance."
+}

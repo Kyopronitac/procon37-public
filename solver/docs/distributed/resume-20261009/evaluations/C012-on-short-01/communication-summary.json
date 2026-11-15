@@ -1,0 +1,28 @@
+{
+  "zeroChecks": {
+    "v1": {
+      "zeroChecks": 0,
+      "observedDays": 5,
+      "scope": "Final seed11 only: legacy bridge truncates stderr for each match."
+    },
+    "v2": {
+      "zeroChecks": 0,
+      "observedDays": 72,
+      "scope": "Entire C012 run appended range after C011-short-01 end byte, previous byte-range SHA verified."
+    },
+    "v3": {
+      "zeroChecks": 7,
+      "observedDays": 72,
+      "scope": "Entire C012 run appended range after C011-short-01 end byte, previous byte-range SHA verified."
+    }
+  },
+  "lastLogEnds": {
+    "v1": 65119,
+    "v2": 12890746,
+    "v3": 26363408,
+    "nomlab": 63192
+  },
+  "v2MeanRepairMsPerSuccessfulImport": 2.2643306585365854,
+  "v3MeanRepairMsPerSuccessfulImport": 1.9282623129251701,
+  "scope": "Successful seed changes only; not total communication overhead nor per-event deadline guarantee. v1 final seed11 only; early sample is separate."
+}

@@ -1,0 +1,91 @@
+{
+  "runId": "1791398902109665753-273829",
+  "players": [
+    {
+      "id": "P0",
+      "team": 0,
+      "rankSum": 25,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2986
+      },
+      "meanRank": 2.0833333333333335
+    },
+    {
+      "id": "P1",
+      "team": 1,
+      "rankSum": 37,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2985
+      },
+      "meanRank": 3.0833333333333335
+    },
+    {
+      "id": "P2",
+      "team": 2,
+      "rankSum": 25,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1278,
+        "udon": 2972
+      },
+      "meanRank": 2.0833333333333335
+    },
+    {
+      "id": "P3",
+      "team": 3,
+      "rankSum": 28,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1278,
+        "udon": 2987
+      },
+      "meanRank": 2.3333333333333335
+    },
+    {
+      "id": "S0",
+      "team": 4,
+      "rankSum": 55,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2947
+      },
+      "meanRank": 4.583333333333333
+    },
+    {
+      "id": "S1",
+      "team": 5,
+      "rankSum": 42,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2948
+      },
+      "meanRank": 3.5
+    }
+  ],
+  "lowestParallel": "P1",
+  "strictWinner": [],
+  "comparison": {
+    "win": 5,
+    "tie": 2,
+    "loss": 5
+  },
+  "beforeScores": {
+    "id": "P0",
+    "team": 0,
+    "rankSum": 34,
+    "scores": {
+      "uniqueBrands": 222,
+      "dailyBrands": 1275,
+      "udon": 2983
+    },
+    "meanRank": 2.8333333333333335
+  },
+  "promoted": false,
+  "reason": "P2と同率首位で単独首位未達"
+}

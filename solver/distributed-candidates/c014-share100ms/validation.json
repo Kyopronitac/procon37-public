@@ -1,0 +1,54 @@
+{
+  "candidate": "C014-share100ms",
+  "status": "unadopted; release build,20unit+6TCP passed; no server evaluation",
+  "adopted": false,
+  "createdAt": "2026-10-10T04:55:04.233154+09:00",
+  "sourceAggregateSha256": "72d83c8e0b6ffccb895f511d4c99fe84f8d47eb7c4d5ec3ac5ce66e8cfed3325",
+  "sourceSha256": "72d83c8e0b6ffccb895f511d4c99fe84f8d47eb7c4d5ec3ac5ce66e8cfed3325",
+  "binary": {
+    "path": "bin/distributed-solver",
+    "sha256": "da81053f69ff5be9f28fd33012e3344352612b5517a6db8ca46cec97af784dee",
+    "bytes": 2087560
+  },
+  "buildExecuted": true,
+  "buildExitCode": 0,
+  "unitTestsExecuted": true,
+  "networkTestsExecuted": true,
+  "unitTests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "networkTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "cpuAffinity": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11
+  ],
+  "cargoJobs": 4,
+  "testThreads": 1,
+  "testLog": {
+    "path": "docs/validation.log",
+    "sha256": "a4ec468ee338fc31b74aaec9b9fbf26a887cdaeaedbfc1941991a3eddf5e49cc"
+  },
+  "command": "CARGO_BUILD_JOBS=4 taskset -c 1,3,5,7,9,11 cargo test --release --offline --manifest-path solver/distributed-candidates/c014-share100ms/Cargo.toml --target-dir /tmp/procon37-sharefreq-20261010 -- --test-threads=1",
+  "parameters": {
+    "constant": "ELITE_INTERVAL",
+    "beforeMs": 500,
+    "afterMs": 100,
+    "effects": [
+      "cross-PC elite send interval",
+      "local donor publication interval",
+      "minimum remaining time for bus binding/outgoing/publication"
+    ],
+    "unchangedReceiverCheckMs": 250
+  },
+  "wireVersion": 4,
+  "requiredBeforeDeployment": [],
+  "serverEvaluations": []
+}

@@ -1,0 +1,24 @@
+{
+  "stage": "C013-submit55-dedup-regression-01",
+  "status": "running",
+  "startedUnix": 1791570846.7168899,
+  "startedJst": "2026-10-10T03:34:06.716890+09:00",
+  "nominalDurationSeconds": 1970,
+  "nominalFinishJst": "2026-10-10T04:06:56.716890+09:00",
+  "expectedTestFinishJst": [
+    "2026-10-10T04:07:00+09:00",
+    "2026-10-10T04:10:00+09:00"
+  ],
+  "expectedReviewFinishJst": "2026-10-10T04:15:00+09:00",
+  "version": "C013-scheduled-submission-on-submit55-dedup",
+  "process": {
+    "pid": 69239,
+    "startTicks": "2282498",
+    "bootId": "61fafedf-4b69-4c18-81a9-6af42f0f3422"
+  },
+  "configurationSha256": "a103901b7977ae5317943db806b0fdcbee7c7010f4747f46ab8044b7250ee640",
+  "serverSha256": "a4380930d6a66dc22bd9c40725ef93b8f648f2053d5a174c63392f4a2a35f252",
+  "bridgeSha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90",
+  "adoptedVersion": "D0",
+  "newCommitPush": false
+}

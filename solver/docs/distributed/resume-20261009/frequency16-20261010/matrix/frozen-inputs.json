@@ -1,0 +1,22 @@
+[
+  {
+    "file": "plan.json",
+    "sha256": "08908470535df938c55af9472814e83c44c443c460b6884f792074a3734f3333"
+  },
+  {
+    "file": "process.json",
+    "sha256": "70f63da4fe337f6d20577a022d293a2a5a692630a16140ae2203c9913831812e"
+  },
+  {
+    "file": "initial-config.json",
+    "sha256": "9909763c2e40286f8ec57947ab24650a0b03e765ef849b2177f057ab7863cf44"
+  },
+  {
+    "file": "initial-before.json",
+    "sha256": "bdd39b9ef284081896d121c7593b6dcd75a94ae1743b9b18d0e22ca3831d0ab4"
+  },
+  {
+    "file": "expected-problems.json",
+    "sha256": "d841b46f94b12cdb4f7c27a6a5a76db78f40aee2d6393605932fd6920ead06f9"
+  }
+]

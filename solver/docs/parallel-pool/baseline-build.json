@@ -1,0 +1,7 @@
+{
+  "verified": true,
+  "command": "PATH=/home/jikky/.cargo/bin:$PATH cargo build --release -p solver -j 2",
+  "binary_sha256": "4bc2ed54d725324782b249b68eef8a12594ce674e0950c1308bfbe84cef00fda",
+  "original_source_manifest_verified_after_build": true,
+  "lock_note": "Cargoが独立workspace用にlockを正規化したため、ビルド後に開始時lockへ復元し全保存入力hash一致を確認した。再ビルドは一時コピーで実施する。"
+}

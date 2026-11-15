@@ -1,0 +1,66 @@
+{
+  "runId": "1791413484073396191-301762",
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "分散ソルバ・CPU初期版・接続と3台協調確認・短縮12件・10秒",
+    "players": 4,
+    "teamNames": [
+      "分散80スレッド",
+      "固定並列16スレッド",
+      "固定第6世代",
+      "固定第8世代"
+    ],
+    "timeLimitMs": 10000,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "all48AC": true,
+  "players": [
+    {
+      "team": 0,
+      "name": "distributed",
+      "rankSum": 18,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2966
+      },
+      "meanRank": 1.5
+    },
+    {
+      "team": 1,
+      "name": "parallel-fixed",
+      "rankSum": 25,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1273,
+        "udon": 2933
+      },
+      "meanRank": 2.0833333333333335
+    },
+    {
+      "team": 2,
+      "name": "generation6",
+      "rankSum": 42,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 2872
+      },
+      "meanRank": 3.5
+    },
+    {
+      "team": 3,
+      "name": "generation8",
+      "rankSum": 28,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 2940
+      },
+      "meanRank": 2.3333333333333335
+    }
+  ]
+}

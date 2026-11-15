@@ -1,0 +1,15 @@
+{
+  "run_id": "1791378516614045171-236615",
+  "run_json": "/tmp/p0-g001-a03.QhgeEH/1791378516614045171-236615/run.json",
+  "rank_sums": {
+    "0": 9,
+    "1": 6,
+    "2": 8,
+    "3": 9,
+    "4": 14,
+    "5": 14
+  },
+  "all_18_ac": true,
+  "formal_eligible": false,
+  "owner": "/root/generation_001_p0"
+}

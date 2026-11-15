@@ -1,0 +1,48 @@
+   Compiling solver v0.1.0 (/home/jikky/Downloads/procon37/solver/parallel-pool/initial-P0)
+warning: unnecessary trailing semicolon
+  --> solver/planner.rs:64:35
+   |
+64 |         fn assert_send<T:Send>(){};assert_send::<Solver>();
+   |                                   ^ help: remove this semicolon
+   |
+   = note: `#[warn(redundant_semicolons)]` (part of `#[warn(unused)]`) on by default
+
+warning: `solver` (bin "solver" test) generated 1 warning
+    Finished `release` profile [optimized] target(s) in 4.00s
+     Running unittests main.rs (target/release/deps/solver-c8417b67d266688f)
+
+running 8 tests
+test planner::tests::changed_supplier_generates_a_valid_plan_for_actual_roles ... g007 day=0 score=3084.1 iterations=358494 hubs=[1, 1, 1, 1] beam_calls=10 beam_layers=200 fleet_calls=0 fleet_accepted=0 fleet_improved=0 fleet_rescues=0 triple_calls=23226 triple_accepted=19362 triple_improved=0 restart_calls=11 future_candidates=0 future_value=0.0 coverage_guard=0 guard_brands=0 guard_base_brands=0 guard_changed=0 graph_targets=15 graph_sources=15 graph_ms=0
+ok
+test planner::tests::forecast_graph_preserves_reused_selection_numbering ... ok
+test planner::tests::opponent_tree_conserves_travel_budget_and_skips_blocked_cells ... ok
+test planner::tests::parallel_graph_shares_paths_but_keeps_memos_private ... ok
+test planner::tests::rejected_selection_rebinds_roles_and_invalidates_warm_start ... ok
+test planner::tests::rejected_selection_with_no_supplier_respects_observed_fuel ... ok
+test planner::tests::supplier_path_modes_match_public_engine_and_cache ... ok
+test planner::tests::tiny_catch_up_requests_synchronize_without_search ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+
+     Running tests/parallel_protocol.rs (target/release/deps/parallel_protocol-1e72dab35c4290cf)
+
+running 1 test
+test json_lines_parallel_multiday_rejection_and_thread_bound ... seed=0 phase="select" id=0 elapsed_ms=12898
+seed=0 phase="plan" id=1 elapsed_ms=11024
+seed=0 phase="plan" id=2 elapsed_ms=11036
+seed=0 phase="plan" id=3 elapsed_ms=8
+seed=0 peak_threads=15 score=Score { unique_brands: 10, daily_brands: 13, udon: 16 }
+seed=1 phase="select" id=0 elapsed_ms=2580
+seed=1 phase="plan" id=1 elapsed_ms=2579
+seed=1 phase="plan" id=2 elapsed_ms=2578
+seed=1 phase="plan" id=3 elapsed_ms=15
+seed=1 peak_threads=15 score=Score { unique_brands: 18, daily_brands: 22, udon: 24 }
+seed=2 phase="select" id=0 elapsed_ms=2594
+seed=2 phase="plan" id=1 elapsed_ms=2595
+seed=2 phase="plan" id=2 elapsed_ms=2592
+seed=2 phase="plan" id=3 elapsed_ms=32
+seed=2 peak_threads=15 score=Score { unique_brands: 24, daily_brands: 30, udon: 38 }
+ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 50.61s
+

@@ -1,0 +1,81 @@
+{
+  "runId": "1791512070563519640-122297",
+  "all48AC": true,
+  "players": [
+    {
+      "team": 0,
+      "rankSum": 20,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2966
+      },
+      "meanRank": 1.6666666666666667
+    },
+    {
+      "team": 1,
+      "rankSum": 21,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 2936
+      },
+      "meanRank": 1.75
+    },
+    {
+      "team": 2,
+      "rankSum": 35,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2861
+      },
+      "meanRank": 2.9166666666666665
+    },
+    {
+      "team": 3,
+      "rankSum": 32,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1274,
+        "udon": 2896
+      },
+      "meanRank": 2.6666666666666665
+    }
+  ],
+  "version": "C010-cross-elite-on",
+  "stage": "C010-on-short-02",
+  "verifiedUnchanged": true,
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "分散C010・PC間reserve15候補共有on同版反復・正式移行判断・短縮12件・10秒",
+    "players": 4,
+    "teamNames": [
+      "分散C010-cross-elite-on",
+      "固定並列",
+      "固定第6世代",
+      "固定第8世代"
+    ],
+    "timeLimitMs": 10000,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "comparison": {
+    "win": 5,
+    "tie": 1,
+    "loss": 6
+  },
+  "beforeRunId": "1791506866153064781-104560",
+  "before": {
+    "team": 0,
+    "rankSum": 15,
+    "scores": {
+      "uniqueBrands": 222,
+      "dailyBrands": 1277,
+      "udon": 2956
+    },
+    "meanRank": 1.25
+  }
+}

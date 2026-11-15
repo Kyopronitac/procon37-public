@@ -1,0 +1,123 @@
+{
+  "candidate": "C007-compact",
+  "recordedAt": "2026-10-08T23:50:55.147991+00:00",
+  "status": "unadopted; local correctness and finite synthetic microbench only; no remote deployment or server evaluation",
+  "sourceAggregateSha256": "8db728384c9a6cc3727c8def4a0e4f6720a5dd54b370ab33675e4789415e731f",
+  "toolchain": {
+    "rustc": "1.94.0 (4a4ef493e 2026-03-02)",
+    "cargo": "1.94.0 (85eff7c80 2026-01-15)",
+    "profile": "release",
+    "cpuAffinity": {
+      "initialBuildAndNetwork": "1,3,5,7",
+      "finalBuildUnitAndMicrobench": "1"
+    },
+    "buildJobs": 1,
+    "testThreads": 1
+  },
+  "binary": {
+    "path": "target/release/distributed-solver",
+    "sha256": "49eb466a4eb127075bbb5ce9bd90e297ca19f8cb7e61f6af320d585aef53cecc"
+  },
+  "unitTests": {
+    "passed": 13,
+    "failed": 0,
+    "log": "/tmp/c007-unit-tests.log",
+    "logSha256": "25adbd896e96fc279e26332deeacdd6267fc8b4dad3078f632d1b2788bf36fb8",
+    "ignored": 1,
+    "ignoredReason": "explicit finite performance microbench, separately executed and passed"
+  },
+  "compactEquivalence": {
+    "exactPathComparisons": 1608270,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "generatedPlayers": 4,
+    "arenaMaps": true,
+    "pathModes": 6,
+    "checks": [
+      "D0 eager visit list equals lazy visit list",
+      "departure-cell duration/fuel equals D0 eager sum",
+      "shop visit order",
+      "path mode uniqueness mask",
+      "no visit lists allocated by graph construction or duplicate-mode detection",
+      "cached visit list reuse",
+      "forced fingerprint collision does not merge distinct paths"
+    ],
+    "cases": [
+      {
+        "seed": 0,
+        "sources": 210,
+        "targets": 210,
+        "paths": 264600
+      },
+      {
+        "seed": 1,
+        "sources": 447,
+        "targets": 159,
+        "paths": 426438
+      },
+      {
+        "seed": 2,
+        "sources": 776,
+        "targets": 197,
+        "paths": 917232
+      }
+    ]
+  },
+  "networkTests": {
+    "passed": 2,
+    "failed": 0,
+    "log": "/tmp/c007-network-tests.log",
+    "logSha256": "a997571e5d783e8c7231ca5ac86223abfc8fb725d0e0f88b2f02acfb1649e58f"
+  },
+  "processes": [
+    {
+      "pid": 90535,
+      "stopped": true,
+      "record": "/tmp/procon37-parallel16-test-90533/parallel16.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 90558,
+      "stopped": true,
+      "record": "/tmp/procon37-dist-test-90533-1791503107661/coordinator.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 90582,
+      "stopped": true,
+      "record": "/tmp/procon37-dist-test-90533-1791503107661/worker-a-restarted.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 90552,
+      "stopped": true,
+      "record": "/tmp/procon37-dist-test-90533-1791503107661/worker-a.process.json",
+      "pidPresent": false
+    },
+    {
+      "pid": 90555,
+      "stopped": true,
+      "record": "/tmp/procon37-dist-test-90533-1791503107661/worker-b.process.json",
+      "pidPresent": false
+    }
+  ],
+  "budget": "D0 unchanged (91%, fixed 110ms, rollout 67%/62%, TCP margins unchanged)",
+  "warning": "existing dead_code warning common/src/generator.rs:day_seconds",
+  "microbench": {
+    "record": "../../docs/distributed/resume-20261009/c007-microbench-20261009.json",
+    "formats": 3,
+    "repetitionsPerFormat": 3,
+    "queryCountPerPhase": 4096,
+    "checksumsMatch": true,
+    "affinity": "1",
+    "passed": true,
+    "adoptionEvidence": false
+  },
+  "readOnlyReview": {
+    "result": "no material correctness findings",
+    "scope": "Dijkstra successor finalization, u16 indices, lazy expansion, collision-safe mode masks, D0 time budget retention"
+  }
+}

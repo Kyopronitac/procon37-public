@@ -1,0 +1,523 @@
+{
+  "hostname": "VOIDLINUX-2",
+  "capturedAtUtc": "2026-10-09T00:45:27.784577+00:00",
+  "directory": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0",
+  "log": {
+    "path": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/resume-team.log",
+    "capturedStartByte": 2544119,
+    "capturedEndByte": 3863228,
+    "previousCapturedRangeSha256Verified": true,
+    "previousRangeStartByte": 1272113,
+    "previousRangeEndByte": 2544119,
+    "previousRangeSha256": "2e6c7f5ebdc4a578ca207967c2f4bade3a188466ddddb9126d27b43e9b69b2fc",
+    "sourceSizeAtOpen": 3863228,
+    "inode": 1600756,
+    "device": 2050,
+    "mtimeNsAtOpen": 1791506628288090109,
+    "sha256OfCapturedByteRange": "4c75e8a4b560287bd96edeca45b9cef16f55537c766dfc445bd44c110e9e7420",
+    "totalLines": 6397,
+    "diagnosticLines": [
+      "dist mode=worker listen=192.168.0.22:39370 total_threads=16 search_threads=15 offset=31 pid=9232",
+      "dist accepted_peer=192.168.0.11:40020",
+      "dist worker request=1 job=1 phase=select input_digest=9b0f11c8123097b3 started=15 budget_ms=8734",
+      "dist worker request=1 completed=15/15 selected_worker=39 elapsed_ms=8289 rx_bytes=1540 tx_bytes=58",
+      "dist worker request=2 job=2 phase=plan input_digest=702c01e057b75a97 started=15 budget_ms=8701",
+      "dist worker request=2 completed=15/15 selected_worker=35 elapsed_ms=8388 rx_bytes=9736 tx_bytes=4672",
+      "dist worker request=3 job=3 phase=plan input_digest=129a8e8ed2d1cb1b started=15 budget_ms=8756",
+      "dist worker request=3 completed=15/15 selected_worker=45 elapsed_ms=8442 rx_bytes=23266 tx_bytes=14790",
+      "dist worker request=4 job=4 phase=plan input_digest=43e855a6f7f472b9 started=15 budget_ms=8758",
+      "dist worker request=4 completed=15/15 selected_worker=36 elapsed_ms=8441 rx_bytes=38303 tx_bytes=26335",
+      "dist worker request=5 job=5 phase=plan input_digest=c9f747b19d6b66a8 started=15 budget_ms=8759",
+      "dist worker request=5 completed=15/15 selected_worker=33 elapsed_ms=8443 rx_bytes=54237 tx_bytes=38851",
+      "dist worker request=6 job=6 phase=plan input_digest=1e5c795cfe9aeede started=15 budget_ms=8758",
+      "dist worker request=6 completed=15/15 selected_worker=32 elapsed_ms=7971 rx_bytes=70071 tx_bytes=51246",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:34068",
+      "dist worker request=1 job=7 phase=select input_digest=4c51c769bcea8577 started=15 budget_ms=8208",
+      "dist worker request=1 completed=15/15 selected_worker=36 elapsed_ms=7772 rx_bytes=2477 tx_bytes=58",
+      "dist worker request=2 job=8 phase=plan input_digest=d8d75ca54303d20e started=15 budget_ms=8849",
+      "dist worker request=2 completed=15/15 selected_worker=39 elapsed_ms=8382 rx_bytes=18289 tx_bytes=8926",
+      "dist worker request=3 job=9 phase=plan input_digest=86da9776b8f55712 started=15 budget_ms=8707",
+      "dist worker request=3 completed=15/15 selected_worker=42 elapsed_ms=8258 rx_bytes=45540 tx_bytes=29614",
+      "dist worker request=4 job=10 phase=plan input_digest=ef8b234eadc58f16 started=15 budget_ms=8695",
+      "dist worker request=4 completed=15/15 selected_worker=40 elapsed_ms=8250 rx_bytes=75261 tx_bytes=52755",
+      "dist worker request=5 job=11 phase=plan input_digest=f0aa560432af6db7 started=15 budget_ms=8686",
+      "dist worker request=5 completed=15/15 selected_worker=42 elapsed_ms=8243 rx_bytes=107197 tx_bytes=78097",
+      "dist worker request=6 job=12 phase=plan input_digest=f7e29c72fd8d0536 started=15 budget_ms=8685",
+      "dist worker request=6 completed=15/15 selected_worker=36 elapsed_ms=7906 rx_bytes=139192 tx_bytes=103529",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:59798",
+      "dist worker request=1 job=13 phase=select input_digest=b2617693af20771a started=15 budget_ms=7943",
+      "dist worker request=1 completed=15/15 selected_worker=38 elapsed_ms=7539 rx_bytes=3675 tx_bytes=58",
+      "dist worker request=2 job=14 phase=plan input_digest=2686bd2d57dbc3a3 started=15 budget_ms=8687",
+      "dist worker request=2 completed=15/15 selected_worker=35 elapsed_ms=8243 rx_bytes=26748 tx_bytes=13170",
+      "dist worker request=3 job=15 phase=plan input_digest=11b1c593264f4ae8 started=15 budget_ms=8689",
+      "dist worker request=3 completed=15/15 selected_worker=38 elapsed_ms=8260 rx_bytes=69085 tx_bytes=46141",
+      "dist worker request=4 job=16 phase=plan input_digest=d8c3228f52885d1c started=15 budget_ms=8860",
+      "dist worker request=4 completed=15/15 selected_worker=42 elapsed_ms=8426 rx_bytes=116545 tx_bytes=84245",
+      "dist worker request=5 job=17 phase=plan input_digest=911a2fe6bbad3156 started=15 budget_ms=8689",
+      "dist worker request=5 completed=15/15 selected_worker=38 elapsed_ms=8262 rx_bytes=168836 tx_bytes=127020",
+      "dist worker request=6 job=18 phase=plan input_digest=5315526906088870 started=15 budget_ms=8860",
+      "dist worker request=6 completed=15/15 selected_worker=35 elapsed_ms=8067 rx_bytes=221215 tx_bytes=170019",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:32996",
+      "dist worker request=1 job=19 phase=select input_digest=68c3d7477ed14d28 started=15 budget_ms=8209",
+      "dist worker request=1 completed=15/15 selected_worker=45 elapsed_ms=7782 rx_bytes=1580 tx_bytes=58",
+      "dist worker request=2 job=20 phase=plan input_digest=8358ca0ca50861ba started=15 budget_ms=8859",
+      "dist worker request=2 completed=15/15 selected_worker=36 elapsed_ms=8547 rx_bytes=9278 tx_bytes=4426",
+      "dist worker request=3 job=21 phase=plan input_digest=96c65401fdbbc73e started=15 budget_ms=8762",
+      "dist worker request=3 completed=15/15 selected_worker=36 elapsed_ms=8450 rx_bytes=21253 tx_bytes=13596",
+      "dist worker request=4 job=22 phase=plan input_digest=aed1a17934c55225 started=15 budget_ms=8760",
+      "dist worker request=4 completed=15/15 selected_worker=44 elapsed_ms=8444 rx_bytes=35088 tx_bytes=24469",
+      "dist worker request=5 job=23 phase=plan input_digest=8de985c9947c43d2 started=15 budget_ms=8760",
+      "dist worker request=5 completed=15/15 selected_worker=35 elapsed_ms=8443 rx_bytes=49185 tx_bytes=35608",
+      "dist worker request=6 job=24 phase=plan input_digest=d70857761cae7d72 started=15 budget_ms=8757",
+      "dist worker request=6 completed=15/15 selected_worker=31 elapsed_ms=8442 rx_bytes=62720 tx_bytes=46253",
+      "dist worker request=7 job=25 phase=plan input_digest=fc1b91bf80900f6c started=15 budget_ms=8760",
+      "dist worker request=7 completed=15/15 selected_worker=38 elapsed_ms=8444 rx_bytes=75716 tx_bytes=56072",
+      "dist worker request=8 job=26 phase=plan input_digest=8652cbbf947df182 started=15 budget_ms=8760",
+      "dist worker request=8 completed=15/15 selected_worker=31 elapsed_ms=8446 rx_bytes=89377 tx_bytes=66725",
+      "dist worker request=9 job=27 phase=plan input_digest=fa12ad462b54434d started=15 budget_ms=8757",
+      "dist worker request=9 completed=15/15 selected_worker=36 elapsed_ms=8442 rx_bytes=103137 tx_bytes=77511",
+      "dist worker request=10 job=28 phase=plan input_digest=8d245677612aadbf started=15 budget_ms=8758",
+      "dist worker request=10 completed=15/15 selected_worker=32 elapsed_ms=8442 rx_bytes=116641 tx_bytes=88077",
+      "dist worker request=11 job=29 phase=plan input_digest=6728920e0756862f started=15 budget_ms=8754",
+      "dist worker request=11 completed=15/15 selected_worker=38 elapsed_ms=7969 rx_bytes=130240 tx_bytes=98609",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:58478",
+      "dist worker request=1 job=30 phase=select input_digest=4d87aae2e63bf4fb started=15 budget_ms=8059",
+      "dist worker request=1 completed=15/15 selected_worker=35 elapsed_ms=7628 rx_bytes=2477 tx_bytes=58",
+      "dist worker request=2 job=31 phase=plan input_digest=8750082002323565 started=15 budget_ms=8804",
+      "dist worker request=2 completed=15/15 selected_worker=45 elapsed_ms=8338 rx_bytes=16393 tx_bytes=7961",
+      "dist worker request=3 job=32 phase=plan input_digest=ee61e7f8190434a8 started=15 budget_ms=8709",
+      "dist worker request=3 completed=15/15 selected_worker=37 elapsed_ms=8261 rx_bytes=41489 tx_bytes=27337",
+      "dist worker request=4 job=33 phase=plan input_digest=7c57f0de6e176bb0 started=15 budget_ms=8693",
+      "dist worker request=4 completed=15/15 selected_worker=31 elapsed_ms=8244 rx_bytes=68272 tx_bytes=48421",
+      "dist worker request=5 job=34 phase=plan input_digest=c504d77942184dd0 started=15 budget_ms=8686",
+      "dist worker request=5 completed=15/15 selected_worker=43 elapsed_ms=8244 rx_bytes=97134 tx_bytes=71553",
+      "dist worker request=6 job=35 phase=plan input_digest=77ccfc8b3b93d8c9 started=15 budget_ms=8689",
+      "dist worker request=6 completed=15/15 selected_worker=31 elapsed_ms=7910 rx_bytes=126130 tx_bytes=94833",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:60170",
+      "dist worker request=1 job=36 phase=select input_digest=4519af74b157cb22 started=15 budget_ms=8253",
+      "dist worker request=1 completed=15/15 selected_worker=33 elapsed_ms=7831 rx_bytes=3681 tx_bytes=58",
+      "dist worker request=2 job=37 phase=plan input_digest=08588b432d4b480f started=15 budget_ms=8789",
+      "dist worker request=2 completed=15/15 selected_worker=34 elapsed_ms=8342 rx_bytes=29133 tx_bytes=14304",
+      "dist worker request=3 job=38 phase=plan input_digest=9cc1d1191f9c4088 started=15 budget_ms=8685",
+      "dist worker request=3 completed=15/15 selected_worker=42 elapsed_ms=8253 rx_bytes=75302 tx_bytes=49808",
+      "dist worker request=4 job=39 phase=plan input_digest=77966a1cce562521 started=15 budget_ms=8862",
+      "dist worker request=4 completed=15/15 selected_worker=32 elapsed_ms=8425 rx_bytes=124275 tx_bytes=88042",
+      "dist worker request=5 job=40 phase=plan input_digest=9fc6bb9761ff9c28 started=15 budget_ms=8685",
+      "dist worker request=5 completed=15/15 selected_worker=38 elapsed_ms=8256 rx_bytes=176471 tx_bytes=129480",
+      "dist worker request=6 job=41 phase=plan input_digest=03153db637eb4136 started=15 budget_ms=8858",
+      "dist worker request=6 completed=15/15 selected_worker=40 elapsed_ms=8425 rx_bytes=228886 tx_bytes=171244",
+      "dist worker request=7 job=42 phase=plan input_digest=040e5531ad1e2886 started=15 budget_ms=8684",
+      "dist worker request=7 completed=15/15 selected_worker=35 elapsed_ms=7906 rx_bytes=281137 tx_bytes=212783",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:59474",
+      "dist worker request=1 job=43 phase=select input_digest=3292fb1be23396a7 started=15 budget_ms=8059",
+      "dist worker request=1 completed=15/15 selected_worker=37 elapsed_ms=7627 rx_bytes=1560 tx_bytes=58",
+      "dist worker request=2 job=44 phase=plan input_digest=abed184dd35aeb93 started=15 budget_ms=8785",
+      "dist worker request=2 completed=15/15 selected_worker=42 elapsed_ms=8464 rx_bytes=9626 tx_bytes=4392",
+      "dist worker request=3 job=45 phase=plan input_digest=f27dbddb1049f12f started=15 budget_ms=8762",
+      "dist worker request=3 completed=15/15 selected_worker=43 elapsed_ms=8441 rx_bytes=22778 tx_bytes=14281",
+      "dist worker request=4 job=46 phase=plan input_digest=deedb8456ca6f01b started=15 budget_ms=8759",
+      "dist worker request=4 completed=15/15 selected_worker=42 elapsed_ms=8440 rx_bytes=36446 tx_bytes=24688",
+      "dist worker request=5 job=47 phase=plan input_digest=2d1f30b90414f891 started=15 budget_ms=8761",
+      "dist worker request=5 completed=15/15 selected_worker=39 elapsed_ms=8442 rx_bytes=51134 tx_bytes=36101",
+      "dist worker request=6 job=48 phase=plan input_digest=545fc2a9bb03c8a1 started=15 budget_ms=8760",
+      "dist worker request=6 completed=15/15 selected_worker=44 elapsed_ms=8451 rx_bytes=65803 tx_bytes=47574",
+      "dist worker request=7 job=49 phase=plan input_digest=60c26224d9d1857e started=15 budget_ms=8760",
+      "dist worker request=7 completed=15/15 selected_worker=35 elapsed_ms=8441 rx_bytes=80450 tx_bytes=59007",
+      "dist worker request=8 job=50 phase=plan input_digest=eb6b15e0573ae7e7 started=15 budget_ms=8760",
+      "dist worker request=8 completed=15/15 selected_worker=41 elapsed_ms=8446 rx_bytes=95291 tx_bytes=70634",
+      "dist worker request=9 job=51 phase=plan input_digest=ee9c9c432f365c65 started=15 budget_ms=8760",
+      "dist worker request=9 completed=15/15 selected_worker=32 elapsed_ms=7973 rx_bytes=110173 tx_bytes=82323",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:41436",
+      "dist worker request=1 job=52 phase=select input_digest=58ff21aec032b4b3 started=15 budget_ms=8338",
+      "dist worker request=1 completed=15/15 selected_worker=44 elapsed_ms=7902 rx_bytes=2481 tx_bytes=58",
+      "dist worker request=2 job=53 phase=plan input_digest=4aaf9926b5a60af8 started=15 budget_ms=8730",
+      "dist worker request=2 completed=15/15 selected_worker=35 elapsed_ms=8261 rx_bytes=16776 tx_bytes=8197",
+      "dist worker request=3 job=54 phase=plan input_digest=a02f4c765c63b571 started=15 budget_ms=8709",
+      "dist worker request=3 completed=15/15 selected_worker=37 elapsed_ms=8267 rx_bytes=40541 tx_bytes=26511",
+      "dist worker request=4 job=55 phase=plan input_digest=7ef72d6ac79d6a55 started=15 budget_ms=8686",
+      "dist worker request=4 completed=15/15 selected_worker=42 elapsed_ms=8247 rx_bytes=67119 tx_bytes=47624",
+      "dist worker request=5 job=56 phase=plan input_digest=4a8df206daa9debb started=15 budget_ms=8870",
+      "dist worker request=5 completed=15/15 selected_worker=42 elapsed_ms=8424 rx_bytes=94669 tx_bytes=69489",
+      "dist worker request=6 job=57 phase=plan input_digest=3aa54eedbb73d8ed started=15 budget_ms=8701",
+      "dist worker request=6 completed=15/15 selected_worker=36 elapsed_ms=7920 rx_bytes=121789 tx_bytes=90817",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:54572",
+      "dist worker request=1 job=58 phase=select input_digest=c973e38bb18a4355 started=15 budget_ms=8066",
+      "dist worker request=1 completed=15/15 selected_worker=44 elapsed_ms=7655 rx_bytes=3681 tx_bytes=58",
+      "dist worker request=2 job=59 phase=plan input_digest=3a84294b2aae055a started=15 budget_ms=8770",
+      "dist worker request=2 completed=15/15 selected_worker=35 elapsed_ms=8337 rx_bytes=27216 tx_bytes=13520",
+      "dist worker request=3 job=60 phase=plan input_digest=53742f8438eb6346 started=15 budget_ms=8682",
+      "dist worker request=3 completed=15/15 selected_worker=36 elapsed_ms=8254 rx_bytes=70051 tx_bytes=47964",
+      "dist worker request=4 job=61 phase=plan input_digest=8daa0c5ffea85843 started=15 budget_ms=8856",
+      "dist worker request=4 completed=15/15 selected_worker=33 elapsed_ms=8422 rx_bytes=117002 tx_bytes=86018",
+      "dist worker request=5 job=62 phase=plan input_digest=f797fe8a4b699d15 started=15 budget_ms=8683",
+      "dist worker request=5 completed=15/15 selected_worker=33 elapsed_ms=8255 rx_bytes=166146 tx_bytes=126146",
+      "dist worker request=6 job=63 phase=plan input_digest=f2eb671051996e63 started=15 budget_ms=8859",
+      "dist worker request=6 completed=15/15 selected_worker=44 elapsed_ms=8065 rx_bytes=215392 tx_bytes=166608",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:35692",
+      "dist worker request=1 job=64 phase=select input_digest=f2761b5a2f606ba6 started=15 budget_ms=8319",
+      "dist worker request=1 completed=15/15 selected_worker=32 elapsed_ms=7878 rx_bytes=1545 tx_bytes=58",
+      "dist worker request=2 job=65 phase=plan input_digest=d40e21bf73769931 started=15 budget_ms=8756",
+      "dist worker request=2 completed=15/15 selected_worker=34 elapsed_ms=8438 rx_bytes=8938 tx_bytes=4235",
+      "dist worker request=3 job=66 phase=plan input_digest=970c9c7bd5313449 started=15 budget_ms=8761",
+      "dist worker request=3 completed=15/15 selected_worker=39 elapsed_ms=8445 rx_bytes=21813 tx_bytes=14044",
+      "dist worker request=4 job=67 phase=plan input_digest=a03d9d4012b3bde2 started=15 budget_ms=8760",
+      "dist worker request=4 completed=15/15 selected_worker=43 elapsed_ms=8442 rx_bytes=35240 tx_bytes=24421",
+      "dist worker request=5 job=68 phase=plan input_digest=b3d212550e59b831 started=15 budget_ms=8760",
+      "dist worker request=5 completed=15/15 selected_worker=31 elapsed_ms=8443 rx_bytes=49261 tx_bytes=35402",
+      "dist worker request=6 job=69 phase=plan input_digest=2f832e27ff3196b6 started=15 budget_ms=8761",
+      "dist worker request=6 completed=15/15 selected_worker=36 elapsed_ms=7973 rx_bytes=63434 tx_bytes=46548",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:55146",
+      "dist worker request=1 job=70 phase=select input_digest=b1f533d13c4268f1 started=15 budget_ms=8021",
+      "dist worker request=1 completed=15/15 selected_worker=33 elapsed_ms=7596 rx_bytes=2501 tx_bytes=58",
+      "dist worker request=2 job=71 phase=plan input_digest=793a88922db21527 started=15 budget_ms=8826",
+      "dist worker request=2 completed=15/15 selected_worker=39 elapsed_ms=8377 rx_bytes=17383 tx_bytes=8545",
+      "dist worker request=3 job=72 phase=plan input_digest=dbe0c88fea7086bc started=15 budget_ms=8698",
+      "dist worker request=3 completed=15/15 selected_worker=33 elapsed_ms=8255 rx_bytes=43798 tx_bytes=29053",
+      "dist worker request=4 job=73 phase=plan input_digest=bd4e4f7584052eff started=15 budget_ms=8687",
+      "dist worker request=4 completed=15/15 selected_worker=36 elapsed_ms=8246 rx_bytes=72606 tx_bytes=51920",
+      "dist worker request=5 job=74 phase=plan input_digest=d1bf04c62c216ec8 started=15 budget_ms=8686",
+      "dist worker request=5 completed=15/15 selected_worker=45 elapsed_ms=8244 rx_bytes=102983 tx_bytes=76245",
+      "dist worker request=6 job=75 phase=plan input_digest=a93629168b9a088f started=15 budget_ms=8686",
+      "dist worker request=6 completed=15/15 selected_worker=45 elapsed_ms=8239 rx_bytes=133877 tx_bytes=101141",
+      "dist worker request=7 job=76 phase=plan input_digest=f7042ec6e3322707 started=15 budget_ms=8686",
+      "dist worker request=7 completed=15/15 selected_worker=45 elapsed_ms=8244 rx_bytes=164295 tx_bytes=125648",
+      "dist worker request=8 job=77 phase=plan input_digest=2f8f92ac96e5c949 started=15 budget_ms=8686",
+      "dist worker request=8 completed=15/15 selected_worker=39 elapsed_ms=8245 rx_bytes=194314 tx_bytes=149642",
+      "dist worker request=9 job=78 phase=plan input_digest=280554eab87b7388 started=15 budget_ms=8685",
+      "dist worker request=9 completed=15/15 selected_worker=39 elapsed_ms=7907 rx_bytes=224926 tx_bytes=174271",
+      "dist worker connection_closed=peer disconnected",
+      "dist accepted_peer=192.168.0.11:48310",
+      "dist worker request=1 job=79 phase=select input_digest=f9ee3a0ac6b16910 started=15 budget_ms=8339",
+      "dist worker request=1 completed=15/15 selected_worker=42 elapsed_ms=7935 rx_bytes=3675 tx_bytes=58",
+      "dist worker request=2 job=80 phase=plan input_digest=f653a64d52d48cdc started=15 budget_ms=8693",
+      "dist worker request=2 completed=15/15 selected_worker=35 elapsed_ms=8283 rx_bytes=28282 tx_bytes=14089",
+      "dist worker request=3 job=81 phase=plan input_digest=384159b487c07cb1 started=15 budget_ms=8850",
+      "dist worker request=3 completed=15/15 selected_worker=38 elapsed_ms=8432 rx_bytes=70937 tx_bytes=47166",
+      "dist worker request=4 job=82 phase=plan input_digest=8e99a2d7c2113c59 started=15 budget_ms=8860",
+      "dist worker request=4 completed=15/15 selected_worker=37 elapsed_ms=8440 rx_bytes=118282 tx_bytes=84599",
+      "dist worker request=5 job=83 phase=plan input_digest=2804ff0f3d62dbfa started=15 budget_ms=8859",
+      "dist worker request=5 completed=15/15 selected_worker=44 elapsed_ms=8442 rx_bytes=169600 tx_bytes=125921",
+      "dist worker request=6 job=84 phase=plan input_digest=c0e73adee20ed864 started=15 budget_ms=8858",
+      "dist worker request=6 completed=15/15 selected_worker=45 elapsed_ms=8064 rx_bytes=219757 tx_bytes=166208",
+      "dist worker connection_closed=peer disconnected"
+    ],
+    "sharedGraphLines": [
+      "shared_graph context=before_request_1 {\"budgetLimitedRequests\":0,\"buildMs\":0.0,\"builds\":0,\"bypasses\":0,\"completedBuilds\":0,\"evictions\":0,\"failures\":0,\"hits\":0,\"liveBaseBytesEstimate\":0,\"liveCellBytes\":0,\"liveTables\":0,\"materializedBytes\":0,\"materializedPaths\":0,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":0,\"peakTableBytesEstimate\":0,\"requests\":0,\"retainedEntries\":0,\"retainedTableBytesEstimate\":0,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":0.0,\"waits\":0}",
+      "shared_graph context=before_request_2 {\"budgetLimitedRequests\":30,\"buildMs\":1398.440091,\"builds\":16,\"bypasses\":11,\"completedBuilds\":16,\"evictions\":1,\"failures\":0,\"hits\":14,\"liveBaseBytesEstimate\":66498080,\"liveCellBytes\":29053080,\"liveTables\":4,\"materializedBytes\":127383488,\"materializedPaths\":1692137,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":357663045,\"requests\":30,\"retainedEntries\":4,\"retainedTableBytesEstimate\":95551160,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":498.174518,\"waits\":14}",
+      "shared_graph context=before_request_3 {\"budgetLimitedRequests\":75,\"buildMs\":2675.984025,\"builds\":38,\"bypasses\":24,\"completedBuilds\":38,\"evictions\":10,\"failures\":0,\"hits\":37,\"liveBaseBytesEstimate\":66498080,\"liveCellBytes\":19051768,\"liveTables\":4,\"materializedBytes\":249615440,\"materializedPaths\":3384423,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":357663045,\"requests\":75,\"retainedEntries\":4,\"retainedTableBytesEstimate\":85549848,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":1349.581772,\"waits\":36}",
+      "shared_graph context=before_request_4 {\"budgetLimitedRequests\":120,\"buildMs\":4812.897391,\"builds\":67,\"bypasses\":43,\"completedBuilds\":67,\"evictions\":20,\"failures\":0,\"hits\":53,\"liveBaseBytesEstimate\":66498080,\"liveCellBytes\":20540824,\"liveTables\":4,\"materializedBytes\":408953344,\"materializedPaths\":5564042,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":357663045,\"requests\":120,\"retainedEntries\":4,\"retainedTableBytesEstimate\":87038904,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":2026.776221,\"waits\":52}",
+      "shared_graph context=before_request_5 {\"budgetLimitedRequests\":165,\"buildMs\":6875.52913,\"builds\":97,\"bypasses\":64,\"completedBuilds\":97,\"evictions\":29,\"failures\":0,\"hits\":68,\"liveBaseBytesEstimate\":66498080,\"liveCellBytes\":19288616,\"liveTables\":4,\"materializedBytes\":567243400,\"materializedPaths\":7686855,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":357663045,\"requests\":165,\"retainedEntries\":4,\"retainedTableBytesEstimate\":85786696,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":2575.882309,\"waits\":67}",
+      "shared_graph context=before_request_6 {\"budgetLimitedRequests\":210,\"buildMs\":8681.642761,\"builds\":125,\"bypasses\":82,\"completedBuilds\":125,\"evictions\":39,\"failures\":0,\"hits\":85,\"liveBaseBytesEstimate\":66638029,\"liveCellBytes\":22064272,\"liveTables\":4,\"materializedBytes\":736515424,\"materializedPaths\":9967599,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":357663045,\"requests\":210,\"retainedEntries\":4,\"retainedTableBytesEstimate\":88702301,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":3212.715043,\"waits\":84}",
+      "shared_graph context=before_request_7 {\"budgetLimitedRequests\":225,\"buildMs\":8708.407249,\"builds\":126,\"bypasses\":82,\"completedBuilds\":126,\"evictions\":40,\"failures\":0,\"hits\":99,\"liveBaseBytesEstimate\":66638029,\"liveCellBytes\":36701024,\"liveTables\":4,\"materializedBytes\":756625840,\"materializedPaths\":10236144,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":357663045,\"requests\":225,\"retainedEntries\":4,\"retainedTableBytesEstimate\":103339053,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":3662.622269,\"waits\":98}",
+      "shared_graph context=before_request_8 {\"budgetLimitedRequests\":255,\"buildMs\":10513.989349,\"builds\":142,\"bypasses\":93,\"completedBuilds\":142,\"evictions\":45,\"failures\":0,\"hits\":113,\"liveBaseBytesEstimate\":97167469,\"liveCellBytes\":32337792,\"liveTables\":4,\"materializedBytes\":898366792,\"materializedPaths\":11337150,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":484255328,\"requests\":255,\"retainedEntries\":4,\"retainedTableBytesEstimate\":129505261,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":4497.963899,\"waits\":112}",
+      "shared_graph context=before_request_9 {\"budgetLimitedRequests\":285,\"buildMs\":10955.294519,\"builds\":149,\"bypasses\":95,\"completedBuilds\":149,\"evictions\":50,\"failures\":0,\"hits\":136,\"liveBaseBytesEstimate\":96329534,\"liveCellBytes\":41566944,\"liveTables\":4,\"materializedBytes\":976500904,\"materializedPaths\":11935755,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":484255328,\"requests\":285,\"retainedEntries\":4,\"retainedTableBytesEstimate\":137896478,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":5933.228026,\"waits\":135}",
+      "shared_graph context=before_request_10 {\"budgetLimitedRequests\":315,\"buildMs\":12749.11327,\"builds\":165,\"bypasses\":106,\"completedBuilds\":165,\"evictions\":55,\"failures\":0,\"hits\":150,\"liveBaseBytesEstimate\":94903011,\"liveCellBytes\":28879160,\"liveTables\":4,\"materializedBytes\":1098277672,\"materializedPaths\":12892528,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":484255328,\"requests\":315,\"retainedEntries\":4,\"retainedTableBytesEstimate\":123782171,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":6692.316789,\"waits\":149}",
+      "shared_graph context=before_request_11 {\"budgetLimitedRequests\":345,\"buildMs\":14610.503499,\"builds\":181,\"bypasses\":117,\"completedBuilds\":181,\"evictions\":60,\"failures\":0,\"hits\":164,\"liveBaseBytesEstimate\":97167469,\"liveCellBytes\":27849400,\"liveTables\":4,\"materializedBytes\":1219950296,\"materializedPaths\":13860608,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":484255328,\"requests\":345,\"retainedEntries\":4,\"retainedTableBytesEstimate\":125016869,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":7556.715371,\"waits\":163}",
+      "shared_graph context=before_request_12 {\"budgetLimitedRequests\":375,\"buildMs\":16482.990167,\"builds\":197,\"bypasses\":128,\"completedBuilds\":197,\"evictions\":65,\"failures\":0,\"hits\":178,\"liveBaseBytesEstimate\":94817184,\"liveCellBytes\":33839200,\"liveTables\":4,\"materializedBytes\":1361957056,\"materializedPaths\":14976138,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":484255328,\"requests\":375,\"retainedEntries\":4,\"retainedTableBytesEstimate\":128656384,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":8310.038281,\"waits\":177}",
+      "shared_graph context=before_request_13 {\"budgetLimitedRequests\":390,\"buildMs\":16534.054562,\"builds\":198,\"bypasses\":128,\"completedBuilds\":198,\"evictions\":66,\"failures\":0,\"hits\":192,\"liveBaseBytesEstimate\":95111478,\"liveCellBytes\":40644232,\"liveTables\":4,\"materializedBytes\":1377119880,\"materializedPaths\":15096391,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":484255328,\"requests\":390,\"retainedEntries\":4,\"retainedTableBytesEstimate\":135755710,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":9111.531279,\"waits\":191}",
+      "shared_graph context=before_request_14 {\"budgetLimitedRequests\":420,\"buildMs\":21883.545213,\"builds\":214,\"bypasses\":139,\"completedBuilds\":214,\"evictions\":73,\"failures\":0,\"hits\":206,\"liveBaseBytesEstimate\":103553664,\"liveCellBytes\":25197576,\"liveTables\":2,\"materializedBytes\":1583284112,\"materializedPaths\":16344490,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":347,\"peakTableBytesEstimate\":940599060,\"requests\":420,\"retainedEntries\":2,\"retainedTableBytesEstimate\":128751240,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":11241.303908,\"waits\":205}",
+      "shared_graph context=before_request_15 {\"budgetLimitedRequests\":450,\"buildMs\":24203.247317,\"builds\":225,\"bypasses\":145,\"completedBuilds\":225,\"evictions\":78,\"failures\":0,\"hits\":225,\"liveBaseBytesEstimate\":101852348,\"liveCellBytes\":30534888,\"liveTables\":2,\"materializedBytes\":1736031984,\"materializedPaths\":17265552,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":347,\"peakTableBytesEstimate\":940599060,\"requests\":450,\"retainedEntries\":2,\"retainedTableBytesEstimate\":132387236,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":14122.564068,\"waits\":224}",
+      "shared_graph context=before_request_16 {\"budgetLimitedRequests\":480,\"buildMs\":30550.246005,\"builds\":241,\"bypasses\":156,\"completedBuilds\":241,\"evictions\":83,\"failures\":0,\"hits\":239,\"liveBaseBytesEstimate\":103210398,\"liveCellBytes\":20592920,\"liveTables\":2,\"materializedBytes\":1928319360,\"materializedPaths\":18455529,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":940599060,\"requests\":480,\"retainedEntries\":2,\"retainedTableBytesEstimate\":123803318,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":15809.396579,\"waits\":238}",
+      "shared_graph context=before_request_17 {\"budgetLimitedRequests\":510,\"buildMs\":36042.942673,\"builds\":257,\"bypasses\":167,\"completedBuilds\":257,\"evictions\":88,\"failures\":0,\"hits\":253,\"liveBaseBytesEstimate\":101560430,\"liveCellBytes\":21979152,\"liveTables\":2,\"materializedBytes\":2124105704,\"materializedPaths\":19675614,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":940599060,\"requests\":510,\"retainedEntries\":2,\"retainedTableBytesEstimate\":123539582,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":17611.332598,\"waits\":252}",
+      "shared_graph context=before_request_18 {\"budgetLimitedRequests\":540,\"buildMs\":41476.882964,\"builds\":273,\"bypasses\":178,\"completedBuilds\":273,\"evictions\":93,\"failures\":0,\"hits\":267,\"liveBaseBytesEstimate\":101268512,\"liveCellBytes\":22563096,\"liveTables\":2,\"materializedBytes\":2326649816,\"materializedPaths\":20902240,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":540,\"retainedEntries\":2,\"retainedTableBytesEstimate\":123831608,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":19376.810804,\"waits\":266}",
+      "shared_graph context=before_request_19 {\"budgetLimitedRequests\":540,\"buildMs\":41606.695949,\"builds\":274,\"bypasses\":178,\"completedBuilds\":274,\"evictions\":94,\"failures\":0,\"hits\":281,\"liveBaseBytesEstimate\":102144266,\"liveCellBytes\":41509792,\"liveTables\":2,\"materializedBytes\":2356169752,\"materializedPaths\":21082244,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":555,\"retainedEntries\":2,\"retainedTableBytesEstimate\":143654058,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":21178.870165,\"waits\":280}",
+      "shared_graph context=before_request_20 {\"budgetLimitedRequests\":570,\"buildMs\":42685.897639,\"builds\":290,\"bypasses\":188,\"completedBuilds\":290,\"evictions\":98,\"failures\":0,\"hits\":295,\"liveBaseBytesEstimate\":63187856,\"liveCellBytes\":35764176,\"liveTables\":4,\"materializedBytes\":2511319024,\"materializedPaths\":22852188,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":585,\"retainedEntries\":4,\"retainedTableBytesEstimate\":98952032,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":21509.74106,\"waits\":294}",
+      "shared_graph context=before_request_21 {\"budgetLimitedRequests\":615,\"buildMs\":44176.550423,\"builds\":316,\"bypasses\":204,\"completedBuilds\":316,\"evictions\":108,\"failures\":0,\"hits\":314,\"liveBaseBytesEstimate\":63187856,\"liveCellBytes\":25071952,\"liveTables\":4,\"materializedBytes\":2693166128,\"materializedPaths\":24914207,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":630,\"retainedEntries\":4,\"retainedTableBytesEstimate\":88259808,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":22257.512339,\"waits\":312}",
+      "shared_graph context=before_request_22 {\"budgetLimitedRequests\":660,\"buildMs\":45939.304852,\"builds\":344,\"bypasses\":222,\"completedBuilds\":344,\"evictions\":118,\"failures\":0,\"hits\":331,\"liveBaseBytesEstimate\":63733780,\"liveCellBytes\":23788008,\"liveTables\":4,\"materializedBytes\":2881069160,\"materializedPaths\":27035314,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":675,\"retainedEntries\":4,\"retainedTableBytesEstimate\":87521788,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":22747.558839,\"waits\":327}",
+      "shared_graph context=before_request_23 {\"budgetLimitedRequests\":705,\"buildMs\":47465.63712,\"builds\":370,\"bypasses\":239,\"completedBuilds\":370,\"evictions\":127,\"failures\":0,\"hits\":350,\"liveBaseBytesEstimate\":63597299,\"liveCellBytes\":23349520,\"liveTables\":4,\"materializedBytes\":3060680560,\"materializedPaths\":29063750,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":720,\"retainedEntries\":4,\"retainedTableBytesEstimate\":86946819,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":23439.223093,\"waits\":346}",
+      "shared_graph context=before_request_24 {\"budgetLimitedRequests\":750,\"buildMs\":49568.153702,\"builds\":401,\"bypasses\":260,\"completedBuilds\":401,\"evictions\":137,\"failures\":0,\"hits\":364,\"liveBaseBytesEstimate\":63324337,\"liveCellBytes\":24874080,\"liveTables\":4,\"materializedBytes\":3252809376,\"materializedPaths\":31265374,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":765,\"retainedEntries\":4,\"retainedTableBytesEstimate\":88198417,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":23838.993407,\"waits\":360}",
+      "shared_graph context=before_request_25 {\"budgetLimitedRequests\":795,\"buildMs\":51132.316406,\"builds\":427,\"bypasses\":276,\"completedBuilds\":427,\"evictions\":147,\"failures\":0,\"hits\":383,\"liveBaseBytesEstimate\":63460818,\"liveCellBytes\":24138000,\"liveTables\":4,\"materializedBytes\":3437735720,\"materializedPaths\":33398139,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":810,\"retainedEntries\":4,\"retainedTableBytesEstimate\":87598818,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":24598.776003,\"waits\":379}",
+      "shared_graph context=before_request_26 {\"budgetLimitedRequests\":840,\"buildMs\":52767.822124,\"builds\":454,\"bypasses\":294,\"completedBuilds\":454,\"evictions\":156,\"failures\":0,\"hits\":401,\"liveBaseBytesEstimate\":63460818,\"liveCellBytes\":22096888,\"liveTables\":4,\"materializedBytes\":3614210416,\"materializedPaths\":35459369,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":855,\"retainedEntries\":4,\"retainedTableBytesEstimate\":85557706,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":25198.568383,\"waits\":397}",
+      "shared_graph context=before_request_27 {\"budgetLimitedRequests\":885,\"buildMs\":54704.870142,\"builds\":484,\"bypasses\":314,\"completedBuilds\":484,\"evictions\":166,\"failures\":0,\"hits\":416,\"liveBaseBytesEstimate\":63460818,\"liveCellBytes\":23719752,\"liveTables\":4,\"materializedBytes\":3808958360,\"materializedPaths\":37679869,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":900,\"retainedEntries\":4,\"retainedTableBytesEstimate\":87180570,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":25658.510477,\"waits\":412}",
+      "shared_graph context=before_request_28 {\"budgetLimitedRequests\":930,\"buildMs\":56800.419665,\"builds\":515,\"bypasses\":335,\"completedBuilds\":515,\"evictions\":176,\"failures\":0,\"hits\":430,\"liveBaseBytesEstimate\":63597299,\"liveCellBytes\":25848280,\"liveTables\":4,\"materializedBytes\":4017670048,\"materializedPaths\":40014271,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":945,\"retainedEntries\":4,\"retainedTableBytesEstimate\":89445579,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":26052.718439,\"waits\":426}",
+      "shared_graph context=before_request_29 {\"budgetLimitedRequests\":975,\"buildMs\":58546.667962,\"builds\":543,\"bypasses\":353,\"completedBuilds\":543,\"evictions\":186,\"failures\":0,\"hits\":447,\"liveBaseBytesEstimate\":63597299,\"liveCellBytes\":20963648,\"liveTables\":4,\"materializedBytes\":4196178976,\"materializedPaths\":42045640,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":990,\"retainedEntries\":4,\"retainedTableBytesEstimate\":84560947,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":26757.391812,\"waits\":443}",
+      "shared_graph context=before_request_30 {\"budgetLimitedRequests\":990,\"buildMs\":58569.643126,\"builds\":544,\"bypasses\":353,\"completedBuilds\":544,\"evictions\":187,\"failures\":0,\"hits\":461,\"liveBaseBytesEstimate\":63460818,\"liveCellBytes\":36398912,\"liveTables\":4,\"materializedBytes\":4217087064,\"materializedPaths\":42294316,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1005,\"retainedEntries\":4,\"retainedTableBytesEstimate\":99859730,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":27142.131909,\"waits\":457}",
+      "shared_graph context=before_request_31 {\"budgetLimitedRequests\":1020,\"buildMs\":60532.762663,\"builds\":560,\"bypasses\":364,\"completedBuilds\":560,\"evictions\":192,\"failures\":0,\"hits\":475,\"liveBaseBytesEstimate\":99109416,\"liveCellBytes\":28923328,\"liveTables\":4,\"materializedBytes\":4337524976,\"materializedPaths\":43353629,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1035,\"retainedEntries\":4,\"retainedTableBytesEstimate\":128032744,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":27987.480422,\"waits\":471}",
+      "shared_graph context=before_request_32 {\"budgetLimitedRequests\":1050,\"buildMs\":60915.561657,\"builds\":566,\"bypasses\":365,\"completedBuilds\":566,\"evictions\":197,\"failures\":0,\"hits\":499,\"liveBaseBytesEstimate\":99607553,\"liveCellBytes\":35456064,\"liveTables\":4,\"materializedBytes\":4397359648,\"materializedPaths\":43878301,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1065,\"retainedEntries\":4,\"retainedTableBytesEstimate\":135063617,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":29496.925321,\"waits\":495}",
+      "shared_graph context=before_request_33 {\"budgetLimitedRequests\":1080,\"buildMs\":62599.9756,\"builds\":581,\"bypasses\":375,\"completedBuilds\":581,\"evictions\":202,\"failures\":0,\"hits\":514,\"liveBaseBytesEstimate\":100140811,\"liveCellBytes\":29625448,\"liveTables\":4,\"materializedBytes\":4503003240,\"materializedPaths\":44813901,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1095,\"retainedEntries\":4,\"retainedTableBytesEstimate\":129766259,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":30432.858875,\"waits\":510}",
+      "shared_graph context=before_request_34 {\"budgetLimitedRequests\":1110,\"buildMs\":64259.478256,\"builds\":596,\"bypasses\":385,\"completedBuilds\":596,\"evictions\":207,\"failures\":0,\"hits\":529,\"liveBaseBytesEstimate\":100306664,\"liveCellBytes\":28612600,\"liveTables\":4,\"materializedBytes\":4613973208,\"materializedPaths\":45792150,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1125,\"retainedEntries\":4,\"retainedTableBytesEstimate\":128919264,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":31362.613788,\"waits\":525}",
+      "shared_graph context=before_request_35 {\"budgetLimitedRequests\":1140,\"buildMs\":66315.406662,\"builds\":612,\"bypasses\":396,\"completedBuilds\":612,\"evictions\":212,\"failures\":0,\"hits\":543,\"liveBaseBytesEstimate\":102296900,\"liveCellBytes\":31002904,\"liveTables\":4,\"materializedBytes\":4742168104,\"materializedPaths\":46923014,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1155,\"retainedEntries\":4,\"retainedTableBytesEstimate\":133299804,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":32160.246063,\"waits\":539}",
+      "shared_graph context=before_request_36 {\"budgetLimitedRequests\":1155,\"buildMs\":66371.11089,\"builds\":613,\"bypasses\":396,\"completedBuilds\":613,\"evictions\":213,\"failures\":0,\"hits\":557,\"liveBaseBytesEstimate\":102628606,\"liveCellBytes\":38748064,\"liveTables\":4,\"materializedBytes\":4758205872,\"materializedPaths\":47063639,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1170,\"retainedEntries\":4,\"retainedTableBytesEstimate\":141376670,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":33031.537275,\"waits\":553}",
+      "shared_graph context=before_request_37 {\"budgetLimitedRequests\":1185,\"buildMs\":71115.343717,\"builds\":629,\"bypasses\":407,\"completedBuilds\":629,\"evictions\":220,\"failures\":0,\"hits\":571,\"liveBaseBytesEstimate\":100653047,\"liveCellBytes\":18180456,\"liveTables\":2,\"materializedBytes\":4931921896,\"materializedPaths\":48272360,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1200,\"retainedEntries\":2,\"retainedTableBytesEstimate\":118833503,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":34925.238417,\"waits\":567}",
+      "shared_graph context=before_request_38 {\"budgetLimitedRequests\":1215,\"buildMs\":72886.148044,\"builds\":639,\"bypasses\":412,\"completedBuilds\":639,\"evictions\":225,\"failures\":0,\"hits\":591,\"liveBaseBytesEstimate\":100370088,\"liveCellBytes\":32118000,\"liveTables\":2,\"materializedBytes\":5070173536,\"materializedPaths\":49228853,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1230,\"retainedEntries\":2,\"retainedTableBytesEstimate\":132488088,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":37766.216689,\"waits\":587}",
+      "shared_graph context=before_request_39 {\"budgetLimitedRequests\":1245,\"buildMs\":77733.948823,\"builds\":655,\"bypasses\":423,\"completedBuilds\":655,\"evictions\":230,\"failures\":0,\"hits\":605,\"liveBaseBytesEstimate\":100653047,\"liveCellBytes\":17315672,\"liveTables\":2,\"materializedBytes\":5235328416,\"materializedPaths\":50373851,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1260,\"retainedEntries\":2,\"retainedTableBytesEstimate\":117968719,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":39367.149934,\"waits\":601}",
+      "shared_graph context=before_request_40 {\"budgetLimitedRequests\":1275,\"buildMs\":82708.595293,\"builds\":671,\"bypasses\":434,\"completedBuilds\":671,\"evictions\":235,\"failures\":0,\"hits\":619,\"liveBaseBytesEstimate\":100087129,\"liveCellBytes\":20928392,\"liveTables\":2,\"materializedBytes\":5412237072,\"materializedPaths\":51605972,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1290,\"retainedEntries\":2,\"retainedTableBytesEstimate\":121015521,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":41021.939573,\"waits\":615}",
+      "shared_graph context=before_request_41 {\"budgetLimitedRequests\":1305,\"buildMs\":87566.934885,\"builds\":687,\"bypasses\":445,\"completedBuilds\":687,\"evictions\":240,\"failures\":0,\"hits\":633,\"liveBaseBytesEstimate\":100653047,\"liveCellBytes\":18865600,\"liveTables\":2,\"materializedBytes\":5585280168,\"materializedPaths\":52799561,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1320,\"retainedEntries\":2,\"retainedTableBytesEstimate\":119518647,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":42648.13447,\"waits\":629}",
+      "shared_graph context=before_request_42 {\"budgetLimitedRequests\":1335,\"buildMs\":92492.512702,\"builds\":703,\"bypasses\":456,\"completedBuilds\":703,\"evictions\":245,\"failures\":0,\"hits\":647,\"liveBaseBytesEstimate\":98672334,\"liveCellBytes\":22058432,\"liveTables\":2,\"materializedBytes\":5782794928,\"materializedPaths\":54141827,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1350,\"retainedEntries\":2,\"retainedTableBytesEstimate\":120730766,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":44461.337761,\"waits\":643}",
+      "shared_graph context=before_request_43 {\"budgetLimitedRequests\":1350,\"buildMs\":92609.72501,\"builds\":704,\"bypasses\":456,\"completedBuilds\":704,\"evictions\":246,\"failures\":0,\"hits\":661,\"liveBaseBytesEstimate\":98722526,\"liveCellBytes\":37482632,\"liveTables\":2,\"materializedBytes\":5809042456,\"materializedPaths\":54317869,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1365,\"retainedEntries\":2,\"retainedTableBytesEstimate\":136205158,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":46091.165388,\"waits\":657}",
+      "shared_graph context=before_request_44 {\"budgetLimitedRequests\":1380,\"buildMs\":93489.937915,\"builds\":720,\"bypasses\":466,\"completedBuilds\":720,\"evictions\":250,\"failures\":0,\"hits\":675,\"liveBaseBytesEstimate\":52754896,\"liveCellBytes\":21632248,\"liveTables\":4,\"materializedBytes\":5905326968,\"materializedPaths\":55558670,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1395,\"retainedEntries\":4,\"retainedTableBytesEstimate\":74387144,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":46381.876698,\"waits\":671}",
+      "shared_graph context=before_request_45 {\"budgetLimitedRequests\":1425,\"buildMs\":94703.65884,\"builds\":746,\"bypasses\":482,\"completedBuilds\":746,\"evictions\":260,\"failures\":0,\"hits\":694,\"liveBaseBytesEstimate\":52879817,\"liveCellBytes\":15857048,\"liveTables\":4,\"materializedBytes\":6029973136,\"materializedPaths\":57147756,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1440,\"retainedEntries\":4,\"retainedTableBytesEstimate\":68736865,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":47005.692681,\"waits\":690}",
+      "shared_graph context=before_request_46 {\"budgetLimitedRequests\":1470,\"buildMs\":96190.545372,\"builds\":775,\"bypasses\":501,\"completedBuilds\":775,\"evictions\":270,\"failures\":0,\"hits\":710,\"liveBaseBytesEstimate\":52754896,\"liveCellBytes\":15544624,\"liveTables\":4,\"materializedBytes\":6155981592,\"materializedPaths\":58792295,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1485,\"retainedEntries\":4,\"retainedTableBytesEstimate\":68299520,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":47438.055998,\"waits\":706}",
+      "shared_graph context=before_request_47 {\"budgetLimitedRequests\":1515,\"buildMs\":97921.793601,\"builds\":806,\"bypasses\":523,\"completedBuilds\":806,\"evictions\":279,\"failures\":0,\"hits\":724,\"liveBaseBytesEstimate\":52754896,\"liveCellBytes\":18915784,\"liveTables\":4,\"materializedBytes\":6310151608,\"materializedPaths\":60802579,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1530,\"retainedEntries\":4,\"retainedTableBytesEstimate\":71670680,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":47777.117095,\"waits\":720}",
+      "shared_graph context=before_request_48 {\"budgetLimitedRequests\":1560,\"buildMs\":99634.161569,\"builds\":837,\"bypasses\":545,\"completedBuilds\":837,\"evictions\":288,\"failures\":0,\"hits\":738,\"liveBaseBytesEstimate\":52879817,\"liveCellBytes\":18846072,\"liveTables\":4,\"materializedBytes\":6459675136,\"materializedPaths\":62761795,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1575,\"retainedEntries\":4,\"retainedTableBytesEstimate\":71725889,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":48157.101402,\"waits\":734}",
+      "shared_graph context=before_request_49 {\"budgetLimitedRequests\":1605,\"buildMs\":101018.355378,\"builds\":864,\"bypasses\":562,\"completedBuilds\":864,\"evictions\":298,\"failures\":0,\"hits\":756,\"liveBaseBytesEstimate\":52754896,\"liveCellBytes\":19620424,\"liveTables\":4,\"materializedBytes\":6610782712,\"materializedPaths\":64753418,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1620,\"retainedEntries\":4,\"retainedTableBytesEstimate\":72375320,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":48732.623772,\"waits\":752}",
+      "shared_graph context=before_request_50 {\"budgetLimitedRequests\":1650,\"buildMs\":102671.501995,\"builds\":894,\"bypasses\":583,\"completedBuilds\":894,\"evictions\":307,\"failures\":0,\"hits\":771,\"liveBaseBytesEstimate\":52879817,\"liveCellBytes\":20979304,\"liveTables\":4,\"materializedBytes\":6774958952,\"materializedPaths\":66849902,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1665,\"retainedEntries\":4,\"retainedTableBytesEstimate\":73859121,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":49136.097782,\"waits\":767}",
+      "shared_graph context=before_request_51 {\"budgetLimitedRequests\":1695,\"buildMs\":104283.879694,\"builds\":924,\"bypasses\":603,\"completedBuilds\":924,\"evictions\":317,\"failures\":0,\"hits\":786,\"liveBaseBytesEstimate\":52754896,\"liveCellBytes\":19781016,\"liveTables\":4,\"materializedBytes\":6939066040,\"materializedPaths\":68971636,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1710,\"retainedEntries\":4,\"retainedTableBytesEstimate\":72535912,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":49619.620316,\"waits\":782}",
+      "shared_graph context=before_request_52 {\"budgetLimitedRequests\":1710,\"buildMs\":104304.352476,\"builds\":925,\"bypasses\":603,\"completedBuilds\":925,\"evictions\":318,\"failures\":0,\"hits\":800,\"liveBaseBytesEstimate\":52754896,\"liveCellBytes\":31284048,\"liveTables\":4,\"materializedBytes\":6955718968,\"materializedPaths\":69176314,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1725,\"retainedEntries\":4,\"retainedTableBytesEstimate\":84038944,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":49973.448274,\"waits\":796}",
+      "shared_graph context=before_request_53 {\"budgetLimitedRequests\":1740,\"buildMs\":106588.569584,\"builds\":941,\"bypasses\":614,\"completedBuilds\":941,\"evictions\":323,\"failures\":0,\"hits\":814,\"liveBaseBytesEstimate\":106096974,\"liveCellBytes\":36698704,\"liveTables\":4,\"materializedBytes\":7112467264,\"materializedPaths\":70449861,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1755,\"retainedEntries\":4,\"retainedTableBytesEstimate\":142795678,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":50678.653155,\"waits\":810}",
+      "shared_graph context=before_request_54 {\"budgetLimitedRequests\":1770,\"buildMs\":106895.810328,\"builds\":946,\"bypasses\":614,\"completedBuilds\":946,\"evictions\":328,\"failures\":0,\"hits\":839,\"liveBaseBytesEstimate\":105318126,\"liveCellBytes\":44445784,\"liveTables\":4,\"materializedBytes\":7177996016,\"materializedPaths\":70971706,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1785,\"retainedEntries\":4,\"retainedTableBytesEstimate\":149763910,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":52096.236935,\"waits\":835}",
+      "shared_graph context=before_request_55 {\"budgetLimitedRequests\":1800,\"buildMs\":108970.687244,\"builds\":962,\"bypasses\":625,\"completedBuilds\":962,\"evictions\":333,\"failures\":0,\"hits\":853,\"liveBaseBytesEstimate\":105034236,\"liveCellBytes\":38195832,\"liveTables\":4,\"materializedBytes\":7337160280,\"materializedPaths\":72250922,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1815,\"retainedEntries\":4,\"retainedTableBytesEstimate\":143230068,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":52893.574043,\"waits\":849}",
+      "shared_graph context=before_request_56 {\"budgetLimitedRequests\":1830,\"buildMs\":110925.36292,\"builds\":978,\"bypasses\":636,\"completedBuilds\":978,\"evictions\":338,\"failures\":0,\"hits\":867,\"liveBaseBytesEstimate\":105153140,\"liveCellBytes\":37928792,\"liveTables\":4,\"materializedBytes\":7497361952,\"materializedPaths\":73562588,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1845,\"retainedEntries\":4,\"retainedTableBytesEstimate\":143081932,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":53674.52835,\"waits\":863}",
+      "shared_graph context=before_request_57 {\"budgetLimitedRequests\":1860,\"buildMs\":112990.147543,\"builds\":994,\"bypasses\":647,\"completedBuilds\":994,\"evictions\":343,\"failures\":0,\"hits\":881,\"liveBaseBytesEstimate\":105602016,\"liveCellBytes\":40176400,\"liveTables\":4,\"materializedBytes\":7668640040,\"materializedPaths\":74931303,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1875,\"retainedEntries\":4,\"retainedTableBytesEstimate\":145778416,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":54424.607668,\"waits\":877}",
+      "shared_graph context=before_request_58 {\"budgetLimitedRequests\":1875,\"buildMs\":113040.068533,\"builds\":995,\"bypasses\":647,\"completedBuilds\":995,\"evictions\":345,\"failures\":0,\"hits\":895,\"liveBaseBytesEstimate\":79336772,\"liveCellBytes\":39781712,\"liveTables\":3,\"materializedBytes\":7688698272,\"materializedPaths\":75082837,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1890,\"retainedEntries\":3,\"retainedTableBytesEstimate\":119118484,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":55224.042313,\"waits\":891}",
+      "shared_graph context=before_request_59 {\"budgetLimitedRequests\":1905,\"buildMs\":118109.513161,\"builds\":1011,\"bypasses\":658,\"completedBuilds\":1011,\"evictions\":351,\"failures\":0,\"hits\":909,\"liveBaseBytesEstimate\":104575541,\"liveCellBytes\":19222992,\"liveTables\":2,\"materializedBytes\":7864288816,\"materializedPaths\":76374841,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1920,\"retainedEntries\":2,\"retainedTableBytesEstimate\":123798533,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":57052.269004,\"waits\":905}",
+      "shared_graph context=before_request_60 {\"budgetLimitedRequests\":1935,\"buildMs\":123271.880383,\"builds\":1027,\"bypasses\":669,\"completedBuilds\":1027,\"evictions\":356,\"failures\":0,\"hits\":923,\"liveBaseBytesEstimate\":104340462,\"liveCellBytes\":18504688,\"liveTables\":2,\"materializedBytes\":8035452136,\"materializedPaths\":77649972,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1950,\"retainedEntries\":2,\"retainedTableBytesEstimate\":122845150,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":58901.835277,\"waits\":919}",
+      "shared_graph context=before_request_61 {\"budgetLimitedRequests\":1965,\"buildMs\":128964.791558,\"builds\":1043,\"bypasses\":680,\"completedBuilds\":1043,\"evictions\":361,\"failures\":0,\"hits\":937,\"liveBaseBytesEstimate\":103578964,\"liveCellBytes\":18879248,\"liveTables\":2,\"materializedBytes\":8201957496,\"materializedPaths\":78925840,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":1980,\"retainedEntries\":2,\"retainedTableBytesEstimate\":122458212,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":60584.266796,\"waits\":933}",
+      "shared_graph context=before_request_62 {\"budgetLimitedRequests\":1995,\"buildMs\":134439.902397,\"builds\":1059,\"bypasses\":691,\"completedBuilds\":1059,\"evictions\":366,\"failures\":0,\"hits\":951,\"liveBaseBytesEstimate\":104969288,\"liveCellBytes\":21319176,\"liveTables\":2,\"materializedBytes\":8374150768,\"materializedPaths\":80226446,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2010,\"retainedEntries\":2,\"retainedTableBytesEstimate\":126288464,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":62358.878398,\"waits\":947}",
+      "shared_graph context=before_request_63 {\"budgetLimitedRequests\":2025,\"buildMs\":139887.598031,\"builds\":1075,\"bypasses\":702,\"completedBuilds\":1075,\"evictions\":371,\"failures\":0,\"hits\":965,\"liveBaseBytesEstimate\":103578964,\"liveCellBytes\":20034712,\"liveTables\":2,\"materializedBytes\":8546129584,\"materializedPaths\":81493498,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2040,\"retainedEntries\":2,\"retainedTableBytesEstimate\":123613676,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":64074.454401,\"waits\":961}",
+      "shared_graph context=before_request_64 {\"budgetLimitedRequests\":2025,\"buildMs\":140016.129003,\"builds\":1076,\"bypasses\":702,\"completedBuilds\":1076,\"evictions\":372,\"failures\":0,\"hits\":979,\"liveBaseBytesEstimate\":103578964,\"liveCellBytes\":37128056,\"liveTables\":2,\"materializedBytes\":8572917784,\"materializedPaths\":81680461,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2055,\"retainedEntries\":2,\"retainedTableBytesEstimate\":140707020,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":65861.37811,\"waits\":975}",
+      "shared_graph context=before_request_65 {\"budgetLimitedRequests\":2055,\"buildMs\":141265.2759,\"builds\":1092,\"bypasses\":713,\"completedBuilds\":1092,\"evictions\":375,\"failures\":0,\"hits\":993,\"liveBaseBytesEstimate\":59563559,\"liveCellBytes\":21612480,\"liveTables\":4,\"materializedBytes\":8675078384,\"materializedPaths\":83097055,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2085,\"retainedEntries\":4,\"retainedTableBytesEstimate\":81176039,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":66209.096435,\"waits\":989}",
+      "shared_graph context=before_request_66 {\"budgetLimitedRequests\":2100,\"buildMs\":142397.327559,\"builds\":1113,\"bypasses\":725,\"completedBuilds\":1113,\"evictions\":384,\"failures\":0,\"hits\":1017,\"liveBaseBytesEstimate\":59563559,\"liveCellBytes\":15723368,\"liveTables\":4,\"materializedBytes\":8780012424,\"materializedPaths\":84560784,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2130,\"retainedEntries\":4,\"retainedTableBytesEstimate\":75286927,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":66981.216273,\"waits\":1012}",
+      "shared_graph context=before_request_67 {\"budgetLimitedRequests\":2145,\"buildMs\":144017.446179,\"builds\":1141,\"bypasses\":743,\"completedBuilds\":1141,\"evictions\":394,\"failures\":0,\"hits\":1034,\"liveBaseBytesEstimate\":59695994,\"liveCellBytes\":19629000,\"liveTables\":4,\"materializedBytes\":8930069064,\"materializedPaths\":86652438,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2175,\"retainedEntries\":4,\"retainedTableBytesEstimate\":79324994,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":67616.442323,\"waits\":1029}",
+      "shared_graph context=before_request_68 {\"budgetLimitedRequests\":2190,\"buildMs\":145593.926893,\"builds\":1168,\"bypasses\":761,\"completedBuilds\":1168,\"evictions\":403,\"failures\":0,\"hits\":1052,\"liveBaseBytesEstimate\":59960864,\"liveCellBytes\":18197944,\"liveTables\":4,\"materializedBytes\":9071142304,\"materializedPaths\":88632727,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2220,\"retainedEntries\":4,\"retainedTableBytesEstimate\":78158808,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":68314.935529,\"waits\":1047}",
+      "shared_graph context=before_request_69 {\"budgetLimitedRequests\":2235,\"buildMs\":147440.269775,\"builds\":1198,\"bypasses\":782,\"completedBuilds\":1198,\"evictions\":412,\"failures\":0,\"hits\":1067,\"liveBaseBytesEstimate\":59695994,\"liveCellBytes\":19928864,\"liveTables\":4,\"materializedBytes\":9223805192,\"materializedPaths\":90737436,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2265,\"retainedEntries\":4,\"retainedTableBytesEstimate\":79624858,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":68802.432597,\"waits\":1062}",
+      "shared_graph context=before_request_70 {\"budgetLimitedRequests\":2250,\"buildMs\":147465.050952,\"builds\":1199,\"bypasses\":782,\"completedBuilds\":1199,\"evictions\":413,\"failures\":0,\"hits\":1081,\"liveBaseBytesEstimate\":59563559,\"liveCellBytes\":33325944,\"liveTables\":4,\"materializedBytes\":9242180896,\"materializedPaths\":90974429,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2280,\"retainedEntries\":4,\"retainedTableBytesEstimate\":92889503,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":69212.76117,\"waits\":1076}",
+      "shared_graph context=before_request_71 {\"budgetLimitedRequests\":2280,\"buildMs\":149352.55152,\"builds\":1215,\"bypasses\":793,\"completedBuilds\":1215,\"evictions\":418,\"failures\":0,\"hits\":1095,\"liveBaseBytesEstimate\":99904785,\"liveCellBytes\":31422624,\"liveTables\":4,\"materializedBytes\":9373566208,\"materializedPaths\":92247357,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2310,\"retainedEntries\":4,\"retainedTableBytesEstimate\":131327409,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":70091.659501,\"waits\":1090}",
+      "shared_graph context=before_request_72 {\"budgetLimitedRequests\":2310,\"buildMs\":150980.100948,\"builds\":1230,\"bypasses\":803,\"completedBuilds\":1230,\"evictions\":423,\"failures\":0,\"hits\":1110,\"liveBaseBytesEstimate\":99303770,\"liveCellBytes\":32258504,\"liveTables\":4,\"materializedBytes\":9499210968,\"materializedPaths\":93452543,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2340,\"retainedEntries\":4,\"retainedTableBytesEstimate\":131562274,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":71222.553229,\"waits\":1105}",
+      "shared_graph context=before_request_73 {\"budgetLimitedRequests\":2340,\"buildMs\":152930.825416,\"builds\":1246,\"bypasses\":814,\"completedBuilds\":1246,\"evictions\":428,\"failures\":0,\"hits\":1124,\"liveBaseBytesEstimate\":99947110,\"liveCellBytes\":30143776,\"liveTables\":4,\"materializedBytes\":9625975320,\"materializedPaths\":94704264,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2370,\"retainedEntries\":4,\"retainedTableBytesEstimate\":130090886,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":72006.251296,\"waits\":1119}",
+      "shared_graph context=before_request_74 {\"budgetLimitedRequests\":2370,\"buildMs\":154808.044515,\"builds\":1262,\"bypasses\":825,\"completedBuilds\":1262,\"evictions\":433,\"failures\":0,\"hits\":1138,\"liveBaseBytesEstimate\":99002540,\"liveCellBytes\":30800416,\"liveTables\":4,\"materializedBytes\":9755919576,\"materializedPaths\":95975937,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2400,\"retainedEntries\":4,\"retainedTableBytesEstimate\":129802956,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":72782.574655,\"waits\":1133}",
+      "shared_graph context=before_request_75 {\"budgetLimitedRequests\":2400,\"buildMs\":156676.584465,\"builds\":1278,\"bypasses\":836,\"completedBuilds\":1278,\"evictions\":438,\"failures\":0,\"hits\":1152,\"liveBaseBytesEstimate\":99006896,\"liveCellBytes\":29953744,\"liveTables\":4,\"materializedBytes\":9882947336,\"materializedPaths\":97205609,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2430,\"retainedEntries\":4,\"retainedTableBytesEstimate\":128960640,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":73565.021988,\"waits\":1147}",
+      "shared_graph context=before_request_76 {\"budgetLimitedRequests\":2430,\"buildMs\":158127.035815,\"builds\":1292,\"bypasses\":845,\"completedBuilds\":1292,\"evictions\":443,\"failures\":0,\"hits\":1168,\"liveBaseBytesEstimate\":99432211,\"liveCellBytes\":33871632,\"liveTables\":4,\"materializedBytes\":9998609472,\"materializedPaths\":98346358,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2460,\"retainedEntries\":4,\"retainedTableBytesEstimate\":133303843,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":74558.694048,\"waits\":1163}",
+      "shared_graph context=before_request_77 {\"budgetLimitedRequests\":2460,\"buildMs\":160046.551697,\"builds\":1308,\"bypasses\":856,\"completedBuilds\":1308,\"evictions\":448,\"failures\":0,\"hits\":1182,\"liveBaseBytesEstimate\":98576358,\"liveCellBytes\":28913584,\"liveTables\":4,\"materializedBytes\":10122659568,\"materializedPaths\":99586489,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2490,\"retainedEntries\":4,\"retainedTableBytesEstimate\":127489942,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":75347.842111,\"waits\":1177}",
+      "shared_graph context=before_request_78 {\"budgetLimitedRequests\":2490,\"buildMs\":161980.454657,\"builds\":1324,\"bypasses\":867,\"completedBuilds\":1324,\"evictions\":453,\"failures\":0,\"hits\":1196,\"liveBaseBytesEstimate\":99303481,\"liveCellBytes\":32104184,\"liveTables\":4,\"materializedBytes\":10253084024,\"materializedPaths\":100851707,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2520,\"retainedEntries\":4,\"retainedTableBytesEstimate\":131407665,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":76119.433157,\"waits\":1191}",
+      "shared_graph context=before_request_79 {\"budgetLimitedRequests\":2505,\"buildMs\":162030.510137,\"builds\":1325,\"bypasses\":867,\"completedBuilds\":1325,\"evictions\":454,\"failures\":0,\"hits\":1210,\"liveBaseBytesEstimate\":99947110,\"liveCellBytes\":37554776,\"liveTables\":4,\"materializedBytes\":10266507160,\"materializedPaths\":100981347,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":944674940,\"requests\":2535,\"retainedEntries\":4,\"retainedTableBytesEstimate\":137501886,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":76933.659459,\"waits\":1205}",
+      "shared_graph context=before_request_80 {\"budgetLimitedRequests\":2535,\"buildMs\":169196.317612,\"builds\":1341,\"bypasses\":878,\"completedBuilds\":1341,\"evictions\":462,\"failures\":0,\"hits\":1224,\"liveBaseBytesEstimate\":68544066,\"liveCellBytes\":13579320,\"liveTables\":1,\"materializedBytes\":10514051176,\"materializedPaths\":102723020,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":1229793572,\"requests\":2565,\"retainedEntries\":1,\"retainedTableBytesEstimate\":82123386,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":79126.06635,\"waits\":1219}",
+      "shared_graph context=before_request_81 {\"budgetLimitedRequests\":2565,\"buildMs\":176566.998689,\"builds\":1357,\"bypasses\":889,\"completedBuilds\":1357,\"evictions\":467,\"failures\":0,\"hits\":1238,\"liveBaseBytesEstimate\":68308120,\"liveCellBytes\":14935104,\"liveTables\":1,\"materializedBytes\":10749618064,\"materializedPaths\":104381150,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":1229793572,\"requests\":2595,\"retainedEntries\":1,\"retainedTableBytesEstimate\":83243224,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":81660.160214,\"waits\":1233}",
+      "shared_graph context=before_request_82 {\"budgetLimitedRequests\":2595,\"buildMs\":184887.172309,\"builds\":1373,\"bypasses\":900,\"completedBuilds\":1373,\"evictions\":472,\"failures\":0,\"hits\":1252,\"liveBaseBytesEstimate\":68308120,\"liveCellBytes\":11502808,\"liveTables\":1,\"materializedBytes\":10964117840,\"materializedPaths\":105937724,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":1229793572,\"requests\":2625,\"retainedEntries\":1,\"retainedTableBytesEstimate\":79810928,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":83714.687899,\"waits\":1247}",
+      "shared_graph context=before_request_83 {\"budgetLimitedRequests\":2625,\"buildMs\":191374.457587,\"builds\":1388,\"bypasses\":910,\"completedBuilds\":1388,\"evictions\":477,\"failures\":0,\"hits\":1267,\"liveBaseBytesEstimate\":68242611,\"liveCellBytes\":16444560,\"liveTables\":1,\"materializedBytes\":11177384024,\"materializedPaths\":107638141,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":1229793572,\"requests\":2655,\"retainedEntries\":1,\"retainedTableBytesEstimate\":84687171,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":86888.663179,\"waits\":1262}",
+      "shared_graph context=before_request_84 {\"budgetLimitedRequests\":2655,\"buildMs\":199040.904284,\"builds\":1404,\"bypasses\":921,\"completedBuilds\":1404,\"evictions\":482,\"failures\":0,\"hits\":1281,\"liveBaseBytesEstimate\":68308120,\"liveCellBytes\":13452776,\"liveTables\":1,\"materializedBytes\":11414797424,\"materializedPaths\":109348785,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":412,\"peakTableBytesEstimate\":1230764779,\"requests\":2685,\"retainedEntries\":1,\"retainedTableBytesEstimate\":81760896,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":89007.736738,\"waits\":1276}"
+    ],
+    "flags": {
+      "timeout": {
+        "count": 84,
+        "samples": [
+          "shared_graph context=before_request_1 {\"budgetLimitedRequests\":0,\"buildMs\":0.0,\"builds\":0,\"bypasses\":0,\"completedBuilds\":0,\"evictions\":0,\"failures\":0,\"hits\":0,\"liveBaseBytesEstimate\":0,\"liveCellBytes\":0,\"liveTables\":0,\"materializedBytes\":0,\"materializedPaths\":0,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":0,\"peakTableBytesEstimate\":0,\"requests\":0,\"retainedEntries\":0,\"retainedTableBytesEstimate\":0,\"targetRetainedBytes\":134217728,\"timeouts\":0,\"waitMs\":0.0,\"waits\":0}",
+          "shared_graph context=before_request_2 {\"budgetLimitedRequests\":30,\"buildMs\":1398.440091,\"builds\":16,\"bypasses\":11,\"completedBuilds\":16,\"evictions\":1,\"failures\":0,\"hits\":14,\"liveBaseBytesEstimate\":66498080,\"liveCellBytes\":29053080,\"liveTables\":4,\"materializedBytes\":127383488,\"materializedPaths\":1692137,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":357663045,\"requests\":30,\"retainedEntries\":4,\"retainedTableBytesEstimate\":95551160,\"targetRetainedBytes\":1342",
+          "shared_graph context=before_request_3 {\"budgetLimitedRequests\":75,\"buildMs\":2675.984025,\"builds\":38,\"bypasses\":24,\"completedBuilds\":38,\"evictions\":10,\"failures\":0,\"hits\":37,\"liveBaseBytesEstimate\":66498080,\"liveCellBytes\":19051768,\"liveTables\":4,\"materializedBytes\":249615440,\"materializedPaths\":3384423,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":357663045,\"requests\":75,\"retainedEntries\":4,\"retainedTableBytesEstimate\":85549848,\"targetRetainedBytes\":134",
+          "shared_graph context=before_request_4 {\"budgetLimitedRequests\":120,\"buildMs\":4812.897391,\"builds\":67,\"bypasses\":43,\"completedBuilds\":67,\"evictions\":20,\"failures\":0,\"hits\":53,\"liveBaseBytesEstimate\":66498080,\"liveCellBytes\":20540824,\"liveTables\":4,\"materializedBytes\":408953344,\"materializedPaths\":5564042,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":357663045,\"requests\":120,\"retainedEntries\":4,\"retainedTableBytesEstimate\":87038904,\"targetRetainedBytes\":1",
+          "shared_graph context=before_request_5 {\"budgetLimitedRequests\":165,\"buildMs\":6875.52913,\"builds\":97,\"bypasses\":64,\"completedBuilds\":97,\"evictions\":29,\"failures\":0,\"hits\":68,\"liveBaseBytesEstimate\":66498080,\"liveCellBytes\":19288616,\"liveTables\":4,\"materializedBytes\":567243400,\"materializedPaths\":7686855,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":357663045,\"requests\":165,\"retainedEntries\":4,\"retainedTableBytesEstimate\":85786696,\"targetRetainedBytes\":13",
+          "shared_graph context=before_request_6 {\"budgetLimitedRequests\":210,\"buildMs\":8681.642761,\"builds\":125,\"bypasses\":82,\"completedBuilds\":125,\"evictions\":39,\"failures\":0,\"hits\":85,\"liveBaseBytesEstimate\":66638029,\"liveCellBytes\":22064272,\"liveTables\":4,\"materializedBytes\":736515424,\"materializedPaths\":9967599,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":357663045,\"requests\":210,\"retainedEntries\":4,\"retainedTableBytesEstimate\":88702301,\"targetRetainedBytes\"",
+          "shared_graph context=before_request_7 {\"budgetLimitedRequests\":225,\"buildMs\":8708.407249,\"builds\":126,\"bypasses\":82,\"completedBuilds\":126,\"evictions\":40,\"failures\":0,\"hits\":99,\"liveBaseBytesEstimate\":66638029,\"liveCellBytes\":36701024,\"liveTables\":4,\"materializedBytes\":756625840,\"materializedPaths\":10236144,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":357663045,\"requests\":225,\"retainedEntries\":4,\"retainedTableBytesEstimate\":103339053,\"targetRetainedByte",
+          "shared_graph context=before_request_8 {\"budgetLimitedRequests\":255,\"buildMs\":10513.989349,\"builds\":142,\"bypasses\":93,\"completedBuilds\":142,\"evictions\":45,\"failures\":0,\"hits\":113,\"liveBaseBytesEstimate\":97167469,\"liveCellBytes\":32337792,\"liveTables\":4,\"materializedBytes\":898366792,\"materializedPaths\":11337150,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":484255328,\"requests\":255,\"retainedEntries\":4,\"retainedTableBytesEstimate\":129505261,\"targetRetainedBy",
+          "shared_graph context=before_request_9 {\"budgetLimitedRequests\":285,\"buildMs\":10955.294519,\"builds\":149,\"bypasses\":95,\"completedBuilds\":149,\"evictions\":50,\"failures\":0,\"hits\":136,\"liveBaseBytesEstimate\":96329534,\"liveCellBytes\":41566944,\"liveTables\":4,\"materializedBytes\":976500904,\"materializedPaths\":11935755,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":484255328,\"requests\":285,\"retainedEntries\":4,\"retainedTableBytesEstimate\":137896478,\"targetRetainedBy",
+          "shared_graph context=before_request_10 {\"budgetLimitedRequests\":315,\"buildMs\":12749.11327,\"builds\":165,\"bypasses\":106,\"completedBuilds\":165,\"evictions\":55,\"failures\":0,\"hits\":150,\"liveBaseBytesEstimate\":94903011,\"liveCellBytes\":28879160,\"liveTables\":4,\"materializedBytes\":1098277672,\"materializedPaths\":12892528,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":484255328,\"requests\":315,\"retainedEntries\":4,\"retainedTableBytesEstimate\":123782171,\"targetRetained",
+          "shared_graph context=before_request_11 {\"budgetLimitedRequests\":345,\"buildMs\":14610.503499,\"builds\":181,\"bypasses\":117,\"completedBuilds\":181,\"evictions\":60,\"failures\":0,\"hits\":164,\"liveBaseBytesEstimate\":97167469,\"liveCellBytes\":27849400,\"liveTables\":4,\"materializedBytes\":1219950296,\"materializedPaths\":13860608,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":484255328,\"requests\":345,\"retainedEntries\":4,\"retainedTableBytesEstimate\":125016869,\"targetRetaine",
+          "shared_graph context=before_request_12 {\"budgetLimitedRequests\":375,\"buildMs\":16482.990167,\"builds\":197,\"bypasses\":128,\"completedBuilds\":197,\"evictions\":65,\"failures\":0,\"hits\":178,\"liveBaseBytesEstimate\":94817184,\"liveCellBytes\":33839200,\"liveTables\":4,\"materializedBytes\":1361957056,\"materializedPaths\":14976138,\"maxEntries\":4,\"maxWaitMs\":2000,\"measuredMaxBuildNsPerWork\":315,\"peakTableBytesEstimate\":484255328,\"requests\":375,\"retainedEntries\":4,\"retainedTableBytesEstimate\":128656384,\"targetRetaine"
+        ]
+      },
+      "deadline": {
+        "count": 0,
+        "samples": []
+      },
+      "fallback": {
+        "count": 0,
+        "samples": []
+      },
+      "panic": {
+        "count": 0,
+        "samples": []
+      },
+      "rejected": {
+        "count": 0,
+        "samples": []
+      },
+      "unavailable": {
+        "count": 0,
+        "samples": []
+      },
+      "disconnected": {
+        "count": 0,
+        "samples": []
+      }
+    }
+  },
+  "cpus": [
+    {
+      "cpu": 0,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 1,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 2,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 3,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 4,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 5,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 6,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 7,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 8,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 9,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 10,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 11,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 12,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 13,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 14,
+      "governor": "performance",
+      "epp": "performance"
+    },
+    {
+      "cpu": 15,
+      "governor": "performance",
+      "epp": "performance"
+    }
+  ],
+  "chronyTracking": "Reference ID    : C0A80051 (192.168.0.81)\nStratum         : 11\nRef time (UTC)  : Fri Oct 09 00:45:25 2026\nSystem time     : 0.000003853 seconds fast of NTP time\nLast offset     : +0.000003225 seconds\nRMS offset      : 0.000004004 seconds\nFrequency       : 4.018 ppm fast\nResidual freq   : +0.003 ppm\nSkew            : 0.030 ppm\nRoot delay      : 0.000167125 seconds\nRoot dispersion : 0.001018717 seconds\nUpdate interval : 32.3 seconds\nLeap status     : Normal\n",
+  "chronySources": "MS Name/IP address         Stratum Poll Reach LastRx Last sample               \n===============================================================================\n^? 129.250.35.251                2   6     0   16h   -135ms[  +11ms] +/-   64ms\n^? 109.61.109.140                2  10     0   16h    -90ms[  +55ms] +/-  153ms\n^? 133.18.147.168                2  10     0   16h   -206ms[  -61ms] +/-   83ms\n^? 162.159.200.123               3   8     0   16h   -132ms[  +13ms] +/-   73ms\n^* 192.168.0.81                 10   4   377     2   +152us[ +155us] +/- 1155us\n",
+  "clockProbe": {
+    "server": "192.168.0.81",
+    "port": 32123,
+    "samples": [
+      {
+        "serverMinusClientMs": -0.1385211944580078,
+        "roundTripMs": 0.347137451171875
+      },
+      {
+        "serverMinusClientMs": -0.1556873321533203,
+        "roundTripMs": 0.35190582275390625
+      },
+      {
+        "serverMinusClientMs": -0.15854835510253906,
+        "roundTripMs": 0.3643035888671875
+      },
+      {
+        "serverMinusClientMs": -0.15079975128173828,
+        "roundTripMs": 0.37550926208496094
+      },
+      {
+        "serverMinusClientMs": -0.17058849334716797,
+        "roundTripMs": 0.36454200744628906
+      },
+      {
+        "serverMinusClientMs": -0.12862682342529297,
+        "roundTripMs": 0.43463706970214844
+      },
+      {
+        "serverMinusClientMs": -0.1615285873413086,
+        "roundTripMs": 0.3993511199951172
+      },
+      {
+        "serverMinusClientMs": -0.2104043960571289,
+        "roundTripMs": 0.32067298889160156
+      },
+      {
+        "serverMinusClientMs": -0.16927719116210938,
+        "roundTripMs": 0.49304962158203125
+      },
+      {
+        "serverMinusClientMs": -0.21505355834960938,
+        "roundTripMs": 0.3256797790527344
+      },
+      {
+        "serverMinusClientMs": -0.1971721649169922,
+        "roundTripMs": 0.270843505859375
+      },
+      {
+        "serverMinusClientMs": -0.16248226165771484,
+        "roundTripMs": 0.4608631134033203
+      },
+      {
+        "serverMinusClientMs": -0.16832351684570312,
+        "roundTripMs": 0.3337860107421875
+      },
+      {
+        "serverMinusClientMs": -0.2180337905883789,
+        "roundTripMs": 0.5133152008056641
+      },
+      {
+        "serverMinusClientMs": -0.18334388732910156,
+        "roundTripMs": 0.2560615539550781
+      },
+      {
+        "serverMinusClientMs": -0.2887248992919922,
+        "roundTripMs": 0.4010200500488281
+      }
+    ],
+    "medianBestHalfOffsetMs": -0.17583370208740234,
+    "minimumRoundTripMs": 0.2560615539550781,
+    "capturedUnix": 1791506728.5983973
+  },
+  "processes": [
+    {
+      "pid": 9232,
+      "startTicks": "8394366",
+      "startTicksMatchStartRecord": true,
+      "bootId": "3e1e45ee-b88b-4832-871b-ee0ddb8e4184",
+      "executable": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0/distributed-solver",
+      "executableSha256": "651d075b36969555b360f6b21f77fcac6a2612dae5c6f0e1d7ef4758a7545491",
+      "cwd": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0",
+      "status": {
+        "Name": "distributed-sol",
+        "State": "S (sleeping)",
+        "Threads": "16",
+        "Cpus_allowed_list": "0-15",
+        "VmRSS": "1504056 kB",
+        "VmHWM": "1552588 kB",
+        "VmSize": "2068840 kB",
+        "VmPeak": "2199780 kB"
+      },
+      "scope": "C008 worker process lifetime; VmHWM includes all 12 cases"
+    }
+  ]
+}

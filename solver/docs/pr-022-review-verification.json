@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "pr": "https://github.com/Kyopronitac/procon37/pull/22",
+  "reviewedHead": "d156164813f7063467d0ef62bbf934d65fe70ebe",
+  "environment": "VOIDLINUX-1",
+  "before": {
+    "run": "1791357802993159612-11679",
+    "rankSum": 53,
+    "averageRank": 1.7666666666666666,
+    "firstPlaces": 19,
+    "scores": {
+      "uniqueBrands": 543,
+      "dailyBrands": 3682,
+      "udon": 8520
+    },
+    "all150AC": true,
+    "warnings": 0,
+    "diagnostics": 0,
+    "recovered": true
+  },
+  "after": {
+    "run": "1791360155933329970-11992",
+    "rankSum": 47,
+    "averageRank": 1.5666666666666667,
+    "firstPlaces": 20,
+    "scores": {
+      "uniqueBrands": 543,
+      "dailyBrands": 3683,
+      "udon": 8511
+    },
+    "all150AC": true,
+    "warnings": 0,
+    "diagnostics": 0,
+    "recovered": true
+  },
+  "comparison": {
+    "matched": 30,
+    "excluded": 0,
+    "outcomes": {
+      "wins": 15,
+      "draws": 1,
+      "losses": 14
+    }
+  },
+  "unitTests": {
+    "host": "VOIDLINUX-1",
+    "beforeReproduction": {
+      "existingPassed": 3,
+      "regressionsFailed": 4
+    },
+    "after": {
+      "passed": 7,
+      "failed": 0
+    },
+    "remoteLog": ".game/pr22/unit-tests.log",
+    "remoteReproLog": ".game/pr22/repro.log"
+  },
+  "frozenSha256": {
+    ".game/pr22/before/main.rs": "017b4d04ae4e7d8310d39f48b3d5ce0a72ff54aacc62fc1ac84b22ea469cc9a7",
+    ".game/pr22/before/solver/planner.rs": "a6f4c8c95fdf6f2ec6e3bf3927b4e5963ef7932de7045e33c482ceeba4370a84",
+    ".game/pr22/after/main.rs": "017b4d04ae4e7d8310d39f48b3d5ce0a72ff54aacc62fc1ac84b22ea469cc9a7",
+    ".game/pr22/after/solver/planner.rs": "e7382e326664c7518f06009015a6b39fe10fcc458bc642f5fa180eed975cb767",
+    "target/release/pr22-before": "f3409e29e43fb1c155ca3bc77ac237feea77ae0c1bb4cfa0452bb98ef3505638",
+    "target/release/pr22-after": "5e7ce899dde553a7c478c3831286fa06b3511f306470251bf5bed04fd4b518a6",
+    "target/release/game": "2933e5de4fc0f81c99b6750ebbed33a29d45332d8d1b52546d50c0b9bea5307c",
+    ".game/pr22/before-config.json": "27038e08025ae3ea6889071b6b26c41f220d86990cbf70032ac7c2cec11d2532",
+    ".game/pr22/after-config.json": "d408e58f85aff3f8fcd739e7ba894f9be3eb02ae7c87b66d0cbf6810905f4057",
+    "/home/voidlinux-1/procon37-g007-rank1-20261006/target/release/game-sample-1": "6d720031b510968452220d4b2fb8e109888b2af1156158550725fc971e6925e9",
+    "/home/voidlinux-1/procon37-g007-rank1-20261006/target/release/game-sample-2": "bc2153da916a8ad709bba629c3c5b20a96ecb719ef134d053fca013b48f902d4",
+    "/home/voidlinux-1/procon37-g007-rank1-20261006/target/release/game-sample-3": "91d86ee9aac32b512027c30ab9242f9fd1b7639c1c9d0524fdc9a8bc2c0d2fd6",
+    "/home/voidlinux-1/procon37-g007-rank1-20261006/target/release/game-sample-4": "e35802f99947eed9d840f00a91baeece6b88e6f94485f4d7151ea3ea88373ffe"
+  },
+  "scoreInvestigation": {
+    "scorePriority": [
+      "uniqueBrands",
+      "dailyBrands",
+      "udon"
+    ],
+    "primaryScoreChange": "improved",
+    "udonDelta": -9,
+    "allSelectionsAndPlansAccepted": true,
+    "allObservedRolesExactlyOneSupplier": true,
+    "minimumPlanRequestMs": 60000,
+    "iterationsTotal": {
+      "1791357802993159612-11679": 10498106247,
+      "1791360155933329970-11992": 10545984917
+    },
+    "causalPerformanceRegressionEstablished": false,
+    "scope": "レビュー修正に必要な不具合・性能退行の確認。通常時の探索内容は保持し、独立した時間制探索の比較として記録。総合得点と平均順位が改善し、警告・診断0で、無関係な探索改善や追加育成は実施しない。"
+  }
+}

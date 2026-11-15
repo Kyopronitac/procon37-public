@@ -1,0 +1,24 @@
+   Compiling procon37-distributed-gpu-lab v0.1.0 (/home/imak/work/procon37/solver/distributed-gpu-lab)
+error: 13 positional arguments in format string, but there are 12 arguments
+   --> src/bin/gpu-smoke.rs:171:75
+    |
+171 | ...rintln!("{{\"event\":\"gpu_request\",\"fixture\":\"synthetic-{}x{}\",\"repeat\":{repeat},\"device\":{},\"sequence\":{},\"first_after_init\":{},\"context_initialization_ms\":{:.3},\"allocation_ms\":{:.3},\"upload_ms\":{:.3},\"execution_and_read_ms\":{:.3},\"verification_ms\":{:.3},\"caller_ms\":{caller_ms:.3},\"scalar_dp_ms\":{scalar_ms:.3},\"rounds_max\":{},\"device_allocated_bytes\":{},\"route_checks\":{routes},\"exact_table_match\":true,\"table_fnv1a64\":\"{:016x}\"}}",
+    |                                                                 ^^ ^^                                  ^^              ^^                      ^^                               ^^^^^                   ^^^^^               ^^^^^                           ^^^^^                     ^^^^^                                                                             ^^                            ^^                                                                          ^^^^^^^
+172 | ...   case.side, quoted(&m.device_name), m.request_sequence, m.request_sequence == 1,
+    |       ---------  ----------------------  ------------------  -----------------------
+173 | ...   m.initialization_ms, m.allocation_ms, m.upload_ms, m.execution_and_read_ms,
+    |       -------------------  ---------------  -----------  -----------------------
+174 | ...   m.verification_ms, m.rounds_max, m.device_allocated_bytes, checksum(computed.tables.raw()));
+    |       -----------------  ------------  ------------------------  -------------------------------
+    |
+    = note: for information about formatting flags, visit https://doc.rust-lang.org/std/fmt/index.html
+
+error: invalid format string: unmatched `}` found
+   --> src/bin/gpu-smoke.rs:181:136
+    |
+181 | ...se\":{},\"last_error\":{},\"gpu_phase_ms\":{:.3}}",
+    |                                                    ^ unmatched `}` in format string
+    |
+    = note: if you intended to print `}`, you can escape it using `}}`
+
+error: could not compile `procon37-distributed-gpu-lab` (bin "gpu-smoke" test) due to 2 previous errors

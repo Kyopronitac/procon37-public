@@ -1,0 +1,201 @@
+{
+  "allAC": true,
+  "decisions": 72,
+  "cases": 12,
+  "rankSums": [
+    22,
+    31,
+    36,
+    36,
+    59,
+    47
+  ],
+  "scores": [
+    [
+      222,
+      1276,
+      2974
+    ],
+    [
+      222,
+      1277,
+      2935
+    ],
+    [
+      222,
+      1275,
+      2939
+    ],
+    [
+      222,
+      1274,
+      2956
+    ],
+    [
+      222,
+      1273,
+      2876
+    ],
+    [
+      222,
+      1273,
+      2916
+    ]
+  ],
+  "soleFirst": true,
+  "run": "/tmp/p0-g001-a10-wide.g4fjcli_/1791381854003916299-244986/run.json",
+  "sourceHash": "2c41dcd0f09781f3ac47ce0997082a4a3302c2697c6f16c9f44a18dcecc1943b",
+  "binaryHash": "cfda135d8536f70db1d34a5ffc0be256c623fd84ff12b8830efa1ad1234f6314",
+  "args": [
+    "0"
+  ],
+  "env": {},
+  "threads": {
+    "P1": {
+      "maxThreads": 15,
+      "maxRssKiB": 4884528,
+      "pids": [
+        26664,
+        26908,
+        27120,
+        27367,
+        27738,
+        27965,
+        28220,
+        28535,
+        28766,
+        28977,
+        29223,
+        29541
+      ],
+      "cpuSets": [
+        "4-7,12-15,20-23,28-30"
+      ]
+    },
+    "P0": {
+      "maxThreads": 15,
+      "maxRssKiB": 4828980,
+      "pids": [
+        26680,
+        26892,
+        27136,
+        27351,
+        27722,
+        27949,
+        28204,
+        28519,
+        28750,
+        28993,
+        29207,
+        29525
+      ],
+      "cpuSets": [
+        "0-3,8-11,16-19,24-26"
+      ]
+    },
+    "S0": {
+      "maxThreads": 1,
+      "maxRssKiB": 998224,
+      "pids": [
+        2656,
+        2697,
+        2740,
+        2779,
+        2820,
+        2863,
+        2904,
+        2947,
+        2984,
+        3027,
+        3066,
+        3113
+      ],
+      "cpuSets": [
+        "0"
+      ]
+    },
+    "S1": {
+      "maxThreads": 1,
+      "maxRssKiB": 352636,
+      "pids": [
+        2658,
+        2699,
+        2738,
+        2777,
+        2822,
+        2861,
+        2902,
+        2945,
+        2986,
+        3025,
+        3068,
+        3115
+      ],
+      "cpuSets": [
+        "2"
+      ]
+    },
+    "P3": {
+      "maxThreads": 15,
+      "maxRssKiB": 4885608,
+      "pids": [
+        20051,
+        20160,
+        20265,
+        20370,
+        20495,
+        20587,
+        20711,
+        20821,
+        20914,
+        21038,
+        21129,
+        21241
+      ],
+      "cpuSets": [
+        "4-7,12-15,20-23,28-30"
+      ]
+    },
+    "P2": {
+      "maxThreads": 15,
+      "maxRssKiB": 4886420,
+      "pids": [
+        20067,
+        20176,
+        20281,
+        20386,
+        20479,
+        20603,
+        20695,
+        20805,
+        20930,
+        21022,
+        21145,
+        21257
+      ],
+      "cpuSets": [
+        "0-3,8-11,16-19,24-26"
+      ]
+    }
+  },
+  "hashes": {
+    "/home/voidlinux-1/procon37-parallel-pool/teams/P0/solver": "cfda135d8536f70db1d34a5ffc0be256c623fd84ff12b8830efa1ad1234f6314",
+    "/home/voidlinux-1/procon37-parallel-pool/teams/P1/solver": "074cbc426f7cc62d345fb112fe0da7ec5c924699ae86f27bb60dabb2d6dc0d38",
+    "/home/voidlinux-1/procon37-parallel-pool/teams/P0/launcher": "47d4f8f31a929b868bd1dca3b28b3b3b3921ac12c53ee4337e6f456d962c95dd",
+    "/home/voidlinux-1/procon37-parallel-pool/teams/P1/launcher": "4ed0fefda4c52c7782ddaaf50d5239a6ba0ec6f68c7dc5bc96a58e2ebaab432b",
+    "/home/voidlinux-1/procon37-parallel-pool/bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+    "/home/voidlinux-1/procon37-parallel-pool/tester/server-bridge/run.sh": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27",
+    "/home/voidlinux-2/procon37-parallel-pool/teams/S0/solver": "90cb3b35e7ec1fe71738e5640b9dcd75ae3ebc931741ac1f29b8887d6da041a8",
+    "/home/voidlinux-2/procon37-parallel-pool/teams/S1/solver": "f5a6bcfc55feb853d7a1f355a11afd7af617fe96393a63b4ec1b05970b6a7ea0",
+    "/home/voidlinux-2/procon37-parallel-pool/teams/S0/launcher": "eefd1f3e1c0d697303cf2fa02ab1ca8aff3c90590aace4c29ea95ffde300a38f",
+    "/home/voidlinux-2/procon37-parallel-pool/teams/S1/launcher": "7bef6997ae7f4651732b38a3fd2fd31006168c1b8742ae39186850c69de1cac9",
+    "/home/voidlinux-2/procon37-parallel-pool/bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+    "/home/voidlinux-2/procon37-parallel-pool/tester/server-bridge/run.sh": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27",
+    "/home/voidlinux-3/procon37-parallel-pool/teams/P2/solver": "c6e6902fe8b8352ba1afb4e5bdad57ca06aa22ba355a2cea9186a87b73178cc9",
+    "/home/voidlinux-3/procon37-parallel-pool/teams/P3/solver": "2fb1e61c9bf22bd48c54be0e26ef6de08deb724d9909ba3041bd483eee005da2",
+    "/home/voidlinux-3/procon37-parallel-pool/teams/P2/launcher": "99836e8222c435c7885f18bdcb13dffe525b98352e8ac2ae366af1c69c69c0c4",
+    "/home/voidlinux-3/procon37-parallel-pool/teams/P3/launcher": "ad82a2de113e8ef214d5c4b7e02950a099da7fbf5a2ba9b84d79fe8b60be8f2a",
+    "/home/voidlinux-3/procon37-parallel-pool/bin/server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+    "/home/voidlinux-3/procon37-parallel-pool/tester/server-bridge/run.sh": "b7a7559fcc17310dddb376cf0f7d0cdeb677e979d3527a716944b25dc6728b27"
+  }
+}

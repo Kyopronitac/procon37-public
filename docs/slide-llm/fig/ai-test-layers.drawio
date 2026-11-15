@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="ai-test-layers" name="単独・対戦・サーバーの評価レイヤー">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="1080" pageHeight="230">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="solo" value="単独テスタ：solo&lt;br&gt;1チームで実行&lt;br&gt;経路・補給・得点" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFF7FF;strokeColor=#185B80;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSize=25;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="10" y="20" width="300" height="180" />
+        </mxCell>
+        <mxCell id="game" value="対戦テスタ：game&lt;br&gt;5チームを同時に実行&lt;br&gt;相手・在庫・混雑" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2FBE4;strokeColor=#668E38;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSize=25;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="390" y="20" width="300" height="180" />
+        </mxCell>
+        <mxCell id="server" value="サーバーテスタ：server&lt;br&gt;複数PCのソルバが参加&lt;br&gt;通信・提出・期限" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2F5;strokeColor=#97283C;strokeWidth=2;fontColor=#242424;fontFamily=Murecho;fontSize=24;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="770" y="20" width="300" height="180" />
+        </mxCell>
+        <mxCell id="edge0" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#666666;strokeWidth=2.3;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="310" y="110" />
+            <mxPoint as="targetPoint" x="390" y="110" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" style="edgeStyle=none;html=1;strokeColor=#666666;strokeWidth=2.3;endArrow=block;endFill=1;">
+          <mxGeometry as="geometry" relative="1">
+            <mxPoint as="sourcePoint" x="690" y="110" />
+            <mxPoint as="targetPoint" x="770" y="110" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

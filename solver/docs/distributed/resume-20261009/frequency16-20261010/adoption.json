@@ -1,0 +1,783 @@
+{
+  "decisionAtJst": "2026-10-10T06:05:25.917273+09:00",
+  "scope": "16x16 competition selection, user-specified four-seed reference and two new four-seed official-time candidates; not formal12 promotion",
+  "decision": "retain C013 for competition",
+  "selected": {
+    "version": "C013",
+    "candidate": "c013-scheduled-submission",
+    "shareIntervalMs": 500,
+    "sourceAggregateSha256": "8489b1953f4643d03fb4efd02dd9debf2d3d8ec13df17ceb57230286cece4ca3",
+    "binary": "solver/distributed-candidates/c013-scheduled-submission/target/release/distributed-solver",
+    "binarySha256": "6cdcd06d40e476f4992cd2bc76d14db331f88e63b705e1004eeec82abecb4422",
+    "bridgeBinary": "target/release/server-bridge",
+    "bridgeSha256": "e02fe74277a4178df5f0772bb3ad95af257fef4317df90841052e93ec83f2d90"
+  },
+  "reference4MeanRank": 1.5,
+  "samePolicy3": {
+    "C013": {
+      "meanRank": 1.3333333333333333,
+      "scores": [
+        36,
+        278,
+        571
+      ]
+    },
+    "C014": {
+      "meanRank": 2.0,
+      "scores": [
+        36,
+        278,
+        560
+      ]
+    },
+    "C015": {
+      "meanRank": 2.3333333333333335,
+      "scores": [
+        36,
+        278,
+        570
+      ]
+    }
+  },
+  "newVariants": [
+    {
+      "version": "C014",
+      "candidate": "c014-share100ms",
+      "stage": "frequency16-C014-official-01",
+      "runs": [
+        {
+          "version": "C014",
+          "seed": 0,
+          "runId": "1791575931706920231-78521",
+          "exitCode": 0,
+          "all4AC": true,
+          "problemSha256": "fb7a90c309d5a527a16c0efc45b58bdf2b18f6bcdf7fc70608c994d878ba3912",
+          "case": {
+            "players": [
+              {
+                "id": 0,
+                "name": "分散C014",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 57,
+                  "udon": 63
+                },
+                "status": "AC",
+                "answerTimeMs": 144657,
+                "warnings": 0
+              },
+              {
+                "id": 1,
+                "name": "固定並列",
+                "rank": 2,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 55,
+                  "udon": 70
+                },
+                "status": "AC",
+                "answerTimeMs": 274687,
+                "warnings": 0
+              },
+              {
+                "id": 2,
+                "name": "固定第6世代",
+                "rank": 3,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 55,
+                  "udon": 65
+                },
+                "status": "AC",
+                "answerTimeMs": 274713,
+                "warnings": 0
+              },
+              {
+                "id": 3,
+                "name": "固定第8世代",
+                "rank": 4,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 54,
+                  "udon": 66
+                },
+                "status": "AC",
+                "answerTimeMs": 274720,
+                "warnings": 0
+              }
+            ],
+            "seed": "0",
+            "format": "first",
+            "status": "AC",
+            "score": {
+              "uniqueBrands": 12,
+              "dailyBrands": 57,
+              "udon": 63
+            },
+            "answerTimeMs": 144657,
+            "warnings": 0,
+            "error": null
+          }
+        },
+        {
+          "version": "C014",
+          "seed": 3,
+          "runId": "1791576296431362123-80082",
+          "exitCode": 0,
+          "all4AC": true,
+          "problemSha256": "a9ef0edf9360fa7aaa6e946ac8b80268231bbdcde41eae006fce7fb49f4af961",
+          "case": {
+            "players": [
+              {
+                "id": 0,
+                "name": "分散C014",
+                "rank": 2,
+                "score": {
+                  "uniqueBrands": 13,
+                  "dailyBrands": 130,
+                  "udon": 325
+                },
+                "status": "AC",
+                "answerTimeMs": 229554,
+                "warnings": 0
+              },
+              {
+                "id": 1,
+                "name": "固定並列",
+                "rank": 4,
+                "score": {
+                  "uniqueBrands": 13,
+                  "dailyBrands": 127,
+                  "udon": 322
+                },
+                "status": "AC",
+                "answerTimeMs": 549604,
+                "warnings": 0
+              },
+              {
+                "id": 2,
+                "name": "固定第6世代",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 13,
+                  "dailyBrands": 130,
+                  "udon": 326
+                },
+                "status": "AC",
+                "answerTimeMs": 549650,
+                "warnings": 0
+              },
+              {
+                "id": 3,
+                "name": "固定第8世代",
+                "rank": 2,
+                "score": {
+                  "uniqueBrands": 13,
+                  "dailyBrands": 130,
+                  "udon": 325
+                },
+                "status": "AC",
+                "answerTimeMs": 549655,
+                "warnings": 0
+              }
+            ],
+            "seed": "3",
+            "format": "first",
+            "status": "AC",
+            "score": {
+              "uniqueBrands": 13,
+              "dailyBrands": 130,
+              "udon": 325
+            },
+            "answerTimeMs": 229554,
+            "warnings": 0,
+            "error": null
+          }
+        },
+        {
+          "version": "C014",
+          "seed": 6,
+          "runId": "1791576961316778564-82715",
+          "exitCode": 0,
+          "all4AC": true,
+          "problemSha256": "6fb6f285800469a40dde8d7b4a9777dbc67461abe8eaae59d65f9b10427b8a73",
+          "case": {
+            "players": [
+              {
+                "id": 0,
+                "name": "分散C014",
+                "rank": 3,
+                "score": {
+                  "uniqueBrands": 11,
+                  "dailyBrands": 88,
+                  "udon": 135
+                },
+                "status": "AC",
+                "answerTimeMs": 339527,
+                "warnings": 0
+              },
+              {
+                "id": 1,
+                "name": "固定並列",
+                "rank": 3,
+                "score": {
+                  "uniqueBrands": 11,
+                  "dailyBrands": 88,
+                  "udon": 135
+                },
+                "status": "AC",
+                "answerTimeMs": 439587,
+                "warnings": 0
+              },
+              {
+                "id": 2,
+                "name": "固定第6世代",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 11,
+                  "dailyBrands": 88,
+                  "udon": 136
+                },
+                "status": "AC",
+                "answerTimeMs": 439631,
+                "warnings": 0
+              },
+              {
+                "id": 3,
+                "name": "固定第8世代",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 11,
+                  "dailyBrands": 88,
+                  "udon": 136
+                },
+                "status": "AC",
+                "answerTimeMs": 439627,
+                "warnings": 0
+              }
+            ],
+            "seed": "6",
+            "format": "first",
+            "status": "AC",
+            "score": {
+              "uniqueBrands": 11,
+              "dailyBrands": 88,
+              "udon": 135
+            },
+            "answerTimeMs": 339527,
+            "warnings": 0,
+            "error": null
+          }
+        },
+        {
+          "version": "C014",
+          "seed": 9,
+          "runId": "1791577506021074671-83878",
+          "exitCode": 0,
+          "all4AC": true,
+          "problemSha256": "8cecd3c3f98d7d0692615000aba95ad5cf5d1a1b9178407f98e452f91d7a97ac",
+          "case": {
+            "players": [
+              {
+                "id": 0,
+                "name": "分散C014",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 60,
+                  "udon": 100
+                },
+                "status": "AC",
+                "answerTimeMs": 124764,
+                "warnings": 0
+              },
+              {
+                "id": 1,
+                "name": "固定並列",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 60,
+                  "udon": 100
+                },
+                "status": "AC",
+                "answerTimeMs": 274767,
+                "warnings": 0
+              },
+              {
+                "id": 2,
+                "name": "固定第6世代",
+                "rank": 4,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 60,
+                  "udon": 95
+                },
+                "status": "AC",
+                "answerTimeMs": 274809,
+                "warnings": 0
+              },
+              {
+                "id": 3,
+                "name": "固定第8世代",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 60,
+                  "udon": 100
+                },
+                "status": "AC",
+                "answerTimeMs": 274813,
+                "warnings": 0
+              }
+            ],
+            "seed": "9",
+            "format": "first",
+            "status": "AC",
+            "score": {
+              "uniqueBrands": 12,
+              "dailyBrands": 60,
+              "udon": 100
+            },
+            "answerTimeMs": 124764,
+            "warnings": 0,
+            "error": null
+          }
+        }
+      ],
+      "status": "verified",
+      "all16AC": true,
+      "verifiedUnchanged": true,
+      "players": [
+        {
+          "team": 0,
+          "meanRank": 1.75,
+          "verdicts": {
+            "AC": 4
+          },
+          "scores": {
+            "uniqueBrands": 48,
+            "dailyBrands": 335,
+            "udon": 623
+          }
+        },
+        {
+          "team": 1,
+          "meanRank": 2.5,
+          "verdicts": {
+            "AC": 4
+          },
+          "scores": {
+            "uniqueBrands": 48,
+            "dailyBrands": 330,
+            "udon": 627
+          }
+        },
+        {
+          "team": 2,
+          "meanRank": 2.25,
+          "verdicts": {
+            "AC": 4
+          },
+          "scores": {
+            "uniqueBrands": 48,
+            "dailyBrands": 333,
+            "udon": 622
+          }
+        },
+        {
+          "team": 3,
+          "meanRank": 2.0,
+          "verdicts": {
+            "AC": 4
+          },
+          "scores": {
+            "uniqueBrands": 48,
+            "dailyBrands": 332,
+            "udon": 627
+          }
+        }
+      ]
+    },
+    {
+      "version": "C015",
+      "candidate": "c015-share2000ms",
+      "stage": "frequency16-C015-official-01",
+      "runs": [
+        {
+          "version": "C015",
+          "seed": 0,
+          "runId": "1791577879772743901-84620",
+          "exitCode": 0,
+          "all4AC": true,
+          "problemSha256": "fb7a90c309d5a527a16c0efc45b58bdf2b18f6bcdf7fc70608c994d878ba3912",
+          "case": {
+            "players": [
+              {
+                "id": 0,
+                "name": "分散C015",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 56,
+                  "udon": 69
+                },
+                "status": "AC",
+                "answerTimeMs": 184814,
+                "warnings": 0
+              },
+              {
+                "id": 1,
+                "name": "固定並列",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 56,
+                  "udon": 69
+                },
+                "status": "AC",
+                "answerTimeMs": 274817,
+                "warnings": 0
+              },
+              {
+                "id": 2,
+                "name": "固定第6世代",
+                "rank": 4,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 55,
+                  "udon": 68
+                },
+                "status": "AC",
+                "answerTimeMs": 274845,
+                "warnings": 0
+              },
+              {
+                "id": 3,
+                "name": "固定第8世代",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 56,
+                  "udon": 69
+                },
+                "status": "AC",
+                "answerTimeMs": 274846,
+                "warnings": 0
+              }
+            ],
+            "seed": "0",
+            "format": "first",
+            "status": "AC",
+            "score": {
+              "uniqueBrands": 12,
+              "dailyBrands": 56,
+              "udon": 69
+            },
+            "answerTimeMs": 184814,
+            "warnings": 0,
+            "error": null
+          }
+        },
+        {
+          "version": "C015",
+          "seed": 3,
+          "runId": "1791578244448615516-85864",
+          "exitCode": 0,
+          "all4AC": true,
+          "problemSha256": "a9ef0edf9360fa7aaa6e946ac8b80268231bbdcde41eae006fce7fb49f4af961",
+          "case": {
+            "players": [
+              {
+                "id": 0,
+                "name": "分散C015",
+                "rank": 2,
+                "score": {
+                  "uniqueBrands": 13,
+                  "dailyBrands": 130,
+                  "udon": 329
+                },
+                "status": "AC",
+                "answerTimeMs": 379523,
+                "warnings": 0
+              },
+              {
+                "id": 1,
+                "name": "固定並列",
+                "rank": 2,
+                "score": {
+                  "uniqueBrands": 13,
+                  "dailyBrands": 130,
+                  "udon": 329
+                },
+                "status": "AC",
+                "answerTimeMs": 549564,
+                "warnings": 0
+              },
+              {
+                "id": 2,
+                "name": "固定第6世代",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 13,
+                  "dailyBrands": 130,
+                  "udon": 330
+                },
+                "status": "AC",
+                "answerTimeMs": 549631,
+                "warnings": 0
+              },
+              {
+                "id": 3,
+                "name": "固定第8世代",
+                "rank": 2,
+                "score": {
+                  "uniqueBrands": 13,
+                  "dailyBrands": 130,
+                  "udon": 329
+                },
+                "status": "AC",
+                "answerTimeMs": 549632,
+                "warnings": 0
+              }
+            ],
+            "seed": "3",
+            "format": "first",
+            "status": "AC",
+            "score": {
+              "uniqueBrands": 13,
+              "dailyBrands": 130,
+              "udon": 329
+            },
+            "answerTimeMs": 379523,
+            "warnings": 0,
+            "error": null
+          }
+        },
+        {
+          "version": "C015",
+          "seed": 6,
+          "runId": "1791578909451624765-87001",
+          "exitCode": 0,
+          "all4AC": true,
+          "problemSha256": "6fb6f285800469a40dde8d7b4a9777dbc67461abe8eaae59d65f9b10427b8a73",
+          "case": {
+            "players": [
+              {
+                "id": 0,
+                "name": "分散C015",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 11,
+                  "dailyBrands": 88,
+                  "udon": 142
+                },
+                "status": "AC",
+                "answerTimeMs": 389601,
+                "warnings": 0
+              },
+              {
+                "id": 1,
+                "name": "固定並列",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 11,
+                  "dailyBrands": 88,
+                  "udon": 142
+                },
+                "status": "AC",
+                "answerTimeMs": 439633,
+                "warnings": 0
+              },
+              {
+                "id": 2,
+                "name": "固定第6世代",
+                "rank": 3,
+                "score": {
+                  "uniqueBrands": 11,
+                  "dailyBrands": 88,
+                  "udon": 140
+                },
+                "status": "AC",
+                "answerTimeMs": 439689,
+                "warnings": 0
+              },
+              {
+                "id": 3,
+                "name": "固定第8世代",
+                "rank": 4,
+                "score": {
+                  "uniqueBrands": 11,
+                  "dailyBrands": 88,
+                  "udon": 138
+                },
+                "status": "AC",
+                "answerTimeMs": 439692,
+                "warnings": 0
+              }
+            ],
+            "seed": "6",
+            "format": "first",
+            "status": "AC",
+            "score": {
+              "uniqueBrands": 11,
+              "dailyBrands": 88,
+              "udon": 142
+            },
+            "answerTimeMs": 389601,
+            "warnings": 0,
+            "error": null
+          }
+        },
+        {
+          "version": "C015",
+          "seed": 9,
+          "runId": "1791579454080818640-89493",
+          "exitCode": 0,
+          "all4AC": true,
+          "problemSha256": "8cecd3c3f98d7d0692615000aba95ad5cf5d1a1b9178407f98e452f91d7a97ac",
+          "case": {
+            "players": [
+              {
+                "id": 0,
+                "name": "分散C015",
+                "rank": 4,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 60,
+                  "udon": 99
+                },
+                "status": "AC",
+                "answerTimeMs": 184692,
+                "warnings": 0
+              },
+              {
+                "id": 1,
+                "name": "固定並列",
+                "rank": 1,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 60,
+                  "udon": 102
+                },
+                "status": "AC",
+                "answerTimeMs": 274712,
+                "warnings": 0
+              },
+              {
+                "id": 2,
+                "name": "固定第6世代",
+                "rank": 2,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 60,
+                  "udon": 100
+                },
+                "status": "AC",
+                "answerTimeMs": 274738,
+                "warnings": 0
+              },
+              {
+                "id": 3,
+                "name": "固定第8世代",
+                "rank": 2,
+                "score": {
+                  "uniqueBrands": 12,
+                  "dailyBrands": 60,
+                  "udon": 100
+                },
+                "status": "AC",
+                "answerTimeMs": 274735,
+                "warnings": 0
+              }
+            ],
+            "seed": "9",
+            "format": "first",
+            "status": "AC",
+            "score": {
+              "uniqueBrands": 12,
+              "dailyBrands": 60,
+              "udon": 99
+            },
+            "answerTimeMs": 184692,
+            "warnings": 0,
+            "error": null
+          }
+        }
+      ],
+      "status": "verified",
+      "all16AC": true,
+      "verifiedUnchanged": true,
+      "players": [
+        {
+          "team": 0,
+          "meanRank": 2.0,
+          "verdicts": {
+            "AC": 4
+          },
+          "scores": {
+            "uniqueBrands": 48,
+            "dailyBrands": 334,
+            "udon": 639
+          }
+        },
+        {
+          "team": 1,
+          "meanRank": 1.25,
+          "verdicts": {
+            "AC": 4
+          },
+          "scores": {
+            "uniqueBrands": 48,
+            "dailyBrands": 334,
+            "udon": 642
+          }
+        },
+        {
+          "team": 2,
+          "meanRank": 2.5,
+          "verdicts": {
+            "AC": 4
+          },
+          "scores": {
+            "uniqueBrands": 48,
+            "dailyBrands": 333,
+            "udon": 638
+          }
+        },
+        {
+          "team": 3,
+          "meanRank": 2.25,
+          "verdicts": {
+            "AC": 4
+          },
+          "scores": {
+            "uniqueBrands": 48,
+            "dailyBrands": 334,
+            "udon": 636
+          }
+        }
+      ]
+    }
+  ],
+  "allNew32AC": true,
+  "rationale": [
+    "Average ranks of both new candidates were worse on all four cases and on the three cases sharing the C013 submission policy.",
+    "C013-only three-case score totals were equal or better than both new variants.",
+    "The seed0 baseline is C012; mixed four-case averages are reference values, not homogeneous C013 evaluation.",
+    "Single four-case trials do not prove general superiority. Retain the established candidate under the predeclared tie/uncertainty policy."
+  ],
+  "formal12AdoptionUnchanged": {
+    "version": "D0",
+    "commit": "5d6c740962a1f3e20e77e13df243078df1d29ad2"
+  },
+  "deploymentStatus": "completed",
+  "commitPushStatus": "completed",
+  "deploymentRecord": "deployment.json",
+  "deploymentRecordSha256": "62bca3aa77f2b6bfc3da20d3c03ac640311202c46eaa05c3c7c34f2d0cbede41",
+  "productionStarted": false,
+  "implementationCommit": "dfd5759177f270477a33388b4d1d5f6566436070",
+  "implementationPushSuccess": true,
+  "implementationPushRecordedAtJst": "2026-10-10T06:08:38.137599+09:00"
+}

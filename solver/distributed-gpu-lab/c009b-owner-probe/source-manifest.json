@@ -1,0 +1,37 @@
+{
+  "name": "C009b owner finite probe",
+  "status": "prepared only; unbuilt/unexecuted",
+  "createdDate": "2026-10-09",
+  "includedCandidateSourceAggregateSha256": "18c63370e33d070da875afa630e66b2d2d529f653614586902fb679503b3985a",
+  "copiedFrom": "solver/distributed-gpu-lab/c009-owner-probe",
+  "parentProbeSourceAggregateSha256": "49222ebe00a1e05e932a03d4c627df7793eba3b829f74b71fc9155ef673c5054",
+  "files": {
+    ".gitignore": "306fd52e74fca6746e12acc750f232de15e71da917756a1270d74c91f5eb7368",
+    "Cargo.lock": "ff73a03d7976e05eb20ebdc69a19c68edc715e9f99c5933fe46417a8017681c3",
+    "Cargo.toml": "46010c9ccd5a8aa5eb145ec16aec4d018bbcc3aa54c75df260658bcb7721ced9",
+    "README.md": "91e2d046441cd99bc8390fe7e6b02a42c4c1cb61378495add0eb9760c9a9068d",
+    "docs/procedure.md": "5d8b7beba784ef1b34d19b54c0e482bf8d0087ebf5168cc8e8e3843cd09b3e31",
+    "src/main.rs": "0b45213e5027a7414fe246092b2c9005a9acc2cdd29850e33bd3a76a8ce69352",
+    "src/owner_impl.rs": "8bbc51c00c8a390ca7bed043e2d2718ecbfa9ff6140f029e55edc19e1853f62b",
+    "tools/run_v2.py": "e0cc4abed81ef1ff0d2bf5057ef009c69a84c4105ca550f95eb776f41178ac12",
+    "tools/summarize.py": "e520051550a17813d7bd30b03ad0458693d7a7cae6835747e51ec8bdaa8dfe23"
+  },
+  "sourceAggregateSha256": "f55736f871fdb75b41707d1cd8dedf9c88592e8fdf6b30b585d9ad0d02353135",
+  "verification": {
+    "pythonSyntax": "AST parse only",
+    "rustCompile": false,
+    "cpuOnly": false,
+    "remoteGpu": false
+  },
+  "commentClarification": {
+    "previousProbeSourceAggregateSha256": "37a753ec21e067e1b6385d2bcf97f664cd57d2d7368585b03ccb75ab30f238a9",
+    "changedFiles": [
+      "README.md",
+      "src/main.rs",
+      "src/owner_impl.rs",
+      "tools/run_v2.py"
+    ],
+    "scope": "documentation/comments only; accurately identifies unbuilt/unverified C009b",
+    "buildTestRemoteExecuted": false
+  }
+}

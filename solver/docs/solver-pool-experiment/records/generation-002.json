@@ -1,0 +1,142 @@
+{
+  "generation": 2,
+  "baseline_run_id": "1790521499134996039-41850",
+  "players_before": [
+    {
+      "id": 0,
+      "name": "対象ソルバ",
+      "rank_sum": 52
+    },
+    {
+      "id": 1,
+      "name": "incumbent-d431c5c",
+      "rank_sum": 90
+    },
+    {
+      "id": 2,
+      "name": "generation-2",
+      "rank_sum": 126
+    },
+    {
+      "id": 3,
+      "name": "generation-3",
+      "rank_sum": 74
+    },
+    {
+      "id": 4,
+      "name": "generation-4",
+      "rank_sum": 90
+    }
+  ],
+  "replaced_fixed_id": 2,
+  "discarded_source_archive": "/tmp/procon37-pool-discarded-20260928/generation-002-replaced-fixed-id-2",
+  "discarded_source_sha256": "c39e57ee86a7c4b93209bf0551f8033a7b6cf389b1769d4fcbc3702470198a92",
+  "mapping_after": {
+    "0": "新規候補",
+    "1": "旧対象 fixed_id=1",
+    "2": "旧対象 fixed_id=0",
+    "3": "fixed_id=3",
+    "4": "fixed_id=4"
+  },
+  "commit_push_waived_by_user": true,
+  "promoted": true,
+  "opponent_executable_sha256": {
+    "1": "1c7af5baa3503345b50150860b8204573d5bd2d0b2b3cd396a1f9992278d675c",
+    "2": "519ad0e75fbe399c387b49f5ebfa68ffae18abd7fc5ee8fc255b6716a2eff5ab",
+    "3": "aec652d9cf2f0d99aca9a450ebc5660e69af9ed102e6394f59203043330aa2f7",
+    "4": "7883989c978b73c21f5c44a2295921df57f7cd4460f85e2c0e3dfc628f6dbb68"
+  },
+  "promotion_run_id": "1790551749037999892-54402",
+  "source_sha256": {
+    "main.rs": "e917e867a4af29fda30533aac298ad30d2a4bac00b1f07f9762ea839b0313e5e",
+    "solver/rendezvous.rs": "46786c32d744210cd594520e9be2731c7c6a9354f7ee699954d4667b02fca7da",
+    "Cargo.toml": "e53dc87d3ad432badde0ee7348ee7ec128de00e1369077f427b12cd43e7f4cc4"
+  },
+  "attempts": [
+    {
+      "attempt": 1,
+      "run_id": "1790551749037999892-54402",
+      "players": [
+        {
+          "id": 0,
+          "name": "対象ソルバ",
+          "rank_sum": 45,
+          "mean_rank": 1.5,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3587,
+            "udon": 7395
+          }
+        },
+        {
+          "id": 1,
+          "name": "incumbent-d431c5c",
+          "rank_sum": 120,
+          "mean_rank": 4.0,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3578,
+            "udon": 6960
+          }
+        },
+        {
+          "id": 2,
+          "name": "pool-generation-001",
+          "rank_sum": 66,
+          "mean_rank": 2.2,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3588,
+            "udon": 7201
+          }
+        },
+        {
+          "id": 3,
+          "name": "generation-3",
+          "rank_sum": 91,
+          "mean_rank": 3.033333333333333,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3584,
+            "udon": 7137
+          }
+        },
+        {
+          "id": 4,
+          "name": "generation-4",
+          "rank_sum": 107,
+          "mean_rank": 3.566666666666667,
+          "score_totals": {
+            "uniqueBrands": 542,
+            "dailyBrands": 3584,
+            "udon": 6952
+          }
+        }
+      ],
+      "all_ac": true,
+      "promoted": true
+    }
+  ],
+  "comparison": [
+    {
+      "baseline_fixed_id": 2,
+      "counts": {
+        "wins": 27,
+        "ties": 0,
+        "losses": 3
+      },
+      "note": "配置変更で交通が異なる診断比較"
+    },
+    {
+      "baseline_fixed_id": 0,
+      "counts": {
+        "wins": 22,
+        "ties": 1,
+        "losses": 7
+      },
+      "note": "配置変更で交通が異なる診断比較"
+    }
+  ],
+  "commit_result": "ユーザー指示で省略",
+  "push_result": "ユーザー指示で省略"
+}

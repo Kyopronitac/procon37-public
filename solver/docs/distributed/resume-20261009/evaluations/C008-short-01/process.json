@@ -1,0 +1,33 @@
+{
+  "stage": "C008-short-01",
+  "status": "running",
+  "label": "分散C008・機内経路表共有・D0基準比較1回目・短縮12件・10秒",
+  "shortMs": 10000,
+  "startedUnix": 1791505730.1524193,
+  "command": [
+    "/home/imak/work/procon37/target/release/server",
+    "run",
+    "12",
+    "--players",
+    "4",
+    "--config",
+    "/home/imak/work/procon37/.server/distributed/evaluations/C008-short-01/run-config.json",
+    "--label",
+    "分散C008・機内経路表共有・D0基準比較1回目・短縮12件・10秒",
+    "--match-port",
+    "11451",
+    "--time-limit-ms",
+    "10000"
+  ],
+  "directory": "/home/imak/work/procon37/.server/distributed/evaluations/C008-short-01",
+  "history": "/home/imak/work/procon37/.server/runs",
+  "version": "C008-shared",
+  "existingRunIds": [
+    "1791503276339409187-91328",
+    "1791504436521618109-94528"
+  ],
+  "pid": 101944,
+  "startTicks": "5573810",
+  "state": "R",
+  "bootId": "0ed549c2-ebe5-4a00-a7fe-2a56c0403979"
+}

@@ -1,0 +1,33 @@
+{
+  "adopted": false,
+  "formalEvaluationJustifiedByCurrentResults": false,
+  "decision": "C006は玉数平均+6.5だが平均順位はD0より0.0417悪化し、順位改善が再現しない。C010短縮12件で有力候補を確認し、明確な改善なら正式評価を優先。",
+  "summary": {
+    "D0": {
+      "stages": [
+        "resume-D0-short-01",
+        "resume-D0-short-02"
+      ],
+      "totalCases": 24,
+      "meanRank": 1.2916666666666667,
+      "meanScores": {
+        "uniqueBrands": 222.0,
+        "dailyBrands": 1277.0,
+        "udon": 2960.0
+      }
+    },
+    "C006": {
+      "stages": [
+        "C006-short-01",
+        "C006-short-02"
+      ],
+      "totalCases": 24,
+      "meanRank": 1.3333333333333333,
+      "meanScores": {
+        "uniqueBrands": 222.0,
+        "dailyBrands": 1277.0,
+        "udon": 2966.5
+      }
+    }
+  }
+}

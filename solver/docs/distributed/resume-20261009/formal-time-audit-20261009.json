@@ -1,0 +1,80 @@
+{
+  "capturedAtUtc": "2026-10-09T01:57:04.160561+00:00",
+  "scope": "Read-only audit of C006-short-02 frozen manifest, saved switch launchers, actual end-of-run remote launcher contents, and local harness/server code; no formal run launched by this audit.",
+  "evaluatedStage": "C006-short-02",
+  "evaluatedManifestSha256": "76dd5811966fcadec35874b973c5cef3a2a100b49339b3cd0e3facbdb5e470cf",
+  "formalInvocationRequirement": "Omit --short-ms. Keep parent taskset 1,3,5,7. New stage with descriptive label, no --output-dir.",
+  "staticFindings": {
+    "manageShortMsDefault": null,
+    "formalRunConfigTimeLimitMs": null,
+    "formalCommandAddsTimeLimitOverride": false,
+    "parentEnvironmentStrips": [
+      "PROCON37_*",
+      "SELECT_MS",
+      "TIME_LIMIT_MS"
+    ],
+    "runnerEnvironment": [
+      "PATH=/usr/bin:/bin",
+      "LANG=C.UTF-8"
+    ],
+    "bridgeTimeOverrideArguments": false,
+    "defaultSelectionMs": {
+      "first": 60000,
+      "semifinal": 90000,
+      "final": 120000
+    },
+    "defaultDaySeconds": "Unmodified generated/problem fixture values; server only fills when time_limit_ms is Some.",
+    "candidateBudgetChange": "C006 changes two planner percentage limits 91→97. Normal algorithmic allocation and safety margins remain, with no test-only 10-second cap.",
+    "fixedNomlab": "Launcher does not use env -i itself; its parent team_runner supplies only PATH and LANG, then launcher adds fixed FUTURE_WEIGHT=0 and RESERVE_WEIGHT=15."
+  },
+  "remoteLaunchers": {
+    "v1": {
+      "record": "solver/docs/distributed/resume-20261009/evaluations/C006-short-02/v1-completion.json",
+      "recordSha256": "0082639bcdd4d6b31be15b6fc0cb519c925f8273b410652f38ad5f0bd49445b3",
+      "launcherSha256": "a7c37a7546fee4a62d2c0d5a9f82838e10793e2c3f9a08cd686d9c19c93c5b1a",
+      "matchesEvaluatedManifest": true,
+      "timeOrBudgetOverrideFound": false
+    },
+    "v2": {
+      "record": "solver/docs/distributed/resume-20261009/evaluations/C006-short-02/v2-completion.json",
+      "recordSha256": "972128efc2937367710cf294998d3267cf89f8a82bd998b7d0db1522d162b611",
+      "launcherSha256": "cf8cd970a097cc64548e4471e6d68806ec41ab3aa8fdb3544647b27e893474ce",
+      "matchesEvaluatedManifest": true,
+      "timeOrBudgetOverrideFound": false
+    },
+    "v3": {
+      "record": "solver/docs/distributed/resume-20261009/evaluations/C006-short-02/v3-completion.json",
+      "recordSha256": "948e7996ecbba85daa1622dc90cdc8b67c39f861f6a523180e49a59b23bd0ded",
+      "launcherSha256": "e41fd115af140cd5260f36b0a8f88749f3c1ae7edf67c176a8a4ceef1cec21af",
+      "matchesEvaluatedManifest": true,
+      "timeOrBudgetOverrideFound": false
+    },
+    "nomlab": {
+      "record": "solver/docs/distributed/resume-20261009/evaluations/C006-short-02/nomlab-completion.json",
+      "recordSha256": "d881d6adb441022fb221f1ccb839908d846e591a8f06adbcb11fd1c9c2052e77",
+      "launcherSha256": "19899befacb6b664882721be3f33c2de71d5b12ebd4e89e2fbccef076a16deb5",
+      "matchesEvaluatedManifest": true,
+      "timeOrBudgetOverrideFound": false
+    }
+  },
+  "inputSha256": {
+    "solver/distributed-lab/manage.py": "13eb9fa455cea3070378234c88fffaee5a25b43bbe1cb688eb419dc5bdceb2ae",
+    "solver/distributed-lab/team_runner.py": "ed01a366716be733bad61e5bb104e62aafc0d2157c69ba376e7a432e88243118",
+    "tester/server/src/runner.rs": "f505d86daa51d0f4b41d240e66c5f045fb00cf5c493647498afa0b23c52dc65d",
+    "tester/server/src/main.rs": "65c25ba8df5f22def07192070070c112d1a2b31775ceffd1997db25a40bb4b8f",
+    "common/src/model.rs": "72ec763bb3aad8ebebace68ed5c3c86d48c3066df7e21797c8c3b10f380fc4e1",
+    "common/src/generator.rs": "8adff182497df2e7dead95f5a94e58cd982c4fab3b50b917af5ee67a3ee8abef",
+    "solver/distributed-candidates/c006-budget/solver/planner.rs": "94936d87109ec750e27d848b0f008a6756afc2fb8afdc0d526110e4a038bac23",
+    "solver/distributed-candidates/c006-budget/runtime.rs": "a8ebea03ba5ef47dafe65305488bb2c60af8a1a7e9c6efaf4ae386dada045922",
+    ".server/distributed/launchers/generation6.sh": "34a9d5f3d7fa57b7977281d862f7559399b1338a59ec58324272f89b03d3d6f4",
+    ".server/distributed/launchers/generation8.sh": "0fbe822a7a8cce9cf8f893fd7c5c5b82a2a10d725ce7ab95d6f571ff6db049d7"
+  },
+  "remainingChecksForActualFormalRun": [
+    "Use the new candidate frozen manifest if candidate or launcher changes after C006.",
+    "Before/after manifest and executable identity checks by manage snapshot.",
+    "Confirm recorded command omits --time-limit-ms and run config timeLimitMs is null.",
+    "Confirm freshly generated problem daySeconds and official selection budget rather than reusing shortened problem files.",
+    "Complete 12 seeds0-11, four cases in each of the three formats, arenaMaps=true, all48AC, no additional GPU/build/benchmark load."
+  ],
+  "decisionContext": "C006 short02 did not reproduce average-rank improvement; root chose C010 short testing before selecting a formal candidate."
+}

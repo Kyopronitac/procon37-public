@@ -1,0 +1,17 @@
+/target/
+/.tester/
+__pycache__/
+# Papers
+# Reference papers are kept locally only. Download them individually from
+# the official publisher, author, or institutional repository linked in
+# docs/papers/README.md.
+docs/papers/*.pdf
+
+/.game/
+/.server/
+
+# 公式配布の簡易サーバーバイナリ（公式ダウンロードページから再取得可能）
+/tester/server/procon-server
+
+# ソルバPCで run.sh をリポジトリのルートから起動したときのソルバの標準エラー出力
+/stderr.log

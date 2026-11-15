@@ -1,0 +1,9 @@
+{
+  "preparedUnix": 1791576686.8607183,
+  "scriptSha256": "7001a22e1da338f8ef21896b8a857a607271a5bbafcf6aa4df289ef2a1391979",
+  "syntax": "passed",
+  "help": "passed",
+  "clockIdentityMismatchRejected": 5,
+  "registeredPathCoverage": "passed",
+  "mutatingExecutionPerformed": false
+}

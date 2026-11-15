@@ -1,0 +1,343 @@
+{
+  "candidate": "C010-cross-elite",
+  "status": "unadopted; local 16 unit + 3 localhost network tests passed; no server evaluation",
+  "adopted": false,
+  "sourceSha256": "ce6f303fc8ebd77d01845a71458a663743c3ac637460c209c088764e42a6361d",
+  "binary": {
+    "path": "target/release/distributed-solver",
+    "sha256": "a47fbe2a545e6cffa7f63b19c0e660f1a74e72311ec41acbdede8dd2625bedef"
+  },
+  "sourceReview": {
+    "type": "read-only source audit",
+    "reviewer": "/root/evaluation_audit",
+    "reviewedSourceSha256": "1fc7c8407aa1d0efea99e56588d4ed5025d81cfdab865194e8252a8c16ed4725",
+    "materialFindings": 0,
+    "changesSinceReview": [
+      "tests/network.rs only: require positive on-mode sent/received; raise existing off reconnect test requests 900→1800ms for CPU1 eager Graph contention. Production source unchanged."
+    ]
+  },
+  "cpuAffinity": [
+    1
+  ],
+  "cargoJobs": 1,
+  "testThreads": 1,
+  "buildExitCode": 0,
+  "unitTests": {
+    "passed": 16,
+    "failed": 0,
+    "elapsedSeconds": 2.19
+  },
+  "networkTests": {
+    "passed": 3,
+    "failed": 0,
+    "elapsedSeconds": 13.27,
+    "scope": "localhost only; off reconnect/adopted state/rejected day, parallel16 cap, on reserve15 actual send/receive and legal final result"
+  },
+  "packetSizesBytes": {
+    "first": {
+      "actual": 3517,
+      "maxAcceptedRoutes": 4517
+    },
+    "semifinal": {
+      "actual": 6826,
+      "maxAcceptedRoutes": 8076
+    },
+    "final": {
+      "actual": 11185,
+      "maxAcceptedRoutes": 12930
+    },
+    "cap": 32768
+  },
+  "firstAttempt": {
+    "unitPassed": 16,
+    "networkPassed": 2,
+    "networkFailed": 1,
+    "reason": "off reconnect test required remote_results=2/2 with 900ms requests on CPU1; eager D0 Graph took ~450–500ms across five search workers. Only test limits changed to1800ms; production budgets unchanged.",
+    "remainingProcesses": [],
+    "rawLog": ".server/distributed/c010-validation/attempt1-tests.log"
+  },
+  "finalRun": {
+    "command": [
+      "cargo",
+      "test",
+      "--release",
+      "--offline",
+      "-j",
+      "1",
+      "--manifest-path",
+      "solver/distributed-candidates/c010-cross-elite/Cargo.toml",
+      "--",
+      "--test-threads=1",
+      "--nocapture"
+    ],
+    "startedUnix": 1791508188.5739222,
+    "cargoPid": 108949,
+    "cpuAffinity": [
+      1
+    ],
+    "timeoutSeconds": 180,
+    "exitCode": 0,
+    "elapsedSeconds": 18.24905014038086,
+    "processes": [
+      {
+        "pid": 108949,
+        "ppid": 108948,
+        "startTicks": "5819652",
+        "args": [
+          ""
+        ],
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 108953,
+        "ppid": 108949,
+        "startTicks": "5819655",
+        "args": [
+          "/home/imak/work/procon37/.server/toolchain/rustup/toolchains/1.94.0-x86_64-unknown-linux-gnu/bin/rustc",
+          "--crate-name",
+          "network",
+          "--edition=2024",
+          "tests/network.rs",
+          "--error-format=json",
+          "--json=diagnostic-rendered-ansi,artifacts,future-incompat",
+          "--emit=dep-info,link",
+          "-C",
+          "opt-level=3",
+          "-C",
+          "embed-bitcode=no",
+          "--test",
+          "--check-cfg",
+          "cfg(docsrs,test)",
+          "--check-cfg",
+          "cfg(feature, values())",
+          "-C",
+          "metadata=2cefc86c856ad10e",
+          "-C",
+          "extra-filename=-47aad54cf510765b",
+          "--out-dir",
+          "/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/deps",
+          "-C",
+          "strip=debuginfo",
+          "-L",
+          "dependency=/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/deps",
+          "--extern",
+          "serde=/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/deps/libserde-41950bc7021adc82.rlib",
+          "--extern",
+          "serde_json=/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/deps/libserde_json-ca1414dcbbd4e377.rlib",
+          "--extern",
+          "tester=/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/deps/libtester-a322ca5905a00022.rlib",
+          ""
+        ],
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 109012,
+        "ppid": 108949,
+        "startTicks": "5819894",
+        "args": [
+          "/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/deps/distributed_solver-151cf677b76cedae",
+          "--test-threads=1",
+          "--nocapture",
+          ""
+        ],
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 109048,
+        "ppid": 108949,
+        "startTicks": "5820113",
+        "args": [
+          "/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/deps/network-47aad54cf510765b",
+          "--test-threads=1",
+          "--nocapture",
+          ""
+        ],
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 109067,
+        "ppid": 109048,
+        "startTicks": "5820114",
+        "args": [
+          "/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/distributed-solver",
+          "--mode",
+          "worker",
+          "--threads",
+          "3",
+          "--worker-offset",
+          "34",
+          "--listen",
+          "127.0.0.1:38387",
+          "--cross-elite",
+          "on",
+          ""
+        ],
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 109070,
+        "ppid": 109048,
+        "startTicks": "5820115",
+        "args": [
+          "/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/distributed-solver",
+          "--mode",
+          "coordinator",
+          "--threads",
+          "3",
+          "--worker-offset",
+          "6",
+          "--peers",
+          "127.0.0.1:38387/3/34",
+          "--cross-elite",
+          "on",
+          ""
+        ],
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 109076,
+        "ppid": 109048,
+        "startTicks": "5820568",
+        "args": [
+          "/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/distributed-solver",
+          "--mode",
+          "worker",
+          "--threads",
+          "3",
+          "--worker-offset",
+          "1",
+          "--listen",
+          "127.0.0.1:42751",
+          ""
+        ],
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 109079,
+        "ppid": 109048,
+        "startTicks": "5820571",
+        "args": [
+          "/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/distributed-solver",
+          "--mode",
+          "worker",
+          "--threads",
+          "3",
+          "--worker-offset",
+          "3",
+          "--listen",
+          "127.0.0.1:44133",
+          ""
+        ],
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 109082,
+        "ppid": 109048,
+        "startTicks": "5820574",
+        "args": [
+          "/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/distributed-solver",
+          "--mode",
+          "coordinator",
+          "--threads",
+          "2",
+          "--peers",
+          "127.0.0.1:42751/3/1,127.0.0.1:44133/3/3",
+          ""
+        ],
+        "affinity": [
+          1
+        ]
+      },
+      {
+        "pid": 109090,
+        "ppid": 109048,
+        "startTicks": "5821005",
+        "args": [
+          "/home/imak/work/procon37/solver/distributed-candidates/c010-cross-elite/target/release/distributed-solver",
+          "--mode",
+          "worker",
+          "--threads",
+          "3",
+          "--worker-offset",
+          "1",
+          "--listen",
+          "127.0.0.1:42751",
+          ""
+        ],
+        "affinity": [
+          1
+        ]
+      }
+    ],
+    "remainingPidsBeforeCleanup": [],
+    "remainingPidsAfterCleanup": []
+  },
+  "networkProcessRecords": {
+    "procon37-parallel16-test-109048": {
+      "parallel16.process.json": {
+        "pid": 109050,
+        "stopped": true
+      }
+    },
+    "procon37-cross-test-109048-1791508193188861505": {
+      "coordinator.process.json": {
+        "pid": 109070,
+        "stopped": true
+      },
+      "worker.process.json": {
+        "pid": 109067,
+        "stopped": true
+      }
+    },
+    "procon37-dist-test-109048-1791508197736": {
+      "coordinator.process.json": {
+        "pid": 109082,
+        "stopped": true
+      },
+      "worker-a.process.json": {
+        "pid": 109076,
+        "stopped": true
+      },
+      "worker-b.process.json": {
+        "pid": 109079,
+        "stopped": true
+      },
+      "worker-a-restarted.process.json": {
+        "pid": 109090,
+        "stopped": true
+      }
+    }
+  },
+  "crossEliteCounters": [
+    {
+      "path": ".server/distributed/c010-validation/network/procon37-cross-test-109048-1791508193188861505/coordinator.log",
+      "line": "cross_elite request=2 origin=6 published=8 received=4 rejected=0 context_mismatch=0 imports=8 improved=3 sent=4 oversized=0"
+    },
+    {
+      "path": ".server/distributed/c010-validation/network/procon37-cross-test-109048-1791508193188861505/worker.log",
+      "line": "cross_elite request=2 origin=34 published=9 received=4 rejected=0 context_mismatch=0 imports=8 improved=3 sent=4 oversized=0"
+    }
+  ],
+  "rawLogSha256": "fe679facc9c27205754774019cf5b5f23ce7733ade6951e57263e912ad7aa98d",
+  "rawRecords": ".server/distributed/c010-validation",
+  "remoteOperations": false,
+  "serverEvaluation": false,
+  "remainingTestProcesses": [],
+  "sourceAggregateSha256": "ce6f303fc8ebd77d01845a71458a663743c3ac637460c209c088764e42a6361d"
+}

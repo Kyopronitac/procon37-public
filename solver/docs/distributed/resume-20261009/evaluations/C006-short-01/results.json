@@ -1,0 +1,81 @@
+{
+  "runId": "1791508659730277323-111961",
+  "all48AC": true,
+  "players": [
+    {
+      "team": 0,
+      "rankSum": 14,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1277,
+        "udon": 2970
+      },
+      "meanRank": 1.1666666666666667
+    },
+    {
+      "team": 1,
+      "rankSum": 28,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 2931
+      },
+      "meanRank": 2.3333333333333335
+    },
+    {
+      "team": 2,
+      "rankSum": 43,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1275,
+        "udon": 2845
+      },
+      "meanRank": 3.5833333333333335
+    },
+    {
+      "team": 3,
+      "rankSum": 31,
+      "scores": {
+        "uniqueBrands": 222,
+        "dailyBrands": 1276,
+        "udon": 2904
+      },
+      "meanRank": 2.5833333333333335
+    }
+  ],
+  "version": "C006-budget97",
+  "stage": "C006-short-01",
+  "verifiedUnchanged": true,
+  "config": {
+    "count": 12,
+    "seed": null,
+    "format": null,
+    "arenaMaps": true,
+    "label": "分散C006・探索上限91から97パーセント・候補選別1回目・短縮12件・10秒",
+    "players": 4,
+    "teamNames": [
+      "分散C006-budget97",
+      "固定並列",
+      "固定第6世代",
+      "固定第8世代"
+    ],
+    "timeLimitMs": 10000,
+    "serverProgram": "tester/server/procon-server"
+  },
+  "comparison": {
+    "win": 5,
+    "tie": 2,
+    "loss": 5
+  },
+  "beforeRunId": "1791506866153064781-104560",
+  "before": {
+    "team": 0,
+    "rankSum": 15,
+    "scores": {
+      "uniqueBrands": 222,
+      "dailyBrands": 1277,
+      "udon": 2956
+    },
+    "meanRank": 1.25
+  }
+}

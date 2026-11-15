@@ -1,0 +1,4 @@
+interface:
+  display_name: "procon37 並列ソルバ世代育成"
+  short_description: "3台の実験PCで6体を対戦させ、15スレッドの並列ソルバ4体を育成する"
+  default_prompt: "$procon37-parallel-solver-pool で3世代育成し、serverの12件で評価・昇格してcommit・pushしてください。"

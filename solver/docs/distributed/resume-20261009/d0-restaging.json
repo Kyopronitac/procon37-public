@@ -1,0 +1,67 @@
+{
+  "version": "D0",
+  "running": false,
+  "nodes": {
+    "v1": {
+      "home": "/home/voidlinux-1",
+      "directory": "/home/voidlinux-1/procon37-distributed-resume/20261009-D0",
+      "cpus": "0-31",
+      "arguments": [
+        "--mode",
+        "coordinator",
+        "--threads",
+        "32",
+        "--seed",
+        "0",
+        "--peers",
+        "192.168.0.22:39370/16/31,192.168.0.33:39370/32/46"
+      ],
+      "files": {
+        "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "a7c37a7546fee4a62d2c0d5a9f82838e10793e2c3f9a08cd686d9c19c93c5b1a"
+      }
+    },
+    "v2": {
+      "home": "/home/voidlinux-2",
+      "directory": "/home/voidlinux-2/procon37-distributed-resume/20261009-D0",
+      "cpus": "0-15",
+      "arguments": [
+        "--mode",
+        "worker",
+        "--threads",
+        "16",
+        "--worker-offset",
+        "31",
+        "--listen",
+        "192.168.0.22:39370"
+      ],
+      "files": {
+        "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "cf8cd970a097cc64548e4471e6d68806ec41ab3aa8fdb3544647b27e893474ce"
+      }
+    },
+    "v3": {
+      "home": "/home/voidlinux-3",
+      "directory": "/home/voidlinux-3/procon37-distributed-resume/20261009-D0",
+      "cpus": "0-31",
+      "arguments": [
+        "--mode",
+        "worker",
+        "--threads",
+        "32",
+        "--worker-offset",
+        "46",
+        "--listen",
+        "192.168.0.33:39370"
+      ],
+      "files": {
+        "distributed-solver": "e80474cc5f65a30b18d8143eec656e3abe093c927d75080aed2bd9dce72a5de0",
+        "server-bridge": "24cb1008dbb537f6941f08d2e9c31042ff5587a9215748dd9b8e8b15f933c15e",
+        "launcher": "e41fd115af140cd5260f36b0a8f88749f3c1ae7edf67c176a8a4ceef1cec21af"
+      }
+    }
+  },
+  "fixedNomlabUnchanged": true
+}
